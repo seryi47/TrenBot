@@ -57,6 +57,28 @@ def main():
         print("Rutas con plaza en esta pasada: %d" % n)
         return
 
+    if "--loop" in sys.argv:
+        # Bucle interno para GitHub Actions: sondea cada LOOP_INTERVAL segundos
+        # durante como mucho MAX_RUNTIME_SECONDS (para relevar antes del corte
+        # de 6 h de GitHub; el cron de respaldo arranca el siguiente).
+        import time as _t
+        interval = int(os.environ.get("LOOP_INTERVAL", "60"))
+        max_runtime = int(os.environ.get("MAX_RUNTIME_SECONDS", "20000"))  # ~5h33m
+        start = _t.time()
+        print("Modo BUCLE: cada %ds, máx %ds de ejecución." % (interval, max_runtime))
+        i = 0
+        while _t.time() - start < max_runtime:
+            i += 1
+            try:
+                engine.check_once()
+            except Exception as e:
+                print("  error en pasada:", e)
+            if _t.time() - start + interval >= max_runtime:
+                break
+            _t.sleep(interval)
+        print("Fin del bucle tras %d pasadas (relevo al siguiente run)." % i)
+        return
+
     print("=" * 64)
     print(" BotViajes — %d rutas vigiladas" % len(engine.watches))
     for w in engine.watches:

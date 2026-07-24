@@ -1,22 +1,28 @@
 name: Vigilar billetes
 
-# Se ejecuta en la nube de GitHub, sin tarjeta.
+# Martilleo cada ~1 min en la nube de GitHub, gratis y sin tarjeta.
+# Requiere repo PÚBLICO (minutos de Actions ilimitados). Los secrets siguen
+# siendo privados aunque el repo sea público.
+#
+# Cómo funciona: cada ejecución es un job LARGO que sondea en bucle cada 60 s
+# durante ~5h33m y luego termina. El cron de respaldo (cada 5 min) + la regla de
+# concurrencia hacen que el siguiente job arranque en cuanto acabe el anterior,
+# quedando casi sin huecos.
+
 on:
   schedule:
-    # Cada 30 min (en UTC). Cada 30 min mantiene el repo PRIVADO dentro de los
-    # 2000 min/mes gratis. Para ir más rápido (p.ej. */15 o */5) haz el repo
-    # público (minutos ilimitados) — mínimo que permite GitHub: 5 min.
-    - cron: "*/30 * * * *"
-  workflow_dispatch: {}   # botón para lanzarlo a mano (útil para probar)
+    - cron: "*/5 * * * *"   # respaldo/relevo (el mínimo que permite GitHub)
+  workflow_dispatch: {}
 
+# Solo un job a la vez; el nuevo espera (pending) a que termine el que corre.
 concurrency:
-  group: vigilar
+  group: vigilar-loop
   cancel-in-progress: false
 
 jobs:
-  check:
+  loop:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 340    # corta limpio antes del límite duro de 6 h de GitHub
     steps:
       - uses: actions/checkout@v4
 
@@ -28,11 +34,13 @@ jobs:
       - name: Instalar dependencias
         run: pip install requests PyYAML json5
 
-      - name: Comprobar disponibilidad y avisar
+      - name: Vigilar en bucle
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           BOTVIAJES_CONFIG: watches.yaml
           MAC_ALERTS: "0"
           OPEN_BROWSER: "0"
-        run: python run.py --check
+          LOOP_INTERVAL: "60"          # segundos entre comprobaciones (baja a 30 si quieres)
+          MAX_RUNTIME_SECONDS: "20000" # ~5h33m; luego releva el siguiente run
+        run: python run.py --loop
