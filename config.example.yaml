@@ -1,0 +1,42 @@
+# Copia este archivo a config.yaml y edítalo a tu gusto.
+# (config.yaml está en .gitignore para no subir tus rutas)
+
+# Chat de Telegram donde recibir los avisos del modo config (run.py).
+# En el bot interactivo (bot.py) cada ruta usa el chat de quien la crea.
+telegram_chat_id: "5239651695"
+
+poll_interval: 30      # cada cuántos segundos se consulta al operador
+alert_interval: 10     # cada cuántos segundos se reenvía el aviso mientras haya plaza
+max_alerts: 120        # tope de avisos seguidos antes de pausar el spam (120 x 10s = 20 min)
+
+mac_alerts: true       # sonido + voz + notificación en el Mac
+open_browser: true     # abre la web del operador al encontrar plaza
+
+# Lista de rutas a vigilar.
+#   providers: renfe | ouigo | iryo | amadeus  (una o varias)
+#   date:  YYYY-MM-DD
+#   time:  "HH:MM" para un tren concreto, u omítelo para cualquiera
+#   max_price: precio máximo en € (opcional)
+watches:
+  - name: "Alicante→Albacete 16:55 (Renfe + Ouigo)"
+    providers: [renfe, ouigo]
+    origin: "Alicante"
+    destination: "Albacete"
+    date: "2026-07-24"
+    time: "16:55"
+
+  # Ejemplo cualquier tren de un día, con tope de precio:
+  # - name: "Madrid→Valencia barato"
+  #   providers: [renfe, ouigo]
+  #   origin: "Madrid"
+  #   destination: "Valencia"
+  #   date: "2026-08-10"
+  #   max_price: 30
+
+  # Ejemplo de vuelo (requiere AMADEUS_API_KEY/SECRET en .env; códigos IATA):
+  # - name: "Vuelo MAD→BCN"
+  #   providers: [amadeus]
+  #   origin: "MAD"
+  #   destination: "BCN"
+  #   date: "2026-08-15"
+  #   max_price: 60

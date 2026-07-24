@@ -1,0 +1,13 @@
+# Secretos y config personal
+.env
+config.yaml
+watches.json
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.log
+
+# macOS
+.DS_Store
