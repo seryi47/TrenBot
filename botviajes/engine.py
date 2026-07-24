@@ -183,6 +183,31 @@ class Engine:
                         "🔕 Pauso los avisos de <b>%s</b> (llevabas %d). Sigo vigilando; "
                         "te reavisaré si cambia." % (watch["name"], st["alert_count"]))
 
+    def check_once(self):
+        """Una sola pasada por toda la watchlist: envía UN aviso por ruta con plaza.
+
+        Pensado para ejecuciones tipo cron (GitHub Actions), sin bucle ni estado.
+        Devuelve cuántas rutas tienen plaza.
+        """
+        total = 0
+        for watch in list(self.watches):
+            if not watch.get("enabled", True):
+                continue
+            try:
+                offers = self._poll(watch)
+            except Exception as e:
+                print("  [%s] error: %s" % (watch["name"], e))
+                continue
+            stamp = time.strftime("%H:%M:%S")
+            if offers:
+                total += 1
+                self.notifier.telegram(self._chat_for(watch), self._alert_text(watch, offers))
+                print("[%s] %s -> %d con plaza (AVISO enviado)" %
+                      (stamp, watch["name"], len(offers)))
+            else:
+                print("[%s] %s -> sin plaza" % (stamp, watch["name"]))
+        return total
+
     def run_forever(self):
         print("[engine] vigilando %d rutas | sondeo %ds | avisos %ds" %
               (len(self.watches), self.poll_interval, self.alert_interval))

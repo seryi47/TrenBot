@@ -1,0 +1,38 @@
+name: Vigilar billetes
+
+# Se ejecuta en la nube de GitHub, sin tarjeta.
+on:
+  schedule:
+    # Cada 30 min (en UTC). Cada 30 min mantiene el repo PRIVADO dentro de los
+    # 2000 min/mes gratis. Para ir más rápido (p.ej. */15 o */5) haz el repo
+    # público (minutos ilimitados) — mínimo que permite GitHub: 5 min.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}   # botón para lanzarlo a mano (útil para probar)
+
+concurrency:
+  group: vigilar
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install requests PyYAML json5
+
+      - name: Comprobar disponibilidad y avisar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BOTVIAJES_CONFIG: watches.yaml
+          MAC_ALERTS: "0"
+          OPEN_BROWSER: "0"
+        run: python run.py --check

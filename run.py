@@ -21,9 +21,10 @@ from botviajes.notifier import Notifier
 from botviajes.providers import get_provider
 
 
-def load_config(path="config.yaml"):
+def load_config(path=None):
+    path = path or os.environ.get("BOTVIAJES_CONFIG", "config.yaml")
     if not os.path.exists(path):
-        print("No existe %s. Copia config.example.yaml a config.yaml y edítalo." % path)
+        print("No existe %s. Copia config.example.yaml a %s y edítalo." % (path, path))
         sys.exit(1)
     with open(path, "r", encoding="utf-8") as fh:
         return yaml.safe_load(fh) or {}
@@ -48,6 +49,12 @@ def main():
     if "--test-telegram" in sys.argv:
         ok = notifier.telegram(chat_id, "✅ Prueba de <b>BotViajes</b>. Telegram funciona.")
         print("Telegram:", "ENVIADO" if ok else "FALLO (revisa token/chat_id)")
+        return
+
+    if "--check" in sys.argv:
+        # Una sola pasada (para cron / GitHub Actions). Avisa y termina.
+        n = engine.check_once()
+        print("Rutas con plaza en esta pasada: %d" % n)
         return
 
     print("=" * 64)
