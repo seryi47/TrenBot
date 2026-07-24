@@ -98,6 +98,24 @@ tail -f botviajes.log     # ver actividad
 pkill -f bot.py           # pararlo
 ```
 
+### En la nube 24/7 SIN TARJETA (GitHub Actions) ✅ en uso
+El repo trae un workflow (`.github/workflows/vigilar.yml`) que comprueba la
+disponibilidad **cada 30 min** en los servidores de GitHub, gratis y sin tarjeta.
+
+- **Secretos** (repo → *Settings → Secrets and variables → Actions*):
+  `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID`.
+- **Qué vigila:** el archivo **`watches.yaml`** (versionado, sin secretos). Para
+  cambiarlo, edítalo y haz `git push` (o edítalo en github.com y *Commit*).
+- **Forzar una comprobación:** pestaña *Actions → Vigilar billetes → Run workflow*.
+- **Frecuencia:** cambia el `cron` del workflow. 30 min mantiene un repo **privado**
+  dentro de los 2000 min/mes gratis; con el repo **público** los minutos son
+  ilimitados y puedes bajar a `*/5` (mínimo de GitHub).
+
+Diferencias respecto al modo local: **un** aviso por comprobación (no cada 10 s),
+frecuencia mínima 5 min, y sin bot interactivo (gestionas rutas por archivo).
+Además, GitHub **desactiva** los cron tras 60 días sin actividad en el repo y a
+veces los retrasa unos minutos si hay mucha carga.
+
 ### En la nube 24/7 y gratis (Oracle Cloud Always Free)
 Guía completa paso a paso: **[DEPLOY_ORACLE.md](DEPLOY_ORACLE.md)**
 (VM gratis para siempre + servicio `systemd` que arranca solo). Los avisos de
