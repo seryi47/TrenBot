@@ -1,9 +1,16 @@
-"""Avisos multi-canal: Telegram + Mac (sonido, voz, notificación, abre web)."""
+"""Avisos multi-canal: Telegram + Mac (sonido, voz, notificación, abre web).
+
+Los avisos locales de Mac solo se activan en macOS; en Linux (servidor) se
+ignoran sin error y el canal efectivo es Telegram.
+"""
 
 import os
 import subprocess
+import sys
 
 import requests
+
+IS_MAC = sys.platform == "darwin"
 
 
 class Notifier:
@@ -36,7 +43,7 @@ class Notifier:
 
     # ---- Mac ----------------------------------------------------------------
     def mac(self, title, message):
-        if not self.mac_alerts:
+        if not self.mac_alerts or not IS_MAC:
             return
         try:
             subprocess.run(
@@ -54,7 +61,7 @@ class Notifier:
             print("  [mac] error:", e)
 
     def browser(self, url):
-        if not self.open_browser or not url:
+        if not self.open_browser or not url or not IS_MAC:
             return
         try:
             subprocess.run(["open", url], check=False)

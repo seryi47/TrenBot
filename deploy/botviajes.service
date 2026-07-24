@@ -1,0 +1,17 @@
+[Unit]
+Description=BotViajes - vigilante de billetes (Telegram)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Ajusta User y las rutas si clonaste en otro sitio o con otro usuario.
+User=ubuntu
+WorkingDirectory=/home/ubuntu/TrenBot
+ExecStart=/home/ubuntu/TrenBot/venv/bin/python bot.py
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

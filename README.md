@@ -98,6 +98,11 @@ tail -f botviajes.log     # ver actividad
 pkill -f bot.py           # pararlo
 ```
 
+### En la nube 24/7 y gratis (Oracle Cloud Always Free)
+Guía completa paso a paso: **[DEPLOY_ORACLE.md](DEPLOY_ORACLE.md)**
+(VM gratis para siempre + servicio `systemd` que arranca solo). Los avisos de
+Mac se desactivan en servidor (`MAC_ALERTS=0`); el canal es Telegram.
+
 ## Cómo detecta "sin plazas"
 En Renfe, un tren puede estar `completo=false` pero con `soloPlazaH=true`: solo
 queda la plaza reservada para movilidad reducida. Eso es lo que la web muestra
