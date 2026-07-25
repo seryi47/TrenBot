@@ -30,6 +30,52 @@ def load_config(path=None):
         return yaml.safe_load(fh) or {}
 
 
+def _watch_to_yaml(w):
+    d = {"name": w["name"], "providers": w["providers"],
+         "origin": w["origin"], "destination": w["destination"], "date": w["date"]}
+    if w.get("time"):
+        d["time"] = w["time"]
+    if w.get("max_price") is not None:
+        d["max_price"] = w["max_price"]
+    return d
+
+
+def save_and_commit_watches(engine, path=None):
+    """Vuelca la watchlist a watches.yaml y (en la nube) la commitea al repo,
+    para que los cambios por comando sobrevivan al relevo del job."""
+    path = path or os.environ.get("BOTVIAJES_CONFIG", "watches.yaml")
+    base = {}
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as fh:
+            base = yaml.safe_load(fh) or {}
+    base["watches"] = [_watch_to_yaml(w) for w in engine.list_watches()]
+    with open(path, "w", encoding="utf-8") as fh:
+        yaml.safe_dump(base, fh, allow_unicode=True, sort_keys=False)
+
+    if os.environ.get("GIT_COMMIT_BACK", "1") != "1":
+        return
+    import subprocess
+
+    def run(*a):
+        return subprocess.run(a, capture_output=True, text=True)
+
+    branch = os.environ.get("GIT_BRANCH", "main")
+    run("git", "config", "user.email", "bot@users.noreply.github.com")
+    run("git", "config", "user.name", "BotViajes")
+    run("git", "add", path)
+    if run("git", "commit", "-m", "chore: watches actualizadas desde Telegram").returncode != 0:
+        return  # nada que commitear
+    # el runner está en detached HEAD; rebase sobre lo último y push explícito a la rama
+    run("git", "fetch", "origin", branch)
+    if run("git", "rebase", "origin/" + branch).returncode != 0:
+        run("git", "rebase", "--abort")
+        print("  [git] conflicto al rebasar; no hago push (se reintenta al siguiente cambio)")
+        return
+    p = run("git", "push", "origin", "HEAD:" + branch)
+    if p.returncode != 0:
+        print("  [git] push falló:", (p.stderr or "").strip()[:200])
+
+
 def main():
     cfg = load_config()
     chat_id = str(cfg.get("telegram_chat_id") or os.environ.get("TELEGRAM_CHAT_ID", "")).strip()
@@ -58,25 +104,52 @@ def main():
         return
 
     if "--loop" in sys.argv:
-        # Bucle interno para GitHub Actions: sondea cada LOOP_INTERVAL segundos
-        # durante como mucho MAX_RUNTIME_SECONDS (para relevar antes del corte
-        # de 6 h de GitHub; el cron de respaldo arranca el siguiente).
+        # Bucle para GitHub Actions: sondea cada LOOP_INTERVAL s durante como mucho
+        # MAX_RUNTIME_SECONDS (releva antes del corte de 6 h de GitHub). Si
+        # HANDLE_COMMANDS=1, además atiende comandos de Telegram por getUpdates.
         import time as _t
+        from botviajes import commands
         interval = int(os.environ.get("LOOP_INTERVAL", "60"))
         max_runtime = int(os.environ.get("MAX_RUNTIME_SECONDS", "20000"))  # ~5h33m
+        handle_cmds = os.environ.get("HANDLE_COMMANDS", "0") == "1"
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+        owner = str(os.environ.get("TELEGRAM_CHAT_ID", "")).strip()
         start = _t.time()
-        print("Modo BUCLE: cada %ds, máx %ds de ejecución." % (interval, max_runtime))
-        i = 0
+        last_check = 0.0
+        offset = None
+        print("Modo BUCLE: sondeo cada %ds, comandos=%s, máx %ds." %
+              (interval, handle_cmds, max_runtime))
         while _t.time() - start < max_runtime:
-            i += 1
-            try:
-                engine.check_once()
-            except Exception as e:
-                print("  error en pasada:", e)
-            if _t.time() - start + interval >= max_runtime:
+            if _t.time() - last_check >= interval:
+                try:
+                    engine.check_once()
+                except Exception as e:
+                    print("  error en pasada:", e)
+                last_check = _t.time()
+
+            if handle_cmds and token:
+                try:
+                    updates, offset = commands.get_updates(token, offset, timeout=20)
+                    changed = False
+                    for u in updates:
+                        msg = u.get("message") or u.get("edited_message") or {}
+                        chat = str((msg.get("chat") or {}).get("id", ""))
+                        if owner and chat != owner:
+                            continue  # solo el dueño puede mandar comandos
+                        reply, ch = commands.handle_text(msg.get("text", ""), chat, engine)
+                        if reply:
+                            notifier.telegram(chat, reply)
+                        changed = changed or ch
+                    if changed:
+                        save_and_commit_watches(engine)
+                except Exception as e:
+                    print("  error atendiendo comandos:", e)
+            else:
+                _t.sleep(max(1, interval - (_t.time() - last_check)))
+
+            if _t.time() - start + 1 >= max_runtime:
                 break
-            _t.sleep(interval)
-        print("Fin del bucle tras %d pasadas (relevo al siguiente run)." % i)
+        print("Fin del bucle (relevo al siguiente run).")
         return
 
     print("=" * 64)
