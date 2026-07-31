@@ -17,7 +17,7 @@ load_env()
 
 import os
 from botviajes.engine import Engine
-from botviajes.notifier import Notifier
+from botviajes.notifier import Notifier, chat_ids
 from botviajes.providers import get_provider
 
 
@@ -92,6 +92,40 @@ def main():
     )
     engine.seed_from_config(cfg.get("watches"))
 
+    if "--chat-ids" in sys.argv:
+        # Descubre el id de los chats/grupos donde está el bot: mete el bot en el
+        # grupo, escribe algo ahí y lanza esto. Los grupos tienen id NEGATIVO.
+        from botviajes import commands
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+        if not token:
+            print("Falta TELEGRAM_BOT_TOKEN en el .env")
+            return
+        try:
+            updates, _ = commands.get_updates(token, None, timeout=5)
+        except Exception as e:
+            if "409" in str(e):
+                print("Telegram devuelve 409 (Conflict): ya hay otro proceso leyendo\n"
+                      "los mensajes de este bot (el bucle de GitHub Actions con\n"
+                      "HANDLE_COMMANDS=1, o un bot.py local). Páralo un momento\n"
+                      "(Actions → run en curso → Cancel, o `pkill -f bot.py`) y reintenta.\n"
+                      "Alternativa: añade @RawDataBot al grupo y mira el campo chat.id.")
+            else:
+                print("Error consultando Telegram:", e)
+            return
+        seen = {}
+        for u in updates:
+            msg = u.get("message") or u.get("edited_message") or {}
+            ch = msg.get("chat") or {}
+            if ch.get("id") is not None:
+                seen[str(ch["id"])] = "%s — %s" % (
+                    ch.get("type", "?"), ch.get("title") or ch.get("first_name") or "")
+        if not seen:
+            print("Sin mensajes recientes. Escribe algo en el chat/grupo y reintenta.\n"
+                  "(Telegram solo guarda los updates ~24 h.)")
+        for cid, desc in seen.items():
+            print("  %-16s %s" % (cid, desc))
+        return
+
     if "--test-telegram" in sys.argv:
         ok = notifier.telegram(chat_id, "✅ Prueba de <b>BotViajes</b>. Telegram funciona.")
         print("Telegram:", "ENVIADO" if ok else "FALLO (revisa token/chat_id)")
@@ -113,7 +147,9 @@ def main():
         max_runtime = int(os.environ.get("MAX_RUNTIME_SECONDS", "20000"))  # ~5h33m
         handle_cmds = os.environ.get("HANDLE_COMMANDS", "0") == "1"
         token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-        owner = str(os.environ.get("TELEGRAM_CHAT_ID", "")).strip()
+        # chats autorizados a mandar comandos: el privado y/o los grupos
+        # configurados en TELEGRAM_CHAT_ID (separados por comas)
+        allowed = set(chat_ids(os.environ.get("TELEGRAM_CHAT_ID", "")))
         start = _t.time()
         last_check = 0.0
         offset = None
@@ -134,8 +170,8 @@ def main():
                     for u in updates:
                         msg = u.get("message") or u.get("edited_message") or {}
                         chat = str((msg.get("chat") or {}).get("id", ""))
-                        if owner and chat != owner:
-                            continue  # solo el dueño puede mandar comandos
+                        if allowed and chat not in allowed:
+                            continue  # solo los chats autorizados mandan comandos
                         reply, ch = commands.handle_text(msg.get("text", ""), chat, engine)
                         if reply:
                             notifier.telegram(chat, reply)

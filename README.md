@@ -48,6 +48,31 @@ Comprueba que llega:
 ./venv/bin/python run.py --test-telegram
 ```
 
+### Avisar a un grupo de Telegram
+El bot puede avisar en un **grupo** (y a la vez en tu chat privado):
+
+1. Abre el grupo → **Añadir miembros** → busca tu bot por su `@usuario` → añádelo.
+2. Escribe cualquier cosa en el grupo y averigua su id:
+   ```sh
+   ./venv/bin/python run.py --chat-ids
+   ```
+   Los grupos tienen id **negativo** (p. ej. `-1001234567890`).
+   > Si sale **409 Conflict**, es que el bucle de Actions (o un `bot.py`) ya está
+   > leyendo los mensajes: párralo un momento, o añade **@RawDataBot** al grupo y
+   > mira el `chat.id` que responde.
+3. Añade ese id al destino, separado por comas — acepta varios:
+   - local: `telegram_chat_id: "TU_ID,-1001234567890"` en `config.yaml`
+   - en la nube: el *secret* `TELEGRAM_CHAT_ID` con el mismo formato.
+
+Notas:
+- Si además quieres **mandar comandos desde el grupo**, el id del grupo tiene que
+  estar en `TELEGRAM_CHAT_ID` (es la lista de chats autorizados). En grupos, Telegram
+  activa el *modo privacidad*: el bot solo ve los mensajes que empiezan por `/`, así
+  que usa `/lista` o `/lista@TuBot` — ambos funcionan.
+- Una vigilancia creada con `/vigilar` **desde el grupo** avisa en ese grupo.
+  Las de `config.yaml`/`watches.yaml` avisan a todos los destinos configurados.
+- El id del grupo **no se sube al repo**: `watches.yaml` no guarda chats.
+
 ### Vuelos con Amadeus (opcional)
 Alta gratis en <https://developers.amadeus.com> → crea una app → copia
 *API Key* y *Secret* en `.env` (`AMADEUS_API_KEY`, `AMADEUS_API_SECRET`).
@@ -128,10 +153,22 @@ Guía completa paso a paso: **[DEPLOY_ORACLE.md](DEPLOY_ORACLE.md)**
 Mac se desactivan en servidor (`MAC_ALERTS=0`); el canal es Telegram.
 
 ## Cómo detecta "sin plazas"
-En Renfe, un tren puede estar `completo=false` pero con `soloPlazaH=true`: solo
-queda la plaza reservada para movilidad reducida. Eso es lo que la web muestra
-como *"tren completo, sin plazas disponibles"*. El aviso salta cuando se libera
-una plaza normal. En Ouigo/Amadeus, disponible = el viaje aparece con precio.
+En Renfe un tren puede estar `completo=false` y aun así no poder comprarse: solo
+queda la plaza reservada a movilidad reducida. Eso es lo que la web muestra como
+*Agotado* / *"tren completo, sin plazas disponibles"*.
+
+El dato fiable **no** es el `soloPlazaH` del nivel del tren (Renfe solo lo rellena
+a veces), sino el flag **`soloPlazasH` de cada tarifa** dentro de
+`tarifasDisponibles`. La regla que usa `providers/renfe.py`: hay plaza si queda
+**al menos una tarifa con `soloPlazasH=false`**; si todas son de plaza H, agotado.
+El precio que se anuncia es el de la tarifa más barata *comprable*, no
+`tarifaMinima` (que puede ser justo la de la plaza H).
+
+Cuidado con dos campos que **no** sirven para esto: `plazaH` por tarifa aparece a
+`true` en trenes con sitio de sobra, y `plazaHDisponible`/`operativo` no
+distinguen. El aviso salta cuando se libera una plaza normal.
+
+En Ouigo/Amadeus, disponible = el viaje aparece con precio.
 
 ## Arquitectura
 

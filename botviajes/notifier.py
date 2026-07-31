@@ -5,12 +5,25 @@ ignoran sin error y el canal efectivo es Telegram.
 """
 
 import os
+import re
 import subprocess
 import sys
 
 import requests
 
 IS_MAC = sys.platform == "darwin"
+
+
+def chat_ids(value):
+    """Normaliza un destino de Telegram a lista de chat ids.
+
+    Admite un id suelto, una lista de YAML, o varios separados por comas o
+    espacios ("123,-1001234567890"). Los ids de grupo son negativos.
+    """
+    if value is None:
+        return []
+    items = value if isinstance(value, (list, tuple)) else re.split(r"[,\s]+", str(value))
+    return [str(i).strip() for i in items if str(i).strip()]
 
 
 class Notifier:
@@ -21,8 +34,16 @@ class Notifier:
 
     # ---- Telegram -----------------------------------------------------------
     def telegram(self, chat_id, text):
-        if not self.tg_token or not chat_id:
+        """Envía a uno o varios chats (privados y/o grupos). True si todos OK."""
+        ids = chat_ids(chat_id)
+        if not self.tg_token or not ids:
             return False
+        ok = True
+        for cid in ids:
+            ok = self._send_one(cid, text) and ok
+        return ok
+
+    def _send_one(self, chat_id, text):
         try:
             r = requests.post(
                 "https://api.telegram.org/bot%s/sendMessage" % self.tg_token,

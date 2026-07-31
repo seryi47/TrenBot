@@ -73,7 +73,10 @@ def handle_text(text, chat_id, engine):
         w = engine.add_watch(
             name="%s→%s %s" % (origin, destination, time_ or ""),
             providers=providers, origin=origin, destination=destination,
-            date=date, time_=time_, max_price=max_price, chat_id=None,
+            date=date, time_=time_, max_price=max_price,
+            # el aviso vuelve al chat donde se creó la vigilancia: si el comando
+            # llega de un grupo, el grupo entero recibe la alerta
+            chat_id=str(chat_id) if chat_id else None,
         )
         reply = ("✅ Vigilando <b>#%s</b>: %s→%s el %s %s\nProveedores: %s%s\n\n"
                  "Te aviso aquí en cuanto haya plazas." %

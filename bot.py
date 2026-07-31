@@ -33,7 +33,8 @@ notifier = Notifier(
     mac_alerts=os.environ.get("MAC_ALERTS", "1") == "1",
     open_browser=os.environ.get("OPEN_BROWSER", "1") == "1",
 )
-engine = Engine(notifier, poll_interval=POLL, alert_interval=ALERT)
+engine = Engine(notifier, poll_interval=POLL, alert_interval=ALERT,
+                default_chat_id=os.environ.get("TELEGRAM_CHAT_ID", "").strip() or None)
 
 # rutas iniciales de config.yaml (si existe)
 try:
