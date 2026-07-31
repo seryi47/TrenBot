@@ -46,6 +46,19 @@ def _to_float(value):
         return None
 
 
+def _usable_fares(train):
+    """Tarifas que un viajero normal puede comprar.
+
+    Descarta las que solo dejan la plaza reservada a movilidad reducida
+    (`soloPlazasH`, dentro de cada tarifa). Ojo: NO es lo mismo que el
+    `soloPlazaH` del nivel del tren, que Renfe solo rellena a veces —
+    cuando el tren se queda a plaza H el aviso fiable es este.
+    `plazaH` por tarifa tampoco sirve: aparece a True en trenes con sitio.
+    """
+    return [f for f in (train.get("tarifasDisponibles") or [])
+            if not f.get("soloPlazasH")]
+
+
 def _tokenify(number):
     charmap = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ*$"
     buf, rem = [], number
@@ -86,12 +99,18 @@ class RenfeProvider(Provider):
         offers = []
         for way in data.get("listadoTrenes", []):
             for t in way.get("listviajeViewEnlaceBean", []):
-                price = _to_float(t.get("tarifaMinima"))
+                usable = _usable_fares(t)
+                # Precio de la tarifa más barata COMPRABLE; si no hay ninguna,
+                # cae a tarifaMinima solo para poder mostrar el tren agotado.
+                prices = [p for p in (_to_float(f.get("precioTarifa")) for f in usable)
+                          if p is not None]
+                price = min(prices) if prices else _to_float(t.get("tarifaMinima"))
                 available = (
                     not t.get("completo")
-                    and t.get("razonNoDisponible") in ["", "8", None]
+                    and str(t.get("razonNoDisponible") or "") in ("", "8")
                     and price is not None
                     and not t.get("soloPlazaH")
+                    and bool(usable)     # si todas las tarifas son de plaza H, está agotado
                 )
                 offers.append(Offer(
                     provider=self.name, origin=o_name, destination=d_name, date=date,
@@ -101,7 +120,9 @@ class RenfeProvider(Provider):
                     price=price, available=bool(available), buy_url=BUY_URL,
                     raw={"completo": t.get("completo"),
                          "razonNoDisponible": t.get("razonNoDisponible"),
-                         "soloPlazaH": t.get("soloPlazaH")},
+                         "soloPlazaH": t.get("soloPlazaH"),
+                         "tarifas": len(t.get("tarifasDisponibles") or []),
+                         "tarifas_comprables": len(usable)},
                 ))
         return offers
 
