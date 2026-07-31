@@ -139,9 +139,9 @@ gh run cancel $(gh run list --workflow=vigilar.yml --status=in_progress --json d
 
 Ejemplos (los campos se separan con `;` porque los nombres llevan espacios):
 ```
-/vigilar renfe; Alicante; Albacete; 24/07/2026; 16:55
-/vigilar trenes; Madrid; Valencia; 10/08/2026; ; 30
-/vigilar amadeus; MAD; BCN; 15/08/2026
+/vigilar renfe; Alicante; Albacete; 15/03/2027; 16:55
+/vigilar trenes; Madrid; Valencia; 20/03/2027; ; 30
+/vigilar amadeus; MAD; BCN; 25/03/2027
 ```
 `trenes` = renfe + ouigo + iryo. Hora vacía = cualquier tren.
 

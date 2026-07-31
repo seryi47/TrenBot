@@ -4,31 +4,40 @@
 (texto_de_respuesta, watchlist_cambiada).
 """
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import requests
 
-AYUDA = (
-    "🚆✈️ <b>BotViajes</b>\n\n"
-    "Vigila billetes y te avisa en cuanto hay plazas.\n\n"
-    "<b>Añadir vigilancia</b> (campos separados por <code>;</code>):\n"
-    "<code>/vigilar proveedores; origen; destino; fecha; [hora]; [precio_max]</code>\n\n"
-    "Ejemplos:\n"
-    "<code>/vigilar renfe; Alicante; Albacete; 24/07/2026; 16:55</code>\n"
-    "<code>/vigilar trenes; Madrid; Valencia; 10/08/2026; ; 30</code>\n\n"
-    "• proveedores: <code>renfe</code>, <code>ouigo</code>, <code>iryo</code>, "
-    "<code>amadeus</code>, o <code>trenes</code>\n"
-    "• hora vacía = cualquier tren; precio_max opcional\n\n"
-    "<b>Otros:</b>\n"
-    "/lista — ver vigilancias\n"
-    "/estado — ¿estoy vigilando o en pausa?\n"
-    "/borrar &lt;id&gt; — quitar una\n"
-    "/callar — callar los avisos que suenan (sigo vigilando)\n\n"
-    "<b>Pararme:</b>\n"
-    "/pausa — dejo de vigilar y de avisar, pero sigo aquí\n"
-    "/seguir — vuelvo a vigilar\n"
-    "/apagar — me apago del todo (solo se reactiva desde el ordenador)\n"
-)
+
+def ayuda():
+    """Texto de /ayuda. Es una función y no una constante para que las fechas de
+    los ejemplos sean siempre futuras: si se quedan en el pasado, quien las copie
+    se pone a vigilar un tren que ya salió."""
+    d1 = (datetime.now() + timedelta(days=7)).strftime("%d/%m/%Y")
+    d2 = (datetime.now() + timedelta(days=21)).strftime("%d/%m/%Y")
+    return (
+        "🚆✈️ <b>BotViajes</b>\n\n"
+        "Vigila billetes y te avisa en cuanto hay plazas.\n\n"
+        "<b>Añadir vigilancia</b> (campos separados por <code>;</code>):\n"
+        "<code>/vigilar proveedores; origen; destino; fecha; [hora]; [precio_max]</code>\n\n"
+        "Ejemplos:\n"
+        "<code>/vigilar renfe; Alicante; Albacete; %s; 16:55</code>\n"
+        "<code>/vigilar trenes; Madrid; Valencia; %s; ; 30</code>\n\n"
+        "• proveedores: <code>renfe</code>, <code>ouigo</code>, <code>iryo</code>, "
+        "<code>amadeus</code>, o <code>trenes</code>\n"
+        "• hora vacía = cualquier tren; precio_max opcional\n\n"
+        "<b>Otros:</b>\n"
+        "/lista — ver vigilancias\n"
+        "/estado — ¿estoy vigilando o en pausa?\n"
+        "/borrar &lt;id&gt; — quitar una\n"
+        "/callar — callar los avisos que suenan (sigo vigilando)\n\n"
+        "<b>Pararme:</b>\n"
+        "/pausa — dejo de vigilar y de avisar, pero sigo aquí\n"
+        "  (<code>/stop</code> y <code>/parar</code> hacen lo mismo)\n"
+        "/seguir — vuelvo a vigilar\n"
+        "/apagar — me apago del todo (te pediré confirmación; luego solo se "
+        "reactiva desde el ordenador)\n" % (d1, d2)
+    )
 
 
 def expand_providers(s):
@@ -60,7 +69,7 @@ def handle_text(text, chat_id, engine):
     rest = rest.strip()
 
     if cmd in ("start", "ayuda", "help"):
-        return AYUDA, False
+        return ayuda(), False
 
     if cmd == "vigilar":
         parts = [p.strip() for p in rest.split(";")]

@@ -20,5 +20,5 @@ watches:
   #   providers: [renfe, ouigo]
   #   origin: "Madrid"
   #   destination: "Valencia"
-  #   date: "2026-08-10"
+  #   date: "2027-03-20"
   #   max_price: 30
