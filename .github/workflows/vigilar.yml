@@ -14,9 +14,11 @@ on:
     - cron: "*/5 * * * *"   # respaldo/relevo (el mínimo que permite GitHub)
   workflow_dispatch: {}
 
-# Permite al job commitear watches.yaml de vuelta (comandos desde Telegram).
+# contents: commitear watches.yaml de vuelta (comandos desde Telegram).
+# actions:  que /apagar pueda desactivar este workflow y el cron no lo relance.
 permissions:
   contents: write
+  actions: write
 
 # Solo un job a la vez; el nuevo espera (pending) a que termine el que corre.
 concurrency:

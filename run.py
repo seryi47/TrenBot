@@ -49,6 +49,7 @@ def save_and_commit_watches(engine, path=None):
         with open(path, "r", encoding="utf-8") as fh:
             base = yaml.safe_load(fh) or {}
     base["watches"] = [_watch_to_yaml(w) for w in engine.list_watches()]
+    base["paused"] = bool(engine.paused)   # que /pausa sobreviva al relevo del job
     with open(path, "w", encoding="utf-8") as fh:
         yaml.safe_dump(base, fh, allow_unicode=True, sort_keys=False)
 
@@ -76,6 +77,31 @@ def save_and_commit_watches(engine, path=None):
         print("  [git] push falló:", (p.stderr or "").strip()[:200])
 
 
+def disable_workflow():
+    """Desactiva el workflow desde dentro del propio job (/apagar), para que el
+    cron no lo relance a los 5 minutos. Necesita `permissions: actions: write`.
+
+    Devuelve (ok, detalle). Fuera de Actions no hace nada.
+    """
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    wf = os.environ.get("WORKFLOW_FILE", "vigilar.yml")
+    if not token or not repo:
+        return False, "no estoy en GitHub Actions"
+    import requests
+    try:
+        r = requests.put(
+            "https://api.github.com/repos/%s/actions/workflows/%s/disable" % (repo, wf),
+            headers={"Authorization": "Bearer " + token,
+                     "Accept": "application/vnd.github+json",
+                     "X-GitHub-Api-Version": "2022-11-28"},
+            timeout=20,
+        )
+        return r.ok, "HTTP %s %s" % (r.status_code, (r.text or "")[:150])
+    except Exception as e:
+        return False, str(e)
+
+
 def main():
     cfg = load_config()
     chat_id = str(cfg.get("telegram_chat_id") or os.environ.get("TELEGRAM_CHAT_ID", "")).strip()
@@ -91,6 +117,7 @@ def main():
         max_alerts=int(cfg.get("max_alerts", 120)),
     )
     engine.seed_from_config(cfg.get("watches"))
+    engine.set_paused(bool(cfg.get("paused", False)))   # /pausa persistida
 
     if "--chat-ids" in sys.argv:
         # Descubre el id de los chats/grupos donde está el bot: mete el bot en el
@@ -149,7 +176,8 @@ def main():
         token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
         # chats autorizados a mandar comandos: el privado y/o los grupos
         # configurados en TELEGRAM_CHAT_ID (separados por comas)
-        allowed = set(chat_ids(os.environ.get("TELEGRAM_CHAT_ID", "")))
+        owner_chats = os.environ.get("TELEGRAM_CHAT_ID", "")
+        allowed = set(chat_ids(owner_chats))
         start = _t.time()
         last_check = 0.0
         offset = None
@@ -178,6 +206,17 @@ def main():
                         changed = changed or ch
                     if changed:
                         save_and_commit_watches(engine)
+                    if engine.shutdown_requested:
+                        ok, detalle = disable_workflow()
+                        print("  /apagar -> desactivar workflow:", ok, detalle)
+                        notifier.telegram(
+                            owner_chats,
+                            "🔌 Apagado. El workflow queda <b>desactivado</b>, no me relanzará el cron."
+                            if ok else
+                            "⚠️ Me paro, pero <b>no pude desactivar el workflow</b> (%s).\n"
+                            "El cron me relanzará en ~5 min. Desactívalo con:\n"
+                            "<code>gh workflow disable vigilar.yml</code>" % detalle)
+                        break
                 except Exception as e:
                     print("  error atendiendo comandos:", e)
             else:

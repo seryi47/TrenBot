@@ -21,8 +21,13 @@ AYUDA = (
     "• hora vacía = cualquier tren; precio_max opcional\n\n"
     "<b>Otros:</b>\n"
     "/lista — ver vigilancias\n"
+    "/estado — ¿estoy vigilando o en pausa?\n"
     "/borrar &lt;id&gt; — quitar una\n"
-    "/stop — callar avisos que suenan (sigue vigilando)\n"
+    "/callar — callar los avisos que suenan (sigo vigilando)\n\n"
+    "<b>Pararme:</b>\n"
+    "/pausa — dejo de vigilar y de avisar, pero sigo aquí\n"
+    "/seguir — vuelvo a vigilar\n"
+    "/apagar — me apago del todo (solo se reactiva desde el ordenador)\n"
 )
 
 
@@ -89,7 +94,8 @@ def handle_text(text, chat_id, engine):
         ws = engine.list_watches()
         if not ws:
             return "No hay vigilancias. Añade una con /vigilar (mira /ayuda).", False
-        lines = ["<b>Vigilancias activas:</b>"]
+        lines = ["<b>Vigilancias activas:</b>" if not engine.paused
+                 else "<b>Vigilancias (⏸️ EN PAUSA — /seguir para reanudar):</b>"]
         for w in ws:
             lines.append("#%s — %s→%s | %s %s | %s%s" % (
                 w["id"], w["origin"], w["destination"], w["date"],
@@ -103,9 +109,42 @@ def handle_text(text, chat_id, engine):
         ok = engine.remove_watch(int(rest))
         return ("🗑️ Borrada #%s" % rest if ok else "No encontré la #%s" % rest), ok
 
-    if cmd == "stop":
+    if cmd in ("callar", "silencio"):
         n = engine.silence_all()
         return "🔕 Avisos callados (%d). Sigo vigilando y te reavisaré si cambia." % n, False
+
+    # /stop hace lo que la gente espera: parar. Callar los avisos es /callar.
+    if cmd in ("pausa", "pausar", "parar", "stop"):
+        if engine.paused:
+            return "⏸️ Ya estaba en pausa. /seguir para reanudar.", False
+        engine.set_paused(True)
+        return ("⏸️ <b>En pausa.</b> Dejo de consultar a los operadores y no te aviso.\n"
+                "Sigo aquí escuchando: /seguir para reanudar.\n\n"
+                "<i>Si lo que querías era solo callar un aviso que estaba sonando, "
+                "eso es /callar.</i>"), True
+
+    if cmd in ("seguir", "reanudar", "continuar"):
+        if not engine.paused:
+            return "▶️ Ya estaba vigilando. /estado para ver los detalles.", False
+        engine.set_paused(False)
+        return "▶️ <b>Vigilando otra vez.</b> Te aviso en cuanto haya plaza.", True
+
+    if cmd == "estado":
+        ws = engine.list_watches()
+        estado = "⏸️ en pausa" if engine.paused else "▶️ vigilando"
+        return ("<b>Estado:</b> %s\nRutas: %d\nSondeo: cada %ds\n\n"
+                "%s" % (estado, len(ws), engine.poll_interval,
+                        "/seguir para reanudar" if engine.paused else "/pausa para pararme")), False
+
+    if cmd == "apagar":
+        if rest.strip().lower() not in ("si", "sí", "confirmar"):
+            return ("⚠️ <b>/apagar</b> me apaga del todo y <b>no podrás reactivarme "
+                    "desde Telegram</b> (habría que hacerlo desde el ordenador).\n\n"
+                    "Si solo quieres que deje de avisarte, usa <b>/pausa</b> — esa sí "
+                    "se deshace con /seguir.\n\n"
+                    "Para apagarme de verdad: <code>/apagar si</code>"), False
+        engine.request_shutdown()
+        return "🔌 <b>Apagándome.</b> Hasta luego. Para volver: <code>gh workflow enable vigilar.yml</code>", False
 
     return "Comando no reconocido. Mira /ayuda.", False
 

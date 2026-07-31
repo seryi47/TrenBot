@@ -7,7 +7,8 @@ cancelaciones de última hora.
 - Consulta los backends reales de cada operador (no simula nada).
 - Varias rutas a la vez, filtro por hora y por precio máximo.
 - Sondeo configurable (por defecto **cada 30 s**) y aviso repetido (**cada 10 s**)
-  mientras haya plaza, hasta que pulses `/stop`.
+  mientras haya plaza, hasta que pulses `/callar`.
+- Se para y se reanuda desde Telegram (`/pausa`, `/seguir`, `/apagar`).
 - Dos formas de usarlo: un **archivo de config** o un **bot de Telegram interactivo**.
 
 > Uso personal. No abuses de la frecuencia: sondear demasiado rápido puede hacer
@@ -100,9 +101,40 @@ Comandos:
 ```
 /vigilar <proveedores>; <origen>; <destino>; <fecha>; [hora]; [precio_max]
 /lista                 ver rutas vigiladas
+/estado                ¿vigilando o en pausa?
 /borrar <id>           quitar una ruta
-/stop                  callar los avisos que están sonando (sigue vigilando)
+/callar                callar los avisos que están sonando (sigue vigilando)
+/pausa                 dejar de vigilar y de avisar, sin apagarse
+/seguir                volver a vigilar
+/apagar si             apagarse del todo
 /ayuda
+```
+
+### Pararlo desde Telegram
+Hay dos niveles, porque no son lo mismo:
+
+| Comando | Qué hace | Cómo se deshace |
+|---|---|---|
+| `/callar` | Calla el aviso que está sonando ahora. Sigue vigilando. | Solo, al cambiar el estado del tren |
+| `/pausa` | Deja de consultar a los operadores y de avisar. El bot sigue escuchando. | `/seguir`, **desde Telegram** |
+| `/apagar si` | Termina el proceso y **desactiva el workflow** para que el cron no lo relance. | Solo **desde el ordenador** (ver abajo) |
+
+`/stop` es sinónimo de `/pausa` (es lo que la gente espera que haga).
+
+La pausa **se guarda en `watches.yaml`**, así que sobrevive al relevo del job: si
+pausas y 5 h después entra un job nuevo, arranca en pausa. Ojo: en pausa el job
+sigue vivo para poder oír `/seguir`, o sea que **sigue gastando minutos de Actions**.
+Si quieres que no gaste nada, usa `/apagar si`.
+
+Para volver a encenderlo tras `/apagar`:
+```sh
+gh workflow enable vigilar.yml
+gh workflow run vigilar.yml     # sin esto esperarías al cron (≤5 min)
+```
+Y el equivalente manual del apagado, desde el ordenador:
+```sh
+gh workflow disable vigilar.yml   # 1º, o el cron lo relanza en 5 min
+gh run cancel $(gh run list --workflow=vigilar.yml --status=in_progress --json databaseId -q '.[0].databaseId')
 ```
 
 Ejemplos (los campos se separan con `;` porque los nombres llevan espacios):

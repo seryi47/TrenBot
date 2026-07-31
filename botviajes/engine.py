@@ -27,6 +27,8 @@ class Engine:
         self.watches = []                       # lista de dicts (persistente)
         self._state = {}                        # estado runtime por watch id (no persistente)
         self._stop = threading.Event()
+        self.paused = False                     # /pausa: no sondea ni avisa, sigue escuchando
+        self.shutdown_requested = False         # /apagar: el bucle debe terminar
         self._load()
 
     # ---- persistencia -------------------------------------------------------
@@ -72,6 +74,20 @@ class Engine:
     def list_watches(self):
         with self._lock:
             return list(self.watches)
+
+    def set_paused(self, value):
+        """/pausa y /seguir: deja de consultar a los operadores (y de avisar)
+        sin matar el proceso, para poder reanudar desde Telegram."""
+        with self._lock:
+            self.paused = bool(value)
+            if self.paused:
+                self._state.clear()   # al reanudar, vuelve a avisar de lo que haya
+            return self.paused
+
+    def request_shutdown(self):
+        """/apagar: pide al bucle que termine del todo."""
+        self.shutdown_requested = True
+        self._stop.set()
 
     def silence_all(self):
         """/stop: calla los avisos que estén sonando (sin dejar de vigilar)."""
@@ -141,6 +157,8 @@ class Engine:
 
     def tick(self):
         now = time.time()
+        if self.paused:
+            return
         with self._lock:
             watches = list(self.watches)
         for watch in watches:
@@ -189,6 +207,9 @@ class Engine:
         Pensado para ejecuciones tipo cron (GitHub Actions), sin bucle ni estado.
         Devuelve cuántas rutas tienen plaza.
         """
+        if self.paused:
+            print("[%s] en pausa (/seguir para reanudar)" % time.strftime("%H:%M:%S"))
+            return 0
         total = 0
         for watch in list(self.watches):
             if not watch.get("enabled", True):
