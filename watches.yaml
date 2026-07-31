@@ -12,7 +12,7 @@ watches:
     providers: [renfe, ouigo]
     origin: "Alicante"
     destination: "Albacete"
-    date: "2026-07-24"
+    date: "2026-07-31"
     time: "16:55"
 
   # Añade más rutas debajo. Ejemplos:
