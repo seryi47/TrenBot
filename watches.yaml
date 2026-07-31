@@ -1,24 +1,14 @@
-# Watchlist para GitHub Actions (este archivo SÍ se sube al repo).
-# NO pongas aquí el token ni el chat_id: van como "secrets" del repo.
-# Para cambiar qué vigilas: edita este archivo y haz git push.
-
 poll_interval: 30
 alert_interval: 10
-mac_alerts: false     # en la nube no hay Mac
+mac_alerts: false
 open_browser: false
-
 watches:
-  - name: "Alicante→Albacete 16:55 (Renfe + Ouigo)"
-    providers: [renfe, ouigo]
-    origin: "Alicante"
-    destination: "Albacete"
-    date: "2026-07-31"
-    time: "16:55"
-
-  # Añade más rutas debajo. Ejemplos:
-  # - name: "Madrid→Valencia cualquier tren < 30€"
-  #   providers: [renfe, ouigo]
-  #   origin: "Madrid"
-  #   destination: "Valencia"
-  #   date: "2027-03-20"
-  #   max_price: 30
+- name: Alicante→Albacete 16:55 (Renfe + Ouigo)
+  providers:
+  - renfe
+  - ouigo
+  origin: Alicante
+  destination: Albacete
+  date: '2026-07-31'
+  time: '16:55'
+paused: true
