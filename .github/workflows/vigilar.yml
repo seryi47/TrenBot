@@ -45,10 +45,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           BOTVIAJES_CONFIG: watches.yaml
+          # Sin esto Python guarda la salida en un búfer y el log del job sale
+          # vacío: si algo falla en la nube, no habría forma de enterarse.
+          PYTHONUNBUFFERED: "1"
           MAC_ALERTS: "0"
           OPEN_BROWSER: "0"
           LOOP_INTERVAL: "60"          # segundos entre comprobaciones (baja a 30 si quieres)
           MAX_RUNTIME_SECONDS: "20000" # ~5h33m; luego releva el siguiente run
           HANDLE_COMMANDS: "1"         # atiende /vigilar, /lista... desde Telegram
           GIT_COMMIT_BACK: "1"         # guarda los cambios en el repo
-        run: python run.py --loop
+        run: python -u run.py --loop
