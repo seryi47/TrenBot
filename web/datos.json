@@ -203,11 +203,11 @@
      "sale": "20:45",
      "llega": "23:25",
      "ref": 88.99,
-     "precio": 132.99,
-     "etiqueta": "FR1356",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 09:01",
+     "precio": 133.99,
+     "etiqueta": "FR1356 (Malta Air) · 2 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
+     "plazas": 2,
+     "visto": "2026-09-09 19:15",
      "estado": "ok",
      "historico": [
       [
@@ -253,9 +253,13 @@
       [
        "2026-09-09 09:01",
        132.99
+      ],
+      [
+       "2026-09-09 19:15",
+       133.99
       ]
      ],
-     "variacion": 44.0
+     "variacion": 45.0
     },
     {
      "tipo": "tierra",
@@ -352,8 +356,8 @@
      "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
     }
    ],
-   "total_persona": 177.63,
-   "total_grupo": 355.26,
+   "total_persona": 178.63,
+   "total_grupo": 357.26,
    "ida_fecha": "2026-10-09",
    "ida_hora": "20:45",
    "ida_iata": "CGN",
@@ -870,7 +874,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "visto": "2026-09-09 19:15",
      "estado": "orientativo",
      "historico": [
       [
@@ -1264,7 +1268,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "visto": "2026-09-09 19:15",
      "estado": "orientativo",
      "historico": [
       [
@@ -1411,7 +1415,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "visto": "2026-09-09 19:15",
      "estado": "orientativo",
      "historico": [
       [
@@ -1607,6 +1611,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-09 18:13",
- "actualizado_iso": "2026-09-09T18:13:53.191938+00:00"
+ "actualizado": "2026-09-09 19:15",
+ "actualizado_iso": "2026-09-09T19:15:18.665526+00:00"
 }
