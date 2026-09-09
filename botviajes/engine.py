@@ -250,6 +250,35 @@ class Engine:
             con_precio = exactas or []
         return min(con_precio, key=lambda o: o.price) if con_precio else None
 
+    def _revisar_ceguera(self, watch, todas):
+        """Avisa si una ruta que antes daba precio lleva varios sondeos sin dar nada.
+
+        Es la red de seguridad contra los fallos silenciosos: cuando Ryanair
+        cambió su client-version, el bot se quedó a ciegas horas y solo se supo
+        porque alguien preguntó. Un aviso por Telegram evita repetirlo.
+        """
+        UMBRAL = 3
+        st = self._state.setdefault(watch["id"], {})
+        if any(o.price for o in todas):
+            if st.get("ciegos"):
+                st["ciegos"] = 0
+                st["ceguera_avisada"] = False
+            return None
+        if watch.get("ultimo_precio") is None:
+            return None            # nunca dio precio: no hay nada que echar de menos
+        st["ciegos"] = st.get("ciegos", 0) + 1
+        if st["ciegos"] < UMBRAL or st.get("ceguera_avisada"):
+            return None
+        st["ceguera_avisada"] = True
+        return ("⚠️ <b>Me he quedado sin datos de un vuelo</b>\n\n"
+                "<b>%s</b>\n"
+                "Llevo %d consultas seguidas sin que la aerolínea me devuelva "
+                "precio. Lo último que vi fueron <b>%.2f €</b> el %s.\n\n"
+                "Puede ser un bloqueo temporal o que hayan cambiado algo por su "
+                "parte. Sigo intentándolo y te aviso si vuelve."
+                % (watch["name"], st["ciegos"], watch["ultimo_precio"],
+                   watch.get("ultimo_visto", "?")))
+
     def _registrar_precio(self, watch, todas):
         """Guarda el precio mas barato visto y avisa si ha BAJADO.
 
@@ -385,6 +414,11 @@ class Engine:
             if now - st["last_poll"] >= cada:
                 st["last_poll"] = now
                 offers, todas = self._poll(watch)
+                ciego = self._revisar_ceguera(watch, todas)
+                if ciego:
+                    self.notifier.telegram(self._chat_for(watch), ciego)
+                    print("[%s] ⚠️ sin datos en '%s'" % (time.strftime("%H:%M:%S"),
+                                                         watch["name"]))
                 bajada = self._registrar_precio(watch, todas)
                 if bajada:
                     entregado = self.notifier.telegram(self._chat_for(watch), bajada)
@@ -455,6 +489,11 @@ class Engine:
             st["last_poll"] = ahora
             try:
                 offers, todas = self._poll(watch)
+                ciego = self._revisar_ceguera(watch, todas)
+                if ciego:
+                    self.notifier.telegram(self._chat_for(watch), ciego)
+                    print("[%s] ⚠️ sin datos en '%s'" % (time.strftime("%H:%M:%S"),
+                                                         watch["name"]))
                 bajada = self._registrar_precio(watch, todas)
                 if bajada:
                     entregado = self.notifier.telegram(self._chat_for(watch), bajada)
