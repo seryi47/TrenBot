@@ -21,7 +21,9 @@ cancelaciones de última hora.
 | **Renfe** | ✅ Probado | Backend de venta (protocolo DWR). AVE, Alvia, MD, Avlo… con disponibilidad real. |
 | **Ouigo** España | ✅ Probado | API de su web (token + `journeysearch`). |
 | **Iryo** (ILSA) | 🧪 Experimental | Sin backend público conocido. Adaptador preparado, pendiente de implementar (ver más abajo). |
-| **Vuelos** (Amadeus) | ✅ Listo (requiere API key gratis) | Amadeus Self-Service Flight Offers Search. Códigos IATA. |
+| **Ryanair** | ✅ Probado | API de disponibilidad real de su web. Precio por pasajero, plazas restantes y enlace directo al vuelo. |
+| **Wizz Air** | ✅ Probado | API de su web (`be.wizzair.com`). Necesita el token de verificación que entrega la propia sesión. |
+| **Vuelos** (Amadeus) | ⚠️ Sin usar | Requiere API key. No sirve para Ryanair ni Wizz: las low cost no publican inventario en Amadeus. Se mantiene por si hace falta una aerolínea tradicional. |
 
 ## Instalación
 
@@ -143,7 +145,19 @@ Ejemplos (los campos se separan con `;` porque los nombres llevan espacios):
 /vigilar trenes; Madrid; Valencia; 20/03/2027; ; 30
 /vigilar amadeus; MAD; BCN; 25/03/2027
 ```
-`trenes` = renfe + ouigo + iryo. Hora vacía = cualquier tren.
+`trenes` = renfe + ouigo + iryo. `vuelos` = ryanair + wizz. Hora vacía = cualquier salida.
+
+En vuelos hay un campo más al final, el **número de pasajeros**, y conviene ponerlo:
+en las low cost el precio por persona sube si la tarifa barata ya no tiene asientos
+para todo el grupo, así que buscar para 1 y viajar 2 da un precio que no existe.
+
+```
+/vigilar vuelos; ALC; BTS; 09/10/2026; 09:35; 60; 2
+```
+
+Las vigilancias de vuelo se sondean solas **cada 15 minutos**, no cada 30 segundos:
+Ryanair y Wizz cortan con 429/503 si se les insiste. Además de avisar cuando el
+precio baja del tope, el bot avisa de **cualquier bajada de 3 € o más**.
 
 > Los dos modos comparten la misma watchlist (`watches.json`) y puedes usarlos a la vez.
 
@@ -183,6 +197,41 @@ interactivo aquí (rutas por archivo).
 Guía completa paso a paso: **[DEPLOY_ORACLE.md](DEPLOY_ORACLE.md)**
 (VM gratis para siempre + servicio `systemd` que arranca solo). Los avisos de
 Mac se desactivan en servidor (`MAC_ALERTS=0`); el canal es Telegram.
+
+## El viaje de octubre (Alicante, 8-12 oct 2026)
+
+Hay montado un caso concreto: dos personas, ida y vuelta desde Alicante, **solo
+vuelo directo**, saliendo el 8 a partir de las 20:00 o el 9 a cualquier hora,
+volviendo el 11 a cualquier hora o el 12 aterrizando antes de las 18:00, con un
+tope de 160 € por persona y dos países en el viaje.
+
+- **`rutas.json`** — los itinerarios: tramos de avión, saltos en tren o bus y el día a día.
+- **`configurar_vigilancia.py`** — deja `watches.json` con un tramo por vigilancia.
+- **`actualizar_web.py`** — genera `web/datos.json` reaprovechando los precios que
+  ya consultó el bot (así la web y Telegram dicen exactamente lo mismo).
+- **`monitor.py`** — el vigilante: sondea, avisa por Telegram y republica la web
+  **solo si algún precio ha cambiado**, para no gastar despliegues de Vercel.
+- **`resumen_telegram.py`** — manda el resumen completo con enlaces de compra.
+- **`research/`** — cómo se llegó a esas combinaciones: barrido de las 91 rutas de
+  Ryanair y de los mercados de Wizz desde Alicante, horarios reales, tabla de
+  conexiones por tierra y el cruce con Google Flights para comprobar que no había
+  ninguna aerolínea más barata en directo.
+
+```sh
+./venv/bin/python monitor.py                 # bucle cada 15 min
+./venv/bin/python monitor.py --una-vez       # una pasada
+./venv/bin/python actualizar_web.py --desplegar   # regenerar y publicar la web
+```
+
+### La web
+Panel con las combinaciones, el desglose de cada tramo, el día a día y los botones
+de compra: **https://viaje-octubre.vercel.app** (proyecto `viaje-octubre` en Vercel).
+Es estática: `monitor.py` regenera `web/datos.json` y republica cuando cambia algo.
+
+### Divisas
+Ryanair y Wizz cotizan en la moneda del país **de salida**: un Pardubice→Alicante
+llega en coronas checas y un Budapest→Alicante en forintos. `botviajes/fx.py` lo
+pasa a euros con el cambio oficial diario del BCE, para poder comparar con el tope.
 
 ## Cómo detecta "sin plazas"
 En Renfe un tren puede estar `completo=false` y aun así no poder comprarse: solo

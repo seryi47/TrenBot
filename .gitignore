@@ -11,3 +11,12 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Volcados de investigación: pesan mucho y se regeneran con los scripts
+research/*.json
+!research/*.py
+
+# Enlace local con Vercel
+.vercel/
+web/.vercel/
+.ultimo_desplegado

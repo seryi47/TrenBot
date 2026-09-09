@@ -38,7 +38,7 @@ jobs:
           cache: pip
 
       - name: Instalar dependencias
-        run: pip install requests PyYAML json5
+        run: pip install requests PyYAML json5 curl_cffi
 
       - name: Vigilar en bucle
         env:

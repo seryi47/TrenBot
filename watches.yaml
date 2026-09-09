@@ -3,12 +3,73 @@ alert_interval: 10
 mac_alerts: false
 open_browser: false
 watches:
-- name: Alicante→Albacete 16:55 (Renfe + Ouigo)
+- name: IDA · Alicante→Bratislava (vie 9)
   providers:
-  - renfe
-  - ouigo
-  origin: Alicante
-  destination: Albacete
-  date: '2026-07-31'
-  time: '16:55'
-paused: true
+  - wizz
+  origin: ALC
+  destination: BTS
+  date: '2026-10-09'
+  time: 09:35
+  max_price: 150
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Viena (jue 8, 20:15)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: VIE
+  date: '2026-10-08'
+  time: '20:15'
+  max_price: 120
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Pardubice→Alicante (dom 11)
+  providers:
+  - ryanair
+  origin: PED
+  destination: ALC
+  date: '2026-10-11'
+  time: '22:00'
+  max_price: 40
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Budapest→Alicante (dom 11)
+  providers:
+  - wizz
+  origin: BUD
+  destination: ALC
+  date: '2026-10-11'
+  time: 05:15
+  max_price: 50
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Linz→Alicante (lun 12)
+  providers:
+  - ryanair
+  origin: LNZ
+  destination: ALC
+  date: '2026-10-12'
+  time: '11:45'
+  max_price: 125
+  adults: 2
+  poll_interval: 900
+- name: OJALÁ · Viena→Alicante (dom 11)
+  providers:
+  - ryanair
+  origin: VIE
+  destination: ALC
+  date: '2026-10-11'
+  time: '16:20'
+  max_price: 150
+  adults: 2
+  poll_interval: 900
+- name: OJALÁ · Bratislava→Alicante (lun 12)
+  providers:
+  - wizz
+  origin: BTS
+  destination: ALC
+  date: '2026-10-12'
+  time: 05:40
+  max_price: 105
+  adults: 2
+  poll_interval: 900
