@@ -170,11 +170,17 @@ def handle_text(text, chat_id, engine):
         return "▶️ <b>Vigilando otra vez.</b> Te aviso en cuanto haya plaza.", True
 
     if cmd == "estado":
-        ws = engine.list_watches()
+        ws = [w for w in engine.list_watches() if w.get("enabled", True)]
         estado = "⏸️ en pausa" if engine.paused else "▶️ vigilando"
-        return ("<b>Estado:</b> %s\nRutas: %d\nSondeo: cada %ds\n\n"
-                "%s" % (estado, len(ws), engine.poll_interval,
-                        "/seguir para reanudar" if engine.paused else "/pausa para pararme")), False
+        # Cada ruta puede llevar su propio ritmo (los vuelos van mucho más
+        # despacio que los trenes), así que decir solo el general engaña.
+        ritmos = sorted({int(w.get("poll_interval") or engine.poll_interval) for w in ws})
+        def bonito(s):
+            return "%d min" % (s // 60) if s >= 60 else "%d s" % s
+        return ("<b>Estado:</b> %s\nRutas vigiladas: %d\n"
+                "Sondeo: cada %s\n\n%s"
+                % (estado, len(ws), " y cada ".join(bonito(r) for r in ritmos),
+                   "/seguir para reanudar" if engine.paused else "/pausa para pararme")), False
 
     if cmd == "apagar":
         if rest.strip().lower() not in ("si", "sí", "confirmar"):

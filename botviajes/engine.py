@@ -120,6 +120,8 @@ class Engine:
             watch["serie"] = [list(x) for x in serie]
             if watch.get("ultimo_precio") is None:
                 watch["ultimo_precio"] = serie[-1][1]
+            if not watch.get("ultimo_visto"):
+                watch["ultimo_visto"] = serie[-1][0]
 
     def _guardar_historial(self):
         try:
