@@ -38,9 +38,9 @@
      "llega": "00:05",
      "ref": 97.99,
      "precio": 107.99,
-     "etiqueta": "RK9570 (Ryanair UK) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
-     "plazas": 2,
+     "etiqueta": "RK9570",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-09 21:18",
      "estado": "ok",
      "historico": [
@@ -208,9 +208,9 @@
      "llega": "23:25",
      "ref": 88.99,
      "precio": 133.99,
-     "etiqueta": "FR1356 (Malta Air) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
-     "plazas": 2,
+     "etiqueta": "FR1356",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-09 19:15",
      "estado": "ok",
      "historico": [
@@ -287,11 +287,11 @@
      "sale": "06:30",
      "llega": "09:00",
      "ref": 52.27,
-     "precio": 44.64,
+     "precio": 43.64,
      "etiqueta": "FR9063",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 16:35",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
+     "plazas": -1,
+     "visto": "2026-09-09 22:46",
      "estado": "ok",
      "historico": [
       [
@@ -341,9 +341,13 @@
       [
        "2026-09-09 16:35",
        44.64
+      ],
+      [
+       "2026-09-09 22:46",
+       43.64
       ]
      ],
-     "variacion": -8.63
+     "variacion": -9.63
     }
    ],
    "itinerario": [
@@ -360,8 +364,8 @@
      "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
     }
    ],
-   "total_persona": 178.63,
-   "total_grupo": 357.26,
+   "total_persona": 177.63,
+   "total_grupo": 355.26,
    "ida_fecha": "2026-10-09",
    "ida_hora": "20:45",
    "ida_iata": "CGN",
@@ -482,9 +486,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 48.84,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-09 18:13",
      "estado": "ok",
      "historico": [
@@ -725,9 +729,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 48.84,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-09 18:13",
      "estado": "ok",
      "historico": [
@@ -878,7 +882,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 21:17",
+     "visto": "2026-09-09 22:46",
      "estado": "orientativo",
      "historico": [
       [
@@ -944,9 +948,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 48.84,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-09 18:13",
      "estado": "ok",
      "historico": [
@@ -1180,7 +1184,7 @@
      "ref": 59.99,
      "precio": 65.99,
      "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "url": "",
      "plazas": null,
      "visto": "2026-09-09 18:13",
      "estado": "ok",
@@ -1272,7 +1276,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 21:17",
+     "visto": "2026-09-09 22:46",
      "estado": "orientativo",
      "historico": [
       [
@@ -1330,7 +1334,7 @@
      "ref": 59.99,
      "precio": 65.99,
      "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "url": "",
      "plazas": null,
      "visto": "2026-09-09 18:13",
      "estado": "ok",
@@ -1419,7 +1423,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 21:17",
+     "visto": "2026-09-09 22:46",
      "estado": "orientativo",
      "historico": [
       [
@@ -1485,9 +1489,9 @@
      "llega": "14:25",
      "ref": 82.99,
      "precio": 153.99,
-     "etiqueta": "FR3487 · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 3,
+     "etiqueta": "FR3487",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-09 17:12",
      "estado": "ok",
      "historico": [
@@ -1615,6 +1619,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-09 21:18",
- "actualizado_iso": "2026-09-09T21:18:05.840726+00:00"
+ "actualizado": "2026-09-09 22:46",
+ "actualizado_iso": "2026-09-09T22:46:20.771726+00:00"
 }
