@@ -161,15 +161,9 @@ def main():
             ("%.2f €" % r["precio"]) if r.get("precio") is not None else r.get("detalle", "")))
 
     ahora = datetime.now(timezone.utc).astimezone()
+    # El histórico lo escribe SOLO el motor (botviajes/engine.py). Aquí se lee
+    # y punto: con dos escritores el fichero acababa pisándose a sí mismo.
     historico = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {}
-    for k, r in precios.items():
-        if r.get("precio") is None:
-            continue
-        serie = historico.setdefault(k, [])
-        if not serie or abs(serie[-1][1] - r["precio"]) >= 0.01:
-            serie.append([ahora.strftime("%Y-%m-%d %H:%M"), r["precio"]])
-        del serie[:-60]      # se guardan las últimas 60 lecturas
-    json.dump(historico, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     # Se monta la salida para la web
     opciones = []

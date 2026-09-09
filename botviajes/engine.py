@@ -104,14 +104,22 @@ class Engine:
                     self.historial = json.load(fh)
             except Exception as e:
                 print("[engine] no se pudo leer %s: %s" % (self.historial_file, e))
-        # Se rehidratan las rutas con lo que ya se sabía, para que el aviso de
-        # bajada tenga contexto desde el primer sondeo tras arrancar.
         for w in self.watches:
-            serie = self.historial.get(self.clave_historial(w))
-            if serie:
-                w["serie"] = [list(x) for x in serie]
-                if w.get("ultimo_precio") is None:
-                    w["ultimo_precio"] = serie[-1][1]
+            self._hidratar(w)
+
+    def _hidratar(self, watch):
+        """Le devuelve a una ruta el histórico que ya se conocía.
+
+        Hay que hacerlo también al CREAR la ruta: en la nube no existe
+        watches.json, así que las rutas nacen de watches.yaml DESPUÉS de leer el
+        histórico. Sin esto arrancaban sin memoria y el primer guardado se
+        cargaba todo lo acumulado.
+        """
+        serie = self.historial.get(self.clave_historial(watch))
+        if serie:
+            watch["serie"] = [list(x) for x in serie]
+            if watch.get("ultimo_precio") is None:
+                watch["ultimo_precio"] = serie[-1][1]
 
     def _guardar_historial(self):
         try:
@@ -136,6 +144,7 @@ class Engine:
                 # cortan con 429/503 si se les insiste. 600-1800 s es lo sano.
                 "adults": int(adults or 1), "poll_interval": poll_interval,
             }
+            self._hidratar(watch)
             self.watches.append(watch)
             self._save()
             return watch
