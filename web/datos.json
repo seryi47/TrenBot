@@ -38,18 +38,66 @@
      "llega": "00:05",
      "ref": 97.99,
      "precio": 122.99,
-     "etiqueta": "RK9570 (Ryanair UK) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
-     "plazas": 2,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "RK9570",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-08 12:39",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 22:54",
+       97.99
+      ],
+      [
+       "2026-09-04 01:57",
+       93.99
+      ],
+      [
+       "2026-09-04 10:10",
+       92.99
+      ],
+      [
+       "2026-09-04 17:09",
+       105.99
+      ],
+      [
+       "2026-09-05 09:14",
+       104.99
+      ],
+      [
+       "2026-09-05 16:01",
+       103.99
+      ],
+      [
+       "2026-09-05 17:17",
+       102.99
+      ],
+      [
+       "2026-09-06 11:58",
+       99.99
+      ],
+      [
+       "2026-09-06 13:14",
+       98.99
+      ],
+      [
+       "2026-09-06 20:52",
+       102.99
+      ],
+      [
+       "2026-09-07 12:39",
+       118.99
+      ],
+      [
+       "2026-09-07 18:13",
+       120.99
+      ],
+      [
+       "2026-09-08 12:39",
        122.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 25.0
     },
     {
      "tipo": "tierra",
@@ -75,13 +123,13 @@
      "ref": 29.99,
      "precio": 29.99,
      "etiqueta": "FR261",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=DUB&destinationIata=ALC",
-     "plazas": -1,
-     "visto": "2026-09-09 09:09",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-03 22:54",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 22:54",
        29.99
       ]
      ],
@@ -152,18 +200,54 @@
      "llega": "08:55",
      "ref": 95.19,
      "precio": 132.72,
-     "etiqueta": "FR9877 · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": 3,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "FR9877",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 08:40",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 22:54",
+       95.19
+      ],
+      [
+       "2026-09-04 21:38",
+       96.19
+      ],
+      [
+       "2026-09-05 09:14",
+       92.19
+      ],
+      [
+       "2026-09-06 11:58",
+       93.99
+      ],
+      [
+       "2026-09-06 20:07",
+       102.74
+      ],
+      [
+       "2026-09-07 10:26",
+       145.89
+      ],
+      [
+       "2026-09-07 14:40",
+       160.14
+      ],
+      [
+       "2026-09-07 22:49",
+       148.39
+      ],
+      [
+       "2026-09-07 23:02",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
        132.72
       ]
      ],
-     "variacion": 0.0
+     "variacion": 37.53
     },
     {
      "tipo": "tierra",
@@ -188,18 +272,82 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 50.0,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 09:01",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       50.89
+      ],
+      [
+       "2026-09-03 20:09",
+       49.9
+      ],
+      [
+       "2026-09-03 20:24",
+       50.89
+      ],
+      [
+       "2026-09-04 10:10",
+       49.9
+      ],
+      [
+       "2026-09-04 17:09",
+       49.92
+      ],
+      [
+       "2026-09-04 20:11",
+       51.91
+      ],
+      [
+       "2026-09-05 16:01",
+       54.91
+      ],
+      [
+       "2026-09-06 11:58",
+       53.91
+      ],
+      [
+       "2026-09-06 19:21",
+       52.91
+      ],
+      [
+       "2026-09-07 10:26",
+       51.91
+      ],
+      [
+       "2026-09-07 12:39",
+       50.91
+      ],
+      [
+       "2026-09-07 16:11",
+       50.96
+      ],
+      [
+       "2026-09-07 16:57",
+       50.94
+      ],
+      [
+       "2026-09-08 12:39",
+       51.94
+      ],
+      [
+       "2026-09-08 16:07",
+       51.97
+      ],
+      [
+       "2026-09-08 20:09",
+       51.0
+      ],
+      [
+       "2026-09-09 09:01",
        50.0
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.89
     }
    ],
    "itinerario": [
@@ -262,18 +410,58 @@
      "llega": "23:25",
      "ref": 88.99,
      "precio": 132.99,
-     "etiqueta": "FR1356 (Malta Air) · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
-     "plazas": 3,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "FR1356",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 09:01",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 22:54",
+       88.99
+      ],
+      [
+       "2026-09-04 10:10",
+       89.99
+      ],
+      [
+       "2026-09-04 17:09",
+       120.99
+      ],
+      [
+       "2026-09-05 09:14",
+       119.99
+      ],
+      [
+       "2026-09-06 11:58",
+       121.99
+      ],
+      [
+       "2026-09-07 12:39",
+       140.99
+      ],
+      [
+       "2026-09-07 22:48",
+       136.99
+      ],
+      [
+       "2026-09-08 12:39",
+       133.99
+      ],
+      [
+       "2026-09-08 13:20",
+       132.99
+      ],
+      [
+       "2026-09-08 17:23",
+       131.99
+      ],
+      [
+       "2026-09-09 09:01",
        132.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 44.0
     },
     {
      "tipo": "tierra",
@@ -299,17 +487,57 @@
      "ref": 52.27,
      "precio": 52.51,
      "etiqueta": "FR9063",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": -1,
-     "visto": "2026-09-09 09:09",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 08:40",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 22:54",
+       53.27
+      ],
+      [
+       "2026-09-04 10:10",
+       54.03
+      ],
+      [
+       "2026-09-04 17:09",
+       62.59
+      ],
+      [
+       "2026-09-04 22:54",
+       61.59
+      ],
+      [
+       "2026-09-05 09:14",
+       53.03
+      ],
+      [
+       "2026-09-06 11:58",
+       54.03
+      ],
+      [
+       "2026-09-06 14:42",
+       62.59
+      ],
+      [
+       "2026-09-06 19:21",
+       72.03
+      ],
+      [
+       "2026-09-07 10:26",
+       62.59
+      ],
+      [
+       "2026-09-08 16:07",
+       54.03
+      ],
+      [
+       "2026-09-09 08:40",
        52.51
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.76
     }
    ],
    "itinerario": [
@@ -371,19 +599,67 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 145.51,
-     "etiqueta": "FR1568 (Lauda Europe) · 4 plazas",
+     "precio": 159.96,
+     "etiqueta": "FR1568 (Lauda Europe)",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 4,
-     "visto": "2026-09-09 09:09",
+     "plazas": -1,
+     "visto": "2026-09-09 09:37",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       96.19
+      ],
+      [
+       "2026-09-03 22:56",
+       95.19
+      ],
+      [
+       "2026-09-04 10:10",
+       106.56
+      ],
+      [
+       "2026-09-05 09:14",
+       107.83
+      ],
+      [
+       "2026-09-07 10:26",
+       129.76
+      ],
+      [
+       "2026-09-07 16:57",
+       144.22
+      ],
+      [
+       "2026-09-07 22:48",
+       133.72
+      ],
+      [
+       "2026-09-07 23:09",
+       132.72
+      ],
+      [
+       "2026-09-07 23:24",
+       133.72
+      ],
+      [
+       "2026-09-08 12:39",
+       148.39
+      ],
+      [
+       "2026-09-08 23:18",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
        145.51
+      ],
+      [
+       "2026-09-09 09:37",
+       159.96
       ]
      ],
-     "variacion": 0.0
+     "variacion": 63.77
     },
     {
      "tipo": "tierra",
@@ -417,18 +693,82 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 50.0,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 09:01",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       50.89
+      ],
+      [
+       "2026-09-03 20:09",
+       49.9
+      ],
+      [
+       "2026-09-03 20:24",
+       50.89
+      ],
+      [
+       "2026-09-04 10:10",
+       49.9
+      ],
+      [
+       "2026-09-04 17:09",
+       49.92
+      ],
+      [
+       "2026-09-04 20:11",
+       51.91
+      ],
+      [
+       "2026-09-05 16:01",
+       54.91
+      ],
+      [
+       "2026-09-06 11:58",
+       53.91
+      ],
+      [
+       "2026-09-06 19:21",
+       52.91
+      ],
+      [
+       "2026-09-07 10:26",
+       51.91
+      ],
+      [
+       "2026-09-07 12:39",
+       50.91
+      ],
+      [
+       "2026-09-07 16:11",
+       50.96
+      ],
+      [
+       "2026-09-07 16:57",
+       50.94
+      ],
+      [
+       "2026-09-08 12:39",
+       51.94
+      ],
+      [
+       "2026-09-08 16:07",
+       51.97
+      ],
+      [
+       "2026-09-08 20:09",
+       51.0
+      ],
+      [
+       "2026-09-09 09:01",
        50.0
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.89
     }
    ],
    "itinerario": [
@@ -449,8 +789,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 195.51,
-   "total_grupo": 391.02,
+   "total_persona": 209.96,
+   "total_grupo": 419.92,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -494,19 +834,67 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 145.51,
-     "etiqueta": "FR1568 (Lauda Europe) · 4 plazas",
+     "precio": 159.96,
+     "etiqueta": "FR1568 (Lauda Europe)",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 4,
-     "visto": "2026-09-09 09:09",
+     "plazas": -1,
+     "visto": "2026-09-09 09:37",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       96.19
+      ],
+      [
+       "2026-09-03 22:56",
+       95.19
+      ],
+      [
+       "2026-09-04 10:10",
+       106.56
+      ],
+      [
+       "2026-09-05 09:14",
+       107.83
+      ],
+      [
+       "2026-09-07 10:26",
+       129.76
+      ],
+      [
+       "2026-09-07 16:57",
+       144.22
+      ],
+      [
+       "2026-09-07 22:48",
+       133.72
+      ],
+      [
+       "2026-09-07 23:09",
+       132.72
+      ],
+      [
+       "2026-09-07 23:24",
+       133.72
+      ],
+      [
+       "2026-09-08 12:39",
+       148.39
+      ],
+      [
+       "2026-09-08 23:18",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
        145.51
+      ],
+      [
+       "2026-09-09 09:37",
+       159.96
       ]
      ],
-     "variacion": 0.0
+     "variacion": 63.77
     },
     {
      "tipo": "tierra",
@@ -532,13 +920,21 @@
      "ref": 59.99,
      "precio": 59.99,
      "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "url": "",
      "plazas": null,
-     "visto": "2026-09-09 09:09",
+     "visto": "2026-09-09 08:40",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       59.99
+      ],
+      [
+       "2026-09-08 18:08",
+       54.89
+      ],
+      [
+       "2026-09-09 08:40",
        59.99
       ]
      ],
@@ -563,8 +959,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 205.5,
-   "total_grupo": 411.0,
+   "total_persona": 219.95,
+   "total_grupo": 439.9,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -609,10 +1005,11 @@
      "llega": "12:25",
      "ref": 65.99,
      "precio": 170.99,
-     "etiqueta": "W6 · precio orientativo",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
+     "etiqueta": "W6",
+     "url": "",
      "plazas": null,
-     "estado": "orientativo",
+     "visto": "2026-09-09 10:32",
+     "estado": "ok",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -677,18 +1074,82 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 50.0,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 09:01",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       50.89
+      ],
+      [
+       "2026-09-03 20:09",
+       49.9
+      ],
+      [
+       "2026-09-03 20:24",
+       50.89
+      ],
+      [
+       "2026-09-04 10:10",
+       49.9
+      ],
+      [
+       "2026-09-04 17:09",
+       49.92
+      ],
+      [
+       "2026-09-04 20:11",
+       51.91
+      ],
+      [
+       "2026-09-05 16:01",
+       54.91
+      ],
+      [
+       "2026-09-06 11:58",
+       53.91
+      ],
+      [
+       "2026-09-06 19:21",
+       52.91
+      ],
+      [
+       "2026-09-07 10:26",
+       51.91
+      ],
+      [
+       "2026-09-07 12:39",
+       50.91
+      ],
+      [
+       "2026-09-07 16:11",
+       50.96
+      ],
+      [
+       "2026-09-07 16:57",
+       50.94
+      ],
+      [
+       "2026-09-08 12:39",
+       51.94
+      ],
+      [
+       "2026-09-08 16:07",
+       51.97
+      ],
+      [
+       "2026-09-08 20:09",
+       51.0
+      ],
+      [
+       "2026-09-09 09:01",
        50.0
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.89
     }
    ],
    "itinerario": [
@@ -705,7 +1166,6 @@
      "texto": "Día completo en Praga, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "tiene_orientativo": true,
    "total_persona": 220.99,
    "total_grupo": 441.98,
    "ida_fecha": "2026-10-09",
@@ -752,10 +1212,11 @@
      "llega": "12:25",
      "ref": 65.99,
      "precio": 170.99,
-     "etiqueta": "W6 · precio orientativo",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
+     "etiqueta": "W6",
+     "url": "",
      "plazas": null,
-     "estado": "orientativo",
+     "visto": "2026-09-09 10:32",
+     "estado": "ok",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -812,13 +1273,21 @@
      "ref": 59.99,
      "precio": 59.99,
      "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "url": "",
      "plazas": null,
-     "visto": "2026-09-09 09:09",
+     "visto": "2026-09-09 08:40",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       59.99
+      ],
+      [
+       "2026-09-08 18:08",
+       54.89
+      ],
+      [
+       "2026-09-09 08:40",
        59.99
       ]
      ],
@@ -839,7 +1308,6 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30, con el domingo por delante."
     }
    ],
-   "tiene_orientativo": true,
    "total_persona": 230.98,
    "total_grupo": 461.96,
    "ida_fecha": "2026-10-09",
@@ -886,10 +1354,11 @@
      "llega": "12:25",
      "ref": 65.99,
      "precio": 170.99,
-     "etiqueta": "W6 · precio orientativo",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
+     "etiqueta": "W6",
+     "url": "",
      "plazas": null,
-     "estado": "orientativo",
+     "visto": "2026-09-09 10:32",
+     "estado": "ok",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -954,18 +1423,86 @@
      "llega": "14:25",
      "ref": 82.99,
      "precio": 147.99,
-     "etiqueta": "FR3487 · 4 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 4,
-     "visto": "2026-09-09 09:09",
+     "etiqueta": "FR3487",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-09 10:32",
      "estado": "ok",
      "historico": [
       [
-       "2026-09-09 09:09",
+       "2026-09-03 19:44",
+       82.99
+      ],
+      [
+       "2026-09-04 10:10",
+       81.99
+      ],
+      [
+       "2026-09-04 17:09",
+       77.99
+      ],
+      [
+       "2026-09-04 20:11",
+       76.99
+      ],
+      [
+       "2026-09-05 09:14",
+       75.99
+      ],
+      [
+       "2026-09-05 16:16",
+       74.99
+      ],
+      [
+       "2026-09-06 11:58",
+       95.99
+      ],
+      [
+       "2026-09-06 12:28",
+       99.99
+      ],
+      [
+       "2026-09-06 12:44",
+       104.99
+      ],
+      [
+       "2026-09-06 19:21",
+       103.99
+      ],
+      [
+       "2026-09-07 10:26",
+       142.99
+      ],
+      [
+       "2026-09-07 12:39",
+       148.99
+      ],
+      [
+       "2026-09-07 20:05",
+       149.99
+      ],
+      [
+       "2026-09-08 12:39",
+       150.99
+      ],
+      [
+       "2026-09-08 16:07",
+       151.99
+      ],
+      [
+       "2026-09-09 09:01",
+       147.99
+      ],
+      [
+       "2026-09-09 09:26",
+       152.99
+      ],
+      [
+       "2026-09-09 10:32",
        147.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 65.0
     }
    ],
    "itinerario": [
@@ -986,7 +1523,6 @@
      "texto": "Tren temprano a Linz (1h20) y vuelo a las 11:45. En Alicante a las 14:25."
     }
    ],
-   "tiene_orientativo": true,
    "total_persona": 318.98,
    "total_grupo": 637.96,
    "ida_fecha": "2026-10-09",
@@ -1008,6 +1544,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-09 09:10",
- "actualizado_iso": "2026-09-09T09:10:01.689184+00:00"
+ "actualizado": "2026-09-09 09:37",
+ "actualizado_iso": "2026-09-09T09:37:11.996768+00:00"
 }
