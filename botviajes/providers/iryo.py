@@ -18,7 +18,7 @@ from botviajes.providers.base import Provider
 class IryoProvider(Provider):
     name = "iryo"
 
-    def search(self, origin, destination, date) -> List[Offer]:
+    def search(self, origin, destination, date, adults=1) -> List[Offer]:
         # TODO: implementar contra el backend real de iryo.eu.
         raise NotImplementedError(
             "Iryo aún no está implementado. Ver README → 'Añadir un proveedor'."

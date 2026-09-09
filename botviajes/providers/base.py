@@ -24,8 +24,14 @@ class Provider:
 
     name = "base"
 
-    def search(self, origin: str, destination: str, date: str) -> List[Offer]:
-        """Busca ofertas. `date` en formato YYYY-MM-DD. Devuelve lista de Offer."""
+    def search(self, origin: str, destination: str, date: str,
+               adults: int = 1) -> List[Offer]:
+        """Busca ofertas. `date` en formato YYYY-MM-DD. Devuelve lista de Offer.
+
+        `adults` solo lo usan los proveedores de vuelo: en las aerolineas de bajo
+        coste el precio por persona sube si la tarifa barata ya no tiene asientos
+        para todo el grupo, asi que buscar para 1 y viajar 2 da un precio irreal.
+        """
         raise NotImplementedError
 
     # Utilidades comunes -----------------------------------------------------

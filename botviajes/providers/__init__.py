@@ -4,6 +4,8 @@ from botviajes.providers.amadeus import AmadeusProvider
 from botviajes.providers.iryo import IryoProvider
 from botviajes.providers.ouigo import OuigoProvider
 from botviajes.providers.renfe import RenfeProvider
+from botviajes.providers.ryanair import RyanairProvider
+from botviajes.providers.wizz import WizzProvider
 
 # Instancias perezosas (se crean al primer uso para no cargar datos de más).
 _REGISTRY = {}
@@ -12,6 +14,8 @@ _CLASSES = {
     "ouigo": OuigoProvider,
     "iryo": IryoProvider,
     "amadeus": AmadeusProvider,
+    "ryanair": RyanairProvider,
+    "wizz": WizzProvider,
 }
 
 ALL = list(_CLASSES.keys())

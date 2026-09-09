@@ -50,7 +50,7 @@ class AmadeusProvider(Provider):
         self._token_exp = time.time() + int(data.get("expires_in", 1799))
         return self._token
 
-    def search(self, origin, destination, date) -> List[Offer]:
+    def search(self, origin, destination, date, adults=1) -> List[Offer]:
         if not self.key or not self.secret:
             print("  [amadeus] sin credenciales (AMADEUS_API_KEY/SECRET). Se omite.")
             return []

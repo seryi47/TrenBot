@@ -1,0 +1,462 @@
+{
+"ABZ": {
+"name": "Aberdeen",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"ACE": {
+"name": "Lanzarote",
+"country": "España",
+"cc": "es"
+},
+"ARN": {
+"name": "Stockholm Arlanda",
+"country": "Suecia",
+"cc": "se"
+},
+"BER": {
+"name": "Berlin Brandenburg",
+"country": "Alemania",
+"cc": "de"
+},
+"BFS": {
+"name": "Internacional de Belfast",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"BGY": {
+"name": "Milán Bérgamo",
+"country": "Italia",
+"cc": "it"
+},
+"BHX": {
+"name": "Birmingham",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"BLQ": {
+"name": "Bolonia",
+"country": "Italia",
+"cc": "it"
+},
+"BOH": {
+"name": "Bournemouth",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"BRE": {
+"name": "Bremen",
+"country": "Alemania",
+"cc": "de"
+},
+"BRI": {
+"name": "Bari",
+"country": "Italia",
+"cc": "it"
+},
+"BRS": {
+"name": "Bristol",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"BTS": {
+"name": "Bratislava",
+"country": "Eslovaquia",
+"cc": "sk"
+},
+"BUD": {
+"name": "Budapest",
+"country": "Hungría",
+"cc": "hu"
+},
+"BVA": {
+"name": "París Beauvais",
+"country": "Francia",
+"cc": "fr"
+},
+"BZG": {
+"name": "Bydgoszcz",
+"country": "Polonia",
+"cc": "pl"
+},
+"CGN": {
+"name": "Colonia",
+"country": "Alemania",
+"cc": "de"
+},
+"CPH": {
+"name": "Copenhague",
+"country": "Dinamarca",
+"cc": "dk"
+},
+"CRL": {
+"name": "Bruselas Charleroi",
+"country": "Bélgica",
+"cc": "be"
+},
+"CTA": {
+"name": "Catania",
+"country": "Italia",
+"cc": "it"
+},
+"CWL": {
+"name": "Cardiff",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"DUB": {
+"name": "Dublín",
+"country": "Irlanda",
+"cc": "ie"
+},
+"EDI": {
+"name": "Edimburgo",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"EIN": {
+"name": "Eindhoven",
+"country": "Países Bajos",
+"cc": "nl"
+},
+"EMA": {
+"name": "East Midlands",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"EXT": {
+"name": "Exeter",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"FCO": {
+"name": "Roma Fiumicino",
+"country": "Italia",
+"cc": "it"
+},
+"FDH": {
+"name": "Friedrichshafen",
+"country": "Alemania",
+"cc": "de"
+},
+"FEZ": {
+"name": "Fez",
+"country": "Marruecos",
+"cc": "ma"
+},
+"FKB": {
+"name": "Karlsruhe / Baden-Baden",
+"country": "Alemania",
+"cc": "de"
+},
+"FMM": {
+"name": "Memmingen (Munich West)",
+"country": "Alemania",
+"cc": "de"
+},
+"FMO": {
+"name": "Münster",
+"country": "Alemania",
+"cc": "de"
+},
+"GDN": {
+"name": "Gdansk",
+"country": "Polonia",
+"cc": "pl"
+},
+"GLA": {
+"name": "Glasgow",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"GOT": {
+"name": "Gotemburgo-Landvetter",
+"country": "Suecia",
+"cc": "se"
+},
+"HAM": {
+"name": "Hamburg",
+"country": "Alemania",
+"cc": "de"
+},
+"HEL": {
+"name": "Helsinki",
+"country": "Finlandia",
+"cc": "fi"
+},
+"HHN": {
+"name": "Fráncfort Hahn",
+"country": "Alemania",
+"cc": "de"
+},
+"IBZ": {
+"name": "Ibiza",
+"country": "España",
+"cc": "es"
+},
+"KIR": {
+"name": "Kerry",
+"country": "Irlanda",
+"cc": "ie"
+},
+"KRK": {
+"name": "Cracovia",
+"country": "Polonia",
+"cc": "pl"
+},
+"KTW": {
+"name": "Katowice",
+"country": "Polonia",
+"cc": "pl"
+},
+"KUN": {
+"name": "Kaunas",
+"country": "Lituania",
+"cc": "lt"
+},
+"LBA": {
+"name": "Leeds Bradford",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"LCJ": {
+"name": "Lodz",
+"country": "Polonia",
+"cc": "pl"
+},
+"LGW": {
+"name": "Londres Gatwick",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"LIS": {
+"name": "Lisbon",
+"country": "Portugal",
+"cc": "pt"
+},
+"LNZ": {
+"name": "Linz",
+"country": "Austria",
+"cc": "at"
+},
+"LPL": {
+"name": "Liverpool",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"LTN": {
+"name": "Londres Luton",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"MAH": {
+"name": "Menorca",
+"country": "España",
+"cc": "es"
+},
+"MAN": {
+"name": "Manchester",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"MME": {
+"name": "Teesside",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"MRS": {
+"name": "Marsella",
+"country": "Francia",
+"cc": "fr"
+},
+"MXP": {
+"name": "Milán Malpensa",
+"country": "Italia",
+"cc": "it"
+},
+"NCL": {
+"name": "Newcastle",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"NOC": {
+"name": "Knock Oeste de Irlanda",
+"country": "Irlanda",
+"cc": "ie"
+},
+"NQY": {
+"name": "Newquay Cornwall",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"NRN": {
+"name": "Düsseldorf Weeze",
+"country": "Alemania",
+"cc": "de"
+},
+"NUE": {
+"name": "Nuremberg",
+"country": "Alemania",
+"cc": "de"
+},
+"NWI": {
+"name": "Norwich",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"OPO": {
+"name": "Oporto",
+"country": "Portugal",
+"cc": "pt"
+},
+"ORK": {
+"name": "Cork",
+"country": "Irlanda",
+"cc": "ie"
+},
+"PAD": {
+"name": "Paderborn",
+"country": "Alemania",
+"cc": "de"
+},
+"PED": {
+"name": "Pardubice",
+"country": "República Checa",
+"cc": "cz"
+},
+"PIK": {
+"name": "Glasgow Prestwick",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"PMI": {
+"name": "Palma",
+"country": "España",
+"cc": "es"
+},
+"POZ": {
+"name": "Poznan",
+"country": "Polonia",
+"cc": "pl"
+},
+"RAK": {
+"name": "Marrakech",
+"country": "Marruecos",
+"cc": "ma"
+},
+"RZE": {
+"name": "Rzeszow",
+"country": "Polonia",
+"cc": "pl"
+},
+"SCN": {
+"name": "Saarbrücken",
+"country": "Alemania",
+"cc": "de"
+},
+"SCQ": {
+"name": "Santiago",
+"country": "España",
+"cc": "es"
+},
+"SNN": {
+"name": "Shannon",
+"country": "Irlanda",
+"cc": "ie"
+},
+"SOF": {
+"name": "Sofía",
+"country": "Bulgaria",
+"cc": "bg"
+},
+"STN": {
+"name": "Londres Stansted",
+"country": "Reino Unido",
+"cc": "gb"
+},
+"SVQ": {
+"name": "Sevilla",
+"country": "España",
+"cc": "es"
+},
+"SZG": {
+"name": "Salzburgo",
+"country": "Austria",
+"cc": "at"
+},
+"TLS": {
+"name": "Toulouse",
+"country": "Francia",
+"cc": "fr"
+},
+"TRF": {
+"name": "Oslo Torp",
+"country": "Noruega",
+"cc": "no"
+},
+"TRN": {
+"name": "Turín",
+"country": "Italia",
+"cc": "it"
+},
+"TSF": {
+"name": "Venecia Treviso",
+"country": "Italia",
+"cc": "it"
+},
+"TTU": {
+"name": "Tétouan",
+"country": "Marruecos",
+"cc": "ma"
+},
+"VCE": {
+"name": "Venecia M. Polo",
+"country": "Italia",
+"cc": "it"
+},
+"VIE": {
+"name": "Viena",
+"country": "Austria",
+"cc": "at"
+},
+"VIT": {
+"name": "Vitoria",
+"country": "España",
+"cc": "es"
+},
+"VST": {
+"name": "Estocolmo-Västerås",
+"country": "Suecia",
+"cc": "se"
+},
+"VXO": {
+"name": "Växjö-Småland",
+"country": "Suecia",
+"cc": "se"
+},
+"WAW": {
+"name": "Varsovia Chopin",
+"country": "Polonia",
+"cc": "pl"
+},
+"WMI": {
+"name": "Varsovia Modlin",
+"country": "Polonia",
+"cc": "pl"
+},
+"WRO": {
+"name": "Wroclaw",
+"country": "Polonia",
+"cc": "pl"
+},
+"ZAG": {
+"name": "Zagreb",
+"country": "Croacia",
+"cc": "hr"
+},
+"ALC": {
+"name": "Alicante",
+"country": "España",
+"cc": "es"
+}
+}

@@ -2,3 +2,6 @@ requests>=2.31
 json5>=0.9
 PyYAML>=6.0
 pyTelegramBotAPI>=4.0
+# Necesario para Ryanair y Wizz: imita el TLS de Chrome,
+# sin él sus APIs cortan la conexión.
+curl_cffi>=0.7

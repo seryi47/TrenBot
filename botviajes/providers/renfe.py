@@ -86,7 +86,7 @@ class RenfeProvider(Provider):
             code_getter=lambda s: s.get("cdgoEstacion", ""),
         )
 
-    def search(self, origin, destination, date) -> List[Offer]:
+    def search(self, origin, destination, date, adults=1) -> List[Offer]:
         o_name, o_code = self.resolve(origin)
         d_name, d_code = self.resolve(destination)
         if not o_code or not d_code:
