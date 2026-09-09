@@ -13,6 +13,9 @@ Devuelve el precio POR PASAJERO de la tarifa estándar, ya con tasas, sin
 maleta facturada ni asiento elegido.
 """
 
+import json
+import os
+import re
 from typing import List
 
 from curl_cffi import requests as cr
@@ -26,7 +29,13 @@ HOME = "https://www.ryanair.com/es/es"
 COMPRA = ("https://www.ryanair.com/es/es/trip/flights/select?adults=%d&teens=0&children=0"
           "&infants=0&dateOut=%s&isConnectedFlight=false&discount=0&isReturn=false"
           "&originIata=%s&destinationIata=%s")
-CLIENT_VERSION = "3.213.0"
+# Ryanair exige la versión EXACTA de su app web en la cabecera client-version:
+# cualquier otra (más alta, más baja o ausente) responde 409. Y la suben cada
+# pocos días, así que no se puede dejar escrita a fuego: se lee de su web y se
+# guarda en caché.
+VERSION_POR_DEFECTO = "3.213.1"
+CACHE_VERSION = "ryanair_version.json"
+PAGINA_RESERVA = "https://www.ryanair.com/es/es/trip/flights/select"
 
 
 class RyanairProvider(Provider):
@@ -35,6 +44,47 @@ class RyanairProvider(Provider):
     def __init__(self):
         self._est = self.load_json("ryanair_stations.json")
         self._sess = None
+        self._version = self._cargar_version()
+
+    # ---- versión del cliente ------------------------------------------------
+    @staticmethod
+    def _ruta_cache():
+        from botviajes.providers.base import DATA_DIR
+        return os.path.join(DATA_DIR, CACHE_VERSION)
+
+    def _cargar_version(self):
+        try:
+            with open(self._ruta_cache(), encoding="utf-8") as fh:
+                return json.load(fh).get("client_version") or VERSION_POR_DEFECTO
+        except Exception:
+            return VERSION_POR_DEFECTO
+
+    def _guardar_version(self, v):
+        try:
+            with open(self._ruta_cache(), "w", encoding="utf-8") as fh:
+                json.dump({"client_version": v}, fh)
+        except Exception:
+            pass
+
+    def _detectar_version(self):
+        """Lee la versión de la propia web de Ryanair.
+
+        La página de selección de vuelos la deja en un comentario del HTML:
+            <!-- Desktop version: 3.213.1 -->
+        Son 3 KB, así que sale barato comprobarlo cuando hace falta.
+        """
+        try:
+            r = cr.get(PAGINA_RESERVA, impersonate="chrome", timeout=25,
+                       headers={"Accept-Language": "es-ES"})
+            m = re.search(r"Desktop version:\s*(\d+\.\d+\.\d+)", r.text)
+            if m and m.group(1) != self._version:
+                print("  [ryanair] client-version %s -> %s" % (self._version, m.group(1)))
+                self._version = m.group(1)
+                self._guardar_version(self._version)
+                return True
+        except Exception as e:
+            print("  [ryanair] no pude leer la versión: %s" % e)
+        return False
 
     # ---- utilidades ---------------------------------------------------------
     def resolve(self, query):
@@ -55,7 +105,7 @@ class RyanairProvider(Provider):
                 "Accept": "application/json, text/plain, */*",
                 "Accept-Language": "es-ES",
                 "client": "desktop",              # sin esto -> 409
-                "client-version": CLIENT_VERSION,  # sin esto -> 409
+                "client-version": self._version,   # tiene que ser la exacta
                 "Referer": HOME,
             })
             try:
@@ -80,7 +130,10 @@ class RyanairProvider(Provider):
                   "ToUs": "AGREED", "Disc": 0}
         s = self._session()
         r = s.get(AVAIL, params=params, timeout=40)
-        if r.status_code == 409:      # sesión caducada: se rehace una vez
+        if r.status_code == 409:
+            # 409 = o la sesión caducó, o Ryanair ha subido su client-version.
+            # Se comprueba lo segundo antes de darse por vencido.
+            self._detectar_version()
             self._sess = None
             r = self._session().get(AVAIL, params=params, timeout=40)
         if r.status_code != 200:

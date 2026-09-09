@@ -53,14 +53,25 @@ def main():
     load_env()
     reales = json.load(open(os.path.join(RAIZ, "watches.json"), encoding="utf-8"))
     base = [w for w in reales if w.get("enabled", True) and w["providers"] == ["ryanair"]][0]
-    print("Ruta de prueba: %s  (precio real ahora: %.2f €)\n"
-          % (base["name"], base["ultimo_precio"]))
+
+    # El precio se consulta AHORA, no se coge el guardado: entre una cosa y otra
+    # la aerolínea puede haberlo cambiado y el test fallaría sin haber ningún
+    # fallo real (ya pasó una vez).
+    from botviajes.providers import get_provider
+    ofertas = [o for o in get_provider("ryanair").search(
+        base["origin"], base["destination"], base["date"],
+        adults=base.get("adults", 1)) if o.departure == base.get("time")]
+    if not ofertas:
+        print("No hay oferta para %s ahora mismo; no se puede probar." % base["name"])
+        return 1
+    precio_real = ofertas[0].price
+    print("Ruta de prueba: %s  (precio real ahora: %.2f €)\n" % (base["name"], precio_real))
 
     fallos = []
 
     # --- 1. BAJADA: se finge que la última vez costaba 40 € más -------------
     w = copy.deepcopy(base)
-    w["ultimo_precio"] = base["ultimo_precio"] + 40
+    w["ultimo_precio"] = precio_real + 40
     w["max_price"] = 1          # imposible: así no se mezcla con el otro aviso
     motor, cap, tmp = motor_de_prueba([w])
     _, _, aviso = motor.revisar(motor.watches[0])
@@ -70,7 +81,7 @@ def main():
     CABECERAS = ("PRECIO MÍNIMO", "Ha bajado")
     ok = (aviso is not None
           and any(c in aviso for c in CABECERAS)
-          and "%.2f" % base["ultimo_precio"] in aviso        # el precio de ahora
+          and "%.2f" % precio_real in aviso                  # el precio de ahora
           and "Sale de" in aviso and "Llega a" in aviso)      # y las horas
     print("1) Aviso de BAJADA .............. %s" % ("OK" if ok else "FALLA"))
     if not ok and aviso:
@@ -84,7 +95,7 @@ def main():
 
     # --- 2. SUBIDA: no debe avisar ------------------------------------------
     w = copy.deepcopy(base)
-    w["ultimo_precio"] = base["ultimo_precio"] - 40      # antes era más barato
+    w["ultimo_precio"] = precio_real - 40      # antes era más barato
     w["max_price"] = 1
     motor, cap, tmp = motor_de_prueba([w])
     _, _, aviso = motor.revisar(motor.watches[0])
@@ -96,7 +107,7 @@ def main():
 
     # --- 3. OBJETIVO alcanzado ----------------------------------------------
     w = copy.deepcopy(base)
-    w["max_price"] = base["ultimo_precio"] + 10          # el precio ya lo cumple
+    w["max_price"] = precio_real + 10                    # el precio ya lo cumple
     w.pop("ultimo_precio", None)
     motor, cap, tmp = motor_de_prueba([w])
     n = motor.check_once()
