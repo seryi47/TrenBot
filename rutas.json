@@ -1,0 +1,579 @@
+{
+ "viaje": {
+  "titulo": "Puente de octubre — Alicante y vuelta",
+  "pasajeros": 2,
+  "tope_por_persona": 160,
+  "reglas": [
+   "Ida: el 8 de octubre a partir de las 20:00, o el 9 a cualquier hora",
+   "Vuelta: el 11 a cualquier hora, o el 12 aterrizando en Alicante antes de las 18:00",
+   "Máximo 160 € por persona sumando ida y vuelta",
+   "Ida y vuelta SIN escalas",
+   "Dos países, con al menos un día para el segundo"
+  ]
+ },
+ "opciones": [
+  {
+   "id": "bratislava-praga",
+   "titulo": "Bratislava + Praga",
+   "subtitulo": "La más barata de todas",
+   "paises": [
+    "Eslovaquia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "La combinación más económica que cumple todo. Bratislava y Praga están a 4 h de autobús directo, y de Praga a Pardubice hay 1 h de tren.",
+   "aviso": "El vuelo de vuelta sale el domingo a las 22:00 y aterriza en Alicante a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "09:35",
+     "llega": "12:25",
+     "ref": 65.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Praga",
+     "como": "Autobús directo RegioJet",
+     "duracion": "4 h 05 min",
+     "coste": "20-25 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Praga",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo (ČD / RegioJet)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "En Bratislava a las 12:25, con la tarde entera para el casco viejo y el castillo."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Autobús a Praga por la mañana (4h). Tarde y noche en Praga."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Día completo en Praga, tren a Pardubice (1h) y vuelo a las 22:00."
+    }
+   ]
+  },
+  {
+   "id": "bratislava-budapest",
+   "titulo": "Bratislava + Budapest",
+   "subtitulo": "Dos capitales a 2h20 de tren",
+   "paises": [
+    "Eslovaquia",
+    "Hungría"
+   ],
+   "noches": 2,
+   "por_que": "La conexión por tierra más cómoda de la lista: tren directo Bratislava-Budapest en 2h20.",
+   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "09:35",
+     "llega": "12:25",
+     "ref": 65.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Budapest",
+     "como": "Tren directo (RegioJet / MÁV)",
+     "duracion": "2 h 20 min",
+     "coste": "15-20 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "BUD",
+     "a": "ALC",
+     "de_nombre": "Budapest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:15",
+     "llega": "08:30",
+     "ref": 59.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "En Bratislava a las 12:25. Tarde y noche allí."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Tren a Budapest por la mañana. Día completo y noche en Budapest."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30, con el domingo por delante."
+    }
+   ]
+  },
+  {
+   "id": "belfast-dublin",
+   "titulo": "Belfast + Dublín",
+   "subtitulo": "Dos países en la misma isla, y el viaje más largo",
+   "paises": [
+    "Reino Unido",
+    "Irlanda"
+   ],
+   "noches": 3,
+   "por_que": "La que más tiempo te deja: 62 horas en destino. Sale el jueves por la noche y el tren Enterprise une Belfast y Dublín en 2h10, con salidas cada hora.",
+   "aviso": "Son dos monedas: en Irlanda del Norte se paga en libras y en la República en euros.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "RK9570",
+     "de": "ALC",
+     "a": "BFS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Belfast",
+     "fecha": "2026-10-08",
+     "sale": "22:00",
+     "llega": "00:05",
+     "ref": 97.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Belfast",
+     "a_nombre": "Dublín",
+     "como": "Tren Enterprise directo (cada hora) o bus Aircoach",
+     "duracion": "2 h 10 min",
+     "coste": "20-30 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR261",
+     "de": "DUB",
+     "a": "ALC",
+     "de_nombre": "Dublín",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:25",
+     "llega": "20:15",
+     "ref": 29.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 22:00; en Belfast a las 00:05 (una hora menos que en España)."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Belfast: el Titanic Quarter y los murales."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Belfast, o excursión a la Calzada del Gigante (1h15 en bus)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
+    }
+   ]
+  },
+  {
+   "id": "colonia-bruselas",
+   "titulo": "Colonia + Bruselas",
+   "subtitulo": "Tren directo de 1h50 entre las dos",
+   "paises": [
+    "Alemania",
+    "Bélgica"
+   ],
+   "noches": 2,
+   "por_que": "Colonia y Bruselas están a 1h50 en tren ICE directo, la conexión más rápida de toda la lista.",
+   "aviso": "Es la más justa de tiempo: el vuelo de vuelta sale de Charleroi a las 06:30 y el aeropuerto está a 1 h de Bruselas, así que hay que salir de madrugada. Bélgica se queda en poco más de medio día.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1356",
+     "de": "ALC",
+     "a": "CGN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Colonia",
+     "fecha": "2026-10-09",
+     "sale": "20:45",
+     "llega": "23:25",
+     "ref": 88.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Colonia",
+     "a_nombre": "Bruselas",
+     "como": "Tren ICE directo (1h50) o autobús FlixBus (3h40)",
+     "duracion": "1 h 50 min",
+     "coste": "15-60 €",
+     "cuando": "sábado 10 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9063",
+     "de": "CRL",
+     "a": "ALC",
+     "de_nombre": "Bruselas Charleroi",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "06:30",
+     "llega": "09:00",
+     "ref": 52.27
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo a las 20:45; en Colonia a las 23:25."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Día en Colonia (la catedral está pegada a la estación) y tren a Bruselas por la tarde."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
+    }
+   ]
+  },
+  {
+   "id": "wroclaw-praga",
+   "titulo": "Wrocław + Praga",
+   "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
+   "paises": [
+    "Polonia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "El Baltic Express une Wrocław y Pardubice en tren directo en 2h50 por unos 19 €, y de Pardubice a Praga hay 1 h. Te deja 58 horas en destino.",
+   "aviso": "El vuelo de ida sale a las 05:50 de la mañana, y el de vuelta aterriza a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9877",
+     "de": "ALC",
+     "a": "WRO",
+     "de_nombre": "Alicante",
+     "a_nombre": "Wrocław",
+     "fecha": "2026-10-09",
+     "sale": "05:50",
+     "llega": "08:55",
+     "ref": 95.19
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Wrocław",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo Baltic Express (4 al día)",
+     "duracion": "2 h 50 min",
+     "coste": "19 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de madrugada; en Wrocław a las 08:55 con el día entero por delante."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Wrocław, una de las ciudades más bonitas de Polonia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
+    }
+   ]
+  },
+  {
+   "id": "viena-praga",
+   "titulo": "Viena + Praga",
+   "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
+   "paises": [
+    "Austria",
+    "República Checa"
+   ],
+   "noches": 3,
+   "por_que": "La única de Centroeuropa que usa tu franja del jueves a las 20:15. Praga no tiene vuelo directo con Alicante; Pardubice sí, y está a 1 h de tren.",
+   "aviso": "El vuelo de vuelta sale el domingo a las 22:00 y aterriza en Alicante a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Praga",
+     "como": "Tren Railjet directo (ÖBB / ČD)",
+     "duracion": "4 h",
+     "coste": "20-35 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Praga",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo (ČD / RegioJet)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Viena, o tren a Praga por la mañana si prefieres más Chequia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
+    }
+   ]
+  },
+  {
+   "id": "bratislava-viena",
+   "titulo": "Bratislava + Viena",
+   "subtitulo": "Vuelves desde Linz, que es lo que abarata el viaje",
+   "paises": [
+    "Eslovaquia",
+    "Austria"
+   ],
+   "noches": 3,
+   "destacada": true,
+   "por_que": "Tu plan original, y la única que aprovecha el lunes entero y aterriza a las 14:25, dentro de tu límite. Se vuelve desde Linz, a 1h20 de Viena en tren, porque el Viena-Alicante directo cuesta 142 € y revienta el presupuesto.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "09:35",
+     "llega": "12:25",
+     "ref": 65.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Viena",
+     "como": "Autobús directo (RegioJet / Slovak Lines)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Linz",
+     "como": "Tren Railjet directo (ÖBB)",
+     "duracion": "1 h 20 min",
+     "coste": "15-25 €",
+     "cuando": "lunes 12 temprano"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR3487",
+     "de": "LNZ",
+     "a": "ALC",
+     "de_nombre": "Linz",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-12",
+     "sale": "11:45",
+     "llega": "14:25",
+     "ref": 82.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de mañana. A las 12:25 ya estás en Bratislava, con la tarde para el casco viejo y el castillo."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Día completo en Bratislava; es pequeña y se recorre a pie."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Autobús a Viena por la mañana (1h, menos de 10 €). Tarde y noche en Viena."
+    },
+    {
+     "dia": "Lunes 12",
+     "texto": "Tren temprano a Linz (1h20) y vuelo a las 11:45. En Alicante a las 14:25."
+    }
+   ]
+  },
+  {
+   "id": "viena-budapest",
+   "titulo": "Viena + Budapest",
+   "subtitulo": "Las dos capitales del Danubio",
+   "paises": [
+    "Austria",
+    "Hungría"
+   ],
+   "noches": 3,
+   "por_que": "Sale el jueves por la noche, así que ganas el viernes entero en Viena, y hay tren directo Viena-Budapest en 2h40.",
+   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Budapest",
+     "como": "Tren Railjet directo (ÖBB / MÁV)",
+     "duracion": "2 h 40 min",
+     "coste": "20-30 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "BUD",
+     "a": "ALC",
+     "de_nombre": "Budapest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:15",
+     "llega": "08:30",
+     "ref": 59.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Tren a Budapest por la mañana. Día y noche allí."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
+    }
+   ]
+  }
+ ]
+}

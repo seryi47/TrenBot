@@ -1,0 +1,1536 @@
+{
+ "viaje": {
+  "titulo": "Puente de octubre — Alicante y vuelta",
+  "pasajeros": 2,
+  "tope_por_persona": 160,
+  "reglas": [
+   "Ida: el 8 de octubre a partir de las 20:00, o el 9 a cualquier hora",
+   "Vuelta: el 11 a cualquier hora, o el 12 aterrizando en Alicante antes de las 18:00",
+   "Máximo 160 € por persona sumando ida y vuelta",
+   "Ida y vuelta SIN escalas",
+   "Dos países, con al menos un día para el segundo"
+  ]
+ },
+ "opciones": [
+  {
+   "id": "belfast-dublin",
+   "titulo": "Belfast + Dublín",
+   "subtitulo": "Dos países en la misma isla, y el viaje más largo",
+   "paises": [
+    "Reino Unido",
+    "Irlanda"
+   ],
+   "noches": 3,
+   "por_que": "La que más tiempo te deja: 62 horas en destino. Sale el jueves por la noche y el tren Enterprise une Belfast y Dublín en 2h10, con salidas cada hora.",
+   "aviso": "Son dos monedas: en Irlanda del Norte se paga en libras y en la República en euros.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "RK9570",
+     "de": "ALC",
+     "a": "BFS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Belfast",
+     "fecha": "2026-10-08",
+     "sale": "22:00",
+     "llega": "00:05",
+     "ref": 97.99,
+     "precio": 122.99,
+     "etiqueta": "RK9570 (Ryanair UK) · 2 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
+     "plazas": 2,
+     "visto": "2026-09-08 12:39",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 22:54",
+       97.99
+      ],
+      [
+       "2026-09-04 01:57",
+       93.99
+      ],
+      [
+       "2026-09-04 10:10",
+       92.99
+      ],
+      [
+       "2026-09-04 17:09",
+       105.99
+      ],
+      [
+       "2026-09-05 09:14",
+       104.99
+      ],
+      [
+       "2026-09-05 16:01",
+       103.99
+      ],
+      [
+       "2026-09-05 17:17",
+       102.99
+      ],
+      [
+       "2026-09-06 11:58",
+       99.99
+      ],
+      [
+       "2026-09-06 13:14",
+       98.99
+      ],
+      [
+       "2026-09-06 20:52",
+       102.99
+      ],
+      [
+       "2026-09-07 12:39",
+       118.99
+      ],
+      [
+       "2026-09-07 18:13",
+       120.99
+      ],
+      [
+       "2026-09-08 12:39",
+       122.99
+      ]
+     ],
+     "variacion": 25.0
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Belfast",
+     "a_nombre": "Dublín",
+     "como": "Tren Enterprise directo (cada hora) o bus Aircoach",
+     "duracion": "2 h 10 min",
+     "coste": "20-30 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR261",
+     "de": "DUB",
+     "a": "ALC",
+     "de_nombre": "Dublín",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:25",
+     "llega": "20:15",
+     "ref": 29.99,
+     "precio": 29.99,
+     "etiqueta": "FR261",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=DUB&destinationIata=ALC",
+     "plazas": -1,
+     "visto": "2026-09-03 22:54",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 22:54",
+       29.99
+      ]
+     ],
+     "variacion": 0.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 22:00; en Belfast a las 00:05 (una hora menos que en España)."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Belfast: el Titanic Quarter y los murales."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Belfast, o excursión a la Calzada del Gigante (1h15 en bus)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
+    }
+   ],
+   "total_persona": 152.98,
+   "total_grupo": 305.96,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "22:00",
+   "ida_iata": "BFS",
+   "ida_ciudad": "Belfast",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "16:25",
+   "vuelta_llega": "20:15",
+   "vuelta_iata": "DUB",
+   "vuelta_ciudad": "Dublín",
+   "horas_destino": 62,
+   "minutos_tierra": 130,
+   "saltos": 1,
+   "sale_temprano": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 127.98,
+   "dentro_presupuesto": true
+  },
+  {
+   "id": "wroclaw-praga",
+   "titulo": "Wrocław + Praga",
+   "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
+   "paises": [
+    "Polonia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "El Baltic Express une Wrocław y Pardubice en tren directo en 2h50 por unos 19 €, y de Pardubice a Praga hay 1 h. Te deja 58 horas en destino.",
+   "aviso": "El vuelo de ida sale a las 05:50 de la mañana, y el de vuelta aterriza a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9877",
+     "de": "ALC",
+     "a": "WRO",
+     "de_nombre": "Alicante",
+     "a_nombre": "Wrocław",
+     "fecha": "2026-10-09",
+     "sale": "05:50",
+     "llega": "08:55",
+     "ref": 95.19,
+     "precio": 132.72,
+     "etiqueta": "FR9877 · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
+     "plazas": 3,
+     "visto": "2026-09-09 08:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 22:54",
+       95.19
+      ],
+      [
+       "2026-09-04 21:38",
+       96.19
+      ],
+      [
+       "2026-09-05 09:14",
+       92.19
+      ],
+      [
+       "2026-09-06 11:58",
+       93.99
+      ],
+      [
+       "2026-09-06 20:07",
+       102.74
+      ],
+      [
+       "2026-09-07 10:26",
+       145.89
+      ],
+      [
+       "2026-09-07 14:40",
+       160.14
+      ],
+      [
+       "2026-09-07 22:49",
+       148.39
+      ],
+      [
+       "2026-09-07 23:02",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
+       132.72
+      ]
+     ],
+     "variacion": 37.53
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Wrocław",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo Baltic Express (4 al día)",
+     "duracion": "2 h 50 min",
+     "coste": "19 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89,
+     "precio": 50.0,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-09 09:26",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       50.89
+      ],
+      [
+       "2026-09-03 20:09",
+       49.9
+      ],
+      [
+       "2026-09-03 20:24",
+       50.89
+      ],
+      [
+       "2026-09-04 10:10",
+       49.9
+      ],
+      [
+       "2026-09-04 17:09",
+       49.92
+      ],
+      [
+       "2026-09-04 20:11",
+       51.91
+      ],
+      [
+       "2026-09-05 16:01",
+       54.91
+      ],
+      [
+       "2026-09-06 11:58",
+       53.91
+      ],
+      [
+       "2026-09-06 19:21",
+       52.91
+      ],
+      [
+       "2026-09-07 10:26",
+       51.91
+      ],
+      [
+       "2026-09-07 12:39",
+       50.91
+      ],
+      [
+       "2026-09-07 16:11",
+       50.96
+      ],
+      [
+       "2026-09-07 16:57",
+       50.94
+      ],
+      [
+       "2026-09-08 12:39",
+       51.94
+      ],
+      [
+       "2026-09-08 16:07",
+       51.97
+      ],
+      [
+       "2026-09-08 20:09",
+       51.0
+      ],
+      [
+       "2026-09-09 09:26",
+       50.0
+      ]
+     ],
+     "variacion": -0.89
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de madrugada; en Wrocław a las 08:55 con el día entero por delante."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Wrocław, una de las ciudades más bonitas de Polonia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
+    }
+   ],
+   "total_persona": 182.72,
+   "total_grupo": 365.44,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "05:50",
+   "ida_iata": "WRO",
+   "ida_ciudad": "Wrocław",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:00",
+   "vuelta_llega": "01:00",
+   "vuelta_iata": "PED",
+   "vuelta_ciudad": "Pardubice",
+   "horas_destino": 58,
+   "minutos_tierra": 170,
+   "saltos": 1,
+   "sale_temprano": true,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 146.08,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "colonia-bruselas",
+   "titulo": "Colonia + Bruselas",
+   "subtitulo": "Tren directo de 1h50 entre las dos",
+   "paises": [
+    "Alemania",
+    "Bélgica"
+   ],
+   "noches": 2,
+   "por_que": "Colonia y Bruselas están a 1h50 en tren ICE directo, la conexión más rápida de toda la lista.",
+   "aviso": "Es la más justa de tiempo: el vuelo de vuelta sale de Charleroi a las 06:30 y el aeropuerto está a 1 h de Bruselas, así que hay que salir de madrugada. Bélgica se queda en poco más de medio día.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1356",
+     "de": "ALC",
+     "a": "CGN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Colonia",
+     "fecha": "2026-10-09",
+     "sale": "20:45",
+     "llega": "23:25",
+     "ref": 88.99,
+     "precio": 131.99,
+     "etiqueta": "FR1356 (Malta Air) · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
+     "plazas": 5,
+     "visto": "2026-09-08 17:23",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 22:54",
+       88.99
+      ],
+      [
+       "2026-09-04 10:10",
+       89.99
+      ],
+      [
+       "2026-09-04 17:09",
+       120.99
+      ],
+      [
+       "2026-09-05 09:14",
+       119.99
+      ],
+      [
+       "2026-09-06 11:58",
+       121.99
+      ],
+      [
+       "2026-09-07 12:39",
+       140.99
+      ],
+      [
+       "2026-09-07 22:49",
+       136.99
+      ],
+      [
+       "2026-09-08 12:39",
+       133.99
+      ],
+      [
+       "2026-09-08 13:20",
+       132.99
+      ],
+      [
+       "2026-09-08 17:23",
+       131.99
+      ]
+     ],
+     "variacion": 43.0
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Colonia",
+     "a_nombre": "Bruselas",
+     "como": "Tren ICE directo (1h50) o autobús FlixBus (3h40)",
+     "duracion": "1 h 50 min",
+     "coste": "15-60 €",
+     "cuando": "sábado 10 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9063",
+     "de": "CRL",
+     "a": "ALC",
+     "de_nombre": "Bruselas Charleroi",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "06:30",
+     "llega": "09:00",
+     "ref": 52.27,
+     "precio": 52.51,
+     "etiqueta": "FR9063",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
+     "plazas": -1,
+     "visto": "2026-09-09 08:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 22:54",
+       53.27
+      ],
+      [
+       "2026-09-04 10:10",
+       54.03
+      ],
+      [
+       "2026-09-04 17:09",
+       62.59
+      ],
+      [
+       "2026-09-04 22:54",
+       61.59
+      ],
+      [
+       "2026-09-05 09:14",
+       53.03
+      ],
+      [
+       "2026-09-06 11:58",
+       54.03
+      ],
+      [
+       "2026-09-06 14:42",
+       62.59
+      ],
+      [
+       "2026-09-06 19:21",
+       72.03
+      ],
+      [
+       "2026-09-07 10:26",
+       62.59
+      ],
+      [
+       "2026-09-08 16:07",
+       54.03
+      ],
+      [
+       "2026-09-09 08:40",
+       52.51
+      ]
+     ],
+     "variacion": -0.76
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo a las 20:45; en Colonia a las 23:25."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Día en Colonia (la catedral está pegada a la estación) y tren a Bruselas por la tarde."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
+    }
+   ],
+   "total_persona": 184.5,
+   "total_grupo": 369.0,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "20:45",
+   "ida_iata": "CGN",
+   "ida_ciudad": "Colonia",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "06:30",
+   "vuelta_llega": "09:00",
+   "vuelta_iata": "CRL",
+   "vuelta_ciudad": "Bruselas Charleroi",
+   "horas_destino": 29,
+   "minutos_tierra": 110,
+   "saltos": 1,
+   "sale_temprano": true,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 141.26,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "viena-praga",
+   "titulo": "Viena + Praga",
+   "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
+   "paises": [
+    "Austria",
+    "República Checa"
+   ],
+   "noches": 3,
+   "por_que": "La única de Centroeuropa que usa tu franja del jueves a las 20:15. Praga no tiene vuelo directo con Alicante; Pardubice sí, y está a 1 h de tren.",
+   "aviso": "El vuelo de vuelta sale el domingo a las 22:00 y aterriza en Alicante a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19,
+     "precio": 145.51,
+     "etiqueta": "FR1568 (Lauda Europe) · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
+     "plazas": 4,
+     "visto": "2026-09-09 08:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       96.19
+      ],
+      [
+       "2026-09-03 22:56",
+       95.19
+      ],
+      [
+       "2026-09-04 10:10",
+       106.56
+      ],
+      [
+       "2026-09-05 09:14",
+       107.83
+      ],
+      [
+       "2026-09-07 10:26",
+       129.76
+      ],
+      [
+       "2026-09-07 16:57",
+       144.22
+      ],
+      [
+       "2026-09-07 22:49",
+       133.72
+      ],
+      [
+       "2026-09-07 23:09",
+       132.72
+      ],
+      [
+       "2026-09-07 23:24",
+       133.72
+      ],
+      [
+       "2026-09-08 12:39",
+       148.39
+      ],
+      [
+       "2026-09-08 23:19",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
+       145.51
+      ]
+     ],
+     "variacion": 49.32
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Praga",
+     "como": "Tren Railjet directo (ÖBB / ČD)",
+     "duracion": "4 h",
+     "coste": "20-35 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Praga",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo (ČD / RegioJet)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89,
+     "precio": 50.0,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-09 09:26",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       50.89
+      ],
+      [
+       "2026-09-03 20:09",
+       49.9
+      ],
+      [
+       "2026-09-03 20:24",
+       50.89
+      ],
+      [
+       "2026-09-04 10:10",
+       49.9
+      ],
+      [
+       "2026-09-04 17:09",
+       49.92
+      ],
+      [
+       "2026-09-04 20:11",
+       51.91
+      ],
+      [
+       "2026-09-05 16:01",
+       54.91
+      ],
+      [
+       "2026-09-06 11:58",
+       53.91
+      ],
+      [
+       "2026-09-06 19:21",
+       52.91
+      ],
+      [
+       "2026-09-07 10:26",
+       51.91
+      ],
+      [
+       "2026-09-07 12:39",
+       50.91
+      ],
+      [
+       "2026-09-07 16:11",
+       50.96
+      ],
+      [
+       "2026-09-07 16:57",
+       50.94
+      ],
+      [
+       "2026-09-08 12:39",
+       51.94
+      ],
+      [
+       "2026-09-08 16:07",
+       51.97
+      ],
+      [
+       "2026-09-08 20:09",
+       51.0
+      ],
+      [
+       "2026-09-09 09:26",
+       50.0
+      ]
+     ],
+     "variacion": -0.89
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Viena, o tren a Praga por la mañana si prefieres más Chequia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
+    }
+   ],
+   "total_persona": 195.51,
+   "total_grupo": 391.02,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:15",
+   "ida_iata": "VIE",
+   "ida_ciudad": "Viena",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:00",
+   "vuelta_llega": "01:00",
+   "vuelta_iata": "PED",
+   "vuelta_ciudad": "Pardubice",
+   "horas_destino": 66,
+   "minutos_tierra": 300,
+   "saltos": 2,
+   "sale_temprano": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 147.08,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "viena-budapest",
+   "titulo": "Viena + Budapest",
+   "subtitulo": "Las dos capitales del Danubio",
+   "paises": [
+    "Austria",
+    "Hungría"
+   ],
+   "noches": 3,
+   "por_que": "Sale el jueves por la noche, así que ganas el viernes entero en Viena, y hay tren directo Viena-Budapest en 2h40.",
+   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19,
+     "precio": 145.51,
+     "etiqueta": "FR1568 (Lauda Europe) · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
+     "plazas": 4,
+     "visto": "2026-09-09 08:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       96.19
+      ],
+      [
+       "2026-09-03 22:56",
+       95.19
+      ],
+      [
+       "2026-09-04 10:10",
+       106.56
+      ],
+      [
+       "2026-09-05 09:14",
+       107.83
+      ],
+      [
+       "2026-09-07 10:26",
+       129.76
+      ],
+      [
+       "2026-09-07 16:57",
+       144.22
+      ],
+      [
+       "2026-09-07 22:49",
+       133.72
+      ],
+      [
+       "2026-09-07 23:09",
+       132.72
+      ],
+      [
+       "2026-09-07 23:24",
+       133.72
+      ],
+      [
+       "2026-09-08 12:39",
+       148.39
+      ],
+      [
+       "2026-09-08 23:19",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
+       145.51
+      ]
+     ],
+     "variacion": 49.32
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Budapest",
+     "como": "Tren Railjet directo (ÖBB / MÁV)",
+     "duracion": "2 h 40 min",
+     "coste": "20-30 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "BUD",
+     "a": "ALC",
+     "de_nombre": "Budapest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:15",
+     "llega": "08:30",
+     "ref": 59.99,
+     "precio": 59.99,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": null,
+     "visto": "2026-09-09 08:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       59.99
+      ],
+      [
+       "2026-09-08 18:08",
+       54.89
+      ],
+      [
+       "2026-09-09 08:40",
+       59.99
+      ]
+     ],
+     "variacion": 0.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Tren a Budapest por la mañana. Día y noche allí."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
+    }
+   ],
+   "total_persona": 205.5,
+   "total_grupo": 411.0,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:15",
+   "ida_iata": "VIE",
+   "ida_ciudad": "Viena",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "05:15",
+   "vuelta_llega": "08:30",
+   "vuelta_iata": "BUD",
+   "vuelta_ciudad": "Budapest",
+   "horas_destino": 52,
+   "minutos_tierra": 160,
+   "saltos": 1,
+   "sale_temprano": true,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 156.18,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "bratislava-praga",
+   "titulo": "Bratislava + Praga",
+   "subtitulo": "La más barata de todas",
+   "paises": [
+    "Eslovaquia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "La combinación más económica que cumple todo. Bratislava y Praga están a 4 h de autobús directo, y de Praga a Pardubice hay 1 h de tren.",
+   "aviso": "El vuelo de vuelta sale el domingo a las 22:00 y aterriza en Alicante a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "09:35",
+     "llega": "12:25",
+     "ref": 65.99,
+     "precio": 170.99,
+     "etiqueta": "precio orientativo",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
+     "plazas": null,
+     "visto": "2026-09-09 10:47",
+     "estado": "orientativo",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       65.99
+      ],
+      [
+       "2026-09-04 10:10",
+       69.99
+      ],
+      [
+       "2026-09-05 09:14",
+       89.99
+      ],
+      [
+       "2026-09-07 17:58",
+       99.99
+      ],
+      [
+       "2026-09-08 23:34",
+       114.99
+      ],
+      [
+       "2026-09-09 08:40",
+       179.99
+      ],
+      [
+       "2026-09-09 10:32",
+       170.99
+      ]
+     ],
+     "variacion": 105.0
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Praga",
+     "como": "Autobús directo RegioJet",
+     "duracion": "4 h 05 min",
+     "coste": "20-25 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Praga",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo (ČD / RegioJet)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89,
+     "precio": 50.0,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-09 09:26",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       50.89
+      ],
+      [
+       "2026-09-03 20:09",
+       49.9
+      ],
+      [
+       "2026-09-03 20:24",
+       50.89
+      ],
+      [
+       "2026-09-04 10:10",
+       49.9
+      ],
+      [
+       "2026-09-04 17:09",
+       49.92
+      ],
+      [
+       "2026-09-04 20:11",
+       51.91
+      ],
+      [
+       "2026-09-05 16:01",
+       54.91
+      ],
+      [
+       "2026-09-06 11:58",
+       53.91
+      ],
+      [
+       "2026-09-06 19:21",
+       52.91
+      ],
+      [
+       "2026-09-07 10:26",
+       51.91
+      ],
+      [
+       "2026-09-07 12:39",
+       50.91
+      ],
+      [
+       "2026-09-07 16:11",
+       50.96
+      ],
+      [
+       "2026-09-07 16:57",
+       50.94
+      ],
+      [
+       "2026-09-08 12:39",
+       51.94
+      ],
+      [
+       "2026-09-08 16:07",
+       51.97
+      ],
+      [
+       "2026-09-08 20:09",
+       51.0
+      ],
+      [
+       "2026-09-09 09:26",
+       50.0
+      ]
+     ],
+     "variacion": -0.89
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "En Bratislava a las 12:25, con la tarde entera para el casco viejo y el castillo."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Autobús a Praga por la mañana (4h). Tarde y noche en Praga."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Día completo en Praga, tren a Pardubice (1h) y vuelo a las 22:00."
+    }
+   ],
+   "tiene_orientativo": true,
+   "total_persona": 220.99,
+   "total_grupo": 441.98,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "09:35",
+   "ida_iata": "BTS",
+   "ida_ciudad": "Bratislava",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:00",
+   "vuelta_llega": "01:00",
+   "vuelta_iata": "PED",
+   "vuelta_ciudad": "Pardubice",
+   "horas_destino": 52,
+   "minutos_tierra": 305,
+   "saltos": 2,
+   "sale_temprano": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 116.88,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "bratislava-budapest",
+   "titulo": "Bratislava + Budapest",
+   "subtitulo": "Dos capitales a 2h20 de tren",
+   "paises": [
+    "Eslovaquia",
+    "Hungría"
+   ],
+   "noches": 2,
+   "por_que": "La conexión por tierra más cómoda de la lista: tren directo Bratislava-Budapest en 2h20.",
+   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "09:35",
+     "llega": "12:25",
+     "ref": 65.99,
+     "precio": 170.99,
+     "etiqueta": "precio orientativo",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
+     "plazas": null,
+     "visto": "2026-09-09 10:47",
+     "estado": "orientativo",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       65.99
+      ],
+      [
+       "2026-09-04 10:10",
+       69.99
+      ],
+      [
+       "2026-09-05 09:14",
+       89.99
+      ],
+      [
+       "2026-09-07 17:58",
+       99.99
+      ],
+      [
+       "2026-09-08 23:34",
+       114.99
+      ],
+      [
+       "2026-09-09 08:40",
+       179.99
+      ],
+      [
+       "2026-09-09 10:32",
+       170.99
+      ]
+     ],
+     "variacion": 105.0
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Budapest",
+     "como": "Tren directo (RegioJet / MÁV)",
+     "duracion": "2 h 20 min",
+     "coste": "15-20 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "BUD",
+     "a": "ALC",
+     "de_nombre": "Budapest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:15",
+     "llega": "08:30",
+     "ref": 59.99,
+     "precio": 59.99,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": null,
+     "visto": "2026-09-09 08:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       59.99
+      ],
+      [
+       "2026-09-08 18:08",
+       54.89
+      ],
+      [
+       "2026-09-09 08:40",
+       59.99
+      ]
+     ],
+     "variacion": 0.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "En Bratislava a las 12:25. Tarde y noche allí."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Tren a Budapest por la mañana. Día completo y noche en Budapest."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30, con el domingo por delante."
+    }
+   ],
+   "tiene_orientativo": true,
+   "total_persona": 230.98,
+   "total_grupo": 461.96,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "09:35",
+   "ida_iata": "BTS",
+   "ida_ciudad": "Bratislava",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "05:15",
+   "vuelta_llega": "08:30",
+   "vuelta_iata": "BUD",
+   "vuelta_ciudad": "Budapest",
+   "horas_destino": 38,
+   "minutos_tierra": 140,
+   "saltos": 1,
+   "sale_temprano": true,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 125.98,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "bratislava-viena",
+   "titulo": "Bratislava + Viena",
+   "subtitulo": "Vuelves desde Linz, que es lo que abarata el viaje",
+   "paises": [
+    "Eslovaquia",
+    "Austria"
+   ],
+   "noches": 3,
+   "destacada": true,
+   "por_que": "Tu plan original, y la única que aprovecha el lunes entero y aterriza a las 14:25, dentro de tu límite. Se vuelve desde Linz, a 1h20 de Viena en tren, porque el Viena-Alicante directo cuesta 142 € y revienta el presupuesto.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "09:35",
+     "llega": "12:25",
+     "ref": 65.99,
+     "precio": 170.99,
+     "etiqueta": "precio orientativo",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
+     "plazas": null,
+     "visto": "2026-09-09 10:47",
+     "estado": "orientativo",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       65.99
+      ],
+      [
+       "2026-09-04 10:10",
+       69.99
+      ],
+      [
+       "2026-09-05 09:14",
+       89.99
+      ],
+      [
+       "2026-09-07 17:58",
+       99.99
+      ],
+      [
+       "2026-09-08 23:34",
+       114.99
+      ],
+      [
+       "2026-09-09 08:40",
+       179.99
+      ],
+      [
+       "2026-09-09 10:32",
+       170.99
+      ]
+     ],
+     "variacion": 105.0
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Viena",
+     "como": "Autobús directo (RegioJet / Slovak Lines)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Linz",
+     "como": "Tren Railjet directo (ÖBB)",
+     "duracion": "1 h 20 min",
+     "coste": "15-25 €",
+     "cuando": "lunes 12 temprano"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR3487",
+     "de": "LNZ",
+     "a": "ALC",
+     "de_nombre": "Linz",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-12",
+     "sale": "11:45",
+     "llega": "14:25",
+     "ref": 82.99,
+     "precio": 147.99,
+     "etiqueta": "FR3487 · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
+     "plazas": 4,
+     "visto": "2026-09-09 10:32",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       82.99
+      ],
+      [
+       "2026-09-04 10:10",
+       81.99
+      ],
+      [
+       "2026-09-04 17:09",
+       77.99
+      ],
+      [
+       "2026-09-04 20:11",
+       76.99
+      ],
+      [
+       "2026-09-05 09:14",
+       75.99
+      ],
+      [
+       "2026-09-05 16:16",
+       74.99
+      ],
+      [
+       "2026-09-06 11:58",
+       95.99
+      ],
+      [
+       "2026-09-06 12:28",
+       99.99
+      ],
+      [
+       "2026-09-06 12:44",
+       104.99
+      ],
+      [
+       "2026-09-06 19:21",
+       103.99
+      ],
+      [
+       "2026-09-07 10:26",
+       142.99
+      ],
+      [
+       "2026-09-07 12:39",
+       148.99
+      ],
+      [
+       "2026-09-07 20:05",
+       149.99
+      ],
+      [
+       "2026-09-08 12:39",
+       150.99
+      ],
+      [
+       "2026-09-08 16:07",
+       151.99
+      ],
+      [
+       "2026-09-09 09:26",
+       152.99
+      ],
+      [
+       "2026-09-09 10:32",
+       147.99
+      ]
+     ],
+     "variacion": 65.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de mañana. A las 12:25 ya estás en Bratislava, con la tarde para el casco viejo y el castillo."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Día completo en Bratislava; es pequeña y se recorre a pie."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Autobús a Viena por la mañana (1h, menos de 10 €). Tarde y noche en Viena."
+    },
+    {
+     "dia": "Lunes 12",
+     "texto": "Tren temprano a Linz (1h20) y vuelo a las 11:45. En Alicante a las 14:25."
+    }
+   ],
+   "tiene_orientativo": true,
+   "total_persona": 318.98,
+   "total_grupo": 637.96,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "09:35",
+   "ida_iata": "BTS",
+   "ida_ciudad": "Bratislava",
+   "vuelta_fecha": "2026-10-12",
+   "vuelta_hora": "11:45",
+   "vuelta_llega": "14:25",
+   "vuelta_iata": "LNZ",
+   "vuelta_ciudad": "Linz",
+   "horas_destino": 69,
+   "minutos_tierra": 140,
+   "saltos": 2,
+   "sale_temprano": false,
+   "llega_noche": false,
+   "vuelve_lunes": true,
+   "total_referencia": 148.98,
+   "dentro_presupuesto": false
+  }
+ ],
+ "actualizado": "2026-09-09 10:47",
+ "actualizado_iso": "2026-09-09T10:47:53.714736+02:00"
+}

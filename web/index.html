@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puente de octubre · Alicante</title>
+<meta name="description" content="Comparador de vuelos directos desde Alicante del 8 al 12 de octubre, con precios reales y enlaces de compra.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<style>
+:root{
+  --bg:#f7f8fa; --card:#fff; --ink:#0f1319; --ink2:#525b6b; --ink3:#8d95a3;
+  --line:#e4e7ec; --line2:#f0f2f5; --hover:#f5f7fa;
+  --acc:#2f5bd8; --acc-bg:#eaf0ff;
+  --ok:#0b7a45; --ok-bg:#e6f6ee;
+  --warn:#9a6100; --warn-bg:#fdf3e0;
+  --r:12px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0a0c10; --card:#12151b; --ink:#e9ecf1; --ink2:#98a1b0; --ink3:#69717f;
+    --line:#222831; --line2:#181c23; --hover:#181d25;
+    --acc:#7ea1ff; --acc-bg:#15203a;
+    --ok:#45d894; --ok-bg:#0d2318;
+    --warn:#e8bb66; --warn-bg:#26200f;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:14.5px;line-height:1.5;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:26px 16px 70px}
+button{font:inherit;color:inherit}
+.tn{font-variant-numeric:tabular-nums}
+
+/* cabecera */
+header{margin-bottom:20px}
+h1{font-size:clamp(22px,3.4vw,30px);letter-spacing:-.02em;margin:0 0 6px;font-weight:700}
+.sub{color:var(--ink2);margin:0;font-size:14.5px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center}
+.tag{font-size:12.5px;color:var(--ink2);background:var(--card);border:1px solid var(--line);
+  padding:4px 10px;border-radius:7px}
+.tag b{color:var(--ink)}
+.tag.live{color:var(--ok);border-color:transparent;background:var(--ok-bg)}
+
+/* barra de control */
+.bar{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:11px 13px;margin-bottom:12px;display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.bar .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);
+  font-weight:600;margin-right:2px}
+select{background:var(--bg);border:1px solid var(--line);border-radius:8px;
+  padding:6px 9px;font-size:13.5px;color:var(--ink)}
+.chip{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 11px;
+  font-size:13px;cursor:pointer;white-space:nowrap;transition:.12s}
+.chip:hover{border-color:var(--ink3)}
+.chip[aria-pressed="true"]{background:var(--acc-bg);border-color:var(--acc);color:var(--acc);
+  font-weight:600}
+.count{margin-left:auto;font-size:13px;color:var(--ink3)}
+
+/* tabla */
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.hrow,.row{display:grid;gap:12px;align-items:center;
+  grid-template-columns:minmax(180px,1.7fr) 1fr 1.15fr .75fr .85fr .95fr 26px;
+  padding:11px 14px}
+.hrow{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);
+  font-weight:600;background:var(--line2);border-bottom:1px solid var(--line)}
+.hrow .r,.row .r{text-align:right}
+.row{border-bottom:1px solid var(--line2);cursor:pointer;width:100%;background:none;
+  border-left:0;border-right:0;border-top:0;text-align:left;font:inherit}
+.row:hover{background:var(--hover)}
+.row[aria-expanded="true"]{background:var(--hover)}
+.name{display:flex;align-items:center;gap:9px;min-width:0}
+.fl{font-size:15px;letter-spacing:-3px;flex:none}
+.nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.star{color:var(--acc);flex:none;font-size:12px}
+.cell b{font-weight:600;display:block}
+.cell span{color:var(--ink3);font-size:12.5px}
+.price{font-size:17px;font-weight:700;text-align:right}
+.price small{display:block;font-weight:500;font-size:12px;color:var(--ink3);margin-top:1px}
+.chev{color:var(--ink3);text-align:center;transition:transform .15s}
+.row[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.over{color:var(--warn)}
+
+/* detalle */
+.det{display:none;padding:2px 14px 18px;border-bottom:1px solid var(--line2);
+  background:var(--line2)}
+.det.open{display:block}
+.why{color:var(--ink2);font-size:13.5px;margin:10px 0 0;max-width:78ch}
+.alert{display:flex;gap:7px;margin-top:10px;font-size:13px;color:var(--warn);
+  background:var(--warn-bg);padding:9px 11px;border-radius:8px}
+.grid{display:grid;gap:14px;margin-top:14px;grid-template-columns:1fr}
+@media(min-width:820px){.grid{grid-template-columns:1.35fr 1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.box h4{margin:0;padding:10px 13px;font-size:11.5px;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--ink3);border-bottom:1px solid var(--line2)}
+.seg{display:flex;gap:11px;padding:11px 13px;border-bottom:1px solid var(--line2)}
+.seg:last-child{border-bottom:0}
+.seg .ic{flex:none;width:24px;text-align:center;font-size:14px;padding-top:1px}
+.seg .bd{flex:1;min-width:0}
+.seg .t1{font-size:14px}
+.seg .t1 b{font-variant-numeric:tabular-nums}
+.seg .t2{color:var(--ink3);font-size:12.5px;margin-top:1px}
+.buy{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;
+  font-weight:600;padding:7px 12px;border-radius:8px;background:var(--ink);
+  color:var(--card);text-decoration:none}
+.buy:hover{opacity:.85}
+.mini{font-size:11.5px;padding:2px 7px;border-radius:5px;background:var(--line2);
+  color:var(--ink2);margin-left:6px}
+.mini.w{background:var(--warn-bg);color:var(--warn)}
+.mini.o{background:var(--ok-bg);color:var(--ok)}
+.day{display:flex;gap:11px;padding:8px 13px;font-size:13px;border-bottom:1px solid var(--line2)}
+.day:last-child{border-bottom:0}
+.day b{flex:none;width:66px;font-weight:600}
+.day span{color:var(--ink2)}
+
+/* vigilados */
+.watch{margin-top:22px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden}
+.watch h2{margin:0;padding:13px 14px 3px;font-size:12px;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--ink3)}
+.watch p{margin:0;padding:0 14px 11px;color:var(--ink3);font-size:12.5px}
+.wrow{display:grid;gap:12px;align-items:center;padding:10px 14px;
+  grid-template-columns:1.2fr 1.1fr .9fr .8fr auto;border-top:1px solid var(--line2);
+  font-size:13.5px}
+.wrow.h{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);
+  font-weight:600;background:var(--line2)}
+.wrow .r{text-align:right;font-weight:700}
+.lnk{font-size:12.5px;font-weight:600;color:var(--acc);text-decoration:none;white-space:nowrap}
+
+footer{margin-top:22px;color:var(--ink3);font-size:12.5px;line-height:1.7}
+footer b{color:var(--ink2)}
+.empty{padding:40px 14px;text-align:center;color:var(--ink3)}
+
+/* móvil: la tabla se convierte en fichas */
+@media(max-width:760px){
+  .hrow{display:none}
+  .row{grid-template-columns:1fr 1fr;gap:8px 12px;padding:13px 14px;position:relative}
+  .row .name{grid-column:1/-1}
+  .row .price{grid-column:2;text-align:right}
+  .row .chev{position:absolute;right:12px;top:14px}
+  .cell::before{content:attr(data-l);display:block;font-size:10.5px;text-transform:uppercase;
+    letter-spacing:.05em;color:var(--ink3);margin-bottom:1px}
+  .wrow{grid-template-columns:1fr auto;gap:4px 10px}
+  .wrow.h{display:none}
+  .wrow>*:nth-child(2),.wrow>*:nth-child(3){grid-column:1;color:var(--ink3);font-size:12.5px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="h1">Puente de octubre</h1>
+    <p class="sub" id="sub">Cargando…</p>
+    <div class="meta" id="meta"></div>
+  </header>
+  <div id="app"><div class="empty">Cargando precios…</div></div>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const FLAG={"España":"🇪🇸","Eslovaquia":"🇸🇰","Austria":"🇦🇹","República Checa":"🇨🇿",
+ "Hungría":"🇭🇺","Polonia":"🇵🇱","Alemania":"🇩🇪","Bélgica":"🇧🇪","Francia":"🇫🇷",
+ "Croacia":"🇭🇷","Italia":"🇮🇹","Reino Unido":"🇬🇧","Irlanda":"🇮🇪"};
+const DOW=["dom","lun","mar","mié","jue","vie","sáb"];
+const MON=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const eur=n=>n==null?"—":n.toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dia=iso=>{const d=new Date(iso+"T12:00:00");return `${DOW[d.getDay()]} ${d.getDate()}`;};
+const diaL=iso=>{const d=new Date(iso+"T12:00:00");return `${DOW[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`;};
+const horas=m=>m>=60?`${Math.floor(m/60)}h${m%60?String(m%60).padStart(2,"0"):""}`:`${m}min`;
+
+let DATOS=null, orden="precio", filtros=new Set(), abierta=null;
+
+function spark(s){
+  if(!s||s.length<2) return "";
+  const v=s.map(p=>p[1]),mn=Math.min(...v),mx=Math.max(...v),r=(mx-mn)||1,W=46,H=14;
+  const pts=v.map((y,i)=>`${(i/(v.length-1)*W).toFixed(1)},${(H-(y-mn)/r*H).toFixed(1)}`).join(" ");
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="vertical-align:middle;margin-left:6px" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${v.at(-1)<=v[0]?"var(--ok)":"var(--warn)"}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+const FILTROS={
+  lunes:{txt:"Vuelve el lunes",test:o=>o.vuelve_lunes},
+  temprano:{txt:"Sin madrugar",test:o=>!o.sale_temprano},
+  noche:{txt:"Sin aterrizar de noche",test:o=>!o.llega_noche},
+  directo:{txt:"Un solo traslado",test:o=>o.saltos<=1},
+  dosdias:{txt:"48 h o más allí",test:o=>o.horas_destino>=48},
+};
+const ORDENES={
+  precio:["Precio",(a,b)=>a.total_persona-b.total_persona],
+  tiempo:["Tiempo en destino",(a,b)=>b.horas_destino-a.horas_destino],
+  vuelta:["Vuelta más cómoda",(a,b)=>(b.vuelta_fecha+b.vuelta_hora).localeCompare(a.vuelta_fecha+a.vuelta_hora)],
+  traslado:["Menos traslado",(a,b)=>a.minutos_tierra-b.minutos_tierra],
+};
+
+function visibles(){
+  return DATOS.opciones.filter(o=>[...filtros].every(f=>FILTROS[f].test(o)))
+                       .sort(ORDENES[orden][1]);
+}
+
+function segmento(t){
+  if(t.tipo==="tierra") return `<div class="seg"><div class="ic">🚆</div><div class="bd">
+    <div class="t1"><b>${esc(t.duracion)}</b> · ${esc(t.de_nombre)} → ${esc(t.a_nombre)}</div>
+    <div class="t2">${esc(t.como)} · ${esc(t.coste)} · ${esc(t.cuando)} · se compra aparte</div>
+    </div></div>`;
+  const cia=t.cia==="wizz"?"Wizz Air":"Ryanair";
+  const pl=(typeof t.plazas==="number"&&t.plazas>0)?`<span class="mini w">quedan ${t.plazas}</span>`:"";
+  const orient=t.estado==="orientativo"
+    ?`<span class="mini w">precio orientativo · la aerolínea no lo publica ahora</span>`:"";
+  const dv=t.variacion||0;
+  const ch=dv?`<span class="mini ${dv<0?"o":""}">${dv<0?"▼":"▲"} ${eur(Math.abs(dv))}</span>`:"";
+  return `<div class="seg"><div class="ic">✈️</div><div class="bd">
+    <div class="t1"><b>${esc(t.sale)} → ${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}</div>
+    <div class="t2">${esc(diaL(t.fecha))} · ${cia} ${esc(t.etiqueta||t.vuelo)} · directo</div>
+    <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="orientativo"?"Ver precio en":"Comprar"} ${t.estado==="orientativo"?(t.cia==="wizz"?"Wizz Air":"Ryanair"):eur(t.precio)} →</a>${orient}${pl}${ch}
+    </div></div>`;
+}
+
+function detalle(o){
+  return `<div class="det" id="d-${esc(o.id)}">
+    ${o.por_que?`<p class="why">${esc(o.por_que)}</p>`:""}
+    ${o.aviso?`<div class="alert"><span>⚠️</span><span>${esc(o.aviso)}</span></div>`:""}
+    <div class="grid">
+      <div class="box"><h4>El viaje, tramo a tramo</h4>${o.tramos.map(segmento).join("")}</div>
+      <div class="box"><h4>Día a día</h4>
+        ${o.itinerario.map(d=>`<div class="day"><b>${esc(d.dia)}</b><span>${esc(d.texto)}</span></div>`).join("")}
+      </div>
+    </div></div>`;
+}
+
+function fila(o){
+  const fl=o.paises.map(p=>FLAG[p]||"").join("");
+  const dv=o.tramos.filter(t=>t.tipo==="vuelo").reduce((s,t)=>s+(t.variacion||0),0);
+  const av=[]; if(o.sale_temprano)av.push("madrugón"); if(o.llega_noche)av.push("llega de noche");
+  return `<button class="row" aria-expanded="false" data-id="${esc(o.id)}">
+    <div class="name">${o.destacada?'<span class="star">★</span>':""}<span class="fl">${fl}</span>
+      <span class="nm">${esc(o.titulo)}</span></div>
+    <div class="cell" data-l="Ida"><b>${esc(dia(o.ida_fecha))} · ${esc(o.ida_hora)}</b>
+      <span>${esc(o.ida_ciudad)}</span></div>
+    <div class="cell" data-l="Vuelta"><b>${esc(dia(o.vuelta_fecha))} · ${esc(o.vuelta_hora)}</b>
+      <span>${esc(o.vuelta_ciudad)} → llega ${esc(o.vuelta_llega)}</span></div>
+    <div class="cell" data-l="Allí"><b>${o.horas_destino} h</b><span>${o.noches} noches</span></div>
+    <div class="cell" data-l="Traslado"><b>${horas(o.minutos_tierra)}</b>
+      <span>${o.saltos} ${o.saltos===1?"salto":"saltos"}${av.length?" · "+av[0]:""}</span></div>
+    <div class="price ${o.dentro_presupuesto?"":"over"}">${o.tiene_orientativo?"≈ ":""}${eur(o.total_persona)}
+      <small>${eur(o.total_grupo)} los dos${dv?` · ${dv<0?"▼":"▲"}${eur(Math.abs(dv))}`:""}</small></div>
+    <div class="chev">⌄</div>
+  </button>${detalle(o)}`;
+}
+
+function vigilados(){
+  const m=new Map();
+  DATOS.opciones.forEach(o=>o.tramos.filter(t=>t.tipo==="vuelo")
+    .forEach(t=>m.set(`${t.cia}|${t.de}|${t.a}|${t.fecha}`,t)));
+  const f=[...m.values()].sort((a,b)=>a.fecha.localeCompare(b.fecha)||a.sale.localeCompare(b.sale));
+  return `<section class="watch"><h2>Vuelos vigilados</h2>
+    <p>Precio por persona buscando 2 plazas. El bot los revisa cada 15 minutos y avisa por Telegram si bajan.</p>
+    <div class="wrow h"><div>Trayecto</div><div>Cuándo</div><div>Compañía</div><div class="r">Precio</div><div></div></div>
+    ${f.map(t=>`<div class="wrow">
+      <div><b>${esc(t.de)} → ${esc(t.a)}</b></div>
+      <div>${esc(diaL(t.fecha))} · ${esc(t.sale)}→${esc(t.llega)}</div>
+      <div>${t.cia==="wizz"?"Wizz Air":"Ryanair"} ${esc(t.etiqueta||t.vuelo)}</div>
+      <div class="r tn">${eur(t.precio)}${spark(t.historico)}</div>
+      <div style="text-align:right"><a class="lnk" href="${esc(t.url)}" target="_blank" rel="noopener">Comprar →</a></div>
+    </div>`).join("")}</section>`;
+}
+
+function pinta(){
+  const v=visibles();
+  const bar=`<div class="bar">
+    <span class="lbl">Ordenar</span>
+    <select id="ord">${Object.entries(ORDENES).map(([k,[t]])=>
+      `<option value="${k}"${k===orden?" selected":""}>${t}</option>`).join("")}</select>
+    ${Object.entries(FILTROS).map(([k,f])=>
+      `<button class="chip" data-f="${k}" aria-pressed="${filtros.has(k)}">${f.txt}</button>`).join("")}
+    <span class="count">${v.length} de ${DATOS.opciones.length}</span></div>`;
+  const tabla=v.length?`<div class="tbl">
+    <div class="hrow"><div>Ruta</div><div>Ida</div><div>Vuelta</div><div>En destino</div>
+      <div>Traslado</div><div class="r">Por persona</div><div></div></div>
+    ${v.map(fila).join("")}</div>`
+    :`<div class="tbl"><div class="empty">Ninguna opción cumple esos filtros a la vez.</div></div>`;
+  document.getElementById("app").innerHTML=bar+tabla+vigilados();
+
+  document.getElementById("ord").onchange=e=>{orden=e.target.value;abierta=null;pinta();};
+  document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
+    const k=c.dataset.f; filtros.has(k)?filtros.delete(k):filtros.add(k); abierta=null; pinta();});
+  document.querySelectorAll(".row").forEach(r=>r.onclick=()=>{
+    const id=r.dataset.id, d=document.getElementById("d-"+id), ya=d.classList.contains("open");
+    document.querySelectorAll(".det").forEach(x=>x.classList.remove("open"));
+    document.querySelectorAll(".row").forEach(x=>x.setAttribute("aria-expanded","false"));
+    if(!ya){d.classList.add("open");r.setAttribute("aria-expanded","true");abierta=id;}
+    else abierta=null;});
+  if(abierta){const d=document.getElementById("d-"+abierta);
+    if(d){d.classList.add("open");
+      document.querySelector(`.row[data-id="${abierta}"]`)?.setAttribute("aria-expanded","true");}}
+}
+
+fetch("datos.json?v="+Date.now()).then(r=>r.json()).then(d=>{
+  DATOS=d;
+  const v=d.viaje, mejor=[...d.opciones].sort((a,b)=>a.total_persona-b.total_persona)[0];
+  document.title=v.titulo;
+  document.getElementById("h1").textContent=v.titulo;
+  document.getElementById("sub").innerHTML=
+    `<b>${d.opciones.length} combinaciones</b> de vuelo directo para 2 personas, `+
+    `desde <b>${eur(mejor.total_persona)}</b> por persona ida y vuelta. `+
+    `Toca cualquier fila para ver el detalle y comprar.`;
+  document.getElementById("meta").innerHTML=
+    `<span class="tag live">● Precios de ${esc(d.actualizado)}</span>`+
+    v.reglas.map(r=>`<span class="tag">${esc(r)}</span>`).join("");
+  pinta();
+  document.getElementById("foot").innerHTML=
+    `<b>De dónde salen los precios.</b> Se consultan los sistemas de venta de Ryanair y Wizz Air `+
+    `buscando ${v.pasajeros} plazas; si la aerolínea cotiza en moneda local se pasa a euros con el `+
+    `cambio oficial del BCE. Tarifas base: equipaje de mano pequeño, sin maleta facturada ni asiento elegido.<br>`+
+    `Los trayectos por tierra se compran aparte y sus duraciones están comprobadas con horarios reales.`;
+}).catch(e=>{document.getElementById("app").innerHTML=
+  `<div class="empty">No se han podido cargar los datos.<br><small>${esc(e)}</small></div>`;});
+</script>
+</body>
+</html>
