@@ -287,11 +287,11 @@
      "sale": "06:30",
      "llega": "09:00",
      "ref": 52.27,
-     "precio": 43.64,
+     "precio": 44.64,
      "etiqueta": "FR9063",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
      "plazas": -1,
-     "visto": "2026-09-09 22:46",
+     "visto": "2026-09-09 23:17",
      "estado": "ok",
      "historico": [
       [
@@ -345,9 +345,13 @@
       [
        "2026-09-09 22:46",
        43.64
+      ],
+      [
+       "2026-09-09 23:17",
+       44.64
       ]
      ],
-     "variacion": -9.63
+     "variacion": -8.63
     }
    ],
    "itinerario": [
@@ -364,8 +368,8 @@
      "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
     }
    ],
-   "total_persona": 177.63,
-   "total_grupo": 355.26,
+   "total_persona": 178.63,
+   "total_grupo": 357.26,
    "ida_fecha": "2026-10-09",
    "ida_hora": "20:45",
    "ida_iata": "CGN",
@@ -882,7 +886,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 22:46",
+     "visto": "2026-09-09 23:17",
      "estado": "orientativo",
      "historico": [
       [
@@ -1276,7 +1280,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 22:46",
+     "visto": "2026-09-09 23:17",
      "estado": "orientativo",
      "historico": [
       [
@@ -1423,7 +1427,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 22:46",
+     "visto": "2026-09-09 23:17",
      "estado": "orientativo",
      "historico": [
       [
@@ -1619,6 +1623,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-09 22:46",
- "actualizado_iso": "2026-09-09T22:46:20.771726+00:00"
+ "actualizado": "2026-09-09 23:17",
+ "actualizado_iso": "2026-09-09T23:17:20.421337+00:00"
 }
