@@ -40,6 +40,24 @@ def _watch_to_yaml(w):
     return d
 
 
+def publicar_web():
+    """Regenera web/datos.json con los precios de ahora y lo sube al repo.
+
+    Vercel está conectado a este repositorio, así que el propio commit
+    republica el panel: no hace falta ni token de Vercel ni el ordenador.
+    """
+    import subprocess
+    raiz = os.path.dirname(os.path.abspath(__file__))
+    r = subprocess.run([sys.executable, os.path.join(raiz, "actualizar_web.py")],
+                       cwd=raiz, capture_output=True, text=True)
+    if r.returncode != 0:
+        print("  [web] no se pudo regenerar:", (r.stderr or "")[-200:].strip())
+        return
+    commit_al_repo(["historico.json", os.path.join("web", "datos.json")],
+                   "chore: precios actualizados")
+    print("  [web] datos publicados")
+
+
 def save_and_commit_watches(engine, path=None):
     """Vuelca la watchlist a watches.yaml y (en la nube) la commitea al repo,
     para que los cambios por comando sobrevivan al relevo del job."""
@@ -53,6 +71,16 @@ def save_and_commit_watches(engine, path=None):
     with open(path, "w", encoding="utf-8") as fh:
         yaml.safe_dump(base, fh, allow_unicode=True, sort_keys=False)
 
+    commit_al_repo([path], "chore: watches actualizadas desde Telegram")
+
+
+def commit_al_repo(rutas, mensaje):
+    """Sube al repo los ficheros indicados (solo en la nube, GIT_COMMIT_BACK=1).
+
+    Es lo que permite que el bot NO dependa de tener el Mac encendido: el job de
+    GitHub Actions guarda aquí los precios nuevos y la web, y como Vercel está
+    conectado al repo, cada commit republica el panel solo.
+    """
     if os.environ.get("GIT_COMMIT_BACK", "1") != "1":
         return
     import subprocess
@@ -63,8 +91,11 @@ def save_and_commit_watches(engine, path=None):
     branch = os.environ.get("GIT_BRANCH", "main")
     run("git", "config", "user.email", "bot@users.noreply.github.com")
     run("git", "config", "user.name", "BotViajes")
-    run("git", "add", path)
-    if run("git", "commit", "-m", "chore: watches actualizadas desde Telegram").returncode != 0:
+    existentes = [r for r in rutas if os.path.exists(r)]
+    if not existentes:
+        return
+    run("git", "add", *existentes)
+    if run("git", "commit", "-m", mensaje).returncode != 0:
         return  # nada que commitear
     # el runner está en detached HEAD; rebase sobre lo último y push explícito a la rama
     run("git", "fetch", "origin", branch)
@@ -186,7 +217,10 @@ def main():
         while _t.time() - start < max_runtime:
             if _t.time() - last_check >= interval:
                 try:
+                    engine.historial_cambiado = False
                     engine.check_once()
+                    if engine.historial_cambiado:
+                        publicar_web()
                 except Exception as e:
                     print("  error en pasada:", e)
                 last_check = _t.time()
@@ -237,17 +271,17 @@ def main():
 
     if "--once" in sys.argv:
         for w in engine.watches:
-            offers = []
-            for pname in w["providers"]:
-                try:
-                    offers += get_provider(pname).search(w["origin"], w["destination"], w["date"])
-                except NotImplementedError:
-                    print("  [%s] experimental, sin implementar" % pname)
-                except Exception as e:
-                    print("  [%s] error: %s" % (pname, e))
-            print("\n[%s] %d ofertas:" % (w["name"], len(offers)))
-            for o in sorted(offers, key=lambda x: x.departure):
+            if not w.get("enabled", True):
+                print("\n[%s] desactivada, no se consulta" % w["name"])
+                continue
+            coinciden, todas, bajada = engine.revisar(w)
+            objetivo = ("  objetivo ≤%.0f €" % w["max_price"]) if w.get("max_price") else ""
+            print("\n[%s] %d ofertas, %d dentro del objetivo%s"
+                  % (w["name"], len(todas), len(coinciden), objetivo))
+            for o in sorted(todas, key=lambda x: x.departure):
                 print("   ", o)
+            if bajada:
+                print("    📉 HA BAJADO respecto a la última consulta")
         return
 
     try:

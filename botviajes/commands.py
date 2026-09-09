@@ -22,12 +22,17 @@ def ayuda():
         "<code>/vigilar proveedores; origen; destino; fecha; [hora]; [precio_max]</code>\n\n"
         "Ejemplos:\n"
         "<code>/vigilar renfe; Alicante; Albacete; %s; 16:55</code>\n"
-        "<code>/vigilar trenes; Madrid; Valencia; %s; ; 30</code>\n\n"
+        "<code>/vigilar trenes; Madrid; Valencia; %s; ; 30</code>\n"
+        "<code>/vigilar vuelos; ALC; BTS; %s; ; 60; 2</code>\n\n"
         "• proveedores: <code>renfe</code>, <code>ouigo</code>, <code>iryo</code>, "
-        "<code>amadeus</code>, o <code>trenes</code>\n"
-        "• hora vacía = cualquier tren; precio_max opcional\n\n"
+        "<code>ryanair</code>, <code>wizz</code>, o los atajos <code>trenes</code> "
+        "y <code>vuelos</code>\n"
+        "• hora vacía = cualquier salida; precio_max y nº de pasajeros opcionales\n"
+        "• en vuelos el precio es <b>por persona</b> y te aviso también cuando "
+        "<b>baja</b>, aunque no llegue al tope\n\n"
         "<b>Otros:</b>\n"
         "/lista — ver vigilancias\n"
+        "/precios — últimos precios de cada tramo\n"
         "/estado — ¿estoy vigilando o en pausa?\n"
         "/borrar &lt;id&gt; — quitar una\n"
         "/callar — callar los avisos que suenan (sigo vigilando)\n\n"
@@ -36,7 +41,7 @@ def ayuda():
         "  (<code>/stop</code> y <code>/parar</code> hacen lo mismo)\n"
         "/seguir — vuelvo a vigilar\n"
         "/apagar — me apago del todo (te pediré confirmación; luego solo se "
-        "reactiva desde el ordenador)\n" % (d1, d2)
+        "reactiva desde el ordenador)\n" % (d1, d2, d2)
     )
 
 
@@ -44,8 +49,10 @@ def expand_providers(s):
     s = s.strip().lower()
     if s in ("trenes", "tren"):
         return ["renfe", "ouigo", "iryo"]
+    if s in ("vuelos", "vuelo", "aviones", "avion"):
+        return ["ryanair", "wizz"]
     if s in ("all", "todo", "todos"):
-        return ["renfe", "ouigo", "iryo", "amadeus"]
+        return ["renfe", "ouigo", "iryo", "ryanair", "wizz"]
     return [p.strip() for p in s.split(",") if p.strip()]
 
 
@@ -82,8 +89,11 @@ def handle_text(text, chat_id, engine):
             date = to_iso(parts[3])
             time_ = parts[4] if len(parts) > 4 else ""
             max_price = float(parts[5].replace(",", ".")) if len(parts) > 5 and parts[5] else None
+            adults = int(parts[6]) if len(parts) > 6 and parts[6] else 1
         except Exception as e:
             return "❌ Error: %s" % e, False
+        # En vuelos hay que ir despacio: Ryanair y Wizz cortan si se les insiste.
+        es_vuelo = any(p in ("ryanair", "wizz", "amadeus") for p in providers)
         w = engine.add_watch(
             name="%s→%s %s" % (origin, destination, time_ or ""),
             providers=providers, origin=origin, destination=destination,
@@ -91,12 +101,14 @@ def handle_text(text, chat_id, engine):
             # el aviso vuelve al chat donde se creó la vigilancia: si el comando
             # llega de un grupo, el grupo entero recibe la alerta
             chat_id=str(chat_id) if chat_id else None,
+            adults=adults, poll_interval=900 if es_vuelo else None,
         )
         reply = ("✅ Vigilando <b>#%s</b>: %s→%s el %s %s\nProveedores: %s%s\n\n"
                  "Te aviso aquí en cuanto haya plazas." %
                  (w["id"], origin, destination, parts[3], time_ or "(cualquier hora)",
                   ", ".join(providers),
-                  ("\nPrecio máx: %.2f €" % max_price) if max_price else ""))
+                  ("\nPrecio máx: %.2f €" % max_price) if max_price else "")
+                 + ("\nPasajeros: %d · sondeo cada 15 min" % adults if es_vuelo else ""))
         return reply, True
 
     if cmd == "lista":
@@ -106,11 +118,30 @@ def handle_text(text, chat_id, engine):
         lines = ["<b>Vigilancias activas:</b>" if not engine.paused
                  else "<b>Vigilancias (⏸️ EN PAUSA — /seguir para reanudar):</b>"]
         for w in ws:
-            lines.append("#%s — %s→%s | %s %s | %s%s" % (
+            ultimo = ("| ahora <b>%.2f€</b>" % w["ultimo_precio"]
+                      if w.get("ultimo_precio") is not None else "")
+            lines.append("#%s — %s→%s | %s %s | %s%s %s" % (
                 w["id"], w["origin"], w["destination"], w["date"],
                 w.get("time") or "(cualquiera)", ", ".join(w["providers"]),
-                ("| ≤%.0f€" % w["max_price"]) if w.get("max_price") else ""))
+                ("| ≤%.0f€" % w["max_price"]) if w.get("max_price") else "", ultimo))
         return "\n".join(lines), False
+
+    if cmd in ("precios", "precio"):
+        ws = engine.list_watches()
+        conocidos = [w for w in ws if w.get("ultimo_precio") is not None]
+        if not conocidos:
+            return ("Todavía no tengo ningún precio. En cuanto haga la primera "
+                    "consulta aparecerán aquí."), False
+        lineas = ["💶 <b>Últimos precios vistos</b> (por persona)", ""]
+        total = 0.0
+        for w in sorted(conocidos, key=lambda x: x["id"]):
+            objetivo = ("  objetivo ≤%.0f€" % w["max_price"]) if w.get("max_price") else ""
+            lineas.append("#%s <b>%s</b>\n   <b>%.2f €</b>  %s%s\n   <i>visto %s</i>" % (
+                w["id"], w["name"], w["ultimo_precio"],
+                w.get("ultimo_detalle", ""), objetivo, w.get("ultimo_visto", "?")))
+            total += w["ultimo_precio"]
+        lineas += ["", "Suma de todos los tramos vigilados: <b>%.2f €</b>" % total]
+        return "\n".join(lineas), False
 
     if cmd == "borrar":
         if not rest.isdigit():

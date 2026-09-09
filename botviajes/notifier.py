@@ -31,6 +31,10 @@ class Notifier:
         self.tg_token = tg_token or os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
         self.mac_alerts = mac_alerts
         self.open_browser = open_browser
+        # Destinos que ya no existen (grupo borrado, bot expulsado, bloqueado).
+        # Se avisa una vez y se dejan de reintentar: si no, cada alerta escupe
+        # un 403 y parece que el bot falla cuando en realidad sí está avisando.
+        self._muertos = set()
 
     # ---- Telegram -----------------------------------------------------------
     def telegram(self, chat_id, text):
@@ -38,10 +42,17 @@ class Notifier:
         ids = chat_ids(chat_id)
         if not self.tg_token or not ids:
             return False
-        ok = True
-        for cid in ids:
-            ok = self._send_one(cid, text) and ok
-        return ok
+        vivos = [c for c in ids if c not in self._muertos]
+        if not vivos:
+            return False
+        # True si el aviso llegó a ALGÚN destino vivo. Antes bastaba con que un
+        # grupo borrado fallase para dar por perdido un mensaje que sí había
+        # llegado al chat personal, y eso despistaba en los registros.
+        llego = False
+        for cid in vivos:
+            if self._send_one(cid, text):
+                llego = True
+        return llego
 
     def _send_one(self, chat_id, text):
         try:
@@ -56,7 +67,16 @@ class Notifier:
                 timeout=20,
             )
             if not r.ok:
-                print("  [telegram] %s: %s" % (r.status_code, r.text[:200]))
+                permanente = r.status_code in (400, 403) and any(
+                    m in r.text for m in ("chat was deleted", "bot was kicked",
+                                          "bot was blocked", "chat not found",
+                                          "user is deactivated"))
+                if permanente and str(chat_id) not in self._muertos:
+                    self._muertos.add(str(chat_id))
+                    print("  [telegram] el destino %s ya no existe; dejo de "
+                          "escribirle (quítalo de TELEGRAM_CHAT_ID)" % chat_id)
+                elif not permanente:
+                    print("  [telegram] %s: %s" % (r.status_code, r.text[:200]))
             return r.ok
         except Exception as e:
             print("  [telegram] error:", e)
