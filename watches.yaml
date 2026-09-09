@@ -1,3 +1,16 @@
+# Watchlist para GitHub Actions (este archivo SÍ se sube al repo).
+# NO pongas aquí el token ni el chat_id: van como "secrets" del repo.
+# Para cambiar qué vigilas: edita este archivo y haz git push.
+#
+# Viaje de octubre: Alicante ida y vuelta, 2 personas, SOLO vuelo directo.
+# Ida el 8 a partir de las 20:00 o el 9 a cualquier hora; vuelta el 11 a
+# cualquier hora o el 12 aterrizando antes de las 18:00; tope 160 €/persona.
+#
+# poll_interval por ruta = 900 s: Ryanair y Wizz cortan (429/503) si se les
+# pregunta cada minuto. adults: 2 porque en low cost el precio por persona
+# sube si la tarifa barata no tiene dos asientos. max_price es el OBJETIVO;
+# además se avisa de cualquier bajada de 3 € o más aunque no lo alcance.
+
 poll_interval: 30
 alert_interval: 10
 mac_alerts: false
@@ -71,5 +84,55 @@ watches:
   date: '2026-10-12'
   time: 05:40
   max_price: 105
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Belfast (jue 8, 22:00)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: BFS
+  date: '2026-10-08'
+  time: '22:00'
+  max_price: 100
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Dublín→Alicante (dom 11)
+  providers:
+  - ryanair
+  origin: DUB
+  destination: ALC
+  date: '2026-10-11'
+  time: '16:25'
+  max_price: 25
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Colonia (vie 9)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: CGN
+  date: '2026-10-09'
+  time: '20:45'
+  max_price: 110
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Charleroi→Alicante (dom 11)
+  providers:
+  - ryanair
+  origin: CRL
+  destination: ALC
+  date: '2026-10-11'
+  time: 06:30
+  max_price: 40
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Wrocław (vie 9)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: WRO
+  date: '2026-10-09'
+  time: 05:50
+  max_price: 110
   adults: 2
   poll_interval: 900
