@@ -894,7 +894,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 06:22",
+     "visto": "2026-09-10 06:53",
      "estado": "orientativo",
      "historico": [
       [
@@ -1288,7 +1288,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 06:22",
+     "visto": "2026-09-10 06:53",
      "estado": "orientativo",
      "historico": [
       [
@@ -1435,7 +1435,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 06:22",
+     "visto": "2026-09-10 06:53",
      "estado": "orientativo",
      "historico": [
       [
@@ -1500,17 +1500,13 @@
      "sale": "11:45",
      "llega": "14:25",
      "ref": 82.99,
-     "precio": 153.99,
-     "etiqueta": "FR3487",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 17:12",
+     "precio": 152.99,
+     "etiqueta": "FR3487 · 2 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
+     "plazas": 2,
+     "visto": "2026-09-10 06:53",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-03 19:44",
-       82.99
-      ],
       [
        "2026-09-04 10:10",
        81.99
@@ -1586,9 +1582,13 @@
       [
        "2026-09-09 17:12",
        153.99
+      ],
+      [
+       "2026-09-10 06:53",
+       152.99
       ]
      ],
-     "variacion": 71.0
+     "variacion": 70.0
     }
    ],
    "itinerario": [
@@ -1610,8 +1610,8 @@
     }
    ],
    "tiene_orientativo": true,
-   "total_persona": 324.98,
-   "total_grupo": 649.96,
+   "total_persona": 323.98,
+   "total_grupo": 647.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1631,6 +1631,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-10 06:23",
- "actualizado_iso": "2026-09-10T06:23:05.950312+00:00"
+ "actualizado": "2026-09-10 06:53",
+ "actualizado_iso": "2026-09-10T06:53:54.815917+00:00"
 }
