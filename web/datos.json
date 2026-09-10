@@ -1096,7 +1096,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 14:15",
+     "visto": "2026-09-10 14:31",
      "estado": "orientativo",
      "historico": [
       [
@@ -1316,7 +1316,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 14:15",
+     "visto": "2026-09-10 14:31",
      "estado": "orientativo",
      "historico": [
       [
@@ -1463,7 +1463,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 14:15",
+     "visto": "2026-09-10 14:31",
      "estado": "orientativo",
      "historico": [
       [
@@ -1659,6 +1659,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-10 14:16",
- "actualizado_iso": "2026-09-10T14:16:03.516355+00:00"
+ "actualizado": "2026-09-10 14:31",
+ "actualizado_iso": "2026-09-10T14:31:33.091328+00:00"
 }
