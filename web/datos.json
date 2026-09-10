@@ -287,11 +287,11 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 48.84,
-     "etiqueta": "FR1495",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "precio": 47.85,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-10 07:24",
      "estado": "ok",
      "historico": [
       [
@@ -369,9 +369,13 @@
       [
        "2026-09-09 18:13",
        48.84
+      ],
+      [
+       "2026-09-10 07:24",
+       47.85
       ]
      ],
-     "variacion": -2.05
+     "variacion": -3.04
     }
    ],
    "itinerario": [
@@ -388,8 +392,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 178.2,
-   "total_grupo": 356.4,
+   "total_persona": 177.21,
+   "total_grupo": 354.42,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -740,11 +744,11 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 48.84,
-     "etiqueta": "FR1495",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "precio": 47.85,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-10 07:24",
      "estado": "ok",
      "historico": [
       [
@@ -822,9 +826,13 @@
       [
        "2026-09-09 18:13",
        48.84
+      ],
+      [
+       "2026-09-10 07:24",
+       47.85
       ]
      ],
-     "variacion": -2.05
+     "variacion": -3.04
     }
    ],
    "itinerario": [
@@ -845,8 +853,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 206.56,
-   "total_grupo": 413.12,
+   "total_persona": 205.57,
+   "total_grupo": 411.14,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -894,7 +902,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 06:53",
+     "visto": "2026-09-10 07:24",
      "estado": "orientativo",
      "historico": [
       [
@@ -959,11 +967,11 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 48.84,
-     "etiqueta": "FR1495",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "precio": 47.85,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-10 07:24",
      "estado": "ok",
      "historico": [
       [
@@ -1041,9 +1049,13 @@
       [
        "2026-09-09 18:13",
        48.84
+      ],
+      [
+       "2026-09-10 07:24",
+       47.85
       ]
      ],
-     "variacion": -2.05
+     "variacion": -3.04
     }
    ],
    "itinerario": [
@@ -1061,8 +1073,8 @@
     }
    ],
    "tiene_orientativo": true,
-   "total_persona": 219.83,
-   "total_grupo": 439.66,
+   "total_persona": 218.84,
+   "total_grupo": 437.68,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1288,7 +1300,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 06:53",
+     "visto": "2026-09-10 07:24",
      "estado": "orientativo",
      "historico": [
       [
@@ -1435,7 +1447,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 06:53",
+     "visto": "2026-09-10 07:24",
      "estado": "orientativo",
      "historico": [
       [
@@ -1631,6 +1643,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-10 06:53",
- "actualizado_iso": "2026-09-10T06:53:54.815917+00:00"
+ "actualizado": "2026-09-10 07:24",
+ "actualizado_iso": "2026-09-10T07:24:44.583024+00:00"
 }
