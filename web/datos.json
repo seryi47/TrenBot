@@ -37,11 +37,11 @@
      "sale": "22:00",
      "llega": "00:05",
      "ref": 97.99,
-     "precio": 107.99,
-     "etiqueta": "RK9570",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 21:18",
+     "precio": 108.99,
+     "etiqueta": "RK9570 (Ryanair UK) · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
+     "plazas": 3,
+     "visto": "2026-09-10 10:24",
      "estado": "ok",
      "historico": [
       [
@@ -103,9 +103,13 @@
       [
        "2026-09-09 21:18",
        107.99
+      ],
+      [
+       "2026-09-10 10:24",
+       108.99
       ]
      ],
-     "variacion": 10.0
+     "variacion": 11.0
     },
     {
      "tipo": "tierra",
@@ -162,8 +166,8 @@
      "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
     }
    ],
-   "total_persona": 137.98,
-   "total_grupo": 275.96,
+   "total_persona": 138.98,
+   "total_grupo": 277.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "22:00",
    "ida_iata": "BFS",
@@ -208,9 +212,9 @@
      "llega": "08:55",
      "ref": 95.19,
      "precio": 129.36,
-     "etiqueta": "FR9877 · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": 3,
+     "etiqueta": "FR9877",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 06:23",
      "estado": "ok",
      "historico": [
@@ -288,9 +292,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 47.85,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 07:24",
      "estado": "ok",
      "historico": [
@@ -438,9 +442,9 @@
      "llega": "23:00",
      "ref": 96.19,
      "precio": 131.03,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "etiqueta": "FR1568",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 08:41",
      "estado": "ok",
      "historico": [
@@ -539,9 +543,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 47.85,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 07:24",
      "estado": "ok",
      "historico": [
@@ -774,8 +778,8 @@
      "ref": 52.27,
      "precio": 45.94,
      "etiqueta": "FR9063",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": -1,
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 06:23",
      "estado": "ok",
      "historico": [
@@ -903,9 +907,9 @@
      "llega": "23:00",
      "ref": 96.19,
      "precio": 131.03,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "etiqueta": "FR1568",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 08:41",
      "estado": "ok",
      "historico": [
@@ -1088,7 +1092,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 08:41",
+     "visto": "2026-09-10 10:24",
      "estado": "orientativo",
      "historico": [
       [
@@ -1154,9 +1158,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 47.85,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 07:24",
      "estado": "ok",
      "historico": [
@@ -1308,7 +1312,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 08:41",
+     "visto": "2026-09-10 10:24",
      "estado": "orientativo",
      "historico": [
       [
@@ -1455,7 +1459,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-10 08:41",
+     "visto": "2026-09-10 10:24",
      "estado": "orientativo",
      "historico": [
       [
@@ -1521,9 +1525,9 @@
      "llega": "14:25",
      "ref": 82.99,
      "precio": 152.99,
-     "etiqueta": "FR3487 · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 2,
+     "etiqueta": "FR3487",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-10 06:53",
      "estado": "ok",
      "historico": [
@@ -1651,6 +1655,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-10 08:41",
- "actualizado_iso": "2026-09-10T08:41:45.164773+00:00"
+ "actualizado": "2026-09-10 10:24",
+ "actualizado_iso": "2026-09-10T10:24:37.623592+00:00"
 }
