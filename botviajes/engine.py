@@ -83,15 +83,16 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
     lineas = []
     mejor = viajes[0]
     lineas += ["", "🧳 <b>EL VIAJE COMPLETO</b>", "",
-               "<b>%s</b> — <b>%.2f € por persona</b>  (%.2f € los dos)  %s"
-               % (mejor["titulo"], mejor["total"], mejor["total"] * 2,
+               "<b>%s</b>" % mejor["titulo"],
+               "<b>%.2f € por persona</b> · %.2f € los dos · %s"
+               % (mejor["total"], mejor["total"] * 2,
                   "✅ entra en tu tope" if mejor["dentro"] else "⚠️ se pasa del tope")]
     vuelos = [t for t in mejor["tramos"] if t.get("tipo") == "vuelo"]
     tierras = [t for t in mejor["tramos"] if t.get("tipo") == "tierra"]
     for n, t in enumerate(mejor["tramos"]):
         if t.get("tipo") == "tierra":
-            lineas += ["", "   🚆 <b>%s → %s</b> · %s · %s"
-                       % (t["de_nombre"], t["a_nombre"], t["duracion"], t["coste"])]
+            # No se pinta aquí: cada bloque de vuelo ya lleva su conexión al
+            # lado. Si no, el mismo tren aparecía tres veces en el mensaje.
             continue
         rol = "IDA" if t is vuelos[0] else ("VUELTA" if t is vuelos[-1] else "TRAMO")
         cia = "Wizz Air" if t["cia"] == "wizz" else "Ryanair"
@@ -107,7 +108,9 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
                          "  ·  %s de vuelo" % dur if dur else ""))
         precio = ("<b>%.2f €</b>" % t["precio"]) if t.get("precio") else "sin precio"
         extra = []
-        if t.get("minimo") is not None and t["minimo"] != t["maximo"]:
+        if t.get("es_del_aviso"):
+            pass          # su rango de precios ya se ha contado arriba
+        elif t.get("minimo") is not None and t["minimo"] != t["maximo"]:
             extra.append("mínimo visto %.2f · máximo %.2f" % (t["minimo"], t["maximo"]))
         elif t.get("minimo") is not None:
             extra.append("sin cambios desde que lo vigilo")
