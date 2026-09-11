@@ -167,6 +167,7 @@ const eur=n=>n==null?"—":n.toLocaleString("es-ES",{minimumFractionDigits:2,max
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const dia=iso=>{const d=new Date(iso+"T12:00:00");return `${DOW[d.getDay()]} ${d.getDate()}`;};
 const diaL=iso=>{const d=new Date(iso+"T12:00:00");return `${DOW[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()]}`;};
+const dur=t=>{const p=String(t).split(":");const h=+p[0],m=+p[1];return h?`${h} h ${String(m).padStart(2,"0")} min de vuelo`:`${m} min de vuelo`;};
 const horas=m=>m>=60?`${Math.floor(m/60)}h${m%60?String(m%60).padStart(2,"0"):""}`:`${m}min`;
 
 let DATOS=null, orden="precio", filtros=new Set(), abierta=null;
@@ -210,9 +211,10 @@ function segmento(t){
   const dv=t.variacion||0;
   const ch=dv?`<span class="mini ${dv<0?"o":""}">${dv<0?"▼":"▲"} ${eur(Math.abs(dv))}</span>`:"";
   return `<div class="seg"><div class="ic">✈️</div><div class="bd">
-    <div class="t1"><b>${esc(t.sale)} → ${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}</div>
+    <div class="t1"><b>${esc(t.sale)} → ${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}${t.duracion?` · <span style="color:var(--ink3)">${esc(dur(t.duracion))}</span>`:""}</div>
     <div class="t2">${esc(diaL(t.fecha))} · ${cia} ${esc(t.etiqueta||t.vuelo)} · directo</div>
     <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="orientativo"?"Ver precio en":"Comprar"} ${t.estado==="orientativo"?(t.cia==="wizz"?"Wizz Air":"Ryanair"):eur(t.precio)} →</a>${orient}${pl}${ch}
+    ${(t.minimo!=null&&t.minimo!==t.maximo)?`<div class="t2" style="margin-top:6px">Se ha movido entre <b>${eur(t.minimo)}</b> y ${eur(t.maximo)} desde que lo vigilo</div>`:(t.minimo!=null?`<div class="t2" style="margin-top:6px">Sin cambios desde que lo vigilo</div>`:"")}
     </div></div>`;
 }
 

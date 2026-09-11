@@ -98,12 +98,16 @@ def desde_watches(tramo):
                         "sale": tramo["sale"], "llega": tramo.get("llega", ""),
                         "etiqueta": "precio orientativo", "url": w.get("ultimo_url", ""),
                         "plazas": None, "visto": w.get("orientativo_visto")}
+            serie = [p[1] for p in (w.get("serie") or []) if p[1] and p[1] > 0]
             return {"estado": "ok", "precio": w["ultimo_precio"],
                     "sale": w.get("ultimo_salida") or tramo["sale"],
                     "llega": w.get("ultimo_llegada") or tramo.get("llega", ""),
                     "etiqueta": w.get("ultimo_etiqueta") or tramo.get("vuelo", ""),
                     "url": w.get("ultimo_url", ""),
                     "plazas": w.get("ultimo_plazas"),
+                    "duracion": w.get("ultimo_duracion"),
+                    "minimo": min(serie) if serie else None,
+                    "maximo": max(serie) if serie else None,
                     "visto": w.get("ultimo_visto")}
     return None
 
@@ -134,6 +138,7 @@ def consultar(tramo, pasajeros):
         "etiqueta": elegido.label,
         "url": elegido.buy_url,
         "plazas": (elegido.raw or {}).get("plazas"),
+        "duracion": (elegido.raw or {}).get("duracion"),
     }
 
 
