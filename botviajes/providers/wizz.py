@@ -102,6 +102,23 @@ class WizzProvider(Provider):
             self._horarios[k] = llegada
             self._guardar_horarios()
 
+    def duracion(self, o, d, salida, llegada):
+        """Duración real del vuelo en 'H:MM'.
+
+        Restar las horas locales a secas engaña: un Dublín 16:25 → Alicante
+        20:15 parecen 3h50 y son 2h50, porque hay una hora de diferencia.
+        """
+        if not (salida and llegada):
+            return None
+        a, b = self._est.get(o), self._est.get(d)
+        desfase = (HUSO.get((b.get("cc") or "").upper(), 2)
+                   - HUSO.get((a.get("cc") or "").upper(), 2)) * 60 if a and b else 0
+        def m(t):
+            hh, mm = t.split(":")[:2]
+            return int(hh) * 60 + int(mm)
+        total = (m(llegada) - m(salida) - desfase) % 1440
+        return "%d:%02d" % (total // 60, total % 60)
+
     def _llegada(self, o, d, salida):
         """(hora, es_estimada). Nunca devuelve vacío: si no se sabe, se calcula."""
         exacta = self._horarios.get(self._clave(o, d, salida))
@@ -269,6 +286,9 @@ class WizzProvider(Provider):
                 available=precio is not None and plazas != 0,
                 buy_url=compra,
                 raw={"divisa": divisa, "bruto": barata, "plazas": plazas,
+                     "duracion": self.duracion(
+                         co, cd, (f.get("departureDateTime") or "")[11:16],
+                         (f.get("arrivalDateTime") or "")[11:16]),
                      "pais_origen": self._est.get(co, {}).get("country", ""),
                      "pais_destino": self._est.get(cd, {}).get("country", "")},
             ))
@@ -331,6 +351,7 @@ class WizzProvider(Provider):
                         raw={"divisa": p.get("currencyCode"), "bruto": p.get("amount"),
                              "via": "timetable", "llegada_estimada": estimada,
                              "priceType": tipo, "orientativo": orientativo,
+                             "duracion": self.duracion(co, cd, hora, llega),
                              "pais_origen": self._est.get(co, {}).get("country", ""),
                              "pais_destino": self._est.get(cd, {}).get("country", "")},
                     ))

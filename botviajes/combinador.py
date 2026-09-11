@@ -48,7 +48,7 @@ def viajes_con(watch, watches, precio_actual=None):
     cfg = _config()
     if not cfg:
         return []
-    precios, urls, etiquetas, rangos, plazas = {}, {}, {}, {}, {}
+    precios, urls, etiquetas, rangos, plazas, duraciones = {}, {}, {}, {}, {}, {}
     for w in watches:
         if w.get("ultimo_precio") is None or not w.get("providers"):
             continue
@@ -57,6 +57,7 @@ def viajes_con(watch, watches, precio_actual=None):
         urls[k] = w.get("ultimo_url")
         etiquetas[k] = w.get("ultimo_etiqueta")
         plazas[k] = w.get("ultimo_plazas")
+        duraciones[k] = w.get("ultimo_duracion")
         serie = [p[1] for p in (w.get("serie") or []) if p[1] and p[1] > 0]
         if serie:
             rangos[k] = (min(serie), max(serie))
@@ -88,6 +89,7 @@ def viajes_con(watch, watches, precio_actual=None):
                                 etiqueta=etiquetas.get(k) or t.get("vuelo"),
                                 minimo=minimo, maximo=maximo,
                                 plazas=plazas.get(k),
+                                duracion=duraciones.get(k),
                                 es_del_aviso=(k == mio)))
         vuelta = [t for t in detalle if t.get("tipo") == "vuelo"][-1]
         salida.append({

@@ -47,6 +47,16 @@ def bloque_horas(oferta, fecha):
     return lineas
 
 
+def dur_bonita(txt):
+    """'02:50' o '2:50' -> '2 h 50 min'."""
+    try:
+        h, m = str(txt).split(":")[:2]
+        h, m = int(h), int(m)
+    except Exception:
+        return None
+    return ("%d h %02d min" % (h, m)) if h else ("%d min" % m)
+
+
 def fecha_corta(iso):
     """'2026-10-11' -> 'dom 11 oct'."""
     try:
@@ -89,8 +99,10 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         lineas += ["", "   ✈️ <b>%s</b> · %s · %s %s%s"
                    % (rol, fecha_corta(t["fecha"]), cia, etiqueta,
                       "  ← el que ha bajado" if t.get("es_del_aviso") else "")]
-        lineas.append("      %s <b>%s</b> → %s <b>%s</b>"
-                      % (t["de_nombre"], t["sale"], t["a_nombre"], t["llega"]))
+        dur = dur_bonita(t.get("duracion"))
+        lineas.append("      %s <b>%s</b> → %s <b>%s</b>%s"
+                      % (t["de_nombre"], t["sale"], t["a_nombre"], t["llega"],
+                         "  ·  %s de vuelo" % dur if dur else ""))
         precio = ("<b>%.2f €</b>" % t["precio"]) if t.get("precio") else "sin precio"
         extra = []
         if t.get("minimo") is not None and t["minimo"] != t["maximo"]:
@@ -459,10 +471,26 @@ class Engine:
                 and mejor.price <= anterior - umbral):
             aviso = self._texto_bajada(watch, mejor, anterior)
             watch["_bajaba_desde"] = anterior
+        with self._lock:
+            # Los datos del vuelo (horas, duración, plazas, enlace) se refrescan
+            # SIEMPRE. Antes iban atados al precio, así que una ruta con precio
+            # estable se quedaba sin ellos indefinidamente.
+            watch["ultimo_visto"] = time.strftime("%Y-%m-%d %H:%M")
+            watch["ultimo_detalle"] = "%s %s %s" % (
+                mejor.departure, mejor.label, mejor.provider)
+            watch["ultimo_url"] = mejor.buy_url
+            watch["ultimo_salida"] = mejor.departure
+            watch["ultimo_llegada"] = mejor.arrival
+            watch["ultimo_etiqueta"] = mejor.label
+            watch["ultimo_plazas"] = (mejor.raw or {}).get("plazas")
+            watch["ultimo_duracion"] = (mejor.raw or {}).get("duracion")
+            watch["ultimo_bruto"] = bruto
+            watch["ultimo_divisa"] = divisa
+
         if anterior is None or abs(mejor.price - anterior) >= 0.01:
             with self._lock:
-                # Serie propia: sin ella el aviso no puede decir si el precio
-                # está barato o solo rebotando dentro de una subida.
+                # La serie solo crece cuando el precio cambia de verdad: si no,
+                # se llenaría de lecturas repetidas.
                 serie = watch.setdefault("serie", [])
                 serie.append([time.strftime("%Y-%m-%d %H:%M"), mejor.price])
                 del serie[:-120]
@@ -470,17 +498,9 @@ class Engine:
                 self._guardar_historial()
                 self.historial_cambiado = True
                 watch["ultimo_precio"] = mejor.price
-                watch["ultimo_visto"] = time.strftime("%Y-%m-%d %H:%M")
-                watch["ultimo_detalle"] = "%s %s %s" % (
-                    mejor.departure, mejor.label, mejor.provider)
-                watch["ultimo_url"] = mejor.buy_url
-                watch["ultimo_salida"] = mejor.departure
-                watch["ultimo_llegada"] = mejor.arrival
-                watch["ultimo_etiqueta"] = mejor.label
-                watch["ultimo_plazas"] = (mejor.raw or {}).get("plazas")
-                watch["ultimo_bruto"] = bruto
-                watch["ultimo_divisa"] = divisa
                 self._save()
+        else:
+            self._save()
         return aviso
 
     def _texto_bajada(self, watch, oferta, anterior):

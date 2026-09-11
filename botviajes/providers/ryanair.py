@@ -167,6 +167,8 @@ class RyanairProvider(Provider):
                         date=date, departure=horas[0][11:16], arrival=horas[1][11:16],
                         label=etiqueta, price=precio, available=hay, buy_url=compra,
                         raw={"divisa": divisa, "bruto": bruto, "plazas": plazas,
+                             # la propia API la da ya calculada, con husos incluidos
+                             "duracion": f.get("duration"),
                              "pais_origen": self._est.get(co, {}).get("country", ""),
                              "pais_destino": self._est.get(cd, {}).get("country", "")},
                     ))
