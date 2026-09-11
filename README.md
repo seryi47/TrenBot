@@ -1,5 +1,9 @@
 # BotViajes 🚆✈️🔔
 
+> 📖 **[FUNCIONAMIENTO.md](FUNCIONAMIENTO.md)** — cómo funciona por dentro:
+> arquitectura, qué avisos manda y cuándo, las trampas de cada API,
+> qué se auto-repara y qué hacer si algo falla. **Empieza por ahí.**
+
 Vigila la disponibilidad de billetes (trenes y vuelos) y **te avisa por Telegram
 + Mac** en cuanto aparece una plaza — ideal para trenes agotados que dependen de
 cancelaciones de última hora.
