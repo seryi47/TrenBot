@@ -48,12 +48,14 @@ def viajes_con(watch, watches, precio_actual=None):
     cfg = _config()
     if not cfg:
         return []
-    precios = {}
+    precios, urls, etiquetas = {}, {}, {}
     for w in watches:
         if w.get("ultimo_precio") is None or not w.get("providers"):
             continue
-        precios[_clave(w["providers"][0], w["origin"],
-                       w["destination"], w["date"])] = w["ultimo_precio"]
+        k = _clave(w["providers"][0], w["origin"], w["destination"], w["date"])
+        precios[k] = w["ultimo_precio"]
+        urls[k] = w.get("ultimo_url")
+        etiquetas[k] = w.get("ultimo_etiqueta")
 
     mio = _clave(watch["providers"][0], watch["origin"],
                  watch["destination"], watch["date"])
@@ -69,11 +71,23 @@ def viajes_con(watch, watches, precio_actual=None):
         if any(k not in precios for k in claves):
             continue        # falta el precio de algún tramo: no se inventa
         total = round(sum(precios[k] for k in claves), 2)
-        vuelta = vuelos[-1]
+        # Cada tramo con su precio de hoy y su enlace, para poder enseñar el
+        # viaje entero en el aviso y no solo "vuelta desde Dublín".
+        detalle = []
+        for t in op.get("tramos", []):
+            if t.get("tipo") != "vuelo":
+                detalle.append(dict(t))
+                continue
+            k = _clave(t["cia"], t["de"], t["a"], t["fecha"])
+            detalle.append(dict(t, precio=precios.get(k), url=urls.get(k),
+                                etiqueta=etiquetas.get(k) or t.get("vuelo"),
+                                es_del_aviso=(k == mio)))
+        vuelta = [t for t in detalle if t.get("tipo") == "vuelo"][-1]
         salida.append({
             "titulo": op.get("titulo", op.get("id", "")),
             "total": total,
             "dentro": tope is not None and total <= tope,
+            "tramos": detalle,
             "vuelta_desde": vuelta.get("de_nombre") or vuelta.get("de"),
             "vuelta_fecha": vuelta.get("fecha"),
             "vuelta_hora": vuelta.get("sale"),

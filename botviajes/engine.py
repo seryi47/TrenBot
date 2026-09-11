@@ -47,6 +47,16 @@ def bloque_horas(oferta, fecha):
     return lineas
 
 
+def fecha_corta(iso):
+    """'2026-10-11' -> 'dom 11 oct'."""
+    try:
+        d = _dt.date.fromisoformat(iso)
+        return "%s %d %s" % (DIAS_ES[d.weekday()][:3], d.day,
+                             MESES_ES[d.month - 1][:3])
+    except Exception:
+        return iso
+
+
 def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
     """Con qué se combina este vuelo y cuánto sale el viaje entero.
 
@@ -59,14 +69,32 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         return []
     if not viajes:
         return []
-    lineas = ["", "🧳 <b>Con este precio, el viaje completo:</b>"]
-    for v in viajes[:maximo]:
-        lineas.append("• <b>%s</b> — <b>%.2f €</b> por persona %s"
-                      % (v["titulo"], v["total"],
-                         "✅ entra en tu tope" if v["dentro"] else "(se pasa del tope)"))
-        lineas.append("   vuelta desde %s el %s a las %s"
-                      % (v["vuelta_desde"], fecha_larga(v["vuelta_fecha"]),
-                         v["vuelta_hora"]))
+    lineas = []
+    for i, v in enumerate(viajes[:maximo]):
+        lineas += ["", "🧳 <b>%s</b> — <b>%.2f €</b> por persona %s"
+                   % (v["titulo"], v["total"],
+                      "✅ entra en tu tope" if v["dentro"] else "(se pasa del tope)")]
+        if i == 0:
+            # El mejor se desglosa entero: el de vuelta con su hora y su
+            # precio es justo lo que hace falta para decidir.
+            for t in v["tramos"]:
+                if t.get("tipo") == "tierra":
+                    lineas.append("   🚆 %s → %s · %s · %s"
+                                  % (t["de_nombre"], t["a_nombre"],
+                                     t["duracion"], t["coste"]))
+                    continue
+                marca = "→" if t.get("es_del_aviso") else "  "
+                lineas.append("   %s ✈️ <b>%s</b> · %s %s → %s %s"
+                              % (marca, fecha_corta(t["fecha"]), t["de_nombre"],
+                                 t["sale"], t["a_nombre"], t["llega"]))
+                precio = ("<b>%.2f €</b>" % t["precio"]) if t.get("precio") else "—"
+                cia = "Wizz Air" if t["cia"] == "wizz" else "Ryanair"
+                cola = "  ← el que ha bajado" if t.get("es_del_aviso") else ""
+                if t.get("url") and not t.get("es_del_aviso"):
+                    lineas.append('      %s · %s · <a href="%s">comprar</a>'
+                                  % (precio, cia, t["url"]))
+                else:
+                    lineas.append("      %s · %s%s" % (precio, cia, cola))
     return lineas
 
 
@@ -477,7 +505,7 @@ class Engine:
                                                      "por encima" if dif > 0 else "por debajo"))
 
         lineas += bloque_viaje(watch, self.watches, oferta.price)
-        lineas += ["", "👉 <a href=\"%s\">Comprar en %s</a>"
+        lineas += ["", '👉 <a href="%s">Comprar este vuelo (la ida) en %s</a>'
                    % (oferta.buy_url, oferta.provider.title())]
         if WEB_URL:
             lineas.append("🌐 %s" % WEB_URL)
@@ -508,7 +536,7 @@ class Engine:
                               min((o.price for o in offers if o.price), default=None))
         urls = sorted({o.buy_url for o in offers if o.buy_url})
         if urls:
-            lines += [""] + ['👉 <a href="%s">Comprar</a>' % u for u in urls]
+            lines += [""] + ['👉 <a href="%s">Comprar este vuelo</a>' % u for u in urls]
         lines += ["", "<i>No te lo repito salvo que baje todavía más.</i>"]
         if WEB_URL:
             lines += ["", "🌐 %s" % WEB_URL]
