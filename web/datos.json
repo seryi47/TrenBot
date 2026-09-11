@@ -44,7 +44,12 @@
      "plazas": 5,
      "visto": "2026-09-11 10:14",
      "estado": "ok",
-     "historico": [],
+     "historico": [
+      [
+       "2026-09-11 08:16",
+       86.99
+      ]
+     ],
      "variacion": 0.0
     },
     {
@@ -1826,6 +1831,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-11 10:22",
- "actualizado_iso": "2026-09-11T10:22:29.233593+02:00"
+ "actualizado": "2026-09-11 10:23",
+ "actualizado_iso": "2026-09-11T10:23:49.455615+02:00"
 }
