@@ -41,6 +41,7 @@ def bloque_horas(oferta, fecha):
         oferta.origin, fecha_larga(fecha), oferta.departure,
         (" — hora local de %s" % po) if po else "")]
     if oferta.arrival:
+        lineas.append("")          # aire entre salida y llegada, se lee mejor
         lineas.append("🛬 Llega a %s a las %s%s%s" % (
             oferta.destination, aprox, oferta.arrival,
             (" — hora local de %s" % pd) if pd else ""))
@@ -113,6 +114,7 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
             extra.append("quedan %d plazas" % t["plazas"])
         lineas.append("      %s%s" % (precio, "  (%s)" % " · ".join(extra) if extra else ""))
         if t.get("url"):
+            lineas.append("")
             lineas.append('      👉 <a href="%s">comprar este</a>' % t["url"])
     if len(viajes) > 1:
         lineas += ["", "<i>Hay %d combinación(es) más con este vuelo; la "
@@ -542,7 +544,7 @@ class Engine:
             lineas += ["", '👉 <a href="%s">Comprar en %s</a>'
                        % (oferta.buy_url, oferta.provider.title())]
         if WEB_URL:
-            lineas.append("🌐 %s" % WEB_URL)
+            lineas += ["", "", "🌐 %s" % WEB_URL]
         return "\n".join(lineas)
 
     # ---- bucle --------------------------------------------------------------
@@ -573,7 +575,7 @@ class Engine:
             lines += [""] + ['👉 <a href="%s">Comprar este vuelo</a>' % u for u in urls]
         lines += ["", "<i>No te lo repito salvo que baje todavía más.</i>"]
         if WEB_URL:
-            lines += ["", "🌐 %s" % WEB_URL]
+            lines += ["", "", "🌐 %s" % WEB_URL]
         return "\n".join(lines)
 
     def tick(self):
