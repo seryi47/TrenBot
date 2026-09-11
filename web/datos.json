@@ -39,9 +39,9 @@
      "llega": "07:50",
      "ref": 86.99,
      "precio": 83.99,
-     "etiqueta": "FR9559 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
-     "plazas": 5,
+     "etiqueta": "FR9559",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 11:00",
      "estado": "ok",
      "historico": [
@@ -839,7 +839,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-11 11:00",
+     "visto": "2026-09-11 11:03",
      "estado": "orientativo",
      "historico": [
       [
@@ -1498,7 +1498,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-11 11:00",
+     "visto": "2026-09-11 11:03",
      "estado": "orientativo",
      "historico": [
       [
@@ -1650,7 +1650,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-11 11:00",
+     "visto": "2026-09-11 11:03",
      "estado": "orientativo",
      "historico": [
       [
@@ -1847,6 +1847,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-11 11:00",
- "actualizado_iso": "2026-09-11T11:00:21.347634+00:00"
+ "actualizado": "2026-09-11 11:04",
+ "actualizado_iso": "2026-09-11T11:04:00.829580+00:00"
 }
