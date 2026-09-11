@@ -136,3 +136,23 @@ watches:
   max_price: 110
   adults: 2
   poll_interval: 900
+- name: IDA · Alicante→Belfast (vie 9, 05:45)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: BFS
+  date: '2026-10-09'
+  time: 05:45
+  max_price: 70
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Bratislava RYANAIR (vie 9)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: BTS
+  date: '2026-10-09'
+  time: '21:05'
+  max_price: 80
+  adults: 2
+  poll_interval: 900

@@ -81,6 +81,15 @@ REALES = {
     ("KTW", "PRG"): (5.3, "autobús directo, ~5h15"),
     ("WRO", "PED"): (2.9, "tren directo Baltic Express, ~2h50"),
     ("BFS", "DUB"): (2.2, "tren Enterprise, ~2h10"),
+    # Irlanda: sin autopista transversal ni bus directo, todo va por Dublín
+    ("NOC", "BFS"): (5.9, "bus con transbordos, ~5h56"),
+    ("SNN", "BFS"): (6.9, "bus con transbordos, ~6h53"),
+    ("NOC", "DUB"): (4.0, "bus directo, ~4h"),
+    ("SNN", "DUB"): (3.5, "bus directo, ~3h30"),
+    # Hahn está en mitad del campo: sumar ~1h45 hasta Fráncfort
+    ("EIN", "HHN"): (7.0, "bus a Fráncfort 5h35 + 1h45 hasta Hahn"),
+    ("CRL", "EIN"): (3.0, "bus/tren, ~3h"),
+    ("EIN", "CGN"): (2.5, "bus directo, ~2h30"),
 }
 for (x, y), v in list(REALES.items()):
     REALES[(y, x)] = v

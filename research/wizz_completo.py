@@ -5,10 +5,29 @@ del oeste, Italia... El flightList admite 2 entradas como mucho, así que va
 ruta a ruta, despacio, con ALC siempre delante (así los precios llegan en EUR).
 """
 import json, os, time
+
+
+def _base_wizz():
+    """Versión de la API de Wizz que esté vigente ahora mismo.
+
+    La suben cada pocas semanas y al jubilar la vieja devuelven 503, así que
+    dejarla escrita a fuego rompe el script. Se coge la que el proveedor tiene
+    cacheada (él ya sabe auto-detectarla).
+    """
+    import json as _j, os as _o
+    ruta = _o.path.join(_o.path.dirname(_o.path.dirname(_o.path.abspath(__file__))),
+                        "data", "wizz_version.json")
+    try:
+        v = _j.load(open(ruta)).get("version")
+    except Exception:
+        v = None
+    return "https://be.wizzair.com/%s/Api" % (v or "29.16.0")
+
+
 from curl_cffi import requests as cr
 
 S = os.path.dirname(os.path.abspath(__file__))
-BASE = "https://be.wizzair.com/29.14.0/Api"
+BASE = _base_wizz()
 DESDE, HASTA = "2026-10-06", "2026-10-16"
 EUROPA = {
     "AT","BE","BA","BG","HR","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE",
@@ -66,6 +85,11 @@ def main():
                     o, d = f["departureStation"], f["arrivalStation"]
                     dia = f["departureDate"][:10]
                     p = (f.get("price") or {})
+                    # Wizz manda priceType "checkPrice" con importe 0 cuando no
+                    # publica precio. NO es gratis: es que no hay dato. Guardarlo
+                    # como 0 inventaba combinaciones baratísimas que no existen.
+                    if f.get("priceType") != "price" or float(p.get("amount") or 0) <= 0:
+                        continue
                     reg = salida["out"] if o == "ALC" else salida["back"]
                     reg.setdefault(c, {})[dia] = [
                         round(float(p.get("amount", 0)), 2), p.get("currencyCode"),

@@ -1,9 +1,28 @@
 """Reconsulta Wizz para 2 adultos (el precio por persona puede subir si la
 tarifa barata solo tiene 1 asiento). Va despacio para no comerse un 429."""
 import json, time
+
+
+def _base_wizz():
+    """Versión de la API de Wizz que esté vigente ahora mismo.
+
+    La suben cada pocas semanas y al jubilar la vieja devuelven 503, así que
+    dejarla escrita a fuego rompe el script. Se coge la que el proveedor tiene
+    cacheada (él ya sabe auto-detectarla).
+    """
+    import json as _j, os as _o
+    ruta = _o.path.join(_o.path.dirname(_o.path.dirname(_o.path.abspath(__file__))),
+                        "data", "wizz_version.json")
+    try:
+        v = _j.load(open(ruta)).get("version")
+    except Exception:
+        v = None
+    return "https://be.wizzair.com/%s/Api" % (v or "29.16.0")
+
+
 from curl_cffi import requests as cr
 
-BASE = "https://be.wizzair.com/29.14.0/Api"
+BASE = _base_wizz()
 RUTAS = [("ALC", "BTS"), ("ALC", "BUD"), ("ALC", "KTW"), ("ALC", "WAW"),
          ("ALC", "GDN"), ("ALC", "VCE"), ("ALC", "MXP")]
 

@@ -88,8 +88,8 @@ def cargar():
                 if dia not in dias:
                     continue
                 p, div, horas = dias[dia]
-                if div != "EUR":
-                    continue
+                if div != "EUR" or not p or p <= 0:
+                    continue          # 0 € no es un precio: es un dato que falta
                 for sale in horas:
                     if dia == IDA_8 and hm(sale) < hm(HORA_MIN_8):
                         continue
@@ -105,8 +105,8 @@ def cargar():
                 if dia not in dias:
                     continue
                 p, div, horas = dias[dia]
-                if div != "EUR":
-                    continue
+                if div != "EUR" or not p or p <= 0:
+                    continue          # 0 € no es un precio: es un dato que falta
                 for sale in horas:
                     m = llegada_estimada(sale, a["lat"], a["lon"], a["cc"], True)
                     if dia == VUE_12 and m > hm(LLEGADA_MAX_12):

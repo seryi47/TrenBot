@@ -574,6 +574,145 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ]
+  },
+  {
+   "id": "belfast-dublin-manana",
+   "titulo": "Belfast + Dublín (vuelo de mañana)",
+   "subtitulo": "22 € más barata que la versión del jueves",
+   "paises": [
+    "Reino Unido",
+    "Irlanda"
+   ],
+   "noches": 2,
+   "por_que": "Misma ruta que la del jueves pero volando el viernes temprano: sale 22 € más barata y aterrizas a las 07:50 con el día entero por delante, en vez de a medianoche.",
+   "aviso": "El vuelo sale a las 05:45, así que hay que estar en el aeropuerto sobre las 04:30.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9559",
+     "de": "ALC",
+     "a": "BFS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Belfast",
+     "fecha": "2026-10-09",
+     "sale": "05:45",
+     "llega": "07:50",
+     "ref": 86.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Belfast",
+     "a_nombre": "Dublín",
+     "como": "Tren Enterprise directo (cada hora) o bus Aircoach",
+     "duracion": "2 h 10 min",
+     "coste": "20-30 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR261",
+     "de": "DUB",
+     "a": "ALC",
+     "de_nombre": "Dublín",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:25",
+     "llega": "20:15",
+     "ref": 29.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de madrugada; en Belfast a las 07:50 con el día completo."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Belfast, o excursión a la Calzada del Gigante (1h15 en bus)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
+    }
+   ]
+  },
+  {
+   "id": "bratislava-praga-ryanair",
+   "titulo": "Bratislava + Praga (con Ryanair)",
+   "subtitulo": "Vuelve a entrar en presupuesto cambiando de aerolínea",
+   "paises": [
+    "Eslovaquia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "El Alicante-Bratislava de Wizz se ha puesto en unos 170 €, pero Ryanair hace la misma ruta esa noche por 95,99 €. Eso devuelve Bratislava al presupuesto.",
+   "aviso": "Llegas a las 23:55, así que el viernes se pierde; y el vuelo de vuelta aterriza a la 01:00 del lunes. Chequia se queda en medio día: si quieres un día entero en cada país, mira la de Belfast.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR5698",
+     "de": "ALC",
+     "a": "BTS",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bratislava",
+     "fecha": "2026-10-09",
+     "sale": "21:05",
+     "llega": "23:55",
+     "ref": 95.99
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Bratislava",
+     "a_nombre": "Praga",
+     "como": "Autobús directo RegioJet",
+     "duracion": "4 h 05 min",
+     "coste": "20-25 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Praga",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo (ČD / RegioJet)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 45.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de noche; en Bratislava a las 23:55."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Día completo en Bratislava."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Autobús a Praga por la mañana (4h), tarde allí, tren a Pardubice y vuelo a las 22:00."
+    }
+   ]
   }
  ]
 }
