@@ -465,9 +465,16 @@ class Engine:
             orient = [o for o in todas
                       if (o.raw or {}).get("orientativo") and o.price and o.price > 0]
             if orient:
+                barata = min(orient, key=lambda o: o.price)
                 with self._lock:
-                    watch["ultimo_orientativo"] = min(o.price for o in orient)
+                    watch["ultimo_orientativo"] = barata.price
                     watch["orientativo_visto"] = time.strftime("%Y-%m-%d %H:%M")
+                    # Aunque el precio no sea firme, el vuelo existe: sus horas
+                    # y su duración sí valen y hay que guardarlas.
+                    watch["ultimo_salida"] = barata.departure
+                    watch["ultimo_llegada"] = barata.arrival
+                    watch["ultimo_duracion"] = (barata.raw or {}).get("duracion")
+                    watch["ultimo_url"] = barata.buy_url or watch.get("ultimo_url")
                     self._save()
             return None
         anterior = watch.get("ultimo_precio")
@@ -478,11 +485,10 @@ class Engine:
         # la serie. Se compara en la moneda original cuando se conoce.
         bruto = (mejor.raw or {}).get("bruto")
         divisa = (mejor.raw or {}).get("divisa")
-        if (divisa and divisa != "EUR" and bruto is not None
-                and watch.get("ultimo_bruto") is not None
-                and watch.get("ultimo_divisa") == divisa
-                and abs(float(bruto) - float(watch["ultimo_bruto"])) < 0.01):
-            return None      # misma tarifa, solo se movió el cambio
+        mismo_importe = (divisa and divisa != "EUR" and bruto is not None
+                         and watch.get("ultimo_bruto") is not None
+                         and watch.get("ultimo_divisa") == divisa
+                         and abs(float(bruto) - float(watch["ultimo_bruto"])) < 0.01)
         aviso = None
         if (watch.get("avisar_bajadas", True) and anterior is not None
                 and mejor.price <= anterior - umbral):
@@ -490,8 +496,8 @@ class Engine:
             watch["_bajaba_desde"] = anterior
         with self._lock:
             # Los datos del vuelo (horas, duración, plazas, enlace) se refrescan
-            # SIEMPRE. Antes iban atados al precio, así que una ruta con precio
-            # estable se quedaba sin ellos indefinidamente.
+            # SIEMPRE, antes de cualquier filtro: si no, una ruta con precio
+            # estable —o que solo cotiza en otra moneda— se quedaba sin ellos.
             watch["ultimo_visto"] = time.strftime("%Y-%m-%d %H:%M")
             watch["ultimo_detalle"] = "%s %s %s" % (
                 mejor.departure, mejor.label, mejor.provider)
@@ -503,6 +509,12 @@ class Engine:
             watch["ultimo_duracion"] = (mejor.raw or {}).get("duracion")
             watch["ultimo_bruto"] = bruto
             watch["ultimo_divisa"] = divisa
+
+        if mismo_importe:
+            # La tarifa no se ha movido: solo ha cambiado el tipo de cambio.
+            # No es una bajada ni merece entrar en el histórico.
+            self._save()
+            return None
 
         if anterior is None or abs(mejor.price - anterior) >= 0.01:
             with self._lock:
