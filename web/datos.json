@@ -220,9 +220,9 @@
      "llega": "23:00",
      "ref": 96.19,
      "precio": 132.72,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "etiqueta": "FR1568",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 06:25",
      "estado": "ok",
      "historico": [
@@ -325,9 +325,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 45.99,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
@@ -480,8 +480,8 @@
      "ref": 95.19,
      "precio": 145.51,
      "etiqueta": "FR9877",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": -1,
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 06:26",
      "estado": "ok",
      "historico": [
@@ -567,9 +567,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 45.99,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
@@ -716,11 +716,11 @@
      "sale": "20:45",
      "llega": "23:25",
      "ref": 88.99,
-     "precio": 135.99,
-     "etiqueta": "FR1356 (Malta Air) · 2 plazas",
+     "precio": 136.99,
+     "etiqueta": "FR1356 (Malta Air) · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
-     "plazas": 2,
-     "visto": "2026-09-11 03:21",
+     "plazas": 4,
+     "visto": "2026-09-11 07:53",
      "estado": "ok",
      "historico": [
       [
@@ -774,9 +774,13 @@
       [
        "2026-09-11 03:21",
        135.99
+      ],
+      [
+       "2026-09-11 07:53",
+       136.99
       ]
      ],
-     "variacion": 47.0
+     "variacion": 48.0
     },
     {
      "tipo": "tierra",
@@ -801,9 +805,9 @@
      "llega": "09:00",
      "ref": 52.27,
      "precio": 58.23,
-     "etiqueta": "FR9063 · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": 3,
+     "etiqueta": "FR9063",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 06:26",
      "estado": "ok",
      "historico": [
@@ -901,8 +905,8 @@
      "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
     }
    ],
-   "total_persona": 194.22,
-   "total_grupo": 388.44,
+   "total_persona": 195.22,
+   "total_grupo": 390.44,
    "ida_fecha": "2026-10-09",
    "ida_hora": "20:45",
    "ida_iata": "CGN",
@@ -919,192 +923,6 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 141.26,
-   "dentro_presupuesto": false
-  },
-  {
-   "id": "viena-budapest",
-   "titulo": "Viena + Budapest",
-   "subtitulo": "Las dos capitales del Danubio",
-   "paises": [
-    "Austria",
-    "Hungría"
-   ],
-   "noches": 3,
-   "por_que": "Sale el jueves por la noche, así que ganas el viernes entero en Viena, y hay tren directo Viena-Budapest en 2h40.",
-   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1568",
-     "de": "ALC",
-     "a": "VIE",
-     "de_nombre": "Alicante",
-     "a_nombre": "Viena",
-     "fecha": "2026-10-08",
-     "sale": "20:15",
-     "llega": "23:00",
-     "ref": 96.19,
-     "precio": 132.72,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
-     "visto": "2026-09-11 06:25",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-03 19:44",
-       96.19
-      ],
-      [
-       "2026-09-03 22:56",
-       95.19
-      ],
-      [
-       "2026-09-04 10:10",
-       106.56
-      ],
-      [
-       "2026-09-05 09:14",
-       107.83
-      ],
-      [
-       "2026-09-07 10:26",
-       129.76
-      ],
-      [
-       "2026-09-07 16:57",
-       144.22
-      ],
-      [
-       "2026-09-07 22:48",
-       133.72
-      ],
-      [
-       "2026-09-07 23:09",
-       132.72
-      ],
-      [
-       "2026-09-07 23:24",
-       133.72
-      ],
-      [
-       "2026-09-08 12:39",
-       148.39
-      ],
-      [
-       "2026-09-08 23:18",
-       147.39
-      ],
-      [
-       "2026-09-09 08:40",
-       145.51
-      ],
-      [
-       "2026-09-09 09:37",
-       159.96
-      ],
-      [
-       "2026-09-09 16:35",
-       157.72
-      ],
-      [
-       "2026-09-10 08:41",
-       131.03
-      ],
-      [
-       "2026-09-11 06:25",
-       132.72
-      ]
-     ],
-     "variacion": 36.53
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Viena",
-     "a_nombre": "Budapest",
-     "como": "Tren Railjet directo (ÖBB / MÁV)",
-     "duracion": "2 h 40 min",
-     "coste": "20-30 €",
-     "cuando": "sábado 10 por la mañana"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "BUD",
-     "a": "ALC",
-     "de_nombre": "Budapest",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "05:15",
-     "llega": "08:30",
-     "ref": 59.99,
-     "precio": 65.99,
-     "etiqueta": "W6",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-09 18:13",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-03 19:44",
-       59.99
-      ],
-      [
-       "2026-09-08 18:08",
-       54.89
-      ],
-      [
-       "2026-09-09 08:40",
-       59.99
-      ],
-      [
-       "2026-09-09 18:13",
-       65.99
-      ]
-     ],
-     "variacion": 6.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo en Viena."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Tren a Budapest por la mañana. Día y noche allí."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
-    }
-   ],
-   "total_persona": 198.71,
-   "total_grupo": 397.42,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "20:15",
-   "ida_iata": "VIE",
-   "ida_ciudad": "Viena",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "05:15",
-   "vuelta_llega": "08:30",
-   "vuelta_iata": "BUD",
-   "vuelta_ciudad": "Budapest",
-   "horas_destino": 52,
-   "minutos_tierra": 160,
-   "saltos": 1,
-   "sale_temprano": true,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 156.18,
    "dentro_presupuesto": false
   },
   {
@@ -1132,12 +950,12 @@
      "sale": "09:35",
      "llega": "12:25",
      "ref": 65.99,
-     "precio": 170.99,
-     "etiqueta": "W6",
+     "precio": 150.99,
+     "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 10:32",
-     "estado": "ok",
+     "visto": "2026-09-11 07:53",
+     "estado": "orientativo",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -1202,9 +1020,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 45.99,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
@@ -1306,8 +1124,9 @@
      "texto": "Día completo en Praga, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 216.98,
-   "total_grupo": 433.96,
+   "tiene_orientativo": true,
+   "total_persona": 196.98,
+   "total_grupo": 393.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1324,6 +1143,196 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 116.88,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "viena-budapest",
+   "titulo": "Viena + Budapest",
+   "subtitulo": "Las dos capitales del Danubio",
+   "paises": [
+    "Austria",
+    "Hungría"
+   ],
+   "noches": 3,
+   "por_que": "Sale el jueves por la noche, así que ganas el viernes entero en Viena, y hay tren directo Viena-Budapest en 2h40.",
+   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19,
+     "precio": 132.72,
+     "etiqueta": "FR1568",
+     "url": "",
+     "plazas": null,
+     "visto": "2026-09-11 06:25",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       96.19
+      ],
+      [
+       "2026-09-03 22:56",
+       95.19
+      ],
+      [
+       "2026-09-04 10:10",
+       106.56
+      ],
+      [
+       "2026-09-05 09:14",
+       107.83
+      ],
+      [
+       "2026-09-07 10:26",
+       129.76
+      ],
+      [
+       "2026-09-07 16:57",
+       144.22
+      ],
+      [
+       "2026-09-07 22:48",
+       133.72
+      ],
+      [
+       "2026-09-07 23:09",
+       132.72
+      ],
+      [
+       "2026-09-07 23:24",
+       133.72
+      ],
+      [
+       "2026-09-08 12:39",
+       148.39
+      ],
+      [
+       "2026-09-08 23:18",
+       147.39
+      ],
+      [
+       "2026-09-09 08:40",
+       145.51
+      ],
+      [
+       "2026-09-09 09:37",
+       159.96
+      ],
+      [
+       "2026-09-09 16:35",
+       157.72
+      ],
+      [
+       "2026-09-10 08:41",
+       131.03
+      ],
+      [
+       "2026-09-11 06:25",
+       132.72
+      ]
+     ],
+     "variacion": 36.53
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Budapest",
+     "como": "Tren Railjet directo (ÖBB / MÁV)",
+     "duracion": "2 h 40 min",
+     "coste": "20-30 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "BUD",
+     "a": "ALC",
+     "de_nombre": "Budapest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:15",
+     "llega": "08:30",
+     "ref": 59.99,
+     "precio": 99.99,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": null,
+     "visto": "2026-09-11 07:53",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       59.99
+      ],
+      [
+       "2026-09-08 18:08",
+       54.89
+      ],
+      [
+       "2026-09-09 08:40",
+       59.99
+      ],
+      [
+       "2026-09-09 18:13",
+       65.99
+      ],
+      [
+       "2026-09-11 07:53",
+       99.99
+      ]
+     ],
+     "variacion": 40.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Tren a Budapest por la mañana. Día y noche allí."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
+    }
+   ],
+   "total_persona": 232.71,
+   "total_grupo": 465.42,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:15",
+   "ida_iata": "VIE",
+   "ida_ciudad": "Viena",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "05:15",
+   "vuelta_llega": "08:30",
+   "vuelta_iata": "BUD",
+   "vuelta_ciudad": "Budapest",
+   "horas_destino": 52,
+   "minutos_tierra": 160,
+   "saltos": 1,
+   "sale_temprano": true,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 156.18,
    "dentro_presupuesto": false
   },
   {
@@ -1351,12 +1360,12 @@
      "sale": "09:35",
      "llega": "12:25",
      "ref": 65.99,
-     "precio": 170.99,
-     "etiqueta": "W6",
+     "precio": 150.99,
+     "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 10:32",
-     "estado": "ok",
+     "visto": "2026-09-11 07:53",
+     "estado": "orientativo",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -1411,11 +1420,11 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 65.99,
+     "precio": 99.99,
      "etiqueta": "W6",
-     "url": "",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-09 18:13",
+     "visto": "2026-09-11 07:53",
      "estado": "ok",
      "historico": [
       [
@@ -1433,9 +1442,13 @@
       [
        "2026-09-09 18:13",
        65.99
+      ],
+      [
+       "2026-09-11 07:53",
+       99.99
       ]
      ],
-     "variacion": 6.0
+     "variacion": 40.0
     }
    ],
    "itinerario": [
@@ -1452,8 +1465,9 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30, con el domingo por delante."
     }
    ],
-   "total_persona": 236.98,
-   "total_grupo": 473.96,
+   "tiene_orientativo": true,
+   "total_persona": 250.98,
+   "total_grupo": 501.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1497,12 +1511,12 @@
      "sale": "09:35",
      "llega": "12:25",
      "ref": 65.99,
-     "precio": 170.99,
-     "etiqueta": "W6",
+     "precio": 150.99,
+     "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-09 10:32",
-     "estado": "ok",
+     "visto": "2026-09-11 07:53",
+     "estado": "orientativo",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -1567,9 +1581,9 @@
      "llega": "14:25",
      "ref": 82.99,
      "precio": 169.99,
-     "etiqueta": "FR3487 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR3487",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
@@ -1675,8 +1689,9 @@
      "texto": "Tren temprano a Linz (1h20) y vuelo a las 11:45. En Alicante a las 14:25."
     }
    ],
-   "total_persona": 340.98,
-   "total_grupo": 681.96,
+   "tiene_orientativo": true,
+   "total_persona": 320.98,
+   "total_grupo": 641.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1696,6 +1711,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-11 07:13",
- "actualizado_iso": "2026-09-11T07:13:00.405835+00:00"
+ "actualizado": "2026-09-11 07:53",
+ "actualizado_iso": "2026-09-11T07:53:50.938546+00:00"
 }
