@@ -72,8 +72,19 @@ class Engine:
         # de precios cada vez que GitHub releva el job (cada ~5 h).
         self.historial_file = historial_file
         self.historial = {}
+        # "Ya te avisé de esto": si vive solo en memoria, cada relevo del job
+        # (cada ~5 h) vuelve a mandar el mismo aviso. Va a fichero.
+        self.avisos_file = os.path.join(os.path.dirname(historial_file) or ".",
+                                        "avisos.json")
+        self.avisos = {}
         self._load()
         self._cargar_historial()
+        try:
+            if os.path.exists(self.avisos_file):
+                with open(self.avisos_file, encoding="utf-8") as fh:
+                    self.avisos = json.load(fh)
+        except Exception:
+            self.avisos = {}
 
     # ---- persistencia -------------------------------------------------------
     def _load(self):
@@ -122,6 +133,13 @@ class Engine:
                 watch["ultimo_precio"] = serie[-1][1]
             if not watch.get("ultimo_visto"):
                 watch["ultimo_visto"] = serie[-1][0]
+
+    def _guardar_avisos(self):
+        try:
+            with open(self.avisos_file, "w", encoding="utf-8") as fh:
+                json.dump(self.avisos, fh, ensure_ascii=False, indent=1)
+        except Exception:
+            pass
 
     def _guardar_historial(self):
         try:
@@ -251,33 +269,57 @@ class Engine:
         return min(con_precio, key=lambda o: o.price) if con_precio else None
 
     def _revisar_ceguera(self, watch, todas):
-        """Avisa si una ruta que antes daba precio lleva varios sondeos sin dar nada.
+        """¿Esta ruta lleva varios sondeos sin dar precio? Devuelve True si sí.
 
-        Es la red de seguridad contra los fallos silenciosos: cuando Ryanair
-        cambió su client-version, el bot se quedó a ciegas horas y solo se supo
-        porque alguien preguntó. Un aviso por Telegram evita repetirlo.
+        Red de seguridad contra los fallos silenciosos: cuando una aerolínea
+        cambia algo por su parte, el bot se queda ciego y sin esto solo se
+        descubriría por casualidad. No manda nada: el aviso se agrupa fuera,
+        porque si se cae un proveedor entero saldría un mensaje por ruta.
         """
         UMBRAL = 3
         st = self._state.setdefault(watch["id"], {})
         if any(o.price for o in todas):
             if st.get("ciegos"):
                 st["ciegos"] = 0
-                st["ceguera_avisada"] = False
-            return None
+            clave = self.clave_historial(watch)
+            if clave in self.avisos:           # se recuperó: se olvida el aviso
+                del self.avisos[clave]
+                self._guardar_avisos()
+            return False
         if watch.get("ultimo_precio") is None:
-            return None            # nunca dio precio: no hay nada que echar de menos
+            return False           # nunca dio precio: no hay nada que echar de menos
         st["ciegos"] = st.get("ciegos", 0) + 1
-        if st["ciegos"] < UMBRAL or st.get("ceguera_avisada"):
+        return st["ciegos"] >= UMBRAL
+
+    def _aviso_ceguera(self, ciegas, horas_silencio=12):
+        """Un solo mensaje para todas las rutas ciegas, y no más de uno cada 12 h.
+
+        Sin lo segundo, el relevo del job en la nube reenviaba el mismo aviso
+        cada pocas horas.
+        """
+        nuevas = []
+        ahora = time.time()
+        for w in ciegas:
+            clave = self.clave_historial(w)
+            ultimo = (self.avisos.get(clave) or {}).get("t", 0)
+            if ahora - ultimo >= horas_silencio * 3600:
+                nuevas.append(w)
+                self.avisos[clave] = {"t": ahora,
+                                      "cuando": time.strftime("%Y-%m-%d %H:%M")}
+        if not nuevas:
             return None
-        st["ceguera_avisada"] = True
-        return ("⚠️ <b>Me he quedado sin datos de un vuelo</b>\n\n"
-                "<b>%s</b>\n"
-                "Llevo %d consultas seguidas sin que la aerolínea me devuelva "
-                "precio. Lo último que vi fueron <b>%.2f €</b> el %s.\n\n"
-                "Puede ser un bloqueo temporal o que hayan cambiado algo por su "
-                "parte. Sigo intentándolo y te aviso si vuelve."
-                % (watch["name"], st["ciegos"], watch["ultimo_precio"],
-                   watch.get("ultimo_visto", "?")))
+        self._guardar_avisos()
+        cias = sorted({(w["providers"] or ["?"])[0].upper() for w in nuevas})
+        lineas = ["⚠️ <b>Me he quedado sin datos de %s</b>"
+                  % ("un vuelo" if len(nuevas) == 1 else "%d vuelos" % len(nuevas)), ""]
+        for w in nuevas:
+            lineas.append("• <b>%s</b> — lo último, %.2f € el %s"
+                          % (w["name"], w["ultimo_precio"], w.get("ultimo_visto", "?")))
+        lineas += ["", "Aerolínea%s afectada%s: <b>%s</b>."
+                   % ("s" if len(cias) > 1 else "", "s" if len(cias) > 1 else "",
+                      ", ".join(cias)),
+                   "Sigo intentándolo y te aviso en cuanto vuelvan los precios."]
+        return "\n".join(lineas)
 
     def _registrar_precio(self, watch, todas):
         """Guarda el precio mas barato visto y avisa si ha BAJADO.
@@ -414,11 +456,8 @@ class Engine:
             if now - st["last_poll"] >= cada:
                 st["last_poll"] = now
                 offers, todas = self._poll(watch)
-                ciego = self._revisar_ceguera(watch, todas)
-                if ciego:
-                    self.notifier.telegram(self._chat_for(watch), ciego)
-                    print("[%s] ⚠️ sin datos en '%s'" % (time.strftime("%H:%M:%S"),
-                                                         watch["name"]))
+                if self._revisar_ceguera(watch, todas):
+                    ciegas.append(watch)
                 bajada = self._registrar_precio(watch, todas)
                 if bajada:
                     entregado = self.notifier.telegram(self._chat_for(watch), bajada)
@@ -475,6 +514,7 @@ class Engine:
             print("[%s] en pausa (/seguir para reanudar)" % time.strftime("%H:%M:%S"))
             return 0
         total = 0
+        ciegas = []
         ahora = time.time()
         for watch in list(self.watches):
             if not watch.get("enabled", True):
@@ -489,11 +529,8 @@ class Engine:
             st["last_poll"] = ahora
             try:
                 offers, todas = self._poll(watch)
-                ciego = self._revisar_ceguera(watch, todas)
-                if ciego:
-                    self.notifier.telegram(self._chat_for(watch), ciego)
-                    print("[%s] ⚠️ sin datos en '%s'" % (time.strftime("%H:%M:%S"),
-                                                         watch["name"]))
+                if self._revisar_ceguera(watch, todas):
+                    ciegas.append(watch)
                 bajada = self._registrar_precio(watch, todas)
                 if bajada:
                     entregado = self.notifier.telegram(self._chat_for(watch), bajada)
@@ -521,6 +558,13 @@ class Engine:
                     print("[%s] %s -> %.2f €" % (stamp, watch["name"], actual))
                 else:
                     print("[%s] %s -> sin plaza" % (stamp, watch["name"]))
+        if ciegas:
+            aviso = self._aviso_ceguera(ciegas)
+            print("[%s] ⚠️ sin datos en %d ruta(s)%s"
+                  % (time.strftime("%H:%M:%S"), len(ciegas),
+                     "" if aviso else " (ya avisado hace poco)"))
+            if aviso:
+                self.notifier.telegram(self.default_chat_id, aviso)
         return total
 
     def run_forever(self):

@@ -33,7 +33,8 @@ from botviajes.providers.base import Provider
 
 # Wizz sube esta versión cada pocas semanas; si cambia, _detectar_version()
 # la lee de su propia web y sigue funcionando sin tocar nada.
-VERSION_POR_DEFECTO = "29.15.1"
+VERSION_POR_DEFECTO = "29.16.0"
+CACHE_VERSION = "wizz_version.json"
 
 # Husos horarios respecto a UTC en octubre de 2026 (aún con horario de verano:
 # en la UE termina el 25). Wizz no publica la zona horaria de sus aeropuertos y
@@ -63,7 +64,7 @@ class WizzProvider(Provider):
         self._est = self.load_json("wizz_stations.json")
         self._horarios = self._cargar_horarios()
         self._sess = None
-        self._version = VERSION_POR_DEFECTO
+        self._version = self._cargar_version()
         self._ultima = 0.0
         # /search/search se satura enseguida. Cuando devuelve 429 se aparca un
         # rato y se tira solo de /search/timetable, que aguanta bien.
@@ -136,6 +137,18 @@ class WizzProvider(Provider):
             code_getter=lambda kv: kv[0],
         )
 
+    def _cargar_version(self):
+        try:
+            with open(self._ruta_cache_version(), encoding="utf-8") as fh:
+                return json.load(fh).get("version") or VERSION_POR_DEFECTO
+        except Exception:
+            return VERSION_POR_DEFECTO
+
+    @staticmethod
+    def _ruta_cache_version():
+        from botviajes.providers.base import DATA_DIR
+        return os.path.join(DATA_DIR, CACHE_VERSION)
+
     def _detectar_version(self):
         """Si Wizz sube la versión de su API, la lee de su propia web."""
         try:
@@ -144,9 +157,14 @@ class WizzProvider(Provider):
             if m and m.group(1) != self._version:
                 print("  [wizz] versión de API %s -> %s" % (self._version, m.group(1)))
                 self._version = m.group(1)
+                try:
+                    with open(self._ruta_cache_version(), "w", encoding="utf-8") as fh:
+                        json.dump({"version": self._version}, fh)
+                except Exception:
+                    pass
                 return True
-        except Exception:
-            pass
+        except Exception as e:
+            print("  [wizz] no pude leer la versión: %s" % e)
         return False
 
     def _session(self, forzar=False):
@@ -180,7 +198,10 @@ class WizzProvider(Provider):
             if r.status_code in (400,) and "InvalidProtocol" in r.text:
                 self._session(forzar=True)      # token caducado
                 continue
-            if r.status_code == 404 and self._detectar_version():
+            # Wizz jubila las versiones viejas devolviendo 503 (no 404), así que
+            # ante CUALQUIER fallo se comprueba si han publicado una nueva antes
+            # de dar la consulta por perdida.
+            if r.status_code in (400, 404, 429, 503) and self._detectar_version():
                 self._session(forzar=True)
                 continue
             if r.status_code in (429, 503):

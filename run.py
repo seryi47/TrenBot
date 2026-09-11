@@ -53,8 +53,10 @@ def publicar_web():
     if r.returncode != 0:
         print("  [web] no se pudo regenerar:", (r.stderr or "")[-200:].strip())
         return
-    commit_al_repo(["historico.json", os.path.join("web", "datos.json"),
+    commit_al_repo(["historico.json", "avisos.json",
+                    os.path.join("web", "datos.json"),
                     os.path.join("data", "ryanair_version.json"),
+                    os.path.join("data", "wizz_version.json"),
                     os.path.join("data", "wizz_horarios.json")],
                    "chore: precios actualizados")
     print("  [web] datos publicados")
