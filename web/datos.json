@@ -324,17 +324,13 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 47.0,
-     "etiqueta": "FR1495",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 14:15",
+     "precio": 45.99,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-03 20:09",
-       49.9
-      ],
       [
        "2026-09-03 20:24",
        50.89
@@ -410,9 +406,13 @@
       [
        "2026-09-10 14:15",
        47.0
+      ],
+      [
+       "2026-09-11 07:12",
+       45.99
       ]
      ],
-     "variacion": -3.89
+     "variacion": -4.9
     }
    ],
    "itinerario": [
@@ -433,8 +433,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 179.72,
-   "total_grupo": 359.44,
+   "total_persona": 178.71,
+   "total_grupo": 357.42,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -566,17 +566,13 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 47.0,
-     "etiqueta": "FR1495",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 14:15",
+     "precio": 45.99,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-03 20:09",
-       49.9
-      ],
       [
        "2026-09-03 20:24",
        50.89
@@ -652,9 +648,13 @@
       [
        "2026-09-10 14:15",
        47.0
+      ],
+      [
+       "2026-09-11 07:12",
+       45.99
       ]
      ],
-     "variacion": -3.89
+     "variacion": -4.9
     }
    ],
    "itinerario": [
@@ -671,8 +671,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 192.51,
-   "total_grupo": 385.02,
+   "total_persona": 191.5,
+   "total_grupo": 383.0,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1201,17 +1201,13 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 47.0,
-     "etiqueta": "FR1495",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 14:15",
+     "precio": 45.99,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-03 20:09",
-       49.9
-      ],
       [
        "2026-09-03 20:24",
        50.89
@@ -1287,9 +1283,13 @@
       [
        "2026-09-10 14:15",
        47.0
+      ],
+      [
+       "2026-09-11 07:12",
+       45.99
       ]
      ],
-     "variacion": -3.89
+     "variacion": -4.9
     }
    ],
    "itinerario": [
@@ -1306,8 +1306,8 @@
      "texto": "Día completo en Praga, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 217.99,
-   "total_grupo": 435.98,
+   "total_persona": 216.98,
+   "total_grupo": 433.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1566,17 +1566,13 @@
      "sale": "11:45",
      "llega": "14:25",
      "ref": 82.99,
-     "precio": 168.99,
-     "etiqueta": "FR3487",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 21:32",
+     "precio": 169.99,
+     "etiqueta": "FR3487 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
+     "plazas": 5,
+     "visto": "2026-09-11 07:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-04 17:09",
-       77.99
-      ],
       [
        "2026-09-04 20:11",
        76.99
@@ -1652,9 +1648,13 @@
       [
        "2026-09-10 21:32",
        168.99
+      ],
+      [
+       "2026-09-11 07:12",
+       169.99
       ]
      ],
-     "variacion": 86.0
+     "variacion": 87.0
     }
    ],
    "itinerario": [
@@ -1675,8 +1675,8 @@
      "texto": "Tren temprano a Linz (1h20) y vuelo a las 11:45. En Alicante a las 14:25."
     }
    ],
-   "total_persona": 339.98,
-   "total_grupo": 679.96,
+   "total_persona": 340.98,
+   "total_grupo": 681.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1696,6 +1696,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-11 06:26",
- "actualizado_iso": "2026-09-11T06:26:44.271997+00:00"
+ "actualizado": "2026-09-11 07:13",
+ "actualizado_iso": "2026-09-11T07:13:00.405835+00:00"
 }
