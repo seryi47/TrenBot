@@ -82,11 +82,12 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         return []
     lineas = []
     mejor = viajes[0]
-    lineas += ["", "🧳 <b>EL VIAJE COMPLETO</b>",
+    lineas += ["", "🧳 <b>EL VIAJE COMPLETO</b>", "",
                "<b>%s</b> — <b>%.2f € por persona</b>  (%.2f € los dos)  %s"
                % (mejor["titulo"], mejor["total"], mejor["total"] * 2,
                   "✅ entra en tu tope" if mejor["dentro"] else "⚠️ se pasa del tope")]
     vuelos = [t for t in mejor["tramos"] if t.get("tipo") == "vuelo"]
+    tierras = [t for t in mejor["tramos"] if t.get("tipo") == "tierra"]
     for n, t in enumerate(mejor["tramos"]):
         if t.get("tipo") == "tierra":
             lineas += ["", "   🚆 <b>%s → %s</b> · %s · %s"
@@ -113,6 +114,13 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         if isinstance(t.get("plazas"), int) and t["plazas"] > 0:
             extra.append("quedan %d plazas" % t["plazas"])
         lineas.append("      %s%s" % (precio, "  (%s)" % " · ".join(extra) if extra else ""))
+        # En la vuelta se repite el salto por tierra: así, leyendo solo ese
+        # bloque, ya sabes cómo has llegado hasta ese aeropuerto.
+        if rol == "VUELTA" and tierras:
+            for g in tierras:
+                lineas.append("      🚆 cómo llegas: %s → %s · %s · %s"
+                              % (g["de_nombre"], g["a_nombre"], g["duracion"],
+                                 g["coste"]))
         if t.get("url"):
             lineas.append("")
             lineas.append('      👉 <a href="%s">comprar este</a>' % t["url"])
@@ -522,9 +530,9 @@ class Engine:
         minimo, maximo, partida = min(serie), max(serie), serie[0]
         cabeza = ("🟢 <b>¡PRECIO MÍNIMO HASTA AHORA!</b>" if es_minimo
                   else "📉 <b>Ha bajado un poco</b>")
-        lineas = [cabeza, "", "<b>%s</b>" % watch["name"]]
+        lineas = [cabeza, "", "<b>%s</b>" % watch["name"], ""]
         lineas += bloque_horas(oferta, watch["date"])
-        lineas += ["<i>%s %s</i>" % (oferta.provider.upper(), oferta.label), "",
+        lineas += ["", "<i>%s %s</i>" % (oferta.provider.upper(), oferta.label), "",
                    "Antes: <s>%.2f €</s>   Ahora: <b>%.2f €</b>  (−%.2f €)"
                    % (anterior, oferta.price, anterior - oferta.price), ""]
 
@@ -560,7 +568,7 @@ class Engine:
         head = "🎯 <b>¡HA ENTRADO EN TU OBJETIVO!</b>"
         lines = [head, "", "<b>%s</b>" % watch["name"], ""]
         for o in offers:
-            lines += bloque_horas(o, watch["date"])
+            lines += bloque_horas(o, watch["date"]) + [""]
             lines.append("💶 <b>%s</b> por persona · %s %s" %
                          (o.price_str(), o.provider.upper(), o.label))
             if bajada_de:
