@@ -100,7 +100,7 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         etiqueta = (t.get("etiqueta") or "").split(" · ")[0]
         lineas += ["", "   ✈️ <b>%s</b> · %s · %s %s%s"
                    % (rol, fecha_corta(t["fecha"]), cia, etiqueta,
-                      "  ← el que ha bajado" if t.get("es_del_aviso") else "")]
+                      "  ← el que ha bajado" if t.get("es_del_aviso") else ""), ""]
         dur = dur_bonita(t.get("duracion"))
         lineas.append("      %s <b>%s</b> → %s <b>%s</b>%s"
                       % (t["de_nombre"], t["sale"], t["a_nombre"], t["llega"],
@@ -114,13 +114,17 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         if isinstance(t.get("plazas"), int) and t["plazas"] > 0:
             extra.append("quedan %d plazas" % t["plazas"])
         lineas.append("      %s%s" % (precio, "  (%s)" % " · ".join(extra) if extra else ""))
-        # En la vuelta se repite el salto por tierra: así, leyendo solo ese
-        # bloque, ya sabes cómo has llegado hasta ese aeropuerto.
-        if rol == "VUELTA" and tierras:
+
+        # Cada bloque lleva al lado su conexión por tierra, etiquetada según
+        # toque: en la ida es lo que viene después, en la vuelta es cómo has
+        # llegado hasta ese aeropuerto.
+        if tierras:
+            etiq = "y luego" if rol == "IDA" else "cómo llegas"
+            lineas.append("")
             for g in tierras:
-                lineas.append("      🚆 cómo llegas: %s → %s · %s · %s"
-                              % (g["de_nombre"], g["a_nombre"], g["duracion"],
-                                 g["coste"]))
+                lineas.append("      🚆 %s: %s → %s · %s · %s"
+                              % (etiq, g["de_nombre"], g["a_nombre"],
+                                 g["duracion"], g["coste"]))
         if t.get("url"):
             lineas.append("")
             lineas.append('      👉 <a href="%s">comprar este</a>' % t["url"])
