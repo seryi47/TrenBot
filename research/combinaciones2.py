@@ -14,6 +14,10 @@ S = os.path.dirname(os.path.abspath(__file__))
 TOPE = 160.0
 IDA_8, IDA_9, VUE_11, VUE_12 = "2026-10-08", "2026-10-09", "2026-10-11", "2026-10-12"
 HORA_MIN_8, LLEGADA_MAX_12 = "20:00", "18:00"
+# Salir el 8 de noche y aterrizar tarde compensa: se gana el viernes entero.
+# Salir el 9 y aterrizar de noche NO: se pierde el día y no se gana nada, así
+# que las idas del 9 tienen que llegar con la tarde aún aprovechable.
+LLEGADA_MAX_IDA_9 = "20:00"
 ALC = (38.2822, -0.5582)
 
 # Husos respecto a la España peninsular (CET). Los que van una hora por delante.
@@ -55,6 +59,9 @@ def cargar():
             for num, sale, llega in ry.get("sched_out", {}).get(c, {}).get(dia, []):
                 if dia == IDA_8 and hm(sale) < hm(HORA_MIN_8):
                     continue
+                if dia == IDA_9 and (hm(llega) < hm(sale)
+                                     or hm(llega) > hm(LLEGADA_MAX_IDA_9)):
+                    continue
                 idas.append({"iata": c, "cia": "Ryanair", "dia": dia, "sale": sale,
                              "llega": llega, "precio": p, "num": num})
     for c, precios in ry["back"].items():
@@ -94,6 +101,8 @@ def cargar():
                     if dia == IDA_8 and hm(sale) < hm(HORA_MIN_8):
                         continue
                     m = llegada_estimada(sale, a["lat"], a["lon"], a["cc"], False)
+                    if dia == IDA_9 and m > hm(LLEGADA_MAX_IDA_9):
+                        continue
                     idas.append({"iata": c, "cia": "Wizz", "dia": dia, "sale": sale,
                                  "llega": "%02d:%02d" % divmod(m % 1440, 60),
                                  "precio": p, "num": "W6", "estimada": True})

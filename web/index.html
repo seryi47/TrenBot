@@ -184,6 +184,7 @@ const FILTROS={
   noche:{txt:"Sin aterrizar de noche",test:o=>!o.llega_noche},
   directo:{txt:"Un solo traslado",test:o=>o.saltos<=1},
   dosdias:{txt:"48 h o más allí",test:o=>o.horas_destino>=48},
+  sinperder:{txt:"Sin perder el día al llegar",test:o=>!o.ida_tarde},
 };
 const ORDENES={
   precio:["Precio",(a,b)=>a.total_persona-b.total_persona],
@@ -230,7 +231,8 @@ function detalle(o){
 function fila(o){
   const fl=o.paises.map(p=>FLAG[p]||"").join("");
   const dv=o.tramos.filter(t=>t.tipo==="vuelo").reduce((s,t)=>s+(t.variacion||0),0);
-  const av=[]; if(o.sale_temprano)av.push("madrugón"); if(o.llega_noche)av.push("llega de noche");
+  const av=[]; if(o.ida_tarde)av.push("pierdes el día al llegar");
+  if(o.sale_temprano)av.push("madrugón"); if(o.llega_noche)av.push("llega de noche");
   return `<button class="row" aria-expanded="false" data-id="${esc(o.id)}">
     <div class="name">${o.destacada?'<span class="star">★</span>':""}<span class="fl">${fl}</span>
       <span class="nm">${esc(o.titulo)}</span></div>

@@ -76,7 +76,8 @@ REALES = {
     ("BTS", "BUD"): (2.3, "tren directo, ~2h20"),
     ("CGN", "CRL"): (3.7, "tren ICE 1h50 hasta Bruselas, o autobús 3h40"),
     ("BVA", "CRL"): (3.6, "autobús París-Bruselas 3h35, más los traslados"),
-    ("NRN", "CRL"): (2.7, "autobús directo, ~2h40"),
+    # Weeze está aislado: 4h14 hasta Bruselas y otra hora hasta Charleroi
+    ("NRN", "CRL"): (5.3, "tren/bus con transbordos, ~5h15 y caro"),
     ("LNZ", "PRG"): (3.8, "autobús directo, ~3h45"),
     ("KTW", "PRG"): (5.3, "autobús directo, ~5h15"),
     ("WRO", "PED"): (2.9, "tren directo Baltic Express, ~2h50"),
@@ -88,7 +89,7 @@ REALES = {
     ("SNN", "DUB"): (3.5, "bus directo, ~3h30"),
     # Hahn está en mitad del campo: sumar ~1h45 hasta Fráncfort
     ("EIN", "HHN"): (7.0, "bus a Fráncfort 5h35 + 1h45 hasta Hahn"),
-    ("CRL", "EIN"): (3.0, "bus/tren, ~3h"),
+    ("CRL", "EIN"): (4.5, "bus directo, ~4h30 (o 2 h a Bruselas + 1 h al aeropuerto)"),
     ("EIN", "CGN"): (2.5, "bus directo, ~2h30"),
 }
 for (x, y), v in list(REALES.items()):

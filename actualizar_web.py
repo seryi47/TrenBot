@@ -60,6 +60,10 @@ def resumen(tramos):
     # madrugada. Conviene poder filtrarlas por separado.
     sale_temprano = any(v["sale"] < "07:00" for v in vuelos)
     llega_noche = any(v["llega"] < v["sale"] for v in vuelos)
+    # Llegar tarde el 8 compensa (se gana el viernes); llegar tarde el 9 no:
+    # se pierde el día y no se gana nada a cambio.
+    ida_tarde = (ida["fecha"] == "2026-10-09"
+                 and (ida["llega"] < ida["sale"] or ida["llega"] > "20:00"))
     return {
         "ida_fecha": ida["fecha"], "ida_hora": ida["sale"], "ida_iata": ida["a"],
         "ida_ciudad": ida["a_nombre"],
@@ -70,6 +74,7 @@ def resumen(tramos):
         "minutos_tierra": tierra,
         "saltos": sum(1 for t in tramos if t["tipo"] == "tierra"),
         "sale_temprano": sale_temprano,
+        "ida_tarde": ida_tarde,
         "llega_noche": llega_noche,
         "vuelve_lunes": vuelta["fecha"] == "2026-10-12",
     }

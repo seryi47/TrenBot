@@ -8,7 +8,8 @@
    "Vuelta: el 11 a cualquier hora, o el 12 aterrizando en Alicante antes de las 18:00",
    "Máximo 160 € por persona sumando ida y vuelta",
    "Ida y vuelta SIN escalas",
-   "Dos países, con al menos un día para el segundo"
+   "Dos países, con al menos un día para el segundo",
+   "Si sales el 9, aterrizar antes de las 20:00: llegar de noche pierde el día"
   ]
  },
  "opciones": [
@@ -637,80 +638,6 @@
     {
      "dia": "Domingo 11",
      "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
-    }
-   ]
-  },
-  {
-   "id": "bratislava-praga-ryanair",
-   "titulo": "Bratislava + Praga (con Ryanair)",
-   "subtitulo": "Vuelve a entrar en presupuesto cambiando de aerolínea",
-   "paises": [
-    "Eslovaquia",
-    "República Checa"
-   ],
-   "noches": 2,
-   "por_que": "El Alicante-Bratislava de Wizz se ha puesto en unos 170 €, pero Ryanair hace la misma ruta esa noche por 95,99 €. Eso devuelve Bratislava al presupuesto.",
-   "aviso": "Llegas a las 23:55, así que el viernes se pierde; y el vuelo de vuelta aterriza a la 01:00 del lunes. Chequia se queda en medio día: si quieres un día entero en cada país, mira la de Belfast.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR5698",
-     "de": "ALC",
-     "a": "BTS",
-     "de_nombre": "Alicante",
-     "a_nombre": "Bratislava",
-     "fecha": "2026-10-09",
-     "sale": "21:05",
-     "llega": "23:55",
-     "ref": 95.99
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Bratislava",
-     "a_nombre": "Praga",
-     "como": "Autobús directo RegioJet",
-     "duracion": "4 h 05 min",
-     "coste": "20-25 €",
-     "cuando": "domingo 11 por la mañana"
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Praga",
-     "a_nombre": "Pardubice",
-     "como": "Tren directo (ČD / RegioJet)",
-     "duracion": "1 h",
-     "coste": "5-10 €",
-     "cuando": "domingo 11 por la tarde"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1495",
-     "de": "PED",
-     "a": "ALC",
-     "de_nombre": "Pardubice",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "22:00",
-     "llega": "01:00",
-     "ref": 45.99
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Viernes 9",
-     "texto": "Vuelo de noche; en Bratislava a las 23:55."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Día completo en Bratislava."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Autobús a Praga por la mañana (4h), tarde allí, tren a Pardubice y vuelo a las 22:00."
     }
    ]
   }
