@@ -219,11 +219,11 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 131.03,
-     "etiqueta": "FR1568",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 08:41",
+     "precio": 132.72,
+     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
+     "plazas": 2,
+     "visto": "2026-09-11 06:25",
      "estado": "ok",
      "historico": [
       [
@@ -285,9 +285,13 @@
       [
        "2026-09-10 08:41",
        131.03
+      ],
+      [
+       "2026-09-11 06:25",
+       132.72
       ]
      ],
-     "variacion": 34.84
+     "variacion": 36.53
     },
     {
      "tipo": "tierra",
@@ -429,8 +433,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 178.03,
-   "total_grupo": 356.06,
+   "total_persona": 179.72,
+   "total_grupo": 359.44,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -474,11 +478,11 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 141.75,
+     "precio": 145.51,
      "etiqueta": "FR9877",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 21:32",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
+     "plazas": -1,
+     "visto": "2026-09-11 06:26",
      "estado": "ok",
      "historico": [
       [
@@ -532,9 +536,13 @@
       [
        "2026-09-10 21:32",
        141.75
+      ],
+      [
+       "2026-09-11 06:26",
+       145.51
       ]
      ],
-     "variacion": 46.56
+     "variacion": 50.32
     },
     {
      "tipo": "tierra",
@@ -663,8 +671,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 188.75,
-   "total_grupo": 377.5,
+   "total_persona": 192.51,
+   "total_grupo": 385.02,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -792,11 +800,11 @@
      "sale": "06:30",
      "llega": "09:00",
      "ref": 52.27,
-     "precio": 57.47,
-     "etiqueta": "FR9063",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 23:52",
+     "precio": 58.23,
+     "etiqueta": "FR9063 · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
+     "plazas": 3,
+     "visto": "2026-09-11 06:26",
      "estado": "ok",
      "historico": [
       [
@@ -870,9 +878,13 @@
       [
        "2026-09-10 23:52",
        57.47
+      ],
+      [
+       "2026-09-11 06:26",
+       58.23
       ]
      ],
-     "variacion": 4.2
+     "variacion": 4.96
     }
    ],
    "itinerario": [
@@ -889,8 +901,8 @@
      "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
     }
    ],
-   "total_persona": 193.46,
-   "total_grupo": 386.92,
+   "total_persona": 194.22,
+   "total_grupo": 388.44,
    "ida_fecha": "2026-10-09",
    "ida_hora": "20:45",
    "ida_iata": "CGN",
@@ -934,11 +946,11 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 131.03,
-     "etiqueta": "FR1568",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-10 08:41",
+     "precio": 132.72,
+     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
+     "plazas": 2,
+     "visto": "2026-09-11 06:25",
      "estado": "ok",
      "historico": [
       [
@@ -1000,9 +1012,13 @@
       [
        "2026-09-10 08:41",
        131.03
+      ],
+      [
+       "2026-09-11 06:25",
+       132.72
       ]
      ],
-     "variacion": 34.84
+     "variacion": 36.53
     },
     {
      "tipo": "tierra",
@@ -1071,8 +1087,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 197.02,
-   "total_grupo": 394.04,
+   "total_persona": 198.71,
+   "total_grupo": 397.42,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1680,6 +1696,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-11 03:37",
- "actualizado_iso": "2026-09-11T03:37:19.518823+00:00"
+ "actualizado": "2026-09-11 06:26",
+ "actualizado_iso": "2026-09-11T06:26:44.271997+00:00"
 }
