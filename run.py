@@ -76,7 +76,9 @@ def latido_diario(engine, notifier, destino, horas=20):
     except Exception:
         lineas.append("(no he podido leer el resumen de precios)")
     activas = [w for w in engine.watches if w.get("enabled", True)]
-    ciegas = [k for k in engine.avisos if k != CLAVE]
+    # Solo las de ceguera: en este fichero conviven también los silencios de
+    # "objetivo", y contarlos avisaba de vuelos sin datos que sí los tenían.
+    ciegas = [k for k in engine.avisos if k.startswith("ceguera:")]
     lineas += ["", "Vigilando %d vuelos.%s" % (len(activas),
                " ⚠️ %d sin datos ahora mismo." % len(ciegas) if ciegas else ""),
                "🌐 https://viaje-octubre.vercel.app"]

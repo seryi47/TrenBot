@@ -281,7 +281,7 @@ class Engine:
         if any(o.price for o in todas):
             if st.get("ciegos"):
                 st["ciegos"] = 0
-            clave = self.clave_historial(watch)
+            clave = self.clave_aviso(watch, "ceguera")
             if clave in self.avisos:           # se recuperó: se olvida el aviso
                 del self.avisos[clave]
                 self._guardar_avisos()
@@ -291,13 +291,22 @@ class Engine:
         st["ciegos"] = st.get("ciegos", 0) + 1
         return st["ciegos"] >= UMBRAL
 
+    def clave_aviso(self, watch, tipo):
+        """Clave con prefijo por tipo.
+
+        Sin el prefijo, el resumen diario contaba los silencios de 'objetivo'
+        como si fueran rutas sin datos y avisaba de vuelos ciegos que no lo
+        estaban.
+        """
+        return "%s:%s" % (tipo, self.clave_historial(watch))
+
     def _puede_avisar(self, watch, tipo, horas=12):
         """¿Toca avisar de esto, o ya se avisó hace poco?
 
         Sin esto, una ruta que se queda por debajo de su objetivo genera un
         mensaje en CADA sondeo: uno cada 15 minutos, indefinidamente.
         """
-        clave = "%s:%s" % (self.clave_historial(watch), tipo)
+        clave = self.clave_aviso(watch, tipo)
         ultimo = (self.avisos.get(clave) or {}).get("t", 0)
         if time.time() - ultimo < horas * 3600:
             return False
@@ -306,9 +315,15 @@ class Engine:
         self._guardar_avisos()
         return True
 
+    def _marcar_aviso(self, watch, tipo):
+        """Reinicia el contador de silencio sin comprobar nada."""
+        self.avisos[self.clave_aviso(watch, tipo)] = {
+            "t": time.time(), "cuando": time.strftime("%Y-%m-%d %H:%M")}
+        self._guardar_avisos()
+
     def _olvidar_aviso(self, watch, tipo):
         """Se deja de silenciar: si vuelve a pasar, se avisa otra vez."""
-        clave = "%s:%s" % (self.clave_historial(watch), tipo)
+        clave = self.clave_aviso(watch, tipo)
         if clave in self.avisos:
             del self.avisos[clave]
             self._guardar_avisos()
@@ -322,7 +337,7 @@ class Engine:
         nuevas = []
         ahora = time.time()
         for w in ciegas:
-            clave = self.clave_historial(w)
+            clave = self.clave_aviso(w, "ceguera")
             ultimo = (self.avisos.get(clave) or {}).get("t", 0)
             if ahora - ultimo >= horas_silencio * 3600:
                 nuevas.append(w)
@@ -467,8 +482,7 @@ class Engine:
         urls = sorted({o.buy_url for o in offers if o.buy_url})
         if urls:
             lines += [""] + ['👉 <a href="%s">Comprar</a>' % u for u in urls]
-        lines += ["", "<i>No te lo repito en 12 h salvo que vuelva a subir "
-                  "y baje otra vez.</i>"]
+        lines += ["", "<i>No te lo repito salvo que baje todavía más.</i>"]
         if WEB_URL:
             lines += ["", "🌐 %s" % WEB_URL]
         return "\n".join(lines)
@@ -584,14 +598,20 @@ class Engine:
             stamp = time.strftime("%H:%M:%S")
             if offers:
                 total += 1
-                if self._puede_avisar(watch, "objetivo"):
+                # Que haya BAJADO MÁS siempre se avisa: es información nueva y
+                # además la más útil. El silencio solo tapa el "sigue igual".
+                novedad = bajada is not None
+                if novedad or self._puede_avisar(watch, "objetivo"):
+                    if novedad:
+                        self._marcar_aviso(watch, "objetivo")
                     self.notifier.telegram(
                         self._chat_for(watch),
                         self._alert_text(watch, offers, bajaba_desde))
-                    print("[%s] %s -> %d en objetivo (AVISO enviado)" %
-                          (stamp, watch["name"], len(offers)))
+                    print("[%s] %s -> %d en objetivo (AVISO enviado%s)" %
+                          (stamp, watch["name"], len(offers),
+                           " por nueva bajada" if novedad else ""))
                 else:
-                    print("[%s] %s -> %d en objetivo (ya avisado, callo)" %
+                    print("[%s] %s -> %d en objetivo (sin cambios, callo)" %
                           (stamp, watch["name"], len(offers)))
             else:
                 # Ha vuelto a salirse del objetivo: si entra otra vez, se avisa.
