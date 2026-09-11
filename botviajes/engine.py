@@ -7,6 +7,7 @@ import threading
 import time
 from typing import List, Optional
 
+from botviajes.combinador import viajes_con
 from botviajes.models import Offer
 from botviajes.providers import get_provider
 
@@ -43,6 +44,29 @@ def bloque_horas(oferta, fecha):
         lineas.append("🛬 Llega a %s a las %s%s%s" % (
             oferta.destination, aprox, oferta.arrival,
             (" — hora local de %s" % pd) if pd else ""))
+    return lineas
+
+
+def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
+    """Con qué se combina este vuelo y cuánto sale el viaje entero.
+
+    Avisar de un tramo suelto deja a medias: lo útil es saber desde dónde se
+    vuelve y si con ese precio el viaje ya cabe en el presupuesto.
+    """
+    try:
+        viajes = viajes_con(watch, watches, precio_actual)
+    except Exception:
+        return []
+    if not viajes:
+        return []
+    lineas = ["", "🧳 <b>Con este precio, el viaje completo:</b>"]
+    for v in viajes[:maximo]:
+        lineas.append("• <b>%s</b> — <b>%.2f €</b> por persona %s"
+                      % (v["titulo"], v["total"],
+                         "✅ entra en tu tope" if v["dentro"] else "(se pasa del tope)"))
+        lineas.append("   vuelta desde %s el %s a las %s"
+                      % (v["vuelta_desde"], fecha_larga(v["vuelta_fecha"]),
+                         v["vuelta_hora"]))
     return lineas
 
 
@@ -452,6 +476,7 @@ class Engine:
                               "<b>%.2f € %s</b>." % (partida, abs(dif),
                                                      "por encima" if dif > 0 else "por debajo"))
 
+        lineas += bloque_viaje(watch, self.watches, oferta.price)
         lineas += ["", "👉 <a href=\"%s\">Comprar en %s</a>"
                    % (oferta.buy_url, oferta.provider.title())]
         if WEB_URL:
@@ -479,6 +504,8 @@ class Engine:
         objetivo = watch.get("max_price")
         if objetivo:
             lines.append("Tu objetivo era ≤%.0f €." % float(objetivo))
+        lines += bloque_viaje(watch, self.watches,
+                              min((o.price for o in offers if o.price), default=None))
         urls = sorted({o.buy_url for o in offers if o.buy_url})
         if urls:
             lines += [""] + ['👉 <a href="%s">Comprar</a>' % u for u in urls]
