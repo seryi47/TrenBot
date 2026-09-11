@@ -8,6 +8,7 @@ Vigila las rutas definidas en config.yaml y avisa por Telegram + Mac.
   python run.py --test-telegram # envía un mensaje de prueba
 """
 
+import json
 import sys
 
 import yaml
@@ -38,6 +39,49 @@ def _watch_to_yaml(w):
     if w.get("max_price") is not None:
         d["max_price"] = w["max_price"]
     return d
+
+
+def latido_diario(engine, notifier, destino, horas=20):
+    """Un resumen al día, para que el silencio no se confunda con normalidad.
+
+    Si el job se muriera, dejara de arrancar o alguien desactivara el workflow,
+    no llegaría ningún aviso... y eso se parece demasiado a 'no ha cambiado
+    nada'. Con un mensaje diario, si un día no llega, es que algo va mal.
+    """
+    import time as _t
+    CLAVE = "_latido"
+    ahora = _t.time()
+    if ahora - (engine.avisos.get(CLAVE) or {}).get("t", 0) < horas * 3600:
+        return
+    engine.avisos[CLAVE] = {"t": ahora, "cuando": _t.strftime("%Y-%m-%d %H:%M")}
+    engine._guardar_avisos()
+
+    lineas = ["👋 <b>Sigo vigilando</b> — resumen del día", ""]
+    try:
+        datos = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                            "web", "datos.json"), encoding="utf-8"))
+        dentro = [o for o in datos["opciones"] if o.get("dentro_presupuesto")]
+        tope = datos["viaje"]["tope_por_persona"]
+        if dentro:
+            mejor = min(dentro, key=lambda o: o["total_persona"])
+            lineas.append("Mejor combinación ahora: <b>%s</b> por <b>%.2f €</b> "
+                          "por persona." % (mejor["titulo"], mejor["total_persona"]))
+            if len(dentro) > 1:
+                lineas.append("Hay %d por debajo de %d €." % (len(dentro), tope))
+        else:
+            barata = min(datos["opciones"], key=lambda o: o["total_persona"] or 9e9)
+            lineas.append("Ninguna combinación baja de %d € por persona. La más "
+                          "barata es <b>%s</b>, %.2f €."
+                          % (tope, barata["titulo"], barata["total_persona"]))
+    except Exception:
+        lineas.append("(no he podido leer el resumen de precios)")
+    activas = [w for w in engine.watches if w.get("enabled", True)]
+    ciegas = [k for k in engine.avisos if k != CLAVE]
+    lineas += ["", "Vigilando %d vuelos.%s" % (len(activas),
+               " ⚠️ %d sin datos ahora mismo." % len(ciegas) if ciegas else ""),
+               "🌐 https://viaje-octubre.vercel.app"]
+    notifier.telegram(destino, "\n".join(lineas))
+    print("  [latido] resumen diario enviado")
 
 
 def publicar_web():
@@ -225,6 +269,7 @@ def main():
                     engine.check_once()
                     if engine.historial_cambiado:
                         publicar_web()
+                    latido_diario(engine, notifier, owner_chats)
                 except Exception as e:
                     print("  error en pasada:", e)
                 last_check = _t.time()
