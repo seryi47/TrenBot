@@ -70,31 +70,42 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
     if not viajes:
         return []
     lineas = []
-    for i, v in enumerate(viajes[:maximo]):
-        lineas += ["", "🧳 <b>%s</b> — <b>%.2f €</b> por persona %s"
-                   % (v["titulo"], v["total"],
-                      "✅ entra en tu tope" if v["dentro"] else "(se pasa del tope)")]
-        if i == 0:
-            # El mejor se desglosa entero: el de vuelta con su hora y su
-            # precio es justo lo que hace falta para decidir.
-            for t in v["tramos"]:
-                if t.get("tipo") == "tierra":
-                    lineas.append("   🚆 %s → %s · %s · %s"
-                                  % (t["de_nombre"], t["a_nombre"],
-                                     t["duracion"], t["coste"]))
-                    continue
-                marca = "→" if t.get("es_del_aviso") else "  "
-                lineas.append("   %s ✈️ <b>%s</b> · %s %s → %s %s"
-                              % (marca, fecha_corta(t["fecha"]), t["de_nombre"],
-                                 t["sale"], t["a_nombre"], t["llega"]))
-                precio = ("<b>%.2f €</b>" % t["precio"]) if t.get("precio") else "—"
-                cia = "Wizz Air" if t["cia"] == "wizz" else "Ryanair"
-                cola = "  ← el que ha bajado" if t.get("es_del_aviso") else ""
-                if t.get("url") and not t.get("es_del_aviso"):
-                    lineas.append('      %s · %s · <a href="%s">comprar</a>'
-                                  % (precio, cia, t["url"]))
-                else:
-                    lineas.append("      %s · %s%s" % (precio, cia, cola))
+    mejor = viajes[0]
+    lineas += ["", "🧳 <b>EL VIAJE COMPLETO</b>",
+               "<b>%s</b> — <b>%.2f € por persona</b>  (%.2f € los dos)  %s"
+               % (mejor["titulo"], mejor["total"], mejor["total"] * 2,
+                  "✅ entra en tu tope" if mejor["dentro"] else "⚠️ se pasa del tope")]
+    vuelos = [t for t in mejor["tramos"] if t.get("tipo") == "vuelo"]
+    for n, t in enumerate(mejor["tramos"]):
+        if t.get("tipo") == "tierra":
+            lineas += ["", "   🚆 <b>%s → %s</b> · %s · %s"
+                       % (t["de_nombre"], t["a_nombre"], t["duracion"], t["coste"])]
+            continue
+        rol = "IDA" if t is vuelos[0] else ("VUELTA" if t is vuelos[-1] else "TRAMO")
+        cia = "Wizz Air" if t["cia"] == "wizz" else "Ryanair"
+        # La etiqueta del proveedor ya trae las plazas pegadas; se quitan
+        # porque se enseñan aparte y si no salen dos veces.
+        etiqueta = (t.get("etiqueta") or "").split(" · ")[0]
+        lineas += ["", "   ✈️ <b>%s</b> · %s · %s %s%s"
+                   % (rol, fecha_corta(t["fecha"]), cia, etiqueta,
+                      "  ← el que ha bajado" if t.get("es_del_aviso") else "")]
+        lineas.append("      %s <b>%s</b> → %s <b>%s</b>"
+                      % (t["de_nombre"], t["sale"], t["a_nombre"], t["llega"]))
+        precio = ("<b>%.2f €</b>" % t["precio"]) if t.get("precio") else "sin precio"
+        extra = []
+        if t.get("minimo") is not None and t["minimo"] != t["maximo"]:
+            extra.append("mínimo visto %.2f · máximo %.2f" % (t["minimo"], t["maximo"]))
+        elif t.get("minimo") is not None:
+            extra.append("sin cambios desde que lo vigilo")
+        if isinstance(t.get("plazas"), int) and t["plazas"] > 0:
+            extra.append("quedan %d plazas" % t["plazas"])
+        lineas.append("      %s%s" % (precio, "  (%s)" % " · ".join(extra) if extra else ""))
+        if t.get("url"):
+            lineas.append('      👉 <a href="%s">comprar este</a>' % t["url"])
+    if len(viajes) > 1:
+        lineas += ["", "<i>Hay %d combinación(es) más con este vuelo; la "
+                   "siguiente sale por %.2f €.</i>"
+                   % (len(viajes) - 1, viajes[1]["total"])]
     return lineas
 
 
@@ -504,9 +515,12 @@ class Engine:
                               "<b>%.2f € %s</b>." % (partida, abs(dif),
                                                      "por encima" if dif > 0 else "por debajo"))
 
-        lineas += bloque_viaje(watch, self.watches, oferta.price)
-        lineas += ["", '👉 <a href="%s">Comprar este vuelo (la ida) en %s</a>'
-                   % (oferta.buy_url, oferta.provider.title())]
+        bloque = bloque_viaje(watch, self.watches, oferta.price)
+        viajes_encontrados = bool(bloque)
+        lineas += bloque
+        if not viajes_encontrados:
+            lineas += ["", '👉 <a href="%s">Comprar en %s</a>'
+                       % (oferta.buy_url, oferta.provider.title())]
         if WEB_URL:
             lineas.append("🌐 %s" % WEB_URL)
         return "\n".join(lineas)

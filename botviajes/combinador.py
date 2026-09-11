@@ -48,7 +48,7 @@ def viajes_con(watch, watches, precio_actual=None):
     cfg = _config()
     if not cfg:
         return []
-    precios, urls, etiquetas = {}, {}, {}
+    precios, urls, etiquetas, rangos, plazas = {}, {}, {}, {}, {}
     for w in watches:
         if w.get("ultimo_precio") is None or not w.get("providers"):
             continue
@@ -56,6 +56,10 @@ def viajes_con(watch, watches, precio_actual=None):
         precios[k] = w["ultimo_precio"]
         urls[k] = w.get("ultimo_url")
         etiquetas[k] = w.get("ultimo_etiqueta")
+        plazas[k] = w.get("ultimo_plazas")
+        serie = [p[1] for p in (w.get("serie") or []) if p[1] and p[1] > 0]
+        if serie:
+            rangos[k] = (min(serie), max(serie))
 
     mio = _clave(watch["providers"][0], watch["origin"],
                  watch["destination"], watch["date"])
@@ -79,8 +83,11 @@ def viajes_con(watch, watches, precio_actual=None):
                 detalle.append(dict(t))
                 continue
             k = _clave(t["cia"], t["de"], t["a"], t["fecha"])
+            minimo, maximo = rangos.get(k, (None, None))
             detalle.append(dict(t, precio=precios.get(k), url=urls.get(k),
                                 etiqueta=etiquetas.get(k) or t.get("vuelo"),
+                                minimo=minimo, maximo=maximo,
+                                plazas=plazas.get(k),
                                 es_del_aviso=(k == mio)))
         vuelta = [t for t in detalle if t.get("tipo") == "vuelo"][-1]
         salida.append({
