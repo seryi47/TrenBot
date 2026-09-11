@@ -291,6 +291,28 @@ class Engine:
         st["ciegos"] = st.get("ciegos", 0) + 1
         return st["ciegos"] >= UMBRAL
 
+    def _puede_avisar(self, watch, tipo, horas=12):
+        """¿Toca avisar de esto, o ya se avisó hace poco?
+
+        Sin esto, una ruta que se queda por debajo de su objetivo genera un
+        mensaje en CADA sondeo: uno cada 15 minutos, indefinidamente.
+        """
+        clave = "%s:%s" % (self.clave_historial(watch), tipo)
+        ultimo = (self.avisos.get(clave) or {}).get("t", 0)
+        if time.time() - ultimo < horas * 3600:
+            return False
+        self.avisos[clave] = {"t": time.time(),
+                              "cuando": time.strftime("%Y-%m-%d %H:%M")}
+        self._guardar_avisos()
+        return True
+
+    def _olvidar_aviso(self, watch, tipo):
+        """Se deja de silenciar: si vuelve a pasar, se avisa otra vez."""
+        clave = "%s:%s" % (self.clave_historial(watch), tipo)
+        if clave in self.avisos:
+            del self.avisos[clave]
+            self._guardar_avisos()
+
     def _aviso_ceguera(self, ciegas, horas_silencio=12):
         """Un solo mensaje para todas las rutas ciegas, y no más de uno cada 12 h.
 
@@ -358,6 +380,7 @@ class Engine:
         if (watch.get("avisar_bajadas", True) and anterior is not None
                 and mejor.price <= anterior - umbral):
             aviso = self._texto_bajada(watch, mejor, anterior)
+            watch["_bajaba_desde"] = anterior
         if anterior is None or abs(mejor.price - anterior) >= 0.01:
             with self._lock:
                 # Serie propia: sin ella el aviso no puede decir si el precio
@@ -424,16 +447,28 @@ class Engine:
     def _chat_for(self, watch):
         return watch.get("chat_id") or self.default_chat_id
 
-    def _alert_text(self, watch, offers: List[Offer]):
-        head = "🚨🎫 <b>¡BILLETES DISPONIBLES!</b> 🎫🚨"
+    def _alert_text(self, watch, offers: List[Offer], bajada_de=None):
+        """Aviso de que una ruta ha entrado en su objetivo.
+
+        Si además acaba de bajar, se dice aquí en vez de mandar dos mensajes
+        seguidos por el mismo hecho.
+        """
+        head = "🎯 <b>¡HA ENTRADO EN TU OBJETIVO!</b>"
         lines = [head, "", "<b>%s</b>" % watch["name"], ""]
         for o in offers:
             lines += bloque_horas(o, watch["date"])
             lines.append("💶 <b>%s</b> por persona · %s %s" %
                          (o.price_str(), o.provider.upper(), o.label))
+            if bajada_de:
+                lines.append("📉 Acaba de bajar desde %.2f €." % bajada_de)
+        objetivo = watch.get("max_price")
+        if objetivo:
+            lines.append("Tu objetivo era ≤%.0f €." % float(objetivo))
         urls = sorted({o.buy_url for o in offers if o.buy_url})
         if urls:
             lines += [""] + ['👉 <a href="%s">Comprar</a>' % u for u in urls]
+        lines += ["", "<i>No te lo repito en 12 h salvo que vuelva a subir "
+                  "y baje otra vez.</i>"]
         if WEB_URL:
             lines += ["", "🌐 %s" % WEB_URL]
         return "\n".join(lines)
@@ -532,21 +567,35 @@ class Engine:
                 if self._revisar_ceguera(watch, todas):
                     ciegas.append(watch)
                 bajada = self._registrar_precio(watch, todas)
+                bajaba_desde = None
                 if bajada:
-                    entregado = self.notifier.telegram(self._chat_for(watch), bajada)
-                    print("[%s] 📉 BAJADA en '%s' -> aviso %s"
-                          % (time.strftime("%H:%M:%S"), watch["name"],
-                             "enviado" if entregado else "NO ENTREGADO"))
+                    # Si además entra en objetivo, se cuenta en ese mensaje y no
+                    # se mandan dos seguidos por lo mismo.
+                    if offers:
+                        bajaba_desde = watch.get("_bajaba_desde")
+                    else:
+                        entregado = self.notifier.telegram(self._chat_for(watch), bajada)
+                        print("[%s] 📉 BAJADA en '%s' -> aviso %s"
+                              % (time.strftime("%H:%M:%S"), watch["name"],
+                                 "enviado" if entregado else "NO ENTREGADO"))
             except Exception as e:
                 print("  [%s] error: %s" % (watch["name"], e))
                 continue
             stamp = time.strftime("%H:%M:%S")
             if offers:
                 total += 1
-                self.notifier.telegram(self._chat_for(watch), self._alert_text(watch, offers))
-                print("[%s] %s -> %d con plaza (AVISO enviado)" %
-                      (stamp, watch["name"], len(offers)))
+                if self._puede_avisar(watch, "objetivo"):
+                    self.notifier.telegram(
+                        self._chat_for(watch),
+                        self._alert_text(watch, offers, bajaba_desde))
+                    print("[%s] %s -> %d en objetivo (AVISO enviado)" %
+                          (stamp, watch["name"], len(offers)))
+                else:
+                    print("[%s] %s -> %d en objetivo (ya avisado, callo)" %
+                          (stamp, watch["name"], len(offers)))
             else:
+                # Ha vuelto a salirse del objetivo: si entra otra vez, se avisa.
+                self._olvidar_aviso(watch, "objetivo")
                 # En vuelos casi siempre HAY plaza: lo que pasa es que el precio
                 # todavía no ha bajado al objetivo. Se dice tal cual.
                 actual = watch.get("ultimo_precio")

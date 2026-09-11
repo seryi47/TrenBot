@@ -42,11 +42,19 @@ class Capturador(Notifier):
 
 
 def motor_de_prueba(watches):
-    tmp = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8")
-    json.dump(watches, tmp, ensure_ascii=False)
-    tmp.close()
+    """Motor aislado: histórico y estado de avisos en una carpeta temporal.
+
+    Si no, la prueba escribe en el avisos.json de verdad y se auto-silencia:
+    el segundo pase daba 'ya avisado' y parecía que el aviso estaba roto.
+    """
+    carpeta = tempfile.mkdtemp()
+    ruta = os.path.join(carpeta, "watches.json")
+    with open(ruta, "w", encoding="utf-8") as fh:
+        json.dump(watches, fh, ensure_ascii=False)
     cap = Capturador()
-    return Engine(cap, default_chat_id="0", state_file=tmp.name), cap, tmp.name
+    motor = Engine(cap, default_chat_id="0", state_file=ruta,
+                   historial_file=os.path.join(carpeta, "historico.json"))
+    return motor, cap, ruta
 
 
 def main():
@@ -111,13 +119,14 @@ def main():
     w.pop("ultimo_precio", None)
     motor, cap, tmp = motor_de_prueba([w])
     n = motor.check_once()
-    ok3 = (n == 1 and cap.mensajes and "DISPONIBLES" in cap.mensajes[0]
+    ok3 = (n == 1 and cap.mensajes and "OBJETIVO" in cap.mensajes[0]
            and "Sale de" in cap.mensajes[0])
     print("\n3) Aviso de OBJETIVO ............ %s" % ("OK" if ok3 else "FALLA"))
     if ok3:
         print("   " + cap.mensajes[0].replace("\n", "\n   ")[:380])
     else:
         fallos.append("no se disparó el aviso de objetivo")
+
     os.unlink(tmp)
 
     # --- 4. El enlace de compra del aviso es el bueno ------------------------
@@ -138,13 +147,23 @@ def main():
     if not ok5:
         fallos.append("un precio de 0 se colaba como válido")
 
-    # --- 6. Canal real de Telegram ------------------------------------------
+    # --- 6. El aviso de objetivo NO debe repetirse en cada sondeo -----------
+    antes_msgs = len(cap.mensajes)
+    for _ in range(3):
+        motor._state.clear()          # como si fuera un sondeo nuevo
+        motor.check_once()
+    ok6 = len(cap.mensajes) == antes_msgs
+    print("\n6) No repite el aviso ........... %s" % ("OK" if ok6 else "FALLA"))
+    if not ok6:
+        fallos.append("el aviso de objetivo se repite en cada sondeo")
+
+    # --- 7. Canal real de Telegram ------------------------------------------
     if "--telegram" in sys.argv and bajada_texto:
         real = Notifier(mac_alerts=False, open_browser=False)
         enviado = real.telegram(os.environ.get("TELEGRAM_CHAT_ID", ""),
                                 "🧪 <b>PRUEBA</b> — no es un aviso real, "
                                 "estoy comprobando que el canal funciona.\n\n" + bajada_texto)
-        print("\n6) Envío real a Telegram ........ %s" % ("OK" if enviado else "FALLA"))
+        print("\n7) Envío real a Telegram ........ %s" % ("OK" if enviado else "FALLA"))
         if not enviado:
             fallos.append("no se pudo enviar a Telegram")
 
