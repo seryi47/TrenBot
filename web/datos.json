@@ -38,19 +38,23 @@
      "sale": "05:45",
      "llega": "07:50",
      "ref": 86.99,
-     "precio": 86.99,
-     "etiqueta": "FR9559",
-     "url": "",
-     "plazas": null,
-     "visto": "2026-09-11 08:16",
+     "precio": 83.99,
+     "etiqueta": "FR9559 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
+     "plazas": 5,
+     "visto": "2026-09-11 11:00",
      "estado": "ok",
      "historico": [
       [
        "2026-09-11 08:16",
        86.99
+      ],
+      [
+       "2026-09-11 11:00",
+       83.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -3.0
     },
     {
      "tipo": "tierra",
@@ -103,8 +107,8 @@
      "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
     }
    ],
-   "total_persona": 116.98,
-   "total_grupo": 233.96,
+   "total_persona": 113.98,
+   "total_grupo": 227.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:45",
    "ida_iata": "BFS",
@@ -333,9 +337,9 @@
      "llega": "23:00",
      "ref": 96.19,
      "precio": 145.51,
-     "etiqueta": "FR1568 (Lauda Europe)",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": -1,
+     "etiqueta": "FR1568",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 10:56",
      "estado": "ok",
      "historico": [
@@ -442,9 +446,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 44.99,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 10:56",
      "estado": "ok",
      "historico": [
@@ -835,7 +839,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-11 10:56",
+     "visto": "2026-09-11 11:00",
      "estado": "orientativo",
      "historico": [
       [
@@ -901,9 +905,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 44.99,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 10:56",
      "estado": "ok",
      "historico": [
@@ -1054,8 +1058,8 @@
      "ref": 95.19,
      "precio": 159.96,
      "etiqueta": "FR9877",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": -1,
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 10:56",
      "estado": "ok",
      "historico": [
@@ -1145,9 +1149,9 @@
      "llega": "01:00",
      "ref": 50.89,
      "precio": 44.99,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
+     "etiqueta": "FR1495",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 10:56",
      "estado": "ok",
      "historico": [
@@ -1296,9 +1300,9 @@
      "llega": "23:00",
      "ref": 96.19,
      "precio": 145.51,
-     "etiqueta": "FR1568 (Lauda Europe)",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": -1,
+     "etiqueta": "FR1568",
+     "url": "",
+     "plazas": null,
      "visto": "2026-09-11 10:56",
      "estado": "ok",
      "historico": [
@@ -1494,7 +1498,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-11 10:56",
+     "visto": "2026-09-11 11:00",
      "estado": "orientativo",
      "historico": [
       [
@@ -1646,7 +1650,7 @@
      "etiqueta": "precio orientativo",
      "url": "",
      "plazas": null,
-     "visto": "2026-09-11 10:56",
+     "visto": "2026-09-11 11:00",
      "estado": "orientativo",
      "historico": [
       [
@@ -1843,6 +1847,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-11 10:56",
- "actualizado_iso": "2026-09-11T10:56:23.768728+00:00"
+ "actualizado": "2026-09-11 11:00",
+ "actualizado_iso": "2026-09-11T11:00:21.347634+00:00"
 }
