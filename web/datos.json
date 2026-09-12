@@ -45,7 +45,7 @@
      "duracion": "03:05",
      "minimo": 74.99,
      "maximo": 86.99,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -108,7 +108,7 @@
      "duracion": "02:50",
      "minimo": 29.99,
      "maximo": 66.95,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -202,7 +202,7 @@
      "duracion": "03:05",
      "minimo": 92.99,
      "maximo": 122.99,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -317,7 +317,7 @@
      "duracion": "02:50",
      "minimo": 29.99,
      "maximo": 66.95,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -415,7 +415,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 159.96,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -531,7 +531,7 @@
      "duracion": "03:00",
      "minimo": 42.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -686,7 +686,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "orientativo",
      "historico": [
       [
@@ -758,7 +758,7 @@
      "duracion": "03:00",
      "minimo": 42.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -913,7 +913,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 175.6,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1016,7 +1016,7 @@
      "duracion": "03:00",
      "minimo": 42.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1170,7 +1170,7 @@
      "duracion": "02:40",
      "minimo": 88.99,
      "maximo": 140.99,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1269,7 +1269,7 @@
      "duracion": "02:30",
      "minimo": 43.64,
      "maximo": 87.36,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1423,7 +1423,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 159.96,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1523,14 +1523,14 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 114.99,
+     "precio": 99.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
      "plazas": null,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1556,9 +1556,13 @@
       [
        "2026-09-12 19:08",
        114.99
+      ],
+      [
+       "2026-09-12 20:10",
+       99.99
       ]
      ],
-     "variacion": 55.0
+     "variacion": 40.0
     }
    ],
    "itinerario": [
@@ -1579,8 +1583,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 258.62,
-   "total_grupo": 517.24,
+   "total_persona": 243.62,
+   "total_grupo": 487.24,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1629,7 +1633,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "orientativo",
      "historico": [
       [
@@ -1685,14 +1689,14 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 114.99,
+     "precio": 99.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
      "plazas": null,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1718,9 +1722,13 @@
       [
        "2026-09-12 19:08",
        114.99
+      ],
+      [
+       "2026-09-12 20:10",
+       99.99
       ]
      ],
-     "variacion": 55.0
+     "variacion": 40.0
     }
    ],
    "itinerario": [
@@ -1738,8 +1746,8 @@
     }
    ],
    "tiene_orientativo": true,
-   "total_persona": 265.98,
-   "total_grupo": 531.96,
+   "total_persona": 250.98,
+   "total_grupo": 501.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1788,7 +1796,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "orientativo",
      "historico": [
       [
@@ -1860,7 +1868,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-12 19:08",
+     "visto": "2026-09-12 20:10",
      "estado": "ok",
      "historico": [
       [
@@ -1988,6 +1996,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-12 19:08",
- "actualizado_iso": "2026-09-12T19:08:45.905893+00:00"
+ "actualizado": "2026-09-12 20:10",
+ "actualizado_iso": "2026-09-12T20:10:37.556492+00:00"
 }
