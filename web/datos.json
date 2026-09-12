@@ -45,7 +45,7 @@
      "duracion": "03:05",
      "minimo": 76.99,
      "maximo": 86.99,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:12",
      "estado": "ok",
      "historico": [
       [
@@ -104,7 +104,7 @@
      "duracion": "02:50",
      "minimo": 29.99,
      "maximo": 57.79,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:12",
      "estado": "ok",
      "historico": [
       [
@@ -187,14 +187,14 @@
      "sale": "22:00",
      "llega": "00:05",
      "ref": 97.99,
-     "precio": 108.99,
+     "precio": 105.99,
      "etiqueta": "RK9570 (Ryanair UK) · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=BFS",
      "plazas": 2,
      "duracion": "03:05",
      "minimo": 92.99,
      "maximo": 122.99,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -268,9 +268,13 @@
       [
        "2026-09-10 23:06",
        108.99
+      ],
+      [
+       "2026-09-12 15:11",
+       105.99
       ]
      ],
-     "variacion": 11.0
+     "variacion": 8.0
     },
     {
      "tipo": "tierra",
@@ -301,7 +305,7 @@
      "duracion": "02:50",
      "minimo": 29.99,
      "maximo": 57.79,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:12",
      "estado": "ok",
      "historico": [
       [
@@ -342,8 +346,8 @@
      "texto": "Tren a Dublín por la mañana (2h10), medio día allí y vuelo a las 16:25."
     }
    ],
-   "total_persona": 166.78,
-   "total_grupo": 333.56,
+   "total_persona": 163.78,
+   "total_grupo": 327.56,
    "ida_fecha": "2026-10-08",
    "ida_hora": "22:00",
    "ida_iata": "BFS",
@@ -395,7 +399,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 159.96,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -511,7 +515,7 @@
      "duracion": "03:00",
      "minimo": 43.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -666,7 +670,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "orientativo",
      "historico": [
       [
@@ -738,7 +742,7 @@
      "duracion": "03:00",
      "minimo": 43.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -862,6 +866,255 @@
    "dentro_presupuesto": false
   },
   {
+   "id": "colonia-bruselas",
+   "titulo": "Colonia + Bruselas",
+   "subtitulo": "Tren directo de 1h50 entre las dos",
+   "paises": [
+    "Alemania",
+    "Bélgica"
+   ],
+   "noches": 2,
+   "por_que": "Colonia y Bruselas están a 1h50 en tren ICE directo, la conexión más rápida de toda la lista.",
+   "aviso": "Es la más justa de tiempo: el vuelo de vuelta sale de Charleroi a las 06:30 y el aeropuerto está a 1 h de Bruselas, así que hay que salir de madrugada. Bélgica se queda en poco más de medio día.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1356",
+     "de": "ALC",
+     "a": "CGN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Colonia",
+     "fecha": "2026-10-09",
+     "sale": "20:45",
+     "llega": "23:25",
+     "ref": 88.99,
+     "precio": 131.99,
+     "etiqueta": "FR1356 (Malta Air) · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
+     "plazas": 4,
+     "duracion": "02:40",
+     "minimo": 88.99,
+     "maximo": 140.99,
+     "visto": "2026-09-12 15:12",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-03 22:54",
+       88.99
+      ],
+      [
+       "2026-09-04 10:10",
+       89.99
+      ],
+      [
+       "2026-09-04 17:09",
+       120.99
+      ],
+      [
+       "2026-09-05 09:14",
+       119.99
+      ],
+      [
+       "2026-09-06 11:58",
+       121.99
+      ],
+      [
+       "2026-09-07 12:39",
+       140.99
+      ],
+      [
+       "2026-09-07 22:48",
+       136.99
+      ],
+      [
+       "2026-09-08 12:39",
+       133.99
+      ],
+      [
+       "2026-09-08 13:20",
+       132.99
+      ],
+      [
+       "2026-09-08 17:23",
+       131.99
+      ],
+      [
+       "2026-09-09 09:01",
+       132.99
+      ],
+      [
+       "2026-09-09 19:15",
+       133.99
+      ],
+      [
+       "2026-09-11 03:21",
+       135.99
+      ],
+      [
+       "2026-09-11 07:53",
+       136.99
+      ],
+      [
+       "2026-09-12 15:12",
+       131.99
+      ]
+     ],
+     "variacion": 43.0
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Colonia",
+     "a_nombre": "Bruselas",
+     "como": "Tren ICE directo (1h50) o autobús FlixBus (3h40)",
+     "duracion": "1 h 50 min",
+     "coste": "15-60 €",
+     "cuando": "sábado 10 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9063",
+     "de": "CRL",
+     "a": "ALC",
+     "de_nombre": "Bruselas Charleroi",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "06:30",
+     "llega": "09:00",
+     "ref": 52.27,
+     "precio": 80.76,
+     "etiqueta": "FR9063 · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
+     "plazas": 4,
+     "duracion": "02:30",
+     "minimo": 43.64,
+     "maximo": 80.76,
+     "visto": "2026-09-12 15:12",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-05 09:14",
+       53.03
+      ],
+      [
+       "2026-09-06 11:58",
+       54.03
+      ],
+      [
+       "2026-09-06 14:42",
+       62.59
+      ],
+      [
+       "2026-09-06 19:21",
+       72.03
+      ],
+      [
+       "2026-09-07 10:26",
+       62.59
+      ],
+      [
+       "2026-09-08 16:07",
+       54.03
+      ],
+      [
+       "2026-09-09 08:40",
+       52.51
+      ],
+      [
+       "2026-09-09 16:35",
+       44.64
+      ],
+      [
+       "2026-09-09 22:46",
+       43.64
+      ],
+      [
+       "2026-09-09 23:17",
+       44.64
+      ],
+      [
+       "2026-09-10 06:23",
+       45.94
+      ],
+      [
+       "2026-09-10 12:58",
+       57.47
+      ],
+      [
+       "2026-09-10 23:06",
+       56.47
+      ],
+      [
+       "2026-09-10 23:52",
+       57.47
+      ],
+      [
+       "2026-09-11 06:26",
+       58.23
+      ],
+      [
+       "2026-09-11 12:17",
+       67.59
+      ],
+      [
+       "2026-09-11 17:51",
+       62.59
+      ],
+      [
+       "2026-09-11 23:56",
+       61.59
+      ],
+      [
+       "2026-09-12 13:07",
+       71.03
+      ],
+      [
+       "2026-09-12 14:56",
+       80.76
+      ]
+     ],
+     "variacion": 27.49
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo a las 20:45; en Colonia a las 23:25."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Día en Colonia (la catedral está pegada a la estación) y tren a Bruselas por la tarde."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
+    }
+   ],
+   "total_persona": 212.75,
+   "total_grupo": 425.5,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "20:45",
+   "ida_iata": "CGN",
+   "ida_ciudad": "Colonia",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "06:30",
+   "vuelta_llega": "09:00",
+   "vuelta_iata": "CRL",
+   "vuelta_ciudad": "Bruselas Charleroi",
+   "horas_destino": 29,
+   "minutos_tierra": 110,
+   "saltos": 1,
+   "sale_temprano": true,
+   "ida_tarde": true,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 141.26,
+   "dentro_presupuesto": false
+  },
+  {
    "id": "wroclaw-praga",
    "titulo": "Wrocław + Praga",
    "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
@@ -893,7 +1146,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 175.6,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:12",
      "estado": "ok",
      "historico": [
       [
@@ -996,7 +1249,7 @@
      "duracion": "03:00",
      "minimo": 43.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -1119,251 +1372,6 @@
    "dentro_presupuesto": false
   },
   {
-   "id": "colonia-bruselas",
-   "titulo": "Colonia + Bruselas",
-   "subtitulo": "Tren directo de 1h50 entre las dos",
-   "paises": [
-    "Alemania",
-    "Bélgica"
-   ],
-   "noches": 2,
-   "por_que": "Colonia y Bruselas están a 1h50 en tren ICE directo, la conexión más rápida de toda la lista.",
-   "aviso": "Es la más justa de tiempo: el vuelo de vuelta sale de Charleroi a las 06:30 y el aeropuerto está a 1 h de Bruselas, así que hay que salir de madrugada. Bélgica se queda en poco más de medio día.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1356",
-     "de": "ALC",
-     "a": "CGN",
-     "de_nombre": "Alicante",
-     "a_nombre": "Colonia",
-     "fecha": "2026-10-09",
-     "sale": "20:45",
-     "llega": "23:25",
-     "ref": 88.99,
-     "precio": 136.99,
-     "etiqueta": "FR1356 (Malta Air) · 4 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CGN",
-     "plazas": 4,
-     "duracion": "02:40",
-     "minimo": 88.99,
-     "maximo": 140.99,
-     "visto": "2026-09-12 14:56",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-03 22:54",
-       88.99
-      ],
-      [
-       "2026-09-04 10:10",
-       89.99
-      ],
-      [
-       "2026-09-04 17:09",
-       120.99
-      ],
-      [
-       "2026-09-05 09:14",
-       119.99
-      ],
-      [
-       "2026-09-06 11:58",
-       121.99
-      ],
-      [
-       "2026-09-07 12:39",
-       140.99
-      ],
-      [
-       "2026-09-07 22:48",
-       136.99
-      ],
-      [
-       "2026-09-08 12:39",
-       133.99
-      ],
-      [
-       "2026-09-08 13:20",
-       132.99
-      ],
-      [
-       "2026-09-08 17:23",
-       131.99
-      ],
-      [
-       "2026-09-09 09:01",
-       132.99
-      ],
-      [
-       "2026-09-09 19:15",
-       133.99
-      ],
-      [
-       "2026-09-11 03:21",
-       135.99
-      ],
-      [
-       "2026-09-11 07:53",
-       136.99
-      ]
-     ],
-     "variacion": 48.0
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Colonia",
-     "a_nombre": "Bruselas",
-     "como": "Tren ICE directo (1h50) o autobús FlixBus (3h40)",
-     "duracion": "1 h 50 min",
-     "coste": "15-60 €",
-     "cuando": "sábado 10 por la tarde"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR9063",
-     "de": "CRL",
-     "a": "ALC",
-     "de_nombre": "Bruselas Charleroi",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "06:30",
-     "llega": "09:00",
-     "ref": 52.27,
-     "precio": 80.76,
-     "etiqueta": "FR9063 · 4 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": 4,
-     "duracion": "02:30",
-     "minimo": 43.64,
-     "maximo": 80.76,
-     "visto": "2026-09-12 14:56",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-05 09:14",
-       53.03
-      ],
-      [
-       "2026-09-06 11:58",
-       54.03
-      ],
-      [
-       "2026-09-06 14:42",
-       62.59
-      ],
-      [
-       "2026-09-06 19:21",
-       72.03
-      ],
-      [
-       "2026-09-07 10:26",
-       62.59
-      ],
-      [
-       "2026-09-08 16:07",
-       54.03
-      ],
-      [
-       "2026-09-09 08:40",
-       52.51
-      ],
-      [
-       "2026-09-09 16:35",
-       44.64
-      ],
-      [
-       "2026-09-09 22:46",
-       43.64
-      ],
-      [
-       "2026-09-09 23:17",
-       44.64
-      ],
-      [
-       "2026-09-10 06:23",
-       45.94
-      ],
-      [
-       "2026-09-10 12:58",
-       57.47
-      ],
-      [
-       "2026-09-10 23:06",
-       56.47
-      ],
-      [
-       "2026-09-10 23:52",
-       57.47
-      ],
-      [
-       "2026-09-11 06:26",
-       58.23
-      ],
-      [
-       "2026-09-11 12:17",
-       67.59
-      ],
-      [
-       "2026-09-11 17:51",
-       62.59
-      ],
-      [
-       "2026-09-11 23:56",
-       61.59
-      ],
-      [
-       "2026-09-12 13:07",
-       71.03
-      ],
-      [
-       "2026-09-12 14:56",
-       80.76
-      ]
-     ],
-     "variacion": 27.49
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Viernes 9",
-     "texto": "Vuelo a las 20:45; en Colonia a las 23:25."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Día en Colonia (la catedral está pegada a la estación) y tren a Bruselas por la tarde."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Salida de madrugada hacia Charleroi, vuelo a las 06:30 y en Alicante a las 09:00."
-    }
-   ],
-   "total_persona": 217.75,
-   "total_grupo": 435.5,
-   "ida_fecha": "2026-10-09",
-   "ida_hora": "20:45",
-   "ida_iata": "CGN",
-   "ida_ciudad": "Colonia",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "06:30",
-   "vuelta_llega": "09:00",
-   "vuelta_iata": "CRL",
-   "vuelta_ciudad": "Bruselas Charleroi",
-   "horas_destino": 29,
-   "minutos_tierra": 110,
-   "saltos": 1,
-   "sale_temprano": true,
-   "ida_tarde": true,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 141.26,
-   "dentro_presupuesto": false
-  },
-  {
    "id": "viena-budapest",
    "titulo": "Viena + Budapest",
    "subtitulo": "Las dos capitales del Danubio",
@@ -1395,7 +1403,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 159.96,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -1502,7 +1510,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 99.99,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -1597,7 +1605,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "orientativo",
      "historico": [
       [
@@ -1660,7 +1668,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 99.99,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -1752,7 +1760,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "orientativo",
      "historico": [
       [
@@ -1824,7 +1832,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-12 14:56",
+     "visto": "2026-09-12 15:11",
      "estado": "ok",
      "historico": [
       [
@@ -1952,6 +1960,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-12 14:56",
- "actualizado_iso": "2026-09-12T14:56:30.261038+00:00"
+ "actualizado": "2026-09-12 15:12",
+ "actualizado_iso": "2026-09-12T15:12:04.198610+00:00"
 }
