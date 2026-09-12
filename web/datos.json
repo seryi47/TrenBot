@@ -45,7 +45,7 @@
      "duracion": "03:05",
      "minimo": 78.99,
      "maximo": 86.99,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -100,7 +100,7 @@
      "duracion": "02:50",
      "minimo": 29.99,
      "maximo": 57.79,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -190,7 +190,7 @@
      "duracion": "03:05",
      "minimo": 92.99,
      "maximo": 122.99,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -297,7 +297,7 @@
      "duracion": "02:50",
      "minimo": 29.99,
      "maximo": 57.79,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -391,7 +391,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 159.96,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -507,7 +507,7 @@
      "duracion": "03:00",
      "minimo": 43.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -662,7 +662,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "orientativo",
      "historico": [
       [
@@ -734,7 +734,7 @@
      "duracion": "03:00",
      "minimo": 43.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -889,7 +889,7 @@
      "duracion": "02:40",
      "minimo": 88.99,
      "maximo": 140.99,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -974,13 +974,13 @@
      "llega": "09:00",
      "ref": 52.27,
      "precio": 71.03,
-     "etiqueta": "FR9063 · 4 plazas",
+     "etiqueta": "FR9063 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "02:30",
      "minimo": 43.64,
      "maximo": 72.03,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -1134,7 +1134,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 175.6,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -1237,7 +1237,7 @@
      "duracion": "03:00",
      "minimo": 43.96,
      "maximo": 54.91,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -1391,7 +1391,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 159.96,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -1498,7 +1498,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 99.99,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -1593,7 +1593,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "orientativo",
      "historico": [
       [
@@ -1656,7 +1656,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 99.99,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
       [
@@ -1748,7 +1748,7 @@
      "etiqueta": "precio orientativo",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": null,
-     "visto": "2026-09-12 13:07",
+     "visto": "2026-09-12 14:09",
      "estado": "orientativo",
      "historico": [
       [
@@ -1813,20 +1813,16 @@
      "sale": "11:45",
      "llega": "14:25",
      "ref": 82.99,
-     "precio": 172.99,
+     "precio": 173.99,
      "etiqueta": "FR3487 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
      "plazas": 5,
      "duracion": "02:40",
      "minimo": 74.99,
-     "maximo": 172.99,
-     "visto": "2026-09-12 13:07",
+     "maximo": 173.99,
+     "visto": "2026-09-12 14:09",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-05 16:16",
-       74.99
-      ],
       [
        "2026-09-06 11:58",
        95.99
@@ -1902,9 +1898,13 @@
       [
        "2026-09-12 10:32",
        172.99
+      ],
+      [
+       "2026-09-12 14:09",
+       173.99
       ]
      ],
-     "variacion": 90.0
+     "variacion": 91.0
     }
    ],
    "itinerario": [
@@ -1926,8 +1926,8 @@
     }
    ],
    "tiene_orientativo": true,
-   "total_persona": 323.98,
-   "total_grupo": 647.96,
+   "total_persona": 324.98,
+   "total_grupo": 649.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "09:35",
    "ida_iata": "BTS",
@@ -1948,6 +1948,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-12 13:07",
- "actualizado_iso": "2026-09-12T13:07:58.668319+00:00"
+ "actualizado": "2026-09-12 14:09",
+ "actualizado_iso": "2026-09-12T14:09:59.627090+00:00"
 }
