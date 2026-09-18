@@ -45,7 +45,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 175.6,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -153,20 +153,16 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 42.98,
-     "etiqueta": "FR1495 · 3 plazas",
+     "precio": 39.99,
+     "etiqueta": "FR1495 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-13 14:33",
-       42.96
-      ],
       [
        "2026-09-13 21:50",
        41.96
@@ -242,9 +238,13 @@
       [
        "2026-09-18 13:47",
        42.98
+      ],
+      [
+       "2026-09-18 14:02",
+       39.99
       ]
      ],
-     "variacion": -7.91
+     "variacion": -10.9
     }
    ],
    "itinerario": [
@@ -261,8 +261,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 205.82,
-   "total_grupo": 411.64,
+   "total_persona": 202.83,
+   "total_grupo": 405.66,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -306,14 +306,14 @@
      "sale": "21:10",
      "llega": "00:48",
      "ref": 99.99,
-     "precio": 99.99,
+     "precio": 114.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 2,
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 114.99,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -355,9 +355,13 @@
       [
        "2026-09-18 12:30",
        99.99
+      ],
+      [
+       "2026-09-18 14:02",
+       114.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 15.0
     },
     {
      "tipo": "vuelo",
@@ -379,7 +383,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -432,8 +436,8 @@
      "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 214.98,
-   "total_grupo": 429.96,
+   "total_persona": 229.98,
+   "total_grupo": 459.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "GDN",
@@ -485,7 +489,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -602,20 +606,16 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 42.98,
-     "etiqueta": "FR1495 · 3 plazas",
+     "precio": 39.99,
+     "etiqueta": "FR1495 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-13 14:33",
-       42.96
-      ],
       [
        "2026-09-13 21:50",
        41.96
@@ -691,9 +691,13 @@
       [
        "2026-09-18 13:47",
        42.98
+      ],
+      [
+       "2026-09-18 14:02",
+       39.99
       ]
      ],
-     "variacion": -7.91
+     "variacion": -10.9
     }
    ],
    "itinerario": [
@@ -714,8 +718,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 313.88,
-   "total_grupo": 627.76,
+   "total_persona": 310.89,
+   "total_grupo": 621.78,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -767,7 +771,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -882,7 +886,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -993,7 +997,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1058,20 +1062,16 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 42.98,
-     "etiqueta": "FR1495 · 3 plazas",
+     "precio": 39.99,
+     "etiqueta": "FR1495 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-13 14:33",
-       42.96
-      ],
       [
        "2026-09-13 21:50",
        41.96
@@ -1147,9 +1147,13 @@
       [
        "2026-09-18 13:47",
        42.98
+      ],
+      [
+       "2026-09-18 14:02",
+       39.99
       ]
      ],
-     "variacion": -7.91
+     "variacion": -10.9
     }
    ],
    "itinerario": [
@@ -1216,7 +1220,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1279,7 +1283,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -1386,7 +1390,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1458,7 +1462,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-18 13:47",
+     "visto": "2026-09-18 14:02",
      "estado": "ok",
      "historico": [
       [
@@ -1585,6 +1589,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-18 13:47",
- "actualizado_iso": "2026-09-18T13:47:20.845901+00:00"
+ "actualizado": "2026-09-18 14:02",
+ "actualizado_iso": "2026-09-18T14:02:54.030616+00:00"
 }
