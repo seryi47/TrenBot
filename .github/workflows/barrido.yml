@@ -1,0 +1,26 @@
+name: Barrido de precios
+
+# A mano. Pide precios de todas las rutas que cumplen horarios, desde la IP de
+# GitHub: Ryanair bloquea con 409 en cuanto se le insiste desde una misma IP, y
+# conviene no quemar la de casa (ni la del bot, que va en otro job).
+on:
+  workflow_dispatch: {}
+
+jobs:
+  barrer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests PyYAML json5 curl_cffi
+      - env:
+          PYTHONUNBUFFERED: "1"
+        run: python -u research/precios_candidatos.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: precios
+          path: research/precios.json
