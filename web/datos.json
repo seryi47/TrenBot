@@ -38,20 +38,16 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 171.99,
-     "etiqueta": "FR9877 · 3 plazas",
+     "precio": 142.69,
+     "etiqueta": "FR9877 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": 3,
+     "plazas": 5,
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 175.6,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-07 22:49",
-       148.39
-      ],
       [
        "2026-09-07 23:02",
        147.39
@@ -127,9 +123,13 @@
       [
        "2026-09-19 06:28",
        171.99
+      ],
+      [
+       "2026-09-19 08:47",
+       142.69
       ]
      ],
-     "variacion": 76.8
+     "variacion": 47.5
     },
     {
      "tipo": "tierra",
@@ -160,7 +160,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -261,8 +261,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 221.92,
-   "total_grupo": 443.84,
+   "total_persona": 192.62,
+   "total_grupo": 385.24,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -313,7 +313,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 114.99,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -383,7 +383,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -489,7 +489,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -613,7 +613,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -771,7 +771,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -886,7 +886,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -997,7 +997,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1069,7 +1069,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -1220,7 +1220,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1283,7 +1283,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -1390,7 +1390,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1462,7 +1462,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-19 07:30",
+     "visto": "2026-09-19 08:47",
      "estado": "ok",
      "historico": [
       [
@@ -1589,6 +1589,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-19 07:30",
- "actualizado_iso": "2026-09-19T07:30:17.165833+00:00"
+ "actualizado": "2026-09-19 08:47",
+ "actualizado_iso": "2026-09-19T08:47:43.114340+00:00"
 }
