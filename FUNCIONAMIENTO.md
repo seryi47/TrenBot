@@ -202,7 +202,7 @@ Alicante ida y vuelta, 2 personas, **solo vuelos directos**:
 
 1. Ida el **8 de octubre a partir de las 20:00**, o el **9 a cualquier hora**.
 2. Vuelta el **11 a cualquier hora**, o el **12 aterrizando antes de las 18:00**.
-3. Máximo **160 € por persona** sumando ida y vuelta.
+3. Máximo **190 € por persona** sumando ida y vuelta.
 4. **Dos países**, con al menos un día para el segundo.
 5. Si sales el 9, **aterrizar antes de las 20:00**: llegar de noche pierde el día.
 6. **Sin viajes por dentro**: cuanto menos transporte entre aeropuertos, mejor.
@@ -428,3 +428,25 @@ cuelga solo del vuelo al que sigue. Si hay dos seguidos se encadenan en una
 línea (*"Viena → Praga → Pardubice · 5h00 en total"*).
 
 El vuelo del aviso tampoco repite su enlace: ya lleva el botón grande al final.
+
+### Barrido completo desde Alicante (18-sep-2026)
+Se miraron **los 57 destinos directos** desde ALC de las dos compañías, no solo
+los que ya estaban en la lista. Dos cosas que hay que saber para repetirlo:
+
+- **El 409 de Ryanair miente.** `availability` responde `409 Availability
+  declined` en cuanto se le insiste desde una IP, y ese 409 es idéntico al de
+  "esa ruta no vuela ese día". El primer barrido dio por inexistentes 30 rutas
+  que sí vuelan. Hay que filtrar antes con `timtbl/3/schedules`, que **no se
+  bloquea** y dice día y hora exactos de cada vuelo del mes.
+- **El bloqueo es por IP y solo afecta a quien barre.** Mientras el Mac estaba
+  con 409, la nube seguía leyendo precios con normalidad. Por eso el barrido va
+  en su propio workflow (`barrido.yml`), separado del bot.
+
+Resultado: 18 de 42 destinos de Ryanair cumplen los horarios del viaje. Se
+añadieron a vigilancia **Bucarest, Sofía y Katowice**, que no estaban y son las
+tres más baratas sin ningún traslado por tierra.
+
+La ida y la vuelta **pueden ser de compañías distintas**. Se calculó cruzando
+todo (`research/cruzar.py`) y hoy solo sale una combinación mixta (Venecia, ida
+Wizz + vuelta Ryanair): donde las dos compañías coinciden, una suele ser más
+barata en ambos sentidos. La regla queda puesta para cuando cambie.

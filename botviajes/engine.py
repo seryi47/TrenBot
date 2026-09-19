@@ -542,7 +542,8 @@ class Engine:
         """
         plazas = watch.get("ultimo_plazas")
         precio = watch.get("plazas_precio") or watch.get("ultimo_precio")
-        if plazas is None or precio is None or plazas > umbral:
+        if (not isinstance(plazas, int) or plazas <= 0
+                or precio is None or plazas > umbral):
             self._olvidar_aviso(watch, "plazas")
             return None
         from botviajes.models import Offer

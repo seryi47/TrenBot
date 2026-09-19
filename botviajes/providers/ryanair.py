@@ -172,7 +172,12 @@ class RyanairProvider(Provider):
                         provider=self.name, origin=no or co, destination=nd or cd,
                         date=date, departure=horas[0][11:16], arrival=horas[1][11:16],
                         label=etiqueta, price=precio, available=hay, buy_url=compra,
-                        raw={"divisa": divisa, "bruto": bruto, "plazas": plazas,
+                        # -1 significa "sin límite anunciado", no "queda una
+                        # menos que ninguna". Guardarlo tal cual haría que el
+                        # aviso de últimas plazas dijera "quedan -1 plazas".
+                        raw={"divisa": divisa, "bruto": bruto,
+                             "plazas": plazas if (isinstance(plazas, int)
+                                                  and plazas > 0) else None,
                              # la propia API la da ya calculada, con husos incluidos
                              "duracion": f.get("duration"),
                              "pais_origen": self._est.get(co, {}).get("country", ""),

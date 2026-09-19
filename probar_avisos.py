@@ -159,6 +159,10 @@ def main():
 
     # --- 7. No avisar de bajadas en viajes imposibles ------------------------
     from botviajes.combinador import viajes_con
+    from botviajes.engine import TOPE_VIAJE
+    # El umbral sale del tope real, no de un número escrito a mano: al subir el
+    # tope de 160 a 190 esta prueba falló sola aunque el motor estaba bien.
+    LIMITE = (TOPE_VIAJE or 160) * 1.25
     reales_act = [x for x in reales if x.get("enabled", True)]
     # Un motor con TODAS las rutas: _merece_la_pena mira las combinaciones, y
     # con una sola ruta cargada no encontraría ninguna y siempre diría que sí.
@@ -170,7 +174,16 @@ def main():
         vs = viajes_con(x, reales_act)
         if not vs:
             continue
-        (caros if min(v["total"] for v in vs) > 200 else baratos).append(x)
+        total = min(v["total"] for v in vs)
+        # Un mínimo histórico SIEMPRE se avisa, por caro que sea el viaje: es
+        # información nueva. Esos casos no sirven para probar el filtro.
+        serie = [p[1] for p in (x.get("serie") or []) if p[1]]
+        if serie and x["ultimo_precio"] <= min(serie) + 0.01:
+            continue
+        if total > LIMITE * 1.1:
+            caros.append(x)
+        elif total < LIMITE * 0.9:
+            baratos.append(x)
     ok7 = True
     detalle = []
     for x in caros[:2]:

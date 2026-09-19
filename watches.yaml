@@ -4,7 +4,8 @@
 #
 # Viaje de octubre: Alicante ida y vuelta, 2 personas, SOLO vuelo directo.
 # Ida el 8 a partir de las 20:00 o el 9 a cualquier hora; vuelta el 11 a
-# cualquier hora o el 12 aterrizando antes de las 18:00; tope 160 €/persona.
+# cualquier hora o el 12 aterrizando antes de las 18:00; tope 190 €/persona. Vale una sola ciudad, y la ida
+# y la vuelta pueden ser de compañías distintas.
 #
 # poll_interval por ruta = 900 s: Ryanair y Wizz cortan (429/503) si se les
 # pregunta cada minuto. adults: 2 porque en low cost el precio por persona
@@ -16,6 +17,66 @@ alert_interval: 10
 mac_alerts: false
 open_browser: false
 watches:
+- name: IDA · Alicante→Bucarest (jue 8, 21:10)
+  providers:
+  - wizz
+  origin: ALC
+  destination: OTP
+  date: '2026-10-08'
+  time: '21:10'
+  max_price: 110
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Bucarest→Alicante (dom 11, 17:40)
+  providers:
+  - wizz
+  origin: OTP
+  destination: ALC
+  date: '2026-10-11'
+  time: '17:40'
+  max_price: 55
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Sofía (vie 9, 08:30)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: SOF
+  date: '2026-10-09'
+  time: 08:30
+  max_price: 100
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Sofía→Alicante (dom 11, 22:25)
+  providers:
+  - ryanair
+  origin: SOF
+  destination: ALC
+  date: '2026-10-11'
+  time: '22:25'
+  max_price: 70
+  adults: 2
+  poll_interval: 900
+- name: IDA · Alicante→Katowice (jue 8, 20:20)
+  providers:
+  - wizz
+  origin: ALC
+  destination: KTW
+  date: '2026-10-08'
+  time: '20:20'
+  max_price: 110
+  adults: 2
+  poll_interval: 900
+- name: VUELTA · Katowice→Alicante (dom 11, 05:30)
+  providers:
+  - wizz
+  origin: KTW
+  destination: ALC
+  date: '2026-10-11'
+  time: 05:30
+  max_price: 60
+  adults: 2
+  poll_interval: 900
 - name: IDA · Alicante→Bratislava (vie 9)
   providers:
   - wizz
