@@ -178,8 +178,9 @@ sobrevive al relevo del job.
 - **El precio llega en la moneda de la estación de salida del PRIMER tramo.**
   Poniendo delante un tramo que sale de zona euro, todo llega en euros.
 - ⚠️ **`priceType: "checkPrice"` viene con importe 0.** No es gratis: es que no
-  hay precio publicado. Se marca como *orientativo*, no dispara avisos y en la
-  web sale con `≈`.
+  hay **ninguna plaza a la venta**. Ese vuelo queda sin precio —ni el 0, ni el
+  `originalPrice` de referencia, que no se puede comprar— y la web marca la
+  combinación como *incompleta*.
 - No da hora de llegada por esta vía: se cachean las conocidas en
   `data/wizz_horarios.json` y el resto se calcula por distancia y huso horario.
 - `/search/search` da más detalle pero se satura enseguida (429); tras un fallo
@@ -248,7 +249,7 @@ cargó la lista al arrancar, así que el cambio entra en el siguiente relevo
 | Ryanair sube su `client-version` | la lee de su web y sigue ✅ |
 | Wizz jubila su versión de API | la detecta y sigue ✅ |
 | Llega un precio de 0 | lo descarta ✅ |
-| Wizz no publica precio | lo marca orientativo, sin avisar ✅ |
+| Wizz no publica precio | lo deja sin cifra, "sin plazas a la venta" ✅ |
 | Un destino de Telegram desaparece | lo descarta tras avisar una vez ✅ |
 | GitHub corta el job a las 5 h 33 | releva al siguiente ✅ |
 | Una ruta deja de dar datos | te avisa a la 3ª consulta ✅ |
@@ -307,16 +308,16 @@ de ver. Si lo hay, se aborta solo.
 La prueba 8 de `probar_avisos.py` recorre el código y falla si aparece un
 proceso externo sin timeout, para que esto no vuelva a colarse.
 
-### Precios orientativos
-Wizz a veces deja de publicar el precio de un vuelo y responde "míralo en la
-web" (`priceType: checkPrice`). El bot guarda entonces un precio **orientativo**:
-sirve para no quedarse ciego, pero **no se puede comprar a ese precio**. Nunca
-entra en la serie histórica ni dispara un aviso de bajada.
+### Cuando un vuelo se queda sin plazas
+Wizz responde `priceType: checkPrice` con importe 0 cuando ese vuelo **no tiene
+ninguna tarifa a la venta**. Deja un `originalPrice` de referencia que tampoco
+sirve: no se puede comprar a ese precio.
 
-La web lo etiqueta como *precio orientativo*, y desde ahora el resumen de cada
-12 h también lo dice por Telegram, con la fecha del último precio firme. Sin eso,
-un vuelo podía llevar días con una cifra no firme pareciendo tan sólida como el
-resto.
+El bot no enseña ninguna cifra. El vuelo queda como *sin plazas a la venta*, las
+combinaciones que lo contienen salen **incompletas** (y ordenan al final, no al
+principio), y el resumen de cada 12 h lo dice con la fecha del último precio
+real. Saberlo **no** cuenta como quedarse ciego: es un dato, no una falta de
+datos.
 
 ### ¿Nos sirven precios cacheados o "de bot"? (comprobado el 15-sep-2026)
 Sospecha razonable, así que se midió en vez de suponerlo. `diagnostico.py` hace
@@ -382,8 +383,8 @@ no era firme. Elegía por precio y nada más.
 
 Ahora encabeza **la más barata que se puede comprar de verdad**, y:
 
-- si alguna sale más barata pero con precio orientativo, se nombra aparte como
-  lo que es —un número de escaparate—, nunca como la mejor opción;
+- las combinaciones con algún tramo sin plazas no compiten por el primer puesto:
+  salen como *incompletas*;
 - si la más barata obliga a un traslado y hay otra casi al mismo precio que no,
   se dice (*"por 2,06 € más, Gdansk te ahorra ese traslado"*). Ahorrar dos euros
   a cambio de tres horas de tren no es ahorrar;

@@ -163,6 +163,11 @@ const FLAG={"España":"🇪🇸","Eslovaquia":"🇸🇰","Austria":"🇦🇹","R
  "Croacia":"🇭🇷","Italia":"🇮🇹","Reino Unido":"🇬🇧","Irlanda":"🇮🇪"};
 const DOW=["dom","lun","mar","mié","jue","vie","sáb"];
 const MON=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+// Una opción sin precio (la aerolínea ha dejado de vender un tramo) vale
+// Infinity, no 0: en JavaScript `null - 185` da -185, así que sin esto las
+// incompletas se colaban las PRIMERAS al ordenar por precio y la cabecera
+// anunciaba "desde —" en vez del precio de la más barata de verdad.
+const coste=o=>o.total_persona==null?Infinity:o.total_persona;
 const eur=n=>n==null?"—":n.toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const dia=iso=>{const d=new Date(iso+"T12:00:00");return `${DOW[d.getDay()]} ${d.getDate()}`;};
@@ -188,7 +193,7 @@ const FILTROS={
   sinperder:{txt:"Sin perder el día al llegar",test:o=>!o.ida_tarde},
 };
 const ORDENES={
-  precio:["Precio",(a,b)=>a.total_persona-b.total_persona],
+  precio:["Precio",(a,b)=>coste(a)-coste(b)],
   tiempo:["Tiempo en destino",(a,b)=>b.horas_destino-a.horas_destino],
   vuelta:["Vuelta más cómoda",(a,b)=>(b.vuelta_fecha+b.vuelta_hora).localeCompare(a.vuelta_fecha+a.vuelta_hora)],
   traslado:["Menos traslado",(a,b)=>a.minutos_tierra-b.minutos_tierra],
@@ -245,7 +250,7 @@ function fila(o){
     <div class="cell" data-l="Allí"><b>${o.horas_destino} h</b><span>${o.noches} noches</span></div>
     <div class="cell" data-l="Traslado"><b>${horas(o.minutos_tierra)}</b>
       <span>${o.saltos} ${o.saltos===1?"salto":"saltos"}${av.length?" · "+av[0]:""}</span></div>
-    <div class="price ${o.dentro_presupuesto?"":"over"}">${o.tiene_sin_venta?"— ":""}${o.tiene_sin_venta?"incompleta":eur(o.total_persona)}
+    <div class="price ${o.dentro_presupuesto?"":"over"}">${o.total_persona==null?"incompleta":eur(o.total_persona)}
       <small>${eur(o.total_grupo)} los dos${dv?` · ${dv<0?"▼":"▲"}${eur(Math.abs(dv))}`:""}</small></div>
     <div class="chev">⌄</div>
   </button>${detalle(o)}`;
@@ -300,7 +305,7 @@ function pinta(){
 
 fetch("datos.json?v="+Date.now()).then(r=>r.json()).then(d=>{
   DATOS=d;
-  const v=d.viaje, mejor=[...d.opciones].sort((a,b)=>a.total_persona-b.total_persona)[0];
+  const v=d.viaje, mejor=[...d.opciones].sort((a,b)=>coste(a)-coste(b))[0];
   document.title=v.titulo;
   document.getElementById("h1").textContent=v.titulo;
   document.getElementById("sub").innerHTML=
