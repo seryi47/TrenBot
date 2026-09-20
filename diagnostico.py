@@ -12,7 +12,9 @@ import curl_cffi.requests as cr
 
 from botviajes.providers import get_provider
 
-RUTAS = [("ryanair", "PED", "ALC", "2026-10-11"),
+RUTAS = [("wizz", "OTP", "ALC", "2026-10-11"),
+         ("wizz", "KTW", "ALC", "2026-10-11"),
+         ("ryanair", "PED", "ALC", "2026-10-11"),
          ("ryanair", "LNZ", "ALC", "2026-10-12"),
          ("wizz", "ALC", "GDN", "2026-10-08"),
          ("wizz", "GDN", "ALC", "2026-10-11"),
