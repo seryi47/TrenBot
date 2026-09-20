@@ -475,3 +475,17 @@ barato y avisarte; el último paso, quién te lo vende, es manual.
   descartaba el destino entero, lo que anula la regla de poder ir con una
   compañía y volver con otra. Así se escondió la ida de **Ryanair a Gdansk** del
   jueves 8 a las 20:10, que existe y cumple los horarios.
+
+### El objetivo de un tramo no es noticia si el viaje es imposible
+El aviso de "🎯 ha entrado en tu objetivo" **se saltaba el filtro de ruido**: lo
+pasaban solo las bajadas. Por eso llegó un aviso de Linz a 116,99 € (objetivo
+≤125) dentro de un viaje de 287,98 € por persona, muy por encima del tope.
+
+Peor: ese total era falso. El **combinador sumaba el último precio conocido de
+un vuelo sin plazas a la venta**, y ese precio ya no existe — la ida a
+Bratislava contaba a 170,99 € cuando no se puede comprar a ningún precio.
+
+Ahora un tramo en objetivo solo se avisa si forma parte de **al menos un viaje
+comprable** y ese viaje no se dispara del tope, el mismo criterio que las
+bajadas y las últimas plazas. Y los tramos sin venta no puntúan en ningún total:
+su viaje sale *incompleto*, igual que en la web.

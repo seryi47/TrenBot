@@ -571,6 +571,30 @@ class Engine:
                 % (plazas, "s" if plazas > 1 else "", watch["name"], precio,
                    watch.get("ultimo_url") or ""))
 
+    def _objetivo_util(self, watch, oferta):
+        """¿Sirve de algo avisar de que este vuelo ha entrado en su objetivo?
+
+        Que un tramo cumpla su precio no significa nada si el viaje que lo
+        contiene es imposible: avisaba de Linz a 116,99 € dentro de un viaje de
+        287,98 € que además tenía la ida sin plazas. Se pide lo mismo que para
+        las últimas plazas: que exista al menos un viaje COMPRABLE y que no se
+        dispare del tope.
+        """
+        try:
+            viajes = viajes_con(watch, self.watches, oferta.price)
+        except Exception:
+            return True                      # ante la duda, avisar
+        if not viajes:
+            return False                     # no lleva a ningún viaje posible
+        if TOPE_VIAJE and min(v["total"] for v in viajes) > TOPE_VIAJE * 1.25:
+            self.silenciadas += 1
+            print("  [%s] en objetivo a %.2f € pero el viaje más barato con ese "
+                  "vuelo cuesta %.2f € (tope %.0f): no aviso"
+                  % (watch["name"], oferta.price,
+                     min(v["total"] for v in viajes), TOPE_VIAJE))
+            return False
+        return True
+
     def _registrar_precio(self, watch, todas):
         """Guarda el precio mas barato visto y avisa si ha BAJADO.
 
@@ -888,7 +912,13 @@ class Engine:
                 # Que haya BAJADO MÁS siempre se avisa: es información nueva y
                 # además la más útil. El silencio solo tapa el "sigue igual".
                 novedad = bajada is not None
-                if novedad or self._puede_avisar(watch, "objetivo"):
+                # El mismo criterio que en las bajadas: si el viaje es imposible
+                # o se dispara del tope, cumplir el objetivo del tramo no es
+                # noticia. Antes este aviso se saltaba el filtro entero.
+                barata = min(offers, key=lambda o: o.price or 9e9)
+                if not self._objetivo_util(watch, barata):
+                    self._marcar_aviso(watch, "objetivo")
+                elif novedad or self._puede_avisar(watch, "objetivo"):
                     if novedad:
                         self._marcar_aviso(watch, "objetivo")
                     self.notifier.telegram(

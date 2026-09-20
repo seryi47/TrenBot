@@ -50,6 +50,11 @@ def viajes_con(watch, watches, precio_actual=None):
         return []
     precios, urls, etiquetas, rangos, plazas, duraciones = {}, {}, {}, {}, {}, {}
     for w in watches:
+        # Un vuelo sin plazas a la venta conserva su último precio conocido, pero
+        # ESE PRECIO YA NO EXISTE: sumarlo daba viajes de mentira, como los
+        # 287,98 € de "Bratislava + Viena" con una ida que no se puede comprar.
+        if w.get("sin_venta"):
+            continue
         if w.get("ultimo_precio") is None or not w.get("providers"):
             continue
         k = _clave(w["providers"][0], w["origin"], w["destination"], w["date"])
