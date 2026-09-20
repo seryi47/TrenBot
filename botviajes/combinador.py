@@ -35,6 +35,27 @@ def _clave(cia, origen, destino, fecha):
     return "%s|%s|%s|%s" % (cia, origen, destino, fecha)
 
 
+def esta_en_alguna_ruta(watch):
+    """¿Este vuelo forma parte de alguna combinación de rutas.json?
+
+    Hace falta para distinguir dos cosas que `viajes_con` devuelve igual (lista
+    vacía): un vuelo cuyos viajes son todos imposibles —del que no interesa
+    avisar— y un vuelo suelto que alguien vigila por su cuenta, del que sí.
+    """
+    cfg = _config()
+    if not cfg:
+        return False
+    k = _clave((watch.get("providers") or ["?"])[0], watch["origin"],
+               watch["destination"], watch["date"])
+    for op in cfg.get("opciones", []):
+        for t in op.get("tramos", []):
+            if t.get("tipo") == "tierra":
+                continue
+            if _clave(t["cia"], t["de"], t["a"], t["fecha"]) == k:
+                return True
+    return False
+
+
 def viajes_con(watch, watches, precio_actual=None):
     """Combinaciones completas que incluyen el vuelo de `watch`.
 

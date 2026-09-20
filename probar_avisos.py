@@ -114,23 +114,39 @@ def main():
     os.unlink(tmp)
 
     # --- 3. OBJETIVO alcanzado ----------------------------------------------
-    w = copy.deepcopy(base)
-    w["max_price"] = precio_real + 10                    # el precio ya lo cumple
-    w.pop("ultimo_precio", None)
-    motor, cap, tmp = motor_de_prueba([w])
-    n = motor.check_once()
-    ok3 = (n == 1 and cap.mensajes and "OBJETIVO" in cap.mensajes[0]
-           and "Sale de" in cap.mensajes[0])
+    # Con TODAS las rutas cargadas, no solo la de prueba: desde que el aviso de
+    # objetivo exige que el vuelo lleve a un viaje comprable, con una sola ruta
+    # nunca se formaría ninguno y el test fallaba sin haber fallo real.
+    # Los OTROS tramos se fijan baratos a propósito para que el viaje que
+    # contiene al de prueba sea asequible pase lo que pase en el mercado. Si no,
+    # el test se cae solo el día que suba un vuelo que no es el que se prueba:
+    # ya ocurrió con Sofía (244,98 € el viaje -> el filtro callaba, con razón).
+    todas_w = [copy.deepcopy(x) for x in reales if x.get("enabled", True)]
+    for x in todas_w:
+        if x["name"] == base["name"]:
+            x["max_price"] = precio_real + 10            # el precio ya lo cumple
+            x.pop("ultimo_precio", None)
+        else:
+            x["max_price"] = 1                           # que no avisen los demás
+            x["ultimo_precio"] = 40.0
+            x.pop("sin_venta", None)
+    motor, cap, tmp = motor_de_prueba(todas_w)
+    motor.check_once()
+    # Se busca entre TODOS los mensajes, no solo el primero: desde que existe el
+    # aviso de "quedan N plazas" puede llegar antes y el test miraba el que no
+    # era, dando por roto un aviso que funcionaba.
+    objetivo = next((m for m in cap.mensajes if "OBJETIVO" in m), None)
+    ok3 = bool(objetivo) and "Sale de" in objetivo
     print("\n3) Aviso de OBJETIVO ............ %s" % ("OK" if ok3 else "FALLA"))
     if ok3:
-        print("   " + cap.mensajes[0].replace("\n", "\n   ")[:380])
+        print("   " + objetivo.replace("\n", "\n   ")[:380])
     else:
         fallos.append("no se disparó el aviso de objetivo")
 
     os.unlink(tmp)
 
     # --- 4. El enlace de compra del aviso es el bueno ------------------------
-    ok4 = bool(cap.mensajes) and "ryanair.com" in cap.mensajes[0] and "originIata" in cap.mensajes[0]
+    ok4 = bool(objetivo) and "ryanair.com" in objetivo and "originIata" in objetivo
     print("\n4) Lleva enlace de compra ....... %s" % ("OK" if ok4 else "FALLA"))
     if not ok4:
         fallos.append("el aviso no lleva enlace de compra válido")

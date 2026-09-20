@@ -7,7 +7,7 @@ import threading
 import time
 from typing import List, Optional
 
-from botviajes.combinador import viajes_con
+from botviajes.combinador import esta_en_alguna_ruta, viajes_con
 from botviajes.models import Offer
 from botviajes.providers import get_provider
 
@@ -585,7 +585,11 @@ class Engine:
         except Exception:
             return True                      # ante la duda, avisar
         if not viajes:
-            return False                     # no lleva a ningún viaje posible
+            # Ojo: vacío significa dos cosas distintas. Si el vuelo NO está en
+            # ninguna combinación, es que alguien lo vigila suelto y su objetivo
+            # es lo único que importa: se avisa. Si sí está pero ninguna sale,
+            # es que todas son imposibles: no se avisa.
+            return not esta_en_alguna_ruta(watch)
         if TOPE_VIAJE and min(v["total"] for v in viajes) > TOPE_VIAJE * 1.25:
             self.silenciadas += 1
             print("  [%s] en objetivo a %.2f € pero el viaje más barato con ese "
@@ -917,7 +921,10 @@ class Engine:
                 # noticia. Antes este aviso se saltaba el filtro entero.
                 barata = min(offers, key=lambda o: o.price or 9e9)
                 if not self._objetivo_util(watch, barata):
-                    self._marcar_aviso(watch, "objetivo")
+                    # Callar NO consume el silencio de 12 h: si mañana el viaje
+                    # se vuelve asequible, el aviso tiene que poder salir.
+                    print("[%s] %s -> en objetivo pero el viaje no sale: callo"
+                          % (stamp, watch["name"]))
                 elif novedad or self._puede_avisar(watch, "objetivo"):
                     if novedad:
                         self._marcar_aviso(watch, "objetivo")
