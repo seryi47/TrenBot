@@ -46,9 +46,13 @@ def main():
     for i, (iata, nombre, pais) in enumerate(dest, 1):
         ida_cal = calendario(s, "ALC", iata)
         time.sleep(0.6)
-        # IDA: el 8 solo a partir de las 20:00; el 9, aterrizando antes de las 20:00
+        # IDA: el 8 solo a partir de las 20:00; el 9, aterrizando antes de las
+        # 20:00 Y el mismo día. Sin el "> 03:00" un vuelo que sale a las 22:00 y
+        # aterriza a la 01:05 del día siguiente colaba, porque "01:05" < "20:00"
+        # comparando textos. Es justo el caso que la regla quiere evitar.
         idas = [("2026-10-08",) + f for f in ida_cal.get(8, []) if f[0] >= "20:00"]
-        idas += [("2026-10-09",) + f for f in ida_cal.get(9, []) if f[1] < "20:00"]
+        idas += [("2026-10-09",) + f for f in ida_cal.get(9, [])
+                 if "03:00" < f[1] < "20:00"]
         if not idas:
             hay = sorted(set([f[0] for f in ida_cal.get(8, [])] +
                              [f[0] for f in ida_cal.get(9, [])]))
@@ -61,13 +65,15 @@ def main():
         time.sleep(0.6)
         vueltas = [("2026-10-11",) + f for f in vta_cal.get(11, [])]
         vueltas += [("2026-10-12",) + f for f in vta_cal.get(12, []) if f[1] <= "18:00"]
+        # OJO: una ida válida se guarda AUNQUE esta compañía no tenga vuelta que
+        # sirva, porque se puede volver con la otra. Descartar el destino entero
+        # aquí es lo que escondió la ida de Ryanair a Katowice.
         if not vueltas:
             hay = sorted(set(f[1] for f in vta_cal.get(12, [])))
-            motivos[iata] = ("no vuelve el 11 ni el 12" if not vta_cal.get(11) and not hay
-                             else "el 12 aterriza a las " + ", ".join(hay))
-            print("%3d/%d  %-4s %-24s ❌ %s" % (i, len(dest), iata, (nombre or "")[:24],
-                                                motivos[iata]))
-            continue
+            motivos[iata] = ("sin vuelta propia el 11 ni el 12" if not hay
+                             else "su vuelta del 12 aterriza a las " + ", ".join(hay))
+            print("%3d/%d  %-4s %-24s ⚠️  %d ida(s) válida(s), pero %s"
+                  % (i, len(dest), iata, (nombre or "")[:24], len(idas), motivos[iata]))
         buenos[iata] = {"nombre": nombre, "pais": pais, "idas": idas, "vueltas": vueltas}
         print("%3d/%d  %-4s %-24s ✅ %d ida(s), %d vuelta(s)"
               % (i, len(dest), iata, (nombre or "")[:24], len(idas), len(vueltas)))

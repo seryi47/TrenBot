@@ -451,3 +451,27 @@ La ida y la vuelta **pueden ser de compañías distintas**. Se calculó cruzando
 todo (`research/cruzar.py`) y hoy solo sale una combinación mixta (Venecia, ida
 Wizz + vuelta Ryanair): donde las dos compañías coinciden, una suele ser más
 barata en ambos sentidos. La regla queda puesta para cuando cambie.
+
+### El bot lee el precio de la AEROLÍNEA, no el del mercado
+Pregunta a Ryanair y a Wizz cuánto cuestan **sus** billetes. Eso no es lo más
+barato que existe: revendedores como Kiwi, Trip.com o BudgetAir suelen estar
+**5-15 € por debajo** del precio oficial del mismo vuelo. Comprobado el
+20-sep-2026: Wizz pedía 184,98 €/persona por Katowice (vuelos W61080/W61079) y
+Kiwi vendía **esos mismos dos vuelos a 172 €**.
+
+No se puede automatizar: Skyscanner lanza captcha a un navegador automatizado y
+la API de Kiwi pide clave. Google Flights sí se deja (`research/mercado.py`),
+pero da el total del viaje, no el desglose por revendedor.
+
+**Conclusión práctica: antes de comprar, mira el mismo vuelo en un comparador.**
+La web lo avisa. Lo que el bot hace bien es detectar *cuándo* un vuelo está
+barato y avisarte; el último paso, quién te lo vende, es manual.
+
+### Dos fallos del barrido, encontrados el 20-sep-2026
+- **Las llegadas de madrugada colaban.** El filtro del día 9 aceptaba un vuelo
+  que sale a las 22:00 y aterriza a la 01:05 del día siguiente, porque comparaba
+  `"01:05" < "20:00"` como texto. Es justo el caso que la regla quiere evitar.
+- **Una ida válida se perdía si su compañía no tenía vuelta.** El barrido
+  descartaba el destino entero, lo que anula la regla de poder ir con una
+  compañía y volver con otra. Así se escondió la ida de **Ryanair a Gdansk** del
+  jueves 8 a las 20:10, que existe y cumple los horarios.

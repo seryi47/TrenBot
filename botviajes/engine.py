@@ -630,6 +630,9 @@ class Engine:
             watch["ultimo_url"] = mejor.buy_url
             watch["ultimo_salida"] = mejor.departure
             watch["ultimo_llegada"] = mejor.arrival
+            # Wizz no da hora de llegada por timetable: se calcula, y se desvía
+            # unos minutos. Hay que poder decirlo en vez de darla por exacta.
+            watch["llegada_estimada"] = bool((mejor.raw or {}).get("llegada_estimada"))
             watch["ultimo_etiqueta"] = mejor.label
             # Ryanair manda las plazas en la respuesta; Wizz no, y las deduce
             # _mirar_plazas de su escalera de tarifas. Si el proveedor no las

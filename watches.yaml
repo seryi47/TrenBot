@@ -17,6 +17,16 @@ alert_interval: 10
 mac_alerts: false
 open_browser: false
 watches:
+- name: IDA · Alicante→Gdansk RYANAIR (jue 8, 20:10)
+  providers:
+  - ryanair
+  origin: ALC
+  destination: GDN
+  date: '2026-10-08'
+  time: '20:10'
+  max_price: 100
+  adults: 2
+  poll_interval: 900
 - name: IDA · Alicante→Bucarest (jue 8, 21:10)
   providers:
   - wizz

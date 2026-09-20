@@ -16,6 +16,65 @@
  },
  "opciones": [
   {
+   "id": "gdansk-mixto",
+   "titulo": "Gdansk, ida Ryanair y vuelta Wizz",
+   "subtitulo": "Mismo aeropuerto, cada trayecto con la compañía que lo tiene",
+   "paises": [
+    "Polonia"
+   ],
+   "noches": 3,
+   "por_que": "Wizz dejó de vender su vuelo de ida, pero Ryanair vuela la misma noche a las 20:10. Nada obliga a ir y volver con la misma compañía.",
+   "aviso": "Son dos reservas independientes, una en Ryanair y otra en Wizz: si una se retrasa, la otra no te cubre.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "ryanair",
+     "vuelo": "FR1426",
+     "de": "ALC",
+     "a": "GDN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Gdansk",
+     "fecha": "2026-10-08",
+     "sale": "20:10",
+     "llega": "23:40",
+     "ref": 123.82
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "GDN",
+     "a": "ALC",
+     "de_nombre": "Gdansk",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:45",
+     "llega": "20:23",
+     "ref": 114.99
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo Ryanair a las 20:10; en Gdansk a las 23:40."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Casco viejo: Długi Targ, la grúa medieval y la basílica."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Sopot (20 min en cercanías) o el castillo de Malbork (50 min)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
+    }
+   ]
+  },
+  {
    "id": "bucarest",
    "titulo": "Bucarest, sin moverse",
    "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",

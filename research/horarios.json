@@ -122,6 +122,19 @@
     ]
    ]
   },
+  "GDN": {
+   "nombre": "Gdansk",
+   "pais": "Polonia",
+   "idas": [
+    [
+     "2026-10-08",
+     "20:10",
+     "23:40",
+     "1426"
+    ]
+   ],
+   "vueltas": []
+  },
   "HEL": {
    "nombre": "Helsinki",
    "pais": "Finlandia",
@@ -437,9 +450,9 @@
   "CPH": "vuela el 8/9 pero a las 19:30",
   "CTA": "no vuela el 8 ni el 9",
   "FEZ": "no vuela el 8 ni el 9",
-  "GDN": "el 12 aterriza a las 18:50",
+  "GDN": "su vuelta del 12 aterriza a las 18:50",
   "GOT": "vuela el 8/9 pero a las 06:00, 17:05",
-  "KTW": "el 12 aterriza a las 21:35",
+  "KTW": "vuela el 8/9 pero a las 05:50, 22:00",
   "KUN": "vuela el 8/9 pero a las 19:40",
   "LNZ": "vuela el 8/9 pero a las 18:40",
   "PED": "no vuela el 8 ni el 9",

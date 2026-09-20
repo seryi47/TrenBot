@@ -216,7 +216,7 @@ function segmento(t){
   const dv=t.variacion||0;
   const ch=dv?`<span class="mini ${dv<0?"o":""}">${dv<0?"▼":"▲"} ${eur(Math.abs(dv))}</span>`:"";
   return `<div class="seg"><div class="ic">✈️</div><div class="bd">
-    <div class="t1"><b>${esc(t.sale)} → ${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}${t.duracion?` · <span style="color:var(--ink3)">${esc(dur(t.duracion))}</span>`:""}</div>
+    <div class="t1"><b>${esc(t.sale)} → ${t.llega_aprox?"≈":""}${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}${t.duracion?` · <span style="color:var(--ink3)">${esc(dur(t.duracion))}</span>`:""}</div>
     <div class="t2">${esc(diaL(t.fecha))} · ${cia} ${esc(t.etiqueta||t.vuelo)} · directo</div>
     <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="sin_venta"?"Comprobar en":"Comprar"} ${t.estado==="sin_venta"?(t.cia==="wizz"?"Wizz Air":"Ryanair"):eur(t.precio)} →</a>${orient}${pl}${ch}
     ${(t.minimo!=null&&t.minimo!==t.maximo)?`<div class="t2" style="margin-top:6px">Se ha movido entre <b>${eur(t.minimo)}</b> y ${eur(t.maximo)} desde que lo vigilo</div>`:(t.minimo!=null?`<div class="t2" style="margin-top:6px">Sin cambios desde que lo vigilo</div>`:"")}
@@ -266,7 +266,7 @@ function vigilados(){
     <div class="wrow h"><div>Trayecto</div><div>Cuándo</div><div>Compañía</div><div class="r">Precio</div><div></div></div>
     ${f.map(t=>`<div class="wrow">
       <div><b>${esc(t.de)} → ${esc(t.a)}</b></div>
-      <div>${esc(diaL(t.fecha))} · ${esc(t.sale)}→${esc(t.llega)}</div>
+      <div>${esc(diaL(t.fecha))} · ${esc(t.sale)}→${t.llega_aprox?"≈":""}${esc(t.llega)}</div>
       <div>${t.cia==="wizz"?"Wizz Air":"Ryanair"} ${esc(t.etiqueta||t.vuelo)}</div>
       <div class="r tn">${eur(t.precio)}${spark(t.historico)}</div>
       <div style="text-align:right"><a class="lnk" href="${esc(t.url)}" target="_blank" rel="noopener">Comprar →</a></div>
@@ -314,6 +314,7 @@ fetch("datos.json?v="+Date.now()).then(r=>r.json()).then(d=>{
     `Toca cualquier fila para ver el detalle y comprar.`;
   document.getElementById("meta").innerHTML=
     `<span class="tag live">● Precios de ${esc(d.actualizado)}</span>`+
+      `<span class="tag">Precio oficial de la aerolínea · revendedores como Kiwi o Trip.com suelen estar 5-15 € por debajo</span>`+
     v.reglas.map(r=>`<span class="tag">${esc(r)}</span>`).join("");
   pinta();
   document.getElementById("foot").innerHTML=
