@@ -42,11 +42,11 @@
      "precio": 124.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
-     "plazas": 9,
+     "plazas": 8,
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:40",
      "estado": "ok",
      "historico": [
       [
@@ -72,11 +72,11 @@
      "precio": 59.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:40",
      "minimo": 59.99,
      "maximo": 59.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:40",
      "estado": "ok",
      "historico": [
       [
@@ -153,11 +153,11 @@
      "precio": 124.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 3,
      "duracion": "3:19",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:40",
      "estado": "ok",
      "historico": [
       [
@@ -183,11 +183,11 @@
      "precio": 59.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 2,
      "duracion": "3:19",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:40",
      "estado": "ok",
      "historico": [
       [
@@ -272,7 +272,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 135.24,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:40",
      "estado": "ok",
      "historico": [
       [
@@ -306,7 +306,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 97.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:40",
      "estado": "ok",
      "historico": [
       [
@@ -392,7 +392,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -516,7 +516,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -674,7 +674,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -785,11 +785,11 @@
      "precio": 79.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 6,
+     "plazas": 2,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -915,7 +915,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -1030,7 +1030,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -1181,7 +1181,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1253,7 +1253,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -1404,7 +1404,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1463,11 +1463,11 @@
      "precio": 79.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 6,
+     "plazas": 2,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -1586,7 +1586,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1658,7 +1658,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -1812,7 +1812,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1878,11 +1878,11 @@
      "precio": 114.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 5,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-20 08:36",
+     "visto": "2026-09-20 10:41",
      "estado": "ok",
      "historico": [
       [
@@ -1957,6 +1957,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-20 08:36",
- "actualizado_iso": "2026-09-20T08:36:19.843988+00:00"
+ "actualizado": "2026-09-20 10:41",
+ "actualizado_iso": "2026-09-20T10:41:50.946299+02:00"
 }
