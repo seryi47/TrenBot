@@ -47,7 +47,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -78,7 +78,7 @@
      "duracion": "3:40",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -164,7 +164,7 @@
      "duracion": "3:10",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -195,7 +195,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -289,7 +289,7 @@
      "duracion": "03:30",
      "minimo": 123.82,
      "maximo": 123.82,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -320,7 +320,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -426,7 +426,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 146.99,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -469,7 +469,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 110.99,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -552,21 +552,17 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 198.89,
+     "precio": 219.59,
      "llega_aprox": false,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
+     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "plazas": 3,
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-11 06:25",
-       132.72
-      ],
       [
        "2026-09-11 10:56",
        145.51
@@ -642,9 +638,13 @@
       [
        "2026-09-20 06:30",
        198.89
+      ],
+      [
+       "2026-09-20 20:29",
+       219.59
       ]
      ],
-     "variacion": 102.7
+     "variacion": 123.4
     },
     {
      "tipo": "tierra",
@@ -685,7 +685,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -790,8 +790,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 246.82,
-   "total_grupo": 493.64,
+   "total_persona": 267.52,
+   "total_grupo": 535.04,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -836,21 +836,17 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 198.89,
+     "precio": 219.59,
      "llega_aprox": false,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
+     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "plazas": 3,
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-11 06:25",
-       132.72
-      ],
       [
        "2026-09-11 10:56",
        145.51
@@ -926,9 +922,13 @@
       [
        "2026-09-20 06:30",
        198.89
+      ],
+      [
+       "2026-09-20 20:29",
+       219.59
       ]
      ],
-     "variacion": 102.7
+     "variacion": 123.4
     },
     {
      "tipo": "tierra",
@@ -960,7 +960,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -1033,8 +1033,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 278.88,
-   "total_grupo": 557.76,
+   "total_persona": 299.58,
+   "total_grupo": 599.16,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1087,7 +1087,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -1203,7 +1203,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -1354,7 +1354,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1427,7 +1427,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -1578,7 +1578,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1642,7 +1642,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -1761,7 +1761,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 20:13",
+     "visto": "2026-09-20 20:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1834,7 +1834,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -1988,7 +1988,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -2059,7 +2059,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-20 20:14",
+     "visto": "2026-09-20 20:29",
      "estado": "ok",
      "historico": [
       [
@@ -2134,6 +2134,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-20 20:14",
- "actualizado_iso": "2026-09-20T20:14:09.470343+00:00"
+ "actualizado": "2026-09-20 20:29",
+ "actualizado_iso": "2026-09-20T20:29:50.850837+00:00"
 }
