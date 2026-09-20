@@ -46,7 +46,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:01",
      "estado": "ok",
      "historico": [
       [
@@ -76,7 +76,7 @@
      "duracion": "3:40",
      "minimo": 59.99,
      "maximo": 59.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:01",
      "estado": "ok",
      "historico": [
       [
@@ -157,7 +157,7 @@
      "duracion": "3:19",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:01",
      "estado": "ok",
      "historico": [
       [
@@ -180,22 +180,26 @@
      "sale": "05:30",
      "llega": "08:49",
      "ref": 65.99,
-     "precio": 65.99,
+     "precio": 59.99,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
      "plazas": 5,
      "duracion": "3:19",
-     "minimo": 65.99,
+     "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
        "2026-09-19 11:29",
        65.99
+      ],
+      [
+       "2026-09-20 07:02",
+       59.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -6.0
     }
    ],
    "itinerario": [
@@ -216,8 +220,8 @@
      "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
     }
    ],
-   "total_persona": 190.98,
-   "total_grupo": 381.96,
+   "total_persona": 184.98,
+   "total_grupo": 369.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:20",
    "ida_iata": "KTW",
@@ -235,7 +239,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 190.98,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "wroclaw-praga",
@@ -269,7 +273,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 175.6,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -384,7 +388,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -537,7 +541,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 135.24,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:01",
      "estado": "ok",
      "historico": [
       [
@@ -571,7 +575,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 97.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:01",
      "estado": "ok",
      "historico": [
       [
@@ -657,7 +661,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -781,7 +785,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -939,7 +943,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -1054,7 +1058,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -1173,7 +1177,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1245,7 +1249,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -1396,7 +1400,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1459,7 +1463,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -1574,7 +1578,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1646,7 +1650,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -1800,7 +1804,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1870,7 +1874,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-20 06:30",
+     "visto": "2026-09-20 07:02",
      "estado": "ok",
      "historico": [
       [
@@ -1945,6 +1949,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-20 06:30",
- "actualizado_iso": "2026-09-20T06:30:49.509759+00:00"
+ "actualizado": "2026-09-20 07:02",
+ "actualizado_iso": "2026-09-20T07:02:12.817630+00:00"
 }
