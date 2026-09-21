@@ -43,11 +43,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
-     "plazas": 8,
+     "plazas": 9,
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:39",
      "estado": "ok",
      "historico": [
       [
@@ -74,11 +74,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 2,
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
@@ -91,6 +91,10 @@
       ],
       [
        "2026-09-21 04:39",
+       55.99
+      ],
+      [
+       "2026-09-21 09:40",
        55.99
       ]
      ],
@@ -160,23 +164,27 @@
      "sale": "20:20",
      "llega": "23:30",
      "ref": 124.99,
-     "precio": 124.99,
+     "precio": 114.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 6,
      "duracion": "3:10",
-     "minimo": 124.99,
+     "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
        "2026-09-19 11:29",
        124.99
+      ],
+      [
+       "2026-09-21 09:40",
+       114.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -10.0
     },
     {
      "tipo": "vuelo",
@@ -195,11 +203,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 6,
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:41",
      "estado": "ok",
      "historico": [
       [
@@ -240,8 +248,8 @@
      "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
     }
    ],
-   "total_persona": 190.98,
-   "total_grupo": 381.96,
+   "total_persona": 180.98,
+   "total_grupo": 361.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:20",
    "ida_iata": "KTW",
@@ -259,7 +267,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 190.98,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "gdansk-mixto",
@@ -293,7 +301,7 @@
      "duracion": "03:30",
      "minimo": 112.62,
      "maximo": 123.82,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
@@ -302,6 +310,10 @@
       ],
       [
        "2026-09-21 03:21",
+       112.62
+      ],
+      [
+       "2026-09-21 09:40",
        112.62
       ]
      ],
@@ -324,11 +336,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 6,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
@@ -435,13 +447,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-12 10:32",
-       143.63
-      ],
       [
        "2026-09-13 03:16",
        131.03
@@ -517,6 +525,10 @@
       [
        "2026-09-21 03:21",
        180.19
+      ],
+      [
+       "2026-09-21 09:40",
+       180.19
       ]
      ],
      "variacion": 84.0
@@ -552,7 +564,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 49.93,
+     "precio": 48.93,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -560,13 +572,9 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:41",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-16 18:03",
-       37.96
-      ],
       [
        "2026-09-16 21:49",
        38.95
@@ -642,9 +650,13 @@
       [
        "2026-09-20 21:01",
        49.93
+      ],
+      [
+       "2026-09-21 09:41",
+       48.93
       ]
      ],
-     "variacion": -0.96
+     "variacion": -1.96
     }
    ],
    "itinerario": [
@@ -665,8 +677,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 230.12,
-   "total_grupo": 460.24,
+   "total_persona": 229.12,
+   "total_grupo": 458.24,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -684,139 +696,6 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 147.08,
-   "dentro_presupuesto": false
-  },
-  {
-   "id": "sofia",
-   "titulo": "Sofía, sin moverse",
-   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
-   "paises": [
-    "Bulgaria"
-   ],
-   "noches": 2,
-   "por_que": "La que mejor aprovecha el viernes: aterrizas a mediodía y tienes la tarde entera. La ciudad se recorre a pie y el monte Vitosha está a 30 minutos en transporte público.",
-   "aviso": "La vuelta sale el domingo a las 22:25 y aterriza en Alicante a las 00:45 del lunes: ganas el domingo entero, pero llegas de madrugada.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "ryanair",
-     "vuelo": "FR",
-     "de": "ALC",
-     "a": "SOF",
-     "de_nombre": "Alicante",
-     "a_nombre": "Sofía",
-     "fecha": "2026-10-09",
-     "sale": "08:30",
-     "llega": "12:30",
-     "ref": 112.99,
-     "precio": 132.99,
-     "llega_aprox": false,
-     "etiqueta": "FR6234",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=SOF",
-     "plazas": null,
-     "duracion": "03:00",
-     "minimo": 112.99,
-     "maximo": 146.99,
-     "visto": "2026-09-21 04:39",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-19 11:28",
-       112.99
-      ],
-      [
-       "2026-09-20 00:10",
-       135.24
-      ],
-      [
-       "2026-09-20 19:12",
-       146.99
-      ],
-      [
-       "2026-09-20 20:13",
-       132.99
-      ]
-     ],
-     "variacion": 20.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "ryanair",
-     "vuelo": "FR",
-     "de": "SOF",
-     "a": "ALC",
-     "de_nombre": "Sofía",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "22:25",
-     "llega": "00:45",
-     "ref": 75.09,
-     "precio": 110.99,
-     "llega_aprox": false,
-     "etiqueta": "FR6235 · 4 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=SOF&destinationIata=ALC",
-     "plazas": 4,
-     "duracion": "03:20",
-     "minimo": 75.09,
-     "maximo": 110.99,
-     "visto": "2026-09-21 04:39",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-19 11:28",
-       75.09
-      ],
-      [
-       "2026-09-20 00:10",
-       85.24
-      ],
-      [
-       "2026-09-20 06:30",
-       97.99
-      ],
-      [
-       "2026-09-20 20:13",
-       110.99
-      ]
-     ],
-     "variacion": 35.9
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Viernes 9",
-     "texto": "Vuelo a las 08:30; en Sofía a las 12:30, con la tarde libre: Alejandro Nevski y el centro."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Boyana, el monte Vitosha o excursión al monasterio de Rila (2 h)."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Día completo en la ciudad; vuelo a las 22:25, en Alicante a las 00:45."
-    }
-   ],
-   "total_persona": 243.98,
-   "total_grupo": 487.96,
-   "ida_fecha": "2026-10-09",
-   "ida_hora": "08:30",
-   "ida_iata": "SOF",
-   "ida_ciudad": "Sofía",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "22:25",
-   "vuelta_llega": "00:45",
-   "vuelta_iata": "SOF",
-   "vuelta_ciudad": "Sofía",
-   "horas_destino": 58,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 188.08,
    "dentro_presupuesto": false
   },
   {
@@ -852,13 +731,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-12 10:32",
-       143.63
-      ],
       [
        "2026-09-13 03:16",
        131.03
@@ -934,6 +809,10 @@
       [
        "2026-09-21 03:21",
        180.19
+      ],
+      [
+       "2026-09-21 09:40",
+       180.19
       ]
      ],
      "variacion": 84.0
@@ -960,15 +839,15 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 79.99,
+     "precio": 55.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 5,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
@@ -1018,9 +897,13 @@
       [
        "2026-09-20 07:17",
        79.99
+      ],
+      [
+       "2026-09-21 09:40",
+       55.99
       ]
      ],
-     "variacion": 20.0
+     "variacion": -4.0
     }
    ],
    "itinerario": [
@@ -1041,8 +924,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 260.18,
-   "total_grupo": 520.36,
+   "total_persona": 236.18,
+   "total_grupo": 472.36,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1060,6 +943,147 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 156.18,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "sofia",
+   "titulo": "Sofía, sin moverse",
+   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
+   "paises": [
+    "Bulgaria"
+   ],
+   "noches": 2,
+   "por_que": "La que mejor aprovecha el viernes: aterrizas a mediodía y tienes la tarde entera. La ciudad se recorre a pie y el monte Vitosha está a 30 minutos en transporte público.",
+   "aviso": "La vuelta sale el domingo a las 22:25 y aterriza en Alicante a las 00:45 del lunes: ganas el domingo entero, pero llegas de madrugada.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "ryanair",
+     "vuelo": "FR",
+     "de": "ALC",
+     "a": "SOF",
+     "de_nombre": "Alicante",
+     "a_nombre": "Sofía",
+     "fecha": "2026-10-09",
+     "sale": "08:30",
+     "llega": "12:30",
+     "ref": 112.99,
+     "precio": 137.19,
+     "llega_aprox": false,
+     "etiqueta": "FR6234",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=SOF",
+     "plazas": 2,
+     "duracion": "03:00",
+     "minimo": 112.99,
+     "maximo": 146.99,
+     "visto": "2026-09-21 09:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-19 11:28",
+       112.99
+      ],
+      [
+       "2026-09-20 00:10",
+       135.24
+      ],
+      [
+       "2026-09-20 19:12",
+       146.99
+      ],
+      [
+       "2026-09-20 20:13",
+       132.99
+      ],
+      [
+       "2026-09-21 09:40",
+       137.19
+      ]
+     ],
+     "variacion": 24.2
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "ryanair",
+     "vuelo": "FR",
+     "de": "SOF",
+     "a": "ALC",
+     "de_nombre": "Sofía",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:25",
+     "llega": "00:45",
+     "ref": 75.09,
+     "precio": 112.59,
+     "llega_aprox": false,
+     "etiqueta": "FR6235 · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=SOF&destinationIata=ALC",
+     "plazas": 4,
+     "duracion": "03:20",
+     "minimo": 75.09,
+     "maximo": 112.59,
+     "visto": "2026-09-21 09:41",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-19 11:28",
+       75.09
+      ],
+      [
+       "2026-09-20 00:10",
+       85.24
+      ],
+      [
+       "2026-09-20 06:30",
+       97.99
+      ],
+      [
+       "2026-09-20 20:13",
+       110.99
+      ],
+      [
+       "2026-09-21 09:41",
+       112.59
+      ]
+     ],
+     "variacion": 37.5
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo a las 08:30; en Sofía a las 12:30, con la tarde libre: Alejandro Nevski y el centro."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Boyana, el monte Vitosha o excursión al monasterio de Rila (2 h)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Día completo en la ciudad; vuelo a las 22:25, en Alicante a las 00:45."
+    }
+   ],
+   "total_persona": 249.78,
+   "total_grupo": 499.56,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "08:30",
+   "ida_iata": "SOF",
+   "ida_ciudad": "Sofía",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:25",
+   "vuelta_llega": "00:45",
+   "vuelta_iata": "SOF",
+   "vuelta_ciudad": "Sofía",
+   "horas_destino": 58,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 188.08,
    "dentro_presupuesto": false
   },
   {
@@ -1087,7 +1111,7 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 253.79,
+     "precio": 250.19,
      "llega_aprox": false,
      "etiqueta": "FR9877 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
@@ -1095,13 +1119,9 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-11 06:26",
-       145.51
-      ],
       [
        "2026-09-11 10:56",
        159.96
@@ -1177,9 +1197,13 @@
       [
        "2026-09-21 03:21",
        253.79
+      ],
+      [
+       "2026-09-21 09:40",
+       250.19
       ]
      ],
-     "variacion": 158.6
+     "variacion": 155.0
     },
     {
      "tipo": "tierra",
@@ -1203,7 +1227,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 49.93,
+     "precio": 48.93,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -1211,13 +1235,9 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:41",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-16 18:03",
-       37.96
-      ],
       [
        "2026-09-16 21:49",
        38.95
@@ -1293,9 +1313,13 @@
       [
        "2026-09-20 21:01",
        49.93
+      ],
+      [
+       "2026-09-21 09:41",
+       48.93
       ]
      ],
-     "variacion": -0.96
+     "variacion": -1.96
     }
    ],
    "itinerario": [
@@ -1312,8 +1336,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 303.72,
-   "total_grupo": 607.44,
+   "total_persona": 299.12,
+   "total_grupo": 598.24,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1362,7 +1386,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1427,7 +1451,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 49.93,
+     "precio": 48.93,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -1435,13 +1459,9 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:41",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-16 18:03",
-       37.96
-      ],
       [
        "2026-09-16 21:49",
        38.95
@@ -1517,9 +1537,13 @@
       [
        "2026-09-20 21:01",
        49.93
+      ],
+      [
+       "2026-09-21 09:41",
+       48.93
       ]
      ],
-     "variacion": -0.96
+     "variacion": -1.96
     }
    ],
    "itinerario": [
@@ -1586,7 +1610,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1642,15 +1666,15 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 79.99,
+     "precio": 55.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 5,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
@@ -1700,9 +1724,13 @@
       [
        "2026-09-20 07:17",
        79.99
+      ],
+      [
+       "2026-09-21 09:40",
+       55.99
       ]
      ],
-     "variacion": 20.0
+     "variacion": -4.0
     }
    ],
    "itinerario": [
@@ -1769,7 +1797,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1836,13 +1864,13 @@
      "ref": 82.99,
      "precio": 116.99,
      "llega_aprox": false,
-     "etiqueta": "FR3487 · 4 plazas",
+     "etiqueta": "FR3487 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 4,
+     "plazas": 5,
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:41",
      "estado": "ok",
      "historico": [
       [
@@ -1996,7 +2024,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "sin_venta",
      "historico": [
       [
@@ -2063,11 +2091,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 6,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-21 04:39",
+     "visto": "2026-09-21 09:40",
      "estado": "ok",
      "historico": [
       [
@@ -2142,6 +2170,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-21 04:39",
- "actualizado_iso": "2026-09-21T04:39:28.330773+00:00"
+ "actualizado": "2026-09-21 09:41",
+ "actualizado_iso": "2026-09-21T09:41:20.561599+02:00"
 }
