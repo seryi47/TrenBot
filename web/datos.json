@@ -47,7 +47,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -70,15 +70,15 @@
      "sale": "17:40",
      "llega": "20:20",
      "ref": 59.99,
-     "precio": 65.99,
+     "precio": 55.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
      "plazas": 5,
      "duracion": "3:40",
-     "minimo": 59.99,
+     "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -88,9 +88,13 @@
       [
        "2026-09-20 20:22",
        65.99
+      ],
+      [
+       "2026-09-21 04:39",
+       55.99
       ]
      ],
-     "variacion": 6.0
+     "variacion": -4.0
     }
    ],
    "itinerario": [
@@ -111,8 +115,8 @@
      "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
     }
    ],
-   "total_persona": 190.98,
-   "total_grupo": 381.96,
+   "total_persona": 180.98,
+   "total_grupo": 361.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "OTP",
@@ -130,7 +134,7 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 184.98,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "katowice",
@@ -164,7 +168,7 @@
      "duracion": "3:10",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -195,7 +199,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -289,7 +293,7 @@
      "duracion": "03:30",
      "minimo": 112.62,
      "maximo": 123.82,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -324,7 +328,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -431,7 +435,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -556,7 +560,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -714,7 +718,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 146.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -757,7 +761,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 110.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -848,7 +852,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -964,7 +968,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -1091,7 +1095,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -1207,7 +1211,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -1358,7 +1362,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1431,7 +1435,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -1582,7 +1586,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1646,7 +1650,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -1765,7 +1769,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1838,7 +1842,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -1992,7 +1996,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "sin_venta",
      "historico": [
       [
@@ -2063,7 +2067,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-21 03:21",
+     "visto": "2026-09-21 04:39",
      "estado": "ok",
      "historico": [
       [
@@ -2138,6 +2142,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-21 03:21",
- "actualizado_iso": "2026-09-21T03:21:37.961844+00:00"
+ "actualizado": "2026-09-21 04:39",
+ "actualizado_iso": "2026-09-21T04:39:28.330773+00:00"
 }
