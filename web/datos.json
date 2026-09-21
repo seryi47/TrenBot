@@ -16,131 +16,6 @@
  },
  "opciones": [
   {
-   "id": "bucarest",
-   "titulo": "Bucarest, sin moverse",
-   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
-   "paises": [
-    "Rumanía"
-   ],
-   "noches": 3,
-   "por_que": "La más barata de todo el barrido y con los mejores horarios: ganas el viernes y el sábado enteros y el domingo hasta media tarde. El centro y el Palacio del Parlamento se hacen a pie, y el casco viejo (Lipscani) está al lado.",
-   "aviso": "Aterrizas a la 01:50 de la madrugada del viernes. La vuelta del domingo sale a las 17:40, así que no pierdes el último día.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "ALC",
-     "a": "OTP",
-     "de_nombre": "Alicante",
-     "a_nombre": "Bucarest",
-     "fecha": "2026-10-08",
-     "sale": "21:10",
-     "llega": "01:50",
-     "ref": 124.99,
-     "precio": 124.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
-     "plazas": 9,
-     "duracion": "3:40",
-     "minimo": 124.99,
-     "maximo": 124.99,
-     "visto": "2026-09-21 23:00",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-19 11:28",
-       124.99
-      ]
-     ],
-     "variacion": 0.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "OTP",
-     "a": "ALC",
-     "de_nombre": "Bucarest",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "17:40",
-     "llega": "20:20",
-     "ref": 59.99,
-     "precio": 55.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
-     "duracion": "3:40",
-     "minimo": 55.99,
-     "maximo": 65.99,
-     "visto": "2026-09-21 23:00",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-19 11:28",
-       59.99
-      ],
-      [
-       "2026-09-20 20:22",
-       65.99
-      ],
-      [
-       "2026-09-21 04:39",
-       55.99
-      ],
-      [
-       "2026-09-21 09:40",
-       55.99
-      ]
-     ],
-     "variacion": -4.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 21:10; en Bucarest a la 01:50."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo: Palacio del Parlamento, Lipscani y el Ateneo."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Museo del Campesino, parque Herăstrău, o tren a Sinaia y el castillo de Peleș (1 h 40)."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
-    }
-   ],
-   "total_persona": 180.98,
-   "total_grupo": 361.96,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "21:10",
-   "ida_iata": "OTP",
-   "ida_ciudad": "Bucarest",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "17:40",
-   "vuelta_llega": "20:20",
-   "vuelta_iata": "OTP",
-   "vuelta_ciudad": "Bucarest",
-   "horas_destino": 64,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 184.98,
-   "dentro_presupuesto": true
-  },
-  {
    "id": "katowice",
    "titulo": "Katowice, sin moverse",
    "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
@@ -172,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -207,7 +82,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -270,6 +145,135 @@
    "dentro_presupuesto": true
   },
   {
+   "id": "bucarest",
+   "titulo": "Bucarest, sin moverse",
+   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
+   "paises": [
+    "Rumanía"
+   ],
+   "noches": 3,
+   "por_que": "La más barata de todo el barrido y con los mejores horarios: ganas el viernes y el sábado enteros y el domingo hasta media tarde. El centro y el Palacio del Parlamento se hacen a pie, y el casco viejo (Lipscani) está al lado.",
+   "aviso": "Aterrizas a la 01:50 de la madrugada del viernes. La vuelta del domingo sale a las 17:40, así que no pierdes el último día.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "OTP",
+     "de_nombre": "Alicante",
+     "a_nombre": "Bucarest",
+     "fecha": "2026-10-08",
+     "sale": "21:10",
+     "llega": "01:50",
+     "ref": 124.99,
+     "precio": 124.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
+     "plazas": 9,
+     "duracion": "3:40",
+     "minimo": 124.99,
+     "maximo": 124.99,
+     "visto": "2026-09-21 23:15",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-19 11:28",
+       124.99
+      ]
+     ],
+     "variacion": 0.0
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "OTP",
+     "a": "ALC",
+     "de_nombre": "Bucarest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "17:40",
+     "llega": "20:20",
+     "ref": 59.99,
+     "precio": 59.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 2,
+     "duracion": "3:40",
+     "minimo": 55.99,
+     "maximo": 65.99,
+     "visto": "2026-09-21 23:15",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-19 11:28",
+       59.99
+      ],
+      [
+       "2026-09-20 20:22",
+       65.99
+      ],
+      [
+       "2026-09-21 04:39",
+       55.99
+      ],
+      [
+       "2026-09-21 09:40",
+       55.99
+      ],
+      [
+       "2026-09-21 23:15",
+       59.99
+      ]
+     ],
+     "variacion": 0.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 21:10; en Bucarest a la 01:50."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo: Palacio del Parlamento, Lipscani y el Ateneo."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Museo del Campesino, parque Herăstrău, o tren a Sinaia y el castillo de Peleș (1 h 40)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
+    }
+   ],
+   "total_persona": 184.98,
+   "total_grupo": 369.96,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "21:10",
+   "ida_iata": "OTP",
+   "ida_ciudad": "Bucarest",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "17:40",
+   "vuelta_llega": "20:20",
+   "vuelta_iata": "OTP",
+   "vuelta_ciudad": "Bucarest",
+   "horas_destino": 64,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 184.98,
+   "dentro_presupuesto": true
+  },
+  {
    "id": "viena-praga",
    "titulo": "Viena + Praga",
    "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
@@ -302,7 +306,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -427,7 +431,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -586,7 +590,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -702,7 +706,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "ok",
      "historico": [
       [
@@ -832,7 +836,7 @@
      "duracion": "03:30",
      "minimo": 112.62,
      "maximo": 123.82,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -871,7 +875,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "ok",
      "historico": [
       [
@@ -977,7 +981,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -1028,7 +1032,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -1123,7 +1127,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "ok",
      "historico": [
       [
@@ -1239,7 +1243,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -1390,7 +1394,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1463,7 +1467,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "ok",
      "historico": [
       [
@@ -1614,7 +1618,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1678,7 +1682,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "ok",
      "historico": [
       [
@@ -1801,7 +1805,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 23:00",
+     "visto": "2026-09-21 23:15",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1874,7 +1878,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "ok",
      "historico": [
       [
@@ -2028,7 +2032,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "sin_venta",
      "historico": [
       [
@@ -2099,7 +2103,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-21 23:01",
+     "visto": "2026-09-21 23:16",
      "estado": "ok",
      "historico": [
       [
@@ -2174,6 +2178,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-21 23:01",
- "actualizado_iso": "2026-09-21T23:01:33.943353+00:00"
+ "actualizado": "2026-09-21 23:16",
+ "actualizado_iso": "2026-09-21T23:16:06.765416+00:00"
 }
