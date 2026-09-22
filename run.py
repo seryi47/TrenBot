@@ -205,13 +205,15 @@ def publicar_web():
     if r.returncode != 0:
         print("  [web] no se pudo regenerar:", (r.stderr or "")[-200:].strip())
         return
-    commit_al_repo(["historico.json", "avisos.json",
-                    os.path.join("web", "datos.json"),
-                    os.path.join("data", "ryanair_version.json"),
-                    os.path.join("data", "wizz_version.json"),
-                    os.path.join("data", "wizz_horarios.json")],
-                   "chore: precios actualizados")
-    print("  [web] datos publicados")
+    ok = commit_al_repo(["historico.json", "avisos.json",
+                         os.path.join("web", "datos.json"),
+                         os.path.join("data", "ryanair_version.json"),
+                         os.path.join("data", "wizz_version.json"),
+                         os.path.join("data", "wizz_horarios.json")],
+                        "chore: precios actualizados")
+    # Antes esto decía "publicados" pasara lo que pasara, así que 10 fallos
+    # seguidos de push se leyeron como 10 publicaciones correctas.
+    print("  [web] datos publicados" if ok else "  [web] NO se pudo publicar")
 
 
 def save_and_commit_watches(engine, path=None):
@@ -266,19 +268,47 @@ def commit_al_repo(rutas, mensaje):
     run("git", "config", "user.name", "BotViajes")
     existentes = [r for r in rutas if os.path.exists(r)]
     if not existentes:
-        return
+        return False
     run("git", "add", *existentes)
     if run("git", "commit", "-m", mensaje).returncode != 0:
-        return  # nada que commitear
+        return False  # nada que commitear
     # el runner está en detached HEAD; rebase sobre lo último y push explícito a la rama
     run("git", "fetch", "origin", branch)
     if run("git", "rebase", "origin/" + branch).returncode != 0:
         run("git", "rebase", "--abort")
-        print("  [git] conflicto al rebasar; no hago push (se reintenta al siguiente cambio)")
-        return
+        # Antes se rendía aquí, y "se reintenta al siguiente cambio" NUNCA
+        # funcionaba: el conflicto no es pasajero, es que estos ficheros son
+        # JSON que tocan a la vez la nube y el Mac, y git no sabe fusionarlos.
+        # El bot se pasó 11 h leyendo precios nuevos sin poder publicarlos.
+        # Son LECTURAS, no código: la nuestra es la más reciente y manda. Se
+        # rehace el commit encima de lo que haya en origin.
+        print("  [git] conflicto al rebasar; rehago el commit sobre origin")
+        guardados = {}
+        for r in existentes:
+            try:
+                with open(r, "rb") as fh:
+                    guardados[r] = fh.read()
+            except OSError:
+                pass
+        run("git", "reset", "--hard", "origin/" + branch)
+        for r, datos in guardados.items():
+            try:
+                d = os.path.dirname(r)
+                if d:
+                    os.makedirs(d, exist_ok=True)
+                with open(r, "wb") as fh:
+                    fh.write(datos)
+            except OSError as e:
+                print("  [git] no pude restaurar %s: %s" % (r, e))
+        run("git", "add", *existentes)
+        if run("git", "commit", "-m", mensaje).returncode != 0:
+            print("  [git] tras rehacerlo no quedaba nada que commitear")
+            return False
     p = run("git", "push", "origin", "HEAD:" + branch)
     if p.returncode != 0:
         print("  [git] push falló:", (p.stderr or "").strip()[:200])
+        return False
+    return True
 
 
 def disable_workflow():

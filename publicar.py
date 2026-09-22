@@ -55,8 +55,27 @@ def main():
     git("fetch", "origin", "main")
     if git("rebase", "origin/main").returncode != 0:
         git("rebase", "--abort")
-        print("conflicto al rebasar; se reintenta en la siguiente vuelta")
-        return 1
+        # Mismo caso que en run.py: estos JSON los tocan a la vez la nube y el
+        # Mac, git no sabe fusionarlos y rendirse aquí dejaba la web congelada
+        # durante horas. Son lecturas: la más reciente es la buena.
+        print("conflicto al rebasar; rehago el commit sobre origin")
+        guardados = {}
+        for f in hay:
+            try:
+                with open(os.path.join(RAIZ, f), "rb") as fh:
+                    guardados[f] = fh.read()
+            except OSError:
+                pass
+        git("reset", "--hard", "origin/main")
+        for f, datos in guardados.items():
+            destino = os.path.join(RAIZ, f)
+            os.makedirs(os.path.dirname(destino), exist_ok=True)
+            with open(destino, "wb") as fh:
+                fh.write(datos)
+        git("add", *hay)
+        if git("commit", "-m", "chore: precios actualizados").returncode != 0:
+            print("tras rehacerlo no quedaba nada que publicar")
+            return 1
     if git("push", "origin", "main").returncode != 0:
         print("no se pudo subir")
         return 1
