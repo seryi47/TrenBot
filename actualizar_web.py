@@ -93,12 +93,24 @@ def desde_watches(tramo):
             # se dice eso y no se enseña cifra: ni el último precio firme (ya no
             # existe) ni el "de referencia" de Wizz (nunca se pudo comprar).
             if w.get("sin_venta"):
+                # El precio de HOY no existe, pero el vuelo sí: su horario, su
+                # duración y lo que llegó a costar son datos buenos y ayudan a
+                # decidir si merece la pena esperar a que vuelva a la venta.
+                hist = [p[1] for p in (w.get("serie") or []) if p[1] and p[1] > 0]
                 return {"estado": "sin_venta", "precio": None,
                         "sale": w.get("ultimo_salida") or tramo["sale"],
                         "llega": w.get("ultimo_llegada") or tramo.get("llega", ""),
+                        "llega_aprox": bool(w.get("llegada_estimada")),
                         "etiqueta": "sin plazas a la venta",
                         "url": w.get("ultimo_url", ""),
-                        "plazas": 0, "visto": w.get("sin_venta_visto")}
+                        "plazas": 0,
+                        "duracion": w.get("ultimo_duracion"),
+                        "minimo": min(hist) if hist else None,
+                        "maximo": max(hist) if hist else None,
+                        "historico": len(hist),
+                        "visto": w.get("sin_venta_visto"),
+                        "ultimo_real": w.get("ultimo_precio"),
+                        "ultimo_real_visto": w.get("ultimo_visto")}
             serie = [p[1] for p in (w.get("serie") or []) if p[1] and p[1] > 0]
             return {"estado": "ok", "precio": w["ultimo_precio"],
                     "sale": w.get("ultimo_salida") or tramo["sale"],

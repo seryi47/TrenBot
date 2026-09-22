@@ -212,7 +212,11 @@ function segmento(t){
   const cia=t.cia==="wizz"?"Wizz Air":"Ryanair";
   const pl=(typeof t.plazas==="number"&&t.plazas>0)?`<span class="mini w">quedan ${t.plazas}</span>`:"";
   const orient=t.estado==="sin_venta"
-    ?`<span class="mini w">sin plazas a la venta · la aerolínea no vende este vuelo ahora</span>`:"";
+    ?`<span class="mini w">sin plazas a la venta · la aerolínea no vende este vuelo ahora`
+      +(t.ultimo_real?` · lo último que costó fueron ${eur(t.ultimo_real)} el ${esc((t.ultimo_real_visto||"").slice(0,10))}`:"")
+      +(t.minimo!=null&&t.maximo!=null&&t.minimo!==t.maximo
+        ?` · ha oscilado entre ${eur(t.minimo)} y ${eur(t.maximo)}`:"")
+      +`</span>`:"";
   const dv=t.variacion||0;
   const ch=dv?`<span class="mini ${dv<0?"o":""}">${dv<0?"▼":"▲"} ${eur(Math.abs(dv))}</span>`:"";
   return `<div class="seg"><div class="ic">✈️</div><div class="bd">

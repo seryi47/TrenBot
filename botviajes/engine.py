@@ -623,6 +623,10 @@ class Engine:
                     # valiendo para armar el viaje.
                     watch["ultimo_salida"] = v.departure or watch.get("ultimo_salida")
                     watch["ultimo_llegada"] = v.arrival or watch.get("ultimo_llegada")
+                    # La duración vale aunque el vuelo no se venda: el avión
+                    # existe y tarda lo que tarda.
+                    watch["ultimo_duracion"] = ((v.raw or {}).get("duracion")
+                                                or watch.get("ultimo_duracion"))
                     watch["ultimo_url"] = v.buy_url or watch.get("ultimo_url")
                     self._save()
             return None
