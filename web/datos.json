@@ -47,7 +47,7 @@
      "duracion": "03:30",
      "minimo": 88.05,
      "maximo": 123.82,
-     "visto": "2026-09-22 10:54",
+     "visto": "2026-09-22 12:28",
      "estado": "ok",
      "historico": [
       [
@@ -94,7 +94,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -204,7 +204,7 @@
      "duracion": "3:10",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:28",
      "estado": "ok",
      "historico": [
       [
@@ -239,7 +239,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -328,13 +328,13 @@
      "ref": 96.19,
      "precio": 132.79,
      "llega_aprox": false,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
+     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "plazas": 3,
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -459,7 +459,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -617,7 +617,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-22 10:54",
+     "visto": "2026-09-22 12:28",
      "estado": "ok",
      "historico": [
       [
@@ -648,7 +648,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:28",
      "estado": "ok",
      "historico": [
       [
@@ -741,13 +741,13 @@
      "ref": 96.19,
      "precio": 132.79,
      "llega_aprox": false,
-     "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
+     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 2,
+     "plazas": 3,
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -863,7 +863,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -1001,7 +1001,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:28",
      "estado": "ok",
      "historico": [
       [
@@ -1056,7 +1056,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:28",
      "estado": "ok",
      "historico": [
       [
@@ -1155,7 +1155,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -1271,7 +1271,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -1422,7 +1422,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1495,7 +1495,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -1646,7 +1646,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1710,7 +1710,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -1841,7 +1841,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -1906,21 +1906,17 @@
      "sale": "11:45",
      "llega": "14:25",
      "ref": 82.99,
-     "precio": 122.99,
+     "precio": 126.99,
      "llega_aprox": false,
-     "etiqueta": "FR3487 · 4 plazas",
+     "etiqueta": "FR3487 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-15 18:08",
-       121.99
-      ],
       [
        "2026-09-15 18:54",
        132.99
@@ -1996,9 +1992,13 @@
       [
        "2026-09-22 10:08",
        122.99
+      ],
+      [
+       "2026-09-22 12:29",
+       126.99
       ]
      ],
-     "variacion": 40.0
+     "variacion": 44.0
     }
    ],
    "itinerario": [
@@ -2068,7 +2068,7 @@
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "sin_venta",
      "historico": [
       [
@@ -2139,7 +2139,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-22 10:55",
+     "visto": "2026-09-22 12:29",
      "estado": "ok",
      "historico": [
       [
@@ -2218,6 +2218,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-22 10:55",
- "actualizado_iso": "2026-09-22T10:55:16.367381+00:00"
+ "actualizado": "2026-09-22 12:29",
+ "actualizado_iso": "2026-09-22T12:29:14.575698+00:00"
 }
