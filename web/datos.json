@@ -1443,11 +1443,13 @@
      "llega": "12:25",
      "ref": 65.99,
      "precio": null,
+     "llega_aprox": false,
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 15:00",
-     "estado": "sin_venta",
+     "duracion": null,
+     "minimo": 65.99,
+     "maximo": 179.99,
      "historico": [
       [
        "2026-09-03 19:44",
@@ -1478,6 +1480,10 @@
        170.99
       ]
      ],
+     "visto": "2026-09-22 15:00",
+     "ultimo_real": 170.99,
+     "ultimo_real_visto": "2026-09-09 10:32",
+     "estado": "sin_venta",
      "variacion": 105.0
     },
     {
@@ -1667,11 +1673,13 @@
      "llega": "12:25",
      "ref": 65.99,
      "precio": null,
+     "llega_aprox": false,
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 15:00",
-     "estado": "sin_venta",
+     "duracion": null,
+     "minimo": 65.99,
+     "maximo": 179.99,
      "historico": [
       [
        "2026-09-03 19:44",
@@ -1702,6 +1710,10 @@
        170.99
       ]
      ],
+     "visto": "2026-09-22 15:00",
+     "ultimo_real": 170.99,
+     "ultimo_real_visto": "2026-09-09 10:32",
+     "estado": "sin_venta",
      "variacion": 105.0
     },
     {
@@ -1866,11 +1878,13 @@
      "llega": "12:25",
      "ref": 65.99,
      "precio": null,
+     "llega_aprox": false,
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/BTS/2026-10-09/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 15:00",
-     "estado": "sin_venta",
+     "duracion": null,
+     "minimo": 65.99,
+     "maximo": 179.99,
      "historico": [
       [
        "2026-09-03 19:44",
@@ -1901,6 +1915,10 @@
        170.99
       ]
      ],
+     "visto": "2026-09-22 15:00",
+     "ultimo_real": 170.99,
+     "ultimo_real_visto": "2026-09-09 10:32",
+     "estado": "sin_venta",
      "variacion": 105.0
     },
     {
@@ -2093,11 +2111,13 @@
      "llega": "00:48",
      "ref": 99.99,
      "precio": null,
+     "llega_aprox": false,
      "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
      "plazas": 0,
-     "visto": "2026-09-22 15:00",
-     "estado": "sin_venta",
+     "duracion": null,
+     "minimo": 79.99,
+     "maximo": 114.99,
      "historico": [
       [
        "2026-09-13 23:20",
@@ -2144,6 +2164,10 @@
        114.99
       ]
      ],
+     "visto": "2026-09-22 15:00",
+     "ultimo_real": 114.99,
+     "ultimo_real_visto": "2026-09-18 14:02",
+     "estado": "sin_venta",
      "variacion": 15.0
     },
     {
@@ -2250,6 +2274,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-22 15:01",
- "actualizado_iso": "2026-09-22T15:01:40.534756+02:00"
+ "actualizado": "2026-09-22 23:06",
+ "actualizado_iso": "2026-09-22T23:06:10.461656+02:00"
 }
