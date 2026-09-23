@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -82,7 +82,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -176,7 +176,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -207,7 +207,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -321,7 +321,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -396,7 +396,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -515,7 +515,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -640,7 +640,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -790,15 +790,15 @@
      "sale": "20:10",
      "llega": "23:40",
      "ref": 123.82,
-     "precio": 125.65,
+     "precio": 138.27,
      "llega_aprox": false,
-     "etiqueta": "FR1426 (Buzz) · 3 plazas",
+     "etiqueta": "FR1426 (Buzz) · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
-     "plazas": 3,
+     "plazas": 5,
      "duracion": "03:30",
      "minimo": 88.05,
-     "maximo": 125.65,
-     "visto": "2026-09-23 18:07",
+     "maximo": 138.27,
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -836,9 +836,13 @@
       [
        "2026-09-23 08:39",
        125.65
+      ],
+      [
+       "2026-09-23 18:54",
+       138.27
       ]
      ],
-     "variacion": 1.83
+     "variacion": 14.45
     },
     {
      "tipo": "vuelo",
@@ -861,7 +865,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -926,8 +930,8 @@
      "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 195.64,
-   "total_grupo": 391.28,
+   "total_persona": 208.26,
+   "total_grupo": 416.52,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:10",
    "ida_iata": "GDN",
@@ -980,7 +984,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1096,7 +1100,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1251,7 +1255,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1367,7 +1371,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1509,7 +1513,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1568,7 +1572,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1709,7 +1713,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1754,7 +1758,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -1939,7 +1943,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1975,7 +1979,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -2144,7 +2148,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2189,7 +2193,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-23 18:07",
+     "visto": "2026-09-23 18:54",
      "estado": "ok",
      "historico": [
       [
@@ -2316,6 +2320,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-23 18:07",
- "actualizado_iso": "2026-09-23T18:07:26.720917+00:00"
+ "actualizado": "2026-09-23 18:54",
+ "actualizado_iso": "2026-09-23T18:54:27.756888+00:00"
 }
