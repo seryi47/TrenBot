@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -82,7 +82,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -176,7 +176,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -207,7 +207,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -314,7 +314,7 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 146.49,
+     "precio": 143.49,
      "llega_aprox": false,
      "etiqueta": "FR1568 (Lauda Europe) · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
@@ -322,13 +322,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-14 08:52",
-       231.88
-      ],
       [
        "2026-09-14 23:29",
        254.52
@@ -404,9 +400,13 @@
       [
        "2026-09-22 23:46",
        146.49
+      ],
+      [
+       "2026-09-23 06:27",
+       143.49
       ]
      ],
-     "variacion": 50.3
+     "variacion": 47.3
     },
     {
      "tipo": "tierra",
@@ -441,13 +441,13 @@
      "ref": 50.89,
      "precio": 49.9,
      "llega_aprox": false,
-     "etiqueta": "FR1495 · 3 plazas",
+     "etiqueta": "FR1495 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 3,
+     "plazas": 5,
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -552,8 +552,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 196.39,
-   "total_grupo": 392.78,
+   "total_persona": 193.39,
+   "total_grupo": 386.78,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -571,175 +571,6 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 147.08,
-   "dentro_presupuesto": false
-  },
-  {
-   "id": "gdansk-mixto",
-   "titulo": "Gdansk, ida Ryanair y vuelta Wizz",
-   "subtitulo": "Mismo aeropuerto, cada trayecto con la compañía que lo tiene",
-   "paises": [
-    "Polonia"
-   ],
-   "noches": 3,
-   "por_que": "Wizz dejó de vender su vuelo de ida, pero Ryanair vuela la misma noche a las 20:10. Nada obliga a ir y volver con la misma compañía.",
-   "aviso": "Son dos reservas independientes, una en Ryanair y otra en Wizz: si una se retrasa, la otra no te cubre.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "ryanair",
-     "vuelo": "FR1426",
-     "de": "ALC",
-     "a": "GDN",
-     "de_nombre": "Alicante",
-     "a_nombre": "Gdansk",
-     "fecha": "2026-10-08",
-     "sale": "20:10",
-     "llega": "23:40",
-     "ref": 123.82,
-     "precio": 110.1,
-     "llega_aprox": false,
-     "etiqueta": "FR1426 (Buzz) · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
-     "plazas": 3,
-     "duracion": "03:30",
-     "minimo": 88.05,
-     "maximo": 123.82,
-     "visto": "2026-09-23 04:54",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-20 11:16",
-       123.82
-      ],
-      [
-       "2026-09-21 03:21",
-       112.62
-      ],
-      [
-       "2026-09-21 09:40",
-       112.62
-      ],
-      [
-       "2026-09-22 03:40",
-       99.53
-      ],
-      [
-       "2026-09-22 10:07",
-       88.05
-      ],
-      [
-       "2026-09-22 15:00",
-       88.05
-      ],
-      [
-       "2026-09-22 23:47",
-       110.1
-      ]
-     ],
-     "variacion": -13.72
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "GDN",
-     "a": "ALC",
-     "de_nombre": "Gdansk",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "16:45",
-     "llega": "20:23",
-     "ref": 114.99,
-     "precio": 89.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
-     "duracion": "3:38",
-     "minimo": 69.99,
-     "maximo": 114.99,
-     "visto": "2026-09-23 04:54",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-13 23:20",
-       69.99
-      ],
-      [
-       "2026-09-14 18:24",
-       79.99
-      ],
-      [
-       "2026-09-15 04:48",
-       89.99
-      ],
-      [
-       "2026-09-16 04:24",
-       99.99
-      ],
-      [
-       "2026-09-16 04:55",
-       89.99
-      ],
-      [
-       "2026-09-16 17:33",
-       99.99
-      ],
-      [
-       "2026-09-18 12:30",
-       114.99
-      ],
-      [
-       "2026-09-22 10:09",
-       89.99
-      ],
-      [
-       "2026-09-22 15:01",
-       89.99
-      ]
-     ],
-     "variacion": 20.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo Ryanair a las 20:10; en Gdansk a las 23:40."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Casco viejo: Długi Targ, la grúa medieval y la basílica."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Sopot (20 min en cercanías) o el castillo de Malbork (50 min)."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
-    }
-   ],
-   "total_persona": 200.09,
-   "total_grupo": 400.18,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "20:10",
-   "ida_iata": "GDN",
-   "ida_ciudad": "Gdansk",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "16:45",
-   "vuelta_llega": "20:23",
-   "vuelta_iata": "GDN",
-   "vuelta_ciudad": "Gdansk",
-   "horas_destino": 65,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 238.81,
    "dentro_presupuesto": false
   },
   {
@@ -774,7 +605,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:28",
      "estado": "ok",
      "historico": [
       [
@@ -849,7 +680,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:28",
      "estado": "ok",
      "historico": [
       [
@@ -932,6 +763,179 @@
    "dentro_presupuesto": false
   },
   {
+   "id": "gdansk-mixto",
+   "titulo": "Gdansk, ida Ryanair y vuelta Wizz",
+   "subtitulo": "Mismo aeropuerto, cada trayecto con la compañía que lo tiene",
+   "paises": [
+    "Polonia"
+   ],
+   "noches": 3,
+   "por_que": "Wizz dejó de vender su vuelo de ida, pero Ryanair vuela la misma noche a las 20:10. Nada obliga a ir y volver con la misma compañía.",
+   "aviso": "Son dos reservas independientes, una en Ryanair y otra en Wizz: si una se retrasa, la otra no te cubre.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "ryanair",
+     "vuelo": "FR1426",
+     "de": "ALC",
+     "a": "GDN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Gdansk",
+     "fecha": "2026-10-08",
+     "sale": "20:10",
+     "llega": "23:40",
+     "ref": 123.82,
+     "precio": 125.65,
+     "llega_aprox": false,
+     "etiqueta": "FR1426 (Buzz) · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
+     "plazas": 3,
+     "duracion": "03:30",
+     "minimo": 88.05,
+     "maximo": 125.65,
+     "visto": "2026-09-23 06:27",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-20 11:16",
+       123.82
+      ],
+      [
+       "2026-09-21 03:21",
+       112.62
+      ],
+      [
+       "2026-09-21 09:40",
+       112.62
+      ],
+      [
+       "2026-09-22 03:40",
+       99.53
+      ],
+      [
+       "2026-09-22 10:07",
+       88.05
+      ],
+      [
+       "2026-09-22 15:00",
+       88.05
+      ],
+      [
+       "2026-09-22 23:47",
+       110.1
+      ],
+      [
+       "2026-09-23 06:27",
+       125.65
+      ]
+     ],
+     "variacion": 1.83
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "GDN",
+     "a": "ALC",
+     "de_nombre": "Gdansk",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:45",
+     "llega": "20:23",
+     "ref": 114.99,
+     "precio": 89.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 4,
+     "duracion": "3:38",
+     "minimo": 69.99,
+     "maximo": 114.99,
+     "visto": "2026-09-23 06:28",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-13 23:20",
+       69.99
+      ],
+      [
+       "2026-09-14 18:24",
+       79.99
+      ],
+      [
+       "2026-09-15 04:48",
+       89.99
+      ],
+      [
+       "2026-09-16 04:24",
+       99.99
+      ],
+      [
+       "2026-09-16 04:55",
+       89.99
+      ],
+      [
+       "2026-09-16 17:33",
+       99.99
+      ],
+      [
+       "2026-09-18 12:30",
+       114.99
+      ],
+      [
+       "2026-09-22 10:09",
+       89.99
+      ],
+      [
+       "2026-09-22 15:01",
+       89.99
+      ]
+     ],
+     "variacion": 20.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo Ryanair a las 20:10; en Gdansk a las 23:40."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Casco viejo: Długi Targ, la grúa medieval y la basílica."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Sopot (20 min en cercanías) o el castillo de Malbork (50 min)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
+    }
+   ],
+   "total_persona": 215.64,
+   "total_grupo": 431.28,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:10",
+   "ida_iata": "GDN",
+   "ida_ciudad": "Gdansk",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "16:45",
+   "vuelta_llega": "20:23",
+   "vuelta_iata": "GDN",
+   "vuelta_ciudad": "Gdansk",
+   "horas_destino": 65,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 238.81,
+   "dentro_presupuesto": false
+  },
+  {
    "id": "viena-budapest",
    "titulo": "Viena + Budapest",
    "subtitulo": "Las dos capitales del Danubio",
@@ -956,7 +960,7 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 146.49,
+     "precio": 143.49,
      "llega_aprox": false,
      "etiqueta": "FR1568 (Lauda Europe) · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
@@ -964,13 +968,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-14 08:52",
-       231.88
-      ],
       [
        "2026-09-14 23:29",
        254.52
@@ -1046,9 +1046,13 @@
       [
        "2026-09-22 23:46",
        146.49
+      ],
+      [
+       "2026-09-23 06:27",
+       143.49
       ]
      ],
-     "variacion": 50.3
+     "variacion": 47.3
     },
     {
      "tipo": "tierra",
@@ -1080,7 +1084,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -1169,8 +1173,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 226.48,
-   "total_grupo": 452.96,
+   "total_persona": 223.48,
+   "total_grupo": 446.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1222,7 +1226,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -1273,7 +1277,7 @@
      "sale": "22:25",
      "llega": "00:45",
      "ref": 75.09,
-     "precio": 110.99,
+     "precio": 98.99,
      "llega_aprox": false,
      "etiqueta": "FR6235 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=SOF&destinationIata=ALC",
@@ -1281,7 +1285,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -1311,9 +1315,13 @@
       [
        "2026-09-22 15:01",
        110.99
+      ],
+      [
+       "2026-09-23 06:27",
+       98.99
       ]
      ],
-     "variacion": 35.9
+     "variacion": 23.9
     }
    ],
    "itinerario": [
@@ -1330,8 +1338,8 @@
      "texto": "Día completo en la ciudad; vuelo a las 22:25, en Alicante a las 00:45."
     }
    ],
-   "total_persona": 256.98,
-   "total_grupo": 513.96,
+   "total_persona": 244.98,
+   "total_grupo": 489.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "08:30",
    "ida_iata": "SOF",
@@ -1376,7 +1384,7 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 207.39,
+     "precio": 204.19,
      "llega_aprox": false,
      "etiqueta": "FR9877 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
@@ -1384,13 +1392,9 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-12 10:32",
-       173.19
-      ],
       [
        "2026-09-13 06:26",
        143.49
@@ -1466,9 +1470,13 @@
       [
        "2026-09-22 15:00",
        207.39
+      ],
+      [
+       "2026-09-23 06:27",
+       204.19
       ]
      ],
-     "variacion": 112.2
+     "variacion": 109.0
     },
     {
      "tipo": "tierra",
@@ -1494,13 +1502,13 @@
      "ref": 50.89,
      "precio": 49.9,
      "llega_aprox": false,
-     "etiqueta": "FR1495 · 3 plazas",
+     "etiqueta": "FR1495 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 3,
+     "plazas": 5,
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -1601,8 +1609,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 257.29,
-   "total_grupo": 514.58,
+   "total_persona": 254.09,
+   "total_grupo": 508.18,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1685,7 +1693,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1724,13 +1732,13 @@
      "ref": 50.89,
      "precio": 49.9,
      "llega_aprox": false,
-     "etiqueta": "FR1495 · 3 plazas",
+     "etiqueta": "FR1495 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 3,
+     "plazas": 5,
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -1915,7 +1923,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1951,7 +1959,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -2120,7 +2128,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2159,13 +2167,13 @@
      "ref": 82.99,
      "precio": 128.99,
      "llega_aprox": false,
-     "etiqueta": "FR3487 · 2 plazas",
+     "etiqueta": "FR3487 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
-     "plazas": 2,
+     "plazas": 5,
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-23 04:54",
+     "visto": "2026-09-23 06:27",
      "estado": "ok",
      "historico": [
       [
@@ -2292,6 +2300,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-23 04:54",
- "actualizado_iso": "2026-09-23T04:54:37.229069+00:00"
+ "actualizado": "2026-09-23 06:28",
+ "actualizado_iso": "2026-09-23T06:28:02.919529+00:00"
 }
