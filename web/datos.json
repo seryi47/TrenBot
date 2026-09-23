@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:49",
      "estado": "ok",
      "historico": [
       [
@@ -82,7 +82,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -176,7 +176,7 @@
      "duracion": "3:40",
      "minimo": 124.99,
      "maximo": 124.99,
-     "visto": "2026-09-22 23:45",
+     "visto": "2026-09-23 02:49",
      "estado": "ok",
      "historico": [
       [
@@ -199,15 +199,15 @@
      "sale": "17:40",
      "llega": "20:20",
      "ref": 59.99,
-     "precio": 65.99,
+     "precio": 69.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 6,
      "duracion": "3:40",
      "minimo": 55.99,
-     "maximo": 65.99,
-     "visto": "2026-09-22 23:46",
+     "maximo": 69.99,
+     "visto": "2026-09-23 02:49",
      "estado": "ok",
      "historico": [
       [
@@ -237,9 +237,13 @@
       [
        "2026-09-22 23:46",
        65.99
+      ],
+      [
+       "2026-09-23 02:49",
+       69.99
       ]
      ],
-     "variacion": 6.0
+     "variacion": 10.0
     }
    ],
    "itinerario": [
@@ -260,8 +264,8 @@
      "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
     }
    ],
-   "total_persona": 190.98,
-   "total_grupo": 381.96,
+   "total_persona": 194.98,
+   "total_grupo": 389.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "OTP",
@@ -314,7 +318,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -439,7 +443,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -597,7 +601,7 @@
      "duracion": "03:30",
      "minimo": 88.05,
      "maximo": 123.82,
-     "visto": "2026-09-22 23:47",
+     "visto": "2026-09-23 02:49",
      "estado": "ok",
      "historico": [
       [
@@ -652,7 +656,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-22 23:47",
+     "visto": "2026-09-23 02:51",
      "estado": "ok",
      "historico": [
       [
@@ -767,7 +771,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -883,7 +887,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -1021,11 +1025,11 @@
      "llega_aprox": false,
      "etiqueta": "FR6234",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=SOF",
-     "plazas": 2,
+     "plazas": null,
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:49",
      "estado": "ok",
      "historico": [
       [
@@ -1084,7 +1088,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:49",
      "estado": "ok",
      "historico": [
       [
@@ -1187,7 +1191,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -1303,7 +1307,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -1488,7 +1492,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1533,7 +1537,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -1718,7 +1722,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1754,7 +1758,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -1923,7 +1927,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1968,7 +1972,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "estado": "ok",
      "historico": [
       [
@@ -2172,7 +2176,7 @@
        114.99
       ]
      ],
-     "visto": "2026-09-22 23:46",
+     "visto": "2026-09-23 02:50",
      "ultimo_real": 114.99,
      "ultimo_real_visto": "2026-09-18 14:02",
      "estado": "sin_venta",
@@ -2199,7 +2203,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-22 23:47",
+     "visto": "2026-09-23 02:51",
      "estado": "ok",
      "historico": [
       [
@@ -2282,6 +2286,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-22 23:47",
- "actualizado_iso": "2026-09-22T23:47:09.197112+02:00"
+ "actualizado": "2026-09-23 02:51",
+ "actualizado_iso": "2026-09-23T02:51:02.684442+00:00"
 }
