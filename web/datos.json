@@ -43,11 +43,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
-     "plazas": 7,
+     "plazas": 9,
      "duracion": "3:10",
      "minimo": 99.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -59,7 +59,7 @@
        114.99
       ],
       [
-       "2026-09-24 05:29",
+       "2026-09-24 06:38",
        99.99
       ]
      ],
@@ -82,11 +82,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 6,
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -176,11 +176,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
-     "plazas": 6,
+     "plazas": 3,
      "duracion": "3:40",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:37",
      "estado": "ok",
      "historico": [
       [
@@ -188,7 +188,7 @@
        124.99
       ],
       [
-       "2026-09-24 04:42",
+       "2026-09-24 06:37",
        114.99
       ]
      ],
@@ -211,11 +211,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:37",
      "estado": "ok",
      "historico": [
       [
@@ -325,11 +325,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
-     "plazas": 5,
+     "plazas": 2,
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -381,7 +381,7 @@
        124.99
       ],
       [
-       "2026-09-24 05:13",
+       "2026-09-24 06:38",
        114.99
       ]
      ],
@@ -404,11 +404,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:39",
      "estado": "ok",
      "historico": [
       [
@@ -456,7 +456,7 @@
        79.99
       ],
       [
-       "2026-09-24 05:13",
+       "2026-09-24 06:39",
        69.99
       ]
      ],
@@ -534,7 +534,7 @@
      "duracion": "03:30",
      "minimo": 88.05,
      "maximo": 139.27,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:37",
      "estado": "ok",
      "historico": [
       [
@@ -586,7 +586,7 @@
        126.65
       ],
       [
-       "2026-09-24 06:31",
+       "2026-09-24 06:37",
        128.48
       ]
      ],
@@ -609,11 +609,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:39",
      "estado": "ok",
      "historico": [
       [
@@ -661,7 +661,7 @@
        79.99
       ],
       [
-       "2026-09-24 05:13",
+       "2026-09-24 06:39",
        69.99
       ]
      ],
@@ -740,7 +740,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -820,7 +820,7 @@
        153.79
       ],
       [
-       "2026-09-24 06:31",
+       "2026-09-24 06:38",
        150.99
       ]
      ],
@@ -856,7 +856,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -1011,7 +1011,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -1091,7 +1091,7 @@
        130.99
       ],
       [
-       "2026-09-24 06:31",
+       "2026-09-24 06:38",
        151.99
       ]
      ],
@@ -1136,7 +1136,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -1295,7 +1295,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -1375,7 +1375,7 @@
        130.99
       ],
       [
-       "2026-09-24 06:31",
+       "2026-09-24 06:38",
        151.99
       ]
      ],
@@ -1407,11 +1407,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 4,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -1553,7 +1553,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:37",
      "estado": "ok",
      "historico": [
       [
@@ -1612,7 +1612,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:37",
      "estado": "ok",
      "historico": [
       [
@@ -1753,7 +1753,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1798,7 +1798,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -1983,7 +1983,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2015,11 +2015,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 4,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -2188,7 +2188,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2233,7 +2233,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-24 06:31",
+     "visto": "2026-09-24 06:38",
      "estado": "ok",
      "historico": [
       [
@@ -2360,6 +2360,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-24 06:31",
- "actualizado_iso": "2026-09-24T06:31:32.010121+00:00"
+ "actualizado": "2026-09-24 06:39",
+ "actualizado_iso": "2026-09-24T06:39:06.700860+00:00"
 }
