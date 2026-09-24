@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 99.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:11",
      "estado": "ok",
      "historico": [
       [
@@ -86,7 +86,7 @@
      "duracion": "3:25",
      "minimo": 59.99,
      "maximo": 65.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -180,7 +180,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -255,11 +255,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -381,11 +381,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 6,
      "duracion": "3:40",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:11",
      "estado": "ok",
      "historico": [
       [
@@ -397,7 +397,7 @@
        114.99
       ],
       [
-       "2026-09-24 12:04",
+       "2026-09-24 12:11",
        124.99
       ]
      ],
@@ -424,7 +424,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:11",
      "estado": "ok",
      "historico": [
       [
@@ -538,7 +538,7 @@
      "duracion": "03:30",
      "minimo": 88.05,
      "maximo": 139.27,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:11",
      "estado": "ok",
      "historico": [
       [
@@ -613,11 +613,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -744,7 +744,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -869,7 +869,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -1028,7 +1028,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -1108,7 +1108,7 @@
        150.99
       ],
       [
-       "2026-09-24 10:31",
+       "2026-09-24 12:12",
        165.99
       ]
      ],
@@ -1144,7 +1144,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -1299,7 +1299,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -1415,7 +1415,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -1557,7 +1557,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:11",
      "estado": "ok",
      "historico": [
       [
@@ -1616,7 +1616,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 112.59,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:11",
      "estado": "ok",
      "historico": [
       [
@@ -1656,7 +1656,7 @@
        86.74
       ],
       [
-       "2026-09-24 11:17",
+       "2026-09-24 12:11",
        98.99
       ]
      ],
@@ -1761,7 +1761,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1806,7 +1806,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -1991,7 +1991,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2027,7 +2027,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -2196,7 +2196,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2241,7 +2241,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-24 12:04",
+     "visto": "2026-09-24 12:12",
      "estado": "ok",
      "historico": [
       [
@@ -2321,7 +2321,7 @@
        126.99
       ],
       [
-       "2026-09-24 10:31",
+       "2026-09-24 12:12",
        130.99
       ]
      ],
@@ -2368,6 +2368,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-24 12:04",
- "actualizado_iso": "2026-09-24T12:04:55.666081+00:00"
+ "actualizado": "2026-09-24 12:12",
+ "actualizado_iso": "2026-09-24T12:12:55.999953+00:00"
 }
