@@ -47,7 +47,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -130,7 +130,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -256,7 +256,7 @@
      "duracion": "3:10",
      "minimo": 99.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -299,7 +299,7 @@
      "duracion": "3:25",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -389,7 +389,7 @@
      "sale": "20:10",
      "llega": "23:40",
      "ref": 123.82,
-     "precio": 116.88,
+     "precio": 115.88,
      "llega_aprox": false,
      "etiqueta": "FR1426 (Buzz) · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
@@ -397,7 +397,7 @@
      "duracion": "03:30",
      "minimo": 88.05,
      "maximo": 139.27,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -455,9 +455,13 @@
       [
        "2026-09-24 19:33",
        116.88
+      ],
+      [
+       "2026-09-24 19:49",
+       115.88
       ]
      ],
-     "variacion": -6.94
+     "variacion": -7.94
     },
     {
      "tipo": "vuelo",
@@ -480,7 +484,7 @@
      "duracion": "3:38",
      "minimo": 69.99,
      "maximo": 114.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -553,8 +557,8 @@
      "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 186.87,
-   "total_grupo": 373.74,
+   "total_persona": 185.87,
+   "total_grupo": 371.74,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:10",
    "ida_iata": "GDN",
@@ -599,7 +603,7 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 138.99,
+     "precio": 137.99,
      "llega_aprox": false,
      "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
@@ -607,13 +611,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-16 11:55",
-       352.75
-      ],
       [
        "2026-09-17 03:38",
        322.14
@@ -689,9 +689,13 @@
       [
        "2026-09-24 19:33",
        138.99
+      ],
+      [
+       "2026-09-24 19:49",
+       137.99
       ]
      ],
-     "variacion": 42.8
+     "variacion": 41.8
     },
     {
      "tipo": "tierra",
@@ -732,7 +736,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -837,8 +841,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 186.97,
-   "total_grupo": 373.94,
+   "total_persona": 185.97,
+   "total_grupo": 371.94,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -890,7 +894,7 @@
      "duracion": "3:40",
      "minimo": 114.99,
      "maximo": 124.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -929,7 +933,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -1044,7 +1048,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -1160,7 +1164,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -1307,7 +1311,7 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 138.99,
+     "precio": 137.99,
      "llega_aprox": false,
      "etiqueta": "FR1568 (Lauda Europe) · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
@@ -1315,13 +1319,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-16 11:55",
-       352.75
-      ],
       [
        "2026-09-17 03:38",
        322.14
@@ -1397,9 +1397,13 @@
       [
        "2026-09-24 19:33",
        138.99
+      ],
+      [
+       "2026-09-24 19:49",
+       137.99
       ]
      ],
-     "variacion": 42.8
+     "variacion": 41.8
     },
     {
      "tipo": "tierra",
@@ -1431,7 +1435,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -1520,8 +1524,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 218.98,
-   "total_grupo": 437.96,
+   "total_persona": 217.98,
+   "total_grupo": 435.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1573,7 +1577,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -1632,7 +1636,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 118.24,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -1781,7 +1785,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1826,7 +1830,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -2011,7 +2015,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2047,7 +2051,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -2216,7 +2220,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2261,7 +2265,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-24 19:33",
+     "visto": "2026-09-24 19:49",
      "estado": "ok",
      "historico": [
       [
@@ -2388,6 +2392,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-24 19:33",
- "actualizado_iso": "2026-09-24T19:33:56.739524+00:00"
+ "actualizado": "2026-09-24 19:49",
+ "actualizado_iso": "2026-09-24T19:49:37.174170+00:00"
 }
