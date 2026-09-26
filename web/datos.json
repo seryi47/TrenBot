@@ -47,7 +47,7 @@
      "duracion": "03:30",
      "minimo": 86.99,
      "maximo": 139.27,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:21",
      "estado": "ok",
      "historico": [
       [
@@ -142,7 +142,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-26 04:51",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -285,7 +285,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -410,7 +410,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -568,7 +568,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-26 04:51",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -655,7 +655,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-26 04:51",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -797,7 +797,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:21",
      "estado": "ok",
      "historico": [
       [
@@ -848,7 +848,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:21",
      "estado": "ok",
      "historico": [
       [
@@ -971,7 +971,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -1087,7 +1087,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -1241,7 +1241,7 @@
      "duracion": "3:10",
      "minimo": 99.99,
      "maximo": 124.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:21",
      "estado": "ok",
      "historico": [
       [
@@ -1284,7 +1284,7 @@
      "duracion": "3:25",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -1383,7 +1383,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -1491,7 +1491,7 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 79.99,
+     "precio": 99.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
@@ -1499,7 +1499,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -1565,9 +1565,13 @@
       [
        "2026-09-22 15:01",
        79.99
+      ],
+      [
+       "2026-09-26 05:22",
+       99.99
       ]
      ],
-     "variacion": 20.0
+     "variacion": 40.0
     }
    ],
    "itinerario": [
@@ -1588,8 +1592,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 192.33,
-   "total_grupo": 384.66,
+   "total_persona": 212.33,
+   "total_grupo": 424.66,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1641,7 +1645,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:21",
      "estado": "ok",
      "historico": [
       [
@@ -1700,7 +1704,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 151.69,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:21",
      "estado": "ok",
      "historico": [
       [
@@ -1857,7 +1861,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1902,7 +1906,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -2087,7 +2091,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2115,7 +2119,7 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 79.99,
+     "precio": 99.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
@@ -2123,7 +2127,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -2189,9 +2193,13 @@
       [
        "2026-09-22 15:01",
        79.99
+      ],
+      [
+       "2026-09-26 05:22",
+       99.99
       ]
      ],
-     "variacion": 20.0
+     "variacion": 40.0
     }
    ],
    "itinerario": [
@@ -2292,7 +2300,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2337,7 +2345,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-26 04:50",
+     "visto": "2026-09-26 05:22",
      "estado": "ok",
      "historico": [
       [
@@ -2464,6 +2472,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-26 04:51",
- "actualizado_iso": "2026-09-26T04:51:04.506719+00:00"
+ "actualizado": "2026-09-26 05:22",
+ "actualizado_iso": "2026-09-26T05:22:13.767417+00:00"
 }
