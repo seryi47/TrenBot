@@ -47,7 +47,7 @@
      "duracion": "03:30",
      "minimo": 77.7,
      "maximo": 139.27,
-     "visto": "2026-09-26 18:24",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -138,7 +138,7 @@
      "sale": "16:45",
      "llega": "20:23",
      "ref": 114.99,
-     "precio": 69.99,
+     "precio": 79.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
@@ -146,7 +146,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-26 18:26",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -216,9 +216,13 @@
       [
        "2026-09-26 12:52",
        69.99
+      ],
+      [
+       "2026-09-26 21:17",
+       79.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 10.0
     }
    ],
    "itinerario": [
@@ -239,8 +243,8 @@
      "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 147.69,
-   "total_grupo": 295.38,
+   "total_persona": 157.69,
+   "total_grupo": 315.38,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:10",
    "ida_iata": "GDN",
@@ -292,7 +296,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-26 18:26",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -375,7 +379,7 @@
      "sale": "16:45",
      "llega": "20:23",
      "ref": 69.99,
-     "precio": 69.99,
+     "precio": 79.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
@@ -383,7 +387,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-26 18:26",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -453,9 +457,13 @@
       [
        "2026-09-26 12:52",
        69.99
+      ],
+      [
+       "2026-09-26 21:17",
+       79.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 10.0
     }
    ],
    "itinerario": [
@@ -476,8 +484,8 @@
      "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 149.98,
-   "total_grupo": 299.96,
+   "total_persona": 159.98,
+   "total_grupo": 319.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "GDN",
@@ -530,7 +538,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -655,7 +663,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -813,7 +821,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-26 18:24",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -872,7 +880,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -999,7 +1007,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1115,7 +1123,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1270,7 +1278,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1386,7 +1394,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1532,7 +1540,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1591,7 +1599,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 151.69,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1743,7 +1751,7 @@
        124.99
       ]
      ],
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "ultimo_real": 124.99,
      "ultimo_real_visto": "2026-09-26 09:54",
      "estado": "sin_venta",
@@ -1770,7 +1778,7 @@
      "duracion": "3:25",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -1899,7 +1907,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1944,7 +1952,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -2129,7 +2137,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2165,7 +2173,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -2338,7 +2346,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2383,7 +2391,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-26 18:25",
+     "visto": "2026-09-26 21:17",
      "estado": "ok",
      "historico": [
       [
@@ -2510,6 +2518,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-26 18:26",
- "actualizado_iso": "2026-09-26T18:26:19.141838+00:00"
+ "actualizado": "2026-09-26 21:17",
+ "actualizado_iso": "2026-09-26T21:17:24.971067+00:00"
 }
