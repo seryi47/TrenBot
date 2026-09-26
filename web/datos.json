@@ -47,7 +47,7 @@
      "duracion": "03:30",
      "minimo": 77.7,
      "maximo": 139.27,
-     "visto": "2026-09-26 12:51",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -146,7 +146,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -261,6 +261,243 @@
    "dentro_presupuesto": true
   },
   {
+   "id": "gdansk",
+   "titulo": "Gdansk, sin moverse",
+   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
+   "paises": [
+    "Polonia"
+   ],
+   "noches": 3,
+   "por_que": "La única opción de entrar y salir por el mismo sitio sin coger ningún transporte entre aeropuertos. El casco viejo se hace a pie, Sopot y su playa están a 20 minutos en cercanías y el castillo de Malbork a 50.",
+   "aviso": "Está por encima del tope de 190 € por persona. Sales el jueves a las 21:10 y aterrizas a las 00:48, así que ganas el viernes y el sábado enteros.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "GDN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Gdansk",
+     "fecha": "2026-10-08",
+     "sale": "21:10",
+     "llega": "00:48",
+     "ref": 99.99,
+     "precio": 79.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
+     "plazas": 4,
+     "duracion": "3:38",
+     "minimo": 79.99,
+     "maximo": 124.99,
+     "visto": "2026-09-26 14:08",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-13 23:20",
+       99.99
+      ],
+      [
+       "2026-09-14 00:29",
+       114.99
+      ],
+      [
+       "2026-09-14 00:44",
+       99.99
+      ],
+      [
+       "2026-09-14 06:02",
+       79.99
+      ],
+      [
+       "2026-09-14 15:50",
+       89.99
+      ],
+      [
+       "2026-09-15 04:48",
+       79.99
+      ],
+      [
+       "2026-09-15 17:37",
+       89.99
+      ],
+      [
+       "2026-09-16 19:05",
+       99.99
+      ],
+      [
+       "2026-09-16 19:36",
+       114.99
+      ],
+      [
+       "2026-09-18 12:30",
+       99.99
+      ],
+      [
+       "2026-09-18 14:02",
+       114.99
+      ],
+      [
+       "2026-09-23 04:54",
+       124.99
+      ],
+      [
+       "2026-09-24 06:38",
+       114.99
+      ],
+      [
+       "2026-09-24 17:46",
+       79.99
+      ],
+      [
+       "2026-09-26 04:35",
+       89.99
+      ],
+      [
+       "2026-09-26 14:08",
+       79.99
+      ]
+     ],
+     "variacion": -20.0
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "GDN",
+     "a": "ALC",
+     "de_nombre": "Gdansk",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:45",
+     "llega": "20:23",
+     "ref": 69.99,
+     "precio": 69.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 3,
+     "duracion": "3:38",
+     "minimo": 65.99,
+     "maximo": 114.99,
+     "visto": "2026-09-26 14:08",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-13 23:20",
+       69.99
+      ],
+      [
+       "2026-09-14 18:24",
+       79.99
+      ],
+      [
+       "2026-09-15 04:48",
+       89.99
+      ],
+      [
+       "2026-09-16 04:24",
+       99.99
+      ],
+      [
+       "2026-09-16 04:55",
+       89.99
+      ],
+      [
+       "2026-09-16 17:33",
+       99.99
+      ],
+      [
+       "2026-09-18 12:30",
+       114.99
+      ],
+      [
+       "2026-09-22 10:09",
+       89.99
+      ],
+      [
+       "2026-09-22 15:01",
+       89.99
+      ],
+      [
+       "2026-09-23 08:24",
+       69.99
+      ],
+      [
+       "2026-09-24 04:26",
+       79.99
+      ],
+      [
+       "2026-09-24 06:39",
+       69.99
+      ],
+      [
+       "2026-09-24 20:52",
+       79.99
+      ],
+      [
+       "2026-09-25 16:15",
+       65.99
+      ],
+      [
+       "2026-09-25 20:25",
+       69.99
+      ],
+      [
+       "2026-09-26 04:51",
+       65.99
+      ],
+      [
+       "2026-09-26 12:52",
+       69.99
+      ]
+     ],
+     "variacion": 0.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 21:10; en Gdansk a las 00:48."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en el casco viejo: Długi Targ, la grúa medieval y la basílica."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Sopot y su muelle (20 min en cercanías), o el castillo de Malbork (50 min)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
+    }
+   ],
+   "total_persona": 149.98,
+   "total_grupo": 299.96,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "21:10",
+   "ida_iata": "GDN",
+   "ida_ciudad": "Gdansk",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "16:45",
+   "vuelta_llega": "20:23",
+   "vuelta_iata": "GDN",
+   "vuelta_ciudad": "Gdansk",
+   "horas_destino": 64,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 169.98,
+   "dentro_presupuesto": true
+  },
+  {
    "id": "viena-praga",
    "titulo": "Viena + Praga",
    "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
@@ -293,7 +530,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -410,7 +647,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 43.07,
+     "precio": 42.07,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -418,13 +655,9 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-20 21:01",
-       49.93
-      ],
       [
        "2026-09-21 09:41",
        48.93
@@ -500,9 +733,13 @@
       [
        "2026-09-26 12:52",
        43.07
+      ],
+      [
+       "2026-09-26 14:08",
+       42.07
       ]
      ],
-     "variacion": -7.82
+     "variacion": -8.82
     }
    ],
    "itinerario": [
@@ -523,8 +760,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 153.31,
-   "total_grupo": 306.62,
+   "total_persona": 152.31,
+   "total_grupo": 304.62,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -542,239 +779,6 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 147.08,
-   "dentro_presupuesto": true
-  },
-  {
-   "id": "gdansk",
-   "titulo": "Gdansk, sin moverse",
-   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
-   "paises": [
-    "Polonia"
-   ],
-   "noches": 3,
-   "por_que": "La única opción de entrar y salir por el mismo sitio sin coger ningún transporte entre aeropuertos. El casco viejo se hace a pie, Sopot y su playa están a 20 minutos en cercanías y el castillo de Malbork a 50.",
-   "aviso": "Está por encima del tope de 190 € por persona. Sales el jueves a las 21:10 y aterrizas a las 00:48, así que ganas el viernes y el sábado enteros.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "ALC",
-     "a": "GDN",
-     "de_nombre": "Alicante",
-     "a_nombre": "Gdansk",
-     "fecha": "2026-10-08",
-     "sale": "21:10",
-     "llega": "00:48",
-     "ref": 99.99,
-     "precio": 89.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
-     "plazas": 4,
-     "duracion": "3:38",
-     "minimo": 79.99,
-     "maximo": 124.99,
-     "visto": "2026-09-26 12:52",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-13 23:20",
-       99.99
-      ],
-      [
-       "2026-09-14 00:29",
-       114.99
-      ],
-      [
-       "2026-09-14 00:44",
-       99.99
-      ],
-      [
-       "2026-09-14 06:02",
-       79.99
-      ],
-      [
-       "2026-09-14 15:50",
-       89.99
-      ],
-      [
-       "2026-09-15 04:48",
-       79.99
-      ],
-      [
-       "2026-09-15 17:37",
-       89.99
-      ],
-      [
-       "2026-09-16 19:05",
-       99.99
-      ],
-      [
-       "2026-09-16 19:36",
-       114.99
-      ],
-      [
-       "2026-09-18 12:30",
-       99.99
-      ],
-      [
-       "2026-09-18 14:02",
-       114.99
-      ],
-      [
-       "2026-09-23 04:54",
-       124.99
-      ],
-      [
-       "2026-09-24 06:38",
-       114.99
-      ],
-      [
-       "2026-09-24 17:46",
-       79.99
-      ],
-      [
-       "2026-09-26 04:35",
-       89.99
-      ]
-     ],
-     "variacion": -10.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "GDN",
-     "a": "ALC",
-     "de_nombre": "Gdansk",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "16:45",
-     "llega": "20:23",
-     "ref": 69.99,
-     "precio": 69.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
-     "duracion": "3:38",
-     "minimo": 65.99,
-     "maximo": 114.99,
-     "visto": "2026-09-26 12:52",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-13 23:20",
-       69.99
-      ],
-      [
-       "2026-09-14 18:24",
-       79.99
-      ],
-      [
-       "2026-09-15 04:48",
-       89.99
-      ],
-      [
-       "2026-09-16 04:24",
-       99.99
-      ],
-      [
-       "2026-09-16 04:55",
-       89.99
-      ],
-      [
-       "2026-09-16 17:33",
-       99.99
-      ],
-      [
-       "2026-09-18 12:30",
-       114.99
-      ],
-      [
-       "2026-09-22 10:09",
-       89.99
-      ],
-      [
-       "2026-09-22 15:01",
-       89.99
-      ],
-      [
-       "2026-09-23 08:24",
-       69.99
-      ],
-      [
-       "2026-09-24 04:26",
-       79.99
-      ],
-      [
-       "2026-09-24 06:39",
-       69.99
-      ],
-      [
-       "2026-09-24 20:52",
-       79.99
-      ],
-      [
-       "2026-09-25 16:15",
-       65.99
-      ],
-      [
-       "2026-09-25 20:25",
-       69.99
-      ],
-      [
-       "2026-09-26 04:51",
-       65.99
-      ],
-      [
-       "2026-09-26 12:52",
-       69.99
-      ]
-     ],
-     "variacion": 0.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 21:10; en Gdansk a las 00:48."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo en el casco viejo: Długi Targ, la grúa medieval y la basílica."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Sopot y su muelle (20 min en cercanías), o el castillo de Malbork (50 min)."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
-    }
-   ],
-   "total_persona": 159.98,
-   "total_grupo": 319.96,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "21:10",
-   "ida_iata": "GDN",
-   "ida_ciudad": "Gdansk",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "16:45",
-   "vuelta_llega": "20:23",
-   "vuelta_iata": "GDN",
-   "vuelta_ciudad": "Gdansk",
-   "horas_destino": 64,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 169.98,
    "dentro_presupuesto": true
   },
   {
@@ -801,7 +805,7 @@
      "sale": "21:10",
      "llega": "01:50",
      "ref": 124.99,
-     "precio": 114.99,
+     "precio": 99.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
@@ -809,7 +813,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-26 12:51",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -839,9 +843,13 @@
       [
        "2026-09-26 08:03",
        114.99
+      ],
+      [
+       "2026-09-26 14:08",
+       99.99
       ]
      ],
-     "variacion": -10.0
+     "variacion": -25.0
     },
     {
      "tipo": "vuelo",
@@ -864,7 +872,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 69.99,
-     "visto": "2026-09-26 12:51",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -933,8 +941,8 @@
      "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
     }
    ],
-   "total_persona": 180.98,
-   "total_grupo": 361.96,
+   "total_persona": 165.98,
+   "total_grupo": 331.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "OTP",
@@ -952,151 +960,6 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 184.98,
-   "dentro_presupuesto": true
-  },
-  {
-   "id": "katowice",
-   "titulo": "Katowice, sin moverse",
-   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
-   "paises": [
-    "Polonia"
-   ],
-   "noches": 3,
-   "por_que": "Base barata para la Polonia del sur: Cracovia está a 1 h 20 en tren directo y Auschwitz a 1 h 30. La propia Katowice es más industrial que turística.",
-   "aviso": "El vuelo de vuelta sale el domingo a las 05:30: hay que salir del hotel sobre las 03:00 y pierdes el domingo entero.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "ALC",
-     "a": "KTW",
-     "de_nombre": "Alicante",
-     "a_nombre": "Katowice",
-     "fecha": "2026-10-08",
-     "sale": "20:20",
-     "llega": "23:30",
-     "ref": 124.99,
-     "precio": 124.99,
-     "llega_aprox": false,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
-     "plazas": 5,
-     "duracion": "3:10",
-     "minimo": 99.99,
-     "maximo": 124.99,
-     "visto": "2026-09-26 12:51",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-19 11:29",
-       124.99
-      ],
-      [
-       "2026-09-21 09:40",
-       114.99
-      ],
-      [
-       "2026-09-24 06:38",
-       99.99
-      ],
-      [
-       "2026-09-24 17:45",
-       114.99
-      ],
-      [
-       "2026-09-26 09:54",
-       124.99
-      ]
-     ],
-     "variacion": 0.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "KTW",
-     "a": "ALC",
-     "de_nombre": "Katowice",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "05:30",
-     "llega": "08:55",
-     "ref": 65.99,
-     "precio": 55.99,
-     "llega_aprox": false,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 5,
-     "duracion": "3:25",
-     "minimo": 55.99,
-     "maximo": 65.99,
-     "visto": "2026-09-26 12:51",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-19 11:29",
-       65.99
-      ],
-      [
-       "2026-09-20 07:02",
-       59.99
-      ],
-      [
-       "2026-09-20 13:22",
-       65.99
-      ],
-      [
-       "2026-09-20 20:22",
-       65.99
-      ],
-      [
-       "2026-09-24 14:00",
-       55.99
-      ]
-     ],
-     "variacion": -10.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 20:20; en Katowice a las 23:39."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Tren a Cracovia (1 h 20): casco viejo, Wawel y Kazimierz."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Auschwitz-Birkenau (1 h 30) o las minas de sal de Wieliczka."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
-    }
-   ],
-   "total_persona": 180.98,
-   "total_grupo": 361.96,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "20:20",
-   "ida_iata": "KTW",
-   "ida_ciudad": "Katowice",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "05:30",
-   "vuelta_llega": "08:55",
-   "vuelta_iata": "KTW",
-   "vuelta_ciudad": "Katowice",
-   "horas_destino": 54,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 190.98,
    "dentro_presupuesto": true
   },
   {
@@ -1132,7 +995,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -1240,7 +1103,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 43.07,
+     "precio": 42.07,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -1248,13 +1111,9 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-20 21:01",
-       49.93
-      ],
       [
        "2026-09-21 09:41",
        48.93
@@ -1330,9 +1189,13 @@
       [
        "2026-09-26 12:52",
        43.07
+      ],
+      [
+       "2026-09-26 14:08",
+       42.07
       ]
      ],
-     "variacion": -7.82
+     "variacion": -8.82
     }
    ],
    "itinerario": [
@@ -1349,8 +1212,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 187.06,
-   "total_grupo": 374.12,
+   "total_persona": 186.06,
+   "total_grupo": 372.12,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1403,7 +1266,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -1519,7 +1382,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -1665,7 +1528,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-26 12:51",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -1724,7 +1587,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 151.69,
-     "visto": "2026-09-26 12:51",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -1823,6 +1686,153 @@
    "dentro_presupuesto": false
   },
   {
+   "id": "katowice",
+   "titulo": "Katowice, sin moverse",
+   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
+   "paises": [
+    "Polonia"
+   ],
+   "noches": 3,
+   "por_que": "Base barata para la Polonia del sur: Cracovia está a 1 h 20 en tren directo y Auschwitz a 1 h 30. La propia Katowice es más industrial que turística.",
+   "aviso": "El vuelo de vuelta sale el domingo a las 05:30: hay que salir del hotel sobre las 03:00 y pierdes el domingo entero.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "KTW",
+     "de_nombre": "Alicante",
+     "a_nombre": "Katowice",
+     "fecha": "2026-10-08",
+     "sale": "20:20",
+     "llega": "23:30",
+     "ref": 124.99,
+     "precio": null,
+     "llega_aprox": false,
+     "etiqueta": "sin plazas a la venta",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
+     "plazas": 0,
+     "duracion": "3:10",
+     "minimo": 99.99,
+     "maximo": 124.99,
+     "historico": [
+      [
+       "2026-09-19 11:29",
+       124.99
+      ],
+      [
+       "2026-09-21 09:40",
+       114.99
+      ],
+      [
+       "2026-09-24 06:38",
+       99.99
+      ],
+      [
+       "2026-09-24 17:45",
+       114.99
+      ],
+      [
+       "2026-09-26 09:54",
+       124.99
+      ]
+     ],
+     "visto": "2026-09-26 14:08",
+     "ultimo_real": 124.99,
+     "ultimo_real_visto": "2026-09-26 13:53",
+     "estado": "sin_venta",
+     "variacion": 0.0
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "KTW",
+     "a": "ALC",
+     "de_nombre": "Katowice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:30",
+     "llega": "08:55",
+     "ref": 65.99,
+     "precio": 55.99,
+     "llega_aprox": false,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 5,
+     "duracion": "3:25",
+     "minimo": 55.99,
+     "maximo": 65.99,
+     "visto": "2026-09-26 14:08",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-19 11:29",
+       65.99
+      ],
+      [
+       "2026-09-20 07:02",
+       59.99
+      ],
+      [
+       "2026-09-20 13:22",
+       65.99
+      ],
+      [
+       "2026-09-20 20:22",
+       65.99
+      ],
+      [
+       "2026-09-24 14:00",
+       55.99
+      ]
+     ],
+     "variacion": -10.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:20; en Katowice a las 23:39."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Tren a Cracovia (1 h 20): casco viejo, Wawel y Kazimierz."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Auschwitz-Birkenau (1 h 30) o las minas de sal de Wieliczka."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
+    }
+   ],
+   "total_persona": null,
+   "total_grupo": null,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:20",
+   "ida_iata": "KTW",
+   "ida_ciudad": "Katowice",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "05:30",
+   "vuelta_llega": "08:55",
+   "vuelta_iata": "KTW",
+   "vuelta_ciudad": "Katowice",
+   "horas_destino": 54,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 190.98,
+   "dentro_presupuesto": false
+  },
+  {
    "id": "bratislava-praga",
    "titulo": "Bratislava + Praga",
    "subtitulo": "La más barata de todas",
@@ -1885,7 +1895,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1922,7 +1932,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 43.07,
+     "precio": 42.07,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -1930,13 +1940,9 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-20 21:01",
-       49.93
-      ],
       [
        "2026-09-21 09:41",
        48.93
@@ -2012,9 +2018,13 @@
       [
        "2026-09-26 12:52",
        43.07
+      ],
+      [
+       "2026-09-26 14:08",
+       42.07
       ]
      ],
-     "variacion": -7.82
+     "variacion": -8.82
     }
    ],
    "itinerario": [
@@ -2115,7 +2125,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2151,7 +2161,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
       [
@@ -2324,7 +2334,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2361,7 +2371,7 @@
      "sale": "11:45",
      "llega": "14:25",
      "ref": 82.99,
-     "precio": 144.99,
+     "precio": 140.99,
      "llega_aprox": false,
      "etiqueta": "FR3487 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
@@ -2369,13 +2379,9 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-26 12:52",
+     "visto": "2026-09-26 14:08",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-21 18:56",
-       118.99
-      ],
       [
        "2026-09-21 23:01",
        117.99
@@ -2451,9 +2457,13 @@
       [
        "2026-09-26 07:18",
        144.99
+      ],
+      [
+       "2026-09-26 14:08",
+       140.99
       ]
      ],
-     "variacion": 62.0
+     "variacion": 58.0
     }
    ],
    "itinerario": [
@@ -2496,6 +2506,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-26 12:52",
- "actualizado_iso": "2026-09-26T12:52:53.135668+00:00"
+ "actualizado": "2026-09-26 14:08",
+ "actualizado_iso": "2026-09-26T14:08:57.246867+00:00"
 }
