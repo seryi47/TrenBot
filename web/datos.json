@@ -47,7 +47,7 @@
      "duracion": "03:30",
      "minimo": 67.67,
      "maximo": 139.27,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:10",
      "estado": "ok",
      "historico": [
       [
@@ -154,7 +154,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-27 12:40",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -313,7 +313,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -438,7 +438,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -596,7 +596,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-27 12:40",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -687,7 +687,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-27 12:40",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -846,7 +846,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -962,7 +962,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -1116,7 +1116,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:10",
      "estado": "ok",
      "historico": [
       [
@@ -1179,7 +1179,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 89.99,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:10",
      "estado": "ok",
      "historico": [
       [
@@ -1314,7 +1314,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -1430,7 +1430,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -1580,7 +1580,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:10",
      "estado": "ok",
      "historico": [
       [
@@ -1631,15 +1631,15 @@
      "sale": "22:25",
      "llega": "00:45",
      "ref": 75.09,
-     "precio": 131.72,
+     "precio": 156.49,
      "llega_aprox": false,
      "etiqueta": "FR6235 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=SOF&destinationIata=ALC",
      "plazas": 3,
      "duracion": "03:20",
      "minimo": 75.09,
-     "maximo": 151.69,
-     "visto": "2026-09-27 12:39",
+     "maximo": 156.49,
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -1701,9 +1701,13 @@
       [
        "2026-09-27 06:19",
        131.72
+      ],
+      [
+       "2026-09-27 13:11",
+       156.49
       ]
      ],
-     "variacion": 56.63
+     "variacion": 81.4
     }
    ],
    "itinerario": [
@@ -1720,8 +1724,8 @@
      "texto": "Día completo en la ciudad; vuelo a las 22:25, en Alicante a las 00:45."
     }
    ],
-   "total_persona": 277.71,
-   "total_grupo": 555.42,
+   "total_persona": 302.48,
+   "total_grupo": 604.96,
    "ida_fecha": "2026-10-09",
    "ida_hora": "08:30",
    "ida_iata": "SOF",
@@ -1795,7 +1799,7 @@
        124.99
       ]
      ],
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "ultimo_real": 124.99,
      "ultimo_real_visto": "2026-09-26 09:54",
      "estado": "sin_venta",
@@ -1822,7 +1826,7 @@
      "duracion": "3:25",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -1951,7 +1955,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1996,7 +2000,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -2181,7 +2185,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2217,7 +2221,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -2394,7 +2398,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2439,7 +2443,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-27 12:39",
+     "visto": "2026-09-27 13:11",
      "estado": "ok",
      "historico": [
       [
@@ -2566,6 +2570,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-27 12:40",
- "actualizado_iso": "2026-09-27T12:40:02.579442+00:00"
+ "actualizado": "2026-09-27 13:11",
+ "actualizado_iso": "2026-09-27T13:11:15.892252+00:00"
 }
