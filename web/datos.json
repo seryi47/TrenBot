@@ -41,13 +41,13 @@
      "ref": 123.82,
      "precio": 77.7,
      "llega_aprox": false,
-     "etiqueta": "FR1426 (Buzz)",
+     "etiqueta": "FR1426 (Buzz) · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
-     "plazas": 2,
+     "plazas": 5,
      "duracion": "03:30",
      "minimo": 67.67,
      "maximo": 139.27,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -154,7 +154,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -309,7 +309,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -434,7 +434,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -592,7 +592,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -683,7 +683,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -837,7 +837,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -888,15 +888,15 @@
      "sale": "17:40",
      "llega": "20:20",
      "ref": 59.99,
-     "precio": 69.99,
+     "precio": 79.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
      "plazas": 3,
      "duracion": "3:40",
      "minimo": 55.99,
-     "maximo": 69.99,
-     "visto": "2026-09-27 07:22",
+     "maximo": 79.99,
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -946,9 +946,13 @@
       [
        "2026-09-26 15:42",
        69.99
+      ],
+      [
+       "2026-09-27 08:41",
+       79.99
       ]
      ],
-     "variacion": 10.0
+     "variacion": 20.0
     }
    ],
    "itinerario": [
@@ -969,8 +973,8 @@
      "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
     }
    ],
-   "total_persona": 169.98,
-   "total_grupo": 339.96,
+   "total_persona": 179.98,
+   "total_grupo": 359.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "OTP",
@@ -1023,7 +1027,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1139,7 +1143,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1290,7 +1294,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1406,7 +1410,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1560,7 +1564,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1613,13 +1617,13 @@
      "ref": 75.09,
      "precio": 131.72,
      "llega_aprox": false,
-     "etiqueta": "FR6235 · 4 plazas",
+     "etiqueta": "FR6235 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=SOF&destinationIata=ALC",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 151.69,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1775,7 +1779,7 @@
        124.99
       ]
      ],
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "ultimo_real": 124.99,
      "ultimo_real_visto": "2026-09-26 09:54",
      "estado": "sin_venta",
@@ -1802,7 +1806,7 @@
      "duracion": "3:25",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -1931,7 +1935,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1976,7 +1980,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -2161,7 +2165,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2197,7 +2201,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -2374,7 +2378,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2419,7 +2423,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-27 07:22",
+     "visto": "2026-09-27 08:41",
      "estado": "ok",
      "historico": [
       [
@@ -2546,6 +2550,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-27 07:22",
- "actualizado_iso": "2026-09-27T07:22:53.502634+00:00"
+ "actualizado": "2026-09-27 08:41",
+ "actualizado_iso": "2026-09-27T08:41:31.975591+00:00"
 }
