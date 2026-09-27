@@ -48,7 +48,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -173,7 +173,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -331,7 +331,7 @@
      "duracion": "03:30",
      "minimo": 67.67,
      "maximo": 139.27,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -438,7 +438,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -596,7 +596,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -687,7 +687,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -845,7 +845,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -908,7 +908,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 79.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1047,7 +1047,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1163,7 +1163,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1306,7 +1306,7 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 176.19,
+     "precio": 162.19,
      "llega_aprox": false,
      "etiqueta": "FR9877 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
@@ -1314,13 +1314,9 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-19 06:28",
-       171.99
-      ],
       [
        "2026-09-19 08:47",
        142.69
@@ -1396,9 +1392,13 @@
       [
        "2026-09-27 06:35",
        176.19
+      ],
+      [
+       "2026-09-27 10:47",
+       162.19
       ]
      ],
-     "variacion": 81.0
+     "variacion": 67.0
     },
     {
      "tipo": "tierra",
@@ -1430,7 +1430,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1531,8 +1531,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 215.26,
-   "total_grupo": 430.52,
+   "total_persona": 201.26,
+   "total_grupo": 402.52,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1584,7 +1584,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1643,7 +1643,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 151.69,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1799,7 +1799,7 @@
        124.99
       ]
      ],
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "ultimo_real": 124.99,
      "ultimo_real_visto": "2026-09-26 09:54",
      "estado": "sin_venta",
@@ -1826,7 +1826,7 @@
      "duracion": "3:25",
      "minimo": 55.99,
      "maximo": 65.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -1955,7 +1955,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2000,7 +2000,7 @@
      "duracion": "03:00",
      "minimo": 37.96,
      "maximo": 54.91,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -2185,7 +2185,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2221,7 +2221,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -2398,7 +2398,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2443,7 +2443,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-27 10:15",
+     "visto": "2026-09-27 10:47",
      "estado": "ok",
      "historico": [
       [
@@ -2570,6 +2570,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-27 10:15",
- "actualizado_iso": "2026-09-27T10:15:59.349581+00:00"
+ "actualizado": "2026-09-27 10:47",
+ "actualizado_iso": "2026-09-27T10:47:27.447942+00:00"
 }
