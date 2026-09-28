@@ -173,7 +173,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -331,7 +331,7 @@
      "duracion": "03:30",
      "minimo": 67.67,
      "maximo": 139.27,
-     "visto": "2026-09-28 03:25",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -438,7 +438,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -596,7 +596,7 @@
      "duracion": "3:38",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -691,7 +691,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -842,21 +842,17 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 162.19,
+     "precio": 147.39,
      "llega_aprox": false,
-     "etiqueta": "FR9877 · 4 plazas",
+     "etiqueta": "FR9877 · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": 4,
+     "plazas": 2,
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-19 06:28",
-       171.99
-      ],
       [
        "2026-09-19 08:47",
        142.69
@@ -932,9 +928,13 @@
       [
        "2026-09-27 11:06",
        162.19
+      ],
+      [
+       "2026-09-28 03:41",
+       147.39
       ]
      ],
-     "variacion": 67.0
+     "variacion": 52.2
     },
     {
      "tipo": "tierra",
@@ -966,7 +966,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1067,8 +1067,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 208.27,
-   "total_grupo": 416.54,
+   "total_persona": 193.47,
+   "total_grupo": 386.94,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1237,7 +1237,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1391,7 +1391,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-28 03:25",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1462,7 +1462,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 114.99,
-     "visto": "2026-09-28 03:25",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1600,7 +1600,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 150.49,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1659,7 +1659,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 172.84,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1827,7 +1827,7 @@
        124.99
       ]
      ],
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "ultimo_real": 124.99,
      "ultimo_real_visto": "2026-09-26 09:54",
      "estado": "sin_venta",
@@ -1854,7 +1854,7 @@
      "duracion": "3:25",
      "minimo": 51.29,
      "maximo": 65.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -1987,7 +1987,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2032,7 +2032,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -2217,7 +2217,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2253,7 +2253,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 114.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -2434,7 +2434,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2479,7 +2479,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-28 03:26",
+     "visto": "2026-09-28 03:41",
      "estado": "ok",
      "historico": [
       [
@@ -2606,6 +2606,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-28 03:26",
- "actualizado_iso": "2026-09-28T03:26:16.727502+00:00"
+ "actualizado": "2026-09-28 03:41",
+ "actualizado_iso": "2026-09-28T03:41:58.295305+00:00"
 }
