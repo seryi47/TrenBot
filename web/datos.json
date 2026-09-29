@@ -43,11 +43,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 4,
      "duracion": "3:10",
      "minimo": 89.99,
      "maximo": 124.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -98,11 +98,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:25",
      "minimo": 51.29,
      "maximo": 65.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -204,11 +204,11 @@
      "llega_aprox": false,
      "etiqueta": "FR1426 (Buzz)",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
-     "plazas": 2,
+     "plazas": null,
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:34",
      "estado": "ok",
      "historico": [
       [
@@ -311,11 +311,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 4,
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "estado": "ok",
      "historico": [
       [
@@ -469,11 +469,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 4,
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 124.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "estado": "ok",
      "historico": [
       [
@@ -576,11 +576,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 4,
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "estado": "ok",
      "historico": [
       [
@@ -739,7 +739,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -864,7 +864,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -944,7 +944,7 @@
        42.91
       ],
       [
-       "2026-09-29 07:11",
+       "2026-09-29 08:35",
        40.91
       ]
      ],
@@ -1023,7 +1023,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "estado": "ok",
      "historico": [
       [
@@ -1139,7 +1139,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -1219,7 +1219,7 @@
        42.91
       ],
       [
-       "2026-09-29 07:11",
+       "2026-09-29 08:35",
        40.91
       ]
      ],
@@ -1293,7 +1293,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -1364,11 +1364,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
+     "plazas": 3,
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -1510,7 +1510,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 161.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -1577,7 +1577,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 172.84,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -1762,7 +1762,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -1807,7 +1807,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -1887,7 +1887,7 @@
        42.91
       ],
       [
-       "2026-09-29 07:11",
+       "2026-09-29 08:35",
        40.91
       ]
      ],
@@ -1992,7 +1992,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2110,9 +2110,9 @@
        124.99
       ]
      ],
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "ultimo_real": 124.99,
-     "ultimo_real_visto": "2026-09-29 04:19",
+     "ultimo_real_visto": "2026-09-28 15:53",
      "estado": "sin_venta",
      "variacion": 65.0
     }
@@ -2215,7 +2215,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2260,9 +2260,13 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "estado": "ok",
      "historico": [
+      [
+       "2026-09-24 07:40",
+       126.99
+      ],
       [
        "2026-09-24 12:12",
        130.99
@@ -2336,11 +2340,7 @@
        131.99
       ],
       [
-       "2026-09-29 07:11",
-       125.99
-      ],
-      [
-       "2026-09-29 08:29",
+       "2026-09-29 08:36",
        123.99
       ]
      ],
@@ -2419,7 +2419,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:35",
      "estado": "ok",
      "historico": [
       [
@@ -2617,9 +2617,9 @@
        124.99
       ]
      ],
-     "visto": "2026-09-29 08:29",
+     "visto": "2026-09-29 08:36",
      "ultimo_real": 124.99,
-     "ultimo_real_visto": "2026-09-29 04:19",
+     "ultimo_real_visto": "2026-09-28 15:53",
      "estado": "sin_venta",
      "variacion": 65.0
     }
@@ -2664,6 +2664,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-29 08:29",
- "actualizado_iso": "2026-09-29T08:29:59.528990+00:00"
+ "actualizado": "2026-09-29 08:36",
+ "actualizado_iso": "2026-09-29T08:36:35.982227+00:00"
 }
