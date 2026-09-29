@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 89.99,
      "maximo": 124.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -98,7 +98,7 @@
      "duracion": "3:25",
      "minimo": 51.29,
      "maximo": 65.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -204,7 +204,7 @@
      "duracion": "03:30",
      "minimo": 67.67,
      "maximo": 139.27,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -311,7 +311,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -469,7 +469,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 124.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -572,7 +572,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -731,7 +731,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -856,7 +856,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -1007,7 +1007,7 @@
      "sale": "05:50",
      "llega": "08:55",
      "ref": 95.19,
-     "precio": 177.99,
+     "precio": 183.99,
      "llega_aprox": false,
      "etiqueta": "FR9877 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
@@ -1015,13 +1015,9 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-22 15:00",
-       207.39
-      ],
       [
        "2026-09-23 08:24",
        168.99
@@ -1097,9 +1093,13 @@
       [
        "2026-09-29 01:06",
        177.99
+      ],
+      [
+       "2026-09-29 01:22",
+       183.99
       ]
      ],
-     "variacion": 82.8
+     "variacion": 88.8
     },
     {
      "tipo": "tierra",
@@ -1131,7 +1131,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -1232,8 +1232,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 220.9,
-   "total_grupo": 441.8,
+   "total_persona": 226.9,
+   "total_grupo": 453.8,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1285,7 +1285,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -1356,7 +1356,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 114.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -1495,7 +1495,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -1611,7 +1611,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -1769,7 +1769,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 161.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -1836,7 +1836,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 172.84,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -2021,7 +2021,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2066,7 +2066,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -2251,7 +2251,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2287,7 +2287,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -2472,7 +2472,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2517,7 +2517,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-29 01:06",
+     "visto": "2026-09-29 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -2644,6 +2644,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-29 01:06",
- "actualizado_iso": "2026-09-29T01:06:39.601225+00:00"
+ "actualizado": "2026-09-29 01:22",
+ "actualizado_iso": "2026-09-29T01:22:15.861568+00:00"
 }
