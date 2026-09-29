@@ -39,7 +39,7 @@
      "sale": "20:20",
      "llega": "23:30",
      "ref": 124.99,
-     "precio": 89.99,
+     "precio": 99.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/KTW/2026-10-08/null/2/0/0/null",
@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 89.99,
      "maximo": 124.99,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -73,9 +73,13 @@
       [
        "2026-09-28 15:53",
        89.99
+      ],
+      [
+       "2026-09-29 04:35",
+       99.99
       ]
      ],
-     "variacion": -35.0
+     "variacion": -25.0
     },
     {
      "tipo": "vuelo",
@@ -98,7 +102,7 @@
      "duracion": "3:25",
      "minimo": 51.29,
      "maximo": 65.99,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -151,8 +155,8 @@
      "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
     }
    ],
-   "total_persona": 149.98,
-   "total_grupo": 299.96,
+   "total_persona": 159.98,
+   "total_grupo": 319.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:20",
    "ida_iata": "KTW",
@@ -204,7 +208,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -303,7 +307,7 @@
      "sale": "16:45",
      "llega": "20:23",
      "ref": 114.99,
-     "precio": 89.99,
+     "precio": 99.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
@@ -311,13 +315,9 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-29 03:33",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-15 04:48",
-       89.99
-      ],
       [
        "2026-09-16 04:24",
        99.99
@@ -393,9 +393,13 @@
       [
        "2026-09-28 15:54",
        89.99
+      ],
+      [
+       "2026-09-29 04:35",
+       99.99
       ]
      ],
-     "variacion": 20.0
+     "variacion": 30.0
     }
    ],
    "itinerario": [
@@ -416,8 +420,8 @@
      "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 156.74,
-   "total_grupo": 313.48,
+   "total_persona": 166.74,
+   "total_grupo": 333.48,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:10",
    "ida_iata": "GDN",
@@ -435,267 +439,6 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 238.81,
-   "dentro_presupuesto": true
-  },
-  {
-   "id": "gdansk",
-   "titulo": "Gdansk, sin moverse",
-   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
-   "paises": [
-    "Polonia"
-   ],
-   "noches": 3,
-   "por_que": "La única opción de entrar y salir por el mismo sitio sin coger ningún transporte entre aeropuertos. El casco viejo se hace a pie, Sopot y su playa están a 20 minutos en cercanías y el castillo de Malbork a 50.",
-   "aviso": "Está por encima del tope de 190 € por persona. Sales el jueves a las 21:10 y aterrizas a las 00:48, así que ganas el viernes y el sábado enteros.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "ALC",
-     "a": "GDN",
-     "de_nombre": "Alicante",
-     "a_nombre": "Gdansk",
-     "fecha": "2026-10-08",
-     "sale": "21:10",
-     "llega": "00:48",
-     "ref": 99.99,
-     "precio": 79.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
-     "plazas": 2,
-     "duracion": "3:38",
-     "minimo": 65.99,
-     "maximo": 124.99,
-     "visto": "2026-09-29 03:33",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-13 23:20",
-       99.99
-      ],
-      [
-       "2026-09-14 00:29",
-       114.99
-      ],
-      [
-       "2026-09-14 00:44",
-       99.99
-      ],
-      [
-       "2026-09-14 06:02",
-       79.99
-      ],
-      [
-       "2026-09-14 15:50",
-       89.99
-      ],
-      [
-       "2026-09-15 04:48",
-       79.99
-      ],
-      [
-       "2026-09-15 17:37",
-       89.99
-      ],
-      [
-       "2026-09-16 19:05",
-       99.99
-      ],
-      [
-       "2026-09-16 19:36",
-       114.99
-      ],
-      [
-       "2026-09-18 12:30",
-       99.99
-      ],
-      [
-       "2026-09-18 14:02",
-       114.99
-      ],
-      [
-       "2026-09-23 04:54",
-       124.99
-      ],
-      [
-       "2026-09-24 06:38",
-       114.99
-      ],
-      [
-       "2026-09-24 17:46",
-       79.99
-      ],
-      [
-       "2026-09-26 04:35",
-       89.99
-      ],
-      [
-       "2026-09-26 14:08",
-       79.99
-      ],
-      [
-       "2026-09-27 22:14",
-       89.99
-      ],
-      [
-       "2026-09-28 15:53",
-       65.99
-      ],
-      [
-       "2026-09-29 01:06",
-       79.99
-      ]
-     ],
-     "variacion": -20.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "GDN",
-     "a": "ALC",
-     "de_nombre": "Gdansk",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "16:45",
-     "llega": "20:23",
-     "ref": 69.99,
-     "precio": 89.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 2,
-     "duracion": "3:38",
-     "minimo": 65.99,
-     "maximo": 114.99,
-     "visto": "2026-09-29 03:33",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-15 04:48",
-       89.99
-      ],
-      [
-       "2026-09-16 04:24",
-       99.99
-      ],
-      [
-       "2026-09-16 04:55",
-       89.99
-      ],
-      [
-       "2026-09-16 17:33",
-       99.99
-      ],
-      [
-       "2026-09-18 12:30",
-       114.99
-      ],
-      [
-       "2026-09-22 10:09",
-       89.99
-      ],
-      [
-       "2026-09-22 15:01",
-       89.99
-      ],
-      [
-       "2026-09-23 08:24",
-       69.99
-      ],
-      [
-       "2026-09-24 04:26",
-       79.99
-      ],
-      [
-       "2026-09-24 06:39",
-       69.99
-      ],
-      [
-       "2026-09-24 20:52",
-       79.99
-      ],
-      [
-       "2026-09-25 16:15",
-       65.99
-      ],
-      [
-       "2026-09-25 20:25",
-       69.99
-      ],
-      [
-       "2026-09-26 04:51",
-       65.99
-      ],
-      [
-       "2026-09-26 12:52",
-       69.99
-      ],
-      [
-       "2026-09-26 21:17",
-       79.99
-      ],
-      [
-       "2026-09-27 05:33",
-       69.99
-      ],
-      [
-       "2026-09-27 11:07",
-       79.99
-      ],
-      [
-       "2026-09-27 16:41",
-       99.99
-      ],
-      [
-       "2026-09-28 15:54",
-       89.99
-      ]
-     ],
-     "variacion": 20.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 21:10; en Gdansk a las 00:48."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo en el casco viejo: Długi Targ, la grúa medieval y la basílica."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Sopot y su muelle (20 min en cercanías), o el castillo de Malbork (50 min)."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
-    }
-   ],
-   "total_persona": 169.98,
-   "total_grupo": 339.96,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "21:10",
-   "ida_iata": "GDN",
-   "ida_ciudad": "Gdansk",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "16:45",
-   "vuelta_llega": "20:23",
-   "vuelta_iata": "GDN",
-   "vuelta_ciudad": "Gdansk",
-   "horas_destino": 64,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 169.98,
    "dentro_presupuesto": true
   },
   {
@@ -731,7 +474,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -856,7 +599,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -983,6 +726,271 @@
    "dentro_presupuesto": true
   },
   {
+   "id": "gdansk",
+   "titulo": "Gdansk, sin moverse",
+   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
+   "paises": [
+    "Polonia"
+   ],
+   "noches": 3,
+   "por_que": "La única opción de entrar y salir por el mismo sitio sin coger ningún transporte entre aeropuertos. El casco viejo se hace a pie, Sopot y su playa están a 20 minutos en cercanías y el castillo de Malbork a 50.",
+   "aviso": "Está por encima del tope de 190 € por persona. Sales el jueves a las 21:10 y aterrizas a las 00:48, así que ganas el viernes y el sábado enteros.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "GDN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Gdansk",
+     "fecha": "2026-10-08",
+     "sale": "21:10",
+     "llega": "00:48",
+     "ref": 99.99,
+     "precio": 89.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
+     "plazas": 2,
+     "duracion": "3:38",
+     "minimo": 65.99,
+     "maximo": 124.99,
+     "visto": "2026-09-29 04:35",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-13 23:20",
+       99.99
+      ],
+      [
+       "2026-09-14 00:29",
+       114.99
+      ],
+      [
+       "2026-09-14 00:44",
+       99.99
+      ],
+      [
+       "2026-09-14 06:02",
+       79.99
+      ],
+      [
+       "2026-09-14 15:50",
+       89.99
+      ],
+      [
+       "2026-09-15 04:48",
+       79.99
+      ],
+      [
+       "2026-09-15 17:37",
+       89.99
+      ],
+      [
+       "2026-09-16 19:05",
+       99.99
+      ],
+      [
+       "2026-09-16 19:36",
+       114.99
+      ],
+      [
+       "2026-09-18 12:30",
+       99.99
+      ],
+      [
+       "2026-09-18 14:02",
+       114.99
+      ],
+      [
+       "2026-09-23 04:54",
+       124.99
+      ],
+      [
+       "2026-09-24 06:38",
+       114.99
+      ],
+      [
+       "2026-09-24 17:46",
+       79.99
+      ],
+      [
+       "2026-09-26 04:35",
+       89.99
+      ],
+      [
+       "2026-09-26 14:08",
+       79.99
+      ],
+      [
+       "2026-09-27 22:14",
+       89.99
+      ],
+      [
+       "2026-09-28 15:53",
+       65.99
+      ],
+      [
+       "2026-09-29 01:06",
+       79.99
+      ],
+      [
+       "2026-09-29 04:35",
+       89.99
+      ]
+     ],
+     "variacion": -10.0
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "GDN",
+     "a": "ALC",
+     "de_nombre": "Gdansk",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:45",
+     "llega": "20:23",
+     "ref": 69.99,
+     "precio": 99.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 2,
+     "duracion": "3:38",
+     "minimo": 65.99,
+     "maximo": 114.99,
+     "visto": "2026-09-29 04:35",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-16 04:24",
+       99.99
+      ],
+      [
+       "2026-09-16 04:55",
+       89.99
+      ],
+      [
+       "2026-09-16 17:33",
+       99.99
+      ],
+      [
+       "2026-09-18 12:30",
+       114.99
+      ],
+      [
+       "2026-09-22 10:09",
+       89.99
+      ],
+      [
+       "2026-09-22 15:01",
+       89.99
+      ],
+      [
+       "2026-09-23 08:24",
+       69.99
+      ],
+      [
+       "2026-09-24 04:26",
+       79.99
+      ],
+      [
+       "2026-09-24 06:39",
+       69.99
+      ],
+      [
+       "2026-09-24 20:52",
+       79.99
+      ],
+      [
+       "2026-09-25 16:15",
+       65.99
+      ],
+      [
+       "2026-09-25 20:25",
+       69.99
+      ],
+      [
+       "2026-09-26 04:51",
+       65.99
+      ],
+      [
+       "2026-09-26 12:52",
+       69.99
+      ],
+      [
+       "2026-09-26 21:17",
+       79.99
+      ],
+      [
+       "2026-09-27 05:33",
+       69.99
+      ],
+      [
+       "2026-09-27 11:07",
+       79.99
+      ],
+      [
+       "2026-09-27 16:41",
+       99.99
+      ],
+      [
+       "2026-09-28 15:54",
+       89.99
+      ],
+      [
+       "2026-09-29 04:35",
+       99.99
+      ]
+     ],
+     "variacion": 30.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 21:10; en Gdansk a las 00:48."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en el casco viejo: Długi Targ, la grúa medieval y la basílica."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Sopot y su muelle (20 min en cercanías), o el castillo de Malbork (50 min)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
+    }
+   ],
+   "total_persona": 189.98,
+   "total_grupo": 379.96,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "21:10",
+   "ida_iata": "GDN",
+   "ida_ciudad": "Gdansk",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "16:45",
+   "vuelta_llega": "20:23",
+   "vuelta_iata": "GDN",
+   "vuelta_ciudad": "Gdansk",
+   "horas_destino": 64,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 169.98,
+   "dentro_presupuesto": true
+  },
+  {
    "id": "wroclaw-praga",
    "titulo": "Wrocław + Praga",
    "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
@@ -1015,7 +1023,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-29 03:33",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -1131,7 +1139,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -1285,7 +1293,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -1348,15 +1356,15 @@
      "sale": "17:40",
      "llega": "20:20",
      "ref": 59.99,
-     "precio": 114.99,
+     "precio": 149.99,
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/OTP/ALC/2026-10-11/null/2/0/0/null",
      "plazas": 2,
      "duracion": "3:40",
      "minimo": 55.99,
-     "maximo": 114.99,
-     "visto": "2026-09-29 03:32",
+     "maximo": 149.99,
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -1418,9 +1426,13 @@
       [
        "2026-09-27 16:40",
        114.99
+      ],
+      [
+       "2026-09-29 04:35",
+       149.99
       ]
      ],
-     "variacion": 55.0
+     "variacion": 90.0
     }
    ],
    "itinerario": [
@@ -1441,8 +1453,8 @@
      "texto": "Mañana y comida en la ciudad; vuelo a las 17:40, en Alicante a las 20:20."
     }
    ],
-   "total_persona": 229.98,
-   "total_grupo": 459.96,
+   "total_persona": 264.98,
+   "total_grupo": 529.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "21:10",
    "ida_iata": "OTP",
@@ -1460,281 +1472,6 @@
    "llega_noche": true,
    "vuelve_lunes": false,
    "total_referencia": 184.98,
-   "dentro_presupuesto": false
-  },
-  {
-   "id": "viena-budapest",
-   "titulo": "Viena + Budapest",
-   "subtitulo": "Las dos capitales del Danubio",
-   "paises": [
-    "Austria",
-    "Hungría"
-   ],
-   "noches": 3,
-   "por_que": "Sale el jueves por la noche, así que ganas el viernes entero en Viena, y hay tren directo Viena-Budapest en 2h40.",
-   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1568",
-     "de": "ALC",
-     "a": "VIE",
-     "de_nombre": "Alicante",
-     "a_nombre": "Viena",
-     "fecha": "2026-10-08",
-     "sale": "20:15",
-     "llega": "23:00",
-     "ref": 96.19,
-     "precio": 129.59,
-     "llega_aprox": false,
-     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 3,
-     "duracion": "02:45",
-     "minimo": 95.19,
-     "maximo": 352.75,
-     "visto": "2026-09-29 03:32",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-22 23:46",
-       146.49
-      ],
-      [
-       "2026-09-23 08:24",
-       143.49
-      ],
-      [
-       "2026-09-23 19:46",
-       144.49
-      ],
-      [
-       "2026-09-24 03:24",
-       130.99
-      ],
-      [
-       "2026-09-24 06:38",
-       151.99
-      ],
-      [
-       "2026-09-24 19:33",
-       138.99
-      ],
-      [
-       "2026-09-24 19:49",
-       137.99
-      ],
-      [
-       "2026-09-25 06:26",
-       122.72
-      ],
-      [
-       "2026-09-26 03:32",
-       112.34
-      ],
-      [
-       "2026-09-26 07:18",
-       110.24
-      ],
-      [
-       "2026-09-26 17:47",
-       120.37
-      ],
-      [
-       "2026-09-27 05:33",
-       110.24
-      ],
-      [
-       "2026-09-27 16:40",
-       120.37
-      ],
-      [
-       "2026-09-28 03:47",
-       110.24
-      ],
-      [
-       "2026-09-28 06:24",
-       112.34
-      ],
-      [
-       "2026-09-28 09:21",
-       122.72
-      ],
-      [
-       "2026-09-28 16:23",
-       119.19
-      ],
-      [
-       "2026-09-28 20:51",
-       141.99
-      ],
-      [
-       "2026-09-28 21:07",
-       142.99
-      ],
-      [
-       "2026-09-29 03:17",
-       129.59
-      ]
-     ],
-     "variacion": 33.4
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Viena",
-     "a_nombre": "Budapest",
-     "como": "Tren Railjet directo (ÖBB / MÁV)",
-     "duracion": "2 h 40 min",
-     "coste": "20-30 €",
-     "cuando": "sábado 10 por la mañana"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "BUD",
-     "a": "ALC",
-     "de_nombre": "Budapest",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "05:15",
-     "llega": "08:30",
-     "ref": 59.99,
-     "precio": 124.99,
-     "llega_aprox": false,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
-     "duracion": "3:15",
-     "minimo": 54.89,
-     "maximo": 124.99,
-     "visto": "2026-09-29 03:33",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-03 19:44",
-       59.99
-      ],
-      [
-       "2026-09-08 18:08",
-       54.89
-      ],
-      [
-       "2026-09-09 08:40",
-       59.99
-      ],
-      [
-       "2026-09-09 18:13",
-       65.99
-      ],
-      [
-       "2026-09-11 07:53",
-       99.99
-      ],
-      [
-       "2026-09-12 19:08",
-       114.99
-      ],
-      [
-       "2026-09-12 20:10",
-       99.99
-      ],
-      [
-       "2026-09-16 05:10",
-       79.99
-      ],
-      [
-       "2026-09-16 21:09",
-       89.99
-      ],
-      [
-       "2026-09-19 10:45",
-       79.99
-      ],
-      [
-       "2026-09-19 18:30",
-       89.99
-      ],
-      [
-       "2026-09-20 07:17",
-       79.99
-      ],
-      [
-       "2026-09-21 09:40",
-       55.99
-      ],
-      [
-       "2026-09-22 04:27",
-       69.99
-      ],
-      [
-       "2026-09-22 10:08",
-       79.99
-      ],
-      [
-       "2026-09-22 15:01",
-       79.99
-      ],
-      [
-       "2026-09-26 05:22",
-       99.99
-      ],
-      [
-       "2026-09-27 05:33",
-       89.99
-      ],
-      [
-       "2026-09-27 16:40",
-       114.99
-      ],
-      [
-       "2026-09-28 15:53",
-       124.99
-      ]
-     ],
-     "variacion": 65.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo en Viena."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Tren a Budapest por la mañana. Día y noche allí."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
-    }
-   ],
-   "total_persona": 254.58,
-   "total_grupo": 509.16,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "20:15",
-   "ida_iata": "VIE",
-   "ida_ciudad": "Viena",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "05:15",
-   "vuelta_llega": "08:30",
-   "vuelta_iata": "BUD",
-   "vuelta_ciudad": "Budapest",
-   "horas_destino": 52,
-   "minutos_tierra": 160,
-   "saltos": 1,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 156.18,
    "dentro_presupuesto": false
   },
   {
@@ -1769,7 +1506,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 161.99,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -1836,7 +1573,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 172.84,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -2021,7 +1758,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2066,7 +1803,7 @@
      "duracion": "03:00",
      "minimo": 37.06,
      "maximo": 54.91,
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -2251,7 +1988,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2279,16 +2016,14 @@
      "sale": "05:15",
      "llega": "08:30",
      "ref": 59.99,
-     "precio": 124.99,
+     "precio": null,
      "llega_aprox": false,
-     "etiqueta": "W6",
+     "etiqueta": "sin plazas a la venta",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 3,
+     "plazas": 0,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-29 03:33",
-     "estado": "ok",
      "historico": [
       [
        "2026-09-03 19:44",
@@ -2371,6 +2106,10 @@
        124.99
       ]
      ],
+     "visto": "2026-09-29 04:35",
+     "ultimo_real": 124.99,
+     "ultimo_real_visto": "2026-09-29 04:19",
+     "estado": "sin_venta",
      "variacion": 65.0
     }
    ],
@@ -2472,7 +2211,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-29 03:32",
+     "visto": "2026-09-29 04:35",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2517,7 +2256,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-29 03:33",
+     "visto": "2026-09-29 04:35",
      "estado": "ok",
      "historico": [
       [
@@ -2642,8 +2381,285 @@
    "vuelve_lunes": true,
    "total_referencia": 148.98,
    "dentro_presupuesto": false
+  },
+  {
+   "id": "viena-budapest",
+   "titulo": "Viena + Budapest",
+   "subtitulo": "Las dos capitales del Danubio",
+   "paises": [
+    "Austria",
+    "Hungría"
+   ],
+   "noches": 3,
+   "por_que": "Sale el jueves por la noche, así que ganas el viernes entero en Viena, y hay tren directo Viena-Budapest en 2h40.",
+   "aviso": "El vuelo de vuelta sale de Budapest a las 05:15: hay que salir del hotel sobre las 03:00.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19,
+     "precio": 129.59,
+     "llega_aprox": false,
+     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
+     "plazas": 3,
+     "duracion": "02:45",
+     "minimo": 95.19,
+     "maximo": 352.75,
+     "visto": "2026-09-29 04:35",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-22 23:46",
+       146.49
+      ],
+      [
+       "2026-09-23 08:24",
+       143.49
+      ],
+      [
+       "2026-09-23 19:46",
+       144.49
+      ],
+      [
+       "2026-09-24 03:24",
+       130.99
+      ],
+      [
+       "2026-09-24 06:38",
+       151.99
+      ],
+      [
+       "2026-09-24 19:33",
+       138.99
+      ],
+      [
+       "2026-09-24 19:49",
+       137.99
+      ],
+      [
+       "2026-09-25 06:26",
+       122.72
+      ],
+      [
+       "2026-09-26 03:32",
+       112.34
+      ],
+      [
+       "2026-09-26 07:18",
+       110.24
+      ],
+      [
+       "2026-09-26 17:47",
+       120.37
+      ],
+      [
+       "2026-09-27 05:33",
+       110.24
+      ],
+      [
+       "2026-09-27 16:40",
+       120.37
+      ],
+      [
+       "2026-09-28 03:47",
+       110.24
+      ],
+      [
+       "2026-09-28 06:24",
+       112.34
+      ],
+      [
+       "2026-09-28 09:21",
+       122.72
+      ],
+      [
+       "2026-09-28 16:23",
+       119.19
+      ],
+      [
+       "2026-09-28 20:51",
+       141.99
+      ],
+      [
+       "2026-09-28 21:07",
+       142.99
+      ],
+      [
+       "2026-09-29 03:17",
+       129.59
+      ]
+     ],
+     "variacion": 33.4
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Budapest",
+     "como": "Tren Railjet directo (ÖBB / MÁV)",
+     "duracion": "2 h 40 min",
+     "coste": "20-30 €",
+     "cuando": "sábado 10 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "BUD",
+     "a": "ALC",
+     "de_nombre": "Budapest",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "05:15",
+     "llega": "08:30",
+     "ref": 59.99,
+     "precio": null,
+     "llega_aprox": false,
+     "etiqueta": "sin plazas a la venta",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 0,
+     "duracion": "3:15",
+     "minimo": 54.89,
+     "maximo": 124.99,
+     "historico": [
+      [
+       "2026-09-03 19:44",
+       59.99
+      ],
+      [
+       "2026-09-08 18:08",
+       54.89
+      ],
+      [
+       "2026-09-09 08:40",
+       59.99
+      ],
+      [
+       "2026-09-09 18:13",
+       65.99
+      ],
+      [
+       "2026-09-11 07:53",
+       99.99
+      ],
+      [
+       "2026-09-12 19:08",
+       114.99
+      ],
+      [
+       "2026-09-12 20:10",
+       99.99
+      ],
+      [
+       "2026-09-16 05:10",
+       79.99
+      ],
+      [
+       "2026-09-16 21:09",
+       89.99
+      ],
+      [
+       "2026-09-19 10:45",
+       79.99
+      ],
+      [
+       "2026-09-19 18:30",
+       89.99
+      ],
+      [
+       "2026-09-20 07:17",
+       79.99
+      ],
+      [
+       "2026-09-21 09:40",
+       55.99
+      ],
+      [
+       "2026-09-22 04:27",
+       69.99
+      ],
+      [
+       "2026-09-22 10:08",
+       79.99
+      ],
+      [
+       "2026-09-22 15:01",
+       79.99
+      ],
+      [
+       "2026-09-26 05:22",
+       99.99
+      ],
+      [
+       "2026-09-27 05:33",
+       89.99
+      ],
+      [
+       "2026-09-27 16:40",
+       114.99
+      ],
+      [
+       "2026-09-28 15:53",
+       124.99
+      ]
+     ],
+     "visto": "2026-09-29 04:35",
+     "ultimo_real": 124.99,
+     "ultimo_real_visto": "2026-09-29 04:19",
+     "estado": "sin_venta",
+     "variacion": 65.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Tren a Budapest por la mañana. Día y noche allí."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
+    }
+   ],
+   "total_persona": null,
+   "total_grupo": null,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:15",
+   "ida_iata": "VIE",
+   "ida_ciudad": "Viena",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "05:15",
+   "vuelta_llega": "08:30",
+   "vuelta_iata": "BUD",
+   "vuelta_ciudad": "Budapest",
+   "horas_destino": 52,
+   "minutos_tierra": 160,
+   "saltos": 1,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 156.18,
+   "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-29 03:33",
- "actualizado_iso": "2026-09-29T03:33:06.870092+00:00"
+ "actualizado": "2026-09-29 04:35",
+ "actualizado_iso": "2026-09-29T04:35:35.198176+00:00"
 }
