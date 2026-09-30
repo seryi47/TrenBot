@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -106,7 +106,7 @@
      "sale": "05:30",
      "llega": "08:55",
      "ref": 65.99,
-     "precio": 45.89,
+     "precio": 51.29,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
@@ -114,7 +114,7 @@
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -152,9 +152,13 @@
       [
        "2026-09-30 01:17",
        45.89
+      ],
+      [
+       "2026-09-30 14:12",
+       51.29
       ]
      ],
-     "variacion": -20.1
+     "variacion": -14.7
     }
    ],
    "itinerario": [
@@ -175,8 +179,8 @@
      "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
     }
    ],
-   "total_persona": 145.88,
-   "total_grupo": 291.76,
+   "total_persona": 151.28,
+   "total_grupo": 302.56,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:20",
    "ida_iata": "KTW",
@@ -228,7 +232,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 124.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -335,7 +339,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -493,7 +497,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -600,7 +604,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -759,7 +763,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -867,7 +871,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 37.93,
+     "precio": 36.0,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -875,13 +879,9 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-25 14:05",
-       43.98
-      ],
       [
        "2026-09-25 16:00",
        44.08
@@ -957,9 +957,13 @@
       [
        "2026-09-30 12:24",
        37.93
+      ],
+      [
+       "2026-09-30 14:12",
+       36.0
       ]
      ],
-     "variacion": -12.96
+     "variacion": -14.89
     }
    ],
    "itinerario": [
@@ -976,8 +980,8 @@
      "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
     }
    ],
-   "total_persona": 204.92,
-   "total_grupo": 409.84,
+   "total_persona": 202.99,
+   "total_grupo": 405.98,
    "ida_fecha": "2026-10-09",
    "ida_hora": "05:50",
    "ida_iata": "WRO",
@@ -1030,7 +1034,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -1147,7 +1151,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 37.93,
+     "precio": 36.0,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -1155,13 +1159,9 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-25 14:05",
-       43.98
-      ],
       [
        "2026-09-25 16:00",
        44.08
@@ -1237,9 +1237,13 @@
       [
        "2026-09-30 12:24",
        37.93
+      ],
+      [
+       "2026-09-30 14:12",
+       36.0
       ]
      ],
-     "variacion": -12.96
+     "variacion": -14.89
     }
    ],
    "itinerario": [
@@ -1260,8 +1264,8 @@
      "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
     }
    ],
-   "total_persona": 216.92,
-   "total_grupo": 433.84,
+   "total_persona": 214.99,
+   "total_grupo": 429.98,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1313,7 +1317,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -1392,7 +1396,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -1539,7 +1543,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -1655,7 +1659,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -1813,7 +1817,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 162.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -1884,7 +1888,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 199.19,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -2069,7 +2073,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2106,7 +2110,7 @@
      "sale": "22:00",
      "llega": "01:00",
      "ref": 50.89,
-     "precio": 37.93,
+     "precio": 36.0,
      "llega_aprox": false,
      "etiqueta": "FR1495 · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
@@ -2114,13 +2118,9 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-25 14:05",
-       43.98
-      ],
       [
        "2026-09-25 16:00",
        44.08
@@ -2196,9 +2196,13 @@
       [
        "2026-09-30 12:24",
        37.93
+      ],
+      [
+       "2026-09-30 14:12",
+       36.0
       ]
      ],
-     "variacion": -12.96
+     "variacion": -14.89
     }
    ],
    "itinerario": [
@@ -2299,7 +2303,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2335,7 +2339,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
       [
@@ -2520,7 +2524,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2557,7 +2561,7 @@
      "sale": "11:45",
      "llega": "14:25",
      "ref": 82.99,
-     "precio": 110.99,
+     "precio": 109.99,
      "llega_aprox": false,
      "etiqueta": "FR3487 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-12&isConnectedFlight=false&discount=0&isReturn=false&originIata=LNZ&destinationIata=ALC",
@@ -2565,13 +2569,9 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-30 13:41",
+     "visto": "2026-09-30 14:12",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-25 14:05",
-       141.99
-      ],
       [
        "2026-09-25 14:20",
        152.99
@@ -2647,9 +2647,13 @@
       [
        "2026-09-30 12:25",
        110.99
+      ],
+      [
+       "2026-09-30 14:12",
+       109.99
       ]
      ],
-     "variacion": 28.0
+     "variacion": 27.0
     }
    ],
    "itinerario": [
@@ -2692,6 +2696,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-30 13:41",
- "actualizado_iso": "2026-09-30T13:41:25.048642+00:00"
+ "actualizado": "2026-09-30 14:12",
+ "actualizado_iso": "2026-09-30T14:12:47.957428+00:00"
 }
