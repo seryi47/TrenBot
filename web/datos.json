@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 79.99,
      "maximo": 124.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
       [
@@ -106,7 +106,7 @@
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
       [
@@ -212,7 +212,7 @@
      "sale": "20:10",
      "llega": "23:40",
      "ref": 123.82,
-     "precio": 83.69,
+     "precio": 73.69,
      "llega_aprox": false,
      "etiqueta": "FR1426 (Buzz) · 2 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=GDN",
@@ -220,13 +220,9 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-23 19:46",
-       139.27
-      ],
       [
        "2026-09-24 03:24",
        126.65
@@ -302,9 +298,13 @@
       [
        "2026-09-29 21:16",
        83.69
+      ],
+      [
+       "2026-09-30 03:20",
+       73.69
       ]
      ],
-     "variacion": -40.13
+     "variacion": -50.13
     },
     {
      "tipo": "vuelo",
@@ -327,7 +327,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -432,8 +432,8 @@
      "texto": "Mañana libre y vuelo Wizz a las 16:45; en Alicante a las 20:23."
     }
    ],
-   "total_persona": 183.68,
-   "total_grupo": 367.36,
+   "total_persona": 173.68,
+   "total_grupo": 347.36,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:10",
    "ida_iata": "GDN",
@@ -485,7 +485,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 124.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -592,7 +592,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -719,6 +719,561 @@
    "dentro_presupuesto": false
   },
   {
+   "id": "viena-praga",
+   "titulo": "Viena + Praga",
+   "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
+   "paises": [
+    "Austria",
+    "República Checa"
+   ],
+   "noches": 3,
+   "por_que": "La única de Centroeuropa que usa tu franja del jueves a las 20:15. Praga no tiene vuelo directo con Alicante; Pardubice sí, y está a 1 h de tren.",
+   "aviso": "El vuelo de vuelta sale el domingo a las 22:00 y aterriza en Alicante a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1568",
+     "de": "ALC",
+     "a": "VIE",
+     "de_nombre": "Alicante",
+     "a_nombre": "Viena",
+     "fecha": "2026-10-08",
+     "sale": "20:15",
+     "llega": "23:00",
+     "ref": 96.19,
+     "precio": 178.99,
+     "llega_aprox": false,
+     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
+     "plazas": 3,
+     "duracion": "02:45",
+     "minimo": 95.19,
+     "maximo": 352.75,
+     "visto": "2026-09-30 03:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-24 19:49",
+       137.99
+      ],
+      [
+       "2026-09-25 06:26",
+       122.72
+      ],
+      [
+       "2026-09-26 03:32",
+       112.34
+      ],
+      [
+       "2026-09-26 07:18",
+       110.24
+      ],
+      [
+       "2026-09-26 17:47",
+       120.37
+      ],
+      [
+       "2026-09-27 05:33",
+       110.24
+      ],
+      [
+       "2026-09-27 16:40",
+       120.37
+      ],
+      [
+       "2026-09-28 03:47",
+       110.24
+      ],
+      [
+       "2026-09-28 06:24",
+       112.34
+      ],
+      [
+       "2026-09-28 09:21",
+       122.72
+      ],
+      [
+       "2026-09-28 16:23",
+       119.19
+      ],
+      [
+       "2026-09-28 20:51",
+       141.99
+      ],
+      [
+       "2026-09-28 21:07",
+       142.99
+      ],
+      [
+       "2026-09-29 03:17",
+       129.59
+      ],
+      [
+       "2026-09-29 06:24",
+       163.19
+      ],
+      [
+       "2026-09-29 08:51",
+       178.99
+      ],
+      [
+       "2026-09-29 17:15",
+       214.79
+      ],
+      [
+       "2026-09-29 21:00",
+       213.79
+      ],
+      [
+       "2026-09-29 21:16",
+       214.79
+      ],
+      [
+       "2026-09-30 03:21",
+       178.99
+      ]
+     ],
+     "variacion": 82.8
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Viena",
+     "a_nombre": "Praga",
+     "como": "Tren Railjet directo (ÖBB / ČD)",
+     "duracion": "4 h",
+     "coste": "20-35 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Praga",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo (ČD / RegioJet)",
+     "duracion": "1 h",
+     "coste": "5-10 €",
+     "cuando": "domingo 11 por la tarde"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89,
+     "precio": 35.93,
+     "llega_aprox": false,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "duracion": "03:00",
+     "minimo": 35.93,
+     "maximo": 54.91,
+     "visto": "2026-09-30 03:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-24 18:15",
+       47.98
+      ],
+      [
+       "2026-09-25 07:29",
+       45.98
+      ],
+      [
+       "2026-09-25 14:05",
+       43.98
+      ],
+      [
+       "2026-09-25 16:00",
+       44.08
+      ],
+      [
+       "2026-09-25 18:05",
+       43.07
+      ],
+      [
+       "2026-09-26 07:18",
+       41.07
+      ],
+      [
+       "2026-09-26 12:52",
+       43.07
+      ],
+      [
+       "2026-09-26 14:08",
+       42.07
+      ],
+      [
+       "2026-09-26 18:25",
+       41.07
+      ],
+      [
+       "2026-09-27 11:06",
+       39.07
+      ],
+      [
+       "2026-09-27 16:40",
+       37.06
+      ],
+      [
+       "2026-09-27 16:55",
+       44.08
+      ],
+      [
+       "2026-09-27 18:45",
+       46.08
+      ],
+      [
+       "2026-09-28 09:21",
+       44.08
+      ],
+      [
+       "2026-09-28 14:17",
+       42.0
+      ],
+      [
+       "2026-09-28 15:53",
+       42.91
+      ],
+      [
+       "2026-09-29 08:35",
+       40.91
+      ],
+      [
+       "2026-09-29 11:58",
+       38.95
+      ],
+      [
+       "2026-09-29 14:09",
+       36.93
+      ],
+      [
+       "2026-09-29 18:18",
+       35.93
+      ]
+     ],
+     "variacion": -14.96
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en Viena."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Viena, o tren a Praga por la mañana si prefieres más Chequia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
+    }
+   ],
+   "total_persona": 214.92,
+   "total_grupo": 429.84,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "20:15",
+   "ida_iata": "VIE",
+   "ida_ciudad": "Viena",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:00",
+   "vuelta_llega": "01:00",
+   "vuelta_iata": "PED",
+   "vuelta_ciudad": "Pardubice",
+   "horas_destino": 66,
+   "minutos_tierra": 300,
+   "saltos": 2,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 147.08,
+   "dentro_presupuesto": false
+  },
+  {
+   "id": "wroclaw-praga",
+   "titulo": "Wrocław + Praga",
+   "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
+   "paises": [
+    "Polonia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "El Baltic Express une Wrocław y Pardubice en tren directo en 2h50 por unos 19 €, y de Pardubice a Praga hay 1 h. Te deja 58 horas en destino.",
+   "aviso": "El vuelo de ida sale a las 05:50 de la mañana, y el de vuelta aterriza a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9877",
+     "de": "ALC",
+     "a": "WRO",
+     "de_nombre": "Alicante",
+     "a_nombre": "Wrocław",
+     "fecha": "2026-10-09",
+     "sale": "05:50",
+     "llega": "08:55",
+     "ref": 95.19,
+     "precio": 180.49,
+     "llega_aprox": false,
+     "etiqueta": "FR9877 · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
+     "plazas": 3,
+     "duracion": "03:05",
+     "minimo": 92.19,
+     "maximo": 278.69,
+     "visto": "2026-09-30 03:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-26 07:18",
+       120.37
+      ],
+      [
+       "2026-09-26 08:35",
+       129.99
+      ],
+      [
+       "2026-09-26 12:52",
+       143.99
+      ],
+      [
+       "2026-09-27 11:06",
+       162.19
+      ],
+      [
+       "2026-09-28 03:48",
+       147.39
+      ],
+      [
+       "2026-09-28 09:21",
+       162.19
+      ],
+      [
+       "2026-09-28 15:53",
+       167.79
+      ],
+      [
+       "2026-09-28 16:23",
+       183.99
+      ],
+      [
+       "2026-09-29 00:04",
+       177.99
+      ],
+      [
+       "2026-09-29 00:19",
+       183.99
+      ],
+      [
+       "2026-09-29 00:35",
+       177.99
+      ],
+      [
+       "2026-09-29 00:50",
+       183.99
+      ],
+      [
+       "2026-09-29 01:06",
+       177.99
+      ],
+      [
+       "2026-09-29 06:24",
+       174.99
+      ],
+      [
+       "2026-09-29 08:51",
+       210.59
+      ],
+      [
+       "2026-09-29 19:43",
+       211.59
+      ],
+      [
+       "2026-09-30 01:17",
+       216.39
+      ],
+      [
+       "2026-09-30 02:34",
+       211.59
+      ],
+      [
+       "2026-09-30 02:49",
+       216.39
+      ],
+      [
+       "2026-09-30 03:21",
+       180.49
+      ]
+     ],
+     "variacion": 85.3
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Wrocław",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo Baltic Express (4 al día)",
+     "duracion": "2 h 50 min",
+     "coste": "19 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89,
+     "precio": 35.93,
+     "llega_aprox": false,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "duracion": "03:00",
+     "minimo": 35.93,
+     "maximo": 54.91,
+     "visto": "2026-09-30 03:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-24 18:15",
+       47.98
+      ],
+      [
+       "2026-09-25 07:29",
+       45.98
+      ],
+      [
+       "2026-09-25 14:05",
+       43.98
+      ],
+      [
+       "2026-09-25 16:00",
+       44.08
+      ],
+      [
+       "2026-09-25 18:05",
+       43.07
+      ],
+      [
+       "2026-09-26 07:18",
+       41.07
+      ],
+      [
+       "2026-09-26 12:52",
+       43.07
+      ],
+      [
+       "2026-09-26 14:08",
+       42.07
+      ],
+      [
+       "2026-09-26 18:25",
+       41.07
+      ],
+      [
+       "2026-09-27 11:06",
+       39.07
+      ],
+      [
+       "2026-09-27 16:40",
+       37.06
+      ],
+      [
+       "2026-09-27 16:55",
+       44.08
+      ],
+      [
+       "2026-09-27 18:45",
+       46.08
+      ],
+      [
+       "2026-09-28 09:21",
+       44.08
+      ],
+      [
+       "2026-09-28 14:17",
+       42.0
+      ],
+      [
+       "2026-09-28 15:53",
+       42.91
+      ],
+      [
+       "2026-09-29 08:35",
+       40.91
+      ],
+      [
+       "2026-09-29 11:58",
+       38.95
+      ],
+      [
+       "2026-09-29 14:09",
+       36.93
+      ],
+      [
+       "2026-09-29 18:18",
+       35.93
+      ]
+     ],
+     "variacion": -14.96
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de madrugada; en Wrocław a las 08:55 con el día entero por delante."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Wrocław, una de las ciudades más bonitas de Polonia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
+    }
+   ],
+   "total_persona": 216.42,
+   "total_grupo": 432.84,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "05:50",
+   "ida_iata": "WRO",
+   "ida_ciudad": "Wrocław",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:00",
+   "vuelta_llega": "01:00",
+   "vuelta_iata": "PED",
+   "vuelta_ciudad": "Pardubice",
+   "horas_destino": 58,
+   "minutos_tierra": 170,
+   "saltos": 1,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 146.08,
+   "dentro_presupuesto": false
+  },
+  {
    "id": "bucarest",
    "titulo": "Bucarest, sin moverse",
    "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
@@ -750,7 +1305,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
       [
@@ -825,7 +1380,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
       [
@@ -940,561 +1495,6 @@
    "dentro_presupuesto": false
   },
   {
-   "id": "viena-praga",
-   "titulo": "Viena + Praga",
-   "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
-   "paises": [
-    "Austria",
-    "República Checa"
-   ],
-   "noches": 3,
-   "por_que": "La única de Centroeuropa que usa tu franja del jueves a las 20:15. Praga no tiene vuelo directo con Alicante; Pardubice sí, y está a 1 h de tren.",
-   "aviso": "El vuelo de vuelta sale el domingo a las 22:00 y aterriza en Alicante a la 01:00 del lunes.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1568",
-     "de": "ALC",
-     "a": "VIE",
-     "de_nombre": "Alicante",
-     "a_nombre": "Viena",
-     "fecha": "2026-10-08",
-     "sale": "20:15",
-     "llega": "23:00",
-     "ref": 96.19,
-     "precio": 214.79,
-     "llega_aprox": false,
-     "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
-     "plazas": 3,
-     "duracion": "02:45",
-     "minimo": 95.19,
-     "maximo": 352.75,
-     "visto": "2026-09-30 02:49",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-24 19:33",
-       138.99
-      ],
-      [
-       "2026-09-24 19:49",
-       137.99
-      ],
-      [
-       "2026-09-25 06:26",
-       122.72
-      ],
-      [
-       "2026-09-26 03:32",
-       112.34
-      ],
-      [
-       "2026-09-26 07:18",
-       110.24
-      ],
-      [
-       "2026-09-26 17:47",
-       120.37
-      ],
-      [
-       "2026-09-27 05:33",
-       110.24
-      ],
-      [
-       "2026-09-27 16:40",
-       120.37
-      ],
-      [
-       "2026-09-28 03:47",
-       110.24
-      ],
-      [
-       "2026-09-28 06:24",
-       112.34
-      ],
-      [
-       "2026-09-28 09:21",
-       122.72
-      ],
-      [
-       "2026-09-28 16:23",
-       119.19
-      ],
-      [
-       "2026-09-28 20:51",
-       141.99
-      ],
-      [
-       "2026-09-28 21:07",
-       142.99
-      ],
-      [
-       "2026-09-29 03:17",
-       129.59
-      ],
-      [
-       "2026-09-29 06:24",
-       163.19
-      ],
-      [
-       "2026-09-29 08:51",
-       178.99
-      ],
-      [
-       "2026-09-29 17:15",
-       214.79
-      ],
-      [
-       "2026-09-29 21:00",
-       213.79
-      ],
-      [
-       "2026-09-29 21:16",
-       214.79
-      ]
-     ],
-     "variacion": 118.6
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Viena",
-     "a_nombre": "Praga",
-     "como": "Tren Railjet directo (ÖBB / ČD)",
-     "duracion": "4 h",
-     "coste": "20-35 €",
-     "cuando": "domingo 11 por la mañana"
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Praga",
-     "a_nombre": "Pardubice",
-     "como": "Tren directo (ČD / RegioJet)",
-     "duracion": "1 h",
-     "coste": "5-10 €",
-     "cuando": "domingo 11 por la tarde"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1495",
-     "de": "PED",
-     "a": "ALC",
-     "de_nombre": "Pardubice",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "22:00",
-     "llega": "01:00",
-     "ref": 50.89,
-     "precio": 35.93,
-     "llega_aprox": false,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
-     "duracion": "03:00",
-     "minimo": 35.93,
-     "maximo": 54.91,
-     "visto": "2026-09-30 02:49",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-24 18:15",
-       47.98
-      ],
-      [
-       "2026-09-25 07:29",
-       45.98
-      ],
-      [
-       "2026-09-25 14:05",
-       43.98
-      ],
-      [
-       "2026-09-25 16:00",
-       44.08
-      ],
-      [
-       "2026-09-25 18:05",
-       43.07
-      ],
-      [
-       "2026-09-26 07:18",
-       41.07
-      ],
-      [
-       "2026-09-26 12:52",
-       43.07
-      ],
-      [
-       "2026-09-26 14:08",
-       42.07
-      ],
-      [
-       "2026-09-26 18:25",
-       41.07
-      ],
-      [
-       "2026-09-27 11:06",
-       39.07
-      ],
-      [
-       "2026-09-27 16:40",
-       37.06
-      ],
-      [
-       "2026-09-27 16:55",
-       44.08
-      ],
-      [
-       "2026-09-27 18:45",
-       46.08
-      ],
-      [
-       "2026-09-28 09:21",
-       44.08
-      ],
-      [
-       "2026-09-28 14:17",
-       42.0
-      ],
-      [
-       "2026-09-28 15:53",
-       42.91
-      ],
-      [
-       "2026-09-29 08:35",
-       40.91
-      ],
-      [
-       "2026-09-29 11:58",
-       38.95
-      ],
-      [
-       "2026-09-29 14:09",
-       36.93
-      ],
-      [
-       "2026-09-29 18:18",
-       35.93
-      ]
-     ],
-     "variacion": -14.96
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 20:15; en Viena a las 23:00."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo en Viena."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Segundo día en Viena, o tren a Praga por la mañana si prefieres más Chequia."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Tren a Praga (4h), día allí, tren a Pardubice (1h) y vuelo a las 22:00."
-    }
-   ],
-   "total_persona": 250.72,
-   "total_grupo": 501.44,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "20:15",
-   "ida_iata": "VIE",
-   "ida_ciudad": "Viena",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "22:00",
-   "vuelta_llega": "01:00",
-   "vuelta_iata": "PED",
-   "vuelta_ciudad": "Pardubice",
-   "horas_destino": 66,
-   "minutos_tierra": 300,
-   "saltos": 2,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 147.08,
-   "dentro_presupuesto": false
-  },
-  {
-   "id": "wroclaw-praga",
-   "titulo": "Wrocław + Praga",
-   "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
-   "paises": [
-    "Polonia",
-    "República Checa"
-   ],
-   "noches": 2,
-   "por_que": "El Baltic Express une Wrocław y Pardubice en tren directo en 2h50 por unos 19 €, y de Pardubice a Praga hay 1 h. Te deja 58 horas en destino.",
-   "aviso": "El vuelo de ida sale a las 05:50 de la mañana, y el de vuelta aterriza a la 01:00 del lunes.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR9877",
-     "de": "ALC",
-     "a": "WRO",
-     "de_nombre": "Alicante",
-     "a_nombre": "Wrocław",
-     "fecha": "2026-10-09",
-     "sale": "05:50",
-     "llega": "08:55",
-     "ref": 95.19,
-     "precio": 216.39,
-     "llega_aprox": false,
-     "etiqueta": "FR9877 · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": 3,
-     "duracion": "03:05",
-     "minimo": 92.19,
-     "maximo": 278.69,
-     "visto": "2026-09-30 02:49",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-25 20:11",
-       125.99
-      ],
-      [
-       "2026-09-26 07:18",
-       120.37
-      ],
-      [
-       "2026-09-26 08:35",
-       129.99
-      ],
-      [
-       "2026-09-26 12:52",
-       143.99
-      ],
-      [
-       "2026-09-27 11:06",
-       162.19
-      ],
-      [
-       "2026-09-28 03:48",
-       147.39
-      ],
-      [
-       "2026-09-28 09:21",
-       162.19
-      ],
-      [
-       "2026-09-28 15:53",
-       167.79
-      ],
-      [
-       "2026-09-28 16:23",
-       183.99
-      ],
-      [
-       "2026-09-29 00:04",
-       177.99
-      ],
-      [
-       "2026-09-29 00:19",
-       183.99
-      ],
-      [
-       "2026-09-29 00:35",
-       177.99
-      ],
-      [
-       "2026-09-29 00:50",
-       183.99
-      ],
-      [
-       "2026-09-29 01:06",
-       177.99
-      ],
-      [
-       "2026-09-29 06:24",
-       174.99
-      ],
-      [
-       "2026-09-29 08:51",
-       210.59
-      ],
-      [
-       "2026-09-29 19:43",
-       211.59
-      ],
-      [
-       "2026-09-30 01:17",
-       216.39
-      ],
-      [
-       "2026-09-30 02:34",
-       211.59
-      ],
-      [
-       "2026-09-30 02:49",
-       216.39
-      ]
-     ],
-     "variacion": 121.2
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Wrocław",
-     "a_nombre": "Pardubice",
-     "como": "Tren directo Baltic Express (4 al día)",
-     "duracion": "2 h 50 min",
-     "coste": "19 €",
-     "cuando": "domingo 11 por la mañana"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1495",
-     "de": "PED",
-     "a": "ALC",
-     "de_nombre": "Pardubice",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "22:00",
-     "llega": "01:00",
-     "ref": 50.89,
-     "precio": 35.93,
-     "llega_aprox": false,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
-     "duracion": "03:00",
-     "minimo": 35.93,
-     "maximo": 54.91,
-     "visto": "2026-09-30 02:49",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-24 18:15",
-       47.98
-      ],
-      [
-       "2026-09-25 07:29",
-       45.98
-      ],
-      [
-       "2026-09-25 14:05",
-       43.98
-      ],
-      [
-       "2026-09-25 16:00",
-       44.08
-      ],
-      [
-       "2026-09-25 18:05",
-       43.07
-      ],
-      [
-       "2026-09-26 07:18",
-       41.07
-      ],
-      [
-       "2026-09-26 12:52",
-       43.07
-      ],
-      [
-       "2026-09-26 14:08",
-       42.07
-      ],
-      [
-       "2026-09-26 18:25",
-       41.07
-      ],
-      [
-       "2026-09-27 11:06",
-       39.07
-      ],
-      [
-       "2026-09-27 16:40",
-       37.06
-      ],
-      [
-       "2026-09-27 16:55",
-       44.08
-      ],
-      [
-       "2026-09-27 18:45",
-       46.08
-      ],
-      [
-       "2026-09-28 09:21",
-       44.08
-      ],
-      [
-       "2026-09-28 14:17",
-       42.0
-      ],
-      [
-       "2026-09-28 15:53",
-       42.91
-      ],
-      [
-       "2026-09-29 08:35",
-       40.91
-      ],
-      [
-       "2026-09-29 11:58",
-       38.95
-      ],
-      [
-       "2026-09-29 14:09",
-       36.93
-      ],
-      [
-       "2026-09-29 18:18",
-       35.93
-      ]
-     ],
-     "variacion": -14.96
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Viernes 9",
-     "texto": "Vuelo de madrugada; en Wrocław a las 08:55 con el día entero por delante."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Segundo día en Wrocław, una de las ciudades más bonitas de Polonia."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
-    }
-   ],
-   "total_persona": 252.32,
-   "total_grupo": 504.64,
-   "ida_fecha": "2026-10-09",
-   "ida_hora": "05:50",
-   "ida_iata": "WRO",
-   "ida_ciudad": "Wrocław",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "22:00",
-   "vuelta_llega": "01:00",
-   "vuelta_iata": "PED",
-   "vuelta_ciudad": "Pardubice",
-   "horas_destino": 58,
-   "minutos_tierra": 170,
-   "saltos": 1,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 146.08,
-   "dentro_presupuesto": false
-  },
-  {
    "id": "viena-budapest",
    "titulo": "Viena + Budapest",
    "subtitulo": "Las dos capitales del Danubio",
@@ -1519,7 +1519,7 @@
      "sale": "20:15",
      "llega": "23:00",
      "ref": 96.19,
-     "precio": 214.79,
+     "precio": 178.99,
      "llega_aprox": false,
      "etiqueta": "FR1568 (Lauda Europe) · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=VIE",
@@ -1527,13 +1527,9 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-24 19:33",
-       138.99
-      ],
       [
        "2026-09-24 19:49",
        137.99
@@ -1609,9 +1605,13 @@
       [
        "2026-09-29 21:16",
        214.79
+      ],
+      [
+       "2026-09-30 03:21",
+       178.99
       ]
      ],
-     "variacion": 118.6
+     "variacion": 82.8
     },
     {
      "tipo": "tierra",
@@ -1643,7 +1643,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -1748,8 +1748,8 @@
      "texto": "Vuelo a las 05:15 y en Alicante a las 08:30."
     }
    ],
-   "total_persona": 329.78,
-   "total_grupo": 659.56,
+   "total_persona": 293.98,
+   "total_grupo": 587.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:15",
    "ida_iata": "VIE",
@@ -1801,7 +1801,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 162.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
       [
@@ -1872,7 +1872,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 172.84,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:20",
      "estado": "ok",
      "historico": [
       [
@@ -2057,7 +2057,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2102,7 +2102,7 @@
      "duracion": "03:00",
      "minimo": 35.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -2287,7 +2287,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2323,7 +2323,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -2508,7 +2508,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2553,7 +2553,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-30 02:49",
+     "visto": "2026-09-30 03:21",
      "estado": "ok",
      "historico": [
       [
@@ -2680,6 +2680,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-30 02:49",
- "actualizado_iso": "2026-09-30T02:49:51.593145+00:00"
+ "actualizado": "2026-09-30 03:21",
+ "actualizado_iso": "2026-09-30T03:21:12.176241+00:00"
 }
