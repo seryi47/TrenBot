@@ -47,7 +47,7 @@
      "duracion": "3:38",
      "minimo": 60.29,
      "maximo": 124.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -154,7 +154,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -313,7 +313,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -438,7 +438,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -596,7 +596,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -703,7 +703,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -862,7 +862,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -978,7 +978,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -1132,7 +1132,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -1211,7 +1211,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -1366,7 +1366,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -1482,7 +1482,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -1640,7 +1640,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 197.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -1715,21 +1715,17 @@
      "sale": "22:25",
      "llega": "00:45",
      "ref": 75.09,
-     "precio": 198.19,
+     "precio": 217.39,
      "llega_aprox": false,
-     "etiqueta": "FR6235 · 2 plazas",
+     "etiqueta": "FR6235 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=SOF&destinationIata=ALC",
-     "plazas": 2,
+     "plazas": 4,
      "duracion": "03:20",
      "minimo": 75.09,
-     "maximo": 199.19,
-     "visto": "2026-10-01 19:20",
+     "maximo": 217.39,
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
-      [
-       "2026-09-24 13:29",
-       118.24
-      ],
       [
        "2026-09-24 20:51",
        129.37
@@ -1805,9 +1801,13 @@
       [
        "2026-10-01 16:12",
        198.19
+      ],
+      [
+       "2026-10-01 19:51",
+       217.39
       ]
      ],
-     "variacion": 123.1
+     "variacion": 142.3
     }
    ],
    "itinerario": [
@@ -1824,8 +1824,8 @@
      "texto": "Día completo en la ciudad; vuelo a las 22:25, en Alicante a las 00:45."
     }
    ],
-   "total_persona": 396.18,
-   "total_grupo": 792.36,
+   "total_persona": 415.38,
+   "total_grupo": 830.76,
    "ida_fecha": "2026-10-09",
    "ida_hora": "08:30",
    "ida_iata": "SOF",
@@ -1931,7 +1931,7 @@
        89.99
       ]
      ],
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "ultimo_real": 89.99,
      "ultimo_real_visto": "2026-10-01 18:48",
      "estado": "sin_venta",
@@ -1958,7 +1958,7 @@
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -2123,7 +2123,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2168,7 +2168,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -2353,7 +2353,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2389,7 +2389,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -2574,7 +2574,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2619,7 +2619,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-10-01 19:20",
+     "visto": "2026-10-01 19:51",
      "estado": "ok",
      "historico": [
       [
@@ -2746,6 +2746,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-01 19:20",
- "actualizado_iso": "2026-10-01T19:20:34.188967+00:00"
+ "actualizado": "2026-10-01 19:51",
+ "actualizado_iso": "2026-10-01T19:51:58.543858+00:00"
 }
