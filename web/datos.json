@@ -47,7 +47,7 @@
      "duracion": "3:10",
      "minimo": 69.99,
      "maximo": 124.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -118,15 +118,15 @@
      "sale": "05:30",
      "llega": "08:55",
      "ref": 65.99,
-     "precio": 54.89,
+     "precio": 59.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 7,
+     "plazas": 6,
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -180,9 +180,13 @@
       [
        "2026-09-30 22:07",
        54.89
+      ],
+      [
+       "2026-10-01 00:01",
+       59.99
       ]
      ],
-     "variacion": -11.1
+     "variacion": -6.0
     }
    ],
    "itinerario": [
@@ -203,8 +207,8 @@
      "texto": "Vuelo a las 05:30; en Alicante a las 08:49."
     }
    ],
-   "total_persona": 144.88,
-   "total_grupo": 289.76,
+   "total_persona": 149.98,
+   "total_grupo": 299.96,
    "ida_fecha": "2026-10-08",
    "ida_hora": "20:20",
    "ida_iata": "KTW",
@@ -256,7 +260,7 @@
      "duracion": "3:38",
      "minimo": 60.29,
      "maximo": 124.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:02",
      "estado": "ok",
      "historico": [
       [
@@ -363,7 +367,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:02",
      "estado": "ok",
      "historico": [
       [
@@ -521,7 +525,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -628,7 +632,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:02",
      "estado": "ok",
      "historico": [
       [
@@ -787,7 +791,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:02",
      "estado": "ok",
      "historico": [
       [
@@ -903,7 +907,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1058,7 +1062,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1183,7 +1187,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1341,7 +1345,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1420,7 +1424,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1571,7 +1575,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1687,7 +1691,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1841,11 +1845,11 @@
      "llega_aprox": false,
      "etiqueta": "FR6234",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=SOF",
-     "plazas": 3,
+     "plazas": null,
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 180.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -1924,7 +1928,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 199.19,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -2109,7 +2113,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2154,7 +2158,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -2339,7 +2343,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2375,7 +2379,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -2560,7 +2564,7 @@
        170.99
       ]
      ],
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2605,7 +2609,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-09-30 22:07",
+     "visto": "2026-10-01 00:01",
      "estado": "ok",
      "historico": [
       [
@@ -2732,6 +2736,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-09-30 22:07",
- "actualizado_iso": "2026-09-30T22:07:23.963706+00:00"
+ "actualizado": "2026-10-01 00:02",
+ "actualizado_iso": "2026-10-01T00:02:05.706903+00:00"
 }
