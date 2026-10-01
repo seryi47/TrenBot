@@ -16,271 +16,6 @@
  },
  "opciones": [
   {
-   "id": "gdansk",
-   "titulo": "Gdansk, sin moverse",
-   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
-   "paises": [
-    "Polonia"
-   ],
-   "noches": 3,
-   "por_que": "La única opción de entrar y salir por el mismo sitio sin coger ningún transporte entre aeropuertos. El casco viejo se hace a pie, Sopot y su playa están a 20 minutos en cercanías y el castillo de Malbork a 50.",
-   "aviso": "Está por encima del tope de 190 € por persona. Sales el jueves a las 21:10 y aterrizas a las 00:48, así que ganas el viernes y el sábado enteros.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "ALC",
-     "a": "GDN",
-     "de_nombre": "Alicante",
-     "a_nombre": "Gdansk",
-     "fecha": "2026-10-08",
-     "sale": "21:10",
-     "llega": "00:48",
-     "ref": 99.99,
-     "precio": 79.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
-     "plazas": 3,
-     "duracion": "3:38",
-     "minimo": 60.29,
-     "maximo": 124.99,
-     "visto": "2026-10-01 22:01",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-16 19:36",
-       114.99
-      ],
-      [
-       "2026-09-18 12:30",
-       99.99
-      ],
-      [
-       "2026-09-18 14:02",
-       114.99
-      ],
-      [
-       "2026-09-23 04:54",
-       124.99
-      ],
-      [
-       "2026-09-24 06:38",
-       114.99
-      ],
-      [
-       "2026-09-24 17:46",
-       79.99
-      ],
-      [
-       "2026-09-26 04:35",
-       89.99
-      ],
-      [
-       "2026-09-26 14:08",
-       79.99
-      ],
-      [
-       "2026-09-27 22:14",
-       89.99
-      ],
-      [
-       "2026-09-28 15:53",
-       65.99
-      ],
-      [
-       "2026-09-29 01:06",
-       79.99
-      ],
-      [
-       "2026-09-29 04:35",
-       89.99
-      ],
-      [
-       "2026-09-29 14:40",
-       99.99
-      ],
-      [
-       "2026-09-30 13:41",
-       89.99
-      ],
-      [
-       "2026-09-30 17:59",
-       65.99
-      ],
-      [
-       "2026-09-30 18:12",
-       60.29
-      ],
-      [
-       "2026-09-30 19:15",
-       65.99
-      ],
-      [
-       "2026-09-30 20:02",
-       60.29
-      ],
-      [
-       "2026-09-30 22:07",
-       65.99
-      ],
-      [
-       "2026-10-01 19:04",
-       79.99
-      ]
-     ],
-     "variacion": -20.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "wizz",
-     "vuelo": "W6",
-     "de": "GDN",
-     "a": "ALC",
-     "de_nombre": "Gdansk",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "16:45",
-     "llega": "20:23",
-     "ref": 69.99,
-     "precio": 99.99,
-     "llega_aprox": true,
-     "etiqueta": "W6",
-     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 9,
-     "duracion": "3:38",
-     "minimo": 65.99,
-     "maximo": 114.99,
-     "visto": "2026-10-01 22:01",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-16 17:33",
-       99.99
-      ],
-      [
-       "2026-09-18 12:30",
-       114.99
-      ],
-      [
-       "2026-09-22 10:09",
-       89.99
-      ],
-      [
-       "2026-09-22 15:01",
-       89.99
-      ],
-      [
-       "2026-09-23 08:24",
-       69.99
-      ],
-      [
-       "2026-09-24 04:26",
-       79.99
-      ],
-      [
-       "2026-09-24 06:39",
-       69.99
-      ],
-      [
-       "2026-09-24 20:52",
-       79.99
-      ],
-      [
-       "2026-09-25 16:15",
-       65.99
-      ],
-      [
-       "2026-09-25 20:25",
-       69.99
-      ],
-      [
-       "2026-09-26 04:51",
-       65.99
-      ],
-      [
-       "2026-09-26 12:52",
-       69.99
-      ],
-      [
-       "2026-09-26 21:17",
-       79.99
-      ],
-      [
-       "2026-09-27 05:33",
-       69.99
-      ],
-      [
-       "2026-09-27 11:07",
-       79.99
-      ],
-      [
-       "2026-09-27 16:41",
-       99.99
-      ],
-      [
-       "2026-09-28 15:54",
-       89.99
-      ],
-      [
-       "2026-09-29 04:35",
-       99.99
-      ],
-      [
-       "2026-09-30 17:59",
-       89.99
-      ],
-      [
-       "2026-10-01 19:04",
-       99.99
-      ]
-     ],
-     "variacion": 30.0
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Jueves 8",
-     "texto": "Vuelo a las 21:10; en Gdansk a las 00:48."
-    },
-    {
-     "dia": "Viernes 9",
-     "texto": "Día completo en el casco viejo: Długi Targ, la grúa medieval y la basílica."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Sopot y su muelle (20 min en cercanías), o el castillo de Malbork (50 min)."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
-    }
-   ],
-   "total_persona": 179.98,
-   "total_grupo": 359.96,
-   "ida_fecha": "2026-10-08",
-   "ida_hora": "21:10",
-   "ida_iata": "GDN",
-   "ida_ciudad": "Gdansk",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "16:45",
-   "vuelta_llega": "20:23",
-   "vuelta_iata": "GDN",
-   "vuelta_ciudad": "Gdansk",
-   "horas_destino": 64,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": false,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 169.98,
-   "dentro_presupuesto": true
-  },
-  {
    "id": "viena-praga",
    "titulo": "Viena + Praga",
    "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
@@ -313,7 +48,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -438,7 +173,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -565,6 +300,271 @@
    "dentro_presupuesto": true
   },
   {
+   "id": "gdansk",
+   "titulo": "Gdansk, sin moverse",
+   "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
+   "paises": [
+    "Polonia"
+   ],
+   "noches": 3,
+   "por_que": "La única opción de entrar y salir por el mismo sitio sin coger ningún transporte entre aeropuertos. El casco viejo se hace a pie, Sopot y su playa están a 20 minutos en cercanías y el castillo de Malbork a 50.",
+   "aviso": "Está por encima del tope de 190 € por persona. Sales el jueves a las 21:10 y aterrizas a las 00:48, así que ganas el viernes y el sábado enteros.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "ALC",
+     "a": "GDN",
+     "de_nombre": "Alicante",
+     "a_nombre": "Gdansk",
+     "fecha": "2026-10-08",
+     "sale": "21:10",
+     "llega": "00:48",
+     "ref": 99.99,
+     "precio": 89.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
+     "plazas": 3,
+     "duracion": "3:38",
+     "minimo": 60.29,
+     "maximo": 124.99,
+     "visto": "2026-10-01 23:04",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-18 12:30",
+       99.99
+      ],
+      [
+       "2026-09-18 14:02",
+       114.99
+      ],
+      [
+       "2026-09-23 04:54",
+       124.99
+      ],
+      [
+       "2026-09-24 06:38",
+       114.99
+      ],
+      [
+       "2026-09-24 17:46",
+       79.99
+      ],
+      [
+       "2026-09-26 04:35",
+       89.99
+      ],
+      [
+       "2026-09-26 14:08",
+       79.99
+      ],
+      [
+       "2026-09-27 22:14",
+       89.99
+      ],
+      [
+       "2026-09-28 15:53",
+       65.99
+      ],
+      [
+       "2026-09-29 01:06",
+       79.99
+      ],
+      [
+       "2026-09-29 04:35",
+       89.99
+      ],
+      [
+       "2026-09-29 14:40",
+       99.99
+      ],
+      [
+       "2026-09-30 13:41",
+       89.99
+      ],
+      [
+       "2026-09-30 17:59",
+       65.99
+      ],
+      [
+       "2026-09-30 18:12",
+       60.29
+      ],
+      [
+       "2026-09-30 19:15",
+       65.99
+      ],
+      [
+       "2026-09-30 20:02",
+       60.29
+      ],
+      [
+       "2026-09-30 22:07",
+       65.99
+      ],
+      [
+       "2026-10-01 19:04",
+       79.99
+      ],
+      [
+       "2026-10-01 23:04",
+       89.99
+      ]
+     ],
+     "variacion": -10.0
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "wizz",
+     "vuelo": "W6",
+     "de": "GDN",
+     "a": "ALC",
+     "de_nombre": "Gdansk",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "16:45",
+     "llega": "20:23",
+     "ref": 69.99,
+     "precio": 99.99,
+     "llega_aprox": true,
+     "etiqueta": "W6",
+     "url": "https://www.wizzair.com/es-es/booking/select-flight/GDN/ALC/2026-10-11/null/2/0/0/null",
+     "plazas": 9,
+     "duracion": "3:38",
+     "minimo": 65.99,
+     "maximo": 114.99,
+     "visto": "2026-10-01 23:04",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-16 17:33",
+       99.99
+      ],
+      [
+       "2026-09-18 12:30",
+       114.99
+      ],
+      [
+       "2026-09-22 10:09",
+       89.99
+      ],
+      [
+       "2026-09-22 15:01",
+       89.99
+      ],
+      [
+       "2026-09-23 08:24",
+       69.99
+      ],
+      [
+       "2026-09-24 04:26",
+       79.99
+      ],
+      [
+       "2026-09-24 06:39",
+       69.99
+      ],
+      [
+       "2026-09-24 20:52",
+       79.99
+      ],
+      [
+       "2026-09-25 16:15",
+       65.99
+      ],
+      [
+       "2026-09-25 20:25",
+       69.99
+      ],
+      [
+       "2026-09-26 04:51",
+       65.99
+      ],
+      [
+       "2026-09-26 12:52",
+       69.99
+      ],
+      [
+       "2026-09-26 21:17",
+       79.99
+      ],
+      [
+       "2026-09-27 05:33",
+       69.99
+      ],
+      [
+       "2026-09-27 11:07",
+       79.99
+      ],
+      [
+       "2026-09-27 16:41",
+       99.99
+      ],
+      [
+       "2026-09-28 15:54",
+       89.99
+      ],
+      [
+       "2026-09-29 04:35",
+       99.99
+      ],
+      [
+       "2026-09-30 17:59",
+       89.99
+      ],
+      [
+       "2026-10-01 19:04",
+       99.99
+      ]
+     ],
+     "variacion": 30.0
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Jueves 8",
+     "texto": "Vuelo a las 21:10; en Gdansk a las 00:48."
+    },
+    {
+     "dia": "Viernes 9",
+     "texto": "Día completo en el casco viejo: Długi Targ, la grúa medieval y la basílica."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Sopot y su muelle (20 min en cercanías), o el castillo de Malbork (50 min)."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Mañana libre y vuelo a las 16:45; en Alicante a las 20:23."
+    }
+   ],
+   "total_persona": 189.98,
+   "total_grupo": 379.96,
+   "ida_fecha": "2026-10-08",
+   "ida_hora": "21:10",
+   "ida_iata": "GDN",
+   "ida_ciudad": "Gdansk",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "16:45",
+   "vuelta_llega": "20:23",
+   "vuelta_iata": "GDN",
+   "vuelta_ciudad": "Gdansk",
+   "horas_destino": 64,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": false,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 169.98,
+   "dentro_presupuesto": true
+  },
+  {
    "id": "wroclaw-praga",
    "titulo": "Wrocław + Praga",
    "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
@@ -597,7 +597,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -713,7 +713,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -867,7 +867,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -974,7 +974,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1132,7 +1132,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1211,7 +1211,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1370,7 +1370,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1486,7 +1486,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1644,7 +1644,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 197.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1731,7 +1731,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 217.39,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -1939,7 +1939,7 @@
        89.99
       ]
      ],
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "ultimo_real": 89.99,
      "ultimo_real_visto": "2026-09-30 21:04",
      "estado": "sin_venta",
@@ -1966,7 +1966,7 @@
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -2131,7 +2131,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2176,7 +2176,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -2361,7 +2361,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2397,7 +2397,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -2582,7 +2582,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2627,7 +2627,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-10-01 22:01",
+     "visto": "2026-10-01 23:04",
      "estado": "ok",
      "historico": [
       [
@@ -2754,6 +2754,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-01 22:01",
- "actualizado_iso": "2026-10-01T22:01:57.945150+00:00"
+ "actualizado": "2026-10-01 23:04",
+ "actualizado_iso": "2026-10-01T23:04:21.155679+00:00"
 }
