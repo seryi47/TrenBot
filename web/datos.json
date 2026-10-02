@@ -16,6 +16,277 @@
  },
  "opciones": [
   {
+   "id": "wroclaw-praga",
+   "titulo": "Wrocław + Praga",
+   "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
+   "paises": [
+    "Polonia",
+    "República Checa"
+   ],
+   "noches": 2,
+   "por_que": "El Baltic Express une Wrocław y Pardubice en tren directo en 2h50 por unos 19 €, y de Pardubice a Praga hay 1 h. Te deja 58 horas en destino.",
+   "aviso": "El vuelo de ida sale a las 05:50 de la mañana, y el de vuelta aterriza a la 01:00 del lunes.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR9877",
+     "de": "ALC",
+     "a": "WRO",
+     "de_nombre": "Alicante",
+     "a_nombre": "Wrocław",
+     "fecha": "2026-10-09",
+     "sale": "05:50",
+     "llega": "08:55",
+     "ref": 95.19,
+     "precio": 128.59,
+     "llega_aprox": false,
+     "etiqueta": "FR9877 · 3 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
+     "plazas": 3,
+     "duracion": "03:05",
+     "minimo": 92.19,
+     "maximo": 278.69,
+     "visto": "2026-10-02 08:54",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-29 00:19",
+       183.99
+      ],
+      [
+       "2026-09-29 00:35",
+       177.99
+      ],
+      [
+       "2026-09-29 00:50",
+       183.99
+      ],
+      [
+       "2026-09-29 01:06",
+       177.99
+      ],
+      [
+       "2026-09-29 06:24",
+       174.99
+      ],
+      [
+       "2026-09-29 08:51",
+       210.59
+      ],
+      [
+       "2026-09-29 19:43",
+       211.59
+      ],
+      [
+       "2026-09-30 01:17",
+       216.39
+      ],
+      [
+       "2026-09-30 06:51",
+       166.99
+      ],
+      [
+       "2026-09-30 19:31",
+       165.99
+      ],
+      [
+       "2026-09-30 21:20",
+       166.99
+      ],
+      [
+       "2026-10-01 06:23",
+       130.99
+      ],
+      [
+       "2026-10-01 07:09",
+       166.75
+      ],
+      [
+       "2026-10-01 11:56",
+       166.87
+      ],
+      [
+       "2026-10-01 21:47",
+       153.99
+      ],
+      [
+       "2026-10-02 03:20",
+       165.87
+      ],
+      [
+       "2026-10-02 03:35",
+       153.99
+      ],
+      [
+       "2026-10-02 03:51",
+       165.87
+      ],
+      [
+       "2026-10-02 04:37",
+       137.9
+      ],
+      [
+       "2026-10-02 08:54",
+       128.59
+      ]
+     ],
+     "variacion": 33.4
+    },
+    {
+     "tipo": "tierra",
+     "de_nombre": "Wrocław",
+     "a_nombre": "Pardubice",
+     "como": "Tren directo Baltic Express (4 al día)",
+     "duracion": "2 h 50 min",
+     "coste": "19 €",
+     "cuando": "domingo 11 por la mañana"
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "",
+     "cia": "ryanair",
+     "vuelo": "FR1495",
+     "de": "PED",
+     "a": "ALC",
+     "de_nombre": "Pardubice",
+     "a_nombre": "Alicante",
+     "fecha": "2026-10-11",
+     "sale": "22:00",
+     "llega": "01:00",
+     "ref": 50.89,
+     "precio": 43.93,
+     "llega_aprox": false,
+     "etiqueta": "FR1495 · 5 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
+     "plazas": 5,
+     "duracion": "03:00",
+     "minimo": 34.93,
+     "maximo": 54.91,
+     "visto": "2026-10-02 08:54",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-09-27 18:45",
+       46.08
+      ],
+      [
+       "2026-09-28 09:21",
+       44.08
+      ],
+      [
+       "2026-09-28 14:17",
+       42.0
+      ],
+      [
+       "2026-09-28 15:53",
+       42.91
+      ],
+      [
+       "2026-09-29 08:35",
+       40.91
+      ],
+      [
+       "2026-09-29 11:58",
+       38.95
+      ],
+      [
+       "2026-09-29 14:09",
+       36.93
+      ],
+      [
+       "2026-09-29 18:18",
+       35.93
+      ],
+      [
+       "2026-09-30 07:20",
+       34.93
+      ],
+      [
+       "2026-09-30 12:24",
+       37.93
+      ],
+      [
+       "2026-09-30 17:58",
+       37.95
+      ],
+      [
+       "2026-09-30 18:12",
+       36.95
+      ],
+      [
+       "2026-09-30 21:20",
+       43.95
+      ],
+      [
+       "2026-10-01 07:09",
+       47.94
+      ],
+      [
+       "2026-10-01 11:40",
+       49.96
+      ],
+      [
+       "2026-10-01 14:16",
+       48.96
+      ],
+      [
+       "2026-10-01 16:13",
+       48.92
+      ],
+      [
+       "2026-10-01 18:17",
+       46.92
+      ],
+      [
+       "2026-10-01 22:01",
+       45.92
+      ],
+      [
+       "2026-10-02 08:54",
+       43.93
+      ]
+     ],
+     "variacion": -6.96
+    }
+   ],
+   "itinerario": [
+    {
+     "dia": "Viernes 9",
+     "texto": "Vuelo de madrugada; en Wrocław a las 08:55 con el día entero por delante."
+    },
+    {
+     "dia": "Sábado 10",
+     "texto": "Segundo día en Wrocław, una de las ciudades más bonitas de Polonia."
+    },
+    {
+     "dia": "Domingo 11",
+     "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
+    }
+   ],
+   "total_persona": 172.52,
+   "total_grupo": 345.04,
+   "ida_fecha": "2026-10-09",
+   "ida_hora": "05:50",
+   "ida_iata": "WRO",
+   "ida_ciudad": "Wrocław",
+   "vuelta_fecha": "2026-10-11",
+   "vuelta_hora": "22:00",
+   "vuelta_llega": "01:00",
+   "vuelta_iata": "PED",
+   "vuelta_ciudad": "Pardubice",
+   "horas_destino": 58,
+   "minutos_tierra": 170,
+   "saltos": 1,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": true,
+   "vuelve_lunes": false,
+   "total_referencia": 146.08,
+   "dentro_presupuesto": true
+  },
+  {
    "id": "viena-praga",
    "titulo": "Viena + Praga",
    "subtitulo": "Sales el jueves por la noche y ganas el viernes entero",
@@ -48,7 +319,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -173,7 +444,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -253,7 +524,7 @@
        45.92
       ],
       [
-       "2026-10-02 07:13",
+       "2026-10-02 08:54",
        43.93
       ]
      ],
@@ -300,277 +571,6 @@
    "dentro_presupuesto": true
   },
   {
-   "id": "wroclaw-praga",
-   "titulo": "Wrocław + Praga",
-   "subtitulo": "Tren directo Wrocław-Pardubice de 2h50",
-   "paises": [
-    "Polonia",
-    "República Checa"
-   ],
-   "noches": 2,
-   "por_que": "El Baltic Express une Wrocław y Pardubice en tren directo en 2h50 por unos 19 €, y de Pardubice a Praga hay 1 h. Te deja 58 horas en destino.",
-   "aviso": "El vuelo de ida sale a las 05:50 de la mañana, y el de vuelta aterriza a la 01:00 del lunes.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR9877",
-     "de": "ALC",
-     "a": "WRO",
-     "de_nombre": "Alicante",
-     "a_nombre": "Wrocław",
-     "fecha": "2026-10-09",
-     "sale": "05:50",
-     "llega": "08:55",
-     "ref": 95.19,
-     "precio": 137.9,
-     "llega_aprox": false,
-     "etiqueta": "FR9877 · 3 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-09&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=WRO",
-     "plazas": 3,
-     "duracion": "03:05",
-     "minimo": 92.19,
-     "maximo": 278.69,
-     "visto": "2026-10-02 07:13",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-29 00:04",
-       177.99
-      ],
-      [
-       "2026-09-29 00:19",
-       183.99
-      ],
-      [
-       "2026-09-29 00:35",
-       177.99
-      ],
-      [
-       "2026-09-29 00:50",
-       183.99
-      ],
-      [
-       "2026-09-29 01:06",
-       177.99
-      ],
-      [
-       "2026-09-29 06:24",
-       174.99
-      ],
-      [
-       "2026-09-29 08:51",
-       210.59
-      ],
-      [
-       "2026-09-29 19:43",
-       211.59
-      ],
-      [
-       "2026-09-30 01:17",
-       216.39
-      ],
-      [
-       "2026-09-30 06:51",
-       166.99
-      ],
-      [
-       "2026-09-30 19:31",
-       165.99
-      ],
-      [
-       "2026-09-30 21:20",
-       166.99
-      ],
-      [
-       "2026-10-01 06:23",
-       130.99
-      ],
-      [
-       "2026-10-01 07:09",
-       166.75
-      ],
-      [
-       "2026-10-01 11:56",
-       166.87
-      ],
-      [
-       "2026-10-01 21:47",
-       153.99
-      ],
-      [
-       "2026-10-02 03:20",
-       165.87
-      ],
-      [
-       "2026-10-02 03:35",
-       153.99
-      ],
-      [
-       "2026-10-02 03:51",
-       165.87
-      ],
-      [
-       "2026-10-02 04:37",
-       137.9
-      ]
-     ],
-     "variacion": 42.71
-    },
-    {
-     "tipo": "tierra",
-     "de_nombre": "Wrocław",
-     "a_nombre": "Pardubice",
-     "como": "Tren directo Baltic Express (4 al día)",
-     "duracion": "2 h 50 min",
-     "coste": "19 €",
-     "cuando": "domingo 11 por la mañana"
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "",
-     "cia": "ryanair",
-     "vuelo": "FR1495",
-     "de": "PED",
-     "a": "ALC",
-     "de_nombre": "Pardubice",
-     "a_nombre": "Alicante",
-     "fecha": "2026-10-11",
-     "sale": "22:00",
-     "llega": "01:00",
-     "ref": 50.89,
-     "precio": 43.93,
-     "llega_aprox": false,
-     "etiqueta": "FR1495 · 5 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=2&teens=0&children=0&infants=0&dateOut=2026-10-11&isConnectedFlight=false&discount=0&isReturn=false&originIata=PED&destinationIata=ALC",
-     "plazas": 5,
-     "duracion": "03:00",
-     "minimo": 34.93,
-     "maximo": 54.91,
-     "visto": "2026-10-02 07:13",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-09-27 18:45",
-       46.08
-      ],
-      [
-       "2026-09-28 09:21",
-       44.08
-      ],
-      [
-       "2026-09-28 14:17",
-       42.0
-      ],
-      [
-       "2026-09-28 15:53",
-       42.91
-      ],
-      [
-       "2026-09-29 08:35",
-       40.91
-      ],
-      [
-       "2026-09-29 11:58",
-       38.95
-      ],
-      [
-       "2026-09-29 14:09",
-       36.93
-      ],
-      [
-       "2026-09-29 18:18",
-       35.93
-      ],
-      [
-       "2026-09-30 07:20",
-       34.93
-      ],
-      [
-       "2026-09-30 12:24",
-       37.93
-      ],
-      [
-       "2026-09-30 17:58",
-       37.95
-      ],
-      [
-       "2026-09-30 18:12",
-       36.95
-      ],
-      [
-       "2026-09-30 21:20",
-       43.95
-      ],
-      [
-       "2026-10-01 07:09",
-       47.94
-      ],
-      [
-       "2026-10-01 11:40",
-       49.96
-      ],
-      [
-       "2026-10-01 14:16",
-       48.96
-      ],
-      [
-       "2026-10-01 16:13",
-       48.92
-      ],
-      [
-       "2026-10-01 18:17",
-       46.92
-      ],
-      [
-       "2026-10-01 22:01",
-       45.92
-      ],
-      [
-       "2026-10-02 07:13",
-       43.93
-      ]
-     ],
-     "variacion": -6.96
-    }
-   ],
-   "itinerario": [
-    {
-     "dia": "Viernes 9",
-     "texto": "Vuelo de madrugada; en Wrocław a las 08:55 con el día entero por delante."
-    },
-    {
-     "dia": "Sábado 10",
-     "texto": "Segundo día en Wrocław, una de las ciudades más bonitas de Polonia."
-    },
-    {
-     "dia": "Domingo 11",
-     "texto": "Tren directo a Pardubice (2h50); se puede seguir 1 h más hasta Praga y volver, y vuelo a las 22:00."
-    }
-   ],
-   "total_persona": 181.83,
-   "total_grupo": 363.66,
-   "ida_fecha": "2026-10-09",
-   "ida_hora": "05:50",
-   "ida_iata": "WRO",
-   "ida_ciudad": "Wrocław",
-   "vuelta_fecha": "2026-10-11",
-   "vuelta_hora": "22:00",
-   "vuelta_llega": "01:00",
-   "vuelta_iata": "PED",
-   "vuelta_ciudad": "Pardubice",
-   "horas_destino": 58,
-   "minutos_tierra": 170,
-   "saltos": 1,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": true,
-   "vuelve_lunes": false,
-   "total_referencia": 146.08,
-   "dentro_presupuesto": true
-  },
-  {
    "id": "gdansk",
    "titulo": "Gdansk, sin moverse",
    "subtitulo": "Entras y sales por el mismo aeropuerto: cero traslados",
@@ -598,11 +598,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/GDN/2026-10-08/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:38",
      "minimo": 60.29,
      "maximo": 124.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -709,7 +709,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -867,7 +867,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:53",
      "estado": "ok",
      "historico": [
       [
@@ -947,7 +947,7 @@
        105.88
       ],
       [
-       "2026-10-02 06:26",
+       "2026-10-02 08:53",
        98.99
       ]
      ],
@@ -974,7 +974,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 114.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -1133,7 +1133,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -1245,11 +1245,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -1403,11 +1403,11 @@
      "llega_aprox": true,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/ALC/OTP/2026-10-08/null/2/0/0/null",
-     "plazas": 8,
+     "plazas": 7,
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:53",
      "estado": "ok",
      "historico": [
       [
@@ -1486,7 +1486,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:53",
      "estado": "ok",
      "historico": [
       [
@@ -1644,7 +1644,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 197.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:53",
      "estado": "ok",
      "historico": [
       [
@@ -1731,7 +1731,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 251.39,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:53",
      "estado": "ok",
      "historico": [
       [
@@ -1811,7 +1811,7 @@
        217.39
       ],
       [
-       "2026-10-02 06:26",
+       "2026-10-02 08:53",
        251.39
       ]
      ],
@@ -1939,7 +1939,7 @@
        89.99
       ]
      ],
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:53",
      "ultimo_real": 89.99,
      "ultimo_real_visto": "2026-09-30 21:04",
      "estado": "sin_venta",
@@ -1962,11 +1962,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 9,
+     "plazas": 8,
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -2131,7 +2131,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2176,7 +2176,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -2256,7 +2256,7 @@
        45.92
       ],
       [
-       "2026-10-02 07:13",
+       "2026-10-02 08:54",
        43.93
       ]
      ],
@@ -2361,7 +2361,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2393,11 +2393,11 @@
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/BUD/ALC/2026-10-11/null/2/0/0/null",
-     "plazas": 4,
+     "plazas": 3,
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -2582,7 +2582,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2627,7 +2627,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-10-02 07:13",
+     "visto": "2026-10-02 08:54",
      "estado": "ok",
      "historico": [
       [
@@ -2707,7 +2707,7 @@
        115.99
       ],
       [
-       "2026-10-02 07:13",
+       "2026-10-02 08:54",
        110.99
       ]
      ],
@@ -2754,6 +2754,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-02 07:13",
- "actualizado_iso": "2026-10-02T07:13:56.724218+00:00"
+ "actualizado": "2026-10-02 08:54",
+ "actualizado_iso": "2026-10-02T08:54:51.947609+00:00"
 }
