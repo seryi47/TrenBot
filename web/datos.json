@@ -48,7 +48,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -173,7 +173,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -332,7 +332,7 @@
      "duracion": "03:05",
      "minimo": 92.19,
      "maximo": 278.69,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -448,7 +448,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -603,7 +603,7 @@
      "duracion": "02:45",
      "minimo": 95.19,
      "maximo": 352.75,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -719,7 +719,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -877,7 +877,7 @@
      "duracion": "3:38",
      "minimo": 60.29,
      "maximo": 124.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -984,7 +984,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 124.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -1142,7 +1142,7 @@
      "duracion": "03:30",
      "minimo": 66.75,
      "maximo": 139.27,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:54",
      "estado": "ok",
      "historico": [
       [
@@ -1249,7 +1249,7 @@
      "duracion": "3:38",
      "minimo": 65.99,
      "maximo": 124.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -1407,7 +1407,7 @@
      "duracion": "3:40",
      "minimo": 89.99,
      "maximo": 134.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:54",
      "estado": "ok",
      "historico": [
       [
@@ -1486,7 +1486,7 @@
      "duracion": "3:40",
      "minimo": 55.99,
      "maximo": 149.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -1644,7 +1644,7 @@
      "duracion": "03:00",
      "minimo": 112.99,
      "maximo": 197.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -1731,7 +1731,7 @@
      "duracion": "03:20",
      "minimo": 75.09,
      "maximo": 251.39,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -1939,7 +1939,7 @@
        89.99
       ]
      ],
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "ultimo_real": 89.99,
      "ultimo_real_visto": "2026-09-30 21:04",
      "estado": "sin_venta",
@@ -1958,7 +1958,7 @@
      "sale": "05:30",
      "llega": "08:55",
      "ref": 65.99,
-     "precio": 49.99,
+     "precio": 55.99,
      "llega_aprox": false,
      "etiqueta": "W6",
      "url": "https://www.wizzair.com/es-es/booking/select-flight/KTW/ALC/2026-10-11/null/2/0/0/null",
@@ -1966,7 +1966,7 @@
      "duracion": "3:25",
      "minimo": 45.89,
      "maximo": 65.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -2032,9 +2032,13 @@
       [
        "2026-10-02 19:39",
        49.99
+      ],
+      [
+       "2026-10-02 19:55",
+       55.99
       ]
      ],
-     "variacion": -16.0
+     "variacion": -10.0
     }
    ],
    "itinerario": [
@@ -2139,7 +2143,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2184,7 +2188,7 @@
      "duracion": "03:00",
      "minimo": 34.93,
      "maximo": 54.91,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -2369,7 +2373,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2405,7 +2409,7 @@
      "duracion": "3:15",
      "minimo": 54.89,
      "maximo": 124.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -2590,7 +2594,7 @@
        170.99
       ]
      ],
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "ultimo_real": 170.99,
      "ultimo_real_visto": "2026-09-09 10:32",
      "estado": "sin_venta",
@@ -2635,7 +2639,7 @@
      "duracion": "02:40",
      "minimo": 74.99,
      "maximo": 173.99,
-     "visto": "2026-10-02 19:39",
+     "visto": "2026-10-02 19:55",
      "estado": "ok",
      "historico": [
       [
@@ -2762,6 +2766,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-02 19:39",
- "actualizado_iso": "2026-10-02T19:39:40.784940+00:00"
+ "actualizado": "2026-10-02 19:55",
+ "actualizado_iso": "2026-10-02T19:55:17.164548+00:00"
 }
