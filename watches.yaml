@@ -2,188 +2,50 @@
 # NO pongas aquí el token ni el chat_id: van como "secrets" del repo.
 # Para cambiar qué vigilas: edita este archivo y haz git push.
 #
-# Viaje de octubre: Alicante ida y vuelta, 2 personas, SOLO vuelo directo.
-# Ida el 8 a partir de las 20:00 o el 9 a cualquier hora; vuelta el 11 a
-# cualquier hora o el 12 aterrizando antes de las 18:00; tope 190 €/persona. Vale una sola ciudad, y la ida
-# y la vuelta pueden ser de compañías distintas.
+# VIAJE DE DICIEMBRE 2026: Alicante <-> Bruselas, ida y vuelta desde Alicante,
+# 2 personas, SOLO vuelo directo.
 #
-# poll_interval por ruta = 900 s: Ryanair y Wizz cortan (429/503) si se les
-# pregunta cada minuto. adults: 2 porque en low cost el precio por persona
-# sube si la tarifa barata no tiene dos asientos. max_price es el OBJETIVO;
-# además se avisa de cualquier bajada de 3 € o más aunque no lo alcance.
+# Solo hay directo a CHARLEROI (CRL, "Bruselas Sur"), con Ryanair. A Zaventem
+# (BRU) no vuelan ni Ryanair ni Wizz desde Alicante.
+#
+# La vuelta es el 4 o el 5 de diciembre. El 4 solo valdría saliendo a partir de
+# las 16:30 y NO existe ningún vuelo así: los dos del día 4 salen 09:15 y 13:10.
+# Se vigila el 13:10 por si cambia de idea, y los dos del día 5.
+#
+# poll_interval por ruta = 900 s: Ryanair corta (429) si se le pregunta cada
+# minuto. adults: 2. max_price es el OBJETIVO; además se avisa de cualquier
+# bajada de 3 EUR o más aunque no lo alcance.
 
 poll_interval: 30
 alert_interval: 10
 mac_alerts: false
 open_browser: false
 watches:
-- name: IDA · Alicante→Gdansk RYANAIR (jue 8, 20:10)
-  providers:
+- providers: &id001
   - ryanair
-  origin: ALC
-  destination: GDN
-  date: '2026-10-08'
-  time: '20:10'
-  max_price: 100
   adults: 2
   poll_interval: 900
-- name: IDA · Alicante→Bucarest (jue 8, 21:10)
-  providers:
-  - wizz
-  origin: ALC
-  destination: OTP
-  date: '2026-10-08'
-  time: '21:10'
-  max_price: 110
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Bucarest→Alicante (dom 11, 17:40)
-  providers:
-  - wizz
-  origin: OTP
+  name: VUELTA · Bruselas→Alicante (sáb 5, 21:00)
+  origin: CRL
   destination: ALC
-  date: '2026-10-11'
-  time: '17:40'
-  max_price: 55
+  date: '2026-12-05'
+  time: '21:00'
+  max_price: 25
+- providers: *id001
   adults: 2
   poll_interval: 900
-- name: IDA · Alicante→Sofía (vie 9, 08:30)
-  providers:
-  - ryanair
-  origin: ALC
-  destination: SOF
-  date: '2026-10-09'
-  time: 08:30
-  max_price: 100
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Sofía→Alicante (dom 11, 22:25)
-  providers:
-  - ryanair
-  origin: SOF
+  name: VUELTA · Bruselas→Alicante (sáb 5, 09:40)
+  origin: CRL
   destination: ALC
-  date: '2026-10-11'
-  time: '22:25'
-  max_price: 70
+  date: '2026-12-05'
+  time: 09:40
+  max_price: 30
+- providers: *id001
   adults: 2
   poll_interval: 900
-- name: IDA · Alicante→Katowice (jue 8, 20:20)
-  providers:
-  - wizz
-  origin: ALC
-  destination: KTW
-  date: '2026-10-08'
-  time: '20:20'
-  max_price: 110
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Katowice→Alicante (dom 11, 05:30)
-  providers:
-  - wizz
-  origin: KTW
+  name: VUELTA · Bruselas→Alicante (vie 4, 13:10)
+  origin: CRL
   destination: ALC
-  date: '2026-10-11'
-  time: 05:30
-  max_price: 60
-  adults: 2
-  poll_interval: 900
-- name: IDA · Alicante→Bratislava (vie 9)
-  providers:
-  - wizz
-  origin: ALC
-  destination: BTS
-  date: '2026-10-09'
-  time: 09:35
-  max_price: 150
-  adults: 2
-  poll_interval: 900
-- name: IDA · Alicante→Viena (jue 8, 20:15)
-  providers:
-  - ryanair
-  origin: ALC
-  destination: VIE
-  date: '2026-10-08'
-  time: '20:15'
-  max_price: 120
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Pardubice→Alicante (dom 11)
-  providers:
-  - ryanair
-  origin: PED
-  destination: ALC
-  date: '2026-10-11'
-  time: '22:00'
-  max_price: 40
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Budapest→Alicante (dom 11)
-  providers:
-  - wizz
-  origin: BUD
-  destination: ALC
-  date: '2026-10-11'
-  time: 05:15
-  max_price: 50
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Linz→Alicante (lun 12)
-  providers:
-  - ryanair
-  origin: LNZ
-  destination: ALC
-  date: '2026-10-12'
-  time: '11:45'
-  max_price: 125
-  adults: 2
-  poll_interval: 900
-- name: OJALÁ · Viena→Alicante (dom 11)
-  providers:
-  - ryanair
-  origin: VIE
-  destination: ALC
-  date: '2026-10-11'
-  time: '16:20'
-  max_price: 150
-  adults: 2
-  poll_interval: 900
-- name: OJALÁ · Bratislava→Alicante (lun 12)
-  providers:
-  - wizz
-  origin: BTS
-  destination: ALC
-  date: '2026-10-12'
-  time: 05:40
-  max_price: 105
-  adults: 2
-  poll_interval: 900
-- name: IDA · Alicante→Wrocław (vie 9)
-  providers:
-  - ryanair
-  origin: ALC
-  destination: WRO
-  date: '2026-10-09'
-  time: 05:50
-  max_price: 110
-  adults: 2
-  poll_interval: 900
-- name: IDA · Alicante→Gdansk (jue 8, 21:10)
-  providers:
-  - wizz
-  origin: ALC
-  destination: GDN
-  date: '2026-10-08'
-  time: '21:10'
-  max_price: 80
-  adults: 2
-  poll_interval: 900
-- name: VUELTA · Gdansk→Alicante (dom 11)
-  providers:
-  - wizz
-  origin: GDN
-  destination: ALC
-  date: '2026-10-11'
-  time: '16:45'
-  max_price: 55
-  adults: 2
-  poll_interval: 900
+  date: '2026-12-04'
+  time: '13:10'
+  max_price: 32

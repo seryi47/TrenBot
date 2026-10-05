@@ -245,8 +245,18 @@ class Engine:
     # ---- histórico de precios (compartido con la web y con la nube) ---------
     @staticmethod
     def clave_historial(watch):
-        return "%s|%s|%s|%s" % (watch["providers"][0], watch["origin"],
+        """Identifica el VUELO, no solo la ruta y el día.
+
+        Sin la hora, dos vuelos del mismo día en la misma ruta compartían clave
+        (Charleroi→Alicante del 5-dic: el de 09:40 y el de 21:00). Dos
+        consecuencias, las dos malas: sus precios se mezclaban en una sola serie
+        histórica, y el silencio de 12 h de un aviso lo borraba el otro, así que
+        el mensaje de objetivo se repetía en cada sondeo.
+        """
+        base = "%s|%s|%s|%s" % (watch["providers"][0], watch["origin"],
                                 watch["destination"], watch["date"])
+        hora = (watch.get("time") or "").strip()[:5]
+        return "%s|%s" % (base, hora) if hora else base
 
     def _cargar_historial(self):
         if os.path.exists(self.historial_file):
