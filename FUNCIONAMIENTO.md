@@ -602,3 +602,38 @@ Y una lectura incompleta de Google (la página a medio pintar) bajaba el "más
 barato" a un vuelo caro, machacaba la referencia y al sondeo siguiente parecía
 una bajada que nunca ocurrió. Ahora se reintenta, y si se ven muchos menos
 vuelos de lo habitual la lectura se descarta en vez de guardarse.
+
+### Brussels Airlines: vía cerrada (captcha), con el bloqueo localizado
+Es la única de las cuatro que no se ha podido leer nativamente, y conviene
+dejar escrito por qué para no repetir el intento.
+
+**Lo que sí funciona.** Su web tiene una API REST propia en
+`www.brusselsairlines.com/service/api`, sin token. Se desbloquea con tres
+cabeceras (sin ellas: `400 {"error":"Tenant [null] not found"}`):
+
+    x-portal: SN     x-portal-site: ES     x-portal-language: es
+
+`POST /service/api/booking/flightAvailability` responde 200… pero **no devuelve
+precios**: devuelve el relevo al motor de reservas, con la búsqueda serializada.
+Detalle bueno: el "solo directos" es nativo (`maxStops: 0`), no hay que filtrar
+después como en Vueling.
+
+**Dónde se para.** El motor es `shop.brusselsairlines.com`, compartido por todo
+el grupo Lufthansa (shop.lufthansa.com, shop.swiss.com, shop.austrian.com), y
+está detrás de **Cloudflare Turnstile con pre-clearance**: `/preclearance` es
+literalmente un widget invisible de Turnstile, y cualquier petición sin resolver
+devuelve **403 con `cf-mitigated: challenge`**.
+
+Verificado: cinco huellas TLS distintas de `curl_cffi` (chrome, chrome131,
+chrome124, safari17_0, edge101) dan las cinco 403. Aquí la huella no es el
+filtro, al revés que en Transavia. Con navegador tampoco: Turnstile no da por
+bueno uno pilotado por CDP.
+
+Es un captcha, no un filtro que se rodee con cabeceras, así que **no se intenta
+resolver ni evadir**. Brussels Airlines se sigue leyendo por Google Flights.
+
+Un apunte que costó encontrar: `/es/es/home` es un **404**, y por eso la primera
+cosecha de JS no encontró nada (eran los scripts de una página de error). La URL
+buena es `/es/es/`. Callejones ya comprobados: `/service/api/bestprice/*` (503),
+`/service/api/flight-prices/*` (400), `once.brusselsairlines.com` (404),
+`api.brusselsairlines.com` (no responde).
