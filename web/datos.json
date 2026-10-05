@@ -36,20 +36,20 @@
      "sale": "18:05",
      "llega": "20:35",
      "ref": 106.99,
-     "precio": 106.99,
+     "precio": 109.99,
      "llega_aprox": false,
-     "etiqueta": "FR9052 · 3 plazas",
+     "etiqueta": "FR9052 · 1 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
-     "plazas": 3,
+     "plazas": 1,
      "duracion": "02:30",
-     "minimo": 106.99,
-     "maximo": 106.99,
-     "visto": "2026-10-05 09:36",
+     "minimo": 109.99,
+     "maximo": 109.99,
+     "visto": "2026-10-05 07:45",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:36",
-       106.99
+       "2026-10-05 07:45",
+       109.99
       ]
      ],
      "variacion": 0.0
@@ -75,11 +75,11 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 120.53,
-     "visto": "2026-10-05 09:37",
+     "visto": "2026-10-05 07:46",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:37",
+       "2026-10-05 07:46",
        120.53
       ]
      ],
@@ -87,8 +87,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 227.52,
-   "total_grupo": 227.52,
+   "total_persona": 230.52,
+   "total_grupo": 230.52,
    "ida_fecha": "2026-12-05",
    "ida_hora": "18:05",
    "ida_iata": "CRL",
@@ -140,11 +140,11 @@
      "duracion": "02:30",
      "minimo": 112.4,
      "maximo": 112.4,
-     "visto": "2026-10-05 09:36",
+     "visto": "2026-10-05 07:45",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:36",
+       "2026-10-05 07:45",
        112.4
       ]
      ],
@@ -171,11 +171,11 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 120.53,
-     "visto": "2026-10-05 09:37",
+     "visto": "2026-10-05 07:46",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:37",
+       "2026-10-05 07:46",
        120.53
       ]
      ],
@@ -236,11 +236,11 @@
      "duracion": "2 h 35 min",
      "minimo": 126.0,
      "maximo": 126.0,
-     "visto": "2026-10-05 09:37",
+     "visto": "2026-10-05 07:46",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:37",
+       "2026-10-05 07:46",
        126.0
       ]
      ],
@@ -267,11 +267,11 @@
      "duracion": "2 h 45 min",
      "minimo": 125.0,
      "maximo": 125.0,
-     "visto": "2026-10-05 09:38",
+     "visto": "2026-10-05 07:46",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:38",
+       "2026-10-05 07:46",
        125.0
       ]
      ],
@@ -332,11 +332,11 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-05 09:37",
+     "visto": "2026-10-05 07:46",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:37",
+       "2026-10-05 07:46",
        134.0
       ]
      ],
@@ -363,11 +363,11 @@
      "duracion": "2 h 45 min",
      "minimo": 125.0,
      "maximo": 125.0,
-     "visto": "2026-10-05 09:38",
+     "visto": "2026-10-05 07:46",
      "estado": "ok",
      "historico": [
       [
-       "2026-10-05 09:38",
+       "2026-10-05 07:46",
        125.0
       ]
      ],
@@ -397,6 +397,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-05 09:38",
- "actualizado_iso": "2026-10-05T09:38:40.847633+02:00"
+ "actualizado": "2026-10-05 07:46",
+ "actualizado_iso": "2026-10-05T07:46:41.922083+00:00"
 }
