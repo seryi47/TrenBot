@@ -168,6 +168,12 @@ const MON=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","di
 // incompletas se colaban las PRIMERAS al ordenar por precio y la cabecera
 // anunciaba "desde —" en vez del precio de la más barata de verdad.
 const coste=o=>o.total_persona==null?Infinity:o.total_persona;
+// Había un ternario de dos compañías: TODO lo que no fuera Wizz se pintaba
+// como "Ryanair", así que los ocho tramos de Vueling salían con el nombre
+// equivocado. Con cuatro aerolíneas más en juego, tabla.
+const CIAS={ryanair:"Ryanair",wizz:"Wizz Air",vueling:"Vueling",
+            transavia:"Transavia",tuifly:"TUI fly",mercado:""};
+const cia=c=>CIAS[c]!==undefined?CIAS[c]:(c||"");
 const eur=n=>n==null?"—":n.toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2})+" €";
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const dia=iso=>{const d=new Date(iso+"T12:00:00");return `${DOW[d.getDay()]} ${d.getDate()}`;};
@@ -209,7 +215,7 @@ function segmento(t){
     <div class="t1"><b>${esc(t.duracion)}</b> · ${esc(t.de_nombre)} → ${esc(t.a_nombre)}</div>
     <div class="t2">${esc(t.como)} · ${esc(t.coste)} · ${esc(t.cuando)} · se compra aparte</div>
     </div></div>`;
-  const cia=t.cia==="wizz"?"Wizz Air":"Ryanair";
+  const nombreCia=cia(t.cia);
   const pl=(typeof t.plazas==="number"&&t.plazas>0)?`<span class="mini w">quedan ${t.plazas}</span>`:"";
   const orient=t.estado==="sin_venta"
     ?`<span class="mini w">sin plazas a la venta · la aerolínea no vende este vuelo ahora`
@@ -221,8 +227,8 @@ function segmento(t){
   const ch=dv?`<span class="mini ${dv<0?"o":""}">${dv<0?"▼":"▲"} ${eur(Math.abs(dv))}</span>`:"";
   return `<div class="seg"><div class="ic">✈️</div><div class="bd">
     <div class="t1"><b>${esc(t.sale)} → ${t.llega_aprox?"≈":""}${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}${t.duracion?` · <span style="color:var(--ink3)">${esc(dur(t.duracion))}</span>`:""}</div>
-    <div class="t2">${esc(diaL(t.fecha))} · ${cia} ${esc(t.etiqueta||t.vuelo)} · directo</div>
-    <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="sin_venta"?"Comprobar en":"Comprar"} ${t.estado==="sin_venta"?(t.cia==="wizz"?"Wizz Air":"Ryanair"):eur(t.precio)} →</a>${orient}${pl}${ch}
+    <div class="t2">${esc(diaL(t.fecha))} · ${esc(nombreCia)} ${esc(t.etiqueta||t.vuelo)} · directo</div>
+    <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="sin_venta"?"Comprobar en":"Comprar"} ${t.estado==="sin_venta"?(cia(t.cia)||"la aerolínea"):eur(t.precio)} →</a>${orient}${pl}${ch}
     ${(t.minimo!=null&&t.minimo!==t.maximo)?`<div class="t2" style="margin-top:6px">Se ha movido entre <b>${eur(t.minimo)}</b> y ${eur(t.maximo)} desde que lo vigilo</div>`:(t.minimo!=null?`<div class="t2" style="margin-top:6px">Sin cambios desde que lo vigilo</div>`:"")}
     </div></div>`;
 }
@@ -255,7 +261,7 @@ function fila(o){
     <div class="cell" data-l="Traslado"><b>${horas(o.minutos_tierra)}</b>
       <span>${o.saltos} ${o.saltos===1?"salto":"saltos"}${av.length?" · "+av[0]:""}</span></div>
     <div class="price ${o.dentro_presupuesto?"":"over"}">${o.total_persona==null?"incompleta":eur(o.total_persona)}
-      <small>${eur(o.total_grupo)} los dos${dv?` · ${dv<0?"▼":"▲"}${eur(Math.abs(dv))}`:""}</small></div>
+      <small>${(DATOS.viaje.pasajeros||1)>1?`${eur(o.total_grupo)} los ${DATOS.viaje.pasajeros}`:"por persona"}${dv?` · ${dv<0?"▼":"▲"}${eur(Math.abs(dv))}`:""}</small></div>
     <div class="chev">⌄</div>
   </button>${detalle(o)}`;
 }
@@ -266,12 +272,12 @@ function vigilados(){
     .forEach(t=>m.set(`${t.cia}|${t.de}|${t.a}|${t.fecha}`,t)));
   const f=[...m.values()].sort((a,b)=>a.fecha.localeCompare(b.fecha)||a.sale.localeCompare(b.sale));
   return `<section class="watch"><h2>Vuelos vigilados</h2>
-    <p>Precio por persona buscando 2 plazas. El bot los revisa cada 15 minutos y avisa por Telegram si bajan.</p>
+    <p>Precio por persona buscando ${DATOS.viaje.pasajeros||1} plaza${(DATOS.viaje.pasajeros||1)>1?"s":""}. El bot los revisa cada 15 minutos y avisa por Telegram si bajan.</p>
     <div class="wrow h"><div>Trayecto</div><div>Cuándo</div><div>Compañía</div><div class="r">Precio</div><div></div></div>
     ${f.map(t=>`<div class="wrow">
       <div><b>${esc(t.de)} → ${esc(t.a)}</b></div>
       <div>${esc(diaL(t.fecha))} · ${esc(t.sale)}→${t.llega_aprox?"≈":""}${esc(t.llega)}</div>
-      <div>${t.cia==="wizz"?"Wizz Air":"Ryanair"} ${esc(t.etiqueta||t.vuelo)}</div>
+      <div>${esc(cia(t.cia))} ${esc(t.etiqueta||t.vuelo)}</div>
       <div class="r tn">${eur(t.precio)}${spark(t.historico)}</div>
       <div style="text-align:right"><a class="lnk" href="${esc(t.url)}" target="_blank" rel="noopener">Comprar →</a></div>
     </div>`).join("")}</section>`;
@@ -322,7 +328,7 @@ fetch("datos.json?v="+Date.now()).then(r=>r.json()).then(d=>{
     v.reglas.map(r=>`<span class="tag">${esc(r)}</span>`).join("");
   pinta();
   document.getElementById("foot").innerHTML=
-    `<b>De dónde salen los precios.</b> Se consultan los sistemas de venta de Ryanair y Wizz Air `+
+    `<b>De dónde salen los precios.</b> Se consultan los sistemas de venta de las aerolíneas `+
     `buscando ${v.pasajeros} plazas; si la aerolínea cotiza en moneda local se pasa a euros con el `+
     `cambio oficial del BCE. Tarifas base: equipaje de mano pequeño, sin maleta facturada ni asiento elegido.<br>`+
     `Los trayectos por tierra se compran aparte y sus duraciones están comprobadas con horarios reales.`;

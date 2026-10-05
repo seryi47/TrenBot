@@ -9,7 +9,7 @@ esto es lo que hay que leer primero.
 ## 1. En una frase
 
 Cada 15 minutos consulta el precio real de los vuelos listados en
-`watches.yaml` en los sistemas de venta de Ryanair y Wizz Air, te avisa por Telegram cuando alguno baja, y
+`watches.yaml` en los sistemas de venta de las aerolíneas, te avisa por Telegram cuando alguno baja, y
 publica un panel web con las combinaciones de viaje que salen a cuenta.
 
 **Corre solo en la nube.** No hace falta tener el ordenador encendido.
@@ -74,7 +74,12 @@ web**. No hay token de Vercel en ninguna parte, y no depende del Mac.
 | `configurar_vigilancia.py` | Deja `watches.json` listo con las rutas del viaje. |
 | `resumen_telegram.py` | Manda el resumen completo a mano. |
 | `publicar.py` | Sube los datos al repo, que es lo que hace desplegar a Vercel. |
-| `probar_avisos.py` | **Las pruebas.** Seis casos, todos deben salir en verde. |
+| `botviajes/providers/vueling.py` | **Vueling**, contra su API (Navitaire + GraphQL). Da plazas reales. |
+| `botviajes/providers/transavia.py` | **Transavia**, contra su API. Funciona desde casa, 403 desde la nube. |
+| `botviajes/providers/tuifly.py` | **TUI fly**, contra su GraphQL. |
+| `botviajes/providers/mercado.py` | **Google Flights** con navegador: cubre Brussels Airlines y hace de red. |
+| `data/traslados.json` | Cómo se llega del aeropuerto al centro. Se suma al comparar. |
+| `probar_avisos.py` | **Las pruebas.** Ocho casos, todos deben salir en verde. |
 
 ### Los datos
 
@@ -189,7 +194,7 @@ sobrevive al relevo del job.
 ### Reglas que valen para los dos
 
 - **Un importe de 0 o negativo nunca es una tarifa.** Se descarta siempre.
-- El precio se busca **para 2 pasajeros**: en *low cost* el precio por persona
+- El precio se busca **para 1 pasajero**: en *low cost* el precio por persona
   sube si la tarifa barata no tiene dos asientos.
 - Sondeo **cada 15 minutos por ruta**. Más rápido y cortan con 429/503.
 - Los datos del vuelo (horas, duración, plazas, enlace) se refrescan en cada
@@ -197,25 +202,19 @@ sobrevive al relevo del job.
 
 ---
 
-## 6. El viaje de octubre
+## 6. El viaje vigente
 
-Alicante ida y vuelta, 2 personas, **solo vuelos directos**:
+**Alicante ↔ Bruselas, diciembre de 2026, 1 persona, solo vuelo directo.**
 
-1. Ida el **8 de octubre a partir de las 20:00**, o el **9 a cualquier hora**.
-2. Vuelta el **11 a cualquier hora**, o el **12 aterrizando antes de las 18:00**.
-3. Máximo **190 € por persona** sumando ida y vuelta.
-4. **Dos países**, con al menos un día para el segundo.
-5. Si sales el 9, **aterrizar antes de las 20:00**: llegar de noche pierde el día.
-6. **Sin viajes por dentro**: cuanto menos transporte entre aeropuertos, mejor.
+1. **Ida**: viernes 4 o sábado 5 de diciembre.
+2. **Vuelta**: martes 8 de diciembre.
+3. Máximo **200 € por persona** sumando ida y vuelta.
+4. La ida y la vuelta pueden ser de **compañías distintas y de aeropuertos
+   distintos**: se puede entrar por Charleroi y salir por Zaventem.
+5. Dos aeropuertos, que no son equivalentes: **Charleroi (CRL)** está a 55 km de
+   Bruselas (1 h de bus, ~20 €) y **Zaventem (BRU)** tiene tren bajo la terminal
+   (12 min). El traslado se suma al comparar.
 
-Quedan fuera por decisión del viaje: **Reino Unido, Irlanda, Alemania y España**.
-
-Las combinaciones están en `rutas.json`, con sus tramos, el trayecto por tierra
-y el día a día. La conectividad terrestre está **verificada con horarios
-reales**, no estimada: la distancia en línea recta miente (Marsella-Turín
-parecían 4,8 h y son 6h10 por los Alpes).
-
----
 
 ## 7. Operativa
 
@@ -588,7 +587,7 @@ Resueltas con la misma técnica que Vueling, cada una con su trampa.
 Verificado los tres contra Google Flights el 05-oct-2026, al céntimo. Solo
 **Brussels Airlines** sigue por Google Flights.
 
-### Sin tope: ni objetivos ni mensajes amontonados
+### Mensajes amontonados: por qué pasó
 Al quitar el tope salió un fallo feo: `_matches` devolvía `True` para todo
 cuando no hay `max_price`, así que **todos los vuelos del día contaban como
 "ha entrado en tu objetivo"** y llegaba un mensaje con los cinco pegados, y
@@ -652,3 +651,16 @@ por consola de cuántos ajustes aplicó.
 (En la nube no se notaba porque `watches.json` está en .gitignore y cada job
 arranca sin estado, construyendo todo desde el YAML. Se notaba solo en local,
 que es donde se prueba.)
+
+### Transavia funciona desde casa pero NO desde la nube
+Comprobado el 05-oct-2026: el proveedor nativo de Transavia devuelve precios
+correctos desde el Mac y **403 "Just a moment…" desde GitHub Actions**.
+Cloudflare bloquea el rango de IPs del centro de datos, y eso no se arregla
+fingiendo mejor la petición.
+
+No deja ciego al bot: **Google Flights sigue dando el precio de Transavia**, y
+como cada tramo se queda con el más barato de todos los proveedores, el dato
+llega igual. Lo que se pierde en la nube son sus plazas reales.
+
+Si algún día hiciera falta el dato nativo en producción, haría falta salir por
+otra IP, no otro código.

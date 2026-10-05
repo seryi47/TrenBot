@@ -15,9 +15,9 @@
 #
 # Sin "time": se vigila el vuelo MÁS BARATO de ese día, sea de la hora que sea.
 #
-# SIN TOPE DE PRECIO: no hay objetivo que alcanzar ni filtro de ruido. Se avisa
-# de CUALQUIER bajada de 1 EUR o más, para ir viendo cómo se mueven. Por eso no
-# hay max_price y rutas.json lleva tope_por_persona en null.
+# TOPE: 200 EUR por persona, ida y vuelta (rutas.json, tope_por_persona). No hay
+# max_price por tramo, o sea que NO existe el aviso de "ha entrado en tu
+# objetivo": solo se avisa de BAJADAS, de 1 EUR o mas.
 
 poll_interval: 30
 alert_interval: 10

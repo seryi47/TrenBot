@@ -149,7 +149,7 @@ Ejemplos (los campos se separan con `;` porque los nombres llevan espacios):
 /vigilar trenes; Madrid; Valencia; 20/03/2027; ; 30
 /vigilar amadeus; MAD; BCN; 25/03/2027
 ```
-`trenes` = renfe + ouigo + iryo. `vuelos` = ryanair + wizz. Hora vacía = cualquier salida.
+`trenes` = renfe + ouigo + iryo. `vuelos` = ryanair + wizz + vueling + transavia + tuifly + mercado. Hora vacía = cualquier salida.
 
 En vuelos hay un campo más al final, el **número de pasajeros**, y conviene ponerlo:
 en las low cost el precio por persona sube si la tarifa barata ya no tiene asientos
@@ -202,9 +202,9 @@ Guía completa paso a paso: **[DEPLOY_ORACLE.md](DEPLOY_ORACLE.md)**
 (VM gratis para siempre + servicio `systemd` que arranca solo). Los avisos de
 Mac se desactivan en servidor (`MAC_ALERTS=0`); el canal es Telegram.
 
-## El viaje de octubre (Alicante, 8-12 oct 2026)
+## El viaje vigente (Alicante ↔ Bruselas, 4/5 → 8 dic 2026)
 
-Hay montado un caso concreto: dos personas, ida y vuelta desde Alicante, **solo
+Hay montado un caso concreto: una persona, ida y vuelta desde Alicante, **solo
 vuelo directo**. Las reglas completas, los avisos que manda y las trampas de
 cada aerolínea están en **[FUNCIONAMIENTO.md](FUNCIONAMIENTO.md)**.
 
@@ -219,7 +219,7 @@ mismo commit republica el panel. No hay ningún token de Vercel en el proyecto.
 - **`publicar.py`** — sube los datos al repo, que es lo que dispara el despliegue.
 - **`monitor.py`** — el mismo bucle para ejecutarlo en el Mac. **Normalmente
   parado**: tenerlo a la vez que la nube duplicaría avisos y consultas.
-- **`probar_avisos.py`** — las pruebas. Seis casos, todos deben salir en verde.
+- **`probar_avisos.py`** — las pruebas. Ocho casos, todos deben salir en verde.
 - **`research/`** — cómo se llegó a esas combinaciones: barrido de las 91 rutas de
   Ryanair y de los mercados de Wizz desde Alicante, horarios reales, conexiones
   por tierra contrastadas con horarios de verdad y el cruce con Google Flights.

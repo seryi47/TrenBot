@@ -60,6 +60,10 @@ def fecha_larga(iso):
         return iso
 
 
+_NOMBRE_CIA = {"ryanair": "Ryanair", "wizz": "Wizz Air", "vueling": "Vueling",
+               "transavia": "Transavia", "tuifly": "TUI fly", "mercado": ""}
+
+
 def _nombre_aeropuerto(codigo):
     """IATA -> nombre legible. Los proveedores nuevos pasan el código, y el
     mensaje quedaba como 'Sale de ALC … llega a CRL', que no dice nada."""
@@ -163,7 +167,10 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
             # lado. Si no, el mismo tren aparecía tres veces en el mensaje.
             continue
         rol = "IDA" if t is vuelos[0] else ("VUELTA" if t is vuelos[-1] else "TRAMO")
-        cia = "Wizz Air" if t["cia"] == "wizz" else "Ryanair"
+        # Antes: todo lo que no fuera Wizz se anunciaba como "Ryanair". Con
+        # cuatro aerolíneas más, el bloque del viaje decía "Ryanair TB1111" y
+        # quien fuera a comprarlo acababa en la web equivocada.
+        cia = _NOMBRE_CIA.get(t["cia"], (t["cia"] or "").title())
         # La etiqueta del proveedor ya trae las plazas pegadas; se quitan
         # porque se enseñan aparte y si no salen dos veces.
         etiqueta = (t.get("etiqueta") or "").split(" · ")[0]
@@ -183,7 +190,8 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         elif t.get("minimo") is not None:
             extra.append("sin cambios desde que lo vigilo")
         if isinstance(t.get("plazas"), int) and t["plazas"] > 0:
-            extra.append("quedan %d plazas" % t["plazas"])
+            extra.append("queda %d plaza" % t["plazas"] if t["plazas"] == 1
+                         else "quedan %d plazas" % t["plazas"])
         lineas.append("      %s%s" % (precio, "  (%s)" % " · ".join(extra) if extra else ""))
 
         # Cada bloque lleva al lado su conexión por tierra, etiquetada según
@@ -701,13 +709,32 @@ class Engine:
         # que no refleja la realidad. No se guarda: se espera a la siguiente.
         vistos = len([o for o in todas if o.price])
         habituales = watch.get("vuelos_habituales") or 0
+        cortas = int(watch.get("lecturas_cortas") or 0)
         if mejor is not None and habituales >= 3 and vistos < max(2, habituales - 1):
-            print("  [%s] solo %d vuelos (suele haber %d): lectura incompleta, la ignoro"
-                  % (watch["name"], vistos, habituales))
-            return None
+            cortas += 1
+            with self._lock:
+                watch["lecturas_cortas"] = cortas
+                self._save()
+            # Descartar es para un tropiezo suelto de un proveedor. Si se repite,
+            # es que de verdad hay menos vuelos (se han agotado, los han quitado)
+            # y seguir ignorando dejaría la ruta MUDA para siempre, con el precio
+            # congelado y sin que el aviso de ceguera se entere.
+            if cortas < 3:
+                print("  [%s] solo %d vuelos (suele haber %d): lectura incompleta, "
+                      "la ignoro (%d de 3)" % (watch["name"], vistos, habituales, cortas))
+                return None
+            print("  [%s] %d lecturas cortas seguidas: me lo creo y bajo el listón "
+                  "a %d vuelos" % (watch["name"], cortas, vistos))
+            with self._lock:
+                watch["vuelos_habituales"] = vistos      # el listón BAJA, no solo sube
+                watch["lecturas_cortas"] = 0
+                self._save()
+        elif cortas:
+            with self._lock:
+                watch["lecturas_cortas"] = 0
         if vistos:
             with self._lock:
-                watch["vuelos_habituales"] = max(habituales, vistos)
+                watch["vuelos_habituales"] = max(watch.get("vuelos_habituales") or 0, vistos)
         if mejor is None:
             # Wizz puede decir que ese vuelo NO tiene ninguna tarifa a la
             # venta. Antes se guardaba su `originalPrice` como "orientativo",
@@ -829,8 +856,7 @@ class Engine:
               % (watch["name"], oferta.price, mejor_total, tope))
         return False
 
-    @staticmethod
-    def _traslado(watch):
+    def _traslado(self, watch):
         """Cómo se llega del aeropuerto al centro, si no es obvio.
 
         Un vuelo 20 € más barato a un aeropuerto que está a 55 km y una hora de
@@ -844,12 +870,41 @@ class Engine:
                 tabla = json.load(fh)
         except Exception:
             return None
-        # El aeropuerto que importa es el de destino en la ida y el de salida en
-        # la vuelta: en los dos casos, el que NO es el de casa.
+        # Antes solo miraba el aeropuerto de ESTE vuelo, así que en una
+        # combinación mixta (entras por Charleroi, sales por Zaventem) el aviso
+        # nombraba el tren de 12 min de Zaventem y se callaba la hora de bus de
+        # Charleroi, que es justo la que duele. Ahora se cuentan los dos.
         casa = "ALC"
-        otro = watch.get("destination") if watch.get("origin") == casa else watch.get("origin")
-        info = tabla.get(otro or "")
-        return ("🚌 %s" % info["aviso"]) if info and info.get("aviso") else None
+        codigos = []
+        try:
+            viajes = viajes_con(watch, self.watches, watch.get("ultimo_precio"))
+        except Exception as err:
+            # Se avisa: un except mudo aquí ya escondió un NameError y el aviso
+            # salió nombrando solo uno de los dos aeropuertos.
+            print("  [traslado] no pude calcular el viaje: %s" % str(err)[:80])
+            viajes = []
+        if viajes:
+            for t in (viajes[0].get("tramos") or []):
+                if t.get("tipo") == "tierra":
+                    continue
+                codigos.append(t.get("a") if t.get("de") == casa else t.get("de"))
+        else:
+            codigos.append(watch.get("destination")
+                           if watch.get("origin") == casa else watch.get("origin"))
+        avisos, total = [], 0
+        for c in dict.fromkeys(x for x in codigos if x and x != casa):
+            info = tabla.get(c)
+            if not info or not info.get("aviso"):
+                continue
+            avisos.append("🚌 %s" % info["aviso"])
+            total += info.get("minutos") or 0
+        if not avisos:
+            return None
+        if len(avisos) > 1:
+            avisos.append("En total, %d h %02d min de traslados entre aeropuerto y centro."
+                          % (total // 60, total % 60) if total >= 60 else
+                          "En total, %d min de traslados." % total)
+        return "\n\n".join(avisos)
 
     def _texto_bajada(self, watch, oferta, anterior):
         """Aviso de bajada CON CONTEXTO.
@@ -870,7 +925,8 @@ class Engine:
                   else "📉 <b>Ha bajado un poco</b>")
         lineas = [cabeza, "", "<b>%s</b>" % watch["name"], ""]
         lineas += bloque_horas(oferta, watch["date"])
-        lineas += ["", "<i>%s %s</i>" % (oferta.provider.upper(), oferta.label), "",
+        lineas += ["", "<i>%s %s</i>" % (_NOMBRE_CIA.get(oferta.provider,
+                                        oferta.provider.title()), oferta.label), "",
                    "Antes: <s>%.2f €</s>   Ahora: <b>%.2f €</b>  (−%.2f €)"
                    % (anterior, oferta.price, anterior - oferta.price), ""]
 
@@ -893,7 +949,7 @@ class Engine:
         # mensaje se quedaba sin ningún botón para comprar.
         if oferta.buy_url:
             lineas += ["", '👉 <a href="%s">Comprar este vuelo en %s</a>'
-                       % (oferta.buy_url, oferta.provider.title())]
+                       % (oferta.buy_url, _NOMBRE_CIA.get(oferta.provider, oferta.provider.title()))]
         if WEB_URL:
             lineas += ["", "", "🌐 %s" % WEB_URL]
         return "\n".join(lineas)
@@ -913,7 +969,8 @@ class Engine:
         for o in offers:
             lines += bloque_horas(o, watch["date"]) + [""]
             lines.append("💶 <b>%s</b> por persona · %s %s" %
-                         (o.price_str(), o.provider.upper(), o.label))
+                         (o.price_str(), _NOMBRE_CIA.get(o.provider,
+                                                         o.provider.title()), o.label))
             if bajada_de:
                 lines.append("📉 Acaba de bajar desde %.2f €." % bajada_de)
         objetivo = watch.get("max_price")
@@ -924,9 +981,15 @@ class Engine:
         traslado = self._traslado(watch)
         if traslado:
             lines += ["", traslado]
-        urls = sorted({o.buy_url for o in offers if o.buy_url})
-        if urls:
-            lines += ["", '👉 <a href="%s">Comprar este vuelo</a>' % urls[0]]
+        # El enlace debe ser el del vuelo que se anuncia, no el primero por
+        # orden alfabético: así mandaba a Google Flights en vez de a TUI fly.
+        conlink = [o for o in offers if o.buy_url and o.price]
+        if conlink:
+            mejorof = min(conlink, key=lambda o: o.price)
+            lines += ["", '👉 <a href="%s">Comprar este vuelo%s</a>'
+                      % (mejorof.buy_url,
+                         " en " + _NOMBRE_CIA.get(mejorof.provider, "")
+                         if _NOMBRE_CIA.get(mejorof.provider) else "")]
         lines += ["", "<i>No te lo repito salvo que baje todavía más.</i>"]
         if WEB_URL:
             lines += ["", "", "🌐 %s" % WEB_URL]
