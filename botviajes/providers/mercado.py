@@ -37,7 +37,17 @@ class MercadoProvider(Provider):
         except ImportError:
             print("  [mercado] falta playwright; no puedo consultar el mercado")
             return []
+        # Google a veces devuelve la página a medio pintar y salen menos vuelos
+        # de los que hay. Eso bajaba el "más barato" a un vuelo caro, machacaba
+        # el precio de referencia y en el siguiente sondeo parecía una BAJADA que
+        # nunca ocurrió. Si la primera lectura sale pobre, se reintenta una vez.
         filas = self._leer(origin, destination, date, adults)
+        if len(filas) < 2:
+            import time as _t
+            _t.sleep(4)
+            otra = self._leer(origin, destination, date, adults)
+            if len(otra) > len(filas):
+                filas = otra
         url = self._url(origin, destination, date, adults)
         ofertas = []
         for sale, llega, cia, dur, total in filas:

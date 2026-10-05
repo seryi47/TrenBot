@@ -1,0 +1,35 @@
+fragment FlightResponseCommonFragment on FlightResponse {
+  flightOffers {
+    flightOfferId
+    combiHashCode
+    priceDetails { pricePerPerson totalPrice type }
+    sourcingSystem
+    directions {
+      id type duration
+      stopoverType { flightType text }
+      origin { iataCode name isAlternative }
+      destination { iataCode name isAlternative }
+      departureTime arrivalTime availableSeats
+      carrier { name code }
+      segments {
+        id flightNumber departureTime arrivalTime duration airplaneType
+        origin { iataCode } destination { iataCode } carrier { name code }
+      }
+    }
+  }
+}
+query GetSearchResults(
+  $sourceMarket: String!, $origin: String!, $destination: String!,
+  $departureDate: String!, $returnDate: String, $adult: String!,
+  $child: String, $infant: String, $environment: String!, $channel: String!,
+  $journeyType: String!, $currency: String!, $locale: String!,
+  $includeNearbyAirports: Boolean
+) {
+  getSearchResults(
+    sourceMarket: $sourceMarket, origin: $origin, destination: $destination,
+    departureDate: $departureDate, returnDate: $returnDate, adult: $adult,
+    child: $child, infant: $infant, environment: $environment, channel: $channel,
+    journeyType: $journeyType, currency: $currency, locale: $locale,
+    includeNearbyAirports: $includeNearbyAirports
+  ) { ...FlightResponseCommonFragment }
+}

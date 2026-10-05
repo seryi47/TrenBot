@@ -382,9 +382,31 @@ class Engine:
         if offer.price is not None and offer.price <= 0:
             return False        # 0 € no existe: es un precio que no llegó
         mp = watch.get("max_price")
-        if mp is not None and (offer.price is None or offer.price > float(mp)):
+        # Sin objetivo no existe el concepto de "ha entrado en tu objetivo": si
+        # aquí se devolvía True, TODOS los vuelos del día contaban como logro y
+        # el aviso salía con los cinco pegados uno detrás de otro, repitiéndose
+        # en cada sondeo. Sin tope solo se avisa de BAJADAS.
+        if mp is None:
+            return False
+        if offer.price is None or offer.price > float(mp):
             return False
         return True
+
+    @staticmethod
+    def _sin_duplicados(ofertas):
+        """Un vuelo es su hora de salida. Si dos proveedores lo traen, gana el
+        que da precio y, a igualdad, el más barato: el nativo suele ser exacto y
+        el de mercado redondea."""
+        mejor = {}
+        for o in ofertas:
+            k = (o.departure or "", o.date)
+            viejo = mejor.get(k)
+            if viejo is None:
+                mejor[k] = o
+                continue
+            if o.price is not None and (viejo.price is None or o.price < viejo.price):
+                mejor[k] = o
+        return list(mejor.values())
 
     def _poll(self, watch):
         """Devuelve (las_que_cumplen, todas). La segunda lista sirve para seguir
@@ -397,6 +419,11 @@ class Engine:
                                          watch["date"], adults=watch.get("adults", 1))
                 todas.extend(offers)
                 found.extend([o for o in offers if self._matches(o, watch)])
+                # Zaventem se lee con dos proveedores a la vez (Vueling nativo y
+                # Google Flights). El mismo vuelo salía dos veces, con dos
+                # precios casi iguales, en el mismo aviso.
+                todas = self._sin_duplicados(todas)
+                found = self._sin_duplicados(found)
                 # Cuántas plazas quedan a este precio. Es la señal que avisa de
                 # que una tarifa va a subir, y en Wizz no viene en la respuesta.
                 self._mirar_plazas(watch, provider)
@@ -616,6 +643,18 @@ class Engine:
         redondeo del cambio de divisa dispare una alerta falsa.
         """
         mejor = self._mas_barata(todas, watch.get("time"))
+        # Red de seguridad para lecturas incompletas: si de repente vemos muchos
+        # menos vuelos que de costumbre, el "más barato" puede ser un vuelo caro
+        # que no refleja la realidad. No se guarda: se espera a la siguiente.
+        vistos = len([o for o in todas if o.price])
+        habituales = watch.get("vuelos_habituales") or 0
+        if mejor is not None and habituales >= 3 and vistos < max(2, habituales - 1):
+            print("  [%s] solo %d vuelos (suele haber %d): lectura incompleta, la ignoro"
+                  % (watch["name"], vistos, habituales))
+            return None
+        if vistos:
+            with self._lock:
+                watch["vuelos_habituales"] = max(habituales, vistos)
         if mejor is None:
             # Wizz puede decir que ese vuelo NO tiene ninguna tarifa a la
             # venta. Antes se guardaba su `originalPrice` como "orientativo",
@@ -832,7 +871,7 @@ class Engine:
             lines += ["", traslado]
         urls = sorted({o.buy_url for o in offers if o.buy_url})
         if urls:
-            lines += [""] + ['👉 <a href="%s">Comprar este vuelo</a>' % u for u in urls]
+            lines += ["", '👉 <a href="%s">Comprar este vuelo</a>' % urls[0]]
         lines += ["", "<i>No te lo repito salvo que baje todavía más.</i>"]
         if WEB_URL:
             lines += ["", "", "🌐 %s" % WEB_URL]

@@ -556,3 +556,49 @@ aviso lo añade:
 
 Porque un vuelo 20 € más barato a un aeropuerto que está a una hora de bus no es
 más barato, y la comparación sin eso engaña.
+
+### Transavia y TUI fly, también contra sus propias APIs
+Resueltas con la misma técnica que Vueling, cada una con su trampa.
+
+**Transavia** (`botviajes/providers/transavia.py`)
+- Su home da *"Attention Required! | Cloudflare"* con Playwright, pero
+  `curl_cffi impersonate="chrome"` entra a la primera: aquí Cloudflare mira la
+  **huella TLS**, no el user-agent. El navegador automatizado es lo que
+  estorbaba.
+- La base no es `/search/api` sino **`/start/api`**. Ahí están
+  `/flight-availability` y `/calendar-fares`.
+- `/flight-availability` **no lleva origen y destino en la query**: los lee de
+  la cookie `TransaviaFlightSearch`, que es el JSON de su formulario. Sin ella,
+  400 *"Invalid flight availability request"*.
+- Da plazas reales (`availabilityCount`).
+
+**TUI fly** (`botviajes/providers/tuifly.py`)
+- Al revés que Vueling: **Playwright NO sirve** (Akamai responde "Access
+  Denied"); con `curl_cffi impersonate="chrome"` pasa a la primera.
+- GraphQL en `mwa.tui.com/search/mwa/flight-search-results/graphql`, sin token
+  ni cookie. La consulta sale del bundle del micro-frontend.
+- **`totalPrice` es el del grupo**; el bueno es `pricePerPerson`. Con 2 adultos
+  el mismo vuelo da 149,99 y 299,98. Es el mismo error que ya nos pilló con
+  Google Flights.
+- `availableSeats` viene **siempre 10**: está topado, no son plazas reales, y
+  por eso no se usa.
+- Aviso: los vuelos TB a partir del **2027-05-01** se gestionan en otro motor
+  (`extendednetwork.tuifly.com`); habrá que rehacerlo para esas fechas.
+
+Verificado los tres contra Google Flights el 05-oct-2026, al céntimo. Solo
+**Brussels Airlines** sigue por Google Flights.
+
+### Sin tope: ni objetivos ni mensajes amontonados
+Al quitar el tope salió un fallo feo: `_matches` devolvía `True` para todo
+cuando no hay `max_price`, así que **todos los vuelos del día contaban como
+"ha entrado en tu objetivo"** y llegaba un mensaje con los cinco pegados, y
+otra vez en cada sondeo. Sin objetivo definido no existe ese aviso: solo
+bajadas, que por definición solo saltan cuando el precio cambia.
+
+Además, un mismo vuelo leído por dos proveedores (Vueling nativo y Google) salía
+dos veces en el mismo aviso. Ahora se deduplica por hora de salida.
+
+Y una lectura incompleta de Google (la página a medio pintar) bajaba el "más
+barato" a un vuelo caro, machacaba la referencia y al sondeo siguiente parecía
+una bajada que nunca ocurrió. Ahora se reintenta, y si se ven muchos menos
+vuelos de lo habitual la lectura se descarta en vez de guardarse.
