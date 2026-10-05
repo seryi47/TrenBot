@@ -2,13 +2,13 @@
  "viaje": {
   "titulo": "Diciembre — Alicante y Bruselas",
   "pasajeros": 1,
-  "tope_por_persona": null,
+  "tope_por_persona": 200,
   "reglas": [
    "Ida el viernes 4 o el sábado 5 de diciembre; vuelta el martes 8",
    "Ida y vuelta desde Alicante, siempre vuelo DIRECTO",
    "Dos aeropuertos: Charleroi (Ryanair) y Zaventem (Transavia, TUI, Vueling, Brussels Airlines)",
    "Zaventem se lee vía Google Flights: sin plazas restantes y sin enlace de la aerolínea",
-   "Sin tope de precio: se avisa de cualquier bajada, para ir viendo"
+   "Máximo 200 € por persona sumando ida y vuelta"
   ]
  },
  "opciones": [

@@ -637,3 +637,18 @@ cosecha de JS no encontró nada (eran los scripts de una página de error). La U
 buena es `/es/es/`. Callejones ya comprobados: `/service/api/bestprice/*` (503),
 `/service/api/flight-prices/*` (400), `once.brusselsairlines.com` (404),
 `api.brusselsairlines.com` (no responde).
+
+### Cambiar watches.yaml ahora SÍ tiene efecto
+`seed_from_config` se saltaba cualquier vigilancia cuyo nombre ya existiera, así
+que cambiarle los proveedores, los pasajeros o el ritmo en `watches.yaml` no
+hacía nada: seguía corriendo con lo viejo, y en silencio.
+
+Pasó de verdad: el YAML decía `vueling+transavia+tuifly+mercado` y el bot seguía
+leyendo Zaventem solo por Google, dando 126 € redondeados en vez de los 125,99 €
+exactos de Vueling. Ahora actualiza `providers`, `adults`, `poll_interval`,
+`max_price`, `umbral_bajada`, `time` y `chat_id` de las que ya existen, y avisa
+por consola de cuántos ajustes aplicó.
+
+(En la nube no se notaba porque `watches.json` está en .gitignore y cada job
+arranca sin estado, construyendo todo desde el YAML. Se notaba solo en local,
+que es donde se prueba.)

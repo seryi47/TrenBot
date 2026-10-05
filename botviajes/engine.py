@@ -356,11 +356,26 @@ class Engine:
             return n
 
     def seed_from_config(self, config_watches):
-        """Carga watches definidos en config.yaml (sin duplicar por nombre)."""
+        """Carga la watchlist del YAML y ACTUALIZA las que ya existen.
+
+        Antes se saltaba cualquier vigilancia cuyo nombre ya estuviera, así que
+        cambiar sus proveedores, pasajeros o ritmo en watches.yaml no servía de
+        nada: seguía corriendo con lo viejo y en silencio. Pasó de verdad al
+        añadir los proveedores nativos de Zaventem: el YAML decía
+        vueling+transavia+tuifly y el bot seguía leyendo solo por Google.
+        """
+        AJUSTABLES = ("providers", "adults", "poll_interval", "max_price",
+                      "umbral_bajada", "time", "chat_id")
         with self._lock:
-            existing = {w["name"] for w in self.watches}
+            porNombre = {w["name"]: w for w in self.watches}
+            cambiadas = 0
             for cw in (config_watches or []):
-                if cw.get("name") in existing:
+                viejo = porNombre.get(cw.get("name"))
+                if viejo is not None:
+                    for campo in AJUSTABLES:
+                        if campo in cw and cw[campo] != viejo.get(campo):
+                            viejo[campo] = cw[campo]
+                            cambiadas += 1
                     continue
                 self.add_watch(
                     name=cw.get("name"),
@@ -371,6 +386,9 @@ class Engine:
                     adults=cw.get("adults", 1),
                     poll_interval=cw.get("poll_interval"),
                 )
+            if cambiadas:
+                print("[engine] %d ajuste(s) aplicados desde el fichero de rutas" % cambiadas)
+                self._save()
 
     # ---- lógica de coincidencia --------------------------------------------
     def _matches(self, offer: Offer, watch) -> bool:
