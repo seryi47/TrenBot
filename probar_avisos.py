@@ -66,9 +66,14 @@ def main():
     # la aerolínea puede haberlo cambiado y el test fallaría sin haber ningún
     # fallo real (ya pasó una vez).
     from botviajes.providers import get_provider
-    ofertas = [o for o in get_provider("ryanair").search(
+    todas_of = get_provider("ryanair").search(
         base["origin"], base["destination"], base["date"],
-        adults=base.get("adults", 1)) if o.departure == base.get("time")]
+        adults=base.get("adults", 1))
+    # Una vigilancia puede no fijar hora (sigue "el más barato del día"): en ese
+    # caso no hay nada que filtrar y se coge el más barato, como hace el motor.
+    hora = (base.get("time") or "").strip()
+    ofertas = ([o for o in todas_of if o.departure == hora] if hora
+               else sorted([o for o in todas_of if o.price], key=lambda o: o.price))
     if not ofertas:
         print("No hay oferta para %s ahora mismo; no se puede probar." % base["name"])
         return 1

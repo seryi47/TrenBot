@@ -2,6 +2,7 @@
 
 from botviajes.providers.amadeus import AmadeusProvider
 from botviajes.providers.iryo import IryoProvider
+from botviajes.providers.mercado import MercadoProvider
 from botviajes.providers.ouigo import OuigoProvider
 from botviajes.providers.renfe import RenfeProvider
 from botviajes.providers.ryanair import RyanairProvider
@@ -16,6 +17,7 @@ _CLASSES = {
     "amadeus": AmadeusProvider,
     "ryanair": RyanairProvider,
     "wizz": WizzProvider,
+    "mercado": MercadoProvider,
 }
 
 ALL = list(_CLASSES.keys())

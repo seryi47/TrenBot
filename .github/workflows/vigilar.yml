@@ -38,7 +38,13 @@ jobs:
           cache: pip
 
       - name: Instalar dependencias
-        run: pip install requests PyYAML json5 curl_cffi
+        run: pip install requests PyYAML json5 curl_cffi playwright
+
+      # Zaventem (BRU) no lo vuela ni Ryanair ni Wizz: sus compañías no tienen
+      # API abierta y se leen con navegador vía Google Flights. Sin esto, el
+      # proveedor "mercado" no puede consultar y esas rutas quedan a ciegas.
+      - name: Instalar el navegador (para leer el mercado)
+        run: playwright install --with-deps chromium
 
       - name: Vigilar en bucle
         env:

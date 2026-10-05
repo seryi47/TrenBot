@@ -1,20 +1,19 @@
 # Watchlist para GitHub Actions (este archivo SÍ se sube al repo).
 # NO pongas aquí el token ni el chat_id: van como "secrets" del repo.
-# Para cambiar qué vigilas: edita este archivo y haz git push.
 #
-# VIAJE DE DICIEMBRE 2026: Alicante <-> Bruselas, ida y vuelta desde Alicante,
-# 2 personas, SOLO vuelo directo.
+# VIAJE: Alicante <-> Bruselas, diciembre 2026, 1 PERSONA, SOLO vuelo directo.
+#   IDA     viernes 4 o sábado 5 de diciembre
+#   VUELTA  martes 8 de diciembre
 #
-# Solo hay directo a CHARLEROI (CRL, "Bruselas Sur"), con Ryanair. A Zaventem
-# (BRU) no vuelan ni Ryanair ni Wizz desde Alicante.
+# DOS aeropuertos, porque son dos mundos distintos:
+#   CRL  Charleroi ("Bruselas Sur")  -> Ryanair. A 55 km del centro, 1 h en bus.
+#   BRU  Zaventem (el de verdad)     -> Transavia, TUI fly, Vueling, Brussels
+#        Airlines. Ninguna tiene API abierta, así que se leen vía Google Flights
+#        con el proveedor "mercado" (navegador; ~25 s por consulta, de ahí el
+#        poll_interval más alto y que no dé plazas restantes).
 #
-# La vuelta es el 4 o el 5 de diciembre. El 4 solo valdría saliendo a partir de
-# las 16:30 y NO existe ningún vuelo así: los dos del día 4 salen 09:15 y 13:10.
-# Se vigila el 13:10 por si cambia de idea, y los dos del día 5.
-#
-# poll_interval por ruta = 900 s: Ryanair corta (429) si se le pregunta cada
-# minuto. adults: 2. max_price es el OBJETIVO; además se avisa de cualquier
-# bajada de 3 EUR o más aunque no lo alcance.
+# Sin "time": se vigila el vuelo MÁS BARATO de ese día, sea de la hora que sea.
+# max_price es el OBJETIVO; además avisa de cualquier bajada de 3 EUR o más.
 
 poll_interval: 30
 alert_interval: 10
@@ -23,29 +22,51 @@ open_browser: false
 watches:
 - providers: &id001
   - ryanair
-  adults: 2
+  adults: 1
   poll_interval: 900
-  name: VUELTA · Bruselas→Alicante (sáb 5, 21:00)
-  origin: CRL
-  destination: ALC
-  date: '2026-12-05'
-  time: '21:00'
-  max_price: 25
-- providers: *id001
-  adults: 2
-  poll_interval: 900
-  name: VUELTA · Bruselas→Alicante (sáb 5, 09:40)
-  origin: CRL
-  destination: ALC
-  date: '2026-12-05'
-  time: 09:40
-  max_price: 30
-- providers: *id001
-  adults: 2
-  poll_interval: 900
-  name: VUELTA · Bruselas→Alicante (vie 4, 13:10)
-  origin: CRL
-  destination: ALC
+  name: IDA · Alicante→Charleroi (vie 4)
+  origin: ALC
+  destination: CRL
   date: '2026-12-04'
-  time: '13:10'
-  max_price: 32
+  max_price: 90
+- providers: *id001
+  adults: 1
+  poll_interval: 900
+  name: IDA · Alicante→Charleroi (sáb 5)
+  origin: ALC
+  destination: CRL
+  date: '2026-12-05'
+  max_price: 90
+- providers: &id002
+  - mercado
+  adults: 1
+  poll_interval: 1800
+  name: IDA · Alicante→Zaventem (vie 4)
+  origin: ALC
+  destination: BRU
+  date: '2026-12-04'
+  max_price: 110
+- providers: *id002
+  adults: 1
+  poll_interval: 1800
+  name: IDA · Alicante→Zaventem (sáb 5)
+  origin: ALC
+  destination: BRU
+  date: '2026-12-05'
+  max_price: 110
+- providers: *id001
+  adults: 1
+  poll_interval: 900
+  name: VUELTA · Charleroi→Alicante (mar 8)
+  origin: CRL
+  destination: ALC
+  date: '2026-12-08'
+  max_price: 90
+- providers: *id002
+  adults: 1
+  poll_interval: 1800
+  name: VUELTA · Zaventem→Alicante (mar 8)
+  origin: BRU
+  destination: ALC
+  date: '2026-12-08'
+  max_price: 110

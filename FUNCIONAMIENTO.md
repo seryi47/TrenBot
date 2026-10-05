@@ -489,3 +489,27 @@ Ahora un tramo en objetivo solo se avisa si forma parte de **al menos un viaje
 comprable** y ese viaje no se dispara del tope, el mismo criterio que las
 bajadas y las últimas plazas. Y los tramos sin venta no puntúan en ningún total:
 su viaje sale *incompleto*, igual que en la web.
+
+### Vigilar compañías que no tienen API: el proveedor "mercado"
+A **Bruselas-Zaventem (BRU)** desde Alicante solo vuelan Transavia, TUI fly,
+Vueling y Brussels Airlines. Ninguna tiene API abierta, y Skyscanner y Kiwi no
+se dejan leer (captcha y clave de pago). **Google Flights sí**, y las agrega a
+todas, así que `botviajes/providers/mercado.py` las lee con un navegador.
+
+Dos cosas verificadas antes de fiarse de sus números:
+
+- **Google da el precio TOTAL del grupo, no el de una persona.** Contrastado
+  contra precio conocido: Ryanair ALC→CRL del 5-dic a las 18:05 cuesta 106,99 €
+  por persona, y Google muestra **107 € pidiendo 1 adulto y 214 € pidiendo 2**.
+  El proveedor divide entre los pasajeros para dar siempre el precio por persona.
+- No da plazas restantes ni enlace de la aerolínea, y tarda ~25 s por consulta
+  (hay que abrir un navegador). De ahí que esas rutas vayan con `poll_interval`
+  de 30 min en vez de 15.
+
+El workflow instala `playwright` y Chromium; sin eso esas rutas quedan ciegas.
+
+### La clave del histórico identifica el VUELO
+Lleva la hora de salida (`ryanair|CRL|ALC|2026-12-05|21:00`). Sin ella, dos
+vuelos del mismo día en la misma ruta compartían serie de precios **y** silencio
+de avisos: uno borraba el silencio del otro y el mensaje de objetivo se repetía
+en cada sondeo. Se descubrió al vigilar los dos Charleroi→Alicante del 5-dic.
