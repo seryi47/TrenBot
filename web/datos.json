@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 108.99,
      "maximo": 109.99,
-     "visto": "2026-10-05 14:18",
+     "visto": "2026-10-05 19:37",
      "estado": "ok",
      "historico": [
       [
@@ -80,7 +80,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -149,7 +149,7 @@
      "duracion": "02:30",
      "minimo": 112.4,
      "maximo": 112.4,
-     "visto": "2026-10-05 14:18",
+     "visto": "2026-10-05 19:37",
      "estado": "ok",
      "historico": [
       [
@@ -180,7 +180,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -249,7 +249,7 @@
      "duracion": "02:30",
      "minimo": 108.99,
      "maximo": 109.99,
-     "visto": "2026-10-05 14:18",
+     "visto": "2026-10-05 19:37",
      "estado": "ok",
      "historico": [
       [
@@ -276,7 +276,7 @@
      "sale": "06:45",
      "llega": "09:10",
      "ref": 120.53,
-     "precio": 135.13,
+     "precio": 134.13,
      "llega_aprox": false,
      "etiqueta": "FR3534",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -284,7 +284,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -294,14 +294,18 @@
       [
        "2026-10-05 14:03",
        135.13
+      ],
+      [
+       "2026-10-05 19:38",
+       134.13
       ]
      ],
-     "variacion": 14.6
+     "variacion": 13.6
     }
    ],
    "itinerario": [],
-   "total_persona": 244.12,
-   "total_grupo": 244.12,
+   "total_persona": 243.12,
+   "total_grupo": 243.12,
    "ida_fecha": "2026-12-05",
    "ida_hora": "18:05",
    "ida_iata": "CRL",
@@ -353,7 +357,7 @@
      "duracion": "02:30",
      "minimo": 112.4,
      "maximo": 112.4,
-     "visto": "2026-10-05 14:18",
+     "visto": "2026-10-05 19:37",
      "estado": "ok",
      "historico": [
       [
@@ -376,7 +380,7 @@
      "sale": "06:45",
      "llega": "09:10",
      "ref": 120.53,
-     "precio": 135.13,
+     "precio": 134.13,
      "llega_aprox": false,
      "etiqueta": "FR3534",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -384,7 +388,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -394,14 +398,18 @@
       [
        "2026-10-05 14:03",
        135.13
+      ],
+      [
+       "2026-10-05 19:38",
+       134.13
       ]
      ],
-     "variacion": 14.6
+     "variacion": 13.6
     }
    ],
    "itinerario": [],
-   "total_persona": 247.53,
-   "total_grupo": 247.53,
+   "total_persona": 246.53,
+   "total_grupo": 246.53,
    "ida_fecha": "2026-12-04",
    "ida_hora": "06:20",
    "ida_iata": "CRL",
@@ -453,7 +461,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 125.99,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -484,7 +492,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -553,7 +561,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-05 14:18",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -584,7 +592,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -653,7 +661,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 125.99,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -676,7 +684,7 @@
      "sale": "06:45",
      "llega": "09:10",
      "ref": 120.53,
-     "precio": 135.13,
+     "precio": 134.13,
      "llega_aprox": false,
      "etiqueta": "FR3534",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -684,7 +692,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -694,14 +702,18 @@
       [
        "2026-10-05 14:03",
        135.13
+      ],
+      [
+       "2026-10-05 19:38",
+       134.13
       ]
      ],
-     "variacion": 14.6
+     "variacion": 13.6
     }
    ],
    "itinerario": [],
-   "total_persona": 261.12,
-   "total_grupo": 261.12,
+   "total_persona": 260.12,
+   "total_grupo": 260.12,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -753,7 +765,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-05 14:18",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -776,7 +788,7 @@
      "sale": "06:45",
      "llega": "09:10",
      "ref": 120.53,
-     "precio": 135.13,
+     "precio": 134.13,
      "llega_aprox": false,
      "etiqueta": "FR3534",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -784,7 +796,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-05 14:19",
+     "visto": "2026-10-05 19:38",
      "estado": "ok",
      "historico": [
       [
@@ -794,14 +806,18 @@
       [
        "2026-10-05 14:03",
        135.13
+      ],
+      [
+       "2026-10-05 19:38",
+       134.13
       ]
      ],
-     "variacion": 14.6
+     "variacion": 13.6
     }
    ],
    "itinerario": [],
-   "total_persona": 269.13,
-   "total_grupo": 269.13,
+   "total_persona": 268.13,
+   "total_grupo": 268.13,
    "ida_fecha": "2026-12-04",
    "ida_hora": "10:10",
    "ida_iata": "BRU",
@@ -822,6 +838,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-05 14:19",
- "actualizado_iso": "2026-10-05T14:19:22.530898+00:00"
+ "actualizado": "2026-10-05 19:38",
+ "actualizado_iso": "2026-10-05T19:38:43.421284+00:00"
 }
