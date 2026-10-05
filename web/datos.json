@@ -44,7 +44,7 @@
      "duracion": "02:30",
      "minimo": 109.99,
      "maximo": 109.99,
-     "visto": "2026-10-05 07:45",
+     "visto": "2026-10-05 08:36",
      "estado": "ok",
      "historico": [
       [
@@ -75,7 +75,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 120.53,
-     "visto": "2026-10-05 07:46",
+     "visto": "2026-10-05 08:37",
      "estado": "ok",
      "historico": [
       [
@@ -140,7 +140,7 @@
      "duracion": "02:30",
      "minimo": 112.4,
      "maximo": 112.4,
-     "visto": "2026-10-05 07:45",
+     "visto": "2026-10-05 08:36",
      "estado": "ok",
      "historico": [
       [
@@ -171,7 +171,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 120.53,
-     "visto": "2026-10-05 07:46",
+     "visto": "2026-10-05 08:37",
      "estado": "ok",
      "historico": [
       [
@@ -228,15 +228,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 126.0,
-     "precio": 126.0,
+     "precio": 125.99,
      "llega_aprox": false,
-     "etiqueta": "VuelingIberia",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-05%20oneway%20nonstop%20for%201%20adults",
-     "plazas": null,
-     "duracion": "2 h 35 min",
-     "minimo": 126.0,
-     "maximo": 126.0,
-     "visto": "2026-10-05 07:46",
+     "etiqueta": "VY7862",
+     "url": "https://tickets.vueling.com/",
+     "plazas": 114,
+     "duracion": "2:35",
+     "minimo": 125.99,
+     "maximo": 125.99,
+     "visto": "2026-10-05 08:37",
      "estado": "ok",
      "historico": [
       [
@@ -267,7 +267,7 @@
      "duracion": "2 h 45 min",
      "minimo": 125.0,
      "maximo": 125.0,
-     "visto": "2026-10-05 07:46",
+     "visto": "2026-10-05 08:37",
      "estado": "ok",
      "historico": [
       [
@@ -279,8 +279,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 251.0,
-   "total_grupo": 251.0,
+   "total_persona": 250.99,
+   "total_grupo": 250.99,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -332,7 +332,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-05 07:46",
+     "visto": "2026-10-05 08:37",
      "estado": "ok",
      "historico": [
       [
@@ -363,7 +363,7 @@
      "duracion": "2 h 45 min",
      "minimo": 125.0,
      "maximo": 125.0,
-     "visto": "2026-10-05 07:46",
+     "visto": "2026-10-05 08:37",
      "estado": "ok",
      "historico": [
       [
@@ -397,6 +397,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-05 07:46",
- "actualizado_iso": "2026-10-05T07:46:41.922083+00:00"
+ "actualizado": "2026-10-05 08:37",
+ "actualizado_iso": "2026-10-05T08:37:42.185389+00:00"
 }
