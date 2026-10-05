@@ -1,0 +1,95 @@
+query GetAvy($requestAVY:AvailabilityRequestGraphQLInput!){ amsAvy (amsAvailabilityRequest  : $requestAVY) {
+    currencyCode,
+      trips {
+        trips {
+        journeysAvailableByMarket  {
+            key,
+          value{
+                journeyKey,
+                segments {
+                    carrierCodeShare,
+                    segmentType,
+                    segmentKey,
+                    identifier {
+                        carrierCode,
+                        identifier
+                    },
+                    designator{
+                        arrival,
+                        departure,
+                        destination,
+                        origin
+                    },
+                    segmentDuration,
+                    legs {
+                        legKey,
+                        legInfo {
+                            operatingCarrier,
+                            operatedByText,
+                            departureTerminal,
+                            arrivalTerminal,
+                            arrivalTimeUtc,
+                            departureTimeUtc,
+                            departureTimeVariant,
+                            lid,
+                            sold
+                        },
+                        ssrs {
+                            available,
+                            ssrNestCode
+                        }
+                    },
+                },designator{
+                    arrival,
+                    departure,
+                    destination,
+                    origin
+                },
+                fares{
+                    fareAvailabilityKey,
+                    fareSellKey,
+                    details {
+                        serviceBundleSetCode,
+                        bundleReferences,
+                        reference,
+                        availableCount
+                    }
+                },
+                flightType,
+                duration,
+                connectionTime
+            }
+        }
+      }
+    },
+    faresAvailable {
+      value {
+            fares {
+                productClass,
+                classOfService,
+                fareBasisCode,
+                passengerFares {
+                    amsFareAmount
+                },
+                reference,
+                ruleNumber
+            },
+            fareAvailabilityKey
+      }
+    },
+    bundleOffers {
+        key,
+        value {
+            bundlePrices{
+                totalPrice, taxTotal, feePrice, passengerType,
+                program {
+                    code, level
+                },
+                bundleSsrPrices {
+                    bundleSsrPrice, taxTotal, ssrCode
+                }
+            }, bundleCode
+        }
+    }
+ }
+}

@@ -6,6 +6,7 @@ from botviajes.providers.mercado import MercadoProvider
 from botviajes.providers.ouigo import OuigoProvider
 from botviajes.providers.renfe import RenfeProvider
 from botviajes.providers.ryanair import RyanairProvider
+from botviajes.providers.vueling import VuelingProvider
 from botviajes.providers.wizz import WizzProvider
 
 # Instancias perezosas (se crean al primer uso para no cargar datos de más).
@@ -18,6 +19,7 @@ _CLASSES = {
     "ryanair": RyanairProvider,
     "wizz": WizzProvider,
     "mercado": MercadoProvider,
+    "vueling": VuelingProvider,
 }
 
 ALL = list(_CLASSES.keys())

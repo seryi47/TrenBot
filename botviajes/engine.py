@@ -737,6 +737,28 @@ class Engine:
               % (watch["name"], oferta.price, mejor_total, tope))
         return False
 
+    @staticmethod
+    def _traslado(watch):
+        """Cómo se llega del aeropuerto al centro, si no es obvio.
+
+        Un vuelo 20 € más barato a un aeropuerto que está a 55 km y una hora de
+        bus no es más barato. Esto va en el aviso para que la comparación sea
+        honesta.
+        """
+        try:
+            with open(os.path.join(os.path.dirname(os.path.dirname(
+                    os.path.abspath(__file__))), "data", "traslados.json"),
+                    encoding="utf-8") as fh:
+                tabla = json.load(fh)
+        except Exception:
+            return None
+        # El aeropuerto que importa es el de destino en la ida y el de salida en
+        # la vuelta: en los dos casos, el que NO es el de casa.
+        casa = "ALC"
+        otro = watch.get("destination") if watch.get("origin") == casa else watch.get("origin")
+        info = tabla.get(otro or "")
+        return ("🚌 %s" % info["aviso"]) if info and info.get("aviso") else None
+
     def _texto_bajada(self, watch, oferta, anterior):
         """Aviso de bajada CON CONTEXTO.
 
@@ -772,6 +794,9 @@ class Engine:
         bloque = bloque_viaje(watch, self.watches, oferta.price)
         viajes_encontrados = bool(bloque)
         lineas += bloque
+        traslado = self._traslado(watch)
+        if traslado:
+            lineas += ["", traslado]
         if not viajes_encontrados:
             lineas += ["", '👉 <a href="%s">Comprar en %s</a>'
                        % (oferta.buy_url, oferta.provider.title())]
@@ -802,6 +827,9 @@ class Engine:
             lines.append("Tu objetivo era ≤%.0f €." % float(objetivo))
         lines += bloque_viaje(watch, self.watches,
                               min((o.price for o in offers if o.price), default=None))
+        traslado = self._traslado(watch)
+        if traslado:
+            lines += ["", traslado]
         urls = sorted({o.buy_url for o in offers if o.buy_url})
         if urls:
             lines += [""] + ['👉 <a href="%s">Comprar este vuelo</a>' % u for u in urls]

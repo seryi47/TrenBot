@@ -9,8 +9,9 @@
 #   CRL  Charleroi ("Bruselas Sur")  -> Ryanair. A 55 km del centro, 1 h en bus.
 #   BRU  Zaventem (el de verdad)     -> Transavia, TUI fly, Vueling, Brussels
 #        Airlines. Ninguna tiene API abierta, así que se leen vía Google Flights
-#        con el proveedor "mercado" (navegador; ~25 s por consulta, de ahí el
-#        poll_interval más alto y que no dé plazas restantes).
+#        VUELING se consulta contra SU PROPIA API (proveedor "vueling": precios
+#        y plazas reales). Las otras tres siguen vía Google Flights ("mercado"),
+#        que tarda ~25 s y no da plazas, de ahí el poll_interval más alto.
 #
 # Sin "time": se vigila el vuelo MÁS BARATO de ese día, sea de la hora que sea.
 # max_price es el OBJETIVO; además avisa de cualquier bajada de 3 EUR o más.
@@ -37,7 +38,8 @@ watches:
   destination: CRL
   date: '2026-12-05'
   max_price: 90
-- providers: &id002
+- providers:
+  - vueling
   - mercado
   adults: 1
   poll_interval: 1800
@@ -46,7 +48,9 @@ watches:
   destination: BRU
   date: '2026-12-04'
   max_price: 110
-- providers: *id002
+- providers:
+  - vueling
+  - mercado
   adults: 1
   poll_interval: 1800
   name: IDA · Alicante→Zaventem (sáb 5)
@@ -62,7 +66,9 @@ watches:
   destination: ALC
   date: '2026-12-08'
   max_price: 90
-- providers: *id002
+- providers:
+  - vueling
+  - mercado
   adults: 1
   poll_interval: 1800
   name: VUELTA · Zaventem→Alicante (mar 8)

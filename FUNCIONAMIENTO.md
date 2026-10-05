@@ -513,3 +513,46 @@ Lleva la hora de salida (`ryanair|CRL|ALC|2026-12-05|21:00`). Sin ella, dos
 vuelos del mismo día en la misma ruta compartían serie de precios **y** silencio
 de avisos: uno borraba el silencio del otro y el mensaje de objetivo se repetía
 en cada sondeo. Se descubrió al vigilar los dos Charleroi→Alicante del 5-dic.
+
+### Vueling, contra su propia API (sin scraping)
+Se consiguió. La técnica, por si hay que repetirla con otra aerolínea:
+
+1. Su buscador es una SPA que carga el código **en trozos**. Mirar solo los
+   scripts del HTML no vale: hay que capturar **todos** los `.js` que descarga
+   (20 ficheros, 5 MB) y buscar dentro.
+2. Ahí aparece su tabla de **79 endpoints**: `asm/v1/Auth`, `avy/v1/graphql`,
+   `avy/v3/AvailabilityServices/allFlights`…
+3. `POST /asm/v1/Auth` con `{"profileId": "<el de su web>"}` devuelve un Bearer
+   que dura una hora.
+4. La disponibilidad real va por GraphQL, y la forma del cuerpo está en el
+   propio bundle (`buildAvailabilitySearch`, `buildCriteria`, `buildPassenger`).
+
+**Dos trampas que costaron encontrar:**
+
+- `allFlights` **no sirve** para vigilar un día concreto: es un calendario con
+  el precio más barato de cada día, y ese precio puede ser de un vuelo **con
+  escala**. Para el 5-dic daba 94,06 € de un vuelo con conexión mientras el
+  directo costaba 125,99 €. El campo que lo delata es `isConnectionFlight`, no
+  `connectionFlight`: filtrar por el nombre equivocado da por directos vuelos
+  que no lo son.
+- En el GraphQL, `bundleControlFilter` es un **entero y vale 2**. Con 0, 1 o
+  nulo revienta con *"Cannot return null for non-nullable field"*.
+
+A cambio da más que Google: precio exacto y **plazas libres reales**
+(`lid` − `sold`). Verificado: ALC→BRU del 5-dic, VY7862 12:20→14:55, **125,99 €**
+aquí y 126 € en Google.
+
+Transavia, TUI fly y Brussels Airlines siguen por Google Flights: Transavia va
+tras Cloudflare y las otras dos no se han intentado todavía. La técnica de
+arriba es la que hay que aplicarles.
+
+### Los avisos dicen si hay que coger transporte
+`data/traslados.json` guarda, por aeropuerto, cómo se llega al centro. Cada
+aviso lo añade:
+
+    🚌 Charleroi está a 55 km de Bruselas: 1 h de bus lanzadera, 20-22 € ida y
+       vuelta. De avión a centro, hora y media.
+    🚌 Zaventem tiene tren bajo la terminal: 12 min al centro, cada cuarto de hora.
+
+Porque un vuelo 20 € más barato a un aeropuerto que está a una hora de bus no es
+más barato, y la comparación sin eso engaña.
