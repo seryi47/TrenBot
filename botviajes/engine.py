@@ -26,6 +26,22 @@ def _tope_del_viaje():
 
 TOPE_VIAJE = _tope_del_viaje()
 
+
+def _pasajeros_del_viaje():
+    """Cuánta gente viaja, según rutas.json. Sin esto el mensaje decía 'los dos'
+    aunque el viaje fuera de una sola persona."""
+    try:
+        import json as _j, os as _o
+        ruta = _o.path.join(_o.path.dirname(_o.path.dirname(_o.path.abspath(__file__))),
+                            "rutas.json")
+        return int((_j.load(open(ruta, encoding="utf-8")).get("viaje") or {}).get(
+            "pasajeros") or 1)
+    except Exception:
+        return 1
+
+
+_PASAJEROS = _pasajeros_del_viaje()
+
 # Panel web donde se ve todo junto; se enlaza en cada aviso de Telegram.
 WEB_URL = os.environ.get("WEB_URL", "https://viaje-octubre.vercel.app").strip()
 
@@ -44,6 +60,22 @@ def fecha_larga(iso):
         return iso
 
 
+def _nombre_aeropuerto(codigo):
+    """IATA -> nombre legible. Los proveedores nuevos pasan el código, y el
+    mensaje quedaba como 'Sale de ALC … llega a CRL', que no dice nada."""
+    if not codigo or len(codigo) != 3:
+        return codigo
+    try:
+        import json as _j, os as _o
+        ruta = _o.path.join(_o.path.dirname(_o.path.dirname(_o.path.abspath(__file__))),
+                            "data", "traslados.json")
+        with open(ruta, encoding="utf-8") as fh:
+            info = _j.load(fh).get(codigo) or {}
+        return info.get("aeropuerto") or info.get("ciudad") or codigo
+    except Exception:
+        return codigo
+
+
 def bloque_horas(oferta, fecha):
     """Salida y llegada SIEMPRE visibles, dejando claro que la hora de salida
     es la del país desde el que despega (en una vuelta no es la de España)."""
@@ -52,12 +84,12 @@ def bloque_horas(oferta, fecha):
     pd = raw.get("pais_destino") or ""
     aprox = "≈" if raw.get("llegada_estimada") else ""
     lineas = ["🛫 <b>Sale de %s el %s a las %s</b>%s" % (
-        oferta.origin, fecha_larga(fecha), oferta.departure,
+        _nombre_aeropuerto(oferta.origin), fecha_larga(fecha), oferta.departure,
         (" — hora local de %s" % po) if po else "")]
     if oferta.arrival:
         lineas.append("")          # aire entre salida y llegada, se lee mejor
         lineas.append("🛬 Llega a %s a las %s%s%s" % (
-            oferta.destination, aprox, oferta.arrival,
+            _nombre_aeropuerto(oferta.destination), aprox, oferta.arrival,
             (" — hora local de %s" % pd) if pd else ""))
     return lineas
 
@@ -106,8 +138,11 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
     mejor = viajes[0]
     lineas += ["", "🧳 <b>EL VIAJE COMPLETO</b>", "",
                "<b>%s</b>" % mejor["titulo"],
-               "<b>%.2f € por persona</b> · %.2f € los dos · %s"
-               % (mejor["total"], mejor["total"] * 2,
+               "<b>%.2f € por persona</b>%s · %s"
+               % (mejor["total"],
+                  # Nada de "los dos" fijo: el viaje puede ser de una persona.
+                  (" · %.2f € los %d" % (mejor["total"] * _PASAJEROS, _PASAJEROS))
+                  if _PASAJEROS > 1 else "",
                   "✅ entra en tu tope" if mejor["dentro"] else "⚠️ se pasa del tope")]
     vuelos = [t for t in mejor["tramos"] if t.get("tipo") == "vuelo"]
     # Cada traslado se cuelga del vuelo al que SIGUE, y solo de ese. Antes se
@@ -854,8 +889,10 @@ class Engine:
         traslado = self._traslado(watch)
         if traslado:
             lineas += ["", traslado]
-        if not viajes_encontrados:
-            lineas += ["", '👉 <a href="%s">Comprar en %s</a>'
+        # El enlace va SIEMPRE: antes, si se encontraba el viaje completo, el
+        # mensaje se quedaba sin ningún botón para comprar.
+        if oferta.buy_url:
+            lineas += ["", '👉 <a href="%s">Comprar este vuelo en %s</a>'
                        % (oferta.buy_url, oferta.provider.title())]
         if WEB_URL:
             lineas += ["", "", "🌐 %s" % WEB_URL]

@@ -60,14 +60,23 @@ def _traslado_aeropuerto(op):
             tabla = json.load(fh)
     except Exception:
         return 0, None
+    # Cada tramo aporta SU trayecto, una sola vez. Antes se cogía el primer
+    # aeropuerto que aparecía y se doblaba, lo que estaba bien entrando y
+    # saliendo por el mismo sitio pero mentía en las combinaciones mixtas:
+    # Charleroi→Zaventem son 1 h de bus MÁS 12 min de tren, no 2 h de bus.
+    total, principal = 0, None
     for t in (op.get("tramos") or []):
         if t.get("tipo") == "tierra":
             continue
-        for iata in (t.get("a"), t.get("de")):
-            if iata and iata != "ALC" and iata in tabla:
-                info = tabla[iata]
-                return (info.get("minutos") or 0) * 2, info
-    return 0, None
+        iata = t.get("a") if t.get("de") == "ALC" else t.get("de")
+        info = tabla.get(iata or "")
+        if not info:
+            continue
+        total += info.get("minutos") or 0
+        # El que manda en el texto es el más pesado: el que duele.
+        if principal is None or (info.get("minutos") or 0) > (principal.get("minutos") or 0):
+            principal = info
+    return total, principal
 
 
 def _tierra(op):

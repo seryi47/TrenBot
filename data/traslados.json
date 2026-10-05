@@ -1,12 +1,30 @@
 {
  "_comentario": "Cómo se llega del aeropuerto al centro. El bot lo añade a cada aviso y la web lo muestra, porque un vuelo barato a un aeropuerto lejano no es barato.",
- "CRL": {"ciudad": "Bruselas", "km": 55, "minutos": 60, "coste": "20-22 € ida y vuelta",
-         "como": "bus lanzadera a Bruxelles-Midi, cada 30 min",
-         "aviso": "Charleroi está a 55 km de Bruselas: 1 h de bus lanzadera, 20-22 € ida y vuelta. De avión a centro, hora y media."},
- "BRU": {"ciudad": "Bruselas", "km": 12, "minutos": 12, "coste": "12-14 € ida y vuelta",
-         "como": "tren bajo la terminal a Bruxelles-Central, cada 15 min",
-         "aviso": "Zaventem tiene tren bajo la terminal: 12 min al centro, cada cuarto de hora."},
- "ALC": {"ciudad": "Alicante", "km": 10, "minutos": 15, "coste": "parking o bus L8",
-         "como": "coche (12-15 min desde Gran Alacant) o bus L8",
-         "aviso": "Desde Gran Alacant son 12-15 min en coche. OJO: el bus L8 NO circula los domingos."}
+ "CRL": {
+  "ciudad": "Bruselas",
+  "km": 55,
+  "minutos": 60,
+  "coste": "20-22 € ida y vuelta",
+  "como": "bus lanzadera a Bruxelles-Midi, cada 30 min",
+  "aviso": "Charleroi está a 55 km de Bruselas: 1 h de bus lanzadera, 20-22 € ida y vuelta. De avión a centro, hora y media.",
+  "aeropuerto": "Bruselas-Charleroi"
+ },
+ "BRU": {
+  "ciudad": "Bruselas",
+  "km": 12,
+  "minutos": 12,
+  "coste": "12-14 € ida y vuelta",
+  "como": "tren bajo la terminal a Bruxelles-Central, cada 15 min",
+  "aviso": "Zaventem tiene tren bajo la terminal: 12 min al centro, cada cuarto de hora.",
+  "aeropuerto": "Bruselas-Zaventem"
+ },
+ "ALC": {
+  "ciudad": "Alicante",
+  "km": 10,
+  "minutos": 15,
+  "coste": "parking o bus L8",
+  "como": "coche (12-15 min desde Gran Alacant) o bus L8",
+  "aviso": "Desde Gran Alacant son 12-15 min en coche. OJO: el bus L8 NO circula los domingos.",
+  "aeropuerto": "Alicante"
+ }
 }
