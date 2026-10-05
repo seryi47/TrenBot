@@ -47,14 +47,45 @@ def _es_firme(op):
                    for t in (op.get("tramos") or []) if t.get("tipo") != "tierra")
 
 
+def _traslado_aeropuerto(op):
+    """Minutos de bus/tren entre el aeropuerto y el centro, ida y vuelta.
+
+    Un vuelo a Charleroi no es "sin traslados": son 55 km y una hora de bus en
+    cada sentido. Decir que no hay traslado porque el itinerario no tiene tramos
+    de tren era engañar justo en lo que más pesa al comparar.
+    """
+    try:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "data", "traslados.json"), encoding="utf-8") as fh:
+            tabla = json.load(fh)
+    except Exception:
+        return 0, None
+    for t in (op.get("tramos") or []):
+        if t.get("tipo") == "tierra":
+            continue
+        for iata in (t.get("a"), t.get("de")):
+            if iata and iata != "ALC" and iata in tabla:
+                info = tabla[iata]
+                return (info.get("minutos") or 0) * 2, info
+    return 0, None
+
+
 def _tierra(op):
     """El traslado por tierra en palabras: es parte de lo que cuesta el viaje."""
     m = op.get("minutos_tierra") or 0
+    aero, info = _traslado_aeropuerto(op)
+    m += aero
     if not m:
         return "sin traslados"
-    if m % 60:
-        return "%d h %02d min por tierra" % (m // 60, m % 60)
-    return "%d h por tierra" % (m // 60)
+    if m < 60:
+        texto = "%d min por tierra" % m
+    elif m % 60:
+        texto = "%d h %02d min por tierra" % (m // 60, m % 60)
+    else:
+        texto = "%d h por tierra" % (m // 60)
+    if aero and info:
+        texto += " (%s)" % info.get("como", "aeropuerto-centro")
+    return texto
 
 
 def latido_diario(engine, notifier, destino, horas=12):
@@ -76,7 +107,7 @@ def latido_diario(engine, notifier, destino, horas=12):
     try:
         datos = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                             "web", "datos.json"), encoding="utf-8"))
-        tope = datos["viaje"]["tope_por_persona"]
+        tope = datos["viaje"]["tope_por_persona"]   # puede ser None: sin tope
         todas = [o for o in datos["opciones"] if o.get("total_persona")]
         # Nunca encabezar con un precio que no se puede comprar. El mensaje se
         # contradecía solo: anunciaba "la más barata es Bratislava + Praga,
@@ -90,17 +121,22 @@ def latido_diario(engine, notifier, destino, horas=12):
             lineas.append("Mejor combinación ahora: <b>%s</b> por <b>%.2f €</b> "
                           "por persona (%s)."
                           % (m["titulo"], m["total_persona"], _tierra(m)))
-            if len(dentro) > 1:
+            if len(dentro) > 1 and tope:
                 lineas.append("Hay %d por debajo de %d €." % (len(dentro), tope))
         else:
             # Si no queda ninguna con precio firme no se puede decir "se puede
             # comprar": sería exactamente la mentira que este arreglo quita.
             coletilla = ("que se puede comprar es" if firmes else
                          "es (con precio aún sin confirmar)")
-            lineas.append("Ninguna combinación baja de %d € por persona. La más "
-                          "barata %s <b>%s</b>, %.2f € (%s)."
-                          % (tope, coletilla, mejor["titulo"],
-                             mejor["total_persona"], _tierra(mejor)))
+            if tope:
+                lineas.append("Ninguna combinación baja de %d € por persona. La más "
+                              "barata %s <b>%s</b>, %.2f € (%s)."
+                              % (tope, coletilla, mejor["titulo"],
+                                 mejor["total_persona"], _tierra(mejor)))
+            else:
+                lineas.append("La más barata %s <b>%s</b>, %.2f € (%s)."
+                              % (coletilla, mejor["titulo"],
+                                 mejor["total_persona"], _tierra(mejor)))
         # Ahorrar 2 € a cambio de tres horas de tren no es ahorrar. Si la más
         # barata obliga a moverse y hay otra casi al mismo precio que no, se
         # nombra: el traslado es parte de lo que cuesta el viaje, no un detalle.
@@ -150,7 +186,7 @@ def latido_diario(engine, notifier, destino, horas=12):
                       "seguía muy por encima del tope." % (n, "s" if n > 1 else ""))
         engine.silenciadas = 0
     else:
-        lineas.append("Sin bajadas que merezcan la pena desde el último resumen.")
+        lineas.append("Sin bajadas desde el último resumen.")
     lineas.append("🌐 https://viaje-octubre.vercel.app")
     notifier.telegram(destino, "\n".join(lineas))
     print("  [latido] resumen diario enviado")

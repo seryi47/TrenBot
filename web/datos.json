@@ -2,13 +2,13 @@
  "viaje": {
   "titulo": "Diciembre — Alicante y Bruselas",
   "pasajeros": 1,
-  "tope_por_persona": 150,
+  "tope_por_persona": null,
   "reglas": [
    "Ida el viernes 4 o el sábado 5 de diciembre; vuelta el martes 8",
    "Ida y vuelta desde Alicante, siempre vuelo DIRECTO",
    "Dos aeropuertos: Charleroi (Ryanair) y Zaventem (Transavia, TUI, Vueling, Brussels Airlines)",
    "Zaventem se lee vía Google Flights: sin plazas restantes y sin enlace de la aerolínea",
-   "Máximo 150 € por persona sumando ida y vuelta"
+   "Sin tope de precio: se avisa de cualquier bajada, para ir viendo"
   ]
  },
  "opciones": [
@@ -36,15 +36,15 @@
      "sale": "18:05",
      "llega": "20:35",
      "ref": 106.99,
-     "precio": 109.99,
+     "precio": 106.99,
      "llega_aprox": false,
-     "etiqueta": "FR9052 · 1 plazas",
+     "etiqueta": "FR9052 · 3 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
-     "plazas": 1,
+     "plazas": 3,
      "duracion": "02:30",
-     "minimo": 109.99,
-     "maximo": 109.99,
-     "visto": "2026-10-05 08:36",
+     "minimo": 106.99,
+     "maximo": 106.99,
+     "visto": "2026-10-05 09:36",
      "estado": "ok",
      "historico": [
       [
@@ -75,7 +75,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 120.53,
-     "visto": "2026-10-05 08:37",
+     "visto": "2026-10-05 09:37",
      "estado": "ok",
      "historico": [
       [
@@ -87,8 +87,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 230.52,
-   "total_grupo": 230.52,
+   "total_persona": 227.52,
+   "total_grupo": 227.52,
    "ida_fecha": "2026-12-05",
    "ida_hora": "18:05",
    "ida_iata": "CRL",
@@ -106,7 +106,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 227.52,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "crl-04",
@@ -140,7 +140,7 @@
      "duracion": "02:30",
      "minimo": 112.4,
      "maximo": 112.4,
-     "visto": "2026-10-05 08:36",
+     "visto": "2026-10-05 09:36",
      "estado": "ok",
      "historico": [
       [
@@ -171,7 +171,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 120.53,
-     "visto": "2026-10-05 08:37",
+     "visto": "2026-10-05 09:37",
      "estado": "ok",
      "historico": [
       [
@@ -202,7 +202,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 232.93,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "bru-05",
@@ -228,15 +228,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 126.0,
-     "precio": 125.99,
+     "precio": 126.0,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
-     "plazas": 114,
-     "duracion": "2:35",
-     "minimo": 125.99,
-     "maximo": 125.99,
-     "visto": "2026-10-05 08:37",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-05%20oneway%20nonstop%20for%201%20adults",
+     "plazas": null,
+     "duracion": "2 h 35 min",
+     "minimo": 126.0,
+     "maximo": 126.0,
+     "visto": "2026-10-05 09:37",
      "estado": "ok",
      "historico": [
       [
@@ -267,7 +267,7 @@
      "duracion": "2 h 45 min",
      "minimo": 125.0,
      "maximo": 125.0,
-     "visto": "2026-10-05 08:37",
+     "visto": "2026-10-05 09:38",
      "estado": "ok",
      "historico": [
       [
@@ -279,8 +279,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 250.99,
-   "total_grupo": 250.99,
+   "total_persona": 251.0,
+   "total_grupo": 251.0,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -298,7 +298,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 251.0,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "bru-04",
@@ -332,7 +332,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-05 08:37",
+     "visto": "2026-10-05 09:37",
      "estado": "ok",
      "historico": [
       [
@@ -363,7 +363,7 @@
      "duracion": "2 h 45 min",
      "minimo": 125.0,
      "maximo": 125.0,
-     "visto": "2026-10-05 08:37",
+     "visto": "2026-10-05 09:38",
      "estado": "ok",
      "historico": [
       [
@@ -394,9 +394,9 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 259.0,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   }
  ],
- "actualizado": "2026-10-05 08:37",
- "actualizado_iso": "2026-10-05T08:37:42.185389+00:00"
+ "actualizado": "2026-10-05 13:34",
+ "actualizado_iso": "2026-10-05T13:34:14.054704+02:00"
 }

@@ -14,7 +14,10 @@
 #        que tarda ~25 s y no da plazas, de ahí el poll_interval más alto.
 #
 # Sin "time": se vigila el vuelo MÁS BARATO de ese día, sea de la hora que sea.
-# max_price es el OBJETIVO; además avisa de cualquier bajada de 3 EUR o más.
+#
+# SIN TOPE DE PRECIO: no hay objetivo que alcanzar ni filtro de ruido. Se avisa
+# de CUALQUIER bajada de 1 EUR o más, para ir viendo cómo se mueven. Por eso no
+# hay max_price y rutas.json lleva tope_por_persona en null.
 
 poll_interval: 30
 alert_interval: 10
@@ -29,7 +32,7 @@ watches:
   origin: ALC
   destination: CRL
   date: '2026-12-04'
-  max_price: 90
+  umbral_bajada: 1
 - providers: *id001
   adults: 1
   poll_interval: 900
@@ -37,7 +40,7 @@ watches:
   origin: ALC
   destination: CRL
   date: '2026-12-05'
-  max_price: 90
+  umbral_bajada: 1
 - providers:
   - vueling
   - mercado
@@ -47,7 +50,7 @@ watches:
   origin: ALC
   destination: BRU
   date: '2026-12-04'
-  max_price: 110
+  umbral_bajada: 1
 - providers:
   - vueling
   - mercado
@@ -57,7 +60,7 @@ watches:
   origin: ALC
   destination: BRU
   date: '2026-12-05'
-  max_price: 110
+  umbral_bajada: 1
 - providers: *id001
   adults: 1
   poll_interval: 900
@@ -65,7 +68,7 @@ watches:
   origin: CRL
   destination: ALC
   date: '2026-12-08'
-  max_price: 90
+  umbral_bajada: 1
 - providers:
   - vueling
   - mercado
@@ -75,4 +78,4 @@ watches:
   origin: BRU
   destination: ALC
   date: '2026-12-08'
-  max_price: 110
+  umbral_bajada: 1

@@ -220,7 +220,9 @@ def main():
         salida["total_referencia"] = round(
             sum(t["ref"] for t in op["tramos"] if t["tipo"] == "vuelo"), 2)
         salida["dentro_presupuesto"] = (
-            completo and total <= cfg["viaje"]["tope_por_persona"])
+            # Sin tope definido no hay nada que "pasarse": todas valen.
+            completo and (cfg["viaje"]["tope_por_persona"] is None
+                          or total <= cfg["viaje"]["tope_por_persona"]))
         opciones.append(salida)
 
     opciones.sort(key=lambda o: (o["total_persona"] is None, o["total_persona"] or 0))
