@@ -160,12 +160,11 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="�
     mejor = viajes[0]
     lineas += ["", "🧳 <b>EL VIAJE COMPLETO</b>", "",
                "<b>%s</b>" % mejor["titulo"],
-               "<b>%.2f € por persona</b>%s · %s"
+               "<b>%.2f € por persona</b>%s"
                % (mejor["total"],
                   # Nada de "los dos" fijo: el viaje puede ser de una persona.
                   (" · %.2f € los %d" % (mejor["total"] * _PASAJEROS, _PASAJEROS))
-                  if _PASAJEROS > 1 else "",
-                  "✅ entra en tu tope" if mejor["dentro"] else "⚠️ se pasa del tope")]
+                  if _PASAJEROS > 1 else "")]
     vuelos = [t for t in mejor["tramos"] if t.get("tipo") == "vuelo"]
     # Cada traslado se cuelga del vuelo al que SIGUE, y solo de ese. Antes se
     # usaba la lista entera dentro del bucle, así que el mismo tren se repetía
@@ -258,10 +257,6 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="�
                    % (minutos_totales // 60, minutos_totales % 60) if minutos_totales >= 60
                    else "En total, %d min de traslados entre aeropuerto y centro."
                    % minutos_totales]
-    if len(viajes) > 1:
-        lineas += ["", "<i>Hay %d combinación(es) más con este vuelo; la "
-                   "siguiente sale por %.2f €.</i>"
-                   % (len(viajes) - 1, viajes[1]["total"])]
     return lineas
 
 
@@ -704,15 +699,15 @@ class Engine:
         # Antes el texto se montaba suelto, sin el viaje completo: parecía un
         # vuelo sin destino. Ahora lleva el mismo bloque "EL VIAJE COMPLETO" y
         # el aviso de traslado que los avisos de bajada y de objetivo.
-        # Antes repetía el nombre del vuelo y su precio sueltos ANTES del bloque
-        # "EL VIAJE COMPLETO", que vuelve a decir exactamente lo mismo por
-        # tramo: quedaba "Alicante→Charleroi, 106,99 €" dos veces seguidas. Va
-        # directo al viaje; el tramo que se agota ya se marca ahí con "← quedan
-        # pocas".
-        cab = ["⏳ <b>Quedan %d plaza%s a %.2f €</b>" % (plazas, "s" if plazas > 1 else "", precio),
-               "Cuando se acaben a este precio, el vuelo sube al siguiente escalón de tarifa."]
+        # Antes repetía el nombre del vuelo y su precio sueltos, y encima
+        # explicaba "cuando se acaben sube de escalón": info que ya se ve en la
+        # propia línea del tramo ("106,99 €  (queda 1 plaza)") y en la etiqueta
+        # "← quedan pocas". Va directo al viaje, sin preámbulo.
         bloque = bloque_viaje(watch, self.watches, precio, etiqueta_tramo="← quedan pocas")
-        cab += bloque
+        # bloque_viaje empieza con una línea en blanco para separarse de lo que
+        # vaya antes; sin preámbulo aquí, esa línea quedaba suelta al principio
+        # del mensaje. Se recorta.
+        cab = bloque[1:] if bloque[:1] == [""] else list(bloque)
         # El 🚌 ya va pegado a cada tramo dentro del bloque del viaje. Esto es
         # solo el respaldo para un vuelo suelto que no pertenece a ninguna
         # combinación definida (si no, no se vería ningún traslado de él).

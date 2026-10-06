@@ -697,3 +697,15 @@ Dos ajustes sobre los mensajes:
   por aeropuerto, sin decir a qué vuelo correspondía cada uno. Ahora va pegado
   justo debajo del tramo que lo necesita, y solo si hay DOS aeropuertos
   distintos se añade al final el total de traslados ("1 h 12 min en total").
+
+### Mensajes recortados más: sin preámbulo y sin líneas de más
+Tres ajustes sobre `bloque_viaje`, que comparten los tres tipos de aviso:
+
+- El aviso de últimas plazas ya no abre con "Quedan N plazas a X €..." — esa
+  cifra ya se ve en la línea del propio tramo ("106,99 € (queda 1 plaza)") y en
+  la etiqueta "← quedan pocas". Va directo a "EL VIAJE COMPLETO".
+- Fuera "✅ entra en tu tope" / "⚠️ se pasa del tope": con el tope cambiando a
+  menudo (200 → 250 €, etc.) esa cifra quedaba vieja enseguida y no aportaba
+  sobre el propio número del total.
+- Fuera "Hay N combinación(es) más con este vuelo; la siguiente sale por X €":
+  ruido que no cambia la decisión.
