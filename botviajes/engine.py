@@ -126,6 +126,24 @@ def fecha_corta(iso):
         return iso
 
 
+_TABLA_TRASLADOS = None
+
+
+def _tabla_traslados():
+    """Cómo se llega del aeropuerto al centro, por código IATA. Se carga una
+    sola vez; si falta el fichero, no hay traslados que mostrar."""
+    global _TABLA_TRASLADOS
+    if _TABLA_TRASLADOS is None:
+        try:
+            with open(os.path.join(os.path.dirname(os.path.dirname(
+                    os.path.abspath(__file__))), "data", "traslados.json"),
+                    encoding="utf-8") as fh:
+                _TABLA_TRASLADOS = json.load(fh)
+        except Exception:
+            _TABLA_TRASLADOS = {}
+    return _TABLA_TRASLADOS
+
+
 def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="← el que ha bajado"):
     """Con qué se combina este vuelo y cuánto sale el viaje entero.
 
@@ -194,6 +212,15 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="�
                          else "quedan %d plazas" % t["plazas"])
         lineas.append("      %s%s" % (precio, "  (%s)" % " · ".join(extra) if extra else ""))
 
+        # El 🚌 aeropuerto-centro de ESTE vuelo, pegado a él: antes todos los
+        # traslados se amontonaban al final del mensaje y no se veía a qué
+        # vuelo correspondía cada uno.
+        aero = t.get("a") if t.get("de") == "ALC" else t.get("de")
+        info_aero = _tabla_traslados().get(aero or "")
+        if info_aero and info_aero.get("aviso"):
+            lineas.append("")
+            lineas.append("      🚌 %s" % info_aero["aviso"])
+
         # Cada bloque lleva al lado su conexión por tierra, etiquetada según
         # toque: en la ida es lo que viene después, en la vuelta es cómo has
         # llegado hasta ese aeropuerto.
@@ -221,6 +248,16 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="�
         if t.get("url") and not t.get("es_del_aviso"):
             lineas.append("")
             lineas.append('      👉 <a href="%s">comprar este</a>' % t["url"])
+    aeropuertos = [t.get("a") if t.get("de") == "ALC" else t.get("de")
+                  for t in vuelos]
+    tabla = _tabla_traslados()
+    minutos_totales = sum((tabla.get(a) or {}).get("minutos") or 0
+                          for a in dict.fromkeys(x for x in aeropuertos if x))
+    if len({a for a in aeropuertos if a}) > 1 and minutos_totales:
+        lineas += ["", "En total, %d h %02d min de traslados entre aeropuerto y centro."
+                   % (minutos_totales // 60, minutos_totales % 60) if minutos_totales >= 60
+                   else "En total, %d min de traslados entre aeropuerto y centro."
+                   % minutos_totales]
     if len(viajes) > 1:
         lineas += ["", "<i>Hay %d combinación(es) más con este vuelo; la "
                    "siguiente sale por %.2f €.</i>"
@@ -667,14 +704,22 @@ class Engine:
         # Antes el texto se montaba suelto, sin el viaje completo: parecía un
         # vuelo sin destino. Ahora lleva el mismo bloque "EL VIAJE COMPLETO" y
         # el aviso de traslado que los avisos de bajada y de objetivo.
-        cab = ["⏳ <b>Quedan %d plaza%s</b>" % (plazas, "s" if plazas > 1 else ""),
-               "", "<b>%s</b>" % watch["name"], "%.2f € por persona." % precio,
-               "", "Cuando se acaben a este precio, el vuelo sube al siguiente "
-               "escalón de tarifa."]
-        cab += bloque_viaje(watch, self.watches, precio, etiqueta_tramo="← quedan pocas")
-        traslado = self._traslado(watch)
-        if traslado:
-            cab += ["", traslado]
+        # Antes repetía el nombre del vuelo y su precio sueltos ANTES del bloque
+        # "EL VIAJE COMPLETO", que vuelve a decir exactamente lo mismo por
+        # tramo: quedaba "Alicante→Charleroi, 106,99 €" dos veces seguidas. Va
+        # directo al viaje; el tramo que se agota ya se marca ahí con "← quedan
+        # pocas".
+        cab = ["⏳ <b>Quedan %d plaza%s a %.2f €</b>" % (plazas, "s" if plazas > 1 else "", precio),
+               "Cuando se acaben a este precio, el vuelo sube al siguiente escalón de tarifa."]
+        bloque = bloque_viaje(watch, self.watches, precio, etiqueta_tramo="← quedan pocas")
+        cab += bloque
+        # El 🚌 ya va pegado a cada tramo dentro del bloque del viaje. Esto es
+        # solo el respaldo para un vuelo suelto que no pertenece a ninguna
+        # combinación definida (si no, no se vería ningún traslado de él).
+        if not bloque:
+            traslado = self._traslado(watch)
+            if traslado:
+                cab += ["", traslado]
         url = watch.get("ultimo_url")
         if url:
             nombre_cia = _NOMBRE_CIA.get((watch["providers"] or ["?"])[0], "")
@@ -957,9 +1002,13 @@ class Engine:
         bloque = bloque_viaje(watch, self.watches, oferta.price)
         viajes_encontrados = bool(bloque)
         lineas += bloque
-        traslado = self._traslado(watch)
-        if traslado:
-            lineas += ["", traslado]
+        # El 🚌 ya va pegado a cada tramo dentro del bloque del viaje. Esto es
+        # solo el respaldo para un vuelo suelto que no pertenece a ninguna
+        # combinación definida.
+        if not viajes_encontrados:
+            traslado = self._traslado(watch)
+            if traslado:
+                lineas += ["", traslado]
         # El enlace va SIEMPRE: antes, si se encontraba el viaje completo, el
         # mensaje se quedaba sin ningún botón para comprar.
         if oferta.buy_url:
@@ -991,11 +1040,16 @@ class Engine:
         objetivo = watch.get("max_price")
         if objetivo:
             lines.append("Tu objetivo era ≤%.0f €." % float(objetivo))
-        lines += bloque_viaje(watch, self.watches,
-                              min((o.price for o in offers if o.price), default=None))
-        traslado = self._traslado(watch)
-        if traslado:
-            lines += ["", traslado]
+        bloque = bloque_viaje(watch, self.watches,
+                             min((o.price for o in offers if o.price), default=None))
+        lines += bloque
+        # El 🚌 ya va pegado a cada tramo dentro del bloque del viaje. Esto es
+        # solo el respaldo para un vuelo suelto que no pertenece a ninguna
+        # combinación definida.
+        if not bloque:
+            traslado = self._traslado(watch)
+            if traslado:
+                lines += ["", traslado]
         # El enlace debe ser el del vuelo que se anuncia, no el primero por
         # orden alfabético: así mandaba a Google Flights en vez de a TUI fly.
         conlink = [o for o in offers if o.buy_url and o.price]

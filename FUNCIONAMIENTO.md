@@ -686,3 +686,14 @@ cuando el precio **cambia de verdad** —si no, se llenaría de repeticiones
 inútiles—, así que un vuelo con una sola lectura en 24 h no está "congelado": es
 que ha dado el mismo precio en las 90+ consultas que lleva. En la misma ventana,
 Charleroi sáb 5 sí se movió (108,99 → 106,99 €) y quedó registrado.
+
+### El aviso de plazas va directo al viaje, y el bus debajo de cada tramo
+Dos ajustes sobre los mensajes:
+
+- El aviso de últimas plazas repetía el vuelo y su precio sueltos, antes del
+  bloque "EL VIAJE COMPLETO" que vuelve a decir exactamente lo mismo por tramo.
+  Ahora va directo: solo el titular ("Quedan N plazas a X €") y el viaje.
+- El 🚌 del traslado aeropuerto-centro se amontonaba al final del mensaje, uno
+  por aeropuerto, sin decir a qué vuelo correspondía cada uno. Ahora va pegado
+  justo debajo del tramo que lo necesita, y solo si hay DOS aeropuertos
+  distintos se añade al final el total de traslados ("1 h 12 min en total").
