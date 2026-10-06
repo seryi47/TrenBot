@@ -664,3 +664,10 @@ llega igual. Lo que se pierde en la nube son sus plazas reales.
 
 Si algún día hiciera falta el dato nativo en producción, haría falta salir por
 otra IP, no otro código.
+
+### El aviso de últimas plazas también lleva el viaje completo
+Llegaba suelto: solo el vuelo, su precio y un botón de comprar, sin decir desde
+dónde se vuelve ni si el viaje entero cabe en el tope. Ahora lleva el mismo
+bloque "EL VIAJE COMPLETO" y el aviso de traslado (🚌) que los avisos de bajada
+y de objetivo, y el marcador del tramo dice "← quedan pocas" en vez de "← el que
+ha bajado" cuando no ha bajado nada.

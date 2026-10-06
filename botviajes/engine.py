@@ -126,7 +126,7 @@ def fecha_corta(iso):
         return iso
 
 
-def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
+def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="← el que ha bajado"):
     """Con qué se combina este vuelo y cuánto sale el viaje entero.
 
     Avisar de un tramo suelto deja a medias: lo útil es saber desde dónde se
@@ -176,7 +176,7 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2):
         etiqueta = (t.get("etiqueta") or "").split(" · ")[0]
         lineas += ["", "   ✈️ <b>%s</b> · %s · %s %s%s"
                    % (rol, fecha_corta(t["fecha"]), cia, etiqueta,
-                      "  ← el que ha bajado" if t.get("es_del_aviso") else ""), ""]
+                      ("  " + etiqueta_tramo) if t.get("es_del_aviso") else ""), ""]
         dur = dur_bonita(t.get("duracion"))
         lineas.append("      %s <b>%s</b> → %s <b>%s</b>%s"
                       % (t["de_nombre"], t["sale"], t["a_nombre"], t["llega"],
@@ -663,11 +663,25 @@ class Engine:
             return None
         if not self._puede_avisar(watch, "plazas", horas=12):
             return None
-        return ("⏳ <b>Quedan %d plaza%s</b>\n\n<b>%s</b>\n%.2f € por persona.\n\n"
-                "Cuando se acaben a este precio, el vuelo sube al siguiente "
-                "escalón de tarifa.\n\n<a href=\"%s\">Comprar →</a>"
-                % (plazas, "s" if plazas > 1 else "", watch["name"], precio,
-                   watch.get("ultimo_url") or ""))
+        # Antes el texto se montaba suelto, sin el viaje completo: parecía un
+        # vuelo sin destino. Ahora lleva el mismo bloque "EL VIAJE COMPLETO" y
+        # el aviso de traslado que los avisos de bajada y de objetivo.
+        cab = ["⏳ <b>Quedan %d plaza%s</b>" % (plazas, "s" if plazas > 1 else ""),
+               "", "<b>%s</b>" % watch["name"], "%.2f € por persona." % precio,
+               "", "Cuando se acaben a este precio, el vuelo sube al siguiente "
+               "escalón de tarifa."]
+        cab += bloque_viaje(watch, self.watches, precio, etiqueta_tramo="← quedan pocas")
+        traslado = self._traslado(watch)
+        if traslado:
+            cab += ["", traslado]
+        url = watch.get("ultimo_url")
+        if url:
+            nombre_cia = _NOMBRE_CIA.get((watch["providers"] or ["?"])[0], "")
+            cab += ["", '👉 <a href="%s">Comprar este vuelo%s</a>'
+                   % (url, " en " + nombre_cia if nombre_cia else "")]
+        if WEB_URL:
+            cab += ["", "", "🌐 %s" % WEB_URL]
+        return "\n".join(cab)
 
     def _objetivo_util(self, watch, oferta):
         """¿Sirve de algo avisar de que este vuelo ha entrado en su objetivo?
