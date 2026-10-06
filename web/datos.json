@@ -2,14 +2,14 @@
  "viaje": {
   "titulo": "Diciembre — Alicante y Bruselas",
   "pasajeros": 1,
-  "tope_por_persona": 200,
+  "tope_por_persona": 250,
   "reglas": [
    "Ida el viernes 4 o el sábado 5 de diciembre; vuelta el martes 8",
    "Ida y vuelta desde Alicante, siempre vuelo DIRECTO",
    "Dos aeropuertos: Charleroi (Ryanair) y Zaventem (Transavia, TUI, Vueling, Brussels Airlines)",
    "Zaventem se lee vía Google Flights: sin plazas restantes y sin enlace de la aerolínea",
-   "Máximo 200 € por persona sumando ida y vuelta",
-   "La ida y la vuelta pueden ser de compañías Y aeropuertos distintos"
+   "La ida y la vuelta pueden ser de compañías Y aeropuertos distintos",
+   "Máximo 250 € por persona sumando ida y vuelta"
   ]
  },
  "opciones": [
@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-06 07:32",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -58,6 +58,10 @@
       ],
       [
        "2026-10-06 07:32",
+       106.99
+      ],
+      [
+       "2026-10-06 13:19",
        106.99
       ]
      ],
@@ -84,7 +88,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -119,7 +123,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 234.98,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "crl-04-bru",
@@ -147,13 +151,13 @@
      "ref": 112.4,
      "precio": 111.4,
      "llega_aprox": false,
-     "etiqueta": "FR9052 · 3 plazas",
+     "etiqueta": "FR9052",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-04&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
      "plazas": 3,
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-06 07:32",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -162,6 +166,10 @@
       ],
       [
        "2026-10-06 00:56",
+       111.4
+      ],
+      [
+       "2026-10-06 13:19",
        111.4
       ]
      ],
@@ -188,7 +196,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -223,7 +231,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 237.39,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "crl-05-crl",
@@ -257,7 +265,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-06 07:32",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -270,6 +278,10 @@
       ],
       [
        "2026-10-06 07:32",
+       106.99
+      ],
+      [
+       "2026-10-06 13:19",
        106.99
       ]
      ],
@@ -296,7 +308,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -309,6 +321,10 @@
       ],
       [
        "2026-10-05 19:38",
+       134.13
+      ],
+      [
+       "2026-10-06 13:19",
        134.13
       ]
      ],
@@ -335,7 +351,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 230.52,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "crl-04-crl",
@@ -363,13 +379,13 @@
      "ref": 112.4,
      "precio": 111.4,
      "llega_aprox": false,
-     "etiqueta": "FR9052 · 3 plazas",
+     "etiqueta": "FR9052",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-04&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
      "plazas": 3,
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-06 07:32",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -378,6 +394,10 @@
       ],
       [
        "2026-10-06 00:56",
+       111.4
+      ],
+      [
+       "2026-10-06 13:19",
        111.4
       ]
      ],
@@ -404,7 +424,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -417,6 +437,10 @@
       ],
       [
        "2026-10-05 19:38",
+       134.13
+      ],
+      [
+       "2026-10-06 13:19",
        134.13
       ]
      ],
@@ -443,7 +467,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 232.93,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "bru-05-bru",
@@ -477,7 +501,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 125.99,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -508,7 +532,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -571,13 +595,13 @@
      "ref": 134.0,
      "precio": 134.0,
      "llega_aprox": false,
-     "etiqueta": "Transavia",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
-     "plazas": null,
-     "duracion": "2 h 30 min",
+     "etiqueta": "HV9004",
+     "url": "https://www.transavia.com/reservar/es-es/buscar-un-vuelo",
+     "plazas": 6,
+     "duracion": "02:30",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-06 07:32",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -608,7 +632,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -677,7 +701,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 125.99,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -708,7 +732,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -721,6 +745,10 @@
       ],
       [
        "2026-10-05 19:38",
+       134.13
+      ],
+      [
+       "2026-10-06 13:19",
        134.13
       ]
      ],
@@ -775,13 +803,13 @@
      "ref": 134.0,
      "precio": 134.0,
      "llega_aprox": false,
-     "etiqueta": "Transavia",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
-     "plazas": null,
-     "duracion": "2 h 30 min",
+     "etiqueta": "HV9004",
+     "url": "https://www.transavia.com/reservar/es-es/buscar-un-vuelo",
+     "plazas": 6,
+     "duracion": "02:30",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-06 07:32",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -812,7 +840,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-06 07:33",
+     "visto": "2026-10-06 13:19",
      "estado": "ok",
      "historico": [
       [
@@ -825,6 +853,10 @@
       ],
       [
        "2026-10-05 19:38",
+       134.13
+      ],
+      [
+       "2026-10-06 13:19",
        134.13
       ]
      ],
@@ -854,6 +886,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-06 07:33",
- "actualizado_iso": "2026-10-06T07:33:42.151784+00:00"
+ "actualizado": "2026-10-06 13:20",
+ "actualizado_iso": "2026-10-06T13:20:53.141838+02:00"
 }
