@@ -598,6 +598,7 @@ class Engine:
         lineas += ["", "Aerolínea%s afectada%s: <b>%s</b>."
                    % ("s" if len(cias) > 1 else "", "s" if len(cias) > 1 else "",
                       ", ".join(cias)),
+                   "",
                    "Sigo intentándolo y te aviso en cuanto vuelvan los precios."]
         return "\n".join(lineas)
 

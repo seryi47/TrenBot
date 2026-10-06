@@ -182,6 +182,8 @@ def latido_diario(engine, notifier, destino, horas=12):
     # podía llevar días con una cifra no firme y parecer tan sólida como el
     # resto, que es justo lo contrario de fiarse de lo que cuento.
     agotados = [w for w in activas if w.get("sin_venta")]
+    if agotados:
+        lineas.append("")        # antes "Vigilando N vuelos" y esto iban pegados
     for w in agotados:
         desde = (w.get("ultimo_visto") or "?")[:10]
         lineas.append("⛔ <b>%s</b>: la aerolínea no tiene ninguna plaza a la "
@@ -190,12 +192,14 @@ def latido_diario(engine, notifier, destino, horas=12):
     # Contar lo que se ha callado: si no, un silencio largo no se distingue de
     # una avería, que es justo lo que pasó.
     n = getattr(engine, "silenciadas", 0)
+    lineas.append("")            # separar del párrafo de arriba, pegaba todo
     if n:
         lineas.append("He visto %d bajada%s que no te he contado porque el viaje "
                       "seguía muy por encima del tope." % (n, "s" if n > 1 else ""))
         engine.silenciadas = 0
     else:
         lineas.append("Sin bajadas desde el último resumen.")
+    lineas.append("")
     lineas.append("🌐 https://viaje-octubre.vercel.app")
     notifier.telegram(destino, "\n".join(lineas))
     print("  [latido] resumen diario enviado")

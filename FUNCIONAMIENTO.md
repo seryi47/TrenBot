@@ -671,3 +671,18 @@ dónde se vuelve ni si el viaje entero cabe en el tope. Ahora lleva el mismo
 bloque "EL VIAJE COMPLETO" y el aviso de traslado (🚌) que los avisos de bajada
 y de objetivo, y el marcador del tramo dice "← quedan pocas" en vez de "← el que
 ha bajado" cuando no ha bajado nada.
+
+### Los párrafos del resumen de 12 h y el de ceguera iban pegados
+"Vigilando N vuelos.", el aviso de sin_venta y "He visto N bajadas..." se
+unían con un solo `\n`, y Telegram los pintaba como un bloque sin aire.
+Mismo caso en el aviso de ceguera: "Aerolíneas afectadas" y "Sigo intentándolo"
+sin línea en blanco entre medias. Añadidas.
+
+### Comprobado: el histórico guarda poco porque el precio se mueve poco, no
+### porque el bot haya dejado de consultar
+Verificado línea a línea en un job de 6 h: las **seis** rutas se consultan cada
+15 min por igual (6 veces en esa ventana). `historico.json` solo añade un punto
+cuando el precio **cambia de verdad** —si no, se llenaría de repeticiones
+inútiles—, así que un vuelo con una sola lectura en 24 h no está "congelado": es
+que ha dado el mismo precio en las 90+ consultas que lleva. En la misma ventana,
+Charleroi sáb 5 sí se movió (108,99 → 106,99 €) y quedó registrado.
