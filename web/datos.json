@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 01:10",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -92,7 +92,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -161,7 +161,7 @@
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-07 01:10",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -200,7 +200,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -269,7 +269,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 01:10",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -316,7 +316,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -397,7 +397,7 @@
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-07 01:10",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -436,7 +436,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -517,7 +517,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -525,7 +525,7 @@
        125.99
       ],
       [
-       "2026-10-07 01:11",
+       "2026-10-07 01:21",
        132.99
       ]
      ],
@@ -552,7 +552,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -621,7 +621,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -652,7 +652,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:22",
      "estado": "ok",
      "historico": [
       [
@@ -721,7 +721,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -729,7 +729,7 @@
        125.99
       ],
       [
-       "2026-10-07 01:11",
+       "2026-10-07 01:21",
        132.99
       ]
      ],
@@ -756,7 +756,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -837,7 +837,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -868,7 +868,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:11",
+     "visto": "2026-10-07 01:21",
      "estado": "ok",
      "historico": [
       [
@@ -918,6 +918,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 01:11",
- "actualizado_iso": "2026-10-07T01:11:56.880414+00:00"
+ "actualizado": "2026-10-07 01:22",
+ "actualizado_iso": "2026-10-07T01:22:13.551207+00:00"
 }
