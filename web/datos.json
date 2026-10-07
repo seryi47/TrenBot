@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:07",
      "estado": "ok",
      "historico": [
       [
@@ -84,15 +84,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 125.0,
+     "precio": 124.99,
      "llega_aprox": false,
-     "etiqueta": "TUI fly",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
+     "etiqueta": "TB1111",
+     "url": "https://www.tuifly.be/flight/en/search",
      "plazas": null,
-     "duracion": "2 h 45 min",
+     "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:53",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -106,14 +106,18 @@
       [
        "2026-10-07 01:53",
        125.0
+      ],
+      [
+       "2026-10-07 02:08",
+       124.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.01
     }
    ],
    "itinerario": [],
-   "total_persona": 232.99,
-   "total_grupo": 232.99,
+   "total_persona": 232.98,
+   "total_grupo": 232.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "18:05",
    "ida_iata": "CRL",
@@ -165,7 +169,7 @@
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:07",
      "estado": "ok",
      "historico": [
       [
@@ -196,15 +200,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 125.0,
+     "precio": 124.99,
      "llega_aprox": false,
-     "etiqueta": "TUI fly",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
+     "etiqueta": "TB1111",
+     "url": "https://www.tuifly.be/flight/en/search",
      "plazas": null,
-     "duracion": "2 h 45 min",
+     "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:53",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -218,14 +222,18 @@
       [
        "2026-10-07 01:53",
        125.0
+      ],
+      [
+       "2026-10-07 02:08",
+       124.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.01
     }
    ],
    "itinerario": [],
-   "total_persona": 236.4,
-   "total_grupo": 236.4,
+   "total_persona": 236.39,
+   "total_grupo": 236.39,
    "ida_fecha": "2026-12-04",
    "ida_hora": "06:20",
    "ida_iata": "CRL",
@@ -277,7 +285,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:07",
      "estado": "ok",
      "historico": [
       [
@@ -324,7 +332,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -405,7 +413,7 @@
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:07",
      "estado": "ok",
      "historico": [
       [
@@ -444,7 +452,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -525,7 +533,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -560,15 +568,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 125.0,
+     "precio": 124.99,
      "llega_aprox": false,
-     "etiqueta": "TUI fly",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
+     "etiqueta": "TB1111",
+     "url": "https://www.tuifly.be/flight/en/search",
      "plazas": null,
-     "duracion": "2 h 45 min",
+     "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:53",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -582,14 +590,18 @@
       [
        "2026-10-07 01:53",
        125.0
+      ],
+      [
+       "2026-10-07 02:08",
+       124.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.01
     }
    ],
    "itinerario": [],
-   "total_persona": 257.99,
-   "total_grupo": 257.99,
+   "total_persona": 257.98,
+   "total_grupo": 257.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -641,7 +653,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:07",
      "estado": "ok",
      "historico": [
       [
@@ -664,15 +676,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 125.0,
+     "precio": 124.99,
      "llega_aprox": false,
-     "etiqueta": "TUI fly",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
+     "etiqueta": "TB1111",
+     "url": "https://www.tuifly.be/flight/en/search",
      "plazas": null,
-     "duracion": "2 h 45 min",
+     "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:53",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -686,14 +698,18 @@
       [
        "2026-10-07 01:53",
        125.0
+      ],
+      [
+       "2026-10-07 02:08",
+       124.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -0.01
     }
    ],
    "itinerario": [],
-   "total_persona": 259.0,
-   "total_grupo": 259.0,
+   "total_persona": 258.99,
+   "total_grupo": 258.99,
    "ida_fecha": "2026-12-04",
    "ida_hora": "10:10",
    "ida_iata": "BRU",
@@ -745,7 +761,7 @@
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -788,7 +804,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -869,7 +885,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:07",
      "estado": "ok",
      "historico": [
       [
@@ -900,7 +916,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:52",
+     "visto": "2026-10-07 02:08",
      "estado": "ok",
      "historico": [
       [
@@ -950,6 +966,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 01:53",
- "actualizado_iso": "2026-10-07T01:53:04.339708+00:00"
+ "actualizado": "2026-10-07 02:08",
+ "actualizado_iso": "2026-10-07T02:08:30.613588+00:00"
 }
