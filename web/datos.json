@@ -14,130 +14,6 @@
  },
  "opciones": [
   {
-   "id": "crl-04-bru",
-   "titulo": "Entras por Charleroi y sales por Zaventem · ida el viernes 4",
-   "subtitulo": "4 noches · cada tramo con la compañía que lo tenga mejor",
-   "paises": [
-    "Bélgica"
-   ],
-   "noches": 4,
-   "por_que": "Nada obliga a entrar y salir por el mismo sitio: los dos aeropuertos sirven a Bruselas. Se coge el vuelo más barato en cada sentido.",
-   "aviso": "El vuelo de vuelta sale a las 06:00 de la mañana.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "ryanair",
-     "vuelo": "FR9052",
-     "de": "ALC",
-     "a": "CRL",
-     "de_nombre": "Alicante",
-     "a_nombre": "Charleroi",
-     "fecha": "2026-12-04",
-     "sale": "06:20",
-     "llega": "08:50",
-     "ref": 112.4,
-     "precio": 109.17,
-     "llega_aprox": false,
-     "etiqueta": "FR9052",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-04&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
-     "plazas": null,
-     "duracion": "02:30",
-     "minimo": 109.17,
-     "maximo": 112.4,
-     "visto": "2026-10-07 12:49",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-10-05 07:45",
-       112.4
-      ],
-      [
-       "2026-10-06 00:56",
-       111.4
-      ],
-      [
-       "2026-10-06 13:19",
-       111.4
-      ],
-      [
-       "2026-10-07 06:55",
-       109.17
-      ]
-     ],
-     "variacion": -3.23
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "vueling",
-     "vuelo": "TB1111",
-     "de": "BRU",
-     "a": "ALC",
-     "de_nombre": "Zaventem",
-     "a_nombre": "Alicante",
-     "fecha": "2026-12-08",
-     "sale": "06:00",
-     "llega": "08:45",
-     "ref": 124.99,
-     "precio": 114.99,
-     "llega_aprox": false,
-     "etiqueta": "TB1111",
-     "url": "https://www.tuifly.be/flight/en/search",
-     "plazas": null,
-     "duracion": null,
-     "minimo": 114.99,
-     "maximo": 125.0,
-     "visto": "2026-10-07 12:50",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-10-05 08:37",
-       125.0
-      ],
-      [
-       "2026-10-05 12:16",
-       124.99
-      ],
-      [
-       "2026-10-07 01:53",
-       125.0
-      ],
-      [
-       "2026-10-07 02:08",
-       124.99
-      ],
-      [
-       "2026-10-07 12:50",
-       114.99
-      ]
-     ],
-     "variacion": -10.01
-    }
-   ],
-   "itinerario": [],
-   "total_persona": 224.16,
-   "total_grupo": 224.16,
-   "ida_fecha": "2026-12-04",
-   "ida_hora": "06:20",
-   "ida_iata": "CRL",
-   "ida_ciudad": "Charleroi",
-   "vuelta_fecha": "2026-12-08",
-   "vuelta_hora": "06:00",
-   "vuelta_llega": "08:45",
-   "vuelta_iata": "BRU",
-   "vuelta_ciudad": "Zaventem",
-   "horas_destino": 93,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 237.39,
-   "dentro_presupuesto": true
-  },
-  {
    "id": "bru-05-bru",
    "titulo": "Bruselas por Zaventem · ida el sábado 5",
    "subtitulo": "3 noches · cada tramo con la compañía que lo tenga mejor",
@@ -161,15 +37,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 125.99,
+     "precio": 104.99,
      "llega_aprox": false,
      "etiqueta": "VY7862",
      "url": "https://tickets.vueling.com/",
      "plazas": 114,
      "duracion": "2:35",
-     "minimo": 125.99,
+     "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -223,9 +99,13 @@
       [
        "2026-10-07 07:31",
        125.99
+      ],
+      [
+       "2026-10-07 13:21",
+       104.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": -21.0
     },
     {
      "tipo": "vuelo",
@@ -248,7 +128,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -276,8 +156,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 240.98,
-   "total_grupo": 240.98,
+   "total_persona": 219.98,
+   "total_grupo": 219.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -295,6 +175,298 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 250.98,
+   "dentro_presupuesto": true
+  },
+  {
+   "id": "crl-04-bru",
+   "titulo": "Entras por Charleroi y sales por Zaventem · ida el viernes 4",
+   "subtitulo": "4 noches · cada tramo con la compañía que lo tenga mejor",
+   "paises": [
+    "Bélgica"
+   ],
+   "noches": 4,
+   "por_que": "Nada obliga a entrar y salir por el mismo sitio: los dos aeropuertos sirven a Bruselas. Se coge el vuelo más barato en cada sentido.",
+   "aviso": "El vuelo de vuelta sale a las 06:00 de la mañana.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "ryanair",
+     "vuelo": "FR9052",
+     "de": "ALC",
+     "a": "CRL",
+     "de_nombre": "Alicante",
+     "a_nombre": "Charleroi",
+     "fecha": "2026-12-04",
+     "sale": "06:20",
+     "llega": "08:50",
+     "ref": 112.4,
+     "precio": 109.17,
+     "llega_aprox": false,
+     "etiqueta": "FR9052",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-04&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
+     "plazas": null,
+     "duracion": "02:30",
+     "minimo": 109.17,
+     "maximo": 112.4,
+     "visto": "2026-10-07 13:20",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-10-05 07:45",
+       112.4
+      ],
+      [
+       "2026-10-06 00:56",
+       111.4
+      ],
+      [
+       "2026-10-06 13:19",
+       111.4
+      ],
+      [
+       "2026-10-07 06:55",
+       109.17
+      ]
+     ],
+     "variacion": -3.23
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "vueling",
+     "vuelo": "TB1111",
+     "de": "BRU",
+     "a": "ALC",
+     "de_nombre": "Zaventem",
+     "a_nombre": "Alicante",
+     "fecha": "2026-12-08",
+     "sale": "06:00",
+     "llega": "08:45",
+     "ref": 124.99,
+     "precio": 114.99,
+     "llega_aprox": false,
+     "etiqueta": "TB1111",
+     "url": "https://www.tuifly.be/flight/en/search",
+     "plazas": null,
+     "duracion": null,
+     "minimo": 114.99,
+     "maximo": 125.0,
+     "visto": "2026-10-07 13:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-10-05 08:37",
+       125.0
+      ],
+      [
+       "2026-10-05 12:16",
+       124.99
+      ],
+      [
+       "2026-10-07 01:53",
+       125.0
+      ],
+      [
+       "2026-10-07 02:08",
+       124.99
+      ],
+      [
+       "2026-10-07 12:50",
+       114.99
+      ]
+     ],
+     "variacion": -10.01
+    }
+   ],
+   "itinerario": [],
+   "total_persona": 224.16,
+   "total_grupo": 224.16,
+   "ida_fecha": "2026-12-04",
+   "ida_hora": "06:20",
+   "ida_iata": "CRL",
+   "ida_ciudad": "Charleroi",
+   "vuelta_fecha": "2026-12-08",
+   "vuelta_hora": "06:00",
+   "vuelta_llega": "08:45",
+   "vuelta_iata": "BRU",
+   "vuelta_ciudad": "Zaventem",
+   "horas_destino": 93,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 237.39,
+   "dentro_presupuesto": true
+  },
+  {
+   "id": "bru-05-crl",
+   "titulo": "Entras por Zaventem y sales por Charleroi · ida el sábado 5",
+   "subtitulo": "3 noches · cada tramo con la compañía que lo tenga mejor",
+   "paises": [
+    "Bélgica"
+   ],
+   "noches": 3,
+   "por_que": "Nada obliga a entrar y salir por el mismo sitio: los dos aeropuertos sirven a Bruselas. Se coge el vuelo más barato en cada sentido.",
+   "aviso": "El vuelo de vuelta sale a las 06:45 de la mañana.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "vueling",
+     "vuelo": "VY7862",
+     "de": "ALC",
+     "a": "BRU",
+     "de_nombre": "Alicante",
+     "a_nombre": "Zaventem",
+     "fecha": "2026-12-05",
+     "sale": "12:20",
+     "llega": "14:55",
+     "ref": 125.99,
+     "precio": 104.99,
+     "llega_aprox": false,
+     "etiqueta": "VY7862",
+     "url": "https://tickets.vueling.com/",
+     "plazas": 114,
+     "duracion": "2:35",
+     "minimo": 104.99,
+     "maximo": 132.99,
+     "visto": "2026-10-07 13:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-10-05 08:37",
+       125.99
+      ],
+      [
+       "2026-10-07 01:21",
+       132.99
+      ],
+      [
+       "2026-10-07 01:37",
+       125.99
+      ],
+      [
+       "2026-10-07 01:52",
+       132.99
+      ],
+      [
+       "2026-10-07 02:23",
+       125.99
+      ],
+      [
+       "2026-10-07 03:09",
+       132.99
+      ],
+      [
+       "2026-10-07 03:40",
+       125.99
+      ],
+      [
+       "2026-10-07 04:11",
+       132.99
+      ],
+      [
+       "2026-10-07 04:27",
+       125.99
+      ],
+      [
+       "2026-10-07 04:42",
+       132.99
+      ],
+      [
+       "2026-10-07 06:55",
+       125.99
+      ],
+      [
+       "2026-10-07 07:16",
+       126.0
+      ],
+      [
+       "2026-10-07 07:31",
+       125.99
+      ],
+      [
+       "2026-10-07 13:21",
+       104.99
+      ]
+     ],
+     "variacion": -21.0
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "ryanair",
+     "vuelo": "FR3534",
+     "de": "CRL",
+     "a": "ALC",
+     "de_nombre": "Charleroi",
+     "a_nombre": "Alicante",
+     "fecha": "2026-12-08",
+     "sale": "06:20",
+     "llega": "08:45",
+     "ref": 120.53,
+     "precio": 140.2,
+     "llega_aprox": false,
+     "etiqueta": "FR3534 · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
+     "plazas": 4,
+     "duracion": "02:25",
+     "minimo": 120.53,
+     "maximo": 140.2,
+     "visto": "2026-10-07 13:21",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-10-05 07:46",
+       120.53
+      ],
+      [
+       "2026-10-05 14:03",
+       135.13
+      ],
+      [
+       "2026-10-05 19:38",
+       134.13
+      ],
+      [
+       "2026-10-06 13:19",
+       134.13
+      ],
+      [
+       "2026-10-06 20:34",
+       135.13
+      ],
+      [
+       "2026-10-07 06:55",
+       140.2
+      ]
+     ],
+     "variacion": 19.67
+    }
+   ],
+   "itinerario": [],
+   "total_persona": 245.19,
+   "total_grupo": 245.19,
+   "ida_fecha": "2026-12-05",
+   "ida_hora": "12:20",
+   "ida_iata": "BRU",
+   "ida_ciudad": "Zaventem",
+   "vuelta_fecha": "2026-12-08",
+   "vuelta_hora": "06:20",
+   "vuelta_llega": "08:45",
+   "vuelta_iata": "CRL",
+   "vuelta_ciudad": "Charleroi",
+   "horas_destino": 63,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 246.52,
    "dentro_presupuesto": true
   },
   {
@@ -329,7 +501,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -360,7 +532,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -441,7 +613,7 @@
      "duracion": "02:30",
      "minimo": 109.17,
      "maximo": 112.4,
-     "visto": "2026-10-07 12:49",
+     "visto": "2026-10-07 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -484,7 +656,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -558,18 +730,18 @@
      "de_nombre": "Alicante",
      "a_nombre": "Charleroi",
      "fecha": "2026-12-05",
-     "sale": "18:05",
-     "llega": "20:35",
+     "sale": "06:35",
+     "llega": "09:05",
      "ref": 109.99,
-     "precio": 140.99,
+     "precio": 151.99,
      "llega_aprox": false,
-     "etiqueta": "FR9052 · 5 plazas",
+     "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
      "plazas": 5,
      "duracion": "02:30",
      "minimo": 105.99,
-     "maximo": 140.99,
-     "visto": "2026-10-07 12:49",
+     "maximo": 151.99,
+     "visto": "2026-10-07 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -599,9 +771,13 @@
       [
        "2026-10-07 11:20",
        140.99
+      ],
+      [
+       "2026-10-07 13:20",
+       151.99
       ]
      ],
-     "variacion": 31.0
+     "variacion": 42.0
     },
     {
      "tipo": "vuelo",
@@ -624,7 +800,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -652,10 +828,10 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 255.98,
-   "total_grupo": 255.98,
+   "total_persona": 266.98,
+   "total_grupo": 266.98,
    "ida_fecha": "2026-12-05",
-   "ida_hora": "18:05",
+   "ida_hora": "06:35",
    "ida_iata": "CRL",
    "ida_ciudad": "Charleroi",
    "vuelta_fecha": "2026-12-08",
@@ -663,7 +839,7 @@
    "vuelta_llega": "08:45",
    "vuelta_iata": "BRU",
    "vuelta_ciudad": "Zaventem",
-   "horas_destino": 57,
+   "horas_destino": 69,
    "minutos_tierra": 0,
    "saltos": 0,
    "sale_temprano": true,
@@ -671,170 +847,6 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 234.98,
-   "dentro_presupuesto": false
-  },
-  {
-   "id": "bru-05-crl",
-   "titulo": "Entras por Zaventem y sales por Charleroi · ida el sábado 5",
-   "subtitulo": "3 noches · cada tramo con la compañía que lo tenga mejor",
-   "paises": [
-    "Bélgica"
-   ],
-   "noches": 3,
-   "por_que": "Nada obliga a entrar y salir por el mismo sitio: los dos aeropuertos sirven a Bruselas. Se coge el vuelo más barato en cada sentido.",
-   "aviso": "El vuelo de vuelta sale a las 06:45 de la mañana.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "vueling",
-     "vuelo": "VY7862",
-     "de": "ALC",
-     "a": "BRU",
-     "de_nombre": "Alicante",
-     "a_nombre": "Zaventem",
-     "fecha": "2026-12-05",
-     "sale": "12:20",
-     "llega": "14:55",
-     "ref": 125.99,
-     "precio": 125.99,
-     "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
-     "plazas": 114,
-     "duracion": "2:35",
-     "minimo": 125.99,
-     "maximo": 132.99,
-     "visto": "2026-10-07 12:50",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-10-05 08:37",
-       125.99
-      ],
-      [
-       "2026-10-07 01:21",
-       132.99
-      ],
-      [
-       "2026-10-07 01:37",
-       125.99
-      ],
-      [
-       "2026-10-07 01:52",
-       132.99
-      ],
-      [
-       "2026-10-07 02:23",
-       125.99
-      ],
-      [
-       "2026-10-07 03:09",
-       132.99
-      ],
-      [
-       "2026-10-07 03:40",
-       125.99
-      ],
-      [
-       "2026-10-07 04:11",
-       132.99
-      ],
-      [
-       "2026-10-07 04:27",
-       125.99
-      ],
-      [
-       "2026-10-07 04:42",
-       132.99
-      ],
-      [
-       "2026-10-07 06:55",
-       125.99
-      ],
-      [
-       "2026-10-07 07:16",
-       126.0
-      ],
-      [
-       "2026-10-07 07:31",
-       125.99
-      ]
-     ],
-     "variacion": 0.0
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "ryanair",
-     "vuelo": "FR3534",
-     "de": "CRL",
-     "a": "ALC",
-     "de_nombre": "Charleroi",
-     "a_nombre": "Alicante",
-     "fecha": "2026-12-08",
-     "sale": "06:20",
-     "llega": "08:45",
-     "ref": 120.53,
-     "precio": 140.2,
-     "llega_aprox": false,
-     "etiqueta": "FR3534 · 4 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": 4,
-     "duracion": "02:25",
-     "minimo": 120.53,
-     "maximo": 140.2,
-     "visto": "2026-10-07 12:50",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-10-05 07:46",
-       120.53
-      ],
-      [
-       "2026-10-05 14:03",
-       135.13
-      ],
-      [
-       "2026-10-05 19:38",
-       134.13
-      ],
-      [
-       "2026-10-06 13:19",
-       134.13
-      ],
-      [
-       "2026-10-06 20:34",
-       135.13
-      ],
-      [
-       "2026-10-07 06:55",
-       140.2
-      ]
-     ],
-     "variacion": 19.67
-    }
-   ],
-   "itinerario": [],
-   "total_persona": 266.19,
-   "total_grupo": 266.19,
-   "ida_fecha": "2026-12-05",
-   "ida_hora": "12:20",
-   "ida_iata": "BRU",
-   "ida_ciudad": "Zaventem",
-   "vuelta_fecha": "2026-12-08",
-   "vuelta_hora": "06:20",
-   "vuelta_llega": "08:45",
-   "vuelta_iata": "CRL",
-   "vuelta_ciudad": "Charleroi",
-   "horas_destino": 63,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 246.52,
    "dentro_presupuesto": false
   },
   {
@@ -869,7 +881,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -900,7 +912,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -974,18 +986,18 @@
      "de_nombre": "Alicante",
      "a_nombre": "Charleroi",
      "fecha": "2026-12-05",
-     "sale": "18:05",
-     "llega": "20:35",
+     "sale": "06:35",
+     "llega": "09:05",
      "ref": 109.99,
-     "precio": 140.99,
+     "precio": 151.99,
      "llega_aprox": false,
-     "etiqueta": "FR9052 · 5 plazas",
+     "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
      "plazas": 5,
      "duracion": "02:30",
      "minimo": 105.99,
-     "maximo": 140.99,
-     "visto": "2026-10-07 12:49",
+     "maximo": 151.99,
+     "visto": "2026-10-07 13:20",
      "estado": "ok",
      "historico": [
       [
@@ -1015,9 +1027,13 @@
       [
        "2026-10-07 11:20",
        140.99
+      ],
+      [
+       "2026-10-07 13:20",
+       151.99
       ]
      ],
-     "variacion": 31.0
+     "variacion": 42.0
     },
     {
      "tipo": "vuelo",
@@ -1040,7 +1056,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 12:50",
+     "visto": "2026-10-07 13:21",
      "estado": "ok",
      "historico": [
       [
@@ -1072,10 +1088,10 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 281.19,
-   "total_grupo": 281.19,
+   "total_persona": 292.19,
+   "total_grupo": 292.19,
    "ida_fecha": "2026-12-05",
-   "ida_hora": "18:05",
+   "ida_hora": "06:35",
    "ida_iata": "CRL",
    "ida_ciudad": "Charleroi",
    "vuelta_fecha": "2026-12-08",
@@ -1083,7 +1099,7 @@
    "vuelta_llega": "08:45",
    "vuelta_iata": "CRL",
    "vuelta_ciudad": "Charleroi",
-   "horas_destino": 58,
+   "horas_destino": 69,
    "minutos_tierra": 0,
    "saltos": 0,
    "sale_temprano": true,
@@ -1094,6 +1110,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 12:50",
- "actualizado_iso": "2026-10-07T12:50:51.391985+00:00"
+ "actualizado": "2026-10-07 13:21",
+ "actualizado_iso": "2026-10-07T13:21:27.556435+00:00"
 }
