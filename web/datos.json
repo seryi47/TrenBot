@@ -45,7 +45,7 @@
      "duracion": "2:35",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -128,7 +128,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -209,7 +209,7 @@
      "duracion": "02:30",
      "minimo": 109.17,
      "maximo": 112.4,
-     "visto": "2026-10-07 13:20",
+     "visto": "2026-10-07 14:36",
      "estado": "ok",
      "historico": [
       [
@@ -252,7 +252,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -333,7 +333,7 @@
      "duracion": "2:35",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -416,7 +416,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -501,7 +501,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 13:20",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -532,7 +532,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -613,7 +613,7 @@
      "duracion": "02:30",
      "minimo": 109.17,
      "maximo": 112.4,
-     "visto": "2026-10-07 13:20",
+     "visto": "2026-10-07 14:36",
      "estado": "ok",
      "historico": [
       [
@@ -656,7 +656,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -733,7 +733,7 @@
      "sale": "06:35",
      "llega": "09:05",
      "ref": 109.99,
-     "precio": 151.99,
+     "precio": 149.99,
      "llega_aprox": false,
      "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
@@ -741,7 +741,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 151.99,
-     "visto": "2026-10-07 13:20",
+     "visto": "2026-10-07 14:36",
      "estado": "ok",
      "historico": [
       [
@@ -775,9 +775,13 @@
       [
        "2026-10-07 13:20",
        151.99
+      ],
+      [
+       "2026-10-07 14:36",
+       149.99
       ]
      ],
-     "variacion": 42.0
+     "variacion": 40.0
     },
     {
      "tipo": "vuelo",
@@ -800,7 +804,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -828,8 +832,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 266.98,
-   "total_grupo": 266.98,
+   "total_persona": 264.98,
+   "total_grupo": 264.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -881,7 +885,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 13:20",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -912,7 +916,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -989,7 +993,7 @@
      "sale": "06:35",
      "llega": "09:05",
      "ref": 109.99,
-     "precio": 151.99,
+     "precio": 149.99,
      "llega_aprox": false,
      "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
@@ -997,7 +1001,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 151.99,
-     "visto": "2026-10-07 13:20",
+     "visto": "2026-10-07 14:36",
      "estado": "ok",
      "historico": [
       [
@@ -1031,9 +1035,13 @@
       [
        "2026-10-07 13:20",
        151.99
+      ],
+      [
+       "2026-10-07 14:36",
+       149.99
       ]
      ],
-     "variacion": 42.0
+     "variacion": 40.0
     },
     {
      "tipo": "vuelo",
@@ -1056,7 +1064,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 13:21",
+     "visto": "2026-10-07 14:37",
      "estado": "ok",
      "historico": [
       [
@@ -1088,8 +1096,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 292.19,
-   "total_grupo": 292.19,
+   "total_persona": 290.19,
+   "total_grupo": 290.19,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -1110,6 +1118,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 13:21",
- "actualizado_iso": "2026-10-07T13:21:27.556435+00:00"
+ "actualizado": "2026-10-07 14:37",
+ "actualizado_iso": "2026-10-07T14:37:54.431443+00:00"
 }
