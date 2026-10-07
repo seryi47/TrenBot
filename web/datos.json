@@ -45,7 +45,7 @@
      "duracion": "2:35",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -128,7 +128,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -217,7 +217,7 @@
      "duracion": "02:30",
      "minimo": 109.17,
      "maximo": 112.4,
-     "visto": "2026-10-07 19:23",
+     "visto": "2026-10-07 20:40",
      "estado": "ok",
      "historico": [
       [
@@ -260,7 +260,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -349,7 +349,7 @@
      "duracion": "2:35",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -424,7 +424,7 @@
      "sale": "06:20",
      "llega": "08:45",
      "ref": 120.53,
-     "precio": 140.2,
+     "precio": 139.2,
      "llega_aprox": false,
      "etiqueta": "FR3534 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -432,7 +432,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -458,14 +458,18 @@
       [
        "2026-10-07 06:55",
        140.2
+      ],
+      [
+       "2026-10-07 20:41",
+       139.2
       ]
      ],
-     "variacion": 19.67
+     "variacion": 18.67
     }
    ],
    "itinerario": [],
-   "total_persona": 245.19,
-   "total_grupo": 245.19,
+   "total_persona": 244.19,
+   "total_grupo": 244.19,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -483,6 +487,138 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 246.52,
+   "dentro_presupuesto": true
+  },
+  {
+   "id": "crl-04-crl",
+   "titulo": "Bruselas por Charleroi · ida el viernes 4",
+   "subtitulo": "4 noches · cada tramo con la compañía que lo tenga mejor",
+   "paises": [
+    "Bélgica"
+   ],
+   "noches": 4,
+   "por_que": "Entras y sales por Charleroi.",
+   "aviso": "El vuelo de vuelta sale a las 06:45 de la mañana.",
+   "tramos": [
+    {
+     "tipo": "vuelo",
+     "dir": "ida",
+     "cia": "ryanair",
+     "vuelo": "FR9052",
+     "de": "ALC",
+     "a": "CRL",
+     "de_nombre": "Alicante",
+     "a_nombre": "Charleroi",
+     "fecha": "2026-12-04",
+     "sale": "06:20",
+     "llega": "08:50",
+     "ref": 112.4,
+     "precio": 109.17,
+     "llega_aprox": false,
+     "etiqueta": "FR9052",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-04&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
+     "plazas": null,
+     "duracion": "02:30",
+     "minimo": 109.17,
+     "maximo": 112.4,
+     "visto": "2026-10-07 20:40",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-10-05 07:45",
+       112.4
+      ],
+      [
+       "2026-10-06 00:56",
+       111.4
+      ],
+      [
+       "2026-10-06 13:19",
+       111.4
+      ],
+      [
+       "2026-10-07 06:55",
+       109.17
+      ]
+     ],
+     "variacion": -3.23
+    },
+    {
+     "tipo": "vuelo",
+     "dir": "vuelta",
+     "cia": "ryanair",
+     "vuelo": "FR3534",
+     "de": "CRL",
+     "a": "ALC",
+     "de_nombre": "Charleroi",
+     "a_nombre": "Alicante",
+     "fecha": "2026-12-08",
+     "sale": "06:20",
+     "llega": "08:45",
+     "ref": 120.53,
+     "precio": 139.2,
+     "llega_aprox": false,
+     "etiqueta": "FR3534 · 4 plazas",
+     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
+     "plazas": 4,
+     "duracion": "02:25",
+     "minimo": 120.53,
+     "maximo": 140.2,
+     "visto": "2026-10-07 20:41",
+     "estado": "ok",
+     "historico": [
+      [
+       "2026-10-05 07:46",
+       120.53
+      ],
+      [
+       "2026-10-05 14:03",
+       135.13
+      ],
+      [
+       "2026-10-05 19:38",
+       134.13
+      ],
+      [
+       "2026-10-06 13:19",
+       134.13
+      ],
+      [
+       "2026-10-06 20:34",
+       135.13
+      ],
+      [
+       "2026-10-07 06:55",
+       140.2
+      ],
+      [
+       "2026-10-07 20:41",
+       139.2
+      ]
+     ],
+     "variacion": 18.67
+    }
+   ],
+   "itinerario": [],
+   "total_persona": 248.37,
+   "total_grupo": 248.37,
+   "ida_fecha": "2026-12-04",
+   "ida_hora": "06:20",
+   "ida_iata": "CRL",
+   "ida_ciudad": "Charleroi",
+   "vuelta_fecha": "2026-12-08",
+   "vuelta_hora": "06:20",
+   "vuelta_llega": "08:45",
+   "vuelta_iata": "CRL",
+   "vuelta_ciudad": "Charleroi",
+   "horas_destino": 94,
+   "minutos_tierra": 0,
+   "saltos": 0,
+   "sale_temprano": true,
+   "ida_tarde": false,
+   "llega_noche": false,
+   "vuelve_lunes": false,
+   "total_referencia": 232.93,
    "dentro_presupuesto": true
   },
   {
@@ -517,7 +653,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 19:23",
+     "visto": "2026-10-07 20:40",
      "estado": "ok",
      "historico": [
       [
@@ -548,7 +684,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -606,134 +742,6 @@
    "dentro_presupuesto": true
   },
   {
-   "id": "crl-04-crl",
-   "titulo": "Bruselas por Charleroi · ida el viernes 4",
-   "subtitulo": "4 noches · cada tramo con la compañía que lo tenga mejor",
-   "paises": [
-    "Bélgica"
-   ],
-   "noches": 4,
-   "por_que": "Entras y sales por Charleroi.",
-   "aviso": "El vuelo de vuelta sale a las 06:45 de la mañana.",
-   "tramos": [
-    {
-     "tipo": "vuelo",
-     "dir": "ida",
-     "cia": "ryanair",
-     "vuelo": "FR9052",
-     "de": "ALC",
-     "a": "CRL",
-     "de_nombre": "Alicante",
-     "a_nombre": "Charleroi",
-     "fecha": "2026-12-04",
-     "sale": "06:20",
-     "llega": "08:50",
-     "ref": 112.4,
-     "precio": 109.17,
-     "llega_aprox": false,
-     "etiqueta": "FR9052",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-04&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
-     "plazas": null,
-     "duracion": "02:30",
-     "minimo": 109.17,
-     "maximo": 112.4,
-     "visto": "2026-10-07 19:23",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-10-05 07:45",
-       112.4
-      ],
-      [
-       "2026-10-06 00:56",
-       111.4
-      ],
-      [
-       "2026-10-06 13:19",
-       111.4
-      ],
-      [
-       "2026-10-07 06:55",
-       109.17
-      ]
-     ],
-     "variacion": -3.23
-    },
-    {
-     "tipo": "vuelo",
-     "dir": "vuelta",
-     "cia": "ryanair",
-     "vuelo": "FR3534",
-     "de": "CRL",
-     "a": "ALC",
-     "de_nombre": "Charleroi",
-     "a_nombre": "Alicante",
-     "fecha": "2026-12-08",
-     "sale": "06:20",
-     "llega": "08:45",
-     "ref": 120.53,
-     "precio": 140.2,
-     "llega_aprox": false,
-     "etiqueta": "FR3534 · 4 plazas",
-     "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
-     "plazas": 4,
-     "duracion": "02:25",
-     "minimo": 120.53,
-     "maximo": 140.2,
-     "visto": "2026-10-07 19:24",
-     "estado": "ok",
-     "historico": [
-      [
-       "2026-10-05 07:46",
-       120.53
-      ],
-      [
-       "2026-10-05 14:03",
-       135.13
-      ],
-      [
-       "2026-10-05 19:38",
-       134.13
-      ],
-      [
-       "2026-10-06 13:19",
-       134.13
-      ],
-      [
-       "2026-10-06 20:34",
-       135.13
-      ],
-      [
-       "2026-10-07 06:55",
-       140.2
-      ]
-     ],
-     "variacion": 19.67
-    }
-   ],
-   "itinerario": [],
-   "total_persona": 249.37,
-   "total_grupo": 249.37,
-   "ida_fecha": "2026-12-04",
-   "ida_hora": "06:20",
-   "ida_iata": "CRL",
-   "ida_ciudad": "Charleroi",
-   "vuelta_fecha": "2026-12-08",
-   "vuelta_hora": "06:20",
-   "vuelta_llega": "08:45",
-   "vuelta_iata": "CRL",
-   "vuelta_ciudad": "Charleroi",
-   "horas_destino": 94,
-   "minutos_tierra": 0,
-   "saltos": 0,
-   "sale_temprano": true,
-   "ida_tarde": false,
-   "llega_noche": false,
-   "vuelve_lunes": false,
-   "total_referencia": 232.93,
-   "dentro_presupuesto": true
-  },
-  {
    "id": "crl-05-bru",
    "titulo": "Entras por Charleroi y sales por Zaventem · ida el sábado 5",
    "subtitulo": "3 noches · cada tramo con la compañía que lo tenga mejor",
@@ -765,7 +773,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 151.99,
-     "visto": "2026-10-07 19:23",
+     "visto": "2026-10-07 20:40",
      "estado": "ok",
      "historico": [
       [
@@ -828,7 +836,7 @@
      "duracion": null,
      "minimo": 114.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -917,7 +925,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 19:23",
+     "visto": "2026-10-07 20:40",
      "estado": "ok",
      "historico": [
       [
@@ -940,7 +948,7 @@
      "sale": "06:20",
      "llega": "08:45",
      "ref": 120.53,
-     "precio": 140.2,
+     "precio": 139.2,
      "llega_aprox": false,
      "etiqueta": "FR3534 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -948,7 +956,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -974,14 +982,18 @@
       [
        "2026-10-07 06:55",
        140.2
+      ],
+      [
+       "2026-10-07 20:41",
+       139.2
       ]
      ],
-     "variacion": 19.67
+     "variacion": 18.67
     }
    ],
    "itinerario": [],
-   "total_persona": 274.2,
-   "total_grupo": 274.2,
+   "total_persona": 273.2,
+   "total_grupo": 273.2,
    "ida_fecha": "2026-12-04",
    "ida_hora": "10:10",
    "ida_iata": "BRU",
@@ -1033,7 +1045,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 151.99,
-     "visto": "2026-10-07 19:23",
+     "visto": "2026-10-07 20:40",
      "estado": "ok",
      "historico": [
       [
@@ -1088,7 +1100,7 @@
      "sale": "06:20",
      "llega": "08:45",
      "ref": 120.53,
-     "precio": 140.2,
+     "precio": 139.2,
      "llega_aprox": false,
      "etiqueta": "FR3534 · 4 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-08&isConnectedFlight=false&discount=0&isReturn=false&originIata=CRL&destinationIata=ALC",
@@ -1096,7 +1108,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 19:24",
+     "visto": "2026-10-07 20:41",
      "estado": "ok",
      "historico": [
       [
@@ -1122,14 +1134,18 @@
       [
        "2026-10-07 06:55",
        140.2
+      ],
+      [
+       "2026-10-07 20:41",
+       139.2
       ]
      ],
-     "variacion": 19.67
+     "variacion": 18.67
     }
    ],
    "itinerario": [],
-   "total_persona": 290.19,
-   "total_grupo": 290.19,
+   "total_persona": 289.19,
+   "total_grupo": 289.19,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -1150,6 +1166,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 19:24",
- "actualizado_iso": "2026-10-07T19:24:37.444286+00:00"
+ "actualizado": "2026-10-07 20:41",
+ "actualizado_iso": "2026-10-07T20:41:22.091956+00:00"
 }
