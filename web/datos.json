@@ -39,13 +39,13 @@
      "ref": 109.99,
      "precio": 107.99,
      "llega_aprox": false,
-     "etiqueta": "FR9052",
+     "etiqueta": "FR9052 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
-     "plazas": null,
+     "plazas": 5,
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 06:29",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -92,7 +92,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:46",
      "estado": "ok",
      "historico": [
       [
@@ -169,7 +169,7 @@
      "duracion": "02:30",
      "minimo": 109.17,
      "maximo": 112.4,
-     "visto": "2026-10-07 06:29",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -212,7 +212,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:46",
      "estado": "ok",
      "historico": [
       [
@@ -283,13 +283,13 @@
      "ref": 109.99,
      "precio": 107.99,
      "llega_aprox": false,
-     "etiqueta": "FR9052",
+     "etiqueta": "FR9052 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
-     "plazas": null,
+     "plazas": 5,
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 06:29",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -336,7 +336,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -421,7 +421,7 @@
      "duracion": "02:30",
      "minimo": 109.17,
      "maximo": 112.4,
-     "visto": "2026-10-07 06:29",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -464,7 +464,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -541,15 +541,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 125.99,
+     "precio": 132.99,
      "llega_aprox": false,
      "etiqueta": "VY7862",
      "url": "https://tickets.vueling.com/",
-     "plazas": 114,
+     "plazas": 113,
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -595,9 +595,13 @@
       [
        "2026-10-07 05:59",
        125.99
+      ],
+      [
+       "2026-10-07 06:45",
+       132.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 7.0
     },
     {
      "tipo": "vuelo",
@@ -620,7 +624,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:46",
      "estado": "ok",
      "historico": [
       [
@@ -644,8 +648,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 250.98,
-   "total_grupo": 250.98,
+   "total_persona": 257.98,
+   "total_grupo": 257.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -697,7 +701,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -728,7 +732,7 @@
      "duracion": null,
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:46",
      "estado": "ok",
      "historico": [
       [
@@ -797,15 +801,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 125.99,
+     "precio": 132.99,
      "llega_aprox": false,
      "etiqueta": "VY7862",
      "url": "https://tickets.vueling.com/",
-     "plazas": 114,
+     "plazas": 113,
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -851,9 +855,13 @@
       [
        "2026-10-07 05:59",
        125.99
+      ],
+      [
+       "2026-10-07 06:45",
+       132.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 7.0
     },
     {
      "tipo": "vuelo",
@@ -876,7 +884,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -908,8 +916,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 266.19,
-   "total_grupo": 266.19,
+   "total_persona": 273.19,
+   "total_grupo": 273.19,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -961,7 +969,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -992,7 +1000,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 140.2,
-     "visto": "2026-10-07 06:30",
+     "visto": "2026-10-07 06:45",
      "estado": "ok",
      "historico": [
       [
@@ -1046,6 +1054,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 06:30",
- "actualizado_iso": "2026-10-07T06:30:47.471724+00:00"
+ "actualizado": "2026-10-07 06:46",
+ "actualizado_iso": "2026-10-07T06:46:14.293228+00:00"
 }
