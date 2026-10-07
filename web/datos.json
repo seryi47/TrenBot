@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 01:36",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -84,15 +84,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 124.99,
+     "precio": 125.0,
      "llega_aprox": false,
-     "etiqueta": "TB1111",
-     "url": "https://www.tuifly.be/flight/en/search",
+     "etiqueta": "TUI fly",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
      "plazas": null,
-     "duracion": null,
+     "duracion": "2 h 45 min",
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:53",
      "estado": "ok",
      "historico": [
       [
@@ -102,14 +102,18 @@
       [
        "2026-10-05 12:16",
        124.99
+      ],
+      [
+       "2026-10-07 01:53",
+       125.0
       ]
      ],
-     "variacion": -0.01
+     "variacion": 0.0
     }
    ],
    "itinerario": [],
-   "total_persona": 232.98,
-   "total_grupo": 232.98,
+   "total_persona": 232.99,
+   "total_grupo": 232.99,
    "ida_fecha": "2026-12-05",
    "ida_hora": "18:05",
    "ida_iata": "CRL",
@@ -161,7 +165,7 @@
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-07 01:36",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -192,15 +196,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 124.99,
+     "precio": 125.0,
      "llega_aprox": false,
-     "etiqueta": "TB1111",
-     "url": "https://www.tuifly.be/flight/en/search",
+     "etiqueta": "TUI fly",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
      "plazas": null,
-     "duracion": null,
+     "duracion": "2 h 45 min",
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:53",
      "estado": "ok",
      "historico": [
       [
@@ -210,14 +214,18 @@
       [
        "2026-10-05 12:16",
        124.99
+      ],
+      [
+       "2026-10-07 01:53",
+       125.0
       ]
      ],
-     "variacion": -0.01
+     "variacion": 0.0
     }
    ],
    "itinerario": [],
-   "total_persona": 236.39,
-   "total_grupo": 236.39,
+   "total_persona": 236.4,
+   "total_grupo": 236.4,
    "ida_fecha": "2026-12-04",
    "ida_hora": "06:20",
    "ida_iata": "CRL",
@@ -269,7 +277,7 @@
      "duracion": "02:30",
      "minimo": 106.99,
      "maximo": 109.99,
-     "visto": "2026-10-07 01:36",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -316,7 +324,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -397,7 +405,7 @@
      "duracion": "02:30",
      "minimo": 111.4,
      "maximo": 112.4,
-     "visto": "2026-10-07 01:36",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -436,7 +444,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -509,15 +517,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 125.99,
+     "precio": 132.99,
      "llega_aprox": false,
      "etiqueta": "VY7862",
      "url": "https://tickets.vueling.com/",
-     "plazas": 114,
+     "plazas": 113,
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -531,9 +539,13 @@
       [
        "2026-10-07 01:37",
        125.99
+      ],
+      [
+       "2026-10-07 01:52",
+       132.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 7.0
     },
     {
      "tipo": "vuelo",
@@ -548,15 +560,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 124.99,
+     "precio": 125.0,
      "llega_aprox": false,
-     "etiqueta": "TB1111",
-     "url": "https://www.tuifly.be/flight/en/search",
+     "etiqueta": "TUI fly",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
      "plazas": null,
-     "duracion": null,
+     "duracion": "2 h 45 min",
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:53",
      "estado": "ok",
      "historico": [
       [
@@ -566,14 +578,18 @@
       [
        "2026-10-05 12:16",
        124.99
+      ],
+      [
+       "2026-10-07 01:53",
+       125.0
       ]
      ],
-     "variacion": -0.01
+     "variacion": 0.0
     }
    ],
    "itinerario": [],
-   "total_persona": 250.98,
-   "total_grupo": 250.98,
+   "total_persona": 257.99,
+   "total_grupo": 257.99,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -625,7 +641,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 01:36",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -648,15 +664,15 @@
      "sale": "06:00",
      "llega": "08:45",
      "ref": 124.99,
-     "precio": 124.99,
+     "precio": 125.0,
      "llega_aprox": false,
-     "etiqueta": "TB1111",
-     "url": "https://www.tuifly.be/flight/en/search",
+     "etiqueta": "TUI fly",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20ALC%20from%20BRU%20on%202026-12-08%20oneway%20nonstop%20for%201%20adults",
      "plazas": null,
-     "duracion": null,
+     "duracion": "2 h 45 min",
      "minimo": 124.99,
      "maximo": 125.0,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:53",
      "estado": "ok",
      "historico": [
       [
@@ -666,14 +682,18 @@
       [
        "2026-10-05 12:16",
        124.99
+      ],
+      [
+       "2026-10-07 01:53",
+       125.0
       ]
      ],
-     "variacion": -0.01
+     "variacion": 0.0
     }
    ],
    "itinerario": [],
-   "total_persona": 258.99,
-   "total_grupo": 258.99,
+   "total_persona": 259.0,
+   "total_grupo": 259.0,
    "ida_fecha": "2026-12-04",
    "ida_hora": "10:10",
    "ida_iata": "BRU",
@@ -717,15 +737,15 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 125.99,
+     "precio": 132.99,
      "llega_aprox": false,
      "etiqueta": "VY7862",
      "url": "https://tickets.vueling.com/",
-     "plazas": 114,
+     "plazas": 113,
      "duracion": "2:35",
      "minimo": 125.99,
      "maximo": 132.99,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -739,9 +759,13 @@
       [
        "2026-10-07 01:37",
        125.99
+      ],
+      [
+       "2026-10-07 01:52",
+       132.99
       ]
      ],
-     "variacion": 0.0
+     "variacion": 7.0
     },
     {
      "tipo": "vuelo",
@@ -764,7 +788,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -792,8 +816,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 261.12,
-   "total_grupo": 261.12,
+   "total_persona": 268.12,
+   "total_grupo": 268.12,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -845,7 +869,7 @@
      "duracion": "2 h 30 min",
      "minimo": 134.0,
      "maximo": 134.0,
-     "visto": "2026-10-07 01:36",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -876,7 +900,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 135.13,
-     "visto": "2026-10-07 01:37",
+     "visto": "2026-10-07 01:52",
      "estado": "ok",
      "historico": [
       [
@@ -926,6 +950,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-07 01:37",
- "actualizado_iso": "2026-10-07T01:37:40.399252+00:00"
+ "actualizado": "2026-10-07 01:53",
+ "actualizado_iso": "2026-10-07T01:53:04.339708+00:00"
 }
