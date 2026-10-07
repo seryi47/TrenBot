@@ -709,3 +709,21 @@ Tres ajustes sobre `bloque_viaje`, que comparten los tres tipos de aviso:
   sobre el propio número del total.
 - Fuera "Hay N combinación(es) más con este vuelo; la siguiente sale por X €":
   ruido que no cambia la decisión.
+
+### El bucle de avisos repetidos: era el precio, no el bot
+Durante horas llegó el mismo aviso de "🟢 PRECIO MÍNIMO" una y otra vez, cada
+15-30 min. Verificado en el log real: el precio de Vueling para ALC→BRU
+**oscilaba de verdad** entre 125,99 € y 132,99 €, cada poco, durante horas
+(probablemente un reparto de carga entre nodos con caché de precio no
+sincronizada — Vueling corre sobre Navitaire, la misma plataforma de otras
+líneas con este comportamiento conocido).
+
+El fallo era nuestro: el aviso solo comparaba contra la lectura **inmediatamente
+anterior**, así que cada vez que el precio volvía a bajar a 125,99 € tras haber
+subido a 132,99 €, parecía "una bajada nueva" y se enviaba otra vez.
+
+Ahora cada vigilancia guarda un **suelo ya avisado**: una vez que se avisó de un
+precio, no se vuelve a avisar hasta que baje de verdad por debajo de ese suelo,
+aunque siga oscilando por encima y por debajo de él. El suelo nunca sube.
+Reproducida la secuencia real de los logs (11 lecturas, 125,99 ↔ 132,99): antes
+habría avisado ~5-6 veces, ahora avisa **una sola vez**.

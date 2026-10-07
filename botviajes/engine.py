@@ -833,8 +833,22 @@ class Engine:
         aviso = None
         if (watch.get("avisar_bajadas", True) and anterior is not None
                 and mejor.price <= anterior - umbral):
-            if self._merece_la_pena(watch, mejor):
+            # El "suelo ya avisado": una vez que se avisó de un precio, no se
+            # repite el aviso hasta que baje de VERDAD por debajo de ese suelo.
+            # Sin esto, un precio que oscila entre dos valores (visto en
+            # Vueling: 125,99 <-> 132,99 cada 15-30 min durante horas) parecía
+            # "una bajada nueva" en cada ciclo, porque solo se comparaba con la
+            # lectura inmediatamente anterior, no con lo que ya se había
+            # contado. El suelo nunca sube: si el precio sube y vuelve a bajar
+            # a lo mismo, ya se sabe.
+            suelo = watch.get("suelo_avisado")
+            si_es_nuevo = suelo is None or mejor.price < suelo - 0.01
+            if si_es_nuevo and self._merece_la_pena(watch, mejor):
                 aviso = self._texto_bajada(watch, mejor, anterior)
+                watch["suelo_avisado"] = mejor.price
+            elif not si_es_nuevo:
+                print("  [%s] bajada a %.2f € pero ya avisé de %.2f € o menos: no repito"
+                      % (watch["name"], mejor.price, suelo))
             watch["_bajaba_desde"] = anterior
         with self._lock:
             # Los datos del vuelo (horas, duración, plazas, enlace) se refrescan
