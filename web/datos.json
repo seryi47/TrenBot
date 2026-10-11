@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-11 05:42",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -108,7 +108,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:59",
      "estado": "ok",
      "historico": [
       [
@@ -209,7 +209,7 @@
      "duracion": "2:35",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -316,7 +316,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:59",
      "estado": "ok",
      "historico": [
       [
@@ -406,18 +406,18 @@
      "de_nombre": "Alicante",
      "a_nombre": "Zaventem",
      "fecha": "2026-12-04",
-     "sale": "10:30",
-     "llega": "13:25",
+     "sale": "10:45",
+     "llega": "13:20",
      "ref": 134.0,
-     "precio": 134.99,
+     "precio": 139.99,
      "llega_aprox": false,
-     "etiqueta": "TB1121",
-     "url": "https://www.tuifly.be/flight/en/search",
-     "plazas": null,
-     "duracion": null,
+     "etiqueta": "VY7862",
+     "url": "https://tickets.vueling.com/",
+     "plazas": 109,
+     "duracion": "2:35",
      "minimo": 134.0,
      "maximo": 139.99,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -431,9 +431,13 @@
       [
        "2026-10-10 02:35",
        134.99
+      ],
+      [
+       "2026-10-11 05:58",
+       139.99
       ]
      ],
-     "variacion": 0.99
+     "variacion": 5.99
     },
     {
      "tipo": "vuelo",
@@ -456,7 +460,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:59",
      "estado": "ok",
      "historico": [
       [
@@ -504,10 +508,10 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 249.98,
-   "total_grupo": 249.98,
+   "total_persona": 254.98,
+   "total_grupo": 254.98,
    "ida_fecha": "2026-12-04",
-   "ida_hora": "10:30",
+   "ida_hora": "10:45",
    "ida_iata": "BRU",
    "ida_ciudad": "Zaventem",
    "vuelta_fecha": "2026-12-08",
@@ -523,7 +527,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 258.99,
-   "dentro_presupuesto": true
+   "dentro_presupuesto": false
   },
   {
    "id": "crl-04-crl",
@@ -557,7 +561,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-11 05:42",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -620,7 +624,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -721,7 +725,7 @@
      "duracion": "2:35",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -828,7 +832,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -929,7 +933,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-11 05:42",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -1012,7 +1016,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:59",
      "estado": "ok",
      "historico": [
       [
@@ -1102,18 +1106,18 @@
      "de_nombre": "Alicante",
      "a_nombre": "Zaventem",
      "fecha": "2026-12-04",
-     "sale": "10:30",
-     "llega": "13:25",
+     "sale": "10:45",
+     "llega": "13:20",
      "ref": 134.0,
-     "precio": 134.99,
+     "precio": 139.99,
      "llega_aprox": false,
-     "etiqueta": "TB1121",
-     "url": "https://www.tuifly.be/flight/en/search",
-     "plazas": null,
-     "duracion": null,
+     "etiqueta": "VY7862",
+     "url": "https://tickets.vueling.com/",
+     "plazas": 109,
+     "duracion": "2:35",
      "minimo": 134.0,
      "maximo": 139.99,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -1127,9 +1131,13 @@
       [
        "2026-10-10 02:35",
        134.99
+      ],
+      [
+       "2026-10-11 05:58",
+       139.99
       ]
      ],
-     "variacion": 0.99
+     "variacion": 5.99
     },
     {
      "tipo": "vuelo",
@@ -1152,7 +1160,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -1200,10 +1208,10 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 286.99,
-   "total_grupo": 286.99,
+   "total_persona": 291.99,
+   "total_grupo": 291.99,
    "ida_fecha": "2026-12-04",
-   "ida_hora": "10:30",
+   "ida_hora": "10:45",
    "ida_iata": "BRU",
    "ida_ciudad": "Zaventem",
    "vuelta_fecha": "2026-12-08",
@@ -1253,7 +1261,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-11 05:42",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -1336,7 +1344,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-11 05:43",
+     "visto": "2026-10-11 05:58",
      "estado": "ok",
      "historico": [
       [
@@ -1406,6 +1414,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-11 05:43",
- "actualizado_iso": "2026-10-11T05:43:50.409919+00:00"
+ "actualizado": "2026-10-11 05:59",
+ "actualizado_iso": "2026-10-11T05:59:13.876037+00:00"
 }
