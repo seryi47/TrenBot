@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-12 09:17",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -205,21 +205,17 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 113.99,
+     "precio": 114.0,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-05%20oneway%20nonstop%20for%201%20adults",
      "plazas": 103,
-     "duracion": "2:35",
+     "duracion": "2 h 35 min",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-12 09:03",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
-      [
-       "2026-10-11 20:08",
-       114.0
-      ],
       [
        "2026-10-11 20:23",
        113.99
@@ -295,9 +291,13 @@
       [
        "2026-10-12 09:03",
        113.99
+      ],
+      [
+       "2026-10-12 09:33",
+       114.0
       ]
      ],
-     "variacion": -12.0
+     "variacion": -18.99
     },
     {
      "tipo": "vuelo",
@@ -368,8 +368,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 228.98,
-   "total_grupo": 228.98,
+   "total_persona": 228.99,
+   "total_grupo": 228.99,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -410,18 +410,18 @@
      "de_nombre": "Alicante",
      "a_nombre": "Zaventem",
      "fecha": "2026-12-04",
-     "sale": "10:30",
-     "llega": "13:25",
+     "sale": "10:45",
+     "llega": "13:20",
      "ref": 134.0,
-     "precio": 139.99,
+     "precio": 131.0,
      "llega_aprox": false,
-     "etiqueta": "TB1121",
-     "url": "https://www.tuifly.be/flight/en/search",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
      "plazas": 109,
-     "duracion": null,
+     "duracion": "2 h 35 min",
      "minimo": 130.99,
      "maximo": 139.99,
-     "visto": "2026-10-12 09:18",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -447,9 +447,13 @@
       [
        "2026-10-12 09:18",
        139.99
+      ],
+      [
+       "2026-10-12 09:33",
+       131.0
       ]
      ],
-     "variacion": 5.99
+     "variacion": -3.0
     },
     {
      "tipo": "vuelo",
@@ -520,10 +524,10 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 254.98,
-   "total_grupo": 254.98,
+   "total_persona": 245.99,
+   "total_grupo": 245.99,
    "ida_fecha": "2026-12-04",
-   "ida_hora": "10:30",
+   "ida_hora": "10:45",
    "ida_iata": "BRU",
    "ida_ciudad": "Zaventem",
    "vuelta_fecha": "2026-12-08",
@@ -539,7 +543,7 @@
    "llega_noche": false,
    "vuelve_lunes": false,
    "total_referencia": 258.99,
-   "dentro_presupuesto": false
+   "dentro_presupuesto": true
   },
   {
    "id": "crl-04-crl",
@@ -573,7 +577,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-12 09:17",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -640,7 +644,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 09:19",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -733,21 +737,17 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 113.99,
+     "precio": 114.0,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-05%20oneway%20nonstop%20for%201%20adults",
      "plazas": 103,
-     "duracion": "2:35",
+     "duracion": "2 h 35 min",
      "minimo": 104.99,
      "maximo": 132.99,
-     "visto": "2026-10-12 09:03",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
-      [
-       "2026-10-11 20:08",
-       114.0
-      ],
       [
        "2026-10-11 20:23",
        113.99
@@ -823,9 +823,13 @@
       [
        "2026-10-12 09:03",
        113.99
+      ],
+      [
+       "2026-10-12 09:33",
+       114.0
       ]
      ],
-     "variacion": -12.0
+     "variacion": -18.99
     },
     {
      "tipo": "vuelo",
@@ -848,7 +852,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 09:19",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -896,8 +900,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 265.99,
-   "total_grupo": 265.99,
+   "total_persona": 266.0,
+   "total_grupo": 266.0,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -941,7 +945,7 @@
      "sale": "06:35",
      "llega": "09:05",
      "ref": 109.99,
-     "precio": 153.99,
+     "precio": 156.99,
      "llega_aprox": false,
      "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
@@ -949,7 +953,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-12 09:17",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -1019,9 +1023,13 @@
       [
        "2026-10-12 07:30",
        153.99
+      ],
+      [
+       "2026-10-12 09:33",
+       156.99
       ]
      ],
-     "variacion": 44.0
+     "variacion": 47.0
     },
     {
      "tipo": "vuelo",
@@ -1092,8 +1100,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 268.98,
-   "total_grupo": 268.98,
+   "total_persona": 271.98,
+   "total_grupo": 271.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -1134,18 +1142,18 @@
      "de_nombre": "Alicante",
      "a_nombre": "Zaventem",
      "fecha": "2026-12-04",
-     "sale": "10:30",
-     "llega": "13:25",
+     "sale": "10:45",
+     "llega": "13:20",
      "ref": 134.0,
-     "precio": 139.99,
+     "precio": 131.0,
      "llega_aprox": false,
-     "etiqueta": "TB1121",
-     "url": "https://www.tuifly.be/flight/en/search",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
      "plazas": 109,
-     "duracion": null,
+     "duracion": "2 h 35 min",
      "minimo": 130.99,
      "maximo": 139.99,
-     "visto": "2026-10-12 09:18",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -1171,9 +1179,13 @@
       [
        "2026-10-12 09:18",
        139.99
+      ],
+      [
+       "2026-10-12 09:33",
+       131.0
       ]
      ],
-     "variacion": 5.99
+     "variacion": -3.0
     },
     {
      "tipo": "vuelo",
@@ -1196,7 +1208,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 09:19",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -1244,10 +1256,10 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 291.99,
-   "total_grupo": 291.99,
+   "total_persona": 283.0,
+   "total_grupo": 283.0,
    "ida_fecha": "2026-12-04",
-   "ida_hora": "10:30",
+   "ida_hora": "10:45",
    "ida_iata": "BRU",
    "ida_ciudad": "Zaventem",
    "vuelta_fecha": "2026-12-08",
@@ -1289,7 +1301,7 @@
      "sale": "06:35",
      "llega": "09:05",
      "ref": 109.99,
-     "precio": 153.99,
+     "precio": 156.99,
      "llega_aprox": false,
      "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
@@ -1297,7 +1309,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-12 09:17",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -1367,9 +1379,13 @@
       [
        "2026-10-12 07:30",
        153.99
+      ],
+      [
+       "2026-10-12 09:33",
+       156.99
       ]
      ],
-     "variacion": 44.0
+     "variacion": 47.0
     },
     {
      "tipo": "vuelo",
@@ -1392,7 +1408,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 09:19",
+     "visto": "2026-10-12 09:33",
      "estado": "ok",
      "historico": [
       [
@@ -1440,8 +1456,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 305.99,
-   "total_grupo": 305.99,
+   "total_persona": 308.99,
+   "total_grupo": 308.99,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -1462,6 +1478,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-12 09:19",
- "actualizado_iso": "2026-10-12T09:19:53.471820+00:00"
+ "actualizado": "2026-10-12 09:34",
+ "actualizado_iso": "2026-10-12T09:34:35.438167+00:00"
 }
