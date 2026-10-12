@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-12 14:05",
+     "visto": "2026-10-12 14:20",
      "estado": "ok",
      "historico": [
       [
@@ -112,7 +112,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:22",
      "estado": "ok",
      "historico": [
       [
@@ -213,7 +213,7 @@
      "duracion": "2:35",
      "minimo": 105.0,
      "maximo": 122.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -320,7 +320,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:22",
      "estado": "ok",
      "historico": [
       [
@@ -415,13 +415,13 @@
      "ref": 134.0,
      "precio": 130.99,
      "llega_aprox": false,
-     "etiqueta": "VuelingIberia",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
+     "etiqueta": "VY7862",
+     "url": "https://tickets.vueling.com/",
      "plazas": 109,
-     "duracion": "2 h 35 min",
+     "duracion": "2:35",
      "minimo": 130.99,
      "maximo": 139.99,
-     "visto": "2026-10-12 14:05",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -468,7 +468,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:22",
      "estado": "ok",
      "historico": [
       [
@@ -569,7 +569,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-12 14:05",
+     "visto": "2026-10-12 14:20",
      "estado": "ok",
      "historico": [
       [
@@ -636,7 +636,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -737,7 +737,7 @@
      "duracion": "2:35",
      "minimo": 105.0,
      "maximo": 122.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -844,7 +844,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -937,7 +937,7 @@
      "sale": "06:35",
      "llega": "09:05",
      "ref": 109.99,
-     "precio": 156.99,
+     "precio": 155.99,
      "llega_aprox": false,
      "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
@@ -945,7 +945,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-12 14:05",
+     "visto": "2026-10-12 14:20",
      "estado": "ok",
      "historico": [
       [
@@ -1019,9 +1019,13 @@
       [
        "2026-10-12 10:15",
        156.99
+      ],
+      [
+       "2026-10-12 14:20",
+       155.99
       ]
      ],
-     "variacion": 47.0
+     "variacion": 46.0
     },
     {
      "tipo": "vuelo",
@@ -1044,7 +1048,7 @@
      "duracion": null,
      "minimo": 109.99,
      "maximo": 125.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:22",
      "estado": "ok",
      "historico": [
       [
@@ -1092,8 +1096,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 271.98,
-   "total_grupo": 271.98,
+   "total_persona": 270.98,
+   "total_grupo": 270.98,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -1139,13 +1143,13 @@
      "ref": 134.0,
      "precio": 130.99,
      "llega_aprox": false,
-     "etiqueta": "VuelingIberia",
-     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
+     "etiqueta": "VY7862",
+     "url": "https://tickets.vueling.com/",
      "plazas": 109,
-     "duracion": "2 h 35 min",
+     "duracion": "2:35",
      "minimo": 130.99,
      "maximo": 139.99,
-     "visto": "2026-10-12 14:05",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -1192,7 +1196,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -1285,7 +1289,7 @@
      "sale": "06:35",
      "llega": "09:05",
      "ref": 109.99,
-     "precio": 156.99,
+     "precio": 155.99,
      "llega_aprox": false,
      "etiqueta": "FR3533 · 5 plazas",
      "url": "https://www.ryanair.com/es/es/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=2026-12-05&isConnectedFlight=false&discount=0&isReturn=false&originIata=ALC&destinationIata=CRL",
@@ -1293,7 +1297,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-12 14:05",
+     "visto": "2026-10-12 14:20",
      "estado": "ok",
      "historico": [
       [
@@ -1367,9 +1371,13 @@
       [
        "2026-10-12 10:15",
        156.99
+      ],
+      [
+       "2026-10-12 14:20",
+       155.99
       ]
      ],
-     "variacion": 47.0
+     "variacion": 46.0
     },
     {
      "tipo": "vuelo",
@@ -1392,7 +1400,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-12 14:06",
+     "visto": "2026-10-12 14:21",
      "estado": "ok",
      "historico": [
       [
@@ -1440,8 +1448,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 308.99,
-   "total_grupo": 308.99,
+   "total_persona": 307.99,
+   "total_grupo": 307.99,
    "ida_fecha": "2026-12-05",
    "ida_hora": "06:35",
    "ida_iata": "CRL",
@@ -1462,6 +1470,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-12 14:06",
- "actualizado_iso": "2026-10-12T14:06:36.715077+00:00"
+ "actualizado": "2026-10-12 14:22",
+ "actualizado_iso": "2026-10-12T14:22:19.763898+00:00"
 }
