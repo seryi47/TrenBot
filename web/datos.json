@@ -45,7 +45,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-13 03:09",
+     "visto": "2026-10-13 03:25",
      "estado": "ok",
      "historico": [
       [
@@ -112,7 +112,7 @@
      "duracion": "2 h 30 min",
      "minimo": 109.99,
      "maximo": 127.0,
-     "visto": "2026-10-13 03:11",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -213,21 +213,17 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 113.99,
+     "precio": 122.0,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-05%20oneway%20nonstop%20for%201%20adults",
      "plazas": 100,
-     "duracion": "2:35",
+     "duracion": "2 h 35 min",
      "minimo": 105.99,
      "maximo": 122.0,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
-      [
-       "2026-10-12 14:06",
-       113.99
-      ],
       [
        "2026-10-12 14:52",
        114.0
@@ -303,9 +299,13 @@
       [
        "2026-10-13 03:10",
        113.99
+      ],
+      [
+       "2026-10-13 03:26",
+       122.0
       ]
      ],
-     "variacion": 7.99
+     "variacion": 16.01
     },
     {
      "tipo": "vuelo",
@@ -328,7 +328,7 @@
      "duracion": "2 h 30 min",
      "minimo": 109.99,
      "maximo": 127.0,
-     "visto": "2026-10-13 03:11",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -384,8 +384,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 240.99,
-   "total_grupo": 240.99,
+   "total_persona": 249.0,
+   "total_grupo": 249.0,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -431,13 +431,13 @@
      "ref": 134.0,
      "precio": 130.99,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
      "plazas": 109,
-     "duracion": "2:35",
+     "duracion": "2 h 35 min",
      "minimo": 130.99,
      "maximo": 139.99,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:25",
      "estado": "ok",
      "historico": [
       [
@@ -484,7 +484,7 @@
      "duracion": "2 h 30 min",
      "minimo": 109.99,
      "maximo": 127.0,
-     "visto": "2026-10-13 03:11",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -593,7 +593,7 @@
      "duracion": "02:30",
      "minimo": 104.7,
      "maximo": 112.4,
-     "visto": "2026-10-13 03:09",
+     "visto": "2026-10-13 03:25",
      "estado": "ok",
      "historico": [
       [
@@ -660,7 +660,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -753,21 +753,17 @@
      "sale": "12:20",
      "llega": "14:55",
      "ref": 125.99,
-     "precio": 113.99,
+     "precio": 122.0,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-05%20oneway%20nonstop%20for%201%20adults",
      "plazas": 100,
-     "duracion": "2:35",
+     "duracion": "2 h 35 min",
      "minimo": 105.99,
      "maximo": 122.0,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
-      [
-       "2026-10-12 14:06",
-       113.99
-      ],
       [
        "2026-10-12 14:52",
        114.0
@@ -843,9 +839,13 @@
       [
        "2026-10-13 03:10",
        113.99
+      ],
+      [
+       "2026-10-13 03:26",
+       122.0
       ]
      ],
-     "variacion": 7.99
+     "variacion": 16.01
     },
     {
      "tipo": "vuelo",
@@ -868,7 +868,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -916,8 +916,8 @@
     }
    ],
    "itinerario": [],
-   "total_persona": 265.99,
-   "total_grupo": 265.99,
+   "total_persona": 274.0,
+   "total_grupo": 274.0,
    "ida_fecha": "2026-12-05",
    "ida_hora": "12:20",
    "ida_iata": "BRU",
@@ -963,13 +963,13 @@
      "ref": 134.0,
      "precio": 130.99,
      "llega_aprox": false,
-     "etiqueta": "VY7862",
-     "url": "https://tickets.vueling.com/",
+     "etiqueta": "VuelingIberia",
+     "url": "https://www.google.com/travel/flights?hl=es&curr=EUR&q=Flights%20to%20BRU%20from%20ALC%20on%202026-12-04%20oneway%20nonstop%20for%201%20adults",
      "plazas": 109,
-     "duracion": "2:35",
+     "duracion": "2 h 35 min",
      "minimo": 130.99,
      "maximo": 139.99,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:25",
      "estado": "ok",
      "historico": [
       [
@@ -1016,7 +1016,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -1117,7 +1117,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-13 03:09",
+     "visto": "2026-10-13 03:25",
      "estado": "ok",
      "historico": [
       [
@@ -1224,7 +1224,7 @@
      "duracion": "2 h 30 min",
      "minimo": 109.99,
      "maximo": 127.0,
-     "visto": "2026-10-13 03:11",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -1333,7 +1333,7 @@
      "duracion": "02:30",
      "minimo": 105.99,
      "maximo": 170.99,
-     "visto": "2026-10-13 03:09",
+     "visto": "2026-10-13 03:25",
      "estado": "ok",
      "historico": [
       [
@@ -1440,7 +1440,7 @@
      "duracion": "02:25",
      "minimo": 120.53,
      "maximo": 153.0,
-     "visto": "2026-10-13 03:10",
+     "visto": "2026-10-13 03:26",
      "estado": "ok",
      "historico": [
       [
@@ -1510,6 +1510,6 @@
    "dentro_presupuesto": false
   }
  ],
- "actualizado": "2026-10-13 03:11",
- "actualizado_iso": "2026-10-13T03:11:05.820659+00:00"
+ "actualizado": "2026-10-13 03:26",
+ "actualizado_iso": "2026-10-13T03:26:31.269377+00:00"
 }
