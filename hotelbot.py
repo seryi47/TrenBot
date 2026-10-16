@@ -78,7 +78,10 @@ def buscar_zona(pg, q):
         if re.search(r"(?i)compartid|dormitorio", t):
             dorms += 1
             continue
-        m = re.search(r"Se abre en una ventana nueva(.*?)\d noches, \d adultos € ([\d.,]+) Precio", t)
+        # El precio que vale es el que queda justo delante de "N noches, N
+        # adultos" (antes puede decir "Precio", "Precio actual" u otra cosa
+        # según haya oferta; buscarlo por delante no es fiable, por detrás sí).
+        m = re.search(r"€\s*([\d.,]+)\.?\s*\d+\s*noches,\s*\d+\s*adultos", t)
         if not m:
             if os.environ.get("HOTELBOT_DEBUG") and len(sin_match) < 3:
                 sin_match.append(t[:300])
@@ -89,7 +92,7 @@ def buscar_zona(pg, q):
             href = c.locator("a").first.get_attribute("href")
         except Exception:
             pass
-        out.append({"nombre": nombre, "total": float(m.group(2).replace(".", "").replace(",", ".")),
+        out.append({"nombre": nombre, "total": float(m.group(1).replace(".", "").replace(",", ".")),
                     "url": href})
     if os.environ.get("HOTELBOT_DEBUG"):
         print("    [debug] tarjetas=%d dorms=%d privadas_ok=%d privadas_sin_match=%d"
