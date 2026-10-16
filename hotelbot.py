@@ -53,12 +53,15 @@ def buscar_zona(pg, q):
         pass
     pg.wait_for_timeout(5000)
     tarjetas = pg.locator('[data-testid="property-card"]').all()
-    if not tarjetas and os.environ.get("HOTELBOT_DEBUG"):
-        print("    [debug] título: %r" % pg.title())
-        print("    [debug] url final: %s" % pg.url)
-        print("    [debug] tamaño html: %d" % len(pg.content()))
-        print("    [debug] primeros 300 chars de texto visible: %r"
-              % " ".join(pg.inner_text("body").split())[:300])
+    if os.environ.get("HOTELBOT_DEBUG"):
+        print("    [debug] título: %r | url final: %s | tarjetas: %d"
+              % (pg.title(), pg.url, len(tarjetas)))
+        if tarjetas:
+            print("    [debug] texto 1a tarjeta: %r"
+                  % (" ".join(tarjetas[0].inner_text().split())[:300]))
+        else:
+            print("    [debug] primeros 300 chars body: %r"
+                  % (" ".join(pg.inner_text("body").split())[:300]))
     out = []
     for c in tarjetas:
         try:
