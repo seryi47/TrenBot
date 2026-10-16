@@ -208,7 +208,7 @@ sobrevive al relevo del job.
 
 1. **Ida**: viernes 4 o sábado 5 de diciembre.
 2. **Vuelta**: martes 8 de diciembre.
-3. Máximo **200 € por persona** sumando ida y vuelta.
+3. Máximo **250 € por persona** sumando ida y vuelta.
 4. La ida y la vuelta pueden ser de **compañías distintas y de aeropuertos
    distintos**: se puede entrar por Charleroi y salir por Zaventem.
 5. Dos aeropuertos, que no son equivalentes: **Charleroi (CRL)** está a 55 km de
@@ -727,3 +727,32 @@ precio, no se vuelve a avisar hasta que baje de verdad por debajo de ese suelo,
 aunque siga oscilando por encima y por debajo de él. El suelo nunca sube.
 Reproducida la secuencia real de los logs (11 lecturas, 125,99 ↔ 132,99): antes
 habría avisado ~5-6 veces, ahora avisa **una sola vez**.
+
+
+## 11. HotelBot (Shanghái)
+
+Mismo repo, bot aparte (`hotelbot.py` + `.github/workflows/hoteles.yml`),
+reutiliza los secretos de Telegram de BotViajes.
+
+**Viaje**: 14→20 de diciembre de 2026 (6 noches), 2 personas, habitación
+privada con baño (vale tanto una doble con dos camas separadas como dos
+individuales) — **nunca** dormitorio ni cama compartida. Tope orientativo
+150 €/persona (300 € los dos) para la estancia completa; con los precios
+actuales todo cabe de sobra, así que el aviso es de **bajadas** y de
+**hoteles nuevos** que aparezcan en la búsqueda, no de "entra en el tope".
+
+Zonas vigiladas: Jing'an, People's Square, West Nanjing Road y
+Xintiandi/Concesión Francesa.
+
+Booking no tiene API pública para esto: se lee con Playwright + huella de
+Chrome (misma técnica que `mercado.py` para Google Flights), cada hora
+(`cron: "0 * * * *"`), guardando el estado en `hoteles_historico.json`
+(precio actual, mínimo, máximo y enlace de cada hotel visto).
+
+Primera ejecución real (16-oct-2026): 67 hoteles vistos entre las 4 zonas,
+30 avisos de "hotel nuevo" enviados a Telegram.
+
+Pendiente: no tiene todavía el "suelo ya avisado" del bot de vuelos (avisa
+de cualquier bajada ≥1 €, podría repetir si un precio oscila) y la búsqueda
+de dos habitaciones individuales no está implementada por separado — de
+momento se vigila solo la opción de una habitación doble.
