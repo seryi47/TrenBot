@@ -8,7 +8,12 @@ name: Vigilar hoteles Shanghái
 on:
   schedule:
     - cron: "0 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Volcar diagnóstico si una zona da 0 hoteles"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,6 +45,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PYTHONUNBUFFERED: "1"
+          HOTELBOT_DEBUG: ${{ inputs.debug && '1' || '' }}
         run: python -u hotelbot.py
 
       - name: Publicar el histórico
