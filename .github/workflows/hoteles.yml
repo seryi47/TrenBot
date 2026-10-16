@@ -1,0 +1,66 @@
+name: Vigilar hoteles Shanghái
+
+# Cada hora: busca en Booking los hoteles de 4 zonas de Shanghái (habitación
+# doble privada, sin compartir), avisa por Telegram de bajadas de precio y de
+# hoteles nuevos que aparezcan en la búsqueda. hoteles_historico.json guarda
+# el estado; se commitea de vuelta igual que historico.json del bot de vuelos.
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hoteles-loop
+  cancel-in-progress: false
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install requests PyYAML json5 curl_cffi playwright
+
+      - name: Instalar el navegador
+        run: playwright install --with-deps chromium
+
+      - name: Vigilar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u hotelbot.py
+
+      - name: Publicar el histórico
+        if: always()
+        run: |
+          git config user.email "bot@users.noreply.github.com"
+          git config user.name "HotelBot"
+          git add hoteles_historico.json
+          if git diff --cached --quiet; then
+            echo "sin cambios que publicar"
+            exit 0
+          fi
+          git commit -m "chore: precios de hoteles actualizados"
+          git fetch origin main
+          # Mismo caso que el bot de vuelos: historico.json y este fichero no
+          # deberían chocar (son ficheros distintos), pero si el rebase falla
+          # por cualquier otro commit de por medio, se aborta y se reintenta
+          # en la siguiente hora en vez de dejar el repo bloqueado.
+          if ! git rebase origin/main; then
+            git rebase --abort
+            echo "conflicto al rebasar; se reintenta la próxima hora"
+            exit 0
+          fi
+          git push origin HEAD:main || echo "push falló; se reintenta la próxima hora"
