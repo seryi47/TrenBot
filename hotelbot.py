@@ -66,6 +66,8 @@ def buscar_zona(pg, q):
             print("    [debug] primeros 300 chars body: %r"
                   % (" ".join(pg.inner_text("body").split())[:300]))
     out = []
+    dorms = 0
+    sin_match = []
     for c in tarjetas:
         try:
             t = " ".join(c.inner_text().split())
@@ -74,9 +76,12 @@ def buscar_zona(pg, q):
         # Fuera dormitorios y camas compartidas: el viaje es habitación
         # privada para los dos, no compartir con desconocidos.
         if re.search(r"(?i)compartid|dormitorio", t):
+            dorms += 1
             continue
         m = re.search(r"Se abre en una ventana nueva(.*?)\d noches, \d adultos € ([\d.,]+) Precio", t)
         if not m:
+            if os.environ.get("HOTELBOT_DEBUG") and len(sin_match) < 3:
+                sin_match.append(t[:300])
             continue
         nombre = t.split(" Se abre")[0].strip()
         href = None
@@ -86,6 +91,11 @@ def buscar_zona(pg, q):
             pass
         out.append({"nombre": nombre, "total": float(m.group(2).replace(".", "").replace(",", ".")),
                     "url": href})
+    if os.environ.get("HOTELBOT_DEBUG"):
+        print("    [debug] tarjetas=%d dorms=%d privadas_ok=%d privadas_sin_match=%d"
+              % (len(tarjetas), dorms, len(out), len(sin_match)))
+        for s in sin_match:
+            print("    [debug] sin match: %r" % s)
     return out
 
 
