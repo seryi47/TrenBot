@@ -36,9 +36,12 @@ ZONAS = [
 
 
 def _url(q):
+    # selected_currency fuerza euros: sin esto, Booking decide la divisa por
+    # la IP (en la nube de GitHub sirve US$, no €, y el regex de precio no
+    # casaba nunca -> 0 hoteles encontrados aunque las tarjetas sí cargaban).
     return ("https://www.booking.com/searchresults.es.html?ss=%s"
             "&checkin=%s&checkout=%s&group_adults=%d&no_rooms=1&group_children=0"
-            "&order=price" % (q, CHECKIN, CHECKOUT, ADULTOS))
+            "&order=price&selected_currency=EUR" % (q, CHECKIN, CHECKOUT, ADULTOS))
 
 
 def buscar_zona(pg, q):
