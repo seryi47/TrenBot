@@ -44,6 +44,10 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Opcional: si no se crean estos dos secretos, el aviso por LINE
+          # simplemente se omite (Notifier.avisar lo comprueba antes de intentarlo).
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           PYTHONUNBUFFERED: "1"
           HOTELBOT_DEBUG: ${{ inputs.debug && '1' || '' }}
         run: python -u hotelbot.py

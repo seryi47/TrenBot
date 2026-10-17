@@ -184,9 +184,9 @@ def main():
         # salga en rojo y se note.
         print("  CEGUERA: 0 tarjetas en las %d zonas, Booking no devolvió nada" % len(ZONAS))
         if destino:
-            notifier.telegram(destino, "⚠️ <b>HotelBot no ve nada</b>\nBooking no devolvió ninguna "
-                                        "tarjeta en ninguna zona. Puede que haya cambiado el layout "
-                                        "o el banner de cookies esté bloqueando la página.")
+            notifier.avisar(destino, "⚠️ <b>HotelBot no ve nada</b>\nBooking no devolvió ninguna "
+                                      "tarjeta en ninguna zona. Puede que haya cambiado el layout "
+                                      "o el banner de cookies esté bloqueando la página.")
         return 1
 
     if not avisos:
@@ -197,7 +197,7 @@ def main():
         texto = "\n\n".join(avisos[:8])
         if len(avisos) > 8:
             texto += "\n\n... y %d más." % (len(avisos) - 8)
-        ok = notifier.telegram(destino, texto)
+        ok = notifier.avisar(destino, texto)
         print("  %d avisos (%d hoteles vistos) -> enviado: %s" % (len(avisos), vistos, ok))
         if not ok:
             # El histórico ya quedó actualizado con los precios nuevos, así

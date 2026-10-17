@@ -1129,7 +1129,7 @@ class Engine:
                     ciegas.append(watch)
                 bajada = self._registrar_precio(watch, todas)
                 if bajada:
-                    entregado = self.notifier.telegram(self._chat_for(watch), bajada)
+                    entregado = self.notifier.avisar(self._chat_for(watch), bajada)
                     self.notifier.mac("Baja de precio", watch["name"])
                     print("[%s] 📉 BAJADA en '%s' -> aviso %s"
                           % (time.strftime("%H:%M:%S"), watch["name"],
@@ -1152,14 +1152,14 @@ class Engine:
             if st["firing"] and not st["silenced"] and st["offers"]:
                 chat = self._chat_for(watch)
                 text = self._alert_text(watch, st["offers"])
-                self.notifier.telegram(chat, text)
+                self.notifier.avisar(chat, text)
                 if st["alert_count"] == 0:
                     self.notifier.mac("¡Billetes disponibles!", watch["name"])
                     self.notifier.browser(st["offers"][0].buy_url)
                 st["alert_count"] += 1
                 if st["alert_count"] >= self.max_alerts:
                     st["silenced"] = True
-                    self.notifier.telegram(chat,
+                    self.notifier.avisar(chat,
                         "🔕 Pauso los avisos de <b>%s</b> (llevabas %d). Sigo vigilando; "
                         "te reavisaré si cambia." % (watch["name"], st["alert_count"]))
         if ciegas:
@@ -1170,7 +1170,7 @@ class Engine:
             # las rutas ciegas por Telegram y aquí nunca se hacía.
             aviso = self._aviso_ceguera(ciegas)
             if aviso:
-                self.notifier.telegram(self.default_chat_id, aviso)
+                self.notifier.avisar(self.default_chat_id, aviso)
 
     def revisar(self, watch):
         """Una consulta suelta a una ruta, sin avisar por Telegram.
@@ -1212,7 +1212,7 @@ class Engine:
                 bajada = self._registrar_precio(watch, todas)
                 escaso = self._aviso_pocas_plazas(watch)
                 if escaso:
-                    self.notifier.telegram(self._chat_for(watch), escaso)
+                    self.notifier.avisar(self._chat_for(watch), escaso)
                     print("[%s] ⏳ POCAS PLAZAS en '%s' (%s)"
                           % (time.strftime("%H:%M:%S"), watch["name"],
                              watch.get("ultimo_plazas")))
@@ -1223,7 +1223,7 @@ class Engine:
                     if offers:
                         bajaba_desde = watch.get("_bajaba_desde")
                     else:
-                        entregado = self.notifier.telegram(self._chat_for(watch), bajada)
+                        entregado = self.notifier.avisar(self._chat_for(watch), bajada)
                         print("[%s] 📉 BAJADA en '%s' -> aviso %s"
                               % (time.strftime("%H:%M:%S"), watch["name"],
                                  "enviado" if entregado else "NO ENTREGADO"))
@@ -1248,7 +1248,7 @@ class Engine:
                 elif novedad or self._puede_avisar(watch, "objetivo"):
                     if novedad:
                         self._marcar_aviso(watch, "objetivo")
-                    self.notifier.telegram(
+                    self.notifier.avisar(
                         self._chat_for(watch),
                         self._alert_text(watch, offers, bajaba_desde))
                     print("[%s] %s -> %d en objetivo (AVISO enviado%s)" %
@@ -1277,7 +1277,7 @@ class Engine:
                   % (time.strftime("%H:%M:%S"), len(ciegas),
                      "" if aviso else " (ya avisado hace poco)"))
             if aviso:
-                self.notifier.telegram(self.default_chat_id, aviso)
+                self.notifier.avisar(self.default_chat_id, aviso)
         return total
 
     def run_forever(self):

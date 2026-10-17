@@ -201,7 +201,7 @@ def latido_diario(engine, notifier, destino, horas=12):
         lineas.append("Sin bajadas desde el último resumen.")
     lineas.append("")
     lineas.append("🌐 https://viaje-octubre.vercel.app")
-    notifier.telegram(destino, "\n".join(lineas))
+    notifier.avisar(destino, "\n".join(lineas))
     print("  [latido] resumen diario enviado")
 
 
@@ -228,7 +228,7 @@ def revision_divisas(engine, notifier, destino, horas=24):
             return
         texto = divisas.texto_aviso(divisas.revisar(rutas))
         if texto:
-            notifier.telegram(destino, texto)
+            notifier.avisar(destino, texto)
             print("  [divisas] aviso enviado: hay tarifa más barata fuera del euro")
         else:
             print("  [divisas] revisadas %d rutas; el euro sigue siendo lo más barato"

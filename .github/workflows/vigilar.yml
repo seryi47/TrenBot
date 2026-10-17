@@ -50,6 +50,10 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Opcional: si no se crean estos dos secretos, el aviso por LINE
+          # simplemente se omite (Notifier.avisar lo comprueba antes de intentarlo).
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           BOTVIAJES_CONFIG: watches.yaml
           # Sin esto Python guarda la salida en un búfer y el log del job sale
           # vacío: si algo falla en la nube, no habría forma de enterarse.
