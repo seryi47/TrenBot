@@ -74,8 +74,11 @@ def buscar_zona(pg, q):
         except Exception:
             continue
         # Fuera dormitorios y camas compartidas: el viaje es habitación
-        # privada para los dos, no compartir con desconocidos.
-        if re.search(r"(?i)compartid|dormitorio", t):
+        # privada para los dos, no compartir con desconocidos. Solo
+        # "compartid" (habitación/cama compartida): un "dormitorio" suelto
+        # también aparece en "apartamento de 1 dormitorio" (privado, válido),
+        # así que filtrar por esa palabra sola descartaba alojamientos buenos.
+        if re.search(r"(?i)compartid", t):
             dorms += 1
             continue
         # El precio que vale es el que queda justo delante de "N noches, N
@@ -99,7 +102,7 @@ def buscar_zona(pg, q):
               % (len(tarjetas), dorms, len(out), len(sin_match)))
         for s in sin_match:
             print("    [debug] sin match: %r" % s)
-    return out
+    return out, len(tarjetas)
 
 
 def main():
@@ -113,6 +116,7 @@ def main():
     destino = os.environ.get("TELEGRAM_CHAT_ID", "")
     avisos = []
     vistos = 0
+    tarjetas_crudas = 0
 
     with sync_playwright() as p:
         b = p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
@@ -125,10 +129,11 @@ def main():
         pg = ctx.new_page()
         for zona, q in ZONAS:
             try:
-                hoteles = buscar_zona(pg, q)
+                hoteles, n_tarjetas = buscar_zona(pg, q)
             except Exception as e:
                 print("  [%s] error: %s" % (zona, str(e)[:120]))
                 continue
+            tarjetas_crudas += n_tarjetas
             print("  [%s] %d hoteles con habitación privada" % (zona, len(hoteles)))
             for h in hoteles:
                 vistos += 1
@@ -136,16 +141,23 @@ def main():
                 anterior = historico.get(h["nombre"])
                 if anterior is None:
                     historico[h["nombre"]] = {"precio": h["total"], "minimo": h["total"],
-                                              "maximo": h["total"], "zona": zona,
-                                              "url": h["url"], "visto": time.strftime("%Y-%m-%d %H:%M")}
+                                              "maximo": h["total"], "suelo_avisado": h["total"],
+                                              "zona": zona, "url": h["url"],
+                                              "visto": time.strftime("%Y-%m-%d %H:%M")}
                     avisos.append("🆕 <b>Hotel nuevo</b> en %s\n<b>%s</b>\n%.2f € las 6 noches (%.2f €/persona)%s"
                                   % (zona, h["nombre"], h["total"], pp,
                                      ("\n👉 <a href=\"%s\">Ver en Booking</a>" % h["url"]) if h["url"] else ""))
                     continue
                 precio_viejo = anterior["precio"]
                 anterior["maximo"] = max(anterior.get("maximo", precio_viejo), h["total"])
-                if h["total"] < precio_viejo - UMBRAL:
+                # Suelo ya avisado: igual que en botviajes/engine.py, solo se
+                # vuelve a avisar si el precio baja de verdad por debajo del
+                # mínimo del que YA avisamos, no cada vez que oscila por
+                # encima y por debajo del último valor visto (eso spameaba).
+                suelo = anterior.get("suelo_avisado", precio_viejo)
+                if h["total"] < suelo - UMBRAL:
                     anterior["minimo"] = min(anterior.get("minimo", precio_viejo), h["total"])
+                    anterior["suelo_avisado"] = h["total"]
                     avisos.append("📉 <b>Bajada en %s</b>\n<b>%s</b>\nAntes %.2f € → ahora <b>%.2f €</b> "
                                   "(%.2f €/persona)\nMínimo visto: %.2f €%s"
                                   % (zona, h["nombre"], precio_viejo, h["total"], pp, anterior["minimo"],
@@ -156,8 +168,26 @@ def main():
             time.sleep(2)
         b.close()
 
-    with open(HISTORICO, "w", encoding="utf-8") as fh:
+    # Escritura atómica: si el proceso muere a mitad (timeout del job, OOM de
+    # Playwright) con un write directo se queda un JSON truncado, y la próxima
+    # vez que no cargue bien se trataría CADA hotel como nuevo otra vez.
+    tmp = HISTORICO + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(historico, fh, ensure_ascii=False, indent=1)
+    os.replace(tmp, HISTORICO)
+
+    if tarjetas_crudas == 0:
+        # Ciego de verdad: Booking no devolvió ni una tarjeta en ninguna zona.
+        # Antes esto terminaba como "sin novedades" con exit 0 y nadie se
+        # enteraba de que el scraper (selector, banner de cookies, bloqueo)
+        # se había roto. Aviso aparte + exit distinto de 0 para que el job
+        # salga en rojo y se note.
+        print("  CEGUERA: 0 tarjetas en las %d zonas, Booking no devolvió nada" % len(ZONAS))
+        if destino:
+            notifier.telegram(destino, "⚠️ <b>HotelBot no ve nada</b>\nBooking no devolvió ninguna "
+                                        "tarjeta en ninguna zona. Puede que haya cambiado el layout "
+                                        "o el banner de cookies esté bloqueando la página.")
+        return 1
 
     if not avisos:
         print("  sin novedades (%d hoteles vistos)" % vistos)
@@ -169,6 +199,12 @@ def main():
             texto += "\n\n... y %d más." % (len(avisos) - 8)
         ok = notifier.telegram(destino, texto)
         print("  %d avisos (%d hoteles vistos) -> enviado: %s" % (len(avisos), vistos, ok))
+        if not ok:
+            # El histórico ya quedó actualizado con los precios nuevos, así
+            # que si no reintentamos el aviso se pierde para siempre (la
+            # próxima vez ya no habrá "bajada" que contar). Fallar el job es
+            # la forma de que alguien se entere y lo revise a mano.
+            return 1
     return 0
 
 
