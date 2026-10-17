@@ -79,7 +79,12 @@ class Notifier:
                     print("  [telegram] %s: %s" % (r.status_code, r.text[:200]))
             return r.ok
         except Exception as e:
-            print("  [telegram] error:", e)
+            # Nunca volcar la excepción tal cual: algunas (ConnectionError,
+            # Timeout) incluyen la URL completa, y esa URL lleva el token del
+            # bot embebido (.../bot<TOKEN>/sendMessage). Esto puede acabar en
+            # un log público de GitHub Actions.
+            msg = re.sub(re.escape(self.tg_token), "***", str(e)) if self.tg_token else str(e)
+            print("  [telegram] error:", msg)
             return False
 
     # ---- Mac ----------------------------------------------------------------

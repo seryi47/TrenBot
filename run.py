@@ -332,8 +332,20 @@ def commit_al_repo(rutas, mensaje):
         # Son LECTURAS, no código: la nuestra es la más reciente y manda. Se
         # rehace el commit encima de lo que haya en origin.
         print("  [git] conflicto al rebasar; rehago el commit sobre origin")
+        # "git reset --hard" tira TODO cambio sin commitear del árbol, no solo
+        # los ficheros de ESTA llamada: si en ese instante había, por ejemplo,
+        # una escritura reciente de historico.json o hoteles_historico.json
+        # (otro proceso, u otro ciclo de este mismo bot) sin commitear todavía,
+        # se perdía sin que nadie se enterase. Se protege cualquier fichero
+        # trackeado con cambios pendientes, no solo "rutas".
+        otros = []
+        st = run("git", "status", "--porcelain", "--untracked-files=no")
+        for line in (getattr(st, "stdout", "") or "").splitlines():
+            f = line[3:].strip()
+            if f and f not in existentes:
+                otros.append(f)
         guardados = {}
-        for r in existentes:
+        for r in existentes + otros:
             try:
                 with open(r, "rb") as fh:
                     guardados[r] = fh.read()
@@ -349,6 +361,9 @@ def commit_al_repo(rutas, mensaje):
                     fh.write(datos)
             except OSError as e:
                 print("  [git] no pude restaurar %s: %s" % (r, e))
+        if otros:
+            run("git", "add", *[o for o in otros if o in guardados])
+            run("git", "commit", "-m", "chore: recupera cambios pendientes de otro proceso")
         run("git", "add", *existentes)
         if run("git", "commit", "-m", mensaje).returncode != 0:
             print("  [git] tras rehacerlo no quedaba nada que commitear")

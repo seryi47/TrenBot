@@ -1,6 +1,7 @@
 """Motor de vigilancia: recorre la watchlist, sondea proveedores y dispara avisos."""
 
 import datetime as _dt
+import html
 import json
 import os
 import threading
@@ -12,6 +13,14 @@ from botviajes.models import Offer
 from botviajes.providers import get_provider
 
 
+def _esc(s):
+    """Escapa para Telegram (parse_mode=HTML). Las etiquetas/nombres que
+    vienen de proveedores externos (Ryanair, Google Flights, scraping) no son
+    texto de confianza: un '<' o '&' suelto rompe el parseo HTML de Telegram
+    y el aviso directamente no se entrega, sin que nadie se entere."""
+    return html.escape(str(s or ""), quote=False)
+
+
 def _tope_del_viaje():
     """Tope por persona definido en rutas.json, para saber qué es ruido."""
     try:
@@ -20,7 +29,8 @@ def _tope_del_viaje():
                             "rutas.json")
         return (_j.load(open(ruta, encoding="utf-8")).get("viaje") or {}).get(
             "tope_por_persona")
-    except Exception:
+    except Exception as e:
+        print("  [config] no pude leer tope_por_persona de rutas.json:", e)
         return None
 
 
@@ -36,7 +46,8 @@ def _pasajeros_del_viaje():
                             "rutas.json")
         return int((_j.load(open(ruta, encoding="utf-8")).get("viaje") or {}).get(
             "pasajeros") or 1)
-    except Exception:
+    except Exception as e:
+        print("  [config] no pude leer pasajeros de rutas.json:", e)
         return 1
 
 
@@ -76,7 +87,8 @@ def _nombre_aeropuerto(codigo):
         with open(ruta, encoding="utf-8") as fh:
             info = _j.load(fh).get(codigo) or {}
         return info.get("aeropuerto") or info.get("ciudad") or codigo
-    except Exception:
+    except Exception as e:
+        print("  [config] no pude leer data/traslados.json para %s: %s" % (codigo, e))
         return codigo
 
 
@@ -187,10 +199,10 @@ def bloque_viaje(watch, watches, precio_actual=None, maximo=2, etiqueta_tramo="�
         # Antes: todo lo que no fuera Wizz se anunciaba como "Ryanair". Con
         # cuatro aerolíneas más, el bloque del viaje decía "Ryanair TB1111" y
         # quien fuera a comprarlo acababa en la web equivocada.
-        cia = _NOMBRE_CIA.get(t["cia"], (t["cia"] or "").title())
+        cia = _esc(_NOMBRE_CIA.get(t["cia"], (t["cia"] or "").title()))
         # La etiqueta del proveedor ya trae las plazas pegadas; se quitan
         # porque se enseñan aparte y si no salen dos veces.
-        etiqueta = (t.get("etiqueta") or "").split(" · ")[0]
+        etiqueta = _esc((t.get("etiqueta") or "").split(" · ")[0])
         lineas += ["", "   ✈️ <b>%s</b> · %s · %s %s%s"
                    % (rol, fecha_corta(t["fecha"]), cia, etiqueta,
                       ("  " + etiqueta_tramo) if t.get("es_del_aviso") else ""), ""]
@@ -310,10 +322,22 @@ class Engine:
             except Exception as e:
                 print("[engine] no se pudo leer %s: %s" % (self.state_file, e))
 
+    @staticmethod
+    def _escribir_json_atomico(path, data, **kw):
+        """tmp + os.replace: si el proceso muere a mitad de escritura (SIGKILL,
+        corte duro de los runners de GitHub Actions, caída de luz), un write
+        directo deja el JSON truncado y el siguiente arranque lo trata como si
+        no existiera — en el caso de watches.json, eso borra la watchlist
+        entera hasta que algo la vuelva a sembrar."""
+        tmp = path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
+            json.dump(data, fh, **kw)
+        os.replace(tmp, path)
+
     def _save(self):
         try:
-            with open(self.state_file, "w", encoding="utf-8") as fh:
-                json.dump(self.watches, fh, ensure_ascii=False, indent=2)
+            self._escribir_json_atomico(self.state_file, self.watches,
+                                        ensure_ascii=False, indent=2)
         except Exception as e:
             print("[engine] no se pudo guardar %s: %s" % (self.state_file, e))
 
@@ -361,15 +385,15 @@ class Engine:
 
     def _guardar_avisos(self):
         try:
-            with open(self.avisos_file, "w", encoding="utf-8") as fh:
-                json.dump(self.avisos, fh, ensure_ascii=False, indent=1)
+            self._escribir_json_atomico(self.avisos_file, self.avisos,
+                                        ensure_ascii=False, indent=1)
         except Exception:
             pass
 
     def _guardar_historial(self):
         try:
-            with open(self.historial_file, "w", encoding="utf-8") as fh:
-                json.dump(self.historial, fh, ensure_ascii=False, indent=1)
+            self._escribir_json_atomico(self.historial_file, self.historial,
+                                        ensure_ascii=False, indent=1)
         except Exception as e:
             print("[engine] no se pudo guardar %s: %s" % (self.historial_file, e))
 
@@ -472,8 +496,9 @@ class Engine:
         wt = watch.get("time")
         if wt and _norm_time(offer.departure) != wt:
             return False
-        if offer.price is not None and offer.price <= 0:
-            return False        # 0 € no existe: es un precio que no llegó
+        if offer.price is not None and not (offer.price > 0):
+            return False        # 0 €, negativo o NaN: no es un precio real
+                                 # ("not (price > 0)" descarta NaN, "price <= 0" no
         mp = watch.get("max_price")
         # Sin objetivo no existe el concepto de "ha entrado en tu objetivo": si
         # aquí se devolvía True, TODOS los vuelos del día contaban como logro y
@@ -832,7 +857,15 @@ class Engine:
                          and abs(float(bruto) - float(watch["ultimo_bruto"])) < 0.01)
         aviso = None
         if (watch.get("avisar_bajadas", True) and anterior is not None
+                and not mismo_importe
                 and mejor.price <= anterior - umbral):
+            # not mismo_importe: si la bajada es solo ruido del tipo de
+            # cambio (la tarifa no se movió), no se debe tocar el suelo. Antes
+            # sí se tocaba aquí (antes de comprobar mismo_importe más abajo),
+            # así que el suelo bajaba por ruido de FX sin avisar a nadie (el
+            # bloque de mismo_importe corta el aviso después), y si el precio
+            # bajaba de verdad hasta ese mismo nivel más tarde, ya no se
+            # consideraba "nuevo" y la bajada real nunca se notificaba.
             # El "suelo ya avisado": una vez que se avisó de un precio, no se
             # repite el aviso hasta que baje de VERDAD por debajo de ese suelo.
             # Sin esto, un precio que oscila entre dos valores (visto en
@@ -994,8 +1027,8 @@ class Engine:
                   else "📉 <b>Ha bajado un poco</b>")
         lineas = [cabeza, "", "<b>%s</b>" % watch["name"], ""]
         lineas += bloque_horas(oferta, watch["date"])
-        lineas += ["", "<i>%s %s</i>" % (_NOMBRE_CIA.get(oferta.provider,
-                                        oferta.provider.title()), oferta.label), "",
+        lineas += ["", "<i>%s %s</i>" % (_esc(_NOMBRE_CIA.get(oferta.provider,
+                                        oferta.provider.title())), _esc(oferta.label)), "",
                    "Antes: <s>%.2f €</s>   Ahora: <b>%.2f €</b>  (−%.2f €)"
                    % (anterior, oferta.price, anterior - oferta.price), ""]
 
@@ -1022,7 +1055,7 @@ class Engine:
         # mensaje se quedaba sin ningún botón para comprar.
         if oferta.buy_url:
             lineas += ["", '👉 <a href="%s">Comprar este vuelo en %s</a>'
-                       % (oferta.buy_url, _NOMBRE_CIA.get(oferta.provider, oferta.provider.title()))]
+                       % (oferta.buy_url, _esc(_NOMBRE_CIA.get(oferta.provider, oferta.provider.title())))]
         if WEB_URL:
             lineas += ["", "", "🌐 %s" % WEB_URL]
         return "\n".join(lineas)
@@ -1042,8 +1075,8 @@ class Engine:
         for o in offers:
             lines += bloque_horas(o, watch["date"]) + [""]
             lines.append("💶 <b>%s</b> por persona · %s %s" %
-                         (o.price_str(), _NOMBRE_CIA.get(o.provider,
-                                                         o.provider.title()), o.label))
+                         (o.price_str(), _esc(_NOMBRE_CIA.get(o.provider,
+                                                         o.provider.title())), _esc(o.label)))
             if bajada_de:
                 lines.append("📉 Acaba de bajar desde %.2f €." % bajada_de)
         objetivo = watch.get("max_price")
@@ -1079,6 +1112,7 @@ class Engine:
             return
         with self._lock:
             watches = list(self.watches)
+        ciegas = []
         for watch in watches:
             if not watch.get("enabled", True):
                 continue
@@ -1128,6 +1162,15 @@ class Engine:
                     self.notifier.telegram(chat,
                         "🔕 Pauso los avisos de <b>%s</b> (llevabas %d). Sigo vigilando; "
                         "te reavisaré si cambia." % (watch["name"], st["alert_count"]))
+        if ciegas:
+            # Antes "ciegas" no existía en este método (NameError) y, al no
+            # capturarse, cortaba en seco el resto del for de ese tick: todas
+            # las rutas que venían después de la que se quedó sin datos se
+            # saltaban esa vuelta entera. Además check_once() sí avisaba de
+            # las rutas ciegas por Telegram y aquí nunca se hacía.
+            aviso = self._aviso_ceguera(ciegas)
+            if aviso:
+                self.notifier.telegram(self.default_chat_id, aviso)
 
     def revisar(self, watch):
         """Una consulta suelta a una ruta, sin avisar por Telegram.

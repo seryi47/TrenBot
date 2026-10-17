@@ -117,7 +117,14 @@ def viajes_con(watch, watches, precio_actual=None):
                                 plazas=plazas.get(k),
                                 duracion=duraciones.get(k),
                                 es_del_aviso=(k == mio)))
-        vuelta = [t for t in detalle if t.get("tipo") == "vuelo"][-1]
+        vuelos_detalle = [t for t in detalle if t.get("tipo") == "vuelo"]
+        if not vuelos_detalle:
+            # En teoría no debería pasar (si "mio not in claves" no cortó
+            # antes, es porque ya hay al menos un tramo de vuelo), pero un
+            # IndexError aquí tumbaría viajes_con ENTERA para todas las
+            # opciones, no solo esta, así que se blinda igualmente.
+            continue
+        vuelta = vuelos_detalle[-1]
         salida.append({
             "titulo": op.get("titulo", op.get("id", "")),
             "total": total,
