@@ -9,7 +9,8 @@ import subprocess
 import sys
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
-FICHEROS = ["historico.json", "avisos.json", os.path.join("web", "datos.json"),
+FICHEROS = ["historico.json", "avisos.json", "hoteles_historico.json",
+            os.path.join("web", "datos.json"),
             os.path.join("data", "ryanair_version.json"),
             os.path.join("data", "wizz_version.json"),
             os.path.join("data", "wizz_horarios.json")]
@@ -59,8 +60,19 @@ def main():
         # Mac, git no sabe fusionarlos y rendirse aquí dejaba la web congelada
         # durante horas. Son lecturas: la más reciente es la buena.
         print("conflicto al rebasar; rehago el commit sobre origin")
+        # "git reset --hard" tira TODO cambio sin commitear del árbol, no solo
+        # los de FICHEROS: si otro proceso (p. ej. hotelbot.py corriendo en
+        # paralelo en la misma máquina) había escrito algo sin commitear
+        # todavía, se perdía sin avisar. Se protege cualquier fichero
+        # trackeado con cambios pendientes, no solo los de esta lista.
+        otros = []
+        st = git("status", "--porcelain", "--untracked-files=no")
+        for line in (st.stdout or "").splitlines():
+            f = line[3:].strip()
+            if f and f not in hay:
+                otros.append(f)
         guardados = {}
-        for f in hay:
+        for f in hay + otros:
             try:
                 with open(os.path.join(RAIZ, f), "rb") as fh:
                     guardados[f] = fh.read()
@@ -72,6 +84,9 @@ def main():
             os.makedirs(os.path.dirname(destino), exist_ok=True)
             with open(destino, "wb") as fh:
                 fh.write(datos)
+        if otros:
+            git("add", *[o for o in otros if o in guardados])
+            git("commit", "-m", "chore: recupera cambios pendientes de otro proceso")
         git("add", *hay)
         if git("commit", "-m", "chore: precios actualizados").returncode != 0:
             print("tras rehacerlo no quedaba nada que publicar")

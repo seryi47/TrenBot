@@ -85,7 +85,15 @@ def desde_watches(tramo):
     lo mismo a la aerolínea y para que la web y Telegram digan lo mismo."""
     if not os.path.exists(WATCHES):
         return None
-    for w in json.load(open(WATCHES, encoding="utf-8")):
+    try:
+        lista = json.load(open(WATCHES, encoding="utf-8"))
+    except Exception as e:
+        # watches.json lo escribe el motor en cualquier momento; si se lee a
+        # mitad de una escritura puede estar truncado. Mejor preguntar directo
+        # a la aerolínea (desde consultar()) que tumbar toda la web por esto.
+        print("  [aviso] watches.json no se pudo leer (%s); consulto directo" % e)
+        return None
+    for w in lista:
         if (tramo["cia"] in w.get("providers", []) and w.get("origin") == tramo["de"]
                 and w.get("destination") == tramo["a"] and w.get("date") == tramo["fecha"]
                 and (w.get("ultimo_precio") is not None or w.get("sin_venta"))):
@@ -164,7 +172,11 @@ def main():
                     help="pregunta el precio a la aerolínea en vez de reusar el del bot")
     args = ap.parse_args()
 
-    cfg = json.load(open(RUTAS, encoding="utf-8"))
+    try:
+        cfg = json.load(open(RUTAS, encoding="utf-8"))
+    except Exception as e:
+        print("No se pudo leer %s: %s" % (RUTAS, e))
+        return 1
     pasajeros = cfg["viaje"]["pasajeros"]
 
     # Un mismo vuelo aparece en varias opciones: se consulta una sola vez.
@@ -188,7 +200,14 @@ def main():
     ahora = datetime.now(timezone.utc).astimezone()
     # El histórico lo escribe SOLO el motor (botviajes/engine.py). Aquí se lee
     # y punto: con dos escritores el fichero acababa pisándose a sí mismo.
-    historico = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {}
+    try:
+        historico = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {}
+    except Exception as e:
+        # Dos escritores potenciales (el comentario de arriba lo reconoce):
+        # si se lee a media escritura, mejor seguir sin histórico que tumbar
+        # toda la generación de la web por un JSON truncado puntual.
+        print("  [aviso] historico.json no se pudo leer (%s); sigo sin histórico" % e)
+        historico = {}
 
     # Se monta la salida para la web
     opciones = []
@@ -245,4 +264,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

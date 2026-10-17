@@ -215,6 +215,10 @@ function segmento(t){
     <div class="t1"><b>${esc(t.duracion)}</b> · ${esc(t.de_nombre)} → ${esc(t.a_nombre)}</div>
     <div class="t2">${esc(t.como)} · ${esc(t.coste)} · ${esc(t.cuando)} · se compra aparte</div>
     </div></div>`;
+  if(t.estado==="error"||t.estado==="sin_vuelo") return `<div class="seg"><div class="ic">✈️</div><div class="bd">
+    <div class="t1"><b>${esc(diaL(t.fecha))}</b> · ${esc(cia(t.cia))} ${esc(t.vuelo||"")}</div>
+    <div class="t2"><span class="mini w">no se pudo consultar: ${esc(t.detalle||"sin detalle")}</span></div>
+    </div></div>`;
   const nombreCia=cia(t.cia);
   const pl=(typeof t.plazas==="number"&&t.plazas>0)?`<span class="mini w">quedan ${t.plazas}</span>`:"";
   const orient=t.estado==="sin_venta"
@@ -228,7 +232,7 @@ function segmento(t){
   return `<div class="seg"><div class="ic">✈️</div><div class="bd">
     <div class="t1"><b>${esc(t.sale)} → ${t.llega_aprox?"≈":""}${esc(t.llega)}</b> · ${esc(t.de)} ${esc(t.de_nombre)} → ${esc(t.a)} ${esc(t.a_nombre)}${t.duracion?` · <span style="color:var(--ink3)">${esc(dur(t.duracion))}</span>`:""}</div>
     <div class="t2">${esc(diaL(t.fecha))} · ${esc(nombreCia)} ${esc(t.etiqueta||t.vuelo)} · directo</div>
-    <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="sin_venta"?"Comprobar en":"Comprar"} ${t.estado==="sin_venta"?(cia(t.cia)||"la aerolínea"):eur(t.precio)} →</a>${orient}${pl}${ch}
+    <a class="buy" href="${esc(t.url)}" target="_blank" rel="noopener">${t.estado==="sin_venta"?"Comprobar en":"Comprar"} ${t.estado==="sin_venta"?esc(cia(t.cia)||"la aerolínea"):eur(t.precio)} →</a>${orient}${pl}${ch}
     ${(t.minimo!=null&&t.minimo!==t.maximo)?`<div class="t2" style="margin-top:6px">Se ha movido entre <b>${eur(t.minimo)}</b> y ${eur(t.maximo)} desde que lo vigilo</div>`:(t.minimo!=null?`<div class="t2" style="margin-top:6px">Sin cambios desde que lo vigilo</div>`:"")}
     </div></div>`;
 }
