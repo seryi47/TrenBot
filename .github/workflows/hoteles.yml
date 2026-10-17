@@ -35,7 +35,7 @@ jobs:
           cache: pip
 
       - name: Instalar dependencias
-        run: pip install requests PyYAML json5 curl_cffi playwright
+        run: pip install -r requirements.txt
 
       - name: Instalar el navegador
         run: playwright install --with-deps chromium
