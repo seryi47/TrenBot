@@ -61,7 +61,7 @@ class AmadeusProvider(Provider):
             params={
                 "originLocationCode": origin.upper(),
                 "destinationLocationCode": destination.upper(),
-                "departureDate": date, "adults": 1, "currencyCode": "EUR",
+                "departureDate": date, "adults": adults, "currencyCode": "EUR",
                 "max": 20,
             },
             timeout=30,

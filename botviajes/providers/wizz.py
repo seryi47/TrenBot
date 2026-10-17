@@ -219,7 +219,12 @@ class WizzProvider(Provider):
             r = s.post(self.base + ruta, json=payload, timeout=60)
             self._ultima = time.time()
             if r.status_code == 200:
-                return r.json()
+                try:
+                    return r.json()
+                except ValueError:
+                    print("  [wizz] 200 pero no es JSON (¿bloqueo/mantenimiento?): %s"
+                          % r.text[:120])
+                    return None
             if r.status_code in (400,) and "InvalidProtocol" in r.text:
                 self._session(forzar=True)      # token caducado
                 continue

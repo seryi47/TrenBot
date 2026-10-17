@@ -98,14 +98,30 @@ class MercadoProvider(Provider):
                 if "robot" in cuerpo.lower() or "unusual traffic" in cuerpo.lower():
                     print("  [mercado] Google nos ha pedido captcha; sin datos")
                     return []
+                ruta_vista = sin_euro = 0
                 for fila in pg.locator("li").all():
                     try:
                         t = " ".join(fila.inner_text().split())
                     except Exception:
                         continue
+                    if "%s–%s" % (o, d) in t:
+                        ruta_vista += 1
+                        if "€" not in t:
+                            sin_euro += 1
                     leido = self._parsear(t, o, d)
                     if leido:
                         filas.append(leido)
+                if not filas and ruta_vista and sin_euro == ruta_vista:
+                    # Mismo fallo que Booking.com con hotelbot.py: Google sirve
+                    # otra divisa según la IP/geolocalización pese a "curr=EUR"
+                    # en la URL, el regex de precio solo entiende €, y antes
+                    # esto se devolvía como [] en silencio (parecía "no hay
+                    # vuelos hoy" cuando en realidad el proveedor está ciego).
+                    print("  [mercado] %d filas con la ruta pero ninguna con €: "
+                          "¿Google está sirviendo otra divisa?" % ruta_vista)
+                elif not filas and ruta_vista:
+                    print("  [mercado] %d filas con la ruta pero ninguna se pudo "
+                          "parsear del todo (formato inesperado)" % ruta_vista)
             finally:
                 b.close()
         # una misma compañía puede salir repetida; se deja la más barata de cada hora
@@ -124,7 +140,8 @@ class MercadoProvider(Provider):
         horas = re.match(r"(\d{1,2}:\d{2})\s*[–-]\s*(\d{1,2}:\d{2})", t)
         if not horas:
             return None
-        precio = re.search(r"(\d{1,3}(?:\.\d{3})?)\s*€", t)
+        # Miles con punto (es-ES) Y decimales con coma: "1.234,56 €" o "99 €".
+        precio = re.search(r"(\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?)\s*€", t)
         if not precio:
             return None
         # entre las horas y la duración está el nombre de la compañía
@@ -134,4 +151,4 @@ class MercadoProvider(Provider):
                 "%02d:%s" % (int(horas.group(2).split(":")[0]), horas.group(2).split(":")[1]),
                 (cia.group(1).strip() if cia else "?")[:28],
                 dur.group(1) if dur else "",
-                float(precio.group(1).replace(".", "")))
+                float(precio.group(1).replace(".", "").replace(",", ".")))

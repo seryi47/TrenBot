@@ -73,7 +73,12 @@ class VuelingProvider(Provider):
         if r.status_code != 200:
             print("  [vueling] Auth %s" % r.status_code)
             return None
-        j = r.json()
+        try:
+            j = r.json()
+        except ValueError:
+            print("  [vueling] Auth no devolvió JSON (¿bloqueo/mantenimiento?): %s"
+                  % r.text[:120])
+            return None
         self._token = j.get("accessToken")
         self._token_hasta = time.time() + 3300
         s.headers["Authorization"] = "Bearer " + (self._token or "")
@@ -103,7 +108,12 @@ class VuelingProvider(Provider):
         if r.status_code != 200:
             print("  [vueling] graphql %s" % r.status_code)
             return []
-        j = r.json()
+        try:
+            j = r.json()
+        except ValueError:
+            print("  [vueling] graphql no devolvió JSON (¿bloqueo/mantenimiento?): %s"
+                  % r.text[:120])
+            return []
         if j.get("errors"):
             print("  [vueling] %s" % str(j["errors"][0].get("message"))[:90])
             return []

@@ -73,8 +73,14 @@ class TransaviaProvider(Provider):
         if r.status_code != 200:
             print("  [transavia] HTTP %s %s" % (r.status_code, r.text[:90]))
             return []
+        try:
+            j = r.json()
+        except ValueError:
+            print("  [transavia] no devolvió JSON (¿bloqueo/mantenimiento?): %s"
+                  % r.text[:120])
+            return []
         ofertas = []
-        for v in (r.json().get("data") or []):
+        for v in (j.get("data") or []):
             precio = v.get("price")
             if precio is None:
                 continue

@@ -58,7 +58,8 @@ class OuigoProvider(Provider):
 
         payload = {
             "destination": d_code, "origin": o_code, "outbound_date": date,
-            "passengers": [{"discount_cards": [], "disability_type": "NH", "type": "A"}],
+            "passengers": [{"discount_cards": [], "disability_type": "NH", "type": "A"}
+                          for _ in range(max(1, adults))],
         }
         r = s.post(JOURNEY_URL, json=payload,
                    headers={"authorization": "Bearer " + token}, timeout=20)

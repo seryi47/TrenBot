@@ -92,7 +92,7 @@ class RenfeProvider(Provider):
         if not o_code or not d_code:
             raise ValueError("Renfe: estación no encontrada (%s / %s)" % (origin, destination))
         date_ddmmyyyy = datetime.strptime(date, "%Y-%m-%d").strftime("%d/%m/%Y")
-        raw = _RenfeSession(o_name, o_code, d_name, d_code, date_ddmmyyyy).get_train_list()
+        raw = _RenfeSession(o_name, o_code, d_name, d_code, date_ddmmyyyy, adults).get_train_list()
         return self._parse(raw, o_name, d_name, date)
 
     def _parse(self, data, o_name, d_name, date) -> List[Offer]:
@@ -130,10 +130,11 @@ class RenfeProvider(Provider):
 class _RenfeSession:
     """Encapsula el baile de DWR necesario para obtener la lista de trenes."""
 
-    def __init__(self, o_name, o_code, d_name, d_code, date_ddmmyyyy):
+    def __init__(self, o_name, o_code, d_name, d_code, date_ddmmyyyy, adults=1):
         self.o_name, self.o_code = o_name, o_code
         self.d_name, self.d_code = d_name, d_code
         self.date = date_ddmmyyyy
+        self.adults = max(1, int(adults or 1))
         self.api = requests.Session()
         self.api.headers.update({
             "User-Agent": USER_AGENT, "Accept": "*/*",
@@ -159,7 +160,7 @@ class _RenfeSession:
         cookie = {
             "origen": {"code": self.o_code, "name": self.o_name},
             "destino": {"code": self.d_code, "name": self.d_name},
-            "pasajerosAdultos": 1, "pasajerosNinos": 0, "pasajerosSpChild": 0,
+            "pasajerosAdultos": self.adults, "pasajerosNinos": 0, "pasajerosSpChild": 0,
         }
         self.api.cookies.set("Search", str(cookie), domain=".renfe.com", path="/")
         payload = {
@@ -167,7 +168,7 @@ class _RenfeSession:
             "vengoderenfecom": "SI", "desOrigen": self.o_name, "desDestino": self.d_name,
             "cdgoOrigen": self.o_code, "cdgoDestino": self.d_code, "idiomaBusqueda": "ES",
             "FechaIdaSel": self.date, "FechaVueltaSel": "", "_fechaIdaVisual": self.date,
-            "_fechaVueltaVisual": "", "adultos_": "1", "ninos_": "0", "ninosMenores": "0",
+            "_fechaVueltaVisual": "", "adultos_": str(self.adults), "ninos_": "0", "ninosMenores": "0",
             "codPromocional": "", "plazaH": "false", "sinEnlace": "false",
             "asistencia": "false", "franjaHoraI": "", "franjaHoraV": "",
             "Idioma": "es", "Pais": "ES",
@@ -212,7 +213,7 @@ class _RenfeSession:
                    "c0-e1=string:false\nc0-e2=string:false\nc0-e3=string:false\n"
                    "c0-e4=string:\nc0-e5=string:\nc0-e6=string:\nc0-e7=string:\n"
                    "c0-e8=string:" + fecha + "\nc0-e9=string:\n"
-                   "c0-e10=string:1\nc0-e11=string:0\nc0-e12=string:0\n"
+                   "c0-e10=string:" + str(self.adults) + "\nc0-e11=string:0\nc0-e12=string:0\n"
                    "c0-e13=string:I\nc0-e14=string:\n"
                    "c0-param0=Object_Object:{atendo:reference:c0-e1, sinEnlace:reference:c0-e2, "
                    "plazaH:reference:c0-e3, tipoFranjaI:reference:c0-e4, tipoFranjaV:reference:c0-e5, "

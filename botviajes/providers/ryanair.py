@@ -146,7 +146,12 @@ class RyanairProvider(Provider):
             print("  [ryanair] %s->%s %s: HTTP %s" % (co, cd, date, r.status_code))
             return []
 
-        data = r.json()
+        try:
+            data = r.json()
+        except ValueError:
+            print("  [ryanair] %s->%s %s: la respuesta no es JSON (¿bloqueo/mantenimiento?)"
+                  % (co, cd, date))
+            return []
         divisa = data.get("currency", "EUR")
         compra = COMPRA % (adults, date, co, cd)
         ofertas = []

@@ -71,7 +71,11 @@ class TuiflyProvider(Provider):
         if r.status_code != 200:
             print("  [tuifly] HTTP %s %s" % (r.status_code, r.text[:90]))
             return []
-        j = r.json()
+        try:
+            j = r.json()
+        except ValueError:
+            print("  [tuifly] no devolvió JSON (¿bloqueo/mantenimiento?): %s" % r.text[:120])
+            return []
         if j.get("errors"):
             print("  [tuifly] %s" % str(j["errors"][0].get("message"))[:90])
             return []

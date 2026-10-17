@@ -51,14 +51,20 @@ class Provider:
         Devuelve (None, None) si no encuentra nada.
         """
         q = _norm(query)
-        exact, partial = None, None
+        exact, partial, partial_len = None, None, None
         for item in candidates:
             name = name_getter(item)
             nn = _norm(name)
             if nn == q:
                 return name, code_getter(item)
-            if partial is None and (q in nn or nn in q) and len(q) >= 3:
-                partial = (name, code_getter(item))
+            # Entre varias coincidencias parciales ambiguas, la mejor es la
+            # más corta (la más cercana a la query): antes se quedaba con la
+            # PRIMERA que apareciera en el JSON, que depende del orden del
+            # fichero y podía resolver a la estación equivocada.
+            if (q in nn or nn in q) and len(q) >= 3:
+                if partial_len is None or len(nn) < partial_len:
+                    partial = (name, code_getter(item))
+                    partial_len = len(nn)
             if synonyms_getter:
                 for syn in (synonyms_getter(item) or []):
                     if _norm(syn) == q:
