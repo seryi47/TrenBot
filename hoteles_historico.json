@@ -1,97 +1,97 @@
 {
  "上海屿眠酒店Shanghai Yumian Hotel": {
-  "precio": 138.0,
+  "precio": 137.0,
   "minimo": 114.0,
   "maximo": 138.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/shang-hai-yu-mian-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=1501451703_421822804_2_0_0&highlighted_blocks=1501451703_421822804_2_0_0&matching_block_id=1501451703_421822804_2_0_0&sr_pri_blocks=1501451703_421822804_2_0_0__102702&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/shang-hai-yu-mian-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1501451703_421822804_2_0_0&highlighted_blocks=1501451703_421822804_2_0_0&matching_block_id=1501451703_421822804_2_0_0&sr_pri_blocks=1501451703_421822804_2_0_0__102702&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 114.0
  },
  "7Days Inn Changshou Road Subway station": {
-  "precio": 122.0,
+  "precio": 163.0,
   "minimo": 119.0,
   "maximo": 164.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/7days-inn-changshou-road-subway-station.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__90531&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/7days-inn-changshou-road-subway-station.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=143456416_326842701_0_0_0&highlighted_blocks=143456416_326842701_0_0_0&matching_block_id=143456416_326842701_0_0_0&sr_pri_blocks=143456416_326842701_0_0_0__121800&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 119.0
  },
  "布丁严选酒店上海火车站长途汽车客运总站店": {
-  "precio": 151.0,
+  "precio": 150.0,
   "minimo": 149.0,
   "maximo": 151.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/bu-ding-yan-xuan-jiu-dian-shang-hai-huo-che-zhan-chang-tu-qi-che-ke-yun-zong-zha.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaLICiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuALXo6nXBsACAdICJGUzZTQ2NmM3LTQ3OTItNDk1My1iMzFmLTM3NTFiYzQ5OTNiMNgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=9&sr_order=price&srpvid=45f696eb608c00f0&srepoch=1793741275&all_sr_blocks=1734272303_445010815_2_0_0&highlighted_blocks=1734272303_445010815_2_0_0&matching_block_id=1734272303_445010815_2_0_0&sr_pri_blocks=1734272303_445010815_2_0_0__112000&from=searchresults",
-  "visto": "2026-11-03 21:28"
+  "url": "https://www.booking.com/hotel/cn/bu-ding-yan-xuan-jiu-dian-shang-hai-huo-che-zhan-chang-tu-qi-che-ke-yun-zong-zha.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaIgCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKXn6rXBsACAdICJDdlYjRhMDEwLTYyM2UtNDBjYS1hNmMyLTUyNGE5ZmM5YjQxNdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=price&srpvid=7ca00d0b1b20006d&srepoch=1793757083&all_sr_blocks=1734272303_445010815_2_0_0&highlighted_blocks=1734272303_445010815_2_0_0&matching_block_id=1734272303_445010815_2_0_0&sr_pri_blocks=1734272303_445010815_2_0_0__112000&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Gya Hotel Shanghai Long Distance Passenger Terminal Station": {
   "precio": 142.0,
   "minimo": 141.0,
   "maximo": 151.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/po-gya-hotel-shanghai-long-distance-passenger-terminal-station.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__105418&from=searchresults",
-  "visto": "2026-11-03 21:27"
+  "url": "https://www.booking.com/hotel/cn/po-gya-hotel-shanghai-long-distance-passenger-terminal-station.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__105896&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Meego Qingwen Hotel Shanghai Jingan": {
-  "precio": 142.0,
+  "precio": 192.0,
   "minimo": 141.0,
   "maximo": 196.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/shang-hai-meegomi-guo-qing-wen-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=304072614_0_2_0_0&highlighted_blocks=304072614_0_2_0_0&matching_block_id=304072614_0_2_0_0&sr_pri_blocks=304072614_0_2_0_0__105950&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/shang-hai-meegomi-guo-qing-wen-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=304072614_123497045_0_0_0&highlighted_blocks=304072614_123497045_0_0_0&matching_block_id=304072614_123497045_0_0_0&sr_pri_blocks=304072614_123497045_0_0_0__143658&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 141.0
  },
  "Meego Yes Hotel": {
-  "precio": 178.0,
+  "precio": 226.0,
   "minimo": 155.0,
   "maximo": 245.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/meegomi-guo-yue-si-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=15&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=468315007_0_2_0_0&highlighted_blocks=468315007_0_2_0_0&matching_block_id=468315007_0_2_0_0&sr_pri_blocks=468315007_0_2_0_0__132341&from=searchresults",
-  "visto": "2026-11-03 21:27",
+  "url": "https://www.booking.com/hotel/cn/meegomi-guo-yue-si-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=21&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=468315007_144957386_0_0_0&highlighted_blocks=468315007_144957386_0_0_0&matching_block_id=468315007_144957386_0_0_0&sr_pri_blocks=468315007_144957386_0_0_0__169257&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 155.0
  },
  "Hi Inn Shanghai Railway Station North Square": {
-  "precio": 157.0,
+  "precio": 187.0,
   "minimo": 156.0,
   "maximo": 188.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/hai-you-shang-hai-huo-che-zhan-bei-yan-chang-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaLICiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuALXo6nXBsACAdICJGUzZTQ2NmM3LTQ3OTItNDk1My1iMzFmLTM3NTFiYzQ5OTNiMNgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=11&sr_order=price&srpvid=45f696eb608c00f0&srepoch=1793741275&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__117201&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/hai-you-shang-hai-huo-che-zhan-bei-yan-chang-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaIgCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKXn6rXBsACAdICJDdlYjRhMDEwLTYyM2UtNDBjYS1hNmMyLTUyNGE5ZmM5YjQxNdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=price&srpvid=7ca00d0b1b20006d&srepoch=1793757083&all_sr_blocks=1612786505_432179560_2_0_0&highlighted_blocks=1612786505_432179560_2_0_0&matching_block_id=1612786505_432179560_2_0_0&sr_pri_blocks=1612786505_432179560_2_0_0__139434&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 156.0
  },
  "Jinglai Hotel Urban Luxury - Shanghai Railway Station Zhongxing Road Metro Station Branch": {
-  "precio": 161.0,
+  "precio": 160.0,
   "minimo": 158.0,
   "maximo": 170.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/po-shanghai-railway-station-zhongxing-road-metro-station-branch-jing-an-district.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=10&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__119733&from=searchresults",
-  "visto": "2026-11-03 21:27"
+  "url": "https://www.booking.com/hotel/cn/po-shanghai-railway-station-zhongxing-road-metro-station-branch-jing-an-district.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__119729&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Shanghai Pengpai Art Youth Hotel": {
   "precio": 169.0,
   "minimo": 168.0,
   "maximo": 178.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/shang-hai-peng-pai-yi-zhu-qing-nian-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaLICiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuALXo6nXBsACAdICJGUzZTQ2NmM3LTQ3OTItNDk1My1iMzFmLTM3NTFiYzQ5OTNiMNgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=13&sr_order=price&srpvid=45f696eb608c00f0&srepoch=1793741275&all_sr_blocks=1321674811_415336933_2_0_0_812426&highlighted_blocks=1321674811_415336933_2_0_0_812426&matching_block_id=1321674811_415336933_2_0_0_812426&sr_pri_blocks=1321674811_415336933_2_0_0_812426_126000&from=searchresults",
-  "visto": "2026-11-03 21:28"
+  "url": "https://www.booking.com/hotel/cn/shang-hai-peng-pai-yi-zhu-qing-nian-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaIgCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKXn6rXBsACAdICJDdlYjRhMDEwLTYyM2UtNDBjYS1hNmMyLTUyNGE5ZmM5YjQxNdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=10&sr_order=price&srpvid=7ca00d0b1b20006d&srepoch=1793757083&all_sr_blocks=1321674811_415336933_2_0_0_812426&highlighted_blocks=1321674811_415336933_2_0_0_812426&matching_block_id=1321674811_415336933_2_0_0_812426&sr_pri_blocks=1321674811_415336933_2_0_0_812426_126000&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Meego Smart Select Hotel": {
-  "precio": 163.0,
+  "precio": 197.0,
   "minimo": 143.0,
   "maximo": 206.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/shang-hai-meegomi-guo-zhi-xuan-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=9&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=977663302_0_2_0_0&highlighted_blocks=977663302_0_2_0_0&matching_block_id=977663302_0_2_0_0&sr_pri_blocks=977663302_0_2_0_0__121302&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/shang-hai-meegomi-guo-zhi-xuan-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=15&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=977663302_380855433_2_0_0&highlighted_blocks=977663302_380855433_2_0_0&matching_block_id=977663302_380855433_2_0_0&sr_pri_blocks=977663302_380855433_2_0_0__147113&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 143.0
  },
  "Jinglai Hotel Light Luxury - Daning International Shanghai Business School Branch": {
-  "precio": 175.0,
+  "precio": 223.0,
   "minimo": 171.0,
   "maximo": 224.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/jing-lai-jiu-dian-qing-she-da-zhu-guo-ji-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=1426620602_0_2_0_0&highlighted_blocks=1426620602_0_2_0_0&matching_block_id=1426620602_0_2_0_0&sr_pri_blocks=1426620602_0_2_0_0__130513&from=searchresults",
-  "visto": "2026-11-03 21:27",
+  "url": "https://www.booking.com/hotel/cn/jing-lai-jiu-dian-qing-she-da-zhu-guo-ji-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=1426620602_414857792_2_2_0&highlighted_blocks=1426620602_414857792_2_2_0&matching_block_id=1426620602_414857792_2_2_0&sr_pri_blocks=1426620602_414857792_2_2_0__166408&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 171.0
  },
  "Orient Rose International Hotel": {
@@ -112,98 +112,98 @@
   "visto": "2026-10-20 22:02"
  },
  "Hanting Hotel Shanghai Railway Station North Square": {
-  "precio": 181.0,
+  "precio": 208.0,
   "minimo": 181.0,
   "maximo": 222.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/hanting-shanghai-railway-station-north-square.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=13&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__134820&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/hanting-shanghai-railway-station-north-square.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=16&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1466631901_419524396_2_2_0&highlighted_blocks=1466631901_419524396_2_2_0&matching_block_id=1466631901_419524396_2_2_0&sr_pri_blocks=1466631901_419524396_2_2_0__155094&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 181.0
  },
  "Hanting Hotel Shanghai Jing'an Temple Jiangning Road New": {
-  "precio": 246.0,
+  "precio": 245.0,
   "minimo": 194.0,
   "maximo": 246.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/hanting-shanghai-jing-an-temple-jiangning-road-new.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARotwKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AvKaptcGwAIB0gIkZjIyOTdlYzItNmUxZi00MDUyLTgxZDQtMGNlNDM2ZjQ1ZmE12AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=26&hapos=26&sr_order=price&srpvid=c73734b9313101ad&srepoch=1793690998&all_sr_blocks=1466564401_419344234_2_2_0&highlighted_blocks=1466564401_419344234_2_2_0&matching_block_id=1466564401_419344234_2_2_0&sr_pri_blocks=1466564401_419344234_2_2_0__182830&from=searchresults",
-  "visto": "2026-11-03 07:30",
+  "url": "https://www.booking.com/hotel/cn/hanting-shanghai-jing-an-temple-jiangning-road-new.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=26&hapos=26&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1466564401_419344234_2_2_0&highlighted_blocks=1466564401_419344234_2_2_0&matching_block_id=1466564401_419344234_2_2_0&sr_pri_blocks=1466564401_419344234_2_2_0__182830&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 194.0
  },
  "Qingji MINI Hotel Shanghai Train Station Dayuecheng": {
-  "precio": 232.0,
+  "precio": 231.0,
   "minimo": 211.0,
   "maximo": 233.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/qingji-mini-shanghai-train-station-dayuecheng.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=21&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=1736178401_445179465_2_0_0&highlighted_blocks=1736178401_445179465_2_0_0&matching_block_id=1736178401_445179465_2_0_0&sr_pri_blocks=1736178401_445179465_2_0_0__172800&from=searchresults",
-  "visto": "2026-11-03 21:27"
+  "url": "https://www.booking.com/hotel/cn/qingji-mini-shanghai-train-station-dayuecheng.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=22&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1736178401_445179465_2_0_0&highlighted_blocks=1736178401_445179465_2_0_0&matching_block_id=1736178401_445179465_2_0_0&sr_pri_blocks=1736178401_445179465_2_0_0__172800&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Park Inn by Radisson Shanghai Downtown": {
-  "precio": 202.0,
+  "precio": 236.0,
   "minimo": 202.0,
   "maximo": 237.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/libo-shanghai-plaza-changcheng.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARotwKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AvKaptcGwAIB0gIkZjIyOTdlYzItNmUxZi00MDUyLTgxZDQtMGNlNDM2ZjQ1ZmE12AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=c73734b9313101ad&srepoch=1793690998&all_sr_blocks=1128898914_0_2_0_0&highlighted_blocks=1128898914_0_2_0_0&matching_block_id=1128898914_0_2_0_0&sr_pri_blocks=1128898914_0_2_0_0__150292&from=searchresults",
-  "visto": "2026-11-03 07:30",
+  "url": "https://www.booking.com/hotel/cn/libo-shanghai-plaza-changcheng.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=23&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1128898907_385559296_0_0_0&highlighted_blocks=1128898907_385559296_0_0_0&matching_block_id=1128898907_385559296_0_0_0&sr_pri_blocks=1128898907_385559296_0_0_0__176038&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 202.0
  },
  "Hanting Hotel Shanghai North Xizang Road Metro Station": {
-  "precio": 221.0,
+  "precio": 220.0,
   "minimo": 220.0,
   "maximo": 233.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/yi-ting-shang-hai-xi-cang-bei-lu-di-tie-zhan-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=1635006603_433921328_2_2_0&highlighted_blocks=1635006603_433921328_2_2_0&matching_block_id=1635006603_433921328_2_2_0&sr_pri_blocks=1635006603_433921328_2_2_0__164528&from=searchresults",
-  "visto": "2026-11-03 21:27"
+  "url": "https://www.booking.com/hotel/cn/yi-ting-shang-hai-xi-cang-bei-lu-di-tie-zhan-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaIgCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKXn6rXBsACAdICJDdlYjRhMDEwLTYyM2UtNDBjYS1hNmMyLTUyNGE5ZmM5YjQxNdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=price&srpvid=7ca00d0b1b20006d&srepoch=1793757083&all_sr_blocks=1635006603_433921328_2_2_0&highlighted_blocks=1635006603_433921328_2_2_0&matching_block_id=1635006603_433921328_2_2_0&sr_pri_blocks=1635006603_433921328_2_2_0__164528&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Shanghai Zhongan Hotel Xizang North Road Subway Station Branch": {
-  "precio": 249.0,
+  "precio": 248.0,
   "minimo": 248.0,
   "maximo": 263.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/shang-hai-zhong-an-bin-guan-xi-cang-bei-lu-di-tie-zhan-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARotwKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AvKaptcGwAIB0gIkZjIyOTdlYzItNmUxZi00MDUyLTgxZDQtMGNlNDM2ZjQ1ZmE12AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=27&hapos=27&sr_order=price&srpvid=c73734b9313101ad&srepoch=1793690998&all_sr_blocks=1297512001_402907868_2_0_0&highlighted_blocks=1297512001_402907868_2_0_0&matching_block_id=1297512001_402907868_2_0_0&sr_pri_blocks=1297512001_402907868_2_0_0__185660&from=searchresults",
-  "visto": "2026-11-03 07:30"
+  "url": "https://www.booking.com/hotel/cn/shang-hai-zhong-an-bin-guan-xi-cang-bei-lu-di-tie-zhan-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=26&hapos=26&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=1297512001_402907868_2_0_0&highlighted_blocks=1297512001_402907868_2_0_0&matching_block_id=1297512001_402907868_2_0_0&sr_pri_blocks=1297512001_402907868_2_0_0__185660&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Zsmart智尚酒店上海南京西路梅陇镇广场店": {
-  "precio": 251.0,
+  "precio": 250.0,
   "minimo": 249.0,
   "maximo": 264.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/zsmartzhi-shang-jiu-dian-shang-hai-nan-jing-xi-lu-mei-long-zhen-yan-chang-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARotwKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AvKaptcGwAIB0gIkZjIyOTdlYzItNmUxZi00MDUyLTgxZDQtMGNlNDM2ZjQ1ZmE12AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=28&hapos=28&sr_order=price&srpvid=c73734b9313101ad&srepoch=1793690998&all_sr_blocks=1344872503_409398094_2_0_0&highlighted_blocks=1344872503_409398094_2_0_0&matching_block_id=1344872503_409398094_2_0_0&sr_pri_blocks=1344872503_409398094_2_0_0__186792&from=searchresults",
-  "visto": "2026-11-03 07:30"
+  "url": "https://www.booking.com/hotel/cn/zsmartzhi-shang-jiu-dian-shang-hai-nan-jing-xi-lu-mei-long-zhen-yan-chang-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=27&hapos=27&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=1344872503_409398094_2_0_0&highlighted_blocks=1344872503_409398094_2_0_0&matching_block_id=1344872503_409398094_2_0_0&sr_pri_blocks=1344872503_409398094_2_0_0__186792&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "哲学家酒店Philosopher Hotel The Bund Branch": {
-  "precio": 191.0,
+  "precio": 190.0,
   "minimo": 137.0,
   "maximo": 191.0,
   "zona": "People's Square",
-  "url": "https://www.booking.com/hotel/cn/zhe-xue-jia-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=18&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=1495994209_428748093_2_0_0&highlighted_blocks=1495994209_428748093_2_0_0&matching_block_id=1495994209_428748093_2_0_0&sr_pri_blocks=1495994209_428748093_2_0_0__142132&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/zhe-xue-jia-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=13&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1495994209_428748093_2_0_0&highlighted_blocks=1495994209_428748093_2_0_0&matching_block_id=1495994209_428748093_2_0_0&sr_pri_blocks=1495994209_428748093_2_0_0__142132&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 137.0
  },
  "7Days Inn Shanghai South Xizang Road Subway Station": {
-  "precio": 185.0,
+  "precio": 225.0,
   "minimo": 156.0,
   "maximo": 226.0,
   "zona": "People's Square",
-  "url": "https://www.booking.com/hotel/cn/7days-inn-shanghai-south-xizang-road-subway-station.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=15&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__137691&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/7days-inn-shanghai-south-xizang-road-subway-station.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=143622220_326843169_0_0_0&highlighted_blocks=143622220_326843169_0_0_0&matching_block_id=143622220_326843169_0_0_0&sr_pri_blocks=143622220_326843169_0_0_0__168000&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 156.0
  },
  "Jinglai Hotel Shanghai South Bund Xintiandi": {
-  "precio": 182.0,
+  "precio": 219.0,
   "minimo": 180.0,
   "maximo": 220.0,
   "zona": "People's Square",
-  "url": "https://www.booking.com/hotel/cn/jinglai-shanghai-south-bund-xintiandi.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=1626979002_0_2_0_0&highlighted_blocks=1626979002_0_2_0_0&matching_block_id=1626979002_0_2_0_0&sr_pri_blocks=1626979002_0_2_0_0__135365&from=searchresults",
-  "visto": "2026-11-03 21:28",
+  "url": "https://www.booking.com/hotel/cn/jinglai-shanghai-south-bund-xintiandi.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=18&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1626979002_439020575_2_0_0&highlighted_blocks=1626979002_439020575_2_0_0&matching_block_id=1626979002_439020575_2_0_0&sr_pri_blocks=1626979002_439020575_2_0_0__163423&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 180.0
  },
  "Hanting Hotel Shanghai Daning Music Plaza": {
-  "precio": 198.0,
+  "precio": 197.0,
   "minimo": 197.0,
   "maximo": 209.0,
   "zona": "People's Square",
-  "url": "https://www.booking.com/hotel/cn/yi-ting-shang-hai-da-zhu-yin-le-yan-chang-xin-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaLICiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuALXo6nXBsACAdICJGUzZTQ2NmM3LTQ3OTItNDk1My1iMzFmLTM3NTFiYzQ5OTNiMNgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=45f696eb608c00f0&srepoch=1793741275&all_sr_blocks=1618281804_432670741_2_0_0&highlighted_blocks=1618281804_432670741_2_0_0&matching_block_id=1618281804_432670741_2_0_0&sr_pri_blocks=1618281804_432670741_2_0_0__147547&from=searchresults",
-  "visto": "2026-11-03 21:28"
+  "url": "https://www.booking.com/hotel/cn/yi-ting-shang-hai-da-zhu-yin-le-yan-chang-xin-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaIgCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKXn6rXBsACAdICJDdlYjRhMDEwLTYyM2UtNDBjYS1hNmMyLTUyNGE5ZmM5YjQxNdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=7ca00d0b1b20006d&srepoch=1793757083&all_sr_blocks=1618281804_432670741_2_0_0&highlighted_blocks=1618281804_432670741_2_0_0&matching_block_id=1618281804_432670741_2_0_0&sr_pri_blocks=1618281804_432670741_2_0_0__147547&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "baseLITE Service Apartment -Shanghai Railway Station Tongfeng Road Branch": {
   "precio": 200.0,
@@ -218,8 +218,8 @@
   "minimo": 199.0,
   "maximo": 211.0,
   "zona": "West Nanjing Road",
-  "url": "https://www.booking.com/hotel/cn/hanting-shanghai-global-harbor-formerly-hanting-shanghai-wuning-road.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaLcCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKLm6bXBsACAdICJDQ2ZWZmZjk2LWJjMmItNGEwOS1hOWJkLWUyN2IzOWM4Y2RkMdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=24&sr_order=price&srpvid=d15134c568ff0367&srepoch=1793691023&all_sr_blocks=1466564901_419344341_2_0_0&highlighted_blocks=1466564901_419344341_2_0_0&matching_block_id=1466564901_419344341_2_0_0&sr_pri_blocks=1466564901_419344341_2_0_0__155094&from=searchresults",
-  "visto": "2026-11-03 07:30",
+  "url": "https://www.booking.com/hotel/cn/hanting-shanghai-global-harbor-formerly-hanting-shanghai-wuning-road.es.html?aid=304142&label=gen173nr-10CAQoggJCInNlYXJjaF93ZXN0IG5hbmppbmcgcm9hZCwgc2hhbmdoYWlIClgEaIgCiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKXn6rXBsACAdICJDdlYjRhMDEwLTYyM2UtNDBjYS1hNmMyLTUyNGE5ZmM5YjQxNdgCAeACAQ&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=22&sr_order=price&srpvid=7ca00d0b1b20006d&srepoch=1793757083&all_sr_blocks=1466564901_419344341_2_0_0&highlighted_blocks=1466564901_419344341_2_0_0&matching_block_id=1466564901_419344341_2_0_0&sr_pri_blocks=1466564901_419344341_2_0_0__155094&from=searchresults",
+  "visto": "2026-11-04 01:51",
   "suelo_avisado": 201.0
  },
  "Hi Inn Shanghai The Bund Yan'an East Road": {
@@ -231,20 +231,20 @@
   "visto": "2026-10-20 22:02"
  },
  "Hanting Hotel Shanghai Dapuqiao Xietu Road": {
-  "precio": 219.0,
+  "precio": 218.0,
   "minimo": 217.0,
   "maximo": 230.0,
   "zona": "Xintiandi / Concesión Francesa",
-  "url": "https://www.booking.com/hotel/cn/yi-ting-shang-hai-zhong-shan-yi-yuan-xie-tu-lu-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=1643502103_434512626_2_0_0&highlighted_blocks=1643502103_434512626_2_0_0&matching_block_id=1643502103_434512626_2_0_0&sr_pri_blocks=1643502103_434512626_2_0_0__162642&from=searchresults",
-  "visto": "2026-11-03 21:28"
+  "url": "https://www.booking.com/hotel/cn/yi-ting-shang-hai-zhong-shan-yi-yuan-xie-tu-lu-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=17&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1643502103_434512626_2_0_0&highlighted_blocks=1643502103_434512626_2_0_0&matching_block_id=1643502103_434512626_2_0_0&sr_pri_blocks=1643502103_434512626_2_0_0__162642&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Hanting Premium Hotel Shanghai Zhongshan Park Yan'an Road": {
-  "precio": 226.0,
+  "precio": 225.0,
   "minimo": 224.0,
   "maximo": 238.0,
   "zona": "Xintiandi / Concesión Francesa",
-  "url": "https://www.booking.com/hotel/cn/yi-ting-you-jia-shang-hai-zhong-shan-gong-yuan-yan-an-lu-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiyAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC5aOp1wbAAgHSAiRmN2FlMmE1NC05MTBmLTQ1YTctOTBmNS04NDFmZmY2NDljM2LYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=dae696f27f980136&srepoch=1793741289&all_sr_blocks=1618246501_443515774_2_0_0&highlighted_blocks=1618246501_443515774_2_0_0&matching_block_id=1618246501_443515774_2_0_0&sr_pri_blocks=1618246501_443515774_2_0_0__168208&from=searchresults",
-  "visto": "2026-11-03 21:28"
+  "url": "https://www.booking.com/hotel/cn/yi-ting-you-jia-shang-hai-zhong-shan-gong-yuan-yan-an-lu-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1618246501_443515774_2_0_0&highlighted_blocks=1618246501_443515774_2_0_0&matching_block_id=1618246501_443515774_2_0_0&sr_pri_blocks=1618246501_443515774_2_0_0__168208&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Hi Inn Shanghai Xujiahui Center": {
   "precio": 229.0,
@@ -255,12 +255,12 @@
   "visto": "2026-10-20 07:03"
  },
  "威科逊商旅酒店Vacation": {
-  "precio": 114.0,
+  "precio": 113.0,
   "minimo": 113.0,
   "maximo": 114.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/wei-ke-xun-shang-lu-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=1580363001_438755792_2_0_0&highlighted_blocks=1580363001_438755792_2_0_0&matching_block_id=1580363001_438755792_2_0_0&sr_pri_blocks=1580363001_438755792_2_0_0__84679&from=searchresults",
-  "visto": "2026-11-03 21:27"
+  "url": "https://www.booking.com/hotel/cn/wei-ke-xun-shang-lu-jiu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=1580363001_438755792_2_0_0&highlighted_blocks=1580363001_438755792_2_0_0&matching_block_id=1580363001_438755792_2_0_0&sr_pri_blocks=1580363001_438755792_2_0_0__84679&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Lavande Hotel Shanghai Railway Station Branch": {
   "precio": 207.0,
@@ -279,12 +279,12 @@
   "visto": "2026-10-18 10:16"
  },
  "Magnotel Hotel Shanghai Lujiazui Riverside": {
-  "precio": 150.0,
+  "precio": 149.0,
   "minimo": 149.0,
   "maximo": 150.0,
   "zona": "People's Square",
-  "url": "https://www.booking.com/hotel/cn/po-jinjiang-inn-shanghai-lujiazui.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGi3AogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCmZum1wbAAgHSAiRkZjA1NTJjZS04ODI4LTRmODEtYjE2YS0yYzVjM2FhZjkxYTnYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=8&sr_order=price&srpvid=56ae34cc31b201e3&srepoch=1793691037&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__111612&from=searchresults",
-  "visto": "2026-11-03 07:30"
+  "url": "https://www.booking.com/hotel/cn/po-jinjiang-inn-shanghai-lujiazui.es.html?aid=304142&label=gen173nr-10CAQoggJCIHNlYXJjaF9wZW9wbGUncyBzcXVhcmUsIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCiZ-q1wbAAgHSAiQ5MjFmYTFhOS04YjRmLTQ2NzYtODVlMC04NTc5NmYxY2Q2MjPYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=price&srpvid=6a7f0d0442080164&srepoch=1793757069&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__111598&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Jinjiang Inn Shanghai Expo Park Pusan Rd": {
   "precio": 168.0,
@@ -348,13 +348,13 @@
   "visto": "2026-10-17 20:00"
  },
  "Hanting Premium Hotel Shanghai Hongkou Football Stadium Metro Station": {
-  "precio": 218.0,
+  "precio": 217.0,
   "minimo": 216.0,
   "maximo": 219.0,
   "suelo_avisado": 216.0,
   "zona": "People's Square",
-  "url": "https://www.booking.com/hotel/cn/yi-ting-you-jia-shang-hai-hong-kou-zu-qiu-chang-er-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCIHNlYXJjaF9wZW9wbGUncyBzcXVhcmUsIHNoYW5naGFpSApYBGi3AogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgC_pqm1wbAAgHSAiQ2YzQwY2YzOS0zYTQ3LTQxZDMtOTQ4YS0xN2MyNmE5Y2IxNzXYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=price&srpvid=03f034bfc9c500e3&srepoch=1793691010&all_sr_blocks=1618892801_432721154_2_2_0&highlighted_blocks=1618892801_432721154_2_2_0&matching_block_id=1618892801_432721154_2_2_0&sr_pri_blocks=1618892801_432721154_2_2_0__162453&from=searchresults",
-  "visto": "2026-11-03 07:30"
+  "url": "https://www.booking.com/hotel/cn/yi-ting-you-jia-shang-hai-hong-kou-zu-qiu-chang-er-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCIHNlYXJjaF9wZW9wbGUncyBzcXVhcmUsIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCiZ-q1wbAAgHSAiQ5MjFmYTFhOS04YjRmLTQ2NzYtODVlMC04NTc5NmYxY2Q2MjPYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=23&sr_order=price&srpvid=6a7f0d0442080164&srepoch=1793757069&all_sr_blocks=1618892801_432721154_2_2_0&highlighted_blocks=1618892801_432721154_2_2_0&matching_block_id=1618892801_432721154_2_2_0&sr_pri_blocks=1618892801_432721154_2_2_0__162453&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Jinglai Selected Hotel - Shanghai Xujiahui Tianzifang Branch": {
   "precio": 202.0,
@@ -375,13 +375,13 @@
   "visto": "2026-10-21 21:09"
  },
  "省到民宿-江苏路店": {
-  "precio": 244.0,
+  "precio": 243.0,
   "minimo": 242.0,
   "maximo": 244.0,
   "suelo_avisado": 242.0,
   "zona": "Xintiandi / Concesión Francesa",
-  "url": "https://www.booking.com/hotel/cn/sheng-dao-min-su-jiang-su-lu-dian.es.html?aid=304142&label=mkt123sc-3f97aa62-40b6-4f99-9564-227261aaae18&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=price&srpvid=c8d954abfa251488985ee7bbdf004f99&srepoch=1793080536&all_sr_blocks=1677692313_439499815_2_0_0&highlighted_blocks=1677692313_439499815_2_0_0&matching_block_id=1677692313_439499815_2_0_0&sr_pri_blocks=1677692313_439499815_2_0_0__181698&from=searchresults",
-  "visto": "2026-10-27 05:55"
+  "url": "https://www.booking.com/hotel/cn/sheng-dao-min-su-jiang-su-lu-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=1677692313_439499815_2_0_0&highlighted_blocks=1677692313_439499815_2_0_0&matching_block_id=1677692313_439499815_2_0_0&sr_pri_blocks=1677692313_439499815_2_0_0__181698&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Dawu Xiaozhan": {
   "precio": 308.0,
@@ -447,13 +447,13 @@
   "visto": "2026-10-30 02:22"
  },
  "Jinglai Select Hotel - Jing'an Daning Lingshi Park Branch": {
-  "precio": 219.0,
+  "precio": 218.0,
   "minimo": 195.0,
   "maximo": 265.0,
   "suelo_avisado": 195.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/jing-lai-zhen-xuan-jiu-dian-jing-an-da-zhu-ling-shi-gong-yuan-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARosgKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4AryjqdcGwAIB0gIkZjM4OTdmMzctODQ2NC00NDRhLThmMGEtNjM0OTJmMTljMzM22AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=price&srpvid=041996de0efd01d4&srepoch=1793741249&all_sr_blocks=1519455902_427066115_0_1_0_1329314&highlighted_blocks=1519455902_427066115_0_1_0_1329314&matching_block_id=1519455902_427066115_0_1_0_1329314&sr_pri_blocks=1519455902_427066115_0_1_0_1329314_162814&from=searchresults",
-  "visto": "2026-11-03 21:27"
+  "url": "https://www.booking.com/hotel/cn/jing-lai-zhen-xuan-jiu-dian-jing-an-da-zhu-ling-shi-gong-yuan-dian.es.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9qaW5nJ2FuLCBzaGFuZ2hhaUgKWARoiAKIAQGYATO4AQfIAQzYAQPoAQH4AQGIAgGoAgG4Av2eqtcGwAIB0gIkOTYwNzBiNjktOGRkZi00ZDFhLWI5NzMtNjE0YWM2MDZiZTEz2AIB4AIB&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=17&sr_order=price&srpvid=b1b90cfefec1009d&srepoch=1793757058&all_sr_blocks=1519455902_427066115_0_1_0_1329314&highlighted_blocks=1519455902_427066115_0_1_0_1329314&matching_block_id=1519455902_427066115_0_1_0_1329314&sr_pri_blocks=1519455902_427066115_0_1_0_1329314_162814&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "MEHOOD LESTIE Hotel (Shanghai Xujiahui Wukang Road)": {
   "precio": 359.0,
@@ -465,13 +465,13 @@
   "visto": "2026-10-30 16:30"
  },
  "Shangtex Shanghai Hufang Building": {
-  "precio": 241.0,
+  "precio": 240.0,
   "minimo": 239.0,
   "maximo": 241.0,
   "suelo_avisado": 239.0,
   "zona": "Jing'an",
-  "url": "https://www.booking.com/hotel/cn/po-shangtex-shanghai-hufang-building-jing-an-district.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGi3AogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCmZum1wbAAgHSAiRkZjA1NTJjZS04ODI4LTRmODEtYjE2YS0yYzVjM2FhZjkxYTnYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=16&sr_order=price&srpvid=56ae34cc31b201e3&srepoch=1793691037&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__179487&from=searchresults",
-  "visto": "2026-11-03 07:30"
+  "url": "https://www.booking.com/hotel/cn/po-shangtex-shanghai-hufang-building-jing-an-district.es.html?aid=304142&label=gen173nr-10CAQoggJCGnNlYXJjaF94aW50aWFuZGksIHNoYW5naGFpSApYBGiIAogBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpZ-q1wbAAgHSAiRmNzRjZmUwMC1iNTMzLTQ3YmEtYmM3ZS1hN2IxNmJjMzBlMTHYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-12-14&checkout=2026-12-20&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=24&sr_order=price&srpvid=e9820d12ccf40038&srepoch=1793757097&all_sr_blocks=0_0_2_0_0&highlighted_blocks=0_0_2_0_0&matching_block_id=0_0_2_0_0&sr_pri_blocks=0_0_2_0_0__179507&from=searchresults",
+  "visto": "2026-11-04 01:51"
  },
  "Fengdu Hotel Shanghai Lujiazui": {
   "precio": 338.0,
